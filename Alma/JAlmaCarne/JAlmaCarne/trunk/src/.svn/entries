@@ -1,0 +1,34 @@
+8
+
+dir
+200
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn/JAlmaCarne/trunk/src
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn
+
+
+
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06284d7f-e431-0410-813f-fcd22b3e79ad
+
+almaparse
+dir
+
+alma
+dir
+

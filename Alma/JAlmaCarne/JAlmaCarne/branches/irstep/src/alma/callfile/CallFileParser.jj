@@ -1,0 +1,61 @@
+/**
+ * JavaCC file
+ */
+ 
+options {
+  JDK_VERSION = "1.5";
+}
+PARSER_BEGIN(CallFileParser)
+package alma.callfile;
+import alma.*;
+import java.io.*;
+
+public class CallFileParser {
+	public static void main(String args[]) throws Exception{
+		CallFileParser callFile = new CallFileParser(System.in);
+		callFile.interpret();
+	}
+	public void interpret(KnowledgeBase kb) throws ParseException, TokenMgrError{
+		startCommands(kb);
+	}
+	
+	public Formula readFormula(){
+		try{
+			FormulaBuilder fb = new FormulaBuilder();
+			formula(fb);
+			return fb.getFormula();
+		} catch (ParseException pe){
+			return null;
+		}
+	}
+	
+	public static Formula parseString(String s){
+    	ByteArrayInputStream bais = new ByteArrayInputStream(s.getBytes());
+    	AlmaParser ap = new AlmaParser(bais);
+		return ap.readFormula();
+	}
+
+}
+
+PARSER_END(CallFileParser)
+
+SKIP : { " " | "\r" | "\t" | "\n" }
+
+ TOKEN : {
+ <ADD: "+">
+| <DELETE: "-">
+| <ATSK: "*">
+| <AND: "&">
+| <QST: "?">
+| <TILD:"~">
+| <OR: "|">
+| <WORD: (["a"-"z", "A"-"Z", "_"])+>
+| <NUM: ([ "0" - "9"])+>
+| <STRING: "\"" (~["\""])+ "\"">
+}
+
+void goalFormula(FormulaBuilder fb): {}
+{
+	"?"
+	{throw new UnsupportedOperationException("GoalFormula not implemented");}
+}

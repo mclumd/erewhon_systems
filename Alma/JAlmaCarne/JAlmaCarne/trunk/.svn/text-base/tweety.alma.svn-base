@@ -1,0 +1,3 @@
++bird(tweety).
++bird(X) -> flies(X).
++flies(tweety) -> ?{Ans}[1]flies(X). /* not in the grammar */

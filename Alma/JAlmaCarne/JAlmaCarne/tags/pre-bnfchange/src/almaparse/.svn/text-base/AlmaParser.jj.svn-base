@@ -1,0 +1,184 @@
+/**
+ * JavaCC file
+ */
+ 
+options {
+  JDK_VERSION = "1.5";
+}
+PARSER_BEGIN(AlmaParser)
+package almaparse;
+import alma.*;
+
+public class AlmaParser {
+	public static void main(String args[]) throws Exception{
+		AlmaParser ap = new AlmaParser(System.in);
+		ap.interpret(new KnowledgeBase());
+	}
+	public void interpret(KnowledgeBase kb) throws ParseException, TokenMgrError{
+		startCommands(kb);
+	}
+}
+
+PARSER_END(AlmaParser)
+
+SKIP : { " " | "\r" | "\t" | "\n" }
+
+ TOKEN : {
+ <ADD: "+">
+| <DELETE: "-">
+| <ATSK: "*">
+| <AND: "&">
+| <QST: "?">
+| <TILD:"~">
+| <OR: "|">
+| <STEP: "step">
+| <PRINT: "print">
+| <WORD: (["a"-"z", "A"-"Z", "_"])+>
+| <num: ([ "0" - "9"])+>
+}
+
+//<command>	::=	<addcommand>"." | <deletecommand>"."| <distrustcommand>"." | "step." | "print."
+void startCommands(KnowledgeBase kb) : 
+{
+	FormulaBuilder fb = new FormulaBuilder();
+	Token t = null;
+}
+{
+	(addCommand(fb)"." | deleteCommand(fb)"." |	distrustCommand(fb)".")
+	{kb.eval(fb.getFormula());}
+	(startCommands(kb) | <EOF>)
+|
+	LOOKAHEAD(2)
+	<STEP> "."
+	{kb.step();}
+	(startCommands(kb) | <EOF>)
+|
+	<STEP> t = <num> "."
+	{
+	for(int i=0; i<Integer.parseInt(t.image); i++){
+		kb.step();
+	}
+	kb.printHistory(System.out);
+	}
+	(startCommands(kb) | <EOF>)
+|
+	<PRINT> "."
+	{kb.printHistory(System.out);}
+	(startCommands(kb) | <EOF>)
+}
+
+void addCommand(FormulaBuilder fb) : {}
+{
+	{fb.addAdd();}
+	"+"
+	formula(fb)
+	{fb.endChildren();}
+}
+
+void deleteCommand(FormulaBuilder fb) : 
+{ Token t = null; }
+{
+	LOOKAHEAD(2)
+	"-"
+	t = <num>
+	{fb.addSpecificDelete(Integer.parseInt(t.image));}
+|
+	{fb.addDelete();}
+	"-"
+	formula(fb)
+	{fb.endChildren();}
+}
+
+void distrustCommand(FormulaBuilder fb) : 
+{}
+{
+	"*"
+	formula(fb)
+	{throw new UnsupportedOperationException("Distrust Command not yet implemented");}
+}
+
+void formula(FormulaBuilder fb):
+{}
+{
+	( LOOKAHEAD( "(" (basicFormula(fb2) | goalFormula(fb2)) ("=>" | "->") )
+		frontIfFormula(fb) 
+	| 
+		basicFormula(fb)
+	)
+}
+
+void frontIfFormula(FormulaBuilder fb):
+{
+	FormulaBuilder fb2 = new FormulaBuilder();
+}
+{
+	"(" (basicFormula(fb2) | goalFormula(fb2))
+	( {fb.addIf();} "=>"
+		|
+	  {fb.addIfNew();} "->"
+	)
+	{ fb.add(fb2.getFormulaNode());}
+	(basicFormula(fb) | goalFormula(fb) | addCommand(fb) | deleteCommand(fb))
+	{fb.endChildren();}
+	")"
+}
+
+void basicFormula(FormulaBuilder fb): 
+{ FormulaBuilder fb2 = new FormulaBuilder(); }
+{
+	//And Formula
+	LOOKAHEAD("(" basicFormula(fb2) "&")
+	"(" basicFormula(fb2)
+	{fb.addAnd();}"&" 
+	{fb.add(fb2.getFormulaNode());}
+	basicFormula(fb)
+	( "&" basicFormula(fb) )*
+	 ")"
+	 {fb.endChildren();}
+|
+	//Or Formula
+	"(" basicFormula(fb2)
+	{fb.addOr();} 
+	{fb.add(fb2.getFormulaNode());}
+	"|" basicFormula(fb)
+	( "|" basicFormula(fb) )*
+	 ")"
+	 {fb.endChildren();}
+|
+
+	{fb.addNot();} "~" 
+	basicFormula(fb)
+	{fb.endChildren();}
+|
+	predicate(fb)
+}
+
+void predicate(FormulaBuilder fb):
+{
+	Token t;
+}
+{
+	t = <WORD> 
+	{ fb.addPredicate(t.image); }
+	"(" predicateParameter(fb)
+	( "," predicateParameter(fb) )*
+	{ fb.endChildren(); }
+	")"
+}
+
+void predicateParameter(FormulaBuilder fb):
+{
+	Token t;
+	String s;
+}
+{  LOOKAHEAD(2)
+  predicate(fb)
+|  t = <WORD>
+  {    if (Character.isUpperCase(t.image.charAt(0))){      fb.addVariable(t.image);    }    else {      fb.addConstant(t.image);    }  }
+}
+
+void goalFormula(FormulaBuilder fb): {}
+{
+	"!"
+	{throw new UnsupportedOperationException("GoalFormula not implemented");}
+}

@@ -1,0 +1,40 @@
+8
+
+dir
+200
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn/JAlmaCarne/tags/pre-bnfchange/src/almaparse
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn
+
+
+
+2007-07-31T19:30:23.011368Z
+30
+percy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06284d7f-e431-0410-813f-fcd22b3e79ad
+
+AlmaParser.jj
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+771aa1e7c4a3e678e2ab6d57509b32d8
+2007-07-31T19:30:23.011368Z
+30
+percy
+

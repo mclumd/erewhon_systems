@@ -1,0 +1,2 @@
+loadcall "unique_id" "alma.callfile.Unique_ID".
++unique_id(ID1) & unique_id(ID2) & unique_id(ID3) -> test1(ID1) & test2(ID2) & test3(ID3).

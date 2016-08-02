@@ -1,0 +1,17 @@
++man(adam). 
++man(peter). 
++man(paul). 
+   
++woman(mary). 
++woman(eve).
+
++parent(adam,peter). 
++parent(eve,peter). 
++parent(adam,paul). 
++parent(mary,paul).  
+
++man(X) & parent (X,Y) -> father(X,Y).
+
+step 10.
+
+?{Ans(X)}[1]father(X, peter).

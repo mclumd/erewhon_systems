@@ -1,0 +1,40 @@
+8
+
+dir
+200
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn/JAlmaCarne/trunk/src/almaparse
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn
+
+
+
+2008-09-19T14:45:21.248143Z
+195
+percy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06284d7f-e431-0410-813f-fcd22b3e79ad
+
+AlmaParser.jj
+file
+
+
+
+
+2008-12-12T20:11:30.000000Z
+321483e55d8c18eabe32bf6ebd80aaab
+2008-09-19T14:45:21.248143Z
+195
+percy
+

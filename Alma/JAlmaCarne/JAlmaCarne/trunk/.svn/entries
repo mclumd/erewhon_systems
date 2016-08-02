@@ -1,0 +1,106 @@
+8
+
+dir
+200
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn/JAlmaCarne/trunk
+svn+ssh://erewhon.cs.umd.edu/fs/erewhon/group/svn
+
+
+
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+06284d7f-e431-0410-813f-fcd22b3e79ad
+
+.classpath
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+b1801320fc00a1e239cca5cd7ab0c0ab
+2008-12-11T17:59:54.918875Z
+199
+scott
+
+.project
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+7d9363b4285d19f1b87f6559d8caed50
+2007-12-07T23:33:27.679106Z
+46
+percy
+
+kbfile.alma
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+57ec3be3721beae334e05a481aecab0f
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+src
+dir
+
+test_file.alma
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+e43722cadde4fa3e943de478ce1416ee
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+family.alma
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+adceb2788f13ac64c02ff2fefacf9f96
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+tweety.alma
+file
+
+
+
+
+2008-12-12T20:11:31.000000Z
+22674d129948618a22f9949ef2303b63
+2008-12-11T18:45:44.709458Z
+200
+shomir
+
+.settings
+dir
+

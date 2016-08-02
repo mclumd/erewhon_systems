@@ -1,0 +1,343 @@
+/**
+ * JavaCC file
+ */
+ 
+options {
+  JDK_VERSION = "1.5";
+}
+PARSER_BEGIN(AlmaParser)
+package almaparse;
+import alma.*;
+import java.io.*;
+import java.util.*;
+
+public class AlmaParser {
+	
+	public static void main(String args[]) throws Exception{
+		KnowledgeBase kb = new KnowledgeBase();
+		if(args.length == 1) {
+			if(args[0].equals("help"))
+				System.exit(0);
+			else {
+				FileInputStream fis = new FileInputStream(args[0]);
+				AlmaParser ap = new AlmaParser(fis);
+				ap.interpret(kb);
+				fis.close();
+			}
+		}
+		
+		AlmaParser ap2 = new AlmaParser(System.in);
+		ap2.interpret(kb);
+		
+	}
+	
+	public void interpret(KnowledgeBase kb) throws ParseException, TokenMgrError{
+		startCommands(kb);
+	}
+	
+	public Formula readFormula(){
+		try{
+			FormulaBuilder fb = new FormulaBuilder();
+			formula(fb);
+			return fb.getFormula();
+		} catch (ParseException pe){
+			return null;
+		}
+	}
+	
+	public static Formula parseString(String s){
+    	ByteArrayInputStream bais = new ByteArrayInputStream(s.getBytes());
+    	AlmaParser ap = new AlmaParser(bais);
+		return ap.readFormula();
+	}
+
+}
+
+PARSER_END(AlmaParser)
+
+SKIP : { " " | "\r" | "\t" | "\n" }
+
+ TOKEN : {
+ <ADD: "+">
+| <DELETE: "-">
+| <ATSK: "*">
+| <AND: "&">
+| <QST: "?">
+| <TILD:"~">
+| <OR: "|">
+| <OPENPAR: "(">
+| <CLOSEPAR: ")">
+| <STEP: "step">
+| <PRINT: "print">
+| <LOAD: "load">
+| <LOADCALL: "loadcall">
+| <WORD: (["a"-"z", "A"-"Z", "_"]) ((["a"-"z", "A"-"Z", "_", "0" - "9"]))*>
+| <NUM: ([ "0" - "9"])+>
+| <STRING: "\"" (~["\""])+ "\"">
+}
+
+TOKEN_MGR_DECLS : {
+    int commentDepth ;
+}
+
+SKIP : {  "/*" { commentDepth = 1 ; } : CCOMMENT}
+<CCOMMENT>  SKIP : { "/*" {commentDepth += 1;}}
+<CCOMMENT>  SKIP : { "FileInputStream*/" {commentDepth -= 1;SwitchTo( commentDepth==0 ? DEFAULT : CCOMMENT);}}
+<CCOMMENT>  SKIP : {< ~[] >}
+
+SKIP : {  "//" : CPPCOMMENT }
+<CPPCOMMENT> SKIP : {"\n": DEFAULT} //Figure out a way to use EOL instead,
+<CPPCOMMENT> SKIP : {< ~[] >}
+
+
+//<command>	::=	<addcommand>"." | <deletecommand>"."| <distrustcommand>"." | "step." | "print."
+void startCommands(KnowledgeBase kb) : 
+{
+	FormulaBuilder fb = new FormulaBuilder();
+	Token t = null;
+}
+{
+	command(fb)
+	{kb.add(fb.getFormula());}
+	(startCommands(kb) | <EOF>)
+|
+	LOOKAHEAD(2)
+	<STEP> "."
+	{kb.step();}
+	(startCommands(kb) | <EOF>)
+|
+	<STEP> t = <NUM> "."
+	{
+	for(int i=0; i<Integer.parseInt(t.image); i++){
+		kb.step();
+	}
+	kb.printHistory(System.out);
+	}
+	(startCommands(kb) | <EOF>)
+|
+	<PRINT> "."
+	{kb.printHistory(System.out);}
+	(startCommands(kb) | <EOF>)
+|
+	<LOAD> t = <STRING>"." {	
+		try {	
+			FileInputStream fis = new FileInputStream(t.image.substring(1,t.image.length()-1));
+			AlmaParser ap = new AlmaParser(fis);
+			ap.interpret(kb);
+			System.out.println("Done interpreting");
+			fis.close();
+		} catch (IOException e) {
+			System.err.println("An error occured whilst loading file: "+t.image);
+			e.printStackTrace();
+		}
+	}
+	(startCommands(kb) | <EOF>)
+|
+	<LOADCALL> t = <STRING> "."
+	{
+		if(!t.image.contains(",")) {
+			System.err.println("When loading classes please use the syntax loadcall \"<predicate>,<classpath>\"");
+		} else {
+		String name = t.image.substring(1,t.image.indexOf(","));
+		String location = t.image.substring(t.image.indexOf(",")+1,t.image.length()-1);
+		kb.loadClass(name.trim(), location.trim());
+		}
+	}
+	(startCommands(kb) | <EOF>)
+}
+
+void command(FormulaBuilder fb): {}{
+	addCommand(fb)"." 
+| 
+	deleteCommand(fb)"." 
+|	
+	distrustCommand(fb)"."
+|
+	selectCommand(fb)"."
+| 
+	goalFormula(fb)"."
+}
+
+void selectCommand(FormulaBuilder fb) :{
+	Token answer;
+	Token variable;
+	Token raw_numHits;
+	ArrayList<Variable> vars = new ArrayList<Variable>();
+}
+{
+	"#" "{" answer = <WORD> "}" (variable = <WORD> {vars.add(new Variable(variable.image));})* "[" raw_numHits = <NUM> "]" 
+	{
+		fb.addSelectCommand(Integer.parseInt(raw_numHits.image), answer.image, vars);
+	}
+	formula(fb) {fb.endChildren();}
+}
+
+void addCommand(FormulaBuilder fb) : {}
+{
+	{fb.addAdd();}
+	"+"
+	formula(fb)
+	{fb.endChildren();}
+}
+
+void deleteCommand(FormulaBuilder fb) : 
+{ Token t = null; }
+{
+	LOOKAHEAD(2)
+	"-"
+	t = <NUM>
+	{fb.addSpecificDelete(Integer.parseInt(t.image));}
+|
+	{fb.addDelete();}
+	"-"
+	formula(fb)
+	{fb.endChildren();}
+}
+
+void distrustCommand(FormulaBuilder fb) : 
+{}
+{
+	"*"
+	formula(fb)
+	{throw new UnsupportedOperationException("Distrust Command not yet implemented");}
+}
+
+//Begin changes
+
+void Primary(FormulaBuilder fb):{Token t;FormulaBuilder fb2 = new FormulaBuilder();}
+{
+	"~" Primary(fb2) {
+		fb.addNot();
+		fb.add(fb2);
+		fb.endChildren();
+	}
+|
+	"!" Primary(fb2) {
+		fb.addNegationByFailure();
+		fb.add(fb2);
+		fb.endChildren();
+	}
+|
+	predicate(fb)
+|
+	addCommand(fb)
+|
+	deleteCommand(fb)
+|	
+	<OPENPAR> formula(fb) <CLOSEPAR>
+}
+
+void AndExp(FormulaBuilder fb):{Token t; FormulaBuilder fb2 = new FormulaBuilder();}
+{
+	LOOKAHEAD(Primary(fb) "&")
+	{fb.addAnd();}
+	Primary(fb) (
+		"&" Primary(fb2)
+		{	fb.add(fb2);
+			fb.endChildren();
+		}
+	)*
+|
+	Primary(fb)
+}
+
+void OrExp(FormulaBuilder fb):{Token t; FormulaBuilder fb2 = new FormulaBuilder();}
+{
+	LOOKAHEAD(AndExp(fb) "|")
+	{fb.addOr();}
+	AndExp(fb) (
+		"|" AndExp(fb2)
+		{
+			fb.add(fb2);
+			fb.endChildren();
+		}
+	)*
+|
+	AndExp(fb)
+}
+
+void formula(FormulaBuilder fb):{Token t; FormulaBuilder fb2 = new FormulaBuilder();}
+{
+	LOOKAHEAD(OrExp(fb) "->")
+	{fb.addIf();}
+	OrExp(fb) (
+		"->" OrExp(fb2)
+		{
+			fb.add(fb2);
+			fb.endChildren();
+		}
+	)*
+|
+	OrExp(fb)
+}
+
+void predicate(FormulaBuilder fb):
+{
+	Token t;
+}
+{
+	t = <WORD> 
+	{ fb.addPredicate(t.image); }
+	"(" predicateParameter(fb)
+	( "," predicateParameter(fb) )*
+	{ fb.endChildren(); }
+	")"
+}
+
+void predicateParameter(FormulaBuilder fb):
+{
+	Token t;
+	String s;
+	StringBuffer sb;
+}
+{
+  LOOKAHEAD(2)
+  formula(fb)
+|
+  t = <WORD>
+  {
+    if (Character.isUpperCase(t.image.charAt(0))){
+      fb.addVariable(t.image);
+    }
+    else {
+      fb.addConstant(t.image);
+    }
+  }
+|
+  t = <NUM>
+  {fb.addTimeConst(Integer.parseInt(t.image));}
+|
+  t = <STRING>
+  { s = t.image.substring(1, t.image.length()-1);
+  	fb.addStringConst(s);}
+|
+	LOOKAHEAD("[" predicateParameter(fb) ("," predicateParameter(fb))* ".")
+	"["
+	{fb.addList();}
+	predicateParameter(fb) 
+	("," predicateParameter(fb))* 
+	"." predicateParameter(fb) 
+	{fb.finishList();}
+	"]"
+|
+	"["
+	{fb.addList();}
+	predicateParameter(fb) 
+	("," predicateParameter(fb))* 
+	{fb.endChildren();}
+	"]"
+}
+
+void goalFormula(FormulaBuilder fb): {
+	Token answer;
+	Token variable;
+	Token raw_numHits;
+	ArrayList<Variable> vars = new ArrayList<Variable>();
+}
+{	
+	"?" "{" answer = <WORD> "}" (variable = <WORD> {vars.add(new Variable(variable.image));})* "[" raw_numHits = <NUM> "]" 
+	{
+		fb.addGoalCommand(Integer.parseInt(raw_numHits.image), answer.image, vars);
+	}
+	formula(fb) {fb.endChildren();}
+}
