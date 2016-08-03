@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repository/alfred/!svn/ver/1/etc
+END
+.mars_settings
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/1/etc/.mars_settings
+END
+domainhost.scott
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repository/alfred/!svn/ver/1/etc/domainhost.scott
+END
+hostfile.covington
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/14/etc/hostfile.covington
+END
+ui.covington
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/8/etc/ui.covington
+END
+cshrc_temp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repository/alfred/!svn/ver/1/etc/cshrc_temp
+END
+hostfile.scott
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/1/etc/hostfile.scott
+END
+ui.scott
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repository/alfred/!svn/ver/1/etc/ui.scott
+END
+domainhost.covington
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/1/etc/domainhost.covington
+END

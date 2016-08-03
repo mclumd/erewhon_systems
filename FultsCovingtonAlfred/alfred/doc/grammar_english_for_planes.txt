@@ -1,0 +1,136 @@
+/*English for Planes:
+
+*/
+
+
+/*Build a domain.*/
+isa(d0, domain, d0).
+
+/*Build a language and make it part of the domain.*/
+isa(d0, language, c2).
+has(d0, language, d0, c2).
+
+/*Make categories*/
+/*
+c2cat1 -- c2cat3
+
+*/
+
+isa(c2, category, c2cat1).
+has(c2, category, c2, c2cat1).
+has(c2, label, c2cat1, v).
+
+isa(c2, category, c2cat2).
+has(c2, category, c2, c2cat2).
+has(c2, label, c2cat2, n).
+
+isa(c2, category, c2cat3).
+has(c2, category, c2, c2cat3).
+has(c2, label, c2cat3, p).
+
+
+
+/*Domain Syntax Rules:
+*/
+/*
+c2syntax1 -- c2syntax6
+
+*/
+
+
+/*S --> VP*/
+isa(c2, domain_syntax_rule, c2syntax1).
+has(c2, domain_syntax_rule, c2, c2syntax1).
+has(c2, left_hand_side, c2syntax1, s).
+has(c2, right_hand_side, c2syntax1, [vp]).
+has(c2, semantic_checker_rule, c2syntax1, scr1).
+
+/*VP --> V . NP*/
+isa(c2, domain_syntax_rule, c2syntax2).
+has(c2, domain_syntax_rule, c2, c2syntax2).
+has(c2, left_hand_side, c2syntax2, vp).
+has(c2, right_hand_side, c2syntax2, [v, np]).
+has(c2, semantic_checker_rule, c2syntax2, scr3).
+
+/*VP --> V*/
+isa(c2, domain_syntax_rule, c2syntax3).
+has(c2, domain_syntax_rule, c2, c2syntax3).
+has(c2, left_hand_side, c2syntax3, vp).
+has(c2, right_hand_side, c2syntax3, [v]).
+has(c2, semantic_checker_rule, c2syntax3, scr1).
+
+/*VP --> VP PP*/
+isa(c2, domain_syntax_rule, c2syntax4).
+has(c2, domain_syntax_rule, c2, c2syntax4).
+has(c2, left_hand_side, c2syntax4, vp).
+has(c2, right_hand_side, c2syntax4, [vp, cp]).
+has(c2, semantic_checker_rule, c2syntax4, scr3).
+
+/*NP --> N*/
+isa(c2, domain_syntax_rule, c2syntax5).
+has(c2, domain_syntax_rule, c2, c2syntax5).
+has(c2, left_hand_side, c2syntax5, np).
+has(c2, right_hand_side, c2syntax5, [n]).
+has(c2, semantic_checker_rule, c2syntax5, scr4).
+
+/*PP --> P NP*/
+isa(c2, domain_syntax_rule, c2syntax6).
+has(c2, domain_syntax_rule, c2, c2syntax6).
+has(c2, left_hand_side, c2syntax6, pp).
+has(c2, right_hand_side, c2syntax6, [p, np]).
+has(c2, semantic_checker_rule, c2syntax6, scr2).
+
+
+
+
+/*Make concepts for English theta-roles*/
+/*Patient*/
+isa(c2, theta_role, c2theta1).
+has(c2, theta_role, c2, c2theta1).
+
+/*Location*/
+isa(c2, theta_role, c2theta2).
+has(c2, theta_role, c2, c2theta2).
+
+/*Make concepts for event_participants, i.e., meanings of theta-roles*/
+isa(means16, meaning, means16).
+isa(means16, event_participant, means16).
+has(c2, content, c2theta1, means16).
+
+/*Lexemes:
+
+c2lex1 -- c2lex9
+means1 -- means8
+*/
+
+/*---- Verbs ----*/
+/*report*/
+do_add_lexeme(c2lex1, c2, report, c2cat1, means1, predicate, c2theta1).
+
+/*circle*/
+do_add_lexeme(c2lex3, c2, circle, c2cat1, means3, predicate, c2theta1).
+
+/*disconnect*/
+do_add_lexeme(c2lex6, c2, disconnect, c2cat1, means6, predicate, c2theta1).
+
+/*land*/
+do_add_lexeme(c2lex7, c2, land, c2cat1, means7, predicate, c2theta1).
+
+/*---- Nouns ----*/
+/*Grammar*/
+do_add_lexeme(c2lex2, c2, grammar, c2cat2, means2, constant, nil).
+
+/*Plane33*/
+do_add_lexeme(c2lex4, c2, plane33, c2cat2, means4, constant, nil).
+
+/*Planes*/
+do_add_lexeme(c2lex5, c2, planes, c2cat2, means5, constant, nil).
+
+/*Approach Paths*/
+do_add_lexeme(c2lex9, c2, path22, c2cat2, means8, constant, nil).
+
+/*---- Prepositions ----*/
+/*at*/
+do_add_lexeme(c2lex8, c2, at, c2cat3, nil, nil, c2theta2).
+
+

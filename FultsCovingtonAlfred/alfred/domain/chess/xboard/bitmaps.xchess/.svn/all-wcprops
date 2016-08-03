@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess
+END
+bitmaps.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/bitmaps.h
+END
+checkmark.bm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/checkmark.bm
+END
+README.bitmaps
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/README.bitmaps
+END
+b40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b40o.bm
+END
+b40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b40s.bm
+END
+b80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b80o.bm
+END
+b64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b64o.bm
+END
+b80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b80s.bm
+END
+k40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k40o.bm
+END
+b64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/b64s.bm
+END
+n40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n40o.bm
+END
+k80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k80o.bm
+END
+k40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k40s.bm
+END
+p40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p40o.bm
+END
+q40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q40o.bm
+END
+k64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k64o.bm
+END
+n80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n80o.bm
+END
+n40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n40s.bm
+END
+icon_black.bm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/icon_black.bm
+END
+r40o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r40o.bm
+END
+k80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k80s.bm
+END
+p80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p80o.bm
+END
+p40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p40s.bm
+END
+n64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n64o.bm
+END
+q40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q40s.bm
+END
+k64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/k64s.bm
+END
+q80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q80o.bm
+END
+p64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p64o.bm
+END
+n80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n80s.bm
+END
+icon_white.bm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/icon_white.bm
+END
+r40s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r40s.bm
+END
+r80o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r80o.bm
+END
+unsigned.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/unsigned.sh
+END
+q64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q64o.bm
+END
+p80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p80s.bm
+END
+n64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/n64s.bm
+END
+r64o.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r64o.bm
+END
+q80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q80s.bm
+END
+p64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/p64s.bm
+END
+r80s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r80s.bm
+END
+q64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/q64s.bm
+END
+r64s.bm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/r64s.bm
+END
+rename-bm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repository/alfred/!svn/ver/1/domain/chess/xboard/bitmaps.xchess/rename-bm.sh
+END

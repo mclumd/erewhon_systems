@@ -1,0 +1,132 @@
+
+
+
+Games                                                  zic2xpm(6)
+
+
+
+NNNNAAAAMMMMEEEE
+     zic2xpm - Tool to convert ZIICS  chess  pieces  into  XBoard
+     (XPM/XIM) pieces.
+
+SSSSYYYYNNNNOOOOPPPPSSSSIIIISSSS
+     zic2xpm ffffiiiilllleeee1111 [[[[ffffiiiilllleeee2222 ............]]]]
+
+DDDDEEEESSSSCCCCRRRRIIIIPPPPTTTTIIIIOOOONNNN
+     zzzziiiicccc2222xxxxppppmmmm converts one or more ZIICS piece files into a format
+     that  can  be  used  by  XBoard.   If you give more than one
+     filename, be aware that multiple sets of the same size  can-
+     not exist in one directory. Multiple sets of different sizes
+     can exist in a single directory.
+
+EEEEXXXXAAAAMMMMPPPPLLLLEEEE
+     If you wanted  to  make  a  directory  containing  the  sets
+     SET2.V32, SET2.V40, SET2.V50, and SET2.V56, all of which are
+     located in ~/ziics, you could do:
+
+           mkdir Sets
+           cd Sets
+           zic2xpm ~/ziics/SET2.*
+
+     You would then run XBoard like this:
+
+          xboard -pixmap Sets
+
+BBBBUUUUGGGGSSSS
+     Please report any bugs to ffffrrrraaaannnnkkkkmmmm@@@@hhhhiiiiwwwwaaaaaaaayyyy....nnnneeeetttt
+
+SSSSEEEEEEEE AAAALLLLSSSSOOOO
+      xxxxbbbbooooaaaarrrrdddd(6666).
+
+AAAAUUUUTTTTHHHHOOOORRRR
+     Frank McIngvale (frankm@hiwaay.net)
+
+CCCCOOOOPPPPYYYYIIIINNNNGGGG
+     Copyright (C) 1996 Free Software Foundation, Inc.
+
+     NOTICE: The piece images distributed with  ZIICS  are  copy-
+     righted  works of their original creators.  Images converted
+     with zic2xpm may not be redistributed without the permission
+     of  the  copyright  holders.   Do not contact the authors of
+     zic2xpm or of ZIICS itself to request permission.
+
+     NOTICE:  The format of the ZIICS piece file was gleaned from
+     SHOWSETS.PAS,  a  part  of  ZIICS.  Thanks to Andy McFarland
+     (Zek on ICC) for making this source available!  ZIICS  is  a
+     completely  separate and copyrighted work of Andy McFarland.
+     Use and distribution of ZIICS falls under the ZIICS license,
+     NOT the GNU General Public License.
+
+
+
+
+zic2xpm 2.0         Last change: 11 Apr 1996                    1
+
+
+
+
+
+
+Games                                                  zic2xpm(6)
+
+
+
+     NOTICE: The format of the VGA imageblocks was determined  by
+     experimentation, and without access to any of Borland Inc.'s
+     BGI library source code.
+
+     This program is  free  software;  you  can  redistribute  it
+     and/or  modify  it under the terms of the GNU General Public
+     License as published by the Free Software Foundation; either
+     version 2 of the License, or (at your option) any later ver-
+     sion.  However, the above notices MUST BE  RETAINED  in  any
+     copy that you redistribute or modify.
+
+     This program is distributed in the hope that it will be use-
+     ful, but WITHOUT ANY WARRANTY; without even the implied war-
+     ranty of MERCHANTABILITY or FITNESS FOR  A  PARTICULAR  PUR-
+     POSE.  See the GNU General Public License for more details.
+
+     You should have received a copy of the  GNU  General  Public
+     License  along  with this program; if not, write to the Free
+     Software Foundation, Inc., 59 Temple Place, Suite 330,  Bos-
+     ton, MA 02111 USA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zic2xpm 2.0         Last change: 11 Apr 1996                    2
+
+
+

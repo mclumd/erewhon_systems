@@ -1,0 +1,6 @@
+panda express, chinese, chicken lo mein, 5.50, kung pao chicken, 5.00, shrimp lo mein, 6.60, general tso's chicken, 5.70, orange chicken, 5.20, bubble tea, 2.00 ;
+prince cafe, indian, chicken biryani, 7.00, saag paneer, 7.35, lamb kebab, 7.50, chicken kebab, 7.25, vegetable biryani, 6.70, mango lassi, 3.00 ;
+sbarro, italian, spaghetti with tomato sauce, 3.99, spaghetti with chicken, 4.99, linguine, 5.00, lasagna, 5.00, cheese pizza, 5.99, sausage pizza, 6.99, pepperoni pizza, 6.99, coke, 1.50, sprite, 1.50, fanta, 1.50 ;
+subway, sandwiches, chicken teriyaki, 4.99, sweet onion teriyaki, 5.49, tuna, 5.49, ham and turkey, 4.50, potato chips, 0.99, nachos, 0.99, coke, 1.25, diet coke, 1.25, sprite, 1.25 ;
+mcdonald's, fast food, grilled chicken sandwich, 2.79, crispy chicken sandwich, 2.91, fish sandwich, 2.00, quarterpounder, 1.20, big mac, 1.00, french fries, 1.00, chicken salad, 3.99, apple pie, 0.50, coke, 1.50, sprite, 1.50, fanta, 1.50 ;
+Chipotle, mexican, chicken burrito, 6.00 ;

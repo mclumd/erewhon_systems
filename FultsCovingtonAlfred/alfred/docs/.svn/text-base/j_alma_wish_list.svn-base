@@ -1,0 +1,11 @@
+Wish list for the new J-Alma:
+
+1)	ability to embed comments
+
+2)	control in some manner when a rule can or cannot fire; when groups of
+	facts can be submitted to some rule and the results all be added to DB
+	simultaneously; example -- fif(forAll(X, if(A(X), then B(X))), then C).
+
+3)	handle the full breadth of structures that Prolog can handle, in 
+	particular, lists such as partially instantiated lists.
+

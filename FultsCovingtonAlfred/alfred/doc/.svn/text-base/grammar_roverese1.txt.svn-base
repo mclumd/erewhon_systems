@@ -1,0 +1,155 @@
+/*Roverese:  To be used with Matt's mars rover simulation with MonCon.
+
+*/
+
+
+/*Build Roverese domain d4.*/
+isa(d4, domain, d4).
+
+/*Build Roverese language c4 and make it part of the domain.*/
+isa(d4, language, c4).
+has(d4, language, d4, c4).
+
+/*Make categories*/
+/*
+
+c4cat1 -- c4cat4
+
+*/
+
+isa(c4, category, c4cat1).
+has(c4, category, c4, c4cat1).
+has(c4, label, c4cat1, mr_c).
+
+isa(c4, category, c4cat2).
+has(c4, category, c4, c4cat2).
+has(c4, label, c4cat2, adjunct).
+
+isa(c4, category, c4cat3).
+has(c4, category, c4, c4cat3).
+has(c4, label, c4cat3, way_station).
+
+isa(c4, category, c4cat4).
+has(c4, category, c4, c4cat4).
+has(c4, label, c4cat4, sci_station).
+
+
+/*Domain Syntax Rules:*/
+/*
+c4syntax1 -- c4syntax7
+*/
+
+/*S -> MR_CP*/
+isa(c4, domain_syntax_rule, c4syntax1).
+has(c4, domain_syntax_rule, c4, c4syntax1).
+has(c4, left_hand_side, c4syntax1, s).
+has(c4, right_hand_side, c4syntax1, [mr_cp]).
+has(c4, semantic_checker_rule, c4syntax1, scr1).
+
+/*MR_CP -> MR_C*/
+isa(c4, domain_syntax_rule, c4syntax2).
+has(c4, domain_syntax_rule, c4, c4syntax2).
+has(c4, left_hand_side, c4syntax2, mr_cp).
+has(c4, right_hand_side, c4syntax2, [mr_c]).
+has(c4, semantic_checker_rule, c4syntax2, scr1).
+
+/*MR_CP -> MR_CP, AdjunctP*/
+isa(c4, domain_syntax_rule, c4syntax3).
+has(c4, domain_syntax_rule, c4, c4syntax3).
+has(c4, left_hand_side, c4syntax3, mr_cp).
+has(c4, right_hand_side, c4syntax3, [mr_cp, adjunctp]).
+has(c4, semantic_checker_rule, c4syntax3, scr3).
+
+/*AdjunctP -> Adjunct, Way_StationP*/
+isa(c4, domain_syntax_rule, c4syntax4).
+has(c4, domain_syntax_rule, c4, c4syntax4).
+has(c4, left_hand_side, c4syntax4, adjunctp).
+has(c4, right_hand_side, c4syntax4, [adjunct, way_stationp]).
+has(c4, semantic_checker_rule, c4syntax4, scr2).
+
+/*Way_StationP -> Way_Station*/
+isa(c4, domain_syntax_rule, c4syntax5).
+has(c4, domain_syntax_rule, c4, c4syntax5).
+has(c4, left_hand_side, c4syntax5, way_stationp).
+has(c4, right_hand_side, c4syntax5, [way_station]).
+has(c4, semantic_checker_rule, c4syntax5, scr4).
+
+/*Sci_StationP -> Sci_Station*/
+isa(c4, domain_syntax_rule, c4syntax6).
+has(c4, domain_syntax_rule, c4, c4syntax6).
+has(c4, left_hand_side, c4syntax6, sci_stationp).
+has(c4, right_hand_side, c4syntax6, [sci_station]).
+has(c4, semantic_checker_rule, c4syntax6, scr4).
+
+/*MR_CP -> MR_C, Sci_stationP*/
+isa(c4, domain_syntax_rule, c4syntax7).
+has(c4, domain_syntax_rule, c4, c4syntax7).
+has(c4, left_hand_side, c4syntax7, mr_cp).
+has(c4, right_hand_side, c4syntax7, [mr_c, sci_stationp]).
+has(c4, semantic_checker_rule, c4syntax7, scr3).
+
+
+/*Make concepts for event_participants, i.e., meanings of theta-roles.
+  Make sure this meaning is linked to the English equivalent theta-role.*/
+/*
+c4theta1 -- c4theta2
+*/
+
+/*Make concepts for Roverese theta-roles*/
+/*Location*/
+isa(c4, theta_role, c4theta1).
+has(c4, theta_role, c4, c4theta1).
+has(c4theta1, content, c4theta1, meanstheta2).
+
+/*Destination*/
+isa(c4, theta_role, c4theta2).
+has(c4, theta_role, c4, c4theta2).
+has(c4theta2, content, c4theta2, meanstheta3).
+
+
+/*Create lexemes and their meanings:*/
+
+/*
+c4lex1 -- c4lex11
+
+Use means# from English grammar file.
+*/
+
+/*---- Commands ----*/
+/*Use "do_add_lexeme(lexemeID, LangID, string, categoryID, meaningID, semantic_type, theta_role_assigned)*/
+/*charge*/
+do_add_lexeme(c4lex1, c4, charge, c4cat1, means11, predicate, nil).
+
+/*ack (rover)*/
+do_add_lexeme(c4lex2, c4, ack, c4cat1, means12, predicate, nil).
+
+/*loc*/
+do_add_lexeme(c4lex3, c4, localize, c4cat1, means13, predicate, nil).
+
+/*cal*/
+do_add_lexeme(c4lex8, c4, cal, c4cat1, means17, predicate, c4theta1).
+
+/*moveto*/
+do_add_lexeme(c4lex10, c4, moveto, c4cat1, means20, predicate, c4theta2).
+
+/*---- Arguments ----*/
+/*0 (Way Station)*/
+do_add_lexeme(c4lex5, c4, '0', c4cat3, means14, constant, nil).
+
+/*1 (Way Station)*/
+do_add_lexeme(c4lex6, c4, '1', c4cat3, means15, constant, nil).
+
+/*2 (Way Station)*/
+do_add_lexeme(c4lex7, c4, '2', c4cat3, means16, constant, nil).
+
+/*0 (Science Station)*/
+do_add_lexeme(c4lex9, c4, '0', c4cat4, means18, constant, nil).
+
+/*1 (Science Station)*/
+do_add_lexeme(c4lex10, c4, '1', c4cat4, means19, constant, nil).
+
+
+/*---- Relations ----*/
+/*loc*/
+do_add_lexeme(c4lex4, c4, loc, c4cat2, nil, nil, c4theta1).
+

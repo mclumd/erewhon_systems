@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repository/alfred/!svn/ver/1/src
+END
+test_lexeme_builder.al
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repository/alfred/!svn/ver/3/src/test_lexeme_builder.al
+END
+rover_domain.al
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/3/src/rover_domain.al
+END
+lexeme_speller.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/alfred/!svn/ver/1/src/lexeme_speller.pl
+END
+test_equal_num.al
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/alfred/!svn/ver/3/src/test_equal_num.al
+END
+routines.pl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repository/alfred/!svn/ver/1/src/routines.pl
+END
+unification.pl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/1/src/unification.pl
+END
+test_token_utt_comma.al
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/3/src/test_token_utt_comma.al
+END
+test_unification2.al
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/3/src/test_unification2.al
+END
+test_random_id.al
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/alfred/!svn/ver/3/src/test_random_id.al
+END
+plane_domain_grammar.al
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/3/src/plane_domain_grammar.al
+END
+combinatorial_rule_builder.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/alfred/!svn/ver/1/src/combinatorial_rule_builder.pl
+END
+test_append_list.al
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/3/src/test_append_list.al
+END
+unique_id.pl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/1/src/unique_id.pl
+END
+executor_skeleton.al
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/3/src/executor_skeleton.al
+END
+main.pl
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/1/src/main.pl
+END
+test_unique_id2.al
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repository/alfred/!svn/ver/3/src/test_unique_id2.al
+END
+test_unique_id_prolog.al
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/3/src/test_unique_id_prolog.al
+END
+test_bif_bs_2.al
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repository/alfred/!svn/ver/3/src/test_bif_bs_2.al
+END
+test_neg_intospection.al
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/3/src/test_neg_intospection.al
+END
+test_bif_bs3.al
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/3/src/test_bif_bs3.al
+END
+linking_rule_builder.pl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/src/linking_rule_builder.pl
+END
+test_unification.al
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/3/src/test_unification.al
+END
+node_builder.pl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/1/src/node_builder.pl
+END
+change_domain.al
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repository/alfred/!svn/ver/3/src/change_domain.al
+END
+test_tcp_io.al
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/3/src/test_tcp_io.al
+END
+test_print_to_UI3.al
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/3/src/test_print_to_UI3.al
+END
+test_unique_id.al
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/alfred/!svn/ver/3/src/test_unique_id.al
+END
+main.al
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/3/src/main.al
+END
+test_print_to_UI.al
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/3/src/test_print_to_UI.al
+END
+token_utt.pl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/1/src/token_utt.pl
+END
+subsume.pl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repository/alfred/!svn/ver/1/src/subsume.pl
+END
+test_list_is_not_empty.al
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/3/src/test_list_is_not_empty.al
+END
+token_utt_comma.pl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repository/alfred/!svn/ver/1/src/token_utt_comma.pl
+END
+test_addition.pl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repository/alfred/!svn/ver/1/src/test_addition.pl
+END
+test_print_to_UI2.al
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/3/src/test_print_to_UI2.al
+END
+test_assert_dags.pl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/1/src/test_assert_dags.pl
+END
+test_load.al
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/3/src/test_load.al
+END
+dag_asserter.pl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/1/src/dag_asserter.pl
+END
+test_main.al
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/3/src/test_main.al
+END
+test_is_list_empty.al
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/alfred/!svn/ver/3/src/test_is_list_empty.al
+END
+test_bif_bs.al
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/3/src/test_bif_bs.al
+END

@@ -1,0 +1,122 @@
+Planesh
+=======
+
+Commands
+--------
+report
+circle
+move
+disconnect
+increase
+decrease
+close
+land
+
+Arguments
+---------
+	- Objects
+		- ID #s
+			- Planes
+				- [...]
+			- Approach paths
+				- [...]
+			- Status
+				- [...]
+		- Parameters
+			- directions
+				- north
+				- south
+				- east
+				- west
+			- plane measurements
+				- speed [PlaneID]
+				- position [PlaneID]
+				- positionxyz [PlaneID]
+				- altitude [PlaneID]
+			- all
+			- grammar
+	- Measures
+		- radius [Number]
+		- speed [Number]
+		- height [Number]
+	- Numbers
+
+Rules
+-----
+
+S -> CP
+CP -> C.PID
+CP -> C.AID
+CP -> C.all
+CP -> C.direction
+
+CP -> CP.RP
+CP -> CP.HP
+
+RP -> radius#
+HP -> height#
+
+CP -> C.ParaP
+ParaP -> Para.ID
+CP -> C.speed.PID.spP
+spP -> xv.yv.zv
+CP -> C.PIP
+PIP -> Planeids
+PIP -> PIP.RadiusP
+PIP -> PIP.AppP
+PIP -> PIP.StatusP
+
+StatusP -> Status
+
+CP -> C.grammar
+CP -> C.approachids
+CP -> C.spP
+
+spP -> speedz.VelP
+VelP -> PID.Vel
+
+Remaining:
+----------
+
+S
+	- increase/decrease
+	- speedz
+	- VelP
+
+Vel
+	- xv
+	- yv
+	- zv
+
+S
+	- increase/decrease
+	- speedz
+	- planeID
+		- [...]
+	- directionP
+		- direction
+			- x
+			- y
+			- z
+		- speed
+			- v
+
+
+English
+=======
+S -> VP
+VP -> V.NP
+NP -> N
+3DNumP -> Num.Num.Num
+NP -> NP.PP
+PP -> P.NP
+NP -> N.PP
+VP -> V.NP.PP
+NP -> N.Num
+
+Categories (Parts of Speech):
+=============================
+Verb e.g. : disconnect, circle, report, land
+Noun e.g. : PID, Planes, radius, grammar 
+Proposition e.g. : in, with
+Number

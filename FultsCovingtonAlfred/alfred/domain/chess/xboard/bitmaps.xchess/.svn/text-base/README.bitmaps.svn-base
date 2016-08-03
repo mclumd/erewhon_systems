@@ -1,0 +1,8 @@
+The 80x80 bitmaps in this directory are taken from the XChess program,
+which was written and is copyrighted by Wayne Christopher.
+
+The 64x64 set and 40x40 set were derived by scaling the 80x80 set and
+touching up the results by hand with a bitmap editor.  icon_white.bm
+and icon_black.bm are 32x32 knights made in the same way.
+checkmark.bm is a copy of the xlogo11 bitmap from the MIT X
+distribution.

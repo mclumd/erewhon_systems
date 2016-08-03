@@ -1,0 +1,187 @@
+
+step(1)
+add(now(1))  2  []
+add(unify_dags(X1, X2) -f-> conclusion(call(ac_unification_dags(X1, X2), [X1, X2])))  1  []
+add(unify_dags([cat:np, num:sg, X3], [cat:np, X4]))  0  []
+End of Step----------------------------------
+
+step(2)
+add(now(2))  4  []
+add(call(ac_unification_dags([cat:np, num:sg, X5], [cat:np, X6]), [[cat:np, num:sg, X5], [cat:np, X6]]))  3  [[1,0]]
+delete(now(1))  2  []
+End of Step----------------------------------
+
+step(3)
+add(now(3))  6  []
+add(doing(ac_unification_dags([cat:np, num:sg, X7], [cat:np, X8]), [[cat:np, num:sg, X7], [cat:np, X8]]))  5  []
+delete(now(2))  4  []
+End of Step----------------------------------
+
+step(4)
+add(failed(ac_unification_dags([cat:np, num:sg, X9], [cat:np, X10]), [[cat:np, num:sg, X9], [cat:np, X10]]))  14  []
+add(done_unify_2([:(cat, np), :(num, sg), :(abc, de), X11], [:(cat, np), :(abc, de), :(num, sg), X11]))  13  []
+add(trying_to([:(abc, de), X12]))  12  []
+add(trying_to([:(cat, np), :(abc, de), X13]))  11  []
+add(doing_unify_2([:(cat, np), :(num, sg), X14], [:(cat, np), :(abc, de), X15]))  10  []
+add(done_unify_1([:(cat, np), :(num, sg), X16], [:(cat, np), :(num, sg), X16]))  9  []
+add(trying2([cat:np, num:sg, X17], [cat:np, X18]))  8  []
+add(now(4))  7  []
+delete(doing(ac_unification_dags([cat:np, num:sg, X19], [cat:np, X20]), [[cat:np, num:sg, X19], [cat:np, X20]]))  5  []
+delete(now(3))  6  []
+End of Step----------------------------------
+
+step(5)
+add(idling(5))  16  []
+add(now(5))  15  []
+delete(now(4))  7  []
+End of Step----------------------------------
+
+step(6)
+add(idling(6))  18  []
+add(now(6))  17  []
+delete(now(5))  15  []
+End of Step----------------------------------
+
+step(7)
+add(idling(7))  20  []
+add(now(7))  19  []
+delete(now(6))  17  []
+End of Step----------------------------------
+
+step(8)
+add(idling(8))  22  []
+add(now(8))  21  []
+delete(now(7))  19  []
+End of Step----------------------------------
+
+step(9)
+add(idling(9))  24  []
+add(now(9))  23  []
+delete(now(8))  21  []
+End of Step----------------------------------
+
+step(10)
+add(idling(10))  26  []
+add(now(10))  25  []
+delete(now(9))  23  []
+End of Step----------------------------------
+
+step(11)
+add(idling(11))  28  []
+add(now(11))  27  []
+delete(now(10))  25  []
+End of Step----------------------------------
+
+step(12)
+add(idling(12))  30  []
+add(now(12))  29  []
+delete(now(11))  27  []
+End of Step----------------------------------
+
+step(13)
+add(idling(13))  32  []
+add(now(13))  31  []
+delete(now(12))  29  []
+End of Step----------------------------------
+
+step(14)
+add(idling(14))  34  []
+add(now(14))  33  []
+delete(now(13))  31  []
+End of Step----------------------------------
+
+step(15)
+add(idling(15))  36  []
+add(now(15))  35  []
+delete(now(14))  33  []
+End of Step----------------------------------
+
+step(16)
+add(idling(16))  38  []
+add(now(16))  37  []
+delete(now(15))  35  []
+End of Step----------------------------------
+
+step(17)
+add(idling(17))  40  []
+add(now(17))  39  []
+delete(now(16))  37  []
+End of Step----------------------------------
+
+step(18)
+add(idling(18))  42  []
+add(now(18))  41  []
+delete(now(17))  39  []
+End of Step----------------------------------
+
+step(19)
+add(idling(19))  44  []
+add(now(19))  43  []
+delete(now(18))  41  []
+End of Step----------------------------------
+
+step(20)
+add(idling(20))  46  []
+add(now(20))  45  []
+delete(now(19))  43  []
+End of Step----------------------------------
+
+step(21)
+add(idling(21))  48  []
+add(now(21))  47  []
+delete(now(20))  45  []
+End of Step----------------------------------
+
+step(22)
+add(idling(22))  50  []
+add(now(22))  49  []
+delete(now(21))  47  []
+End of Step----------------------------------
+
+step(23)
+add(idling(23))  52  []
+add(now(23))  51  []
+delete(now(22))  49  []
+End of Step----------------------------------
+
+step(24)
+add(idling(24))  54  []
+add(now(24))  53  []
+delete(now(23))  51  []
+End of Step----------------------------------
+
+step(25)
+add(idling(25))  56  []
+add(now(25))  55  []
+delete(now(24))  53  []
+End of Step----------------------------------
+
+step(26)
+add(idling(26))  58  []
+add(now(26))  57  []
+delete(now(25))  55  []
+End of Step----------------------------------
+
+step(27)
+add(idling(27))  60  []
+add(now(27))  59  []
+delete(now(26))  57  []
+End of Step----------------------------------
+
+step(28)
+add(idling(28))  62  []
+add(now(28))  61  []
+delete(now(27))  59  []
+End of Step----------------------------------
+
+step(29)
+add(idling(29))  64  []
+add(now(29))  63  []
+delete(now(28))  61  []
+End of Step----------------------------------
+
+step(30)
+add(idling(30))  66  []
+add(now(30))  65  []
+delete(now(29))  63  []
+End of Step----------------------------------

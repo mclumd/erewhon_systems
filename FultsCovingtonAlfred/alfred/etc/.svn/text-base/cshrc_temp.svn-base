@@ -1,0 +1,70 @@
+# This is your .cshrc file. This is read in whenever you start up a new
+# csh. If running this file causes any output, things like rsh or rdist
+# may stop working.
+#
+# If you mess up this file, you can find a fresh copy of it in
+# /fs/domain/lib/addskel
+# 
+
+# for architecture dependencies, if needed.
+switch ( `uname -s` ) 
+case "SunOS":
+	# Solaris 2.X specifics.  Added 7/21/95
+	#
+	# We strongly encourage use of /usr/lang ANSI compilers by putting
+	#   /usr/lang into path before /usr/ucb.
+	# The 4.2 BSD compat libraries, used with the C compiler in /usr/ucb,
+	#   are reputedly broken in subtle ways and will disappear in the
+	#   future.
+	# put /usr/ucb before /usr/bin to get BSD-ish user command interface.
+	#   If you want the System V command interface, put /usr/bin before
+	#   /usr/ucb or remove /usr/ucb from your path entirely.
+    	set path=( ~/bin /usr/imports/bin /usr/local/bin /usr/openwin/bin \
+		   /usr/imports/bin/X11 /usr/lang /usr/ucb /usr/bin \
+		   /usr/imports/bin/mh /usr/games /usr/X11R6/bin .)
+    	if (! $?_ARCH) then
+		setenv _ARCH `/usr/ucb/arch`
+    	endif
+breaksw
+case "Linux":
+	# Linux specific entires go here
+                if ($?LD_LIBRARY_PATH) then
+                        setenv LD_LIBRARY_PATH "/fs/metacog/group/mcl/lib:/fs/metacog/group/robotics/player/lib:${LD_LIBRARY_PATH}"
+                else
+                        setenv LD_LIBRARY_PATH "/fs/metacog/group/mcl/lib:/fs/metacog/group/robotics/player/lib"
+                endif
+
+		if ($?PATH) then
+			# setenv PATH "${PATH}:/usr/X11R6/bin:/usr/local/bin"
+			setenv PATH "/usr/local/jdk1.6.0/bin:${PATH}:/usr/X11R6/bin:/usr/local/bin"
+		else
+			#setenv PATH "/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin"
+			setenv PATH "/usr/local/jdk1.6.0/bin:/bin:/usr/bin:/usr/X11R6/bin:/usr/local/bin"
+		endif
+breaksw
+default:
+	# Anything that is not a Sun and not linux gets this path
+	set path=( ~/bin /usr/imports/bin /usr/local/bin /usr/imports/bin/X11 /usr/ucb /bin /usr/bin /usr/lang /usr/imports/bin/mh /usr/games .)
+
+endsw	# end switch
+
+# What kind of machine are we on?
+    	if (! $?_ARCH) then
+		if (-x /bin/arch) then
+	   		setenv _ARCH `/bin/arch`
+		else
+	   		setenv _ARCH `machine`
+		endif
+    	endif
+endif
+
+# Add an architecture-specific directory to your path. This way you can
+# put your own SPARCstation binaries in ~/bin/sun4, Linux binaries in 
+# ~/bin/i686, etc.  
+set path=( ~/bin/$_ARCH $path /export/home/scott/bin . )
+set history=20 noclobber
+alias rm 'rm -i'
+umask 077
+set filec
+set prompt='%n@%m:%c%# '
+setenv TEXTINPUTS .:$HOME/texstyles

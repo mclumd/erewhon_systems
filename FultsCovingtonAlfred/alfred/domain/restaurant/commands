@@ -1,0 +1,25 @@
+Use this guideline to create commands for your program
+
+inputs
+[[display, cuisines, all]]
+[[display, restaurants, all]]
+[[display, restaurants, food_type]]
+[[display, restaurants, cuisine]]
+[[display, menu, restaurant_name]] 
+[[display, order, total]]
+[[choose, item_name, item_qty]] 
+[[cancel_order]]
+[[quit]]
+[[quit, any_strings]]
+
+output
+[[display, choose_name]]
+[[display, choose_qty]]
+
+
+
+
+Put the following in a file called dd.pl/
+isa(food_type, chicken).
+isa(cuisine, chinese).
+isa(item_name, pizza).

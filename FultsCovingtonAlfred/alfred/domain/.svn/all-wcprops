@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repository/alfred/!svn/ver/1/domain
+END
+rd.trains
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/1/domain/rd.trains
+END
+rd.movies
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/alfred/!svn/ver/1/domain/rd.movies
+END
+rd.email
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repository/alfred/!svn/ver/1/domain/rd.email
+END

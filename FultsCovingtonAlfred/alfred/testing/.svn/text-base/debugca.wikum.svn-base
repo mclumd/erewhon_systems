@@ -1,0 +1,22 @@
+Args: [sfile,/fs/metacog/group/wikum/linAlfred_wikum/etc/hostfile.wikum,delay,0,load,/fs/metacog/group/wikum/linAlfred_wikum/src/main.pl,debug,/fs/metacog/group/wikum/linAlfred_wikum/log/debugca.wikum]Received: call(ac_unification_dags([cat:np,num:sg,_7157],[cat:np,_7162]),[[cat:np,num:sg,_7157],[cat:np,_7162]])
+17:11:33:883910
+memory[540796,64132]
+global_stack[25784,101108]
+local_stack[628,64880]
+atoms[2189,52472,48024]
+Received: _7212
+17:11:33:884135
+Sending af(trying2([cat:np,num:sg,_7157],[cat:np,_7162]))
+17:11:33:884192
+Sending af(done_unify_1([cat:np,num:sg|_7359],[cat:np,num:sg|_7359]))
+17:11:33:884376
+Sending af(doing_unify_2([cat:np,num:sg|_7359],[cat:np,abc:de|_7751]))
+17:11:33:884496
+Sending af(trying_to([cat:np,abc:de|_7751]))
+17:11:33:884599
+Sending af(trying_to([abc:de|_7751]))
+17:11:33:884695
+Sending af(done_unify_2([cat:np,num:sg,abc:de|_9027],[cat:np,abc:de,num:sg|_9027]))
+17:11:33:884828
+failed(call(ac_unification_dags([cat:np,num:sg,_7157],[cat:np,_7162]),[[cat:np,num:sg,_7157],[cat:np,_7162]]),ac_unification_dags([cat:np,num:sg,_7157],[cat:np,_7162]))
+17:11:33:884953

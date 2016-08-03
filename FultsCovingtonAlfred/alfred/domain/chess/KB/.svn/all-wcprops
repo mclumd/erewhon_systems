@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repository/alfred/!svn/ver/1/domain/chess/KB
+END
+dd.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/alfred/!svn/ver/1/domain/chess/KB/dd.pl
+END
+acommandbase.pl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/KB/acommandbase.pl
+END
+dcommandbase.pl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/KB/dcommandbase.pl
+END

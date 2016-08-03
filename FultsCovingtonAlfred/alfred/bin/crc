@@ -1,0 +1,15 @@
+#! /usr/local/bin/tcsh -f
+
+# "Compile and run Carne" -- M. Covington 2010
+
+setenv ALFRED_BASE /fs/erewhon/covington/alfred
+setenv CARNE_BASE $ALFRED_BASE/Carne
+
+#$CARNE_BASE/carne sfile $ALFRED_BASE/etc/hostfile.$LOGNAME delay 0 load $ALFRED_BASE/src/main.pl debug $ALFRED_BASE/log/debugca.$LOGNAME
+
+cd $CARNE_BASE
+echo "Compiling and running Carne..."
+prolog +l carne-wrapper.pl +z  sfile $ALFRED_BASE/etc/hostfile.$LOGNAME delay 0 load $ALFRED_BASE/src/main.pl debug $ALFRED_BASE/log/debugca.$LOGNAME
+
+#inkqml false
+

@@ -1,0 +1,3 @@
+port 8400
+host localhost
+process 5554
