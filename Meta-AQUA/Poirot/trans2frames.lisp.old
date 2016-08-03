@@ -1,0 +1,78 @@
+(in-package :user)
+
+(use-package :poirot-connector)
+
+
+
+;;; The file rdf.cl defines the global variable *bb* within the connector code.
+;;;
+;;; (defvar *bb* nil "The parsed Semantic Trace from the Black Board")
+
+;;; 
+;;; Function process-results represents the code to translate POIROT SWS
+;;; invocations into Meta-AQUA frame representations (see rep_poirot.lisp).
+;;; 
+;;; We need to create something similar to the hand-coded example in
+;;; homework.lisp. 
+;;; 
+(defun process-results (app results &aux temp bb)
+  "Returns a processed list of results"
+  (format t "Processing...~%")
+  (dolist (result results)
+    (format t "Result: ~A~%" result)
+    ;; Query for all triples in the context
+    ;; We're assuming here that the results are a list of semantic trace URIs
+    ;; The semantic trace uri also serves as the context on the blackboard
+    (format 
+     t 
+     "Query Result: ~A~%" 
+     (convert-subscription-result-list 
+      (coerce 
+       (setf temp
+	 (parse-trace 
+	  (coerce (execute-query 
+		   app
+		   nil nil nil 
+		   (first result))
+		  'list)))
+       'vector)
+      3))
+    (setf bb (append bb (convert2triples temp)))
+    )
+  (sleep 2)
+  (mapcar #'(lambda (x) 
+	      (show-SWS-call 
+	       x bb t))
+	  (show-SWSs bb))
+  (format t "Finished Input Processing~%")
+  bb
+  )
+
+
+;;; Obsolete.
+(defun test-Meta-AQUA  (results)
+  (format 
+   t 
+   "~%The Semantic Trace as seen by Meta-AQUA is :~%~s~%" 
+   results)
+  ;; Function process-results re-defined 
+  ;; in trans2frames.lisp
+  (process-results 
+   results
+   ;;(get-new-subscription-results)
+   )
+  (in-package :meta-aqua)
+  (meta-AQUA::Meta-AQUA t)
+  (in-package :poirot-connector)
+  (gen-hypo)
+  (done-processing)
+  )
+
+
+;;; Obsolete.
+(defun init-My-Component ()
+  "Function called upon hitting Run button in POIROT debugger"
+  (was-loaded)
+  (init-Meta-AQUA)
+  (meta-aqua::set-story-21)
+  )

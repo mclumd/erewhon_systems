@@ -1,0 +1,638 @@
+<P><A HREF="git-cc-96-06.book.html"><IMG SRC="fm2html-toc.gif">Table of Contents</A>
+<A HREF="appendix-c.html"><IMG SRC="fm2html-previous.gif">Previous Chapter</A>
+<!-- This file was created with the fm2html filter.
+The filter is copyright Norwegian Telecom Research and
+was programmed by Jon Stephenson von Tetzchner. -->
+
+<TITLE>Introspective - APPENDIX D </TITLE>
+
+<H2><A NAME="REF52678"> APPENDIX D </A><BR>
+<A NAME="REF85834">  META-AQUA OUTPUT IN LISP PROGRAMMING MODE</A></H2>
+
+
+<CODE>
+Begin Meta-AQUA.<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: EACH-ONE-GREATER.241<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: EACH-ONE-GREATER.241<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+Retrieving plan for concept EACH-ONE-GREATER.241<P>
+Produced plan: RECURSIVE-PROGRAMMING-PLAN.462.<P>
+Continue ? (Y or N) Yes.<P>
+Actor PERSON.0 performs act WRITE-DEFUN.229<P>
+and expects result NIL<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: WRITE-DEFUN.229<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+WRITE-DEFUN.229 is not a very interesting concept.<P>
+Skimming . . .<P>
+
+Continue ? (Y or N) Yes.<P>
+Actor PERSON.0 performs act WRITE-NAME.230<P>
+and expects result NIL<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: WRITE-NAME.230<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+WRITE-NAME.230 is not a very interesting concept.<P>
+Skimming . . .<P>
+Continue ? (Y or N) Yes.<P>
+Actor PERSON.0 performs act ADD-PARAMETERS.231<P>
+and expects result NIL<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: ADD-PARAMETERS.231<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+ADD-PARAMETERS.231 is not a very interesting concept.<P>
+Skimming . . .<P>
+Continue ? (Y or N) Yes.<P>
+Actor PERSON.0 performs act WRITE-BODY.232<P>
+and expects result NEWLY-LEARNED-ADD1NUMS-DEFUN.228<P>
+LISP simulator provides alternative solution <P>
+RECURSIVE-ADD1NUMS-DEFUN.1110<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: WRITE-BODY.232<P>
+NIL<P>
+
+Continue ? (Y or N) Yes.<P>
+;Now the following should actually be interesting to the program.<P>
+WRITE-BODY.232 is not a very interesting concept.<P>
+Skimming . . .<P>
+Continue ? (Y or N) Yes.<P>
+Continue ? (Y or N) Yes.<P>
+Input Structure: EACH-ONE-GREATER.226<P>
+NIL<P>
+Continue ? (Y or N) Yes.<P>
+EACH-ONE-GREATER.226 is not a very interesting concept.<P>
+Skimming . . .<P>
+Continue ? (Y or N) No.<P>
+Done.<P>
+LISP-PROGRAMMING<P>
+Command: <P>
+;The following would be the result of the rough comparison. <P>
+;It creates the expectation-failure knowledge structure.<P>
+Command: (compare 'NEWLY-LEARNED-ADD1NUMS-DEFUN.2280<P>
+                  'RECURSIVE-ADD1NUMS-DEFUN.1110 <P>
+                  'goal.524) <P>
+ <P>
+MENTALLY-INITIATES.1632<P>
+;Pretty print it two levels deep.<P>
+Command: (f.pprint 'mentally-initiates.1632 2)<P>
+Frame MENTALLY-INITIATES.1632 has the following value:<P>
+(INITIATES<P>
+   (DOMAIN NOT-EQUAL-RELATION.1633)<P>
+   (CO-DOMAIN EXPECTATION-FAILURE.1634)<P>
+)<P>
+Frame NOT-EQUAL-RELATION.1633 has the following value:<P>
+
+(RELATION<P>
+   (DOMAIN NEWLY-LEARNED-ADD1NUMS-DEFUN.228)<P>
+   (CO-DOMAIN RECURSIVE-ADD1NUMS-DEFUN.1110)<P>
+)<P>
+Frame EXPECTATION-FAILURE.1634 has the following value:<P>
+(COMMISSION-ERROR<P>
+   (INITIATES- NOT-EQUAL-RELATION.1633)<P>
+   (EXPECTED-OUTCOME RECURSIVE-ADD1NUMS-DEFUN.1110)<P>
+   (ACTUAL-OUTCOME NEWLY-LEARNED-ADD1NUMS-DEFUN.228)<P>
+)<P>
+NIL<P>
+;The following would represent the fine level comparison<P>
+;from the reflect on error strategy. Note that it actually <P>
+;localizes the specific difference that caused the failure:<P>
+;The subject did not make a recursive call to the add1nums function.<P>
+Command: (f.unify 'NEWLY-LEARNED-ADD1NUMS-DEFUN.228 <P>
+                  'RECURSIVE-ADD1NUMS-DEFUN.1110)<P>
+Unification fails.<P>
+Attempt to merge LIST-OP.501 and RECURSIVE-ADD1NUMS-DEFUN.1121<P>
+  along path (BODY SCENES ACTION-CLAUSES OLD-LIST)<P>
+  during unify call on NEWLY-LEARNED-ADD1NUMS-DEFUN.228 <P>
+                      and RECURSIVE-ADD1NUMS-DEFUN.1110.<P>
+Do you wish to BREAK ? (Y or N) No.<P>
+NIL<P>
+(LIST-OP.501 RECURSIVE-ADD1NUMS-DEFUN.1121)<P>
+(BODY SCENES ACTION-CLAUSES OLD-LIST)<P>
+Command: <P>
+;The following is a trace of goals in the priority queue.<P>
+Goal Queue  --&gt; (GOAL.245)<P>
+Next Goal   --&gt; GOAL.245<P>
+Frame GOAL.245 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+
+   (GOAL-OBJECT WANTS.244)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.0)<P>
+   (PRIORITY SIX.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN WANTS.244)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.256)<P>
+   (BACKPTR PLAN.257)<P>
+   (MXP TRACE-META-XP.258)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 WANTS EACH-ONE-GRE<P>
+ATER.241<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.319<P>
+Frame GOAL.319 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.318)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.320)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.318)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.332)<P>
+   (BACKPTR PLAN.333)<P>
+   (MXP TRACE-META-XP.334)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID EACH-ONE-GREATE<P>
+R.241<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.402<P>
+Frame GOAL.402 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT GENERATE.401)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.403)<P>
+
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN GENERATE.401)<P>
+   (SUPERGOAL GOAL.319)<P>
+   (GOAL-VALUE AMOUNT-VALUE.415)<P>
+   (BACKPTR PLAN.416)<P>
+   (MXP TRACE-META-XP.417)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 GENERATE EACH-ONE-<P>
+GREATER.241<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.582 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.582<P>
+Frame GOAL.582 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.581)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.58<P>
+
+3)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.581)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.595)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS WRITE-<P>
+DEFUN.229<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.658 GOAL.582<P>
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.658<P>
+Frame GOAL.658 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.657)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.65<P>
+9)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.657)<P>
+   (SUPERGOAL GOAL.582)<P>
+   (GOAL-VALUE AMOUNT-VALUE.671)<P>
+   (BACKPTR PLAN.672)<P>
+   (MXP TRACE-META-XP.673)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID WRITE-DEFUN.229<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.759 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.759<P>
+Frame GOAL.759 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.758)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.76<P>
+0)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.758)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.772)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS WRITE-<P>
+NAME.230<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.834 GOAL.759<P>
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.834<P>
+Frame GOAL.834 has the following value:<P>
+(MENTAL-STATE<P>
+
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.833)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.83<P>
+5)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.833)<P>
+   (SUPERGOAL GOAL.759)<P>
+   (GOAL-VALUE AMOUNT-VALUE.847)<P>
+   (BACKPTR PLAN.848)<P>
+   (MXP TRACE-META-XP.849)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID WRITE-NAME.230<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.935 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.935<P>
+Frame GOAL.935 has the following value:<P>
+(MENTAL-STATE<P>
+
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.934)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.93<P>
+6)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.934)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.948)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS ADD-PA<P>
+RAMETERS.231<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1010 GOAL.935<P>
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1010<P>
+Frame GOAL.1010 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.1009)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.10<P>
+11)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.1009)<P>
+   (SUPERGOAL GOAL.935)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1023)<P>
+   (BACKPTR PLAN.1024)<P>
+   (MXP TRACE-META-XP.1025)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID ADD-PARAMETERS.<P>
+231<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1124 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1124<P>
+Frame GOAL.1124 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.1123)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.11<P>
+25)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.1123)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1137)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS WRITE-<P>
+BODY.232<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1200 GOAL.1124<P>
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1200<P>
+
+Frame GOAL.1200 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.1199)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.12<P>
+01)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.1199)<P>
+   (SUPERGOAL GOAL.1124)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1213)<P>
+   (BACKPTR PLAN.1214)<P>
+   (MXP TRACE-META-XP.1215)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID WRITE-BODY.232<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1302 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1302<P>
+
+Frame GOAL.1302 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.1301)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.13<P>
+03)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.1301)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1315)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS EACH-O<P>
+NE-GREATER.226<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1376 GOAL.1302<P>
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1376<P>
+Frame GOAL.1376 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.1375)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.13<P>
+77)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.1375)<P>
+   (SUPERGOAL GOAL.1302)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1389)<P>
+   (BACKPTR PLAN.1390)<P>
+   (MXP TRACE-META-XP.1391)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID EACH-ONE-GREATE<P>
+R.226<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1479 GOAL.524<P>
+                 GOAL.402 GOAL.319<P>
+                 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1479<P>
+Frame GOAL.1479 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT UNDERSTANDS.1478)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.14<P>
+80)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN UNDERSTANDS.1478)<P>
+   (SUPERGOAL NIL.0)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1492)<P>
+   (BACKPTR RECURSIVE-PROGRAMMING-PLAN.462)<P>
+   (MXP NIL.0)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 UNDERSTANDS EACH-O<P>
+NE-GREATER.226<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.1553 GOAL.1479<P>
+
+                 GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.1553<P>
+Frame GOAL.1553 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT ID.1552)<P>
+   (GOAL-TYPE KNOWLEDGE-ACQUISITION-GOAL.15<P>
+54)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN ID.1552)<P>
+   (SUPERGOAL GOAL.1479)<P>
+   (GOAL-VALUE AMOUNT-VALUE.1566)<P>
+   (BACKPTR PLAN.1567)<P>
+   (MXP TRACE-META-XP.1568)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 ID EACH-ONE-GREATE<P>
+R.226<P>
+-------------------------------------------<P>
+Goal Queue  --&gt; (GOAL.524 GOAL.402<P>
+                 GOAL.319 GOAL.245)<P>
+Next Goal   --&gt; GOAL.524<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+Goal-State  --&gt; PERSON.0 TEST RECURSIVE-PRO<P>
+GRAMMING-PLAN.462<P>
+-------------------------------------------<P>
+
+WORLD MODEL<P>
+-&gt; WRITE-DEFUN.229<P>
+-&gt; WRITE-NAME.230<P>
+-&gt; ADD-PARAMETERS.231<P>
+-&gt; WRITE-BODY.232<P>
+-&gt; NEWLY-LEARNED-ADD1NUMS-DEFUN.228<P>
+-&gt; RECURSIVE-ADD1NUMS-DEFUN.1110<P>
+-&gt; EACH-ONE-GREATER.226<P>
+REASONING MODEL<P>
+-&gt; TRACE-META-XP.258<P>
+-&gt; TRACE-META-XP.539<P>
+-&gt; NIL.0<P>
+-&gt; NIL.0<P>
+-&gt; NIL.0<P>
+-&gt; NIL.0<P>
+-&gt; NIL.0<P>
+-&gt; NIL.0<P>
+Print IMXP ? (Y or N) No.<P>
+Command: (f.pprint 'goal.524)<P>
+Frame GOAL.524 has the following value:<P>
+(MENTAL-STATE<P>
+   (GOAL-ACTOR PERSON.0)<P>
+   (GOAL-OBJECT TEST.523)<P>
+   (GOAL-TYPE ACHIEVEMENT-GOAL.525)<P>
+   (PRIORITY SEVEN.0)<P>
+   (ACHIEVED FALSE.0)<P>
+   (DOMAIN PERSON.0)<P>
+   (CO-DOMAIN TEST.523)<P>
+   (SUPERGOAL GOAL.402)<P>
+   (GOAL-VALUE AMOUNT-VALUE.537)<P>
+   (BACKPTR PLAN.538)<P>
+   (MXP TRACE-META-XP.539)<P>
+)<P>
+NIL<P>
+Command: <P></CODE>
+
+<P><A HREF="git-cc-96-06.book.html"><IMG SRC="fm2html-toc.gif">Table of Contents</A>
+<A HREF="references.html"><IMG SRC="fm2html-next.gif">Next Chapter</A>
+
+<HR>
+
+<A HREF="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/cox.html"><IMG
+ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/home2.gif"></A>
+
+<A HREF="http://www.cc.gatech.edu/cogsci">
+<IMG ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/cogsci-granite3.gif"></A>

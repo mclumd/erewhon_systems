@@ -1,0 +1,92 @@
+(in-package :user)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 
+;;;; Loader file for Meta-AQUA stub
+;;;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;; Demo Procedure:
+;;; (0.)Create an Allegro init file .clinit.cl 
+;;; 1.  Start Allegro CL binary
+;;; 2. Start Tomcat at default. E.g., 
+;;;    "C:\Program Files\Apache Software Foundation\Tomcat 5.5\bin\tomcat5.exe")
+;;; 3. Open browser at default E.g., http://localhost:8008/poirot-servlet/
+;;; 4. Select Debugger link, Click Run button
+;;; 5. Perform actions with POIROT interface
+;;; 6. Select Session Manager link, click 2bb button
+;;; 7. POIROT meta-controller should make available Semantic Trace 
+;;;; 
+;;;; 
+;;;; Below in comments is an example of code to place at the bottom of the
+;;;; Allegro CL initialization file .clinit.cl to establish custom bindings for
+;;;; a POIROT Lisp Component and to load the POIROT Lisp Connector files.
+;;;; 
+#|
+  (setf *poirot-lisp-connector-home* "c:/poirot/coretrunk/lisp/src/lisp/")
+  (unless (find-package "POIROT-CONNECTOR")
+    (load 
+     (concatenate 
+	 'string
+       *poirot-lisp-connector-home*
+       "poirot-connector-package"))
+    )
+  (use-package :pc)
+  ;; -----------------------------------------------------------------
+  ;; Overrides the values of the variables in file poirot-lisp.cl
+;  (setf *poirot-java-home* "c:/poirot/coretrunk/")
+  (setf *poirot-port* 9090)
+  (setf *poirot-component-name* "Meta-AQUA")
+  (setf *poirot-component-description* 
+    "Initial testing of Meta-AQUA with the lisp connector")
+  (setf *execute-callback* 
+    #'(lambda (results)
+	;;Assume you will define this function somewhere
+	(test-Meta-AQUA
+	 results)))
+  (setf *loaded-callback* 
+    #'(lambda ()
+	;;Assume you will define this function somewhere
+	(init-My-Component)))
+  (load 
+   (concatenate 
+       'string 
+     *poirot-lisp-connector-home*
+     "loader.cl"))
+;  (setf *jlinker-initialized* t)
+  (setf *poirot-lisp-component-home* "c:/Meta-AQUA/Poirot/")
+  (load (concatenate 'string *poirot-lisp-component-home* "loader.lisp"))
+|#
+
+;;; The following variable must be assigned a value in the file .clinit.cl
+;;; or some initialization file that is loaded prior to this file.
+(defvar *poirot-lisp-component-home* "")
+
+(defvar *autostart-interface* t 
+  "If t, do not prompt to load Lisp Connector code.")
+
+
+(load (concatenate 'string *poirot-lisp-component-home* "rep_poirot.lisp"))
+
+(load (concatenate 'string *poirot-lisp-component-home* "patches-poirot.lisp"))
+
+(load (concatenate 'string *poirot-lisp-component-home* "homework.lisp"))
+
+(load (concatenate 'string *poirot-lisp-component-home* "trans2frames.lisp"))
+
+(load (concatenate 'string *poirot-lisp-component-home* "hypo-form.lisp"))
+
+
+(in-package :user)
+(when (or *autostart-interface*
+	  (y-or-n-p "Start POIROT Lisp interface? "))
+  (start-poirot-connection *poirot-sample-query*)
+    (when (and (not *do-compile-Meta-AQUA*)
+	       (or *autostart-interface*
+		   (y-or-n-p "Load Meta-AQUA internal structures display?"))
+	       )
+      (load-meta-aqua-windows)
+      
+      )
+    )

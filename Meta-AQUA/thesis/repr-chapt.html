@@ -1,0 +1,356 @@
+<P><A HREF="git-cc-96-06.book.html"><IMG SRC="fm2html-toc.gif">Table of Contents</A>
+<A HREF="symptoms-chapt.html"><IMG SRC="fm2html-previous.gif">Previous Chapter</A>
+<!-- This file was created with the fm2html filter.
+The filter is copyright Norwegian Telecom Research and
+was programmed by Jon Stephenson von Tetzchner. -->
+
+<TITLE>IML - CHAPTER IV </TITLE>
+
+<H2><A NAME="REF47582"> CHAPTER IV  </A><BR>
+<A NAME="HDR0">  MENTAL STATES AND MECHANISMS: THE REPRESENTATION</A></H2>
+
+<DL>
+<DL>
+<DD><I>But the number of those which are simple and primitive is not very large.  For, in making a review of all those in which I have enumerated, we may easily notice that there are but six which are such, i.e.  wonder, love, hatred, desire, joy and sadness; and that all the others are composed of some of these six, or are species of them.  That is why, in order that their multitude may not embarrass my readers, I shall here treat the six primitive </I>passions separately; and afterwards I shall show in what way all the others derive from them their origin.  
+<P>
+<DD><I></I>_Rene Descartes, (1649/1955), p. 362. 
+<P>
+</DL>
+
+</DL>
+
+
+<P>An early tenet of artificial intelligence is that reasoning about the world is facilitated by declarative knowledge structures representing salient aspects of the world.  A declaratively represented world is easier for an intelligent system to understand and operate within than one in which knowledge is encoded procedurally or implicitly.  The system may inspect and manipulate such structures, the system can be more easily modified and maintained (by either its programmer or itself), and such representations provide computational uniformity.<A HREF="repr-chapt.html#FN1">(1)</A> Furthermore, if a system is to reason about itself, the above tenet can be applied to representations of its own reasoning and knowledge.  The aim of this chapter, therefore, is to begin to outline a declarative representation of mental activity.  The goal is to explicitly represent the mental world that reasons about the physical world, just as past research has explicitly represented the physical world itself.  Instead of representing states and events in the physical world, this chapter discusses how and at what grain level one should represent mental states and mental events.  Given such representations, learning processes such as those to be presented in <A HREF="proc-chapt.html#REF75364">Part Three</A> can better map symptoms of failure to their underlying faults (causes of failure) in support of blame assignment.  This chapter presents the representational component of our content theory based, in part, on explanation-pattern theory.  In particular, it will illustrate the concepts by assembling representations for the five failure symptom types described in the previous chapter.  
+<H3><A NAME="HDR1"> 4.1   Epistemology and Ontology</A></H3>
+<P>To support effective explanation of reasoning failure, and therefore to support learning, it is necessary to represent the thought processes and conclusions that constitute the reasoning being explained.  A large number of terms exist in the English language that concern mental activity.  Although surface features of a language utterance are not equivalent to the processes or states that may or may not lie behind a given utterance, a number of English expressions point to interesting problems for declarative representations.  A few "cognitively homogeneous" terms will be examined that generally refer only to the internal world of the reasoner, rather than the external world of physical objects and other persons.<A HREF="repr-chapt.html#FN2">(2)</A> Thus, this chapter will ignore non-cognitive mental states such as emotions (affect, e.g., fear and love).  Rather, it will focus on more simple concepts such as think, forget, and imagine, although humans are likely to think thoughts about the external world, forget to perform actions in the world, and imagine what the physical world may be like.  With such constraints, the hope is to insulate the task by avoiding consideration of the more complex terms that intertwine the internal and external worlds, and instead, attempt to sketch an ontology of mental representations and a vocabulary of the content of such representations.  
+
+<P>Many cognitive vocabularies make a prominent distinction between mental states (as knowledge or belief) and mental mechanisms (as the mental events that process knowledge or information).  For example, conceptual dependency (CD) theory (Schank, 1972, 1975) distinguishes between two sets of representations: primitive mental ACTs and mental CONCEPTUALIZATIONs upon which the ACTs operate.  In addition, the theory proposes a number of causal links that connect members of one set with members of the other.  With such building blocks, a representational language such as CD must be able to represent many process terms: think (about), remember, infer, realize and calculate; and numerous state terms: fact, belief, guess, doubt, and disbelief.  This document will refer to the execution of any mental process (or arbitrarily long string of processes) by the generic term Cognize,<A HREF="repr-chapt.html#FN3">(3)</A> and to a CONCEPTUALIZATION simply by the term State or Mental-State.  See <A HREF="repr-chapt.html#REF47714">Figure 19, "Preliminary partial ontology of mental terms,"</A><A HREF="repr-chapt.html#FN4">(4)</A> for an initial sketch of a target ontological vocabulary for mental representations.  If a reasoner is to understand its own reasoning and mental conditions in any substantial level of detail, it will require a semantic hierarchy containing representations for most of these cognitive terms.  
+<P><A HREF="repr-chapt.fig_1.ps" NAME="REF47714"><IMG SRC="repr-chapt.fig_1.gif"><P> Figure 19.  <B></B><B></B>Preliminary partial ontology of mental terms</A>
+
+
+<P>In addition to the state-process dichotomy, IML theory subdivides process terms by function into mental events that involve memory and transfer of information and those that involve computation or inference.<A HREF="repr-chapt.html#FN5">(5)</A> We associate inferential processes with logical or hypothetical reasoning.  Example terms include Hypothesize, Speculate, Deduce, Corroborate, and Postulate.  However, these inferential terms also include those that receive little attention in the AI community (e.g., Intuit).  In <A HREF="repr-chapt.html#REF47714">Figure 19</A>, inferential processes are subdivided into those driven by deliberate goals for processing (Calculate) and those in which belief is either more incidental or less exact (Realize).  
+<P>Until recently, examples of memory processes such as remember, remind, recall, recognize, and forget (but here, the lack of a process occurring) have been largely unexamined and without explicit representation.  Especially in the context of case-based reasoning or any problem solving that depends on indexed memory hierarchies to support a performance task, understanding the operation of memory can be of benefit when learning (see also Leake, 1995, Fox &amp; Leake, 1995a, 1995b, and Kennedy, 1995, for additional arguments in favor of this position).  A system that is to adjust the organization of memory will have a better chance of success if it has knowledge of the function and operation of the (cognitive) device it is changing.  Thus, for a system to understand and change its own memory effectively, it is important that the system be able to represent the memory processes explicitly.
+<H3><A NAME="HDR2"> 4.2   Granularity of Representation</A></H3>
+
+
+<P>Schank (1975) developed CD theory to account for the kinds of inferences made by speakers of natural language.  To represent language utterances, Schank composed a set of minimal conceptual primitives that would represent the interlingual basis that people used to reason when communicating, rather than simply some representation of the surface structure of language.  As an example, ATRANS does not represent particular words, although it roughly maps to an abstract transfer of objects by an agent, such as the verb "to receive" at the surface level.  The transfer of possession is not something that necessarily happens in the physical world (e.g., the transfer of ownership); rather it is an abstract social and psychological act that may or may not be accompanied by overt physical movements.  <A HREF="repr-chapt.html#REF21301">Figure 20</A> shows an example of the ATRANS representation of "John received something from Mary." The double arrow represents a two-way conceptual dependency relationship<A HREF="repr-chapt.html#FN6">(6)</A> between the agent on the left and the action on the right.  Schank postulated a set of 11 primitive ACTs to which all language utterances by speakers on nontechnical topics could be mapped.  The primitives have an important feature of canonical form; that is, all surface forms with the same meaning map to the same representation (e.g., "John received something from Mary." is equivalent to "Mary gave something to John.").  They also provide a declarative structure and the semantic inferences (e.g., Mary's object is no longer possessed by her) that provide meaning to the representation. 
+<P><A HREF="repr-chapt.fig_79.ps" NAME="REF21301"><IMG
+SRC="repr-chapt.fig_79.gif"><P> Figure 20.  CD representation of abstract
+transfer (ATRANS)</A>
+<BR>o=physical object; D=direction
+ 
+
+
+<P>Yet, many have argued that such a small set of primitives are not sufficient to represent the meaning of many common natural language utterances.  Wilensky (1986a) claims that many of the inferences made by the understanders of language are at an intermediate level of representation, rather than at a primitive level.  For instance, the inference that "if a person buys a cake, the agent probably received it from a cashier" is found at the conceptual level of "buy," rather than at the level of the ATRANS primitive in CD theory.  Nothing in the meaning of abstract transfer is specific enough to include this condition.
+
+<P>Conversely though, to represent reflexive thoughts about reasoning, complete representations for all inferences and memory processes that generate such inferences, along with a complete enumeration of all knowledge dependencies, are not required.  People certainly cannot maintain a logically complete and consistent knowledge base, nor can they perform full dependency-directed backtracking (Stallman &amp; Sussman, 1977) or reason maintenance for belief revision (Doyle, 1979); rather, they depend on failures of reasoning and memory of past errors to indicate where inconsistencies in their knowledge lie.  That is, as knowledge is locally updated, a knowledge base will often become globally inconsistent and partially obsolete.  It is at the point in which a system (either human or machine) attempts to reuse obsolete information that inconsistency becomes most apparent and further learning is enabled.<A HREF="repr-chapt.html#FN7">(7)</A> People often do know when they err if their conclusions contradict known facts, if plans go wrong, or if they forget (even if they cannot remember the forgotten item).  Representations should support such types of self-knowledge, and it is at this level of granularity that an <I>epistemologically adequate</I> (McCarthy &amp; Hayes, 1969) content theory of mental representations can be built.  
+<P>For the above reasons, capturing the full level of details concerning mental activity is not necessary, and CD's two primitives mental ACTS are not sufficient to comprise an adequate representational system that can express states and mechanisms of the mental world.  Rather, a vocabulary needs to be delivered that can minimally express the causal relationships involved in reasoning, but concurrently support the explanation of failure in sufficient detail that learning goals can be chosen.  That is, granularity is determined functionally. 
+<P><A HREF="repr-chapt.fig_43.ps" NAME="Q7TAG"><IMG SRC="repr-chapt.fig_43.gif">
+</A>
+<H3><A NAME="REF78278"> 4.3   Representing Forgetting: An example</A></H3>
+
+<P>As an example of the kinds of representations that are required for effective introspective learning, this section will consider how to represent forgetting.  The task is especially interesting since the verb forget refers to a non-event, rather than a mental process.  Issues will be addressed by considering three prevailing formalisms: logic, conceptual dependency, and explanation patterns.  This section will show that, although all three representations have expressive ability, the explanation pattern knowledge representation possesses the most straight forward means for capturing the causal structure, inferences, and meaning of the mental term forget. 
+<H4><A NAME="HDR3"> 4.3.1  Logic</A></H4>
+<P>In order to use representations of mental terms effectively, a system should consider the structure of the representation, rather than simply how a system can syntactically manipulate representations or make sound inferences from them.  In this regard, however, single logical predicates such as "forget" or "remember" are not entirely useful when trying to understand the memory failure of a person, P.  
+
+ 
+<UL>
+<LI>  Forget (P, M)</UNKNOWN><BR>
+<LI>  &#172;Remember (P, M)</UL>
+
+
+
+
+<P>Because the predicates involve memory, it is helpful to posit the existence of two contrasting sets of axioms: the background knowledge (BK), or long-term memory of the agent, P, and the foreground knowledge (FK), representing the currently conscious or active axioms of the agent.  Equation (<A HREF="repr-chapt.html#REF19356">8</A>) shows the resulting interpretation of person P forgetting memory item M.  
+<P>  (8) <A  NAME="REF19356"> <IMG SRC="repr-chapt.eq_6t.gif" ALIGN=MIDDLE></A>
+
+<P>With such a representation, one can also express the proposition that the person P knows that he has forgotten something; that is, the memory item, M, is on the tip of agent P's tongue.  P knows that M is in his background knowledge, but cannot retrieve it into his foreground knowledge: 
+<P>  (9) <IMG SRC="repr-chapt.eq_7t.gif" ALIGN=MIDDLE>
+
+
+<P>But to start to include these interpretations is to add content to the representation, rather than simply semantics.  It is part of the <I>metaphysical interpretation</I> (McCarthy &amp; Hayes, 1969) of the representation that determines an ontological category (i.e., what ought to be represented), and it begins to provide epistemological commitments (e.g., that the sets BK and FK are necessary representational distinctions).  However, meaning is not only correspondences with the world to be represented, but meaning is also determined by the inferences a system can draw from a representation (Schank, 1975).  The "forget" predicate offers little in this regard.  Moreover, this predicate will not assist a reasoning system to understand what happens when it forgets some memory item, M, nor will it help the system learn to avoid forgetting the item in the future.  Finally, because the semantics of a mental event which did not actually occur is not represented well by a simple negation of a predicate representing an event which did occur (Cox &amp; Ram, 1992a), the logical expression &#172;Remember (John, M) is essentially a vacuous proposition.  This is not to say that logic cannot represent such a mental "non-event," rather, this simply illustrates that it is not an elementary task to construct an adequate representation of forgetting and that a single logical predicate will not suffice.  
+<H4><A NAME="HDR4"> 4.3.2  Conceptual Dependency</A></H4>
+<P>An alternative representational approach was undertaken by Schank, Goldman, Rieger &amp; Riesbeck (1972) in order to specify the primitive representations for all verbs of thought in support of natural language understanding.  They wished to represent what people say about the mental world, rather than represent all facets of a complex memory and reasoning model.  They therefore used only two mental ACTS, MTRANS (mental transfer of information from one location to another) and MBUILD (mental building of conceptualizations), and a few support structures such as MLOC (mental locations, e.g., working memory, central processor and long-term memory).<A HREF="repr-chapt.html#FN8">(8)</A> 
+<P>As a consequence, the CD representation of forgetting by Schank and his colleagues is as depicted in <A HREF="repr-chapt.html#REF48193">Figure 21</A> (cf. <A HREF="repr-chapt.html#REF21301">Figure 20</A>).  John does not mentally transfer a copy of the mental object, M, from the recipient case, that of John's long-term memory, to his central processor.  Such a representation does provide more structure than the predicate forms above, and it supports inference (e.g., if M was an intention to do some action, as opposed to a proposition, then the result of such an act was not obtained; Schank, 1975, p. 60).  However, the CD formalism cannot distinguish between the case during which John forgot due to M not being in his long-term memory and a case of forgetting due to missing associations between cues in the environment and the indexes with which M was encoded in memory.  Thus, it does not provide enough information to learn from the experience. 
+<P><A HREF="repr-chapt.fig_46.ps" NAME="REF48193"><IMG
+SRC="repr-chapt.fig_46.gif"><P> Figure 21.  CD representation of forgetting</A>
+<BR>o=mental object or conceptualization; R=Recipient; <BR>
+CP=Central Processor; LTM=Long Term Memory
+
+
+
+<H4><A NAME="HDR5"> 4.3.3  Explanation Pattern Theory</A></H4>
+<P>To represents some of the nuances implied by the term forget and not easily captured by either logic or CDs, IML theory uses an extension of Explanation Pattern (XP) theory (Leake, 1992; Owens, 1990a; Ram, 1989, 1991, 1994; Schank, 1986; Schank &amp; Kass, 1990).<A HREF="repr-chapt.html#FN9">(9)</A> Essentially, XPs are directed graphs with nodes that are either states or processes and links that are either ENABLES links (connecting states with the processes for which they are preconditions), RESULTS links (connecting a process with a result), or INITIATE links (connecting two states).  The links of an XP (as we use them here) include numbering to indicate relative temporal sequence between links.  <A HREF="repr-chapt.html#REF68375">Figure 22</A><A HREF="repr-chapt.html#FN10">(10)</A> illustrates an explanation for why a volitional agent, A, performs a given action, M (i.e., it explains the actor relation of M).  The causal reason is that the agent has the goal of achieving the desired state, GS, and the agent knows that GS will results from M if he performs it (Ram, 1989).  
+<P><A HREF="repr-chapt.fig_89.ps" NAME="REF68375"><IMG
+SRC="repr-chapt.fig_89.gif"><P> Figure 22.  XP representation of
+XP-GOAL-OF-OUTCOME-&gt;ACTOR</A>
+<BR>GS=good state; MOP=memory organization package
+
+
+<P>A Meta-XP is similar to a standard XP in that it is an explanatory causal structure.  The major difference between the two is that instead of presenting a causal justification for a physical relation (such as why people look like their ancestors) or a volitional role relation (such as why a person performs a given action), a Meta-XP explains how and why an agent reasons in a particular manner.
+
+<P>The Meta-XP structure of <A HREF="repr-chapt.html#REF67088">Figure 23</A> represents a memory retrieval attempt enabled by goal, G, and context cues, C, that tried to retrieve some memory object, M, given an index, I, that did not result in an expectation (or interpretation), E, that should have been equal to some actual item, A.  The fact that E is out of the set of beliefs with respect to the reasoner's foreground knowledge (i.e., is not present in working memory) initiates the knowledge that a retrieval failure had occurred. 
+<P><A HREF="repr-chapt.fig_64.ps" NAME="REF67088"><IMG
+SRC="repr-chapt.fig_64.gif"><P> Figure 23.  Meta-XP representation of
+forgetting</A>
+<BR>A=actual; E=expected; G=goal; C=cues; M=memory item; I=memory index.
+
+
+<P>Because forgetting is not a mental event, but rather the lack of successful memory processing, challenges exist when representing it.  Forgetting can be expressed properly only if a system can represent that it does not believe a successful memory retrieval has occurred.  The belief logic of Doyle (1979) has four truth values for a given proposition "p." If p is believed then it is in the set of beliefs, whereas if p is not believed then it is out.  Conversely, the negation of the assertion of p may be either in or out of the agent's set of beliefs.  Therefore, the four truth values are p(<CODE>in</CODE>), p(<CODE>out</CODE>), &#172;p(<CODE>in</CODE>), and &#172;p(<CODE>out</CODE>).  Using these values, a system needs to be able to declare that there is a memory item that was not retrieved.  
+
+<P>The system could create a dummy concept representing the forgotten item that it believes did not result from some retrieval process.  This concept could be marked as disbelieved with the above notation, since it was not retrieved and cannot be specified by the system.  But technically, it is incorrect to assert that the concept is not believed, if it is in the system's background knowledge.  In other words, it is believed but not recalled.  Cox &amp; Ram's (1992a) response to this dilemma was first, to assume a special set of beliefs representing the working memory of the system (the FK), and then secondly, to modify Doyle's belief logic to claim belief membership with respect to a particular set of beliefs.  Thus, P, a given memory item that was not retrieved, may be in the set of beliefs with respect to the BK, written P(<CODE>in<SUB>BK</SUB></CODE>), but out of the set of beliefs with respect to the FK, written P(<CODE>out<SUB>FK</SUB></CODE>).<A HREF="repr-chapt.html#FN11">(11)</A>
+
+<P>As specified in <A HREF="repr-chapt.html#REF23471">Table 6</A>, the number of ways that the memory retrieval process may fail depends on the conditions of the nodes A, E, G, I, and M.  If the memory item, M, is not in the BK (i.e., M(<CODE>out<SUB>BK</SUB></CODE>)), then there is nothing to be retrieved.  This can occur either because there never was a concept in memory to be retrieved, or because the item was previously deleted from memory.  Ostensibly, no difference exists between the two in this representation.  For example, in the Meta-AQUA story understanding system, a novel situation exists when trying to explain a police dog barking at a passenger's luggage in the airport (<A HREF="theories-chapt.html#REF61759">Section 2.1.1</A>).  The system had previously encountered dogs barking only at animate objects, so it had no structure in memory to understand this novel event.  Although this example does not represent forgetting <I>per se</I>, in systems that delete memory items in order to facilitate learning (e.g., Markovitch and Scott, 1988; Smyth &amp; Keane, 1995), trying to retrieve a deleted item is equivalent to a novel situation from a computational perspective.
+<P><A HREF="repr-chapt.tbl_92.ps" NAME="REF23471"><IMG SRC="fm2html-table.gif"> Table 6: <B></B>Truth values of graph nodes for forgetting</A> 
+<PRE>
+--------------------------------------------------------
+     Description         A       E       G      I      M    
+--------------------------------------------------------
+Absent Memory                                             
+(Novel Situation)       <CODE>in<SUB>FK</SUB></CODE>   <CODE>out<SUB>FK</SUB></CODE>    <CODE>in<SUB>FK</SUB></CODE>   <CODE>out<SUB>BK</SUB></CODE>   <CODE>out<SUB>BK</SUB></CODE>  
+Absent Index                                              
+(Missing Association)   <CODE>in<SUB>FK</SUB></CODE>   <CODE>out<SUB>FK</SUB></CODE>    <CODE>in<SUB>FK</SUB></CODE>   <CODE>out<SUB>BK</SUB></CODE>    <CODE>in<SUB>BK</SUB></CODE>  
+Absent                                                    
+Retrieval Goal          <CODE>in</CODE><SUB>FK</SUB>   <CODE>out</CODE><SUB>FK</SUB>   <CODE>out</CODE><SUB>FK</SUB>     <CODE>X</CODE>      <CODE>X</CODE>    
+Absent                                                    
+Feedback               <CODE>out<SUB>FK</SUB></CODE>   <CODE>out<SUB>FK</SUB></CODE>     <CODE>X</CODE>       <CODE>X</CODE>      <CODE>X</CODE>   
+--------------------------------------------------------
+    X = don't care                                        
+--------------------------------------------------------
+</PRE>
+<P>A more prototypical instance of forgetting is illustrated in the second Meta-AQUA story of Chapter <A HREF="theories-chapt.html#REF97020">II</A> <A HREF="theories-chapt.html#REF97020"></A>(<A HREF="theories-chapt.html#REF42614">Section 2.1.2</A>).  The system acquires a new explanation for why dogs bark, but because it indexes it by containers, the subsequent story is not able to retrieve it given the context of a dog barking at a pile of dirty clothes (the location of the suspect's stash of contraband).  The correct index is missing and so no explanation is retrieved, although it certainly knows the correct explanation.  The node truth values on the Meta-XP representation of this event are arrayed according to the second row from the top of <A HREF="repr-chapt.html#REF23471">Table 6</A> (refer to <A HREF="repr-chapt.html#REF67088">Figure 23</A> for the corresponding nodes or peek ahead to <A HREF="repr-chapt.html#REF63691">Figure 29 on page 88</A>).
+
+<P>These tabularized values on the representation of <A HREF="repr-chapt.html#REF67088">Figure 23</A> capture an entire class of memory failures: failure due to a missing index, I; failure due to a missing object, M; failure because of a missing retrieval goal, G;<A HREF="repr-chapt.html#FN12">(12)</A> or failure due to not attending to the proper cues, C, in the environment.  Having such a declarative representation allows the system to reason about the various causes of forgetting; it can inspect the structural representation for a memory failure and therefore, analyze and consider the reasons for the memory failure.  Such an ability facilitates learning because it allows a learner to explain the reasoning failure and use the result in determining what needs to be learned.  <A HREF="repr-chapt.html#FN13">(13)</A>
+<H3><A NAME="REF62779"> 4.4   Meta-Explanation Patterns</A></H3>
+<P>In most interpretations (e.g., Kuokka, 1990, p. 5; Hayes-Roth, Waterman, &amp; Lenat, 1983, p. 402), meta-X can be translated to "X about X.  Therefore, a meta-explanation pattern (Meta-XP) is an explanation pattern about another explanation pattern.  Whereas, an Explanation Pattern (XP) is a causal structure that explains a physical state by presenting the chain of physical events causing such states, a Meta-XP is an explanation of how or why an XP is generated incorrectly or otherwise fails.<A HREF="repr-chapt.html#FN14">(14)</A> Two classes of Meta-XPs exist to facilitate a system's ability to reason about itself and to assist in selecting a learning algorithm or strategy.  A <I>Trace Meta-XP</I> (TMXP) explains <I>how</I> a system generates an explanation about the world (or itself), and an <I>Introspective Meta-XP</I> (IMXP) explains <I>why</I> the reasoning captured in a TMXP goes awry.  Thus, a TMXP records the extent of reasoning tasks and the reasons for decisions taken during processing.  An IMXP is a general causal structure that represent explanations of various the failure types from the taxonomy of Chapter <A HREF="symptoms-chapt.html#REF40941">III</A>.  The IMXP structures represent past experience of reasoning about the self (i.e., cases of meta-reasoning) and assist in forming the learning goals of the system after failure occurs.  Whereas a TMXP records the immediate mental events of the reasoner and they exist in the FK, IMXPs are retrieved from the BK and applied to TMXPs.  This case-based approach to self understanding is similar to the operations by which standard XPs are retrieved and applied to input representations for story understanding.  The same basic algorithm is used in each. 
+<P><A HREF="repr-chapt.fig_66.ps" NAME="Q5TAG"><IMG SRC="repr-chapt.fig_66.gif">
+</A>
+
+<P>Explanation patterns (XPs) are similar to justification trees, linking antecedent conditions to their consequences.  The XP is essentially a directed graph of concepts, connected with RESULTS, ENABLES and INITIATES links.  A RESULTS link connects a process with a state, while an ENABLES link connects a precondition state to a process.  An INITIATES link connects two states.  The set of sink nodes in the graph is called the PRE-XP-NODES (see <A HREF="repr-chapt.html#REF23460">Figure 24</A>).  These nodes represent what must be present in the current situation for the XP to apply.  One distinguished node in this set is called the EXPLAINS node.  It is bound to the concept which is being explained.  Source nodes are termed XP-ASSERTED-NODES.  All other nodes are INTERNAL-XP-NODES.
+<P><A HREF="repr-chapt.fig_85.ps" NAME="REF23460"><IMG
+SRC="repr-chapt.fig_85.gif"><P> Figure 24.  XP as a directed graph</A>
+<BR>a=asserted; i=internal; p=pre-XP; e=explains
+
+
+<P>For an XP to apply to a given situation, all PRE-XP-NODES must be in the current set of beliefs.  If they are not, then the explanation is not appropriate to the situation.  If the structure is not rejected, then all XP-ASSERTED-NODES are checked.  For each XP- ASSERTED node verified, all INTERNAL-XP-NODES connected to it are verified.  If all XP-ASSERTED-NODES can be verified, then the entire explanation is verified.<A HREF="repr-chapt.html#FN15">(15)</A> 
+
+<P>In the representation presented here, attributes are treated as first-class objects; that is, attribute relations have an explicit frame representation.  For instance, the greater-than relation of <A HREF="repr-chapt.html#REF46420">Figure 25</A> has both domain and co-domain slots.  Therefore, the token greater-than.7 expresses the proposition that the integer two is greater than one.  Moreover, this same notation can represent the slot (attribute) of a frame.  The result attribute of mental-process.21 is a relation (result.52) from its domain (mental-process.21) to its co-domain (mental-state.12).  As indicated by the lowest level of parentheses, frame slots have both value and relation facets.  This explicit representation allows a system to assert specific propositions about slots, instead of only values.  A system can therefore ask a question about the result slot itself.  Questions such as "What was the result of mental-process.21?" need only refer to the value facet of the attribute; but, questions such as "Why did the process result in state.12?" can only be formed properly if the result relation has an explicit representation (Ram, 1989; Wilensky, 1986b). 
+<P><A HREF="repr-chapt.fig_73.ps" NAME="REF46420"><IMG
+SRC="repr-chapt.fig_73.gif"><P> Figure 25.  Relations as first-class objects
+</A>
+<BR>arrows = token assignments
+
+
+<H4><A NAME="REF90834"> 4.4.1  Trace Meta-XPs</A></H4>
+<P>Ram (1990, 1994) has developed a theory of motivational explanation based on decision models which characterize the decision process that an agent goes through in deciding to perform an action.  For example, the religious-fanatic explanation for suicide bombing is a decision model describing why a bomber would choose to perform a terrorist strike in which the bomber dies (see <A HREF="repr-chapt.html#REF61687">Figure 26</A> and compare to <A HREF="repr-chapt.html#REF68375">Figure 22 on page 76</A>).<A HREF="repr-chapt.html#FN16">(16)</A> Ram's model claims that an agent first considers any relevant goals, goal priorities, and the expected outcome of performing the action.  The actor then makes a decision whether or not to enter into such a role, and if so, performs the action.  IML theory extends the model to account for introspective reasoning.
+<P><A HREF="repr-chapt.fig_87.ps" NAME="REF61687"><IMG
+SRC="repr-chapt.fig_87.gif"><P> Figure 26.  Volitional XP for why agent
+performs suicide bombing</A>
+<BR>(adapted from Ram, 1993)
+<BR>BS=bad state; GS=good state; MOP=memory organization package
+
+
+<P>Meta-reasoning can be conceptualized in a similar manner.  A set of states, priorities, and the expected strategy outcome determine a reasoner's decision of a processing strategy, like the above factors determine the actor's decision to act.  Based on general knowledge, current representation of the story, and any inferences that can be drawn from this knowledge, the reasoner chooses a particular reasoning strategy.  Once executed, a strategy may produce further reasoning, requiring additional strategy decisions.  
+<P>These decisions are chained into threads of reasoning such that each one initiates the goal that drives the next.  Though the chains can vary widely, in the task of question-driven story understanding, the chains take the following form: Identify Anomaly --> Generate Explanation --> Verify Hypothesis (see <A HREF="theories-chapt.html#REF75883">Figure 14 on page 36</A> in Chapter <A HREF="theories-chapt.html#REF97020">II</A>).  Note that since the explanation generation phase produces a hypothesis and the verification phase produces a measure of goodness, if the hypothesis has been confirmed with a sufficiently high confidence, then the overall product of the understanding process has been a sound explanation.  Alternatively, if the explanation has been disconfirmed, then a later failure identification phase should generate the question "Why did the explanation fail?" This knowledge goal triggers the learning process.
+<P>The understanding process is recursive in nature.  For example, if a hypothesis generates a new question, then the reasoner will spawn a recursive regeneration of the sequence because an unanswered question is anomalous.  Like physical explanations that explain how objects work in the physical world, and volitional explanations that explain why agents perform various acts in the world, introspective explanations explain how and why conclusions are drawn by the reasoner; they explain events in the mental world.
+<P>When insufficient knowledge exists on which to base a decision, a useful strategy is to simply defer making the decision.  The reasoning task is suspended and later continued if and when the requisite knowledge appears.  This is a form of opportunistic reasoning.  Meta-XPs are able represent chains of reasoning that follow from opportunistic reasoning as well as uninterrupted decisions.
+
+<P>A Trace Meta-XP, representing the trace of the reasoning process, is a chain of <I>Decide-Compute-Nodes</I> (D-C-Nodes).  <A HREF="repr-chapt.html#REF29606">Figure 28</A> shows the outermost frame definition<A HREF="repr-chapt.html#FN17">(17)</A> of the decide-compute-node type whose graph structure is shown in <A HREF="repr-chapt.html#REF32307">Figure 27</A>.  A non-recursive single instance of explanation would be a chain of three D-C-Nodes, one for each phase in the anomaly-identification/generate-explanation/verify-hypothesis sequence.<A HREF="repr-chapt.html#FN18">(18)</A> These nodes record the processes that formulate the knowledge goals of a system, together with the reasons for and the results and side-effects of performing such mental actions.  The trace of reasoning is similar to a derivational analogy trace as described by Carbonell (1986) and Veloso and Carbonell (1994).  A Trace Meta-XP is a specific explanation of why a reasoner chooses a particular reasoning method and what results from the strategy.  Like an XP, the Meta-XP can be a general structure applied to a wide range of contexts, or a specific instantiation that records a particular thought process.  One distinguishing property of Trace Meta-XPs is that a decision at one stage is often based on features in previous stages.  For example, the decision of how to verify a hypothesis may be based on knowledge used to construct the hypothesis initially.  This property, deciding based on previous knowledge, is particularly true of learning, which, by definition, is based on prior processing.
+<P><A HREF="repr-chapt.fig_57.ps" NAME="REF32307"><IMG SRC="repr-chapt.fig_57.gif"><P> Figure 27.  Graph structure for Decide-Compute-Node</A>
+
+
+<P><A HREF="repr-chapt.fig_82.ps" NAME="REF29606"><IMG SRC="repr-chapt.fig_82.gif"><P> Figure 28.  Frame definition for Decide-Compute-Node</A>
+
+
+<H4><A NAME="HDR6"> 4.4.2  Introspective Meta-XPs</A></H4>
+<P>Whereas a Trace Meta-XP explains how a failure occurred, by providing the sequence of mental events and states along with the causal linkage between them, an Introspective Meta-XP explains why the results of a chain of reasoning are wrong.  The IMXP posits a causal reckoning between the events and states of the TMXP.  In addition, an IMXP provides a learning goal specifying what needs to be learned.  Then, given such an explanation bound to a reasoning chain, the task of the system is to select a learning strategy to reduce the likelihood of repeating the failure.
+<P>An IMXP consists of six distinctive parts:
+
+<DL>
+<DL>
+<DL>
+<DD><I></I>�   The IMXP type class.
+<BR>
+<DD><I></I>�   The failure type accounted for by the IMXP.
+<BR>
+<DD><I></I>�   A graph representation of the failure.
+<BR>
+<DD><I></I>�   Temporal ordering on the links of the graph.
+<BR>
+<DD><I></I>�   An ordered list of likely locations in the graph where processing errors may have occurred.
+<BR>
+<DD><I></I>�   A corresponding list of learning goals to be spawned for failure repair.
+<BR>
+
+
+</DL>
+
+</DL>
+
+</DL>
+
+
+<P>There are three classes of IMXPs: base, core, and composite.  <I>Base</I> types constitute the basic vocabulary (labels) with which <I>core</I> IMXPs are built.  We have identified seven primitive types in the base class: successful prediction, inferential expectation failure, incorporation failure, belated prediction, retrieval failure, construction failure, and input failure.  The core types are representations of the failure types enumerated in <A HREF="symptoms-chapt.html#REF52417">Table 4, "Final table for reasoning model," on page 50</A>.  They include representations for failures such as contradiction and impasse, and the IMXP representation for each will be shown in <A HREF="repr-chapt.html#REF64251">Section 4.7</A>.  Core types are combined to form <I>composite</I> IMXPs that describe situations encountered by reasoning agents, such as the "Drug Bust" examples in <A HREF="theories-chapt.html#REF78268">Section 2.1</A>.
+<P>The internal graph structure of an IMXP consists of nodes, representing both mental states and mental events (processes), and the causal links between them.  The nodes and links have the same semantics as those described for TMXPs in section <A HREF="repr-chapt.html#REF90834">4.4.1</A>.  The graph gives both a structural and a causal accounting of what happened and what should have happened when information was processed.  
+<P>Consider the graph diagram in <A HREF="repr-chapt.html#REF63691">Figure 29</A> (cf. <A HREF="repr-chapt.html#REF67088">Figure 23</A>).  It represents the introspective reasoning of the second drug-bust story in Chapter II (<A HREF="theories-chapt.html#REF42614">Section 2.1.2</A>).  In this story, the Meta-AQUA system forgets the explanation learned in the previous story, that dogs will bark at inanimate objects when they detect contraband.  Because this explanation was indexed by containers, the system retrieves no explanation to explain why the dog is barking at a pile of dirty clothes; that is, it experiences a memory impasse.  Later in the story, when the officer praises the dog for barking at the clothes, the system infers that the explanation should have been a detection explanation.  This graph structure represents the composite IMXP ANOMALY-AND-BAFFLED.  It contains but one core case, a missing association, and has at its heart the base case of retrieval failure.  In <A HREF="repr-chapt.html#REF67816">Figure 30</A>, a frame definition is provided for the IMXP composite type from which the instance portrayed in <A HREF="repr-chapt.html#REF63691">Figure 29</A> was formed.<A HREF="repr-chapt.html#FN19">(19)</A>   
+<P><A HREF="repr-chapt.fig_53.ps" NAME="REF63691"><IMG
+SRC="repr-chapt.fig_53.gif"><P> Figure 29.  Representation for forgotten
+detection explanation </A>
+<BR>A=actual; E=expected; Q=question; I=index; M=memory item
+
+
+<P><A HREF="repr-chapt.fig_50.ps" NAME="REF67816"><IMG SRC="repr-chapt.fig_50.gif"><P> Figure 30.  IMXP frame definition for forgetting</A>
+
+
+<P>Base class IMXPs represent a primitive type or component in the content theory of mental events from which traces of reasoning failures may be constructed.  The goal is to enumerate a sufficient number of these basic types to cover the major kinds of reasoning failures that arise in story understanding and other tasks.  The types of failures (discussed <A HREF="symptoms-chapt.html#REF87551">Section 3.2 on page 45</A>) fall into two complementary classes: commission error and omission error.  Commission errors stem from reasoning which should not have been performed or knowledge which should not have been used.  Omission errors originate from the lack of some reasoning or knowledge.  The content theory herein contains Base IMXPs to describe both classes of failure.
+
+
+
+<H3><A NAME="HDR7"> 4.5   Vocabulary </A></H3>
+<P>The partial ontological hierarchy of mental terms in <A HREF="repr-chapt.html#REF47714">Figure 19 on page 70</A>, pictures some basic type identifiers of the mental domain.  They represent the most fundamental labels used to identify particular classes of mental actions and states and provide the primitive building blocks with which declarative structures are assembled to describe the processing that occurs within intelligent systems.  A major goal of an understanding system operating in a mental world is to refine the labels of structures as additional knowledge is gained about particular actions in the domain.  For instance, a system may only know that a particular node is some kind of cognitive process, thus it labels it with the vocabulary term Cognize.  If the system subsequently discovers that it is a memory process, the label can be refined to Memory Process.<A HREF="repr-chapt.html#FN20">(20)</A> As more information is ascertained, the system may determine that the structure actually represents Recall or Recognize.  As each label is refined, additional inferences are warranted. 
+<P>Not shown in <A HREF="repr-chapt.html#REF47714">Figure 19</A> are the terms used to represent failure.  These vocabulary labels are the base IMXP types mentioned in the previous subsection.  This research has identified two types of commission error labels: <I>Inferential expectation failures</I> typify errors of projection.  They occur when the reasoner expects an event to happen in a certain way, but the actual event is different or missing.  <I>Incorporation failures</I> result from an object or event having some attribute that contradicts some restriction on its values.  Four omission error labels have also been identified: <I>Belated prediction</I> occurs after the fact.  Some prediction that should have occurred did not, but only in hindsight is this observation made.  <I>Retrieval failures</I> occur when a reasoner cannot remember an appropriate piece of knowledge; in essence, it represents forgetting or memory failure.  <I>Construction failure</I> is similar, but occurs when a reasoner cannot infer or construct a solution to a problem<I>.  Input failure</I> is error due to lack of some input information.  To construct the five core types of failure (outlined in <A HREF="symptoms-chapt.html#REF87551">Section 3.2</A>), these labels are used.  The basic organization for all of these representations is at the level of a comparison between an expectation and some feedback (either from the environment or additional inference or memory).<A HREF="repr-chapt.html#FN21">(21)</A> Oehlmann, Edwards, and Sleeman (1995) stress the importance of metacognitive processing to provide expectations and to monitor comprehension, both in human and machine systems.  The representations used by any system should support these processes.  The following sections provide representations for both successful and for failed mental processing.
+
+<H3><A NAME="HDR8"> 4.6   Representing Reasoning Success </A></H3>
+<P>An illustration of a simple base type representations is contained in <A HREF="repr-chapt.html#REF46136">Figure 31</A>.<A HREF="repr-chapt.html#FN22">(22)</A> With this figure and the ones to come representing subsequent core IMXPs, the Cognize nodes may actually consist of an arbitrarily long chain of computations.  The node is actually represented by a TMXP rather than a single process.  See <A HREF="repr-chapt.html#REF98453">Figure 32</A> for the frame definition of this graph structure for further clarification. 
+<P><A HREF="repr-chapt.fig_41.ps" NAME="REF46136"><IMG SRC="repr-chapt.fig_41.gif"><P> Figure 31.  Meta-XP representation of successful prediction </A>
+
+
+<P><A HREF="repr-chapt.fig_76.ps" NAME="REF98453"><IMG SRC="repr-chapt.fig_76.gif"><P> Figure 32.  Successful prediction frame definition</A>
+
+
+
+
+<P>The EXPLAINS node of the XP is the node labeled "Successful Prediction." The
+equals relation between A and E mentally-initiates the node.  Now, let node A
+be an actual occurrence of an event, an explanation, or an arbitrary
+proposition.  The node A results from either a mental calculation or an input
+concept.  Let node E be the expected occurrence.  The expected node, E,
+<CODE>mentally-results</CODE> from some reasoning trace enabled by some goal,
+G, and context, C.  Now if the two propositions are identical, so that E is a
+subset of, or is equal to, A, then a successful prediction has occurred.<A HREF="repr-chapt.html#FN23">(23)</A> Failures occur when A <> E.  This state exists when either A and E are disjoint or there are conflicting assertions within the two nodes.  For example A and E may be persons, but the concept at node E contains a slot specifying gender=male.0, whereas the concept at A contains the slot gender=female.0.  Although successful prediction produces no learning, a representation must exist for it.
+<P>Before examining the representation for reasoning failures, it is worth noting that the basic representation of successful prediction can account for many of the process terms in our target ontology (<A HREF="repr-chapt.html#REF47714">Figure 19 on page 70</A>), not just classes of failure.  <A HREF="repr-chapt.html#REF88598">Figure 33</A> illustrates successful prediction when the value of the Cognize node that produces the expectation, E, is a memory process.  This representation can easily capture the distinctions between an incidental reminding, a deliberate recall, and recognition; that is, the three sub-nodes of Remember in <A HREF="repr-chapt.html#REF47714">Figure 19</A>.  The structural differences depend on the nodes C and G, and the temporal order of the causal links resulting in nodes E and A (see <A HREF="repr-chapt.html#REF65413">Table 7</A>). If there is no knowledge goal (Ram, 1991; Ram &amp; Cox, 1994; Ram &amp; Hunter, 1992) to retrieve some memory item, only cues in the environment, and if E is retrieved before A is produced, then the structure is a reminding.  On the other hand, if there is a deliberate attempt to a memory item that is later compared to some feedback, A, then the structure represents recall.  Finally, if A is presented followed by a memory probe, then the structure represents recognition, whether or not a retrieval goal exists.  It is also significant to note that the memory Elaboration term of <A HREF="repr-chapt.html#REF47714">Figure 19</A> can be represented as a feedback loop from E to C such that each new item retrieved adds to the context that enables further memory retrieval.<A HREF="repr-chapt.html#FN24">(24)</A>This is represented as a dashed line in <A HREF="repr-chapt.html#REF88598">Figure 33</A>.  
+<P><A HREF="repr-chapt.fig_35.ps" NAME="REF88598"><IMG
+SRC="repr-chapt.fig_35.gif"><P> Figure 33.  Meta-XP representation of several
+remembering events</A>
+<BR>A=actual; E=expected; G=goal; C=context or cues
+
+
+<H3><A NAME="REF64251"> 4.7   Representing Reasoning Failure to Support Learning</A></H3>
+<P>To support learning, a theory should have a level of representation that reflects the structure and content of reasoning failures.  Section <A HREF="symptoms-chapt.html#REF87551">3.2, "Types of Reasoning Failure"</A> extends the scope of reasoning failure to include the following forms: contradiction, impasse, false expectation, surprise, and unexpected success.  This section provides explicit representations for each of these five types at a level of representation that is sufficient for learning. 
+<P><A HREF="repr-chapt.tbl_91.ps" NAME="REF65413"><IMG SRC="fm2html-table.gif"> Table 7: <B></B>Structural differences between remembering events </A> 
+<PRE>
+---------------------------------------------------------------------
+  Memory         Structural Features              Description          
+    Term                                                               
+---------------------------------------------------------------------
+Reminding    Has only Cues;              Incidental;                   
+             E before A                  No Knowledge Goal             
+Recall       Cues and Goal;              Deliberate;                   
+             E before A                  Has Knowledge Goal            
+Recognition  May or may not have Goal;   Borderline between 2 above;    
+             A before E                  Has judgement         
+                                                                       
+---------------------------------------------------------------------
+</PRE>
+
+
+<H4><A NAME="HDR9"> 4.7.1  Contradiction</A></H4>
+<P><A HREF="repr-chapt.html#REF61555">Figure 34</A> illustrates the representation for a contradiction failure.  Some goal, G, and context or cues, C, enables some cognitive process to produce an expected outcome, E. A subsequent cognitive mechanism produces an actual outcome, A, which when compared to E, fails to meet the expectation.  Realizing this inequality of actual outcome with expected outcome initiates the knowledge of contradiction.  
+<P><A HREF="repr-chapt.fig_37.ps" NAME="REF61555"><IMG SRC="repr-chapt.fig_37.gif"><P> Figure 34.  Meta-XP representation of contradiction</A>
+<BR>A=actual; E=expected; G=goal; C=context or cues
+
+<P>If the right most Cognize node is an inferential process, then the failure is labeled Expectation Failure and the node C represents the context; whereas, if the process was a memory function, the contradiction is labeled Incorporation Failure and C represents memory cues.  The latter case occurs when an input concept does not meet a conceptual category during understanding.  Both inferential expectation failure and incorporation failure are errors of commission.  Some explicit expectation was violated by later processing or input.
+<H4><A NAME="HDR10"> 4.7.2  Impasse</A></H4>
+
+<P><A HREF="repr-chapt.html#REF21044">Figure 35, "Meta-XP representation of impasse,"</A> represents a class of omission failures that include forgetting as discussed earlier.  Some goal, G, and context or cues, C, enables a cognitive process to attempt production of an expected outcome, E.  Because the expectation, E, was not generated, it cannot be compared to an actual outcome, A, produced by a subsequent cognitive mechanism.  Realizing that E is not in the set of beliefs with respect to the foreground knowledge of the system (i.e., was not brought into or created within working memory) initiates the knowledge of failure. 
+<P><A HREF="repr-chapt.fig_39.ps" NAME="REF21044"><IMG
+SRC="repr-chapt.fig_39.gif"><P> Figure 35.  Meta-XP representation of
+impasse</A>
+<BR>A=actual; E=expected; G=goal; C=context or cues
+
+
+<P>If the right-most Cognize term is a memory retrieval process, then the Meta-XP indeed represents forgetting,<A HREF="repr-chapt.html#FN25">(25)</A> and the structure is labeled Retrieval Failure.  The impasse is a memory process that fails to retrieve anything.  If the node is an inferential process, however, then the impasse failure is equivalent to the failures as recognized by Soar (a blocked attempt to generate the solution to a goal), and the structure is labeled Construction Failure.  A <I></I>construction failure occurs when no plan or solution is constructed by the inference process.  
+<H4><A NAME="HDR11"> 4.7.3  False Expectation </A></H4>
+
+
+<P>As seen in <A HREF="repr-chapt.html#REF69089">Figure 36</A>, the representation of false expectation anticipates an actual event (A<SUB>1</SUB>) which never occurs or cannot be calculated.  Instead, another event (A<SUB>2</SUB>) causes the reasoner to realize the error through hindsight.  It is not always evident what this second event may be, however.  Sometimes it is a very subtle event associated with just the passage of time, so there is no claim here that the second event is a conscious one.  In this sequence, the reasoner realizes that the anticipated event is out of the set of beliefs with respect to the FK, and will remain so.  
+<P><A HREF="repr-chapt.fig_55.ps" NAME="REF69089"><IMG SRC="repr-chapt.fig_55.gif"><P> Figure 36.  Meta-XP representation of false expectation</A>
+<BR>A=actual; E=expected; G=goal; C=context or cues
+
+
+<P>Despite the fact that false expectation and surprise are not closely related in the table of failure types (<A HREF="symptoms-chapt.html#REF52417">Table 4, "Final table for reasoning model," on page 50</A>), they are quite related in structure.  As will be seen in the subsequent subsection, they both share the incorrectly anticipated Successful Prediction node and also the node labeled Belated Prediction.  
+<H4><A NAME="HDR12"> 4.7.4  Surprise </A></H4>
+<P><A HREF="repr-chapt.html#REF90104">Figure 37, "Meta-XP representation of surprise,"</A> represents a class of failures rarely treated in any AI system.  A surprise occurs when a hindsight process reveals that some expectation was never generated.  The explanation is that there was never a goal, G2, to create the expectation, either through remembering or inferring.  Some earlier process with goal, G1, failed to generate the subsequent goal.  When the node A is generated, however, the system realizes that it is missing.  This error, by definition, is a missing expectation discovered after the fact.  Again, note the similarity between the representations for surprise and false expectation.  
+<P><A HREF="repr-chapt.fig_71.ps" NAME="REF90104"><IMG SRC="repr-chapt.fig_71.gif"><P> Figure 37.  Meta-XP representation of surprise</A>
+<BR>A=actual; E=expected; G1,G2=goals; C=context or cues
+
+
+<H4><A NAME="HDR13"> 4.7.5  Unexpected Success</A></H4>
+<P>Finally, <A HREF="repr-chapt.html#REF91999">Figure 38, "Meta-XP representation of unexpected success,"</A> contains a Meta-XP representation of an unexpected success, a failure similar to contradiction.  However, instead of E being violated by A, the expectation is that the violation will occur, yet does not.  That is, the agent expects not to be able to perform some computation (e.g., create a solution to a given problem), yet succeeds nonetheless.  In such cases the right-most Cognize term will be some inferential process.  If this process is a memory term instead, the failure represents the case of an agent that does not expect to be able to remember some fact or event when necessary, yet when the time comes, it does nonetheless.
+<P><A HREF="repr-chapt.fig_69.ps" NAME="REF91999"><IMG SRC="repr-chapt.fig_69.gif"><P> Figure 38.  Meta-XP representation of unexpected success</A>
+<BR>A=actual; E=expected; G=goal; C=context or cues
+
+
+<H3><A NAME="REF36268"> 4.8   Summary and Discussion </A></H3>
+
+
+
+<P>The few examples presented in this chapter demonstrate both the usefulness and complexity of representing mental events and states.  The chapter began by describing a target ontology of mental terms that would provide a useful vocabulary for systems that reason about the mental domain.  The remainder of the chapter concentrated on composing a representation for just those terms that pertain to the five failure symptoms derived in the previous chapter.  If a system is to learn from its reasoning failures effectively, it needs to represent the kind of mental symptoms and faults it is likely to encounter so that these can be reasoned about explicitly.  Only enough representational detail must be provided so that the system can explain its own failures and thereby learn from them.  That is, the representations must have causal and relational components that identify those factors that explain how and why a failure occurred.  A knowledge structure called a trace meta-explanation pattern is used to provide a record of system reasoning.  It explains how the failures occur.  An Introspective Meta-Explanation Pattern represents an abstract causal pattern of failure that explains why the reasoning embodied in a trace fails.  
+<P>Despite the difficulty of formulating a complete representation of mental events, the effort promises to aid a system when reasoning about itself or other agents, especially when trying to explain why its own or another's reasoning goes astray.  Furthermore, even though the CD representation of mental terms leaves much detail unrepresented, the original goal of Schank et al. (1972) to represent the mental domain is a fruitful one.  If future research can more fully specify a representational vocabulary for the ontological items illustrated in <A HREF="repr-chapt.html#REF47714">Figure 19</A>, these domain independent terms can help many different intelligent systems reason in complex situations where errors occur.
+<P>Although many of the details of this chapter may be overly simplified, the formalism remains an improvement over many of the representational systems proposed in the past (e.g., logic and CD theory) with respect to representing mental states and mechanisms.  Especially considering the emphasis by Schank on expectation as a driving force in text comprehension and problem solving (a point made explicitly as early as Schank, 1972, and, to some extent, in Schank &amp; Tesler, 1969), the CD representation for the concept of "expectation" is not sufficient to express its central role in cognition.  For example, the CD representation for "John expects Bill to become a doctor" (Schank et al., 1972, p. 29) is shown in <A HREF="repr-chapt.html#REF51830">Figure 39</A>.  Very little information is provided in this structure, and few inferences may be obtained from it or learning performed from it. 
+<P><A HREF="repr-chapt.fig_59.ps" NAME="REF51830"><IMG SRC="repr-chapt.fig_59.gif"><P> Figure 39.  CD representation of expectation</A>
+<BR>f=future tense; MLOC=Mental Location; LTM=Long
+
+
+
+<P>The following chapters of Part <A HREF="proc-chapt.html#REF75364">Three</A> will introduce the process theory of introspection and learning.  Chapter <A HREF="proc-chapt.html#REF92846">V</A> first presents a model of understanding and then a model of learning.  Chapter <A HREF="learn-chapt.html#REF37707">VII</A> provides the algorithms that underlie these models and that manipulate the current chapter's representations when learning.  Additional examples from the Meta-AQUA system will illustrate the utility of Meta-XP representations.  
+
+
+<HR><H3>Footnotes</H3>
+<DL COMPACT>
+<DT><A NAME=FN1>(1)</A><DD>Proponents of procedural representations have argued against these points and countered with advantages of their own.  See Winograd (1975/1985), especially his argument that second-order knowledge is easier to represent procedurally.  See Stein &amp; Barnden (1995) for arguments in favor of the procedural representation of some knowledge via mental simulation or projection of hypothetical events.  Yet, at the very least, this thesis presents an existence proof that stands in direct opposition to the claim that declarative representation of second-order knowledge is too difficult.  
+<DT><A NAME=FN2>(2)</A><DD>Certainly the boundary between the two worlds is not a very clean line.  Terms such as "speak" concern the manipulation of mental terms (e.g., concepts), but complicate the representation with details of expression, translation, interpretation and the physical means of conveyance.
+<DT><A NAME=FN3>(3)</A><DD>The general term "to think" is an unfortunately overloaded term.  It can be used in the sense of "to think about" (referring to a generic mental process) or "I think so" (referring to some qualitative level of confidence).  Therefore, cognize is a less ambiguous representational label.
+<DT><A NAME=FN4>(4)</A><DD>The shaded ovals in the figure represent unrepresented vocabulary terms.  For example, this document ignores emotion (except for Descartes' primitive passion taxonomy at the beginning of this chapter), either as a contributor to failure or as an ontological entity in need of representation.  
+<DT><A NAME=FN5>(5)</A><DD>Schwanenflugel, Fabricius, Noyes, Bigler &amp; Alexander (1994) analyzed folk theories of knowing.  Subject responses during a similarity judgement task decomposed into memory, inference, and I/O clusters through factor analysis.  
+<DT><A NAME=FN6>(6)</A><DD>A concept has a dependency relationship to a governing concept in a CD network when the dependent does not make sense without the governor and, moreover, when it further explains the governor (Schank &amp; Tesler, 1969).  
+<DT><A NAME=FN7>(7)</A><DD>See also McRoy (1993) for a related discussion of resource constraints on inference, the problems of logical inconsistency and logical omniscience, and the proposed relationship of these problems to the agent's own involvement in introspection.  Related also, but from a psychological perspective, Glenberg, Wilkinson &amp; Epstein (1982/1992) have shown that self-comprehension of text can be an illusion (i.e., people sometimes do not accurately monitor their own level of text comprehension), and they speculate that it is at the point where reading comprehension fails that humans are alerted to the need for learning.  
+<DT><A NAME=FN8>(8)</A><DD>Schank, Goldman, Rieger, &amp; Riesbeck (1972) actually referred to working memory as immediate memory and the central processor as a conceptual processor.  I have used some license to keep terms in a contemporary language.  Moreover, Schank and his colleagues used a third primitive ACT, CONC, which was to conceptualize or think about without building a new conceptualization, but Schank (1975) eliminated it from the theory.  For the purposes of this research, however, the differences do not matter.
+<DT><A NAME=FN9>(9)</A><DD>See also Almonayyes (1994), Kerner (1995), and Schank, Kass &amp; Riesbeck (1994) for additional applications of XP theory. 
+<DT><A NAME=FN10>(10)</A><DD>Attributes and relations are represented explicitly in these graphs.  Thus, the ACTOR attribute of an event X with some value Y is equivalent to the relation ACTOR having domain X and co-domain Y.  Section 4.4 provides further details concerning this notation.  
+<DT><A NAME=FN11>(11)</A><DD>Compare this with the assumption maintenance system discussed by McDermott (1989).  In general, propositions may be in or out with respect to arbitrary sets of beliefs, which in the Meta-AQUA system are used to represent what is in the FK during different reasoning experiences.
+<DT><A NAME=FN12>(12)</A><DD>A missing memory-retrieval goal is equivalent to an agent never trying to remember.  For instance, the reasoner may have wanted to ask a question after a lecture was complete, but failed to do so because he never generated a goal to remember once the lecture was complete.  Alternatively the agent may know at the end of the lecture that he needs to ask something, but cannot remember what it was.  This second example is the case of a missing index.  Note that both a missing index and an incorrect index may be present at the same time.  In such cases, a target item is not retrieved, whereas an interfering item is retrieved instead.
+<DT><A NAME=FN13>(13)</A><DD>See Cox (1994b) for a discussion of related computational models of forgetting.  
+<DT><A NAME=FN14>(14)</A><DD>Here the definition of a Meta-Explanation is interpreted in a narrow sense as applied to understanding tasks involving the explanation of anomalies.  In general, however, a Meta-XP may be any explanation of how and why an agent reasons in any particular way, including processes other than explanation.
+<DT><A NAME=FN15>(15)</A><DD>See Ram (1994) for additional details concerning the structure and use of explanation patterns.  
+<DT><A NAME=FN16>(16)</A><DD>The Considerations (two goals and one belief) comprise the XP-ASSERTED-NODES, the Chooses-To-Enter node is the lone INTERNAL-XP-NODE, and the Actor relation is the only PRE-XP-NODE (and represents the EXPLAINS node of the XP).  
+
+<DT><A NAME=FN17>(17)</A><DD>Frame figures use the following notation: 
+<PRE>X.0     an attribute value; 
+(X)     a frame of type X; 
+=X      variable binding to the outermost slot named X;
+(=X =Y) a list of variable bindings; 
+(X =Y)  an frame of type X with referent alias named Y.  
+</PRE>This last feature is included so that variable can be bound to slots other than the outermost slots.  
+
+<DT><A NAME=FN18>(18)</A><DD>Note that in most of this work the initial phase of anomaly identification is simplified.  Rather than considering all four steps represented in a D-C-Node, the algorithm skips the input analysis step, posts a goal to interpret the input, and then uses only a single strategy as outlined in the text.  The result is a signal whether or not an anomaly exists together with the anomaly's cause.  See, for example, Figure 14, "Question-driven understanding," on page36.
+<DT><A NAME=FN19>(19)</A><DD>The frame definition is simplified in order to show it here.  All facet notation is removed because only value facets of slots are shown in the figure.  In addition, the figure shows only the important slots to illustrate the definition.  Some slots are missing.  
+<DT><A NAME=FN20>(20)</A><DD>Although the vocabulary item is listed as Memory Process in Figure 19, the IMXP figures have been using Memory Retrieval.  The terms are used interchangeably.  
+<DT><A NAME=FN21>(21)</A><DD>See Krulwich (1995) for another view on basic level categories for mental representations.  Instead of granularity, however, his discussion centers on the proper level of abstraction.  
+<DT><A NAME=FN22>(22)</A><DD>Compare this figure with the final comparison model of expectation-driven reasoning (Figure17 on page49).  
+<DT><A NAME=FN23>(23)</A><DD>On the other hand, if A is a subset of E, then there are more questions remaining on the predicted node E.  If there are unanswered questions, the system will wait for more information before it introspects.  Such cases are not represented in the current implementation, although there are cases in which one would want to reason about partial computations.  See also the brief discussion in Section 3.2.1.4.  
+<DT><A NAME=FN24>(24)</A><DD>This characterization is admittedly simplified since cue elaboration incorporates top-down inferential processes as well as bottom-up additions to memory cues.  
+<DT><A NAME=FN25>(25)</A><DD>Compare Figure 35, "Meta-XP representation of impasse," with Figure 31, "Meta-XP representation of successful prediction," to see why Forgetting <> &#172;Remember.
+</DL>
+<P><A HREF="git-cc-96-06.book.html"><IMG SRC="fm2html-toc.gif">Table of Contents</A>
+<A HREF="proc-chapt.html"><IMG SRC="fm2html-next.gif">Next Chapter</A>
+
+<HR>
+
+<A HREF="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/cox.html"><IMG
+ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/home2.gif"></A>
+
+<A HREF="http://www.cc.gatech.edu/cogsci">
+<IMG ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/cogsci-granite3.gif"></A>

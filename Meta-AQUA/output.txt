@@ -1,0 +1,929 @@
+This was given by Meta-AQUA:  (FORCED-BY-STATES (ACTOR (VALUE NATURE.5337)) (OBJECT (VALUE C_.4860)) (ANTE (VALUE MODEL.5341)) (CONSEQ (VALUE BURNS.5356)) (FUEL (VALUE AT-LOCATION.5352)) (ELEMENT (VALUE AT-LOCATION.5347)) (HEAT (VALUE TEMPERATURE.5345))
+ (RESULT (VALUE BURNING.5364)) (GOAL (VALUE BURNING.5371)) (ANTECEDENT (VALUE MODEL.5341)) (CONSEQUENT (VALUE BURNS.5356)) (ROLE (VALUE ACTOR.4883)) (EXPLAINS (VALUE ACTOR.4883))
+ (PRE-XP-NODES (VALUE (NATURE.5337 BURNS.5356 C_.4860 ACTOR.4883))) (INTERNAL-NODES (VALUE NIL.0)) (XP-ASSERTED-NODES (VALUE (MODEL.5341))) (LINK1 (VALUE RESULTS.5383)) (LINK2 (VALUE RESULTS.5387)) (LINK3 (VALUE RESULTS.5391))
+ (LINK4 (VALUE RESULTS.5395)) (LINKS (VALUE (RESULTS.5383 RESULTS.5387 RESULTS.5391 RESULTS.5395))) (STATUS (VALUE QUESTION.0)) (MXP (VALUE TRACE-META-XP.5724)) (TRUTH (VALUE HYPOTHESIZED.0))) 
+
+
+
+For the state frame FORCED-BY-STATES.5772:
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the ANTE role is MODEL.5778.
+The VALUE facet of the CONSEQ role is BURNS.5793.
+The VALUE facet of the FUEL role is AT-LOCATION.5789.
+The VALUE facet of the ELEMENT role is AT-LOCATION.5784.
+The VALUE facet of the HEAT role is TEMPERATURE.5782.
+The VALUE facet of the RESULT role is BURNING.5825.
+The VALUE facet of the GOAL role is BURNING.5836.
+The VALUE facet of the ANTECEDENT role is MODEL.5778.
+The VALUE facet of the CONSEQUENT role is BURNS.5793.
+The VALUE facet of the ROLE role is ACTOR.5796.
+The VALUE facet of the EXPLAINS role is ACTOR.5796.
+The VALUE facet of the PRE-XP-NODES role is (NATURE.5774 BURNS.5793 C_.5776 ACTOR.5796).
+The VALUE facet of the INTERNAL-NODES role is NIL.0.
+The VALUE facet of the XP-ASSERTED-NODES role is (MODEL.5778).
+The VALUE facet of the LINK1 role is RESULTS.5848.
+The VALUE facet of the LINK2 role is RESULTS.5852.
+The VALUE facet of the LINK3 role is RESULTS.5856.
+The VALUE facet of the LINK4 role is RESULTS.5860.
+The VALUE facet of the LINKS role is (RESULTS.5848 RESULTS.5852 RESULTS.5856 RESULTS.5860).
+The VALUE facet of the STATUS role is QUESTION.0.
+The VALUE facet of the TRUTH role is HYPOTHESIZED.0.
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the ACTOR slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame NATURE.5774)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame STORY-INSTANCE.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame ATTRIBUTE-VALUE.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame NATURE.5774)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame IN.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the OBJECT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame C_.5776)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame C_.5776)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame MODEL.5778:
+ (Which is in the ANTE slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the FRAME-LIST role is (TEMPERATURE.5782 AT-LOCATION.5784 AT-LOCATION.5789).
+
+
+For the state frame TEMPERATURE.5782:
+ (Which is in the FRAME-LIST slot of frame MODEL.5778)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is VERY-HOT.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the DOMAIN slot of frame TEMPERATURE.5782)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame VERY-HOT.0:
+ (Which is in the CO-DOMAIN slot of frame TEMPERATURE.5782)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame VERY-HOT.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame AT-LOCATION.5784:
+ (Which is in the FRAME-LIST slot of frame MODEL.5778)
+
+The VALUE facet of the DOMAIN role is OXYGEN.5786.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the physical-object frame OXYGEN.5786:
+ (Which is in the DOMAIN slot of frame AT-LOCATION.5784)
+
+
+
+For the state frame PHYSICAL-LOCATION.5788:
+ (Which is in the CO-DOMAIN slot of frame AT-LOCATION.5784)
+
+
+
+For the state frame AT-LOCATION.5789:
+ (Which is in the FRAME-LIST slot of frame MODEL.5778)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the DOMAIN slot of frame AT-LOCATION.5789)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame PHYSICAL-LOCATION.5788:
+ (Which is in the CO-DOMAIN slot of frame AT-LOCATION.5789)
+
+
+
+For the process frame BURNS.5793:
+ (Which is in the CONSEQ slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the ACTOR slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame ACTOR.5796:
+ (Which is in the ACTOR slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame ACTOR.5796)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the DOMAIN slot of frame ACTOR.5796)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the CO-DOMAIN slot of frame ACTOR.5796)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame ACTOR.5796)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame FORCED-BY-STATES.5772:
+ (Which is in the EXPLANATIONS slot of frame ACTOR.5796)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the ANTE role is MODEL.5778.
+The VALUE facet of the CONSEQ role is BURNS.5793.
+The VALUE facet of the FUEL role is AT-LOCATION.5789.
+The VALUE facet of the ELEMENT role is AT-LOCATION.5784.
+The VALUE facet of the HEAT role is TEMPERATURE.5782.
+The VALUE facet of the RESULT role is BURNING.5825.
+The VALUE facet of the GOAL role is BURNING.5836.
+The VALUE facet of the ANTECEDENT role is MODEL.5778.
+The VALUE facet of the CONSEQUENT role is BURNS.5793.
+The VALUE facet of the ROLE role is ACTOR.5796.
+The VALUE facet of the EXPLAINS role is ACTOR.5796.
+The VALUE facet of the PRE-XP-NODES role is (NATURE.5774 BURNS.5793 C_.5776 ACTOR.5796).
+The VALUE facet of the INTERNAL-NODES role is NIL.0.
+The VALUE facet of the XP-ASSERTED-NODES role is (MODEL.5778).
+The VALUE facet of the LINK1 role is RESULTS.5848.
+The VALUE facet of the LINK2 role is RESULTS.5852.
+The VALUE facet of the LINK3 role is RESULTS.5856.
+The VALUE facet of the LINK4 role is RESULTS.5860.
+The VALUE facet of the LINKS role is (RESULTS.5848 RESULTS.5852 RESULTS.5856 RESULTS.5860).
+The VALUE facet of the STATUS role is QUESTION.0.
+The VALUE facet of the TRUTH role is HYPOTHESIZED.0.
+
+
+For the state frame INDEX.5801:
+ (Which is in the INDICES slot of frame ACTOR.5796)
+
+The VALUE facet of the TYPE role is QUESTION-TYPE.0.
+The VALUE facet of the DOMAIN role is ACTOR.5796.
+The VALUE facet of the CO-DOMAIN role is ACTOR.5796.
+The VALUE facet of the RELATION role is ACTOR.5796.
+The VALUE facet of the MEMORY-ITEM role is ACTOR.5796.
+
+
+For the frame QUESTION-TYPE.0:
+ (Which is in the TYPE slot of frame INDEX.5801)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame QUESTION-TYPE.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame ACTOR.5796:
+ (Which is in the DOMAIN slot of frame INDEX.5801)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the state frame ACTOR.5796:
+ (Which is in the CO-DOMAIN slot of frame INDEX.5801)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the state frame ACTOR.5796:
+ (Which is in the RELATION slot of frame INDEX.5801)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the state frame ACTOR.5796:
+ (Which is in the MEMORY-ITEM slot of frame INDEX.5801)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the physical-object frame C_.5776:
+ (Which is in the OBJECT slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame OBJECT.5808:
+ (Which is in the OBJECT slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is C_.5776.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame OBJECT.5808)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the DOMAIN slot of frame OBJECT.5808)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the CO-DOMAIN slot of frame OBJECT.5808)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame OBJECT.5808)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame INGEST.5812:
+ (Which is in the GOAL-SCENE slot of frame BURNS.5793)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5815.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the ACTOR slot of frame INGEST.5812)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame ACTOR.5815:
+ (Which is in the ACTOR slot of frame INGEST.5812)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is INGEST.5812.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame ACTOR.5815)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame INGEST.5812:
+ (Which is in the DOMAIN slot of frame ACTOR.5815)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5815.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the CO-DOMAIN slot of frame ACTOR.5815)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame ACTOR.5815)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the OBJECT slot of frame INGEST.5812)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame INGEST.5812)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame INGEST.5812)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame GOAL-SCENE.5820:
+ (Which is in the GOAL-SCENE slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is INGEST.5812.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame GOAL-SCENE.5820)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the DOMAIN slot of frame GOAL-SCENE.5820)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the process frame INGEST.5812:
+ (Which is in the CO-DOMAIN slot of frame GOAL-SCENE.5820)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5815.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame GOAL-SCENE.5820)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the process frame INGEST.5812:
+ (Which is in the SCENES slot of frame BURNS.5793)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5815.
+The VALUE facet of the OBJECT role is C_.5776.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame BURNING.5825:
+ (Which is in the MAIN-RESULT slot of frame BURNS.5793)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is TRUE.0.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the DOMAIN slot of frame BURNING.5825)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame TRUE.0:
+ (Which is in the CO-DOMAIN slot of frame BURNING.5825)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame TRUE.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame BURNING.5825)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame BURNING.5825)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame MAIN-RESULT.5828:
+ (Which is in the MAIN-RESULT slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the CO-DOMAIN role is BURNING.5825.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame MAIN-RESULT.5828)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame BURNING.5825:
+ (Which is in the CO-DOMAIN slot of frame MAIN-RESULT.5828)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is TRUE.0.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the DOMAIN slot of frame MAIN-RESULT.5828)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame MAIN-RESULT.5828)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame STORY-INSTANCE.0:
+ (Which is in the STATUS slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame IN.0:
+ (Which is in the TRUTH slot of frame BURNS.5793)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the state frame AT-LOCATION.5789:
+ (Which is in the FUEL slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the state frame AT-LOCATION.5784:
+ (Which is in the ELEMENT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is OXYGEN.5786.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the state frame TEMPERATURE.5782:
+ (Which is in the HEAT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is VERY-HOT.0.
+
+
+For the state frame BURNING.5825:
+ (Which is in the RESULT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is TRUE.0.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame BURNING.5836:
+ (Which is in the GOAL slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is FALSE.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the DOMAIN slot of frame BURNING.5836)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the frame FALSE.0:
+ (Which is in the CO-DOMAIN slot of frame BURNING.5836)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame FALSE.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame MODEL.5778:
+ (Which is in the ANTECEDENT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the FRAME-LIST role is (TEMPERATURE.5782 AT-LOCATION.5784 AT-LOCATION.5789).
+
+
+For the process frame BURNS.5793:
+ (Which is in the CONSEQUENT slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame ACTOR.5796:
+ (Which is in the ROLE slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the state frame ACTOR.5796:
+ (Which is in the EXPLAINS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the abstract-object frame NATURE.5774:
+ (Which is in the PRE-XP-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the PRE-XP-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the physical-object frame C_.5776:
+ (Which is in the PRE-XP-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame ACTOR.5796:
+ (Which is in the PRE-XP-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the DOMAIN role is BURNS.5793.
+The VALUE facet of the CO-DOMAIN role is NATURE.5774.
+The VALUE facet of the TRUTH role is IN.0.
+The VALUE facet of the EXPLANATIONS role is (FORCED-BY-STATES.5772).
+The VALUE facet of the INDICES role is (INDEX.5801).
+
+
+For the frame NIL.0:
+ (Which is in the INTERNAL-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame NIL.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame MODEL.5778:
+ (Which is in the XP-ASSERTED-NODES slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the FRAME-LIST role is (TEMPERATURE.5782 AT-LOCATION.5784 AT-LOCATION.5789).
+
+
+For the state frame RESULTS.5848:
+ (Which is in the LINK1 slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is MODEL.5778.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the frame MODEL.5778:
+ (Which is in the DOMAIN slot of frame RESULTS.5848)
+
+The VALUE facet of the FRAME-LIST role is (TEMPERATURE.5782 AT-LOCATION.5784 AT-LOCATION.5789).
+
+
+For the process frame BURNS.5793:
+ (Which is in the CO-DOMAIN slot of frame RESULTS.5848)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame RESULTS.5852:
+ (Which is in the LINK2 slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is TEMPERATURE.5782.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame TEMPERATURE.5782:
+ (Which is in the DOMAIN slot of frame RESULTS.5852)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is VERY-HOT.0.
+
+
+For the process frame BURNS.5793:
+ (Which is in the CO-DOMAIN slot of frame RESULTS.5852)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame RESULTS.5856:
+ (Which is in the LINK3 slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is AT-LOCATION.5784.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame AT-LOCATION.5784:
+ (Which is in the DOMAIN slot of frame RESULTS.5856)
+
+The VALUE facet of the DOMAIN role is OXYGEN.5786.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the process frame BURNS.5793:
+ (Which is in the CO-DOMAIN slot of frame RESULTS.5856)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame RESULTS.5860:
+ (Which is in the LINK4 slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is AT-LOCATION.5789.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame AT-LOCATION.5789:
+ (Which is in the DOMAIN slot of frame RESULTS.5860)
+
+The VALUE facet of the DOMAIN role is C_.5776.
+The VALUE facet of the CO-DOMAIN role is PHYSICAL-LOCATION.5788.
+
+
+For the process frame BURNS.5793:
+ (Which is in the CO-DOMAIN slot of frame RESULTS.5860)
+
+The VALUE facet of the ACTOR role is NATURE.5774.
+The RELATION facet of the ACTOR role is ACTOR.5796.
+The VALUE facet of the OBJECT role is C_.5776.
+The RELATION facet of the OBJECT role is OBJECT.5808.
+The VALUE facet of the GOAL-SCENE role is INGEST.5812.
+The RELATION facet of the GOAL-SCENE role is GOAL-SCENE.5820.
+The VALUE facet of the SCENES role is (INGEST.5812).
+The VALUE facet of the MAIN-RESULT role is BURNING.5825.
+The RELATION facet of the MAIN-RESULT role is MAIN-RESULT.5828.
+The VALUE facet of the STATUS role is STORY-INSTANCE.0.
+The VALUE facet of the TRUTH role is IN.0.
+
+
+For the state frame RESULTS.5848:
+ (Which is in the LINKS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is MODEL.5778.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame RESULTS.5852:
+ (Which is in the LINKS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is TEMPERATURE.5782.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame RESULTS.5856:
+ (Which is in the LINKS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is AT-LOCATION.5784.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the state frame RESULTS.5860:
+ (Which is in the LINKS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the DOMAIN role is AT-LOCATION.5789.
+The VALUE facet of the CO-DOMAIN role is BURNS.5793.
+
+
+For the frame QUESTION.0:
+ (Which is in the STATUS slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame QUESTION.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame HYPOTHESIZED.0:
+ (Which is in the TRUTH slot of frame FORCED-BY-STATES.5772)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.
+
+
+For the frame ATTRIBUTE-VALUE.0:
+ (Which is in the STATUS slot of frame HYPOTHESIZED.0)
+
+The VALUE facet of the STATUS role is ATTRIBUTE-VALUE.0.

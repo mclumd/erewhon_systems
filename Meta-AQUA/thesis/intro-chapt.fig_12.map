@@ -1,0 +1,18 @@
+default http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Thesis/intro-chapt.fig_3.ps
+#Question Q3
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/cbi-chapt.html#Q3TAG 279,381 278,351 
+#Question Q2
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/cbi-chapt.html#Q2TAG 280,259 284,228 
+#Question Q4
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/symptoms-chapt.html#Q4TAG 185,524 186,494 
+#Question Q5
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/repr-chapt.html#Q5TAG 380,523 373,494 
+#Question Q6
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/symptoms-chapt.html#Q6TAG  184,683 172,655 
+#Question Q7
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/repr-chapt.html#Q7TAG  379,680 365,653 
+#Question Q1
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/learn-chapt.html#Q1TAG  279,139 271,110 
+#Question Q0
+circle ftp://ftp.cc.gatech.edu/pub/ai/ram/git-cc-96-06/www/eval-chapt.html#Q0TAG  280,42 265,16 
+

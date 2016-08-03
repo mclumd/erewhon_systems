@@ -1,0 +1,7 @@
+This version of Meta-AQUA is used for running INTRO, because PRODIGY
+uses alisp whereas EXPLAIN is using mlisp. Some of these files have
+been updated to incorporate changes from the Meta-AQUA core in POIROT,
+but everything is not caught up.
+
+23jan08
+

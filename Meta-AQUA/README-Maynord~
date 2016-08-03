@@ -1,0 +1,8 @@
+;;; Save .clinit.cl to your root dir (i.e., ~/)
+;;; Then invoke /usr/local/allegrocommonlisp-8.2/alisp from the command line
+;;; Now the following within lisp
+(load-Meta-AQUA)
+(load "/fs/metacog/group/systems/Meta-AQUA/fire-story.lisp")
+(load "/fs/metacog/group/systems/Meta-AQUA/Representations/rep_fire.lisp")
+(init-Meta-AQUA)
+(set-story-12)

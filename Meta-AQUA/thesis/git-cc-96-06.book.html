@@ -1,0 +1,761 @@
+<!-- This file was created with the fm2html filter.
+The filter is copyright Norwegian Telecom Research and
+was programmed by Jon Stephenson von Tetzchner. -->
+
+<TITLE>IML - TOC</TITLE>
+
+<H1>INTROSPECTIVE MULTISTRATEGY LEARNING:
+<BR>Constructing a Learning Strategy under Reasoning Failure</H1>
+<P>
+<IMG SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/robo-head-trans.gif"><P>
+<HR>
+
+<H2>Table of Contents</H2>
+
+<P>
+<A HREF="git-cc-96-06.html#HDR2">DEDICATION</A>
+
+<BR>
+<A HREF="front-matter.html#HDR3">ACKNOWLEDGEMENTS</A>
+
+<BR>
+<A HREF="front-matter.html#HDR4">PREFACE</A>
+<BR>
+<A HREF="git-cc-96-06LOT.html#HDR0">LIST OF TABLES</A>
+<BR>
+<A HREF="git-cc-96-06LOF.html#HDR0">LIST OF ILLUSTRATIONS</A>
+<BR>
+<A HREF="abbreviations.html#HDR0">LIST OF ABBREVIATIONS </A>
+<BR>
+<A HREF="abstract.html#REF23634"> SUMMARY</A>
+
+<P>
+<A HREF="intro-chapt.html#REF74798"> Part  One</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF25672">  PRELIMINARIES</A>
+
+<BR>
+
+<UL>
+<A HREF="intro-chapt.html#REF87307"> CHAPTER I  </A>
+
+<BR>
+<A HREF="intro-chapt.html#REF20274">  INTRODUCTION</A>
+
+<UL>
+<A HREF="intro-chapt.html#REF55233"> 1.1   Research Motivation</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF87645"> 1.2   The Problem</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF81814"> 1.3   The Solution</A>
+
+<BR>
+<A HREF="intro-chapt.html#HDR0"> 1.4   Learning Goals and the Decomposition of the Problem</A>
+
+<UL>
+<A HREF="intro-chapt.html#HDR1"> 1.4.1  The Learning Goal Metaphor</A>
+
+<BR>
+<A HREF="intro-chapt.html#HDR2"> 1.4.2  The Decomposition of a Learning Goal</A>
+
+<UL>
+<A HREF="intro-chapt.html#REF30898"> 1.4.2.1  What kinds of reasoning failure exist? (Q6)</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF60571"> 1.4.2.2  What can cause reasoning failure? (Q4) </A>
+
+<BR>
+<A HREF="intro-chapt.html#HDR3"> 1.4.2.3  At what level of granularity should reasoning be represented? (Q7)</A>
+
+<BR>
+<A HREF="intro-chapt.html#HDR4"> 1.4.2.4  How to represent mental states and reasoning mechanisms? (Q5)</A>
+
+<BR>
+<A HREF="intro-chapt.html#HDR5"> 1.4.2.5  How to explain a reasoning failure? (Q3)</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF34591"> 1.4.2.6  How to decide what to learn? (Q2)</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF89747"> 1.4.2.7  How to choose or construct a learning strategy? (Q1)</A>
+
+<BR>
+<A HREF="intro-chapt.html#REF79658"> 1.4.2.8  How can the research be evaluated? (Q0)</A>
+</UL>
+</UL>
+
+<A HREF="intro-chapt.html#HDR6"> 1.5   Overview of the Dissertation</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="theories-chapt.html#REF97020"> CHAPTER II  </A>
+
+<BR>
+<A HREF="theories-chapt.html#REF69335">  CONTENT THEORIES AND PROCESS THEORIES</A>
+
+<UL>
+<A HREF="theories-chapt.html#REF78268"> 2.1   The Drug-Bust Examples </A>
+
+<UL>
+<A HREF="theories-chapt.html#REF61759"> 2.1.1  A Common Contradiction </A>
+
+<BR>
+<A HREF="theories-chapt.html#REF42614"> 2.1.2  A Baffling Situation </A>
+</UL>
+
+<A HREF="theories-chapt.html#REF34040"> 2.2   Knowledge and Process </A>
+
+<BR>
+<A HREF="theories-chapt.html#REF32258"> 2.3   The Domain of Story-Understanding Failures</A>
+
+<BR>
+<A HREF="theories-chapt.html#HDR0"> 2.4   Prolog to Parts Two and Three: The content and the process </A>
+</UL>
+</UL>
+
+
+<BR>
+<A HREF="symptoms-chapt.html#REF99066"> Part  Two</A>
+
+<BR>
+<A HREF="symptoms-chapt.html#REF75230">  A CONTENT THEORY OF MENTAL REPRESENTATION</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#REF40941"> CHAPTER III  </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#REF78240">  SYMPTOMS AND CAUSES OF FAILURE: THE CONTENT</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#REF12768"> 3.1   A General Model of Expectation-Driven Reasoning</A>
+
+<BR>
+<A HREF="symptoms-chapt.html#REF87551"> 3.2   Types of Reasoning Failure</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR0"> 3.2.1  Four Basic Cases </A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR1"> 3.2.1.1  Contradiction </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR2"> 3.2.1.2  Impasse </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#REF58887"> 3.2.1.3  False expectation </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#REF88526"> 3.2.1.4  The degenerate case </A>
+</UL>
+
+<A HREF="symptoms-chapt.html#HDR3"> 3.2.2  Extending the Analysis</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR4"> 3.2.2.1  Surprise</A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR5"> 3.2.2.2  Unexpected success </A>
+</UL>
+</UL>
+
+<A HREF="symptoms-chapt.html#REF16647"> 3.3   Causal Factors in Reasoning Failure </A>
+
+<UL>
+<A HREF="symptoms-chapt.html#REF38534"> 3.3.1  Selection Factors </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR6"> 3.3.2  A Taxonomy of Reasoning Failure Causes</A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR7"> 3.3.3  Knowledge States</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR8"> 3.3.3.1  Domain knowledge </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR9"> 3.3.3.2  Knowledge selection </A>
+</UL>
+
+<A HREF="symptoms-chapt.html#HDR10"> 3.3.4  Goal States </A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR11"> 3.3.4.1  Goal generation </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR12"> 3.3.4.2  Goal selection </A>
+</UL>
+
+<A HREF="symptoms-chapt.html#HDR13"> 3.3.5  Processes </A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR14"> 3.3.5.1  Processing strategy </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR15"> 3.3.5.2  Strategy selection </A>
+</UL>
+
+<A HREF="symptoms-chapt.html#REF46055"> 3.3.6  Environment</A>
+
+<UL>
+<A HREF="symptoms-chapt.html#HDR16"> 3.3.6.1  Input </A>
+
+<BR>
+<A HREF="symptoms-chapt.html#HDR17"> 3.3.6.2  Input selection </A>
+</UL>
+
+<A HREF="symptoms-chapt.html#HDR18"> 3.3.7  Causal Invariants</A>
+</UL>
+
+<A HREF="symptoms-chapt.html#REF80183"> 3.4   Summary and Discussion</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="repr-chapt.html#REF47582"> CHAPTER IV  </A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR0">  MENTAL STATES AND MECHANISMS: THE REPRESENTATION</A>
+
+<UL>
+<A HREF="repr-chapt.html#HDR1"> 4.1   Epistemology and Ontology</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR2"> 4.2   Granularity of Representation</A>
+
+<BR>
+<A HREF="repr-chapt.html#REF78278"> 4.3   Representing Forgetting: An example</A>
+
+<UL>
+<A HREF="repr-chapt.html#HDR3"> 4.3.1  Logic</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR4"> 4.3.2  Conceptual Dependency</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR5"> 4.3.3  Explanation Pattern Theory</A>
+</UL>
+
+<A HREF="repr-chapt.html#REF62779"> 4.4   Meta-Explanation Patterns</A>
+
+<UL>
+<A HREF="repr-chapt.html#REF90834"> 4.4.1  Trace Meta-XPs</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR6"> 4.4.2  Introspective Meta-XPs</A>
+</UL>
+
+<A HREF="repr-chapt.html#HDR7"> 4.5   Vocabulary </A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR8"> 4.6   Representing Reasoning Success </A>
+
+<BR>
+<A HREF="repr-chapt.html#REF64251"> 4.7   Representing Reasoning Failure to Support Learning</A>
+
+<UL>
+<A HREF="repr-chapt.html#HDR9"> 4.7.1  Contradiction</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR10"> 4.7.2  Impasse</A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR11"> 4.7.3  False Expectation </A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR12"> 4.7.4  Surprise </A>
+
+<BR>
+<A HREF="repr-chapt.html#HDR13"> 4.7.5  Unexpected Success</A>
+</UL>
+
+<A HREF="repr-chapt.html#REF36268"> 4.8   Summary and Discussion </A>
+</UL>
+</UL>
+
+
+<BR>
+<A HREF="proc-chapt.html#REF75364"> Part  Three</A>
+
+<BR>
+<A HREF="proc-chapt.html#REF66864">  A PROCESS THEORY OF LEARNING AND INTROSPECTION</A>
+
+<BR>
+<UL>
+<A HREF="proc-chapt.html#REF92846"> CHAPTER V  </A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR0">  A PROCESS THEORY OF UNDERSTANDING AND LEARNING</A>
+
+<UL>
+<A HREF="proc-chapt.html#REF24898"> 5.1   Theoretical Assumptions</A>
+
+<BR>
+<A HREF="proc-chapt.html#REF50170"> 5.2   Multistrategy Reasoning </A>
+
+<BR>
+<A HREF="proc-chapt.html#REF96728"> 5.3   Process Model of Understanding</A>
+
+<UL>
+<A HREF="proc-chapt.html#HDR1"> 5.3.1  Three Sub-processes of Understanding</A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR2"> 5.3.2  Understanding Elvis' Behavior</A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR3"> 5.3.3  Question-Driven Understanding</A>
+</UL>
+
+<A HREF="proc-chapt.html#REF98105"> 5.4   Process Model of Learning </A>
+
+<UL>
+<A HREF="proc-chapt.html#REF39552"> 5.4.1  Multistrategy Learning </A>
+
+<BR>
+<A HREF="proc-chapt.html#REF53781"> 5.4.2  Process Divisions within the Model of Learning</A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR4"> 5.4.3  Generating Changes to the BK</A>
+
+<UL>
+<A HREF="proc-chapt.html#REF53282"> 5.4.3.1  Functional justification for introspection as a component of learning</A>
+
+<BR>
+<A HREF="proc-chapt.html#REF80236"> 5.4.3.2  Overview of the IML algorithm</A>
+
+<UL>
+<A HREF="proc-chapt.html#HDR5">Blame assignment (step 2a, <A HREF="proc-chapt.html#REF23807">Figure 48</A>)</A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR6">Deciding what to learn (step 2b, <A HREF="proc-chapt.html#REF23807">Figure 48</A>) </A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR7">Learning-strategy construction (step 2c, <A HREF="proc-chapt.html#REF23807">Figure 48</A>) </A>
+</UL>
+</UL>
+</UL>
+
+<A HREF="proc-chapt.html#REF98080"> 5.5   Comparison of Learning and Understanding </A>
+
+<BR>
+<A HREF="proc-chapt.html#HDR8"> 5.6   Summary</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="cbi-chapt.html#REF37707"> CHAPTER VI  </A>
+
+<BR>
+<A HREF="cbi-chapt.html#HDR0">  CASE-BASED INTROSPECTION</A>
+
+<UL>
+<A HREF="cbi-chapt.html#REF23295"> 6.1   Case-based reasoning and introspection</A>
+
+<BR>
+<A HREF="cbi-chapt.html#REF34006"> 6.2   Blame Assignment: Explaining reasoning failure</A>
+
+<UL>
+<A HREF="cbi-chapt.html#HDR1"> 6.2.1  The Explanation Pattern Application Algorithm</A>
+
+<BR>
+<A HREF="cbi-chapt.html#HDR2"> 6.2.2  Returning to the Drug Bust Example</A>
+</UL>
+
+<A HREF="cbi-chapt.html#REF43815"> 6.3   Deciding What to Learn: Spawning learning goals</A>
+
+<UL>
+<A HREF="cbi-chapt.html#REF92447"> 6.3.1  Explicit Learning Goals</A>
+
+<BR>
+<A HREF="cbi-chapt.html#HDR3"> 6.3.2  Learning Goals in the Drug-Bust Example</A>
+</UL>
+
+<A HREF="cbi-chapt.html#REF15259"> 6.4   Summary and Discussion</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="learn-chapt.html#REF37707"> CHAPTER VII  </A>
+
+<BR>
+<A HREF="learn-chapt.html#HDR0">  LEARNING AS A NON-LINEAR PLANNING TASK</A>
+
+<UL>
+<A HREF="learn-chapt.html#REF21830"> 7.1   Blame Assignment and Repair: Tight versus loose coupling</A>
+
+<UL>
+<A HREF="learn-chapt.html#HDR1"> 7.1.1  Direct Mappings: Tight coupling</A>
+
+<BR>
+<A HREF="learn-chapt.html#REF99786"> 7.1.2  Indirect Mappings: Loose coupling</A>
+</UL>
+
+<A HREF="learn-chapt.html#REF35284"> 7.2   Learning-Strategy Construction: Learning as a planning task</A>
+
+<UL>
+<A HREF="learn-chapt.html#REF92830"> 7.2.1  Managing Goal Interactions with Nonlinear Planning</A>
+
+<BR>
+<A HREF="learn-chapt.html#REF26489"> 7.2.2  Planning for Blocks World Goals</A>
+
+<BR>
+<A HREF="learn-chapt.html#REF65123"> 7.2.3  Planning for a Knowledge Differentiation Goal</A>
+
+<BR>
+<A HREF="learn-chapt.html#REF57518"> 7.2.4  Planning for a Knowledge Reconciliation Goal</A>
+</UL>
+
+<A HREF="learn-chapt.html#REF20129"> 7.3   Strategy Execution: Performing the learning and the aftermath </A>
+
+<BR>
+<A HREF="learn-chapt.html#REF22532"> 7.4   The Planning Metaphor in Learning</A>
+
+<UL>
+<A HREF="learn-chapt.html#HDR2"> 7.4.1  Generality of the Metaphor</A>
+
+<BR>
+<A HREF="learn-chapt.html#REF70178"> 7.4.2  Advantages of the Planning Metaphor</A>
+</UL>
+
+<A HREF="learn-chapt.html#REF31509"> 7.5   Summary and Discussion </A>
+</UL>
+</UL>
+
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF19222"> Part  Four</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#HDR0">  IMPLEMENTATION AND CONCLUSION</A>
+
+<BR>
+<UL>
+<A HREF="meta-aqua-chapt.html#REF93871"> CHAPTER VIII  </A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#HDR1">  META-AQUA</A>
+
+<UL>
+<A HREF="meta-aqua-chapt.html#REF63065"> 8.1   Meta-AQUA System Architecture</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF76396"> 8.2   The Performance Subsystem</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF63204"> 8.3   Input Subsystem</A>
+
+<UL>
+<A HREF="meta-aqua-chapt.html#HDR2"> 8.3.1  The Tale-Spin Story-Generator </A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF90144"> 8.3.2  The Elvis World</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF50302"> 8.3.3  Interface to the Performance System </A>
+</UL>
+
+<A HREF="meta-aqua-chapt.html#REF54249"> 8.4   Memory</A>
+
+<UL>
+<A HREF="meta-aqua-chapt.html#REF18568"> 8.4.1  Types and Tokens</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF83198"> 8.4.2  Indexing</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF51173"> 8.4.3  Remindings in Opportunistic Memory</A>
+</UL>
+
+<A HREF="meta-aqua-chapt.html#REF43052"> 8.5   Learning Subsystem</A>
+
+<UL>
+<A HREF="meta-aqua-chapt.html#REF68869"> 8.5.1  Divisions of the Learner</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF10980"> 8.5.2  The Implemented Space of Explanation Failures </A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF28403"> 8.5.3  Learning about higher-order knowledge</A>
+
+<BR>
+<A HREF="meta-aqua-chapt.html#REF83295"> 8.5.4  Forgetting a Learned Explanation </A>
+</UL>
+
+<A HREF="meta-aqua-chapt.html#REF57764"> 8.6   Summary</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="eval-chapt.html#REF43294"> CHAPTER IX  </A>
+
+<BR>
+<A HREF="eval-chapt.html#REF43517">  EVALUATION</A>
+
+<UL>
+<A HREF="eval-chapt.html#REF69406"> 9.1   The Hypotheses</A>
+
+<UL>
+<A HREF="eval-chapt.html#REF70045"> 9.1.1  Hypothesis Number 1: Introspection facilitates learning</A>
+
+<UL>
+<A HREF="eval-chapt.html#REF14196"> 9.1.1.1  Fully introspective and semi-introspective learning</A>
+
+<BR>
+<A HREF="eval-chapt.html#REF73487"> 9.1.1.2  The null hypothesis</A>
+</UL>
+
+<A HREF="eval-chapt.html#REF42999"> 9.1.2  Hypothesis Number 2: IML theory is a sufficient model of introspection</A>
+</UL>
+
+<A HREF="eval-chapt.html#REF17791"> 9.2   Computational Evaluation</A>
+
+<UL>
+<A HREF="eval-chapt.html#REF28734"> 9.2.1  The Experimental Conditions (Independent Variable)</A>
+
+<BR>
+<A HREF="eval-chapt.html#REF20585"> 9.2.2  The Evaluation Criteria (Dependent Variables) </A>
+
+<BR>
+<A HREF="eval-chapt.html#REF46712"> 9.2.3  The Empirical Data</A>
+
+<UL>
+<A HREF="eval-chapt.html#HDR0"> 9.2.3.1  Run Number Four </A>
+
+<BR>
+<A HREF="eval-chapt.html#REF93644"> 9.2.3.2  Quantitative Results</A>
+</UL>
+</UL>
+
+<A HREF="eval-chapt.html#REF48664"> 9.3   Psychological Plausibility</A>
+
+<UL>
+<A HREF="eval-chapt.html#REF96888"> 9.3.1  Learning to program in LISP</A>
+
+<BR>
+<A HREF="eval-chapt.html#REF24287"> 9.3.2  Meta-AQUA Simulation </A>
+
+<BR>
+<A HREF="eval-chapt.html#REF15766"> 9.3.3  Learning to Troubleshoot Circuit Boards</A>
+</UL>
+
+<A HREF="eval-chapt.html#REF11073"> 9.4   Summary and Discussion </A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="future-res-chapt.html#REF98451"> CHAPTER X  </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF50368">  FUTURE RESEARCH</A>
+
+<UL>
+<A HREF="future-res-chapt.html#REF72282"> 10.1   IML Theory and Implementation: Open issues</A>
+
+<UL>
+<A HREF="future-res-chapt.html#REF53706"> 10.1.1  The Scope of Blame-Assignment. </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF29633"> 10.1.2  Additional Goal Interactions. </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF59591"> 10.1.3  Enlarging the Toolbox. </A>
+
+<BR>
+<A HREF="future-res-chapt.html#HDR0"> 10.1.4  Parallelism in Learning Plans</A>
+
+<BR>
+<A HREF="future-res-chapt.html#HDR1"> 10.1.5  Learning New IMXPs. </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF53902"> 10.1.6  Auto-Validation of Learning. </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF52494"> 10.1.7  Failure Types as a Cognitive Category</A>
+
+<BR>
+<A HREF="future-res-chapt.html#HDR2"> 10.1.8  Extending the Computational Evaluation</A>
+
+<UL>
+<A HREF="future-res-chapt.html#HDR3"> 10.1.8.1  Establishing the hypothesis that introspection facilitates learning</A>
+
+<BR>
+<A HREF="future-res-chapt.html#HDR4"> 10.1.8.2  Determining the conditions under which the hypothesis holds</A>
+</UL>
+
+<A HREF="future-res-chapt.html#REF14092"> 10.1.9  Extending the Model of Human Learning </A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF34615"> 10.1.10  Extending the Representational Vocabulary</A>
+</UL>
+
+<A HREF="future-res-chapt.html#REF54401"> 10.2   Learning Bias and Category Membership: An extension</A>
+
+<BR>
+<A HREF="future-res-chapt.html#REF18092"> 10.3   Understanding student explanation failures: An application</A>
+
+<BR>
+<A HREF="future-res-chapt.html#HDR5"> 10.4   Summary</A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="related-res2-chapt.html#REF34567"> CHAPTER XI  </A>
+
+<BR>
+<A HREF="related-res2-chapt.html#HDR0">  RELATED RESEARCH</A>
+
+<UL>
+<A HREF="related-res2-chapt.html#REF13236"> 11.1   Artificial Intelligence, Metareasoning, and Introspective Learning</A>
+
+<UL>
+<A HREF="related-res2-chapt.html#REF82665"> 11.1.1  Logic and Belief Introspection </A>
+
+<BR>
+<A HREF="related-res2-chapt.html#REF50914"> 11.1.2  Knowledge-Based Systems, Quasi-Introspection, and Related Theories </A>
+
+<BR>
+<A HREF="related-res2-chapt.html#REF58208"> 11.1.3  Relation of AI Research to IML Theory</A>
+</UL>
+
+<A HREF="related-res2-chapt.html#REF60177"> 11.2   Psychology, Metacognition, and Human Learning </A>
+
+<UL>
+<A HREF="related-res2-chapt.html#REF85421"> 11.2.1  Cognition and Metacognition</A>
+
+<BR>
+<A HREF="related-res2-chapt.html#REF68376"> 11.2.2  Problem Solving and Metacognition</A>
+
+<BR>
+<A HREF="related-res2-chapt.html#REF62733"> 11.2.3  Metamemory</A>
+
+<BR>
+<A HREF="related-res2-chapt.html#REF22489"> 11.2.4  Relation of Psychological Research to IML Theory</A>
+</UL>
+
+<A HREF="related-res2-chapt.html#REF93044"> 11.3   Summary and Discussion </A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="conclude-chapt.html#REF56694"> CHAPTER XII  </A>
+
+<BR>
+<A HREF="conclude-chapt.html#REF29973">  CONCLUSIONS</A>
+
+<UL>
+<A HREF="conclude-chapt.html#REF95552"> 12.1   Major Points of the Dissertation</A>
+
+<BR>
+<A HREF="conclude-chapt.html#REF19753"> 12.2   Part One: Motivations and Defining the Problem </A>
+
+<BR>
+<A HREF="conclude-chapt.html#HDR0"> 12.3   Part Two: Content Theory of Introspective Multistrategy Learning</A>
+
+<BR>
+<A HREF="conclude-chapt.html#HDR1"> 12.4   Part Three: Process Theory of Introspective Multistrategy Learning</A>
+
+<BR>
+<A HREF="conclude-chapt.html#REF31292"> 12.5   Part Four: Evaluation and Implementation of the Theory</A>
+
+<BR>
+<A HREF="conclude-chapt.html#REF87914"> 12.6   Contributions </A>
+</UL>
+</UL>
+
+
+<UL>
+<A HREF="epilogue.html#REF31709"> CHAPTER XIII  </A>
+
+<BR>
+<A HREF="epilogue.html#HDR0">  EPILOGUE</A>
+
+<UL>
+<A HREF="epilogue.html#REF72038"> 13.1     The Processes:
+<BR> Integration of problem solving, understanding, and learning </A>
+
+<BR>
+<A HREF="epilogue.html#REF39850"> 13.2     The Knowledge: 
+<BR>Integration of world knowledge, metaknowledge and self-knowledge</A>
+
+<BR>
+<A HREF="epilogue.html#REF53611"> 13.3   The "Turing Test"</A>
+</UL>
+</UL>
+
+
+<BR>
+<A HREF="appendix-a.html#REFARI"> APPENDICES, REFERENCES AND INDEXES</A>
+
+<UL>
+<A HREF="appendix-a.html#REF24995"> APPENDIX A </A>
+
+<BR>
+<A HREF="appendix-a.html#HDR0">  THE DEGREES OF FREEDOM IN LEARNING</A>
+</UL>
+
+
+<UL>
+<A HREF="appendix-b.html#REF75687"> APPENDIX B </A>
+
+<BR>
+<A HREF="appendix-b.html#HDR0">  META-AQUA OUTPUT IN STORY UNDERSTANDING MODE</A>
+</UL>
+
+
+<UL>
+<A HREF="appendix-c.html#REF37653"> APPENDIX C </A>
+
+<BR>
+<A HREF="appendix-c.html#HDR0">  STORY LISTINGS FOR RUN NUMBER FOUR</A>
+</UL>
+
+
+<UL>
+<A HREF="appendix-d.html#REF52678"> APPENDIX D </A>
+
+<BR>
+<A HREF="appendix-d.html#REF85834">  META-AQUA OUTPUT IN LISP PROGRAMMING MODE</A>
+</UL>
+
+
+<UL>
+<A HREF="references.html#HDR0">  REFERENCES</A>
+</UL>
+
+
+<UL>
+<A HREF="git-cc-96-06AIX.html#HDR0">NAME INDEX</A>
+<BR>
+
+
+<A HREF="git-cc-96-06PIX.html#HDR0"><A HREF="openObjectId">PROGRAM INDEX</A></A>
+<BR>
+
+<A HREF="git-cc-96-06SIX.html#HDR0"><A HREF="openObjectId">SUBJECT INDEX</A></A>
+<P>
+
+<A HREF="vita.html#HDR0">VITA</A>
+</UL>
+
+<HR>
+
+<HR>
+
+<A HREF="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/cox.html"><IMG
+ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/home2.gif"></A>
+
+<A HREF="http://www.cc.gatech.edu/cogsci">
+<IMG ALIGN=MIDDLE
+SRC="http://www.cc.gatech.edu/aimosaic/students/Ai-students/cox/Www/Images/cogsci-granite3.gif"></A>

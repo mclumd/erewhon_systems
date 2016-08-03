@@ -1,0 +1,4169 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 1 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "133" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+90.97 78 521.03 708 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 -7 -8 574 1013 359.26 589.55 128.79 116.98 FMBEGINEPSF
+%%BeginDocument: /tmp_mnt/net/ha2/cox/Research/Thesis/Dissertation/Draft2/Tech-rep/mxp16.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: mxp16.draw
+%%Creator: Draw
+%%CreationDate: Mon Mar 15 22:44:01 1993
+%%For: cox
+%%DocumentFonts: (atend)
+%%Pages: 0 -1
+%%BoundingBox: -7 -8 574 1013
+%%EndComments
+
+%%BeginDocument: /usr/lib/NextStep/printPackage.ps
+%!PS-Adobe-2.0
+%%Title: Printing Package
+%%EndComments
+%Version: 2.0
+%Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/setcmykcolor{
+	1.0 exch sub dup dup 6 -1 roll
+	sub dup 0 lt{pop 0}if 5 1 roll
+	4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll
+	exch sub dup 0 lt{pop 0}if setrgbcolor
+}__NXbdef
+/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def   
+/_NXfstr 128 string dup 0 (_NX) putinterval def   
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {//findfont exec}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {//findfont exec dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXProcArray 5 array __NXdef
+/_NXChannels 0 __NXdef
+/_NXTotalBytes 0 __NXdef
+/_NXDoImageOp{
+	1 index{dup}{1}ifelse /_NXChannels exch store
+	_NXChannels 2 add 2 roll _NXProcArray 0 _NXChannels getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /_NXTotalBytes exch store pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{	0 1 _NXChannels 1 sub{
+			_NXProcArray exch get exec
+			length _NXTotalBytes exch sub /_NXTotalBytes exch store}for
+		_NXTotalBytes 0 le{exit}if
+	}loop /_NXProcArray 5 array def
+}__NXbdef
+/colorimage{_NXDoImageOp}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+%%EndDocument
+
+gsave
+-20 -28 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+/oval {
+    translate scale newpath 0.5 0.5 0.5 0 360 arc
+} def /line {
+    moveto rlineto stroke
+} def /setup {
+    setlinewidth setlinecap setlinejoin gsave
+} def /arrow {
+    newpath moveto dup rotate -13 6 rlineto 4 -6 rlineto -4 -6 rlineto closepath gsave 0 setlinejoin stroke grestore fill neg rotate
+} def
+%%EndSetup
+gsave
+-7 -8 580.05304 1021 rectclip
+-7 -8 580.05304 1021 rectclip
+0 0 0 setup
+gsave
+/Helvetica findfont 7 scalefont [1 0 0 -1 0 0] makefont
+48
+exch
+defineuserobject
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 397] concat
+/Helvetica findfont 8 scalefont [1 0 0 -1 0 0] makefont
+49
+exch
+defineuserobject
+49 execuserobject setfont
+0 setgray
+510 198 moveto (truth ) show
+/Helvetica findfont 11 scalefont [1 0 0 -1 0 0] makefont
+14
+exch
+defineuserobject
+14 execuserobject setfont
+(=) show
+/Courier findfont 8 scalefont [1 0 0 -1 0 0] makefont
+15
+exch
+defineuserobject
+15 execuserobject setfont
+510 208 moveto (out) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+72.582779 41.634636 219.351013 326.288239 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+25.158936 -25.105564 292.841064 347.10556 line
+-44.940487 318 322 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+34.258286 31.105564 186 316 line
+222.239807 186 316 arrow
+grestore
+0 0 0 setup
+gsave
+15 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 585.263428] concat
+/Helvetica findfont 16 scalefont [1 0 0 -1 0 0] makefont
+16
+exch
+defineuserobject
+16 execuserobject setfont
+0 setgray
+211.582794 296.317932 moveto (A) show
+/Helvetica findfont 12 scalefont [1 0 0 -1 0 0] makefont
+8
+exch
+defineuserobject
+8 execuserobject setfont
+0 4 rmoveto
+(2) show
+0 -4 rmoveto
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 579.263306] concat
+16 execuserobject setfont
+0 setgray
+281.092712 294.222992 moveto (E) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.026474 64.262161 67 366.922852 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 684.255066] concat
+/Symbol findfont 36 scalefont [1 0 0 -1 0 0] makefont
+18
+exch
+defineuserobject
+18 execuserobject setfont
+0 setgray
+244.940399 349.711761 moveto <b9> show
+grestore
+grestore
+0 0 0 setup
+gsave
+18 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 761.233643] concat
+/Helvetica findfont 9 scalefont [1 0 0 -1 0 0] makefont
+50
+exch
+defineuserobject
+50 execuserobject setfont
+0 setgray
+263.08609 378.755615 moveto (Mentally) show
+gsave
+263.08609 369.755615 39.549667 21.722422 rectclip
+263.08609 390.755615 moveto (Initiates) show
+grestore
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 694.397278] concat
+50 execuserobject setfont
+0 setgray
+78.165573 340.999939 moveto (Mentally) show
+78.165573 352.999939 moveto (Results) show
+grestore
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+8 -14 133 333 line
+-60.256893 141 319 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+20 -41 112 367 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+20 -40 119 370 line
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 811.59668] concat
+/Helvetica findfont 14 scalefont [1 0 0 -1 0 0] makefont
+51
+exch
+defineuserobject
+51 execuserobject setfont
+0 setgray
+25.403976 401.79834 moveto ( New) show
+25.403976 419.79834 moveto (Input) show
+grestore
+grestore
+0 0 0 setup
+gsave
+51 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 641.156738] concat
+50 execuserobject setfont
+0 setgray
+265.377502 323 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+41 28 moveto 41 288 41 288 115 288 curveto stroke
+0 115 288 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 583.514771] concat
+49 execuserobject setfont
+0 setgray
+390.496704 286 moveto (truth) show
+14 execuserobject setfont
+( =) show
+15 execuserobject setfont
+390.496704 296 moveto (hypothesized-in) show
+grestore
+grestore
+0 0 0 setup
+gsave
+15 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 650.973816] concat
+50 execuserobject setfont
+0 setgray
+201.264893 328 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 714.3974] concat
+50 execuserobject setfont
+0 setgray
+323.165588 351 moveto (Mentally) show
+323.165588 363 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 149] concat
+16 execuserobject setfont
+0 setgray
+121 75 moveto ( ) show
+/Courier findfont 12 scalefont [1 0 0 -1 0 0] makefont
+52
+exch
+defineuserobject
+52 execuserobject setfont
+(out) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+37 35 117 59 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 0 0 setup
+gsave
+52 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 504] concat
+50 execuserobject setfont
+0 setgray
+514 255 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 800] concat
+49 execuserobject setfont
+0 setgray
+84 388 moveto ("Barked) show
+84 398 moveto (because) show
+84 408 moveto (dog detected) show
+84 418 moveto (      drugs.") show
+grestore
+grestore
+0 0 0 setup
+gsave
+0.835292 setgray
+1 setalpha
+91.635757 68.787659 209.37085 142.561096 oval fill
+grestore
+0 setgray
+1 setalpha
+91.635757 68.787659 209.37085 142.561096 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.428529 15.740842 254.735077 125.364197 line
+88.443169 255.163605 141.105042 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 33.488735 252.013245 99.116272 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 28.963228 258.364227 100.021362 line
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+72.582779 41.634636 218.536377 6.386734 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+49 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 52.831551] concat
+18 execuserobject setfont
+0 setgray
+246.125824 34 moveto (=) show
+grestore
+grestore
+0 0 0 setup
+gsave
+18 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 225.385574] concat
+50 execuserobject setfont
+0 setgray
+262.178833 110.831573 moveto (Mentally) show
+gsave
+262.178833 101.831573 39.549667 21.722422 rectclip
+262.178833 122.831573 moveto (Initiates) show
+grestore
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+176 0 41 28 line
+180 41 28 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 71.444839] concat
+50 execuserobject setfont
+0 setgray
+187.708588 38 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 31.67853 337.297974 115.408051 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 308.122192] concat
+16 execuserobject setfont
+0 setgray
+334 160.561096 moveto (E) show
+/Helvetica-Bold findfont 18 scalefont [1 0 0 -1 0 0] makefont
+53
+exch
+defineuserobject
+53 execuserobject setfont
+<c2> show
+grestore
+grestore
+0 setgray
+0.333333 setgray
+0 0 0 setup
+0 setgray
+1 setalpha
+56.01992 83.55397 284 40 line
+56.161232 340.019928 123.55397 arrow
+grestore
+0 0 0 setup
+gsave
+53 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 353.062866] concat
+/Helvetica-Bold findfont 14 scalefont [1 0 0 -1 0 0] makefont
+54
+exch
+defineuserobject
+54 execuserobject setfont
+0 setgray
+225.516602 172.531433 moveto (Retrieval) show
+225.516602 190.531433 moveto (  Failure) show
+grestore
+grestore
+0 0 0 setup
+gsave
+54 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 79.065239] concat
+50 execuserobject setfont
+0 setgray
+292.65564 41 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+72.582779 41.634636 215.536377 56.386734 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 144] concat
+51 execuserobject setfont
+0 setgray
+234 71 moveto (Truth) show
+grestore
+grestore
+0 setgray
+0.333333 setgray
+0 0 0 setup
+0 setgray
+1 setalpha
+58.576172 -0.596695 155.423828 77.596695 line
+179.416351 155.423828 77.596695 arrow
+grestore
+0 setgray
+0.333333 setgray
+0 0 0 setup
+0 setgray
+1 setalpha
+50.01992 47.55397 287 86 line
+43.553577 337.019928 133.55397 arrow
+grestore
+0 0 0 setup
+gsave
+51 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 167.065231] concat
+50 execuserobject setfont
+0 setgray
+173.65564 85 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 187.444839] concat
+50 execuserobject setfont
+0 setgray
+284.708618 96 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 54] concat
+50 execuserobject setfont
+0 setgray
+496 30 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 237.290405] concat
+8 execuserobject setfont
+0 setgray
+437.536407 105.302368 moveto (Hypothesis) show
+437.536407 120.302368 moveto (Generation) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.304634 64.262161 430 97.01767 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 212.3974] concat
+50 execuserobject setfont
+0 setgray
+388.165588 100 moveto <be4d656e74616c6c79> show
+388.165588 112 moveto (   Results) show
+grestore
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+17.503357 0.435425 372.496643 133.564575 line
+181.425079 372.496643 133.564575 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+44.999825 0 384 137 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+43.540192 0 386.459839 131 line
+grestore
+0 0 3 setup
+0 setgray
+1 setalpha
+27 -24 387 146 line
+grestore
+0 0 0 setup
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 73.684448] concat
+/Helvetica findfont 10 scalefont [1 0 0 -1 0 0] makefont
+55
+exch
+defineuserobject
+55 execuserobject setfont
+0 setgray
+449.039734 33.842224 moveto (Decision) show
+449.039734 46.842224 moveto (  Basis) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+52 50 442 12 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 37 468 62 line
+88.454453 469 99 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+37 35 519 207 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+22 2 496 222 line
+185.19458 496 222 arrow
+grestore
+0 0 0 setup
+gsave
+55 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 127.720032] concat
+50 execuserobject setfont
+0 setgray
+437.231812 64 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 398.122192] concat
+/Times-Roman findfont 17 scalefont [1 0 0 -1 0 0] makefont
+25
+exch
+defineuserobject
+25 execuserobject setfont
+0 setgray
+546.463623 203.561096 moveto (I\302) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 54 536 242 line
+88.941711 537 296 arrow
+grestore
+0 0 0 setup
+gsave
+25 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 461.720032] concat
+50 execuserobject setfont
+0 setgray
+492.231812 231 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 449.05957 194.717651 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.340083 10.612783 473.586426 162 line
+268.167206 473.586426 162 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 -23.765331 471 194.21373 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 23.765331 477.883667 171.304993 line
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 362.10437] concat
+50 execuserobject setfont
+0 setgray
+433.331116 176 moveto (Mentally) show
+433.331116 188 moveto (Enables) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 167 537 39 line
+89.659561 538 206 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+42 0 495 39 line
+0 537 39 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 21] concat
+49 execuserobject setfont
+0 setgray
+407 13 moveto (truth ) show
+14 execuserobject setfont
+(=) show
+49 execuserobject setfont
+( ) show
+15 execuserobject setfont
+(out) show
+grestore
+grestore
+0 0 0 setup
+gsave
+15 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 258] concat
+48 execuserobject setfont
+0 setgray
+342 127 moveto (Missing) show
+342 136 moveto (    XP) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+37 35 519 296 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 624.561096] concat
+16 execuserobject setfont
+0 setgray
+498.463623 317 moveto (M) show
+53 execuserobject setfont
+<c2> show
+grestore
+grestore
+0 0 0 setup
+gsave
+53 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 672] concat
+49 execuserobject setfont
+0 setgray
+513 338 moveto (truth ) show
+14 execuserobject setfont
+(=) show
+49 execuserobject setfont
+( ) show
+15 execuserobject setfont
+(out) show
+grestore
+grestore
+0 0 0 setup
+gsave
+15 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 432.171875] concat
+16 execuserobject setfont
+0 setgray
+466.688721 221.585938 moveto (Q) show
+grestore
+grestore
+0 0 0 setup
+-152.84613 -291.5 translate
+1.423077 1.5 scale
+0 setgray
+1 setalpha
+gsave
+newpath
+systemdict
+begin
+314 315 418 423 setbbox
+342 422 moveto
+-28 -28 rlineto
+79 -79 rlineto
+25 26 rlineto
+-76 82 rlineto
+0 -1 rlineto
+end
+stroke
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 31.67853 322.205322 290.697479 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+8.215413 -8.684198 363.784546 280.684204 line
+-46.590317 371.999969 272 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+14.573988 -18.352112 350 293 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+13.832881 -17.807522 354.094574 298.338135 line
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 31.67853 394.205322 200.697479 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 428] concat
+48 execuserobject setfont
+0 setgray
+399.000031 203 moveto (  Bark) show
+399.000031 212 moveto (   at) show
+399.000031 221 moveto (luggage) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 596] concat
+48 execuserobject setfont
+0 setgray
+327 287 moveto (Violent) show
+327 296 moveto (Action) show
+grestore
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+8.215413 -8.684198 394.784546 240.684204 line
+-46.590317 402.999969 232 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+17.573988 -22.352112 378 257 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+13.832881 -17.807522 385.094543 258.338165 line
+grestore
+0 0 1.794872 setup
+0 0 1.794872 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 524] concat
+48 execuserobject setfont
+0 setgray
+363 263 moveto (Threat) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+32 14 358 257 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 551.397339] concat
+48 execuserobject setfont
+0 setgray
+324.165588 271 moveto (Mentally) show
+324.165588 280 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 479.397369] concat
+48 execuserobject setfont
+0 setgray
+355.165588 235 moveto (Mentally) show
+355.165588 244 moveto (Enables) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 33.735565 82.205292 201.171387 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 430.675293] concat
+48 execuserobject setfont
+0 setgray
+87 203.168823 moveto (  Bark) show
+87 212.168823 moveto (   at) show
+87 221.168823 moveto (luggage) show
+grestore
+grestore
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+8.076921 10.223373 107 232.376587 line
+231.691223 107 232.376587 arrow
+grestore
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+15.346152 19.716509 108.615387 238.218506 line
+grestore
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+18.346161 22.637505 112.653839 235.297546 line
+grestore
+0 0 1.794872 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 554.727173] concat
+48 execuserobject setfont
+0 setgray
+156 273.181763 moveto (Mentally) show
+156 282.181763 moveto (Results) show
+grestore
+grestore
+0 0 1.794872 setup
+0 0 1.794872 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 518] concat
+48 execuserobject setfont
+0 setgray
+115 256.415588 moveto (Knowledge) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+46 14.909089 110 256.870056 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 0 0 setup
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 33.735569 151.602661 291.690826 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 612.779175] concat
+48 execuserobject setfont
+0 setgray
+161 299.01297 moveto (Sniff) show
+161 308.01297 moveto (Drugs) show
+grestore
+grestore
+grestore
+0 0 0.512821 setup
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+8.076921 10.223373 137 271.779144 line
+231.691223 137 271.779144 arrow
+grestore
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+15.346152 19.716509 138.615387 277.620972 line
+grestore
+0 0 0.512821 setup
+0 setgray
+1 setalpha
+15.346152 19.716509 142.653839 274.700104 line
+grestore
+grestore
+0 0 1.794872 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 485.142944] concat
+48 execuserobject setfont
+0 setgray
+130 238.389648 moveto (Mentally) show
+130 247.389648 moveto (Enables) show
+grestore
+grestore
+0 0 0 setup
+-62 50.272717 translate
+1 1.064935 scale
+0 setgray
+gsave
+newpath
+systemdict
+begin
+123 119 271 273 setbbox
+123 158 moveto
+99 115 rlineto
+49 -43 rlineto
+-98 -111 rlineto
+-49 43 rlineto
+-1 -4 rlineto
+end
+stroke
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 623] concat
+48 execuserobject setfont
+0 setgray
+525 305 moveto ( Missing) show
+525 314 moveto (Abstract) show
+525 323 moveto (    XP) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 439] concat
+48 execuserobject setfont
+0 setgray
+526 213 moveto (Missing) show
+526 222 moveto (  Index) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+72 177 161 343 line
+247.866516 161 343 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 223.443695 517.316711 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1066.559814] concat
+49 execuserobject setfont
+0 setgray
+226.980103 529.279907 moveto (EXPLAINS) show
+grestore
+grestore
+0 0 0 setup
+gsave
+49 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1117.156738] concat
+50 execuserobject setfont
+0 setgray
+266.377502 561 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1038.973877] concat
+50 execuserobject setfont
+0 setgray
+200.264893 522 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+0.835292 setgray
+1 setalpha
+91.635757 68.787659 211.278137 411.771118 oval fill
+grestore
+0 setgray
+1 setalpha
+91.635757 68.787659 211.278137 411.771118 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 887.950134] concat
+54 execuserobject setfont
+0 setgray
+220.165588 439.873047 moveto (Expectation) show
+220.165588 457.873047 moveto (   Failure) show
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.488351 15.740842 256.101807 394.364197 line
+88.225601 256.590149 410.105042 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 33.488735 253 368.116272 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 28.963228 260.237579 369.021362 line
+grestore
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+13 9 289 357 line
+214.696182 289 357 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+39 27 296 365 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+39 28 300 360 line
+grestore
+0 0 0 setup
+gsave
+54 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 700] concat
+8 execuserobject setfont
+0 setgray
+133 347 moveto (8) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 774] concat
+8 execuserobject setfont
+0 setgray
+313 384 moveto (9) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 750] concat
+8 execuserobject setfont
+0 setgray
+234 372 moveto (10) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 222] concat
+8 execuserobject setfont
+0 setgray
+233 114 moveto (11) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 278] concat
+8 execuserobject setfont
+0 setgray
+409 136 moveto (6) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 358] concat
+8 execuserobject setfont
+0 setgray
+483 176 moveto (5) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1523] concat
+16 execuserobject setfont
+0 setgray
+498 767 moveto (M) show
+grestore
+grestore
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1378] concat
+25 execuserobject setfont
+0 setgray
+498 695 moveto (I) show
+grestore
+grestore
+0 0 0 setup
+gsave
+25 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1002.171875] concat
+16 execuserobject setfont
+0 setgray
+329.688751 506.585938 moveto (E) show
+grestore
+grestore
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 924] concat
+8 execuserobject setfont
+0 setgray
+352 459 moveto (7) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.304634 64.262161 331 566.0177 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1183.290405] concat
+8 execuserobject setfont
+0 setgray
+337.536438 578.302368 moveto (       XP) show
+337.536438 593.302368 moveto (Application) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+40 1 408 599 line
+181.432144 408 599 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+52 50 448 573 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1174] concat
+50 execuserobject setfont
+0 setgray
+420.999969 590 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1193.684448] concat
+55 execuserobject setfont
+0 setgray
+454.039734 593.842224 moveto (Decision) show
+454.039734 606.842224 moveto (  Basis) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.304634 64.262161 325.45697 754.4104 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+55 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1572.095947] concat
+8 execuserobject setfont
+0 setgray
+328.900665 779 moveto (      Pose) show
+328.900665 794 moveto (    Question) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 343.059601 669.717651 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1420.171875] concat
+16 execuserobject setfont
+0 setgray
+387.688751 715.585938 moveto (Q) show
+grestore
+grestore
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1475.60022] concat
+50 execuserobject setfont
+0 setgray
+324.324524 733 moveto (Mentally) show
+324.324524 745 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1312.10437] concat
+50 execuserobject setfont
+0 setgray
+377.331116 651 moveto (Mentally) show
+377.331116 663 moveto (Enables) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+37 35 456 743 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+37 35 456 672 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+0 -49 473.999969 672 line
+89.997345 473.999969 672 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 37 473.999969 707 line
+88.454453 474.999969 744 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+62 0 392 691 line
+180 392 691 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1422] concat
+50 execuserobject setfont
+0 setgray
+463 714 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1368] concat
+50 execuserobject setfont
+0 setgray
+426 687 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1254] concat
+50 execuserobject setfont
+0 setgray
+488 630 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1372] concat
+48 execuserobject setfont
+0 setgray
+350 673 moveto (Why did) show
+350 682 moveto (dog bark at) show
+350 691 moveto (luggage ?) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1379] concat
+48 execuserobject setfont
+0 setgray
+463 683 moveto (Index) show
+463 692 moveto (onActor) show
+463 701 moveto (relation) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1519] concat
+48 execuserobject setfont
+0 setgray
+461 753 moveto (Abstract) show
+461 762 moveto (Threaten) show
+461 771 moveto (    XP) show
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.336494 12.389435 366.642426 631.463806 line
+268.446838 366.642426 631.463806 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 -27.743807 364.083313 669.070312 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 27.743807 370.894318 642.326538 line
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.336494 12.389435 366.642426 716.463806 line
+268.446838 366.642426 716.463806 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 -27.743807 364.083313 754.070312 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 27.743807 370.894318 727.326538 line
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.304634 64.262161 331 377.0177 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 817.988037] concat
+8 execuserobject setfont
+0 setgray
+337.536438 402 moveto (    Verify) show
+337.536438 417 moveto (Hypothesis) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 343.059601 480.717651 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 934.10437] concat
+50 execuserobject setfont
+0 setgray
+377.331116 462 moveto (Mentally) show
+377.331116 474 moveto (Enables) show
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.336494 12.389435 366.642426 442.463806 line
+268.446838 366.642426 442.463806 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 -27.743807 364.083313 480.070282 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 27.743807 370.894318 453.326538 line
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0.297967 12.389435 367.349457 527.463806 line
+268.624908 367.349457 527.463806 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 -27.743807 365.083313 565.070312 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+0 27.743807 371.114502 538.326538 line
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1101.60022] concat
+50 execuserobject setfont
+0 setgray
+375.324524 546 moveto (Mentally) show
+375.324524 558 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1476] concat
+8 execuserobject setfont
+0 setgray
+377 735 moveto (4) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1296] concat
+8 execuserobject setfont
+0 setgray
+353 645 moveto (5) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1096] concat
+8 execuserobject setfont
+0 setgray
+349 545 moveto (6) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 998] concat
+49 execuserobject setfont
+0 setgray
+348 492 moveto (Dog was) show
+348 502 moveto (threatened) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+92 116 257 561 line
+51.583466 349 677 arrow
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+21.199617 0.288772 301.800415 787.711243 line
+0.780432 323.000031 788 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+30 0 282 784 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+30 0 282 791 line
+grestore
+grestore
+0 0 0 setup
+gsave
+49 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1133] concat
+48 execuserobject setfont
+0 setgray
+141 567 moveto ( Bark at luggage) show
+grestore
+grestore
+0 0 0 setup
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 142.264893 579.271729 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1207] concat
+8 execuserobject setfont
+0 setgray
+153 608 moveto (Bark) show
+grestore
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1280.973877] concat
+50 execuserobject setfont
+0 setgray
+136.264893 643 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 -19 165 645 line
+-86.989777 166 626 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1677.855347] concat
+gsave
+178.940414 827 11.423843 23.855347 rectclip
+16 execuserobject setfont
+0 setgray
+178.940414 842 moveto (C) show
+grestore
+grestore
+grestore
+0 0 0 setup
+0 0 0 setup
+gsave
+16 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1570.255127] concat
+18 execuserobject setfont
+0 setgray
+106.940399 792.711792 moveto <b9> show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+72.582779 41.634636 81.351013 766.288208 oval matrix defaultmatrix setmatrix stroke
+grestore
+grestore
+0 setgray
+0.333333 setgray
+0 0 0 setup
+0 setgray
+1 setalpha
+34 42 118.999992 808 line
+51.010513 153 850 arrow
+grestore
+0 0 0 setup
+gsave
+18 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1615.233643] concat
+50 execuserobject setfont
+0 setgray
+151.08609 805.755615 moveto (Mentally) show
+gsave
+151.08609 796.755615 39.549667 21.722422 rectclip
+151.08609 817.755615 moveto (Initiates) show
+grestore
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1512.973877] concat
+50 execuserobject setfont
+0 setgray
+88.264893 759 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+36.039734 33.190979 147.960266 698 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1429] concat
+48 execuserobject setfont
+0 setgray
+150 716 moveto (inanimate) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1464.122192] concat
+16 execuserobject setfont
+0 setgray
+177 735.561096 moveto (A) show
+8 execuserobject setfont
+0 4 rmoveto
+(1) show
+0 -4 rmoveto
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1629.156738] concat
+50 execuserobject setfont
+0 setgray
+77.377502 817 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.026474 64.262161 20 649.922913 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1465.59668] concat
+51 execuserobject setfont
+0 setgray
+21.403976 728.79834 moveto ( Old) show
+21.403976 746.79834 moveto (Input) show
+grestore
+grestore
+0 0 0 setup
+gsave
+51 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 2003] concat
+49 execuserobject setfont
+0 setgray
+141 1003 moveto (Bark Definition) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+75.304634 64.262161 10.45697 873.410339 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+49 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1783.31665] concat
+8 execuserobject setfont
+0 setgray
+13.900665 879.220581 moveto (   Retrieval) show
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+17.58017 0.288772 169.41983 788.711243 line
+0.941083 187 789 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+21.23842 -0.004761 153 785 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+22.23842 -0.004761 153 792 line
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+14.062572 0.000122 118.9375 914 line
+0.000497 133.000076 914.000122 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+37.500008 0 86.90625 910 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+40.625008 0 83 917 line
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1784.397339] concat
+50 execuserobject setfont
+0 setgray
+89.165565 886 moveto (Mentally) show
+89.165565 898 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 20 165 678 line
+87.14016 166 698 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1361.156738] concat
+50 execuserobject setfont
+0 setgray
+155.377487 683 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 31.67853 148.205292 645.69751 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1317] concat
+48 execuserobject setfont
+0 setgray
+155 658 moveto (Object) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+134 578 64 167 rectstroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 20 166.999985 931 line
+87.14016 167.999985 951 arrow
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+47.178806 45.255039 143.264893 949.271729 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1947] concat
+8 execuserobject setfont
+0 setgray
+154 978 moveto (Bark) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1866.973877] concat
+50 execuserobject setfont
+0 setgray
+169.264893 936 moveto (domain) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1789.156738] concat
+50 execuserobject setfont
+0 setgray
+155.377487 897 moveto (co-domain) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+33.569534 31.67853 150.205292 898.69751 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+1 -19 166 898 line
+-86.989777 167 879 arrow
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1823] concat
+48 execuserobject setfont
+0 setgray
+157 911 moveto (Object) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+135 830 64 167 rectstroke
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+36.039734 33.190979 147.960266 844 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1721] concat
+48 execuserobject setfont
+0 setgray
+153.000015 862 moveto (animate) show
+grestore
+grestore
+0 0 0 setup
+gsave
+48 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1851] concat
+8 execuserobject setfont
+0 setgray
+99 930 moveto (2) show
+grestore
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1551] concat
+8 execuserobject setfont
+0 setgray
+157 780 moveto (3) show
+grestore
+grestore
+0 0 0 setup
+0 setgray
+1 setalpha
+38 -36 118.999992 766 line
+-43.453125 157 730 arrow
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1362] concat
+49 execuserobject setfont
+0 setgray
+43 665 moveto ("Dog) show
+43 675 moveto (suddenly) show
+43 685 moveto (barked at) show
+43 695 moveto (luggage.") show
+grestore
+grestore
+0 0 0 setup
+gsave
+49 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1325.397339] concat
+50 execuserobject setfont
+0 setgray
+95.165573 659 moveto (Mentally) show
+95.165573 671 moveto (Results) show
+grestore
+grestore
+0 0 0 setup
+gsave
+50 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1391] concat
+8 execuserobject setfont
+0 setgray
+103 700 moveto (1) show
+grestore
+grestore
+0 0 1.794872 setup
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+18.6143 0.288772 113.385696 683.711243 line
+0.888809 132 684 arrow
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+22.487741 -0.004761 96 680 line
+grestore
+0 2 1.794872 setup
+0 setgray
+1 setalpha
+23.546564 -0.004761 96 687 line
+grestore
+grestore
+0 setgray
+0.333333 setgray
+0 0 0 setup
+gsave
+0.835292 setgray
+1 setalpha
+91.635757 66.074829 189.64238 753 oval fill
+grestore
+0 setgray
+1 setalpha
+91.635757 66.074829 189.64238 753 oval matrix defaultmatrix setmatrix stroke
+grestore
+0 0 0 setup
+gsave
+8 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1560] concat
+/Helvetica-Bold findfont 13 scalefont [1 0 0 -1 0 0] makefont
+27
+exch
+defineuserobject
+27 execuserobject setfont
+0 setgray
+195 773 moveto (Incorporation) show
+54 execuserobject setfont
+195 790 moveto (    Failure) show
+grestore
+grestore
+0 0 0 setup
+gsave
+54 execuserobject setfont
+0 setgray
+[1 0 0 -1 0 1610.10437] concat
+50 execuserobject setfont
+0 setgray
+284.331116 800 moveto (Mentally) show
+284.331116 812 moveto (Enables) show
+grestore
+grestore
+0 setgray
+0.333333 setgray
+gsave
+0 0 576 1008 rectclip
+[1 0 0 -1 0 1008] concat
+grestore
+grestore
+%%Trailer
+%%DocumentFonts: Times-Roman
+%%+ Symbol
+%%+ Courier
+%%+ Helvetica-Bold
+%%+ Helvetica
+
+%%EndDocument
+FMENDEPSF
+162.97 96 441.97 117.33 R
+7 X
+0 0 0 1 0 0 0 K
+V
+162.97 107.33 441.97 117.33 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+162.97 116.33 630.97 116.33 2 L
+1 H
+2 Z
+0 X
+0 0 0 1 0 0 0 K
+N
+90.97 78 521.03 708 C
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(Figure 1. Instantiated IMXP for mis-explanation) 186.15 99.33 T
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+72 72 540 720 C
+0 0 612 792 C
+0 1 1 0 1 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "133" 1
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Descend
+%%Pages: 1
+%%DocumentFonts: Times-Roman
+%%EOF
