@@ -1,0 +1,18 @@
+CC = g++
+LD = g++
+CP = cp
+RM = rm -f
+LS = ls
+CAT = cat
+MDIR = mkdir
+MDIRP = mkdir -p
+
+CFLAGS = -g
+LINKFLAGS = -dynamiclib
+
+LIBEXT        = dylib
+STATIC_LIBEXT = a
+
+MACHINE = $(shell hostname -s)
+
+JAVA_BUILD_DIR = $(HOME)

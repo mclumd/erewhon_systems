@@ -1,0 +1,4 @@
+MACHINE_LINKFLAGS =
+MACHINE_COMPFLAGS = -fPIC
+SYS_LIBDIR = /data/share/mcl/lib
+SYS_INCLUDEDIR = /data/share/mcl/include

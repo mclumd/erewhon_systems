@@ -1,0 +1,36 @@
+Instructions for building UMBC_UTILS
+------------------------------------
+
+Required packages:
+
+- g++, standard c/c++ headers, and make
+
+
+Preparing for the build:
+
+- you should ensure that there are makefiles for your OS and machine in 
+  the "make" directory:
+  + make.$(MACHINENAME)
+  + make.$(OS)
+  
+  These files should define and/or override all OS or machine-specific
+  commands & directories to meet the minimum functionality required in
+  the build.
+  
+
+Build Instructions:
+
+- after having specified the location for the install in the local 
+  makefile, "make install" in the build directory.
+  
+  this step will first build the Utils library, then copy it to
+  $(SYS_LIBDIR)
+  then it will copy the headers in the api/mcl directory to
+  $(SYS_INCLUDEDIR)/umbc/
+
+
+Usage:
+
+- link your executables against -lUMBC  
+- for individual utility usage, including settings, see the included 
+  documentation in docs/guide.pdf

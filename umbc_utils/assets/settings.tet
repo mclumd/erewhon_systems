@@ -1,0 +1,2 @@
+utils.blackback=false
+utils.instrumentation.format=gnuplot

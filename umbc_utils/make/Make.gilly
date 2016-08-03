@@ -1,0 +1,16 @@
+# =================================================
+#                 M a k e . g i l l y
+# =================================================
+
+# Operating specific Make file variables for
+# uname -a == Linux (i686)
+# hostname = gilly.local  (Dean's Dell)
+
+MACHINE_LINKFLAGS =
+MACHINE_COMPFLAGS = -Wall -fPIC
+SYS_LIBDIR = $(HOME)/lib
+SYS_INCLUDEDIR = $(HOME)/include
+
+# =================================================
+# end             M a k e . g i l l y           end
+# =================================================

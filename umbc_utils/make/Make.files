@@ -1,0 +1,2 @@
+LIB_SRC   = $(wildcard src/*.cc)
+LIB_OBJ   = $(patsubst src/%.cc,obj/%.o,$(LIB_SRC))

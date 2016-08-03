@@ -1,0 +1,23 @@
+## defs for system tools
+
+CC = g++
+LD = g++
+CP = cp
+RM = rm -f
+LS = ls
+CAT  = cat
+MDIR  = mkdir
+MDIRP = mkdir --parents
+
+CFLAGS = -g
+LINKFLAGS = -Wl,-G -shared 
+# -Wl,E = export all
+
+LIBEXT        = so
+STATIC_LIBEXT = a
+
+# feel free to overwrite these ones in Make.$(MACHINE)
+SYS_LIBDIR = /usr/local/lib
+SYS_INCLUDEDIR = /usr/local/include
+
+MACHINE = $(shell hostname)
