@@ -1,0 +1,8 @@
+Time-stamp: <Mon Jan 20 15:12:51 EST 1997 ferguson>
+
+To build the TRAINS-96 v2.2 SpeechIn module, you need Sphinx-II
+sources from CMU (available by license). The directory `Sphinx' should
+contain that source tree, and the directory `SpeechData' should
+contain the speech models needed at run-time. These can both be
+symlinks (as they are in the TRAINS distribution), and the precise
+layout can be modified by changing the Makefile in this directory.

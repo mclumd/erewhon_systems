@@ -1,0 +1,169 @@
+.\" Time-stamp: <Tue Jan 14 16:38:27 EST 1997 ferguson>
+.TH TDM 1 "14 Jan 1997" "TRAINS Project"
+.SH NAME
+tdm \- TRAINS Discourse Manager module
+.SH SYNOPSIS
+.IP tdm 4
+[lisp\ args] \-\- 
+[\-socket\ HOST:PORT]
+[\-debug\ t|nil]
+[\-debug\-interactive t|nil]
+[\-score\-p t|nil]
+[\-seed\ N]
+[\-speech-out\ t|nil]
+.SH DESCRIPTION
+.PP
+.I Tdm
+is a dumped Allegro Common Lisp image that implements the TRAINS
+Discourse Manager module. The DM module is responsible for taking the
+output of the parser (an utterance interpretation), determining what
+was really said, how it fits into the plan(s) under consideration, and
+what to do in response. It uses the Problem Solving (PS) module to
+perform the underlying reasoning, and generates requests to the
+DISPLAY and SPEECH-OUT modules for its responses.
+.PP
+It should be noted that the Discourse Manager in fact consists of
+several somewhat separate sub-modules that communicate using internal
+KQML messages.
+.PP
+Unlike the other modules in the TRAINS System, the Discourse Manager
+does not use standard input and standard output for KQML messages,
+preferring to save those streams for debugging. Instead, it
+establishes its own connection to the IM at initialization.
+.SH OPTIONS
+.IP "-socket HOST:PORT"
+Connect to Input Manager at the given location. The default is the
+value of the environment variable TRAINS_SOCKET.
+.IP "-debug t|nil"
+Enable or disable incredibly verbose tracing to the file "Dm.log". In
+fact, there are some intermediate, undocumented values for this
+option.
+.IP "-debug-interactive t|nil"
+Not sure what this is for.
+.IP "-score-p t|nil"
+Enable or disable the "scoring" phase at the end of conversations.
+.IP "-seed N"
+Initialize the seed of the random number generator which, in
+principle, should cause sessions to be relatively repeatable.
+.IP "-speech-out t|nil"
+Enable or disable use of speech generation.
+.IP "lisp args"
+You can also pass any arguments suitable for dumped Lisp images,
+before the double-hypen that indicates the start of user-defined
+options. I don't know why you would want to, however.
+.SH USAGE
+.PP
+I certainly can't begin to describe the operation of the Discourse
+Manager here. Some more details are in various technical reports.
+.SH "DISCOURSE MANAGER MESSAGES"
+.PP
+In this section I am only going to document the configuration messages
+understood by the DM between conversations (and a few control
+messages). It also understands the messages broadcast by the Parser,
+as well as the messages it exchanges with the Problem Solving module.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Starts a conversation. Upon receiving this message, the Discourse
+Manager initializes the scenario, generates the initial greeting, and
+prepares to receive input.
+.IP "(request :content (end\-conversation))"
+Causes the DM to abandon the current conversation and wait for the
+next one to start.
+.IP "(request :content (chdir DIR))"
+Request that the Discourse Manager close the current "Dm.log" and open a
+new one in the given
+.IR DIR .
+.IP "(request :content (exit :status N))"
+Requests that the Discourse Manager exit with status
+.I N
+(default 0).
+.IP "(request :content (config :speech-in t|nil))"
+Informs the DM that speech input is or is not in use.
+.IP "(request :content (config :speech-out t|nil))"
+Informs the DM that speech output is or is not in use.
+.IP "(request :content (config :speech-rate N))"
+Sets the speaking rate to
+.I N
+(a floating point value, default 1.0). This is passed TrueTalk via
+SPEECH-OUT.
+.IP "(request :content (config :personality P))"
+Selects a personality. Possible values for
+.I P
+are:
+.IR :casual ,
+.IR :abusive ,
+.IR :humorous ,
+.IR :paranoid ,
+.IR :respectful ,
+.IR :dry ,
+and
+.IR :snide .
+I believe that emotions must be enabled for personalities to have any
+effect.
+.IP "(request :content (config :emotions t|nil))"
+Enables or disables emotions.
+.IP "(request :content (config :score t|nil))"
+Like the -score command line argument, this enables or disables the
+"scoring" phase at the end of conversations. The default is enabled.
+.IP "(request :content (config :intro t|nil))"
+Enables or disables the demonstrative introduction given by the system
+to new users. The default is enabled, I think.
+.IP "(request :content (config :known-goals t|nil))"
+Determines whether the system "knows" the goals of the scenario in
+advance. The default is nil.
+.IP "(request :content (config :start (city1 city2 ...)))"
+Sets start locations for engines in scenario. The default is 2
+randomly-located engines.
+.IP "(request :content (config :enum N))"
+Specifies
+.I N
+randomly-located engines in the scenario. The default is 2.
+.IP "(request :content (config :goal (city1 city2 ...)))"
+Specifies destinations for scenario. The default is random
+destinations.
+.IP "(request :content (config :seed N))"
+Like the -seed command line option, this initializes the random number
+generator.
+.IP "(request :content (config :debug t|nil))"
+Like the -debug command line option, this detremines the level of
+logging to the "Dm.log" file.
+.IP "(request :content (config :xcitydelay N))"
+Delay per train if routes cross at a city.
+.IP "(request :content (config :xtrackdelay N))"
+Delay per train if routes cross share a track.
+.IP "(request :content (config :ccities (city1 city2 ...)))"
+Specify list of congested cities. Can also be a list of pairs of the
+form "(CITY REASON)".
+.IP "(request :content (config :ccnum N))"
+Specify that there should be
+.I N
+randomly-selected congested cities (with random reasons).
+.IP "(request :content (config :ctracks (city1 city2 ...)))"
+Specify list of congested tracks. Can also be a list of pairs of the
+form "(TRACK REASON)".
+.IP "(request :content (config :ctnum N))"
+Specify that there should be
+.I N
+randomly-selected congested tracks (with random reasons).
+.SH ENVIRONMENT
+.PP
+The dumped Allegro CL image depends on a shared library for execution.
+You can specify the location of this library using the environment
+variable ALLEGRO_CL_HOME if it is not in the same place as when the
+image was dumped.
+.SH FILES
+.PP
+Dm.log		Discourse Manager log
+.SH DIAGNOSTICS
+.PP
+Copious logging. In the event of a crash, tends to print Lisp debugger
+information to stderr (or worse, stdout). You can occasionally get
+into the Lisp debugger, if -debug was not nil.
+.SH SEE ALSO
+.PP
+trains(1)
+.SH BUGS
+.PP
+Nah... ;-)
+.SH AUTHOR
+.PP
+Brad Miller (miller@cs.rochester.edu).

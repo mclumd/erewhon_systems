@@ -1,0 +1,12 @@
+(request :content
+ (canvas :title "TRAINS-96 - Northeast U.S. (Rail)" :width 190 :height 181))
+(request :content (scale 0.25 0.25))
+
+(request :content (default :bg true))
+(request :content (map "northeast-land"))
+(request :content (map "northeast-cities-tiny"))
+(request :content (map "northeast-tracks"))
+(request :content (default :bg false))
+(request :content (setbg))
+
+(request :content (default :thickness 1))

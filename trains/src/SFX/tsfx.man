@@ -1,0 +1,87 @@
+.\" Time-stamp: <96/10/10 13:15:15 ferguson>
+.TH TSFX 1 "10 Oct 1996" "TRAINS Project"
+.SH NAME
+tsfx \- TRAINS Sound Effects module
+.SH SYNOPSIS
+tsfx [\-audio\ server] [\-debug\ where]
+.SH DESCRIPTION
+.PP
+.I Tsfx
+is the TRAINS Sound Effects module. In fact, all it does is play audio
+files using the AudioFile server in response to KQML requests. This is
+very useful for replay, however.
+.SH OPTIONS
+.PP
+.IP "-audio host:device"
+Connect to the AudioFile server at the given address. The default is
+the value of the environment variable AUDIOFILE, if set, otherwise the
+current host.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.SH USAGE
+.PP
+.I Tsfx
+first connects to the AudioFile server given by the \-server argument
+or the AUDIOFILE environment variable. Then, in response to PLAY
+requests, it opens the specified audio file and sends it to the
+AudioFile server. The file is assumed to contain appropriate data, in
+this case 16 kHz, 16-bit, linear-encoded data with no headers. When
+the audio finishes playing, a DONE reply is generated.
+.PP
+Note that
+.I tsfx
+currently processes only a single PLAY request at a time. It would not
+be too hard to get it to play multiple files simultaneously. It would
+also be possible to have it recognize other audio file types and do
+the appropriate conversions.
+.SH "SOUND EFFECTS MESSAGES"
+.PP
+The following KQML messages are understood by the Audio Manager. They
+should be addressed with ":receiver SFX". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (play STR))"
+Plays the audio file named by
+.IR STR .
+When audio output is complete, a DONE reply is generated.
+.IP "(request :content (exit :status N))"
+Requests that the Audio Manager exit with status
+.I N
+(default 0).
+.IP "(request :content (hide\-window))"
+Ignored.
+.IP "(request :content (show\-window))"
+Ignored.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Ignored.
+.IP "(request :content (end\-conversation)"
+Ignored.
+.IP "(request :content (chdir DIR))"
+Ignored.
+.SH ENVIRONMENT
+.PP
+AUDIOFILE			HOST:DEVICE for AudioFile server
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Unlikely.
+.SH SEE ALSO
+.PP
+trains(1),
+taudio(1)
+.SH BUGS
+.PP
+Unlikely.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

@@ -1,0 +1,28 @@
+#
+# make.version : TRAINS system version information for makefiles
+#
+# kpurang may 1999
+# George Ferguson, ferguson@cs.rochester.edu, 19 Feb 1996
+# Time-stamp: <Mon Jan 20 14:53:46 EST 1997 ferguson>
+#
+
+#
+# You probably don't want to change this
+#
+TRAINS_VERSION = 2.2
+
+#
+# You probably do want to change this
+#
+TRAINS_BASE = /fs/erewhon/group/systems/trains
+
+#
+# You may need to change this for your version of make
+#
+# GNU make:
+UNAME = $(shell echo "`uname -s`.`uname -r`")
+# Sun make:
+#UNAME:sh = echo "`uname -s`.`uname -r`"
+# Otherwise hardcode the right value for your system:
+#UNAME = SunOS.5.5.1
+

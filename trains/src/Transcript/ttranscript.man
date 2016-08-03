@@ -1,0 +1,129 @@
+.\" Time-stamp: <96/10/10 17:13:34 ferguson>
+.TH TTRANSCRIPT 1 "10 Oct 1996" "TRAINS Project"
+.SH NAME
+ttranscript \- TRAINS Transcript module
+.SH SYNOPSIS
+ttranscript
+[\-nolog] [\-debug\ where] [X\ args]
+.SH DESCRIPTION
+.PP
+.I Ttranscript
+is the TRAINS Transcript module. It provides an X/Motif window
+with an ongoing transcript of the current session. It also writes the
+file "transcript" in the log directory containing the same transcript.
+.SH OPTIONS
+.PP
+.IP "-nolog"
+If given, prevents
+.I ttranscript
+from writing the "transcript" file. This can be useful during replay.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.IP "X args"
+.I Ttranscript
+accepts all standard X Toolkit arguments; see
+.IR X (1)
+for details.
+.SH USAGE
+.PP
+.I Ttranscript
+sends messages to the Input Manager to LISTEN to the USER-INPUT class
+of modules. This class includes the speech recognition modules
+SPEECH-IN and SPEECH-PP, the Keyboard Manager KEYBOARD, and the
+DISPLAY. As these modules broadcast the user's spoken, typed, or
+graphical input, the Transcript module puts together a transcript of
+the session. The system's utterances are recorded in the transcript by
+the Discourse Manager using an explicit LOG request.
+.PP
+Note that having the transcript module monitor the speech recognizers
+and put together "what the user said" is not really the right thing to
+do (although it is the least intrusive). This is because in order to
+do it right, the Transcript module has to know and duplicate the
+approach taken by the Parser regarding the multiple input streams. A
+better approach would be to have the parser decide "what was said",
+and then log it to the Transcript.
+.SH "TRANSCRIPT MESSAGES"
+.PP
+The following KQML messages are understood by the Keyboard Manager. They
+should be addressed with ":receiver TRANSCRIPT". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (log STR))"
+Adds the given string to the transcript (file and display). By
+convention,
+.I STR
+is of the form
+
+.nf
+.na
+    WHO HOW text
+.ad
+.fi
+
+where WHO is either SYS or USR, and HOW indicates how the utterance
+was conveyed (e.g., "dsp" for display, "txt" for typed input, etc.).
+.IP "(tell :content (start :uttnum N))"
+Sent by speech recognition modules at the start of an utterance.
+.IP "(tell :content (input-end :uttnum N))"
+Ignored.
+.IP "(tell :content (word W :uttnum N :index I :frame F :score S))"
+Adds a word to the current utterance. The format is more fully
+described in the manpages for
+.IR tspeech (1),
+.IR tspeechpp (1),
+and
+.IR tkeyboard (1).
+.IP "(tell :content (backto :uttnum N :index I))"
+Invalidates words at index positions
+.I I
+and higher (inclusive).
+.IP "(tell :content (end :uttnum N))"
+Sent by speech recognition modules at the end of an utterance.
+.IP "(tell :content (mouse :select obj1 obj2 ...))"
+Sent by DISPLAY when the user clicks on an object.
+.IP "(tell :content (mouse :drag obj :from obj :to obj1 obj2 ...))"
+Sent by DISPLAY when the user drags an object.
+.IP "(tell :content (confirm TAG t|nil))"
+Sent by DISPLAY when the user answers a dialog box confirmer.
+.IP "(request :content (exit :status N))"
+Requests that the Transcript exit with status
+.I N
+(default 0).
+.IP "(request :content (hide\-window))"
+Causes the Transcript display to iconify itself.
+.IP "(request :content (show\-window))"
+Causes the Transcript display to deiconify itself.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Like a SHOW-WINDOW but also rease the Transcript window.
+.IP "(request :content (end\-conversation)"
+Treated like HIDE-WINDOW.
+.IP "(request :content (chdir DIR))"
+Causes the Transcript module to close its "transcript" file and open a
+new one in the given
+.IR DIR .
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.SH FILES
+.PP
+transcript		Transcript file
+.SH DIAGNOSTICS
+.PP
+Too simple for diagnostics.
+.SH SEE ALSO
+.PP
+trains(1)
+.SH BUGS
+.PP
+I sure hope not.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

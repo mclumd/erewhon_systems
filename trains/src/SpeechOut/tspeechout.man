@@ -1,0 +1,63 @@
+.\" Time-stamp: <Fri Jan 10 11:44:21 EST 1997 ferguson>
+.TH TSPEECHOUT 1 "10 Jan 1997" "TRAINS Project"
+.SH NAME
+tspeechout \- TRAINS Speech Generation module
+.SH SYNOPSIS
+tspeechout [\-h host] [ttc args]
+.SH DESCRIPTION
+.PP
+.I Tspeechout
+is a script that launches the TrueTalk server,
+.IR tts (1),
+and client,
+.IR ttc (1).
+These two processes between them provide speech generation services
+for the TRAINS System. Further details are available in their
+manpages.
+.SH OPTIONS
+.PP
+.IP "-h host"
+Specifies the host on which to start the TrueTalk server
+.IR tts (1).
+This argument is also passed to
+.IR ttc (1)
+so it can find the server.
+.IP "ttc args"
+Any other arguments are passed to
+.IR ttc (1).
+.SH USAGE
+.PP
+Running
+.I tspeechout
+starts the TrueTalk server and client with standard input and output
+are connected to the client.
+.I Tspeechout
+then waits for either process to exit, whereupon it kills the other
+and exits itself.
+.SH "SPEECH-OUT MESSAGES"
+.PP
+Messages understood by the SPEECH-OUT module are described in the
+manpage for
+.IR ttc (1).
+.SH ENVIRONMENT
+None (but see
+.IR ttc (1)
+and
+.IR tts (1)).
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Not of its own.
+.SH SEE ALSO
+.PP
+trains(1),
+ttc(1),
+tts(1)
+.SH BUGS
+.PP
+Not of its own.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

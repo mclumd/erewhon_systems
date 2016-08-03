@@ -1,0 +1,46 @@
+.\" Time-stamp: <Fri Jan 10 11:52:41 EST 1997 ferguson>
+.TH TSPHINX 1 "10 Jan 1997" "TRAINS Project"
+.SH NAME
+tsphinx \- TRAINS version of Sphinx-II speech recognizer
+.SH SYNOPSIS
+.IP tsphinx [args]
+.SH DESCRIPTION
+.PP
+.I Tsphinx
+is the actual executable invoked by the
+.IR tspeechin (1)
+script. It is a version of the Sphinx-II speech recognition
+system from Carnegie Mellon University, modified to work as a component
+of the TRAINS system. This provides speaker-independent, incremental
+speech recognition of words from audio provided by an AudioFile
+server.
+.PP
+For more information, see the
+.IR tspeechin (1)
+manpage. For more detail on customizable options (set by
+.IR tspeechin (1)
+for TRAINS operation), see the manpage for
+.IR fbs8_live (1)
+in your Sphinx-II distribution.
+.SH ENVIRONMENT
+.PP
+See
+.IR tspeechin (1).
+.SH FILES
+.PP
+See
+.IR tspeechin (1).
+.SH DIAGNOSTICS
+.PP
+.PP
+See
+.IR tspeechin (1).
+.SH SEE ALSO
+.PP
+trains(1),
+tspeechin(1)
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
+
+

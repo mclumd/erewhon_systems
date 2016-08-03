@@ -1,0 +1,19 @@
+#
+# wny.map : Western New York
+#
+# George Ferguson, ferguson@cs.rochester.edu, 18 May 1995
+# Time-stamp: <95/07/28 14:45:56 ferguson>
+#
+# This is the original size of the wny map.
+#
+
+:canvas :title "TRAINS-95 - Western New York" :width 640 :height 425
+
+:default :bg true
+#include "wny-land.map"
+#include "wny-cities.map"
+#include "wny-tracks.map"
+:default :bg false
+:setbg
+
+:default :thickness 1

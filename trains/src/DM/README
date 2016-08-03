@@ -1,0 +1,9 @@
+Time-stamp: <Mon Jan 20 14:47:47 EST 1997 ferguson>
+
+This is a distribution version of the TRAINS-96 v2.2 discourse
+manager module. It has only been tested under Allegro CL 4.3. Although
+it is fairly portable (no multi-processing, CLIM, etc.), there are a
+few remaining Allegro-specific bits. Most of these are in
+id/tt-lispmodule.lisp (as far as I can tell), and deal with things
+like listening for input on a stream and selecting for input. They
+could be simplified or ported fairly easily.

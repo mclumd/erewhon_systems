@@ -1,0 +1,233 @@
+.\" Time-stamp: <96/10/11 11:53:01 ferguson>
+.TH TIM 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+tim \- TRAINS Input Manager
+.SH SYNOPSIS
+tim [-port N] [-nolog] [-showlogo BOOL] [-debug where]
+.SH DESCRIPTION
+.PP
+.I Tim
+is the TRAINS Input Manager. It accepts connections on a "well-known"
+socket (currently port 6200) and routes KQML messages between
+connected clients. It supports both true and selective broadcasts and
+provides full KQML syntax checking. The Input Manager also provides an
+optional graphical display of connected clients and the message
+traffic between them.
+.PP
+The Input Manager writes a log of all messages received and sent to
+the file "im.log" in the current directory (unless \-nolog is given,
+see below). The
+.I chdir
+message (see below) causes the log to be closed and reopened in a new
+directory.
+.SH OPTIONS
+.PP
+.IP "-port N"
+Listen on port
+.I N
+rather than the default (currently 6200 unless the environment
+variable TRAINS_SOCKET is set). Clients should connect to
+this port on the host running
+.IR tim .
+If this port cannot be allocated,
+.I tim
+will increment the port number and keep trying until an available
+socket is found. Clients should follow the same protocol, calling
+.IR connect (3)
+with successively higher port numbers.
+.IP "-nolog"
+If given, causes the Input Manager to not create the "im.log" file in
+the log directory.
+.IP "-showlogo BOOL"
+If True, the Input Manager starts by displaying the TRAINS logo. If
+False (the default), the clients and message traffic are displayed
+(see USAGE, below).
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.SH USAGE
+.PP
+From the shell, usage is trivial: simply start
+.I tim
+and arrange for clients to connect to it. Normally this will be done
+by a script that launches the TRAINS system as a whole, and clients
+will be launched by the TRAINS process manager,
+.IR tpm (1).
+.PP
+The Input Manager provides two different X/Motif displays. The first
+is a simple TRAINS Project logo, suitable for use in demos. The other,
+more useful but potentially confusing, display shows connected
+clients, their status, and message traffic between them. Clicking in
+the Input Manager's window toggles between the two types of display
+(the logo is obviously less work for the IM).
+.SH "CLIENT USAGE"
+From a client application's perspective, using the Input Manager can
+be broken down into three steps:
+.IP 1.
+Connect to
+.I tim
+on the well-known socket. See the discussion of the -port option,
+above, for details of this, and see any Unix IPC description for how
+to connect to a socket in general.
+.IP 2.
+Register the name of the client with the Input Manager. To do this,
+the following KQML message must be sent (to the connected socket):
+
+.nf
+.na
+    (register :receiver im :name myname)
+.ad
+.fi
+
+An optional :class argument can be given to specify to which class a
+client belongs.
+Once this is done, messages sent to
+.I myname
+by other clients will appear on the socket.
+.IP 3.
+Use the socket for communication with the Input Manager and other
+clients. A complete spec of the messages understood by the Input
+Manager is in the following section.
+.PP
+Messages not addressed to the
+Input Manager (IM) itself are copied to the receiver's connection (or
+an error is generated if the intended receiver does not exist).
+Messages without an explicit :receiver are considered broadcasts, and
+are sent to any module that has sent an appropriate LISTEN request to
+the Input Manager (selective broadcast, note the difference from the
+BROADCAST performative).
+.SH "INPUT MANAGER MESSAGES"
+.PP
+The following KQML messages are understood by the Input Manager. They
+should be addressed with ":receiver IM". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (define-class C :parent P))"
+Requests that the Input Manager define a new class named
+.I C
+whose parent class is
+.I P
+(default is the pre-defined class
+.IR Any ).
+.IP "(register :name M :class C)"
+Sender is asking to be identified as
+.I M
+from now on. This should be the first message sent by any client. The
+client's status is set to CONNECTED after receipt of this message. The
+class
+.I C
+is optional and defaults to
+.IR Any .
+Multiple REGISTER messages per client are permitted, and will result
+in messages for any of the registered names being sent to the client.
+.IP "(tell :content (ready))"
+Sender is announcing that it is ``ready,'' whatever exactly that is
+taken to mean. The client's status is set to READY after receipt of
+this message.
+.IP "(request :content (listen M))"
+Sender is asking to receive broadcast messages from module
+or class
+.IR M .
+That is, messages sent by
+.I M
+(or by a module in class
+.IR M )
+without an explicit :receiver will be copied to the sender of this
+message.
+.IP "(request :content (unlisten M))"
+Sender is asking to stop receiving broadcast messages from module or
+class
+.IR M .
+.IP "(evaluate :content (status M))"
+Sender is asking for the status of module or class
+.IR M .
+If
+.I M
+is a module, the response will be of the form:
+
+.nf
+.na
+    (reply :sender IM :content (status M STATUS))
+.ad
+.fi
+
+where the
+.I status
+is one of DEAD, CONNECTED, READY, or EOF.
+Any :reply-with in the original message will be used in the reply. If
+.I M
+is a class, one such reply will be sent for each module in the class.
+There is currently no
+mechanism for indicating that the replies are finished (we could do
+something smarter if this was needed).
+.IP "(monitor :content (status M))"
+Sender is asking to be informed whenever the status of module or class
+.IR M
+changes. This will result in REPLY messages as above, and again any
+:reply_with in the original MONITOR will be used in the REPLY. The
+Input Manager will send an initial REPLY with the current status of
+the module(s) immediately.
+.IP "(unmonitor :content (status M))"
+Sender is requesting to stop monitoring status.
+.IP "(request :content (chdir DIR))"
+Request that the Input Manager close the current "im.log" and open a
+new one in the given
+.IR DIR .
+.IP "(request :content (dump))"
+Request that the Input Manager dump its client table to stderr, for
+debugging purposes.
+.IP "(request :content (exit :status N))"
+Request that the Input Manager exit (with optional status
+.IR N ).
+This closes all client connections, and so is an effective way to halt
+the entire system.
+.IP "(broadcast :content PERFORMATIVE)"
+Causes the given
+.I PERFORMATIVE
+to be sent to all connected modules. Note that this is a true
+broadcast, as opposed to the selective broadcast provided by the
+LISTEN and UNLISTEN requests.
+.IP "(request :content (hide\-window))"
+Causes the Input Manager display to iconify itself.
+.IP "(request :content (show\-window))"
+Causes the Input Manager display to deiconify itself.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Ignored.
+.IP "(request :content (end\-conversation)"
+Ignored.
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+TRAINS_SOCKET		HOST:PORT for Input Manager connection
+.SH FILES
+.PP
+im.log			Input Manager log
+.SH DIAGNOSTICS
+.PP
+Copious.
+.PP
+In particular, when non-KQML input is received from a client
+(as can happen when it inadvertently prints an error message to its
+standard output, for example), the Input Manager complains to stderr
+and logs the bad input. This can be somewhat verbose due to the
+incremental parsing of KQML messages. Sorry.
+.SH SEE ALSO
+.PP
+tpm(1),
+tim_client(1)
+.SH BUGS
+.PP
+Undoubtedly.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
+
+

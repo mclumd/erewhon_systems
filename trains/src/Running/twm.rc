@@ -1,0 +1,320 @@
+#
+# twm.rc: Startup file for twm(1) for TRAINS
+#
+# George Ferguson, ferguson@cs.rochester.edu, 17 Sep 1996
+# Time-stamp: <Fri Jan 10 14:41:02 EST 1997 ferguson>
+#
+# This file has four sections:
+# 	Variable settings
+# 	Mouse and Keyboard bindings
+# 	User-defined functions
+# 	Menus
+#
+# The key thing as far as TRAINS is concerned is that we don't show
+# icons or an icon manager. TRAINS modules iconify themselves when
+# they want to be invisiable, which is convenient so you can deiconify
+# them if you want to see something. But it means that any icons would
+# clutter the screen due to teh number of modules floating around.
+#
+
+# The width of the border around windows (good for clicking in)
+BorderWidth 4
+# Don't make titlebuttons smaller
+ButtonIndent 0
+# On color displays use these colors
+Color {
+  BorderColor		"Black"
+  TitleBackground	"SlateGrey"
+  TitleForeground	"Black"
+}
+# The bitmaps to use for different window manager modes
+Cursors {
+	Frame	"top_left_arrow"
+	Title	"hand2"
+	Icon	"box_spiral"
+	IconMgr	"circle"
+	Move	"fleur"
+	Resize	"diamond_cross"
+	Menu	"sb_right_arrow"
+	Button	"hand2"
+	Wait	"watch"
+	Select	"dot"
+	Destroy	"pirate"
+}
+# Where to find bitmaps and icons
+IconDirectory "/usr/openwin/include/X11/bitmaps"
+# Where to put the icon manager
+IconManagerGeometry "120x400-0+200" 1
+# Uncomment this to have the icon manager shown by default
+#ShowIconManager
+IconifyByUnmapping
+SortIconManager
+# Font for menus
+MenuFont "7x13"
+# How much the mouse has to move for it to count (see f.deltastop)
+MoveDelta 2
+# Don't grab the server when popping up menus and moving windows
+NoGrabServer
+# Allow us to move windows and leave them underneath others
+NoRaiseOnMove
+# Allow us to resize windows and leave them underneath others
+NoRaiseOnResize
+# Don't put title bars on these windows
+NoTitle {
+        "TWM"
+	"xclock"
+}
+# Why do we need this still?
+NoTitleFocus
+# Move the whole window, not just the outline
+OpaqueMove
+# Pop windows up in a random place, rather than letting me place them
+RandomPlacement
+# Font for description of size in top-left corner as we do resize
+ResizeFont "8x13b"
+# Try to retain iconic/non-iconic state if window manager is killed and
+# then restarted (like when you're testing .twmrc)
+RestartPreviousState
+# Font for titlebars
+TitleFont "6x13"
+# Accept program-supplied position hints if they're not (0,0). This can
+# probably be "on", but who knows...
+UsePPosition "non-zero"
+# Number of outlines to draw when iconifying/deiconifying a window
+Zoom 4
+
+#
+# Mouse and Keyboard Bindings
+#
+# Button = mods	: context	: function
+#
+Button1 =	: frame|title	: f.function "move-or-raise"
+Button1 = s	: frame|title	: f.function "move-or-lower"
+Button1 =	: icon|iconmgr	: f.function "move-or-deiconify"
+#
+Button2 =	: frame|title	: f.function "resize-or-raise"
+Button2 = s	: frame|title	: f.function "resize-or-lower"
+#
+Button3 =	: root		: f.menu "rootmenu"
+Button3 =	: frame|title	: f.menu "windowmenu"
+
+# Left-hand "named" keys
+# F15 is Front (L5)
+"F15"	=	: all	 	: f.circledown
+# F17 is Open (L7) (and this function actually toggles state)
+"F17"	=	: all	 	: f.iconify
+
+# Extra buttons on the titlebar (with defaults)
+LeftTitleButton		"target"	= f.delete
+
+# Default functions (whatever that's for):
+WindowFunction          f.function "deiconify-and-warp"
+DefaultFunction         f.beep
+
+#
+# User-defined functions
+#
+Function "move-or-raise" {
+	f.move
+	f.deltastop
+	f.raise
+}
+
+Function "move-or-lower" {
+	f.move
+	f.deltastop
+	f.lower
+}
+
+Function "resize-or-raise" {
+	f.resize
+	f.deltastop
+	f.raise
+}
+
+Function "resize-or-lower" {
+	f.resize
+	f.deltastop
+	f.lower
+}
+
+Function "move-or-deiconify" {
+	f.move
+	f.deltastop
+	f.deiconify
+}
+
+Function "dedeiconify-and-warp" {        
+	f.warptoiconmgr ""
+	f.deiconify
+	f.iconify
+}
+
+Function "iconify-and-warp" {
+	f.warptoiconmgr ""
+	f.iconify
+}
+
+Function "deiconify-and-warp"  {
+	f.iconify
+	f.deiconify
+}
+
+#
+# Menus
+#
+
+menu  "rootmenu" {
+	"Twm for TRAINS"	f.title
+	"Login"			f.menu "login"
+	"----------------"	f.nop
+	"Twm Windows"           f.menu "TwmWindows"
+	"Twm Commands"          f.menu "twm-menu"
+	"Window Commands"	f.menu "windowmenu"
+	"Refresh"	 	!"xrefresh"
+	"Exit Twm"	  	f.menu "exit"
+}
+
+menu "windowmenu" {
+	"Window Operations" f.title
+	"Refresh"	    f.winrefresh
+	"(De)Iconify"       f.iconify
+	"Move"              f.move
+	"Resize"            f.resize
+	"Lower"             f.lower
+	"Raise"             f.raise
+	"Identify"          f.identify
+	"Delete Window"	    f.delete
+	"Kill Application"  f.destroy
+	"Focus Kbd"	    f.focus
+	"Unfocus Kbd"	    f.unfocus
+	"Warp to Icon"      f.warptoiconmgr ""
+	"Zoom"              f.menu "zoom"
+}
+
+menu "zoom" {
+	"Fullscreen"     f.fullzoom
+	"Left Zoom"	f.leftzoom
+	"Right Zoom"	f.rightzoom
+	"Top Zoom"      f.topzoom
+	"Bottom Zoom"   f.bottomzoom
+	"Horizontal Zoom"       f.hzoom
+	"Vertical Zoom" f.zoom
+}
+
+menu "twm-menu" {
+	"Twm Commands"          f.title
+	"Re-Initialize"	   	f.twmrc
+	"Show Icon Manager"     f.showiconmgr
+	"Hide Icon Manager"     f.hideiconmgr
+	"Sort Icon Manager"     f.sorticonmgr
+	"Version"	   	f.version
+	"Quit"		   	f.quit
+}
+
+menu "exit" {
+	"Confirm Exit From Twm"	f.title
+	"     Cancel"		f.nop
+	"     Exit"		f.quit
+}
+
+menu "login" {
+	"Login"		f.title
+	"xterm"		!"xterm &"
+	"raccoon"	!"xrlogin raccoon &"
+	"larynx"	!"xrlogin larynx &"
+	"micro"		!"xrlogin micro &"
+	"milli"		!"xrlogin milli &"
+	"steward"	!"xrlogin steward &"
+	"-------"	f.nop
+	"Sparcs"	f.menu "sparcs"
+	"Solaris"	f.menu "solaris"
+	"Sparc10s"	f.menu "sparc10s"
+	"Servers"	f.menu "servers"
+	"SGI"		f.menu "sgis"
+	"Alphas"	f.menu "alphas"
+}
+
+menu "sparcs" {
+	"SparcStations"		f.title
+	"antelope  [SS4]"	!"xrlogin antelope &"
+	"badger    [SSLX]"	!"xrlogin badger &"
+	"cheetah   [SSLX]"	!"xrlogin cheetah &"
+	"corvette  [SS5]"	!"xrlogin corvette &"
+	"cougar    [SS4]"	!"xrlogin cougar &"
+	"edsel     [SS5]"	!"xrlogin edsel &"
+	"elephant  [SSLX]"	!"xrlogin elephant &"
+	"fox       [SSLX]"	!"xrlogin fox &"
+	"giraffe   [SS4]"	!"xrlogin giraffe &"
+	"gazelle   [SSLX]"	!"xrlogin gazelle &"
+	"hippo     [SS4]"	!"xrlogin hippo &"
+	"leopard   [SSLX]"	!"xrlogin leopard &"
+	"llama     [SSLX]"	!"xrlogin llama &"
+	"lynx      [SS4]"	!"xrlogin lynx &"
+	"mink      [SSLX]"	!"xrlogin mink &"
+	"moose     [SSLX]"	!"xrlogin moose &"
+	"mustang   [SS5]"	!"xrlogin mustang &"
+	"orchid    [SS4]"	!"xrlogin orchid &"
+	"otter     [SSLX]"	!"xrlogin otter &"
+	"panda     [SSLX]"	!"xrlogin panda &"
+	"porcupine [SSLX]"	!"xrlogin porcupine &"
+	"raccoon   [SSLX]"	!"xrlogin raccoon &"
+	"rhino     [SS4]"	!"xrlogin rhino &"
+	"skunk     [SS4]"	!"xrlogin skunk &"
+	"tbird     [SS5]"	!"xrlogin tbird &"
+	"wolverine [SSLX]"	!"xrlogin wolverine &"
+	"zebra     [SSLX]"	!"xrlogin zebra &"
+}
+
+menu "solaris" {
+	"Solaris"	f.title
+	"heron   [4/60]"	!"xrlogin heron &"
+	"hydra   [20/40x2]"	!"xrlogin hydra &"
+	"medusa  [10/2000x8]"	!"xrlogin medusa &"
+	"micro   [Ultra1]"	!"xrlogin micro &"
+	"milli   [Ultra1]"	!"xrlogin milli &"
+	"nano    [Ultra1]"	!"xrlogin nano &" 
+	"squid   [20/??x2]"	!"xrlogin squid &"
+}
+
+menu "sparc10s" {
+	"Sparc 10"	f.title
+	"best"		!"(best=`best10`; xterm -title $best -e rlogin $best)&"
+	"artery"	!"xrlogin artery &"
+	"vein"		!"xrlogin vein &"
+	"larynx"	!"xrlogin larynx &"
+}
+
+menu "servers" {
+	"Servers"	f.title
+	"diamond [4.1.3]"	!"xrlogin diamond &"
+	"emerald [4.1.3]"	!"xrlogin emerald &"
+	"ruby    [4.1.3]"	!"xrlogin ruby &"
+	"dove    [Solaris]"	!"xrlogin dove &"
+	"busboy  [Solaris]"	!"xrlogin busboy &"
+	"butler  [Solaris]"	!"xrlogin butler &"
+	"steward [Solaris]"	!"xrlogin steward &"
+	"slate   [mail/news]"	!"xrlogin slate &"
+	"gate    [gateway]"	!"xrlogin gate &"
+	"anon    [firewall]"	!"xrlogin anon &"
+}
+
+menu "sgis" {
+	"SGIs"		f.title
+	"arsenic"	!"xrlogin arsenic &"
+	"graphite"	!"xrlogin graphite &"
+	"selenium"	!"xrlogin selenium &"
+	"silicon"	!"xrlogin silicon &"
+}
+
+menu "alphas" {
+	"Alphas"	f.title
+	"aphrodite"		!"xrlogin aphrodite &"
+	"apollo    [MC]"	!"xrlogin apollo &"
+	"artemis"		!"xrlogin artemis &"
+	"athena    [MC]"	!"xrlogin athena &"
+	"hera      [MC]"	!"xrlogin hera &"
+	"hermes    [MC]"	!"xrlogin hermes &"
+	"poseidon"		!"xrlogin poseidon &"
+	"zeus"			!"xrlogin zeus &"
+}

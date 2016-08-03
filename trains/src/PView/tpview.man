@@ -1,0 +1,99 @@
+.\" Time-stamp: <96/10/15 15:05:23 ferguson>
+.TH TPVIEW 1 "10 Oct 1996" "TRAINS Project"
+.SH NAME
+tpview \- TRAINS Parse Tree Viewer
+.SH SYNOPSIS
+tpview
+.SH DESCRIPTION
+.PP
+.I Tpview
+is the TRAINS Parse Tree Viewer. It provides a button that, when
+pressed, asks the TRAINS parser for a summary of the chart for the
+previous user utterance. This chart summary is used to draw the parse
+trees in an X/Tk display. Successive parse trees are appended to the
+display each time the user presses the button.
+.PP
+The Parse Tree Viewer is implemented using Perl version 5 and the
+Perl/Tk package.
+.SH OPTIONS
+.PP
+None.
+.SH "PARSE TREE VIEWER MESSAGES"
+.PP
+The following KQML messages are understood by the Parse Tree
+Viewer. They should be addressed with ":receiver PVIEW". Case is
+insignificant outside of strings. Whitespace between messages is
+ignored.
+.IP "(tell :content (parse-tree P))"
+Sent by the Parser in response to
+.IR tpview 's
+request when the user presses the "Get Parse Tree" button. The parse
+tree
+.I P
+is a parenthesized list of non-terminal and terminal entries.
+Non-terminal entries have the form:
+
+.ce
+"NTX" NT 1 NTI 2 NTJ 3 NTK
+
+where
+.I "NTX"
+is a quoted node-name consisting of a concatenated node-type and
+number,
+.I NT
+is the node-type for the preceding node-name,
+.I NTI
+is the first daughter (also a node-name) of the preceding node-name,
+and the sucessors are the second, third, etc. daughters of the
+preceding node-name.  These daughter node-names are defined by
+subsequent entries in
+.IR P .
+.IP
+Terminal entries have the form:
+
+.ce
+"NTX" NT LEX W
+
+where
+.I "NTX"
+is again a quoted node-name consisting of a concatenated node-type and
+number,
+.I NT
+is again the node-type for the preceding node-name,
+and
+.I W
+is the word for the terminal node.
+.IP "(request :content (show-window))"
+Requests that
+.I tpview
+de-iconify itself.
+.IP "(request :content (hide-window))"
+Requests that
+.I tpview
+iconify itself.
+.IP "(tell :content (start-conversation))"
+Ignored.
+.IP "(tell :content (end-conversation))"
+Ignored.
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+TRAINS_BASE		Used to find Perl libraries
+.SH FILES
+TRAINS_BASE/etc/pview/kqml.perl	KQML Parsing routines.
+TRAINS_BASE/etc/pview/tree.perl	Tree Drawing routines.
+.SH DIAGNOSTICS
+.PP
+A few warnings.
+.SH SEE ALSO
+.PP
+tparser(1)
+.SH BUGS
+.PP
+I expect so.
+.SH AUTHOR
+.PP
+Eric Ringger (ringger@cs.rochester.edu).
+
+

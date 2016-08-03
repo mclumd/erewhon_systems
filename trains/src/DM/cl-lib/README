@@ -1,0 +1,10 @@
+;; Time-stamp: <Tue Jan 14 13:05:34 EST 1997 ferguson>
+
+This piece of cl-lib is for use with TRAINS, and contains only those
+parts necessary to build a "minimal" cl-lib. For more information,
+visit ftp://ftp.cs.rochester.edu/pub/packages/knowledge-tools.
+
+This code is covered under the terms of the GNU copyleft. See the file
+COPYING for details and refer to the FTP site listed above for more
+information.
+

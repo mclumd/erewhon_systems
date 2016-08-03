@@ -1,0 +1,53 @@
+#
+# make.SunOS.5.5.defs : Definitions for make under Solaris 2.5
+#
+# George Ferguson, ferguson@cs.rochester.edu,  3 Nov 1995
+# Time-stamp: <Sun Jan 12 11:47:43 EST 1997 ferguson>
+#
+
+CC    = gcc
+CDEFS = -DSYSV -DSOLARIS
+CLIBS = -lsocket -lnsl
+
+# X Windows
+XROOT = /usr/openwin
+XDEFS = -DSVR4 -DFUNCPROTO=15 -I$(XROOT)/include
+XLIBS = -L/usr/grads/lib -R/usr/grads/lib -lXaw3d \
+	-L$(XROOT)/lib -R$(XROOT)/lib -lXmu -lXt -lX11 -lXext -lm -lgen
+
+# Motif
+MOTIFROOT = /usr/dt
+MOTIFDEFS = -I$(MOTIFROOT)/include $(XDEFS)
+MOTIFLIBS = -L$(MOTIFROOT)/lib -R$(MOTIFROOT)/lib -lXm \
+	    -L$(XROOT)/lib -R$(XROOT)/lib -lXmu -lXt -lX11 -lXext -lm
+
+# XPM
+XPMROOT = /usr/grads
+XPMDEFS = -I$(XPMROOT)/include
+XPMLIBS = $(XPMROOT)/lib/libXpm.a
+
+# AudioFile
+AFBASE = /u/trains/AF
+AFDEFS = -I$(AFBASE)/include
+AFLIBS = -L$(AFBASE)/lib/$(UNAME) -lAFext -lAF
+
+# TRAINS libraries
+TRLIB   = trlib/libtrlib.a
+KQMLLIB = KQML/libKQML.a
+UTILLIB = util/libutil.a
+TRAINSLIBS = $(TRLIB) $(KQMLLIB) $(UTILLIB)
+
+# Lisp (you could also use plain "cl -qq -batch")
+LISP = /s5/acl4.3s/build/vanilla-no-clim -qq -batch
+# Extension for compiled lisp files (usually "fasl")
+FASL = fasl43
+
+# Miscellaneous programs
+RANLIB = /bin/true
+MAKEDEPEND = makedepend
+CP = cp -p
+RM = rm -f
+
+# Some modules can use old perl, most need Perl v5.002 or higher
+PERL  = /usr/staff/bin/perl
+PERL5 = /usr/grads/bin/perl5

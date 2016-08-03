@@ -1,0 +1,82 @@
+#
+# make.rules.lib : Build a library for the TRAINS System
+#
+# George Ferguson, ferguson@cs.rochester.edu, 16 Feb 1996
+# Time-stamp: <Mon Jan 20 15:04:33 EST 1997 ferguson>
+#
+# The following should be defined before this file is included:
+#  MODULE - The name for this component, ie., its TRAINS directory name
+#  LIB  - The library to build
+#  SRCS - The source files to compile
+#  HDRS - Any header files that are part of the package
+#  MANS - Any manpages
+#  XTRA - Anything else that should be checked-in with SRCS, HDRS, and MANS
+#
+
+#
+# TRAINS System version information
+#
+include config/make.version
+
+#
+# Platform-specific definitions
+#
+include config/make.defs.$(UNAME)
+
+#
+# You shouldn't have to change these
+#
+CFLAGS = $(CDEBUGFLAGS) $(EXTRA_DEFS) $(SPECIAL_DEFS) $(CDEFS)
+LIBS   = $(EXTRA_LIBS) $(SPECIAL_LIBS) $(CLIBS)
+OBJS   = $(SRCS:%.c=%.o)
+
+#
+# Main library target
+#
+$(LIB).a: $(OBJS) $(EXTRA_DEPS) version
+	$(CC) $(CFLAGS) -c -DTIMESTAMP_VAR=_$(MODULE)_timestamp -DTIMESTAMP="\"@(#)$(LIB).a $(TRAINS_VERSION).`cat version` `date`\"" config/timestamp.c
+	$(AR) rv $@ $(OBJS) timestamp.o
+	$(RANLIB) $@
+
+#
+# Make objects from C sources with per-file defs allowed
+#
+.c.o:
+	$(CC) -c $(CFLAGS) $(EXTRA_DEFS_$<) $<
+
+#
+# Module version number depends on source files having changed
+#
+version: $(SRCS) $(HDRS)
+	mv version version~ || echo 0 >version~
+	expr `cat version~` + 1 >version
+
+#
+# Clean
+#
+clean::
+	rm -f $(LIB).a $(OBJS) timestamp.o
+
+#
+# Install and install.man
+#
+install::
+	@echo 'No need to install $(LIB)'
+
+install.man::
+	test -d $(TRAINS_BASE)/man || mkdir $(TRAINS_BASE)/man
+	test -d $(TRAINS_BASE)/man/man3 || mkdir $(TRAINS_BASE)/man/man3
+	$(CP) $(LIB).man $(TRAINS_BASE)/man/man3/$(LIB).3
+
+#
+# Depend
+#
+depend:
+	$(MAKEDEPEND) $(CFLAGS) $(SRCS)
+
+#
+# Check-in
+#
+ci:
+	test -d RCS || mkdir RCS
+	ci -u -t-"" -m"`date`" Makefile version $(SRCS) $(HDRS) $(MANS) $(XTRA) </dev/null

@@ -1,0 +1,84 @@
+.\" Time-stamp: <96/10/15 15:06:55 ferguson>
+.TH TREPLAY 1 "10 Oct 1996" "TRAINS Project"
+.SH NAME
+treplay \- Replay a TRAINS System session
+.SH SYNOPSIS
+treplay [-audio BOOL] logdir
+.SH DESCRIPTION
+.PP
+The script
+.I treplay
+is a variant of the basic
+.I trains
+script (see
+.IR trains (1))
+that starts the TRAINS System in replay mode. This involves running
+only the necessary interface components and none of the back-end
+reasoners. It also runs an additional module, REPLAY, that parses the
+"im.log" file in the given directory and plays back the messages in
+real-time. An X/Tk interface provides a display of the messages
+being replayed as well as "tapedeck-style" buttons for controlling the
+playback.
+.SH OPTIONS
+.PP
+.IP "-audio BOOL"
+If True (the default), user and system audio is replayed. If False, it
+isn't, and the audio modules and AudioFile server are not started.
+.SH USAGE
+.PP
+You run
+.I treplay
+from your shell and tell it the name of the log directory for the
+session you want to replay. User utterances are replayed by playing
+the audio files recorded by the speech recognizer
+.IR tspeech (1).
+System utterances are recreated using
+.IR tttalk (1)
+(i.e., The TrueTalk speech generator). System displays are recreated
+using the Display module.
+.PP
+The Replay display provides a display of the messages parsed out of
+the im.log, as well as several buttons for controlling playback.
+The "Play" button starts real-time playback. The current dialogue time
+(from time 0 at the start of the dialogue) is shown in the upper left
+of the Replay display. During a delay between messages, the delay time
+counts down above the dialogue time. The "Play" button changes into a
+"Pause" button that, amazingly enough, will pause playback when
+pressed. Other buttons allow you to skip forward or back one message,
+one utterance, or to the start or end of the conversation.
+.PP
+Note: As I write this, stepping forward one message or utterance does
+not reset the delay countdown timer. You should pause and play (i.e.,
+double-click the Play/Pause button) in order to skip a lengthy delay.
+.SH ENVIRONMENT
+The following environment variables are checked by the
+.I treplay
+script.
+.IP DISPLAY
+X Windows display. The default is screen 0 on the local host.
+.IP TRAINS_BASE
+Root of TRAINS directory tree. The default is currently
+"/u/trains/96/2.0".
+.IP AUDIOFILE
+If set to HOST:0, AudioFile audio server runs on HOST.
+.IP TRAINS_AUDIO_HOST
+Host to run AudioFile audio server. The default is the same host as
+used for DISPLAY.
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Probably not.
+.SH SEE ALSO
+.PP
+trains(1)
+.SH BUGS
+.PP
+The Perl script that implements the REPLAY module (i.e., that parses
+the "im.log" and sends the messages) can get confused pretty easily.
+For example, overlapping user speech utterances, where the user didn't
+wait long eneough between utterances, will confuse audio playback.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

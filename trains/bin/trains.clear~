@@ -1,0 +1,7 @@
+rm -f core
+rm -f *.log
+rm -f transcript
+rm -f pm.start.*
+rm -f /fs/that/cfa/res/dialog/dm/1
+rm -f /fs/that/cfa/res/dialog/dm/2
+rm -f /fs/that/cfa/res/dialog/dm/3

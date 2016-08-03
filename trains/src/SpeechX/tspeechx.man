@@ -1,0 +1,166 @@
+.\" Time-stamp: <96/10/09 19:12:04 ferguson>
+.TH TSPEECHX 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+tspeechx \- TRAINS Speech Controller
+.SH SYNOPSIS
+.IP tspeechx 9
+[\-rows\ N] [\-columns\ N]
+[\-stopdelay\ N] [\-clickAndHold\ BOOL]
+[\-showMenus\ BOOL] [\-showLabels\ BOOL]
+[\-showSpeechIn\ BOOL] [\-showSpeechPP\ BOOL]
+[\-fontpat\ STR] [\-fontsize\ N]
+[\-debug\ where] [X\ args]
+.SH DESCRIPTION
+.PP
+.I Tspeechx
+is the TRAINS Speech Controller. It provides an X/Motif display that
+includes windows for viewing the results of speech recognition (both
+SPEECH-IN and SPEECH-PP) and a button for starting and stopping
+the recognition (which it does by sending messages to SPEECH-IN).
+.SH OPTIONS
+.PP
+.IP "-rows N"
+Number of rows for each of the result windows (default 4).
+.IP "-columns N"
+Number of columns for each of the result windows (default 25).
+.IP "-stopdelay N"
+Number of microseconds between when the user releases the "Talk"
+button and when the STOP message is sent. The default is 500000 (half
+a second). This is useful to prevent people cutting off the end of
+their utterances.
+.IP "-clickAndHold BOOL"
+If True (the default), a START message is sent to SPEECH-IN when the
+"Talk" button is pressed and a STOP message is sent when it is
+released. If False, one click sends the START message and a second
+click sends the STOP message. The label on the "Talk" button is set
+accordingly.
+.IP "-showMenus BOOL"
+Enable (True) or disable (False) the display of the application
+menubar.
+.IP "-showLabels BOOL"
+Enable (True) or disable (False) the display of the module names and
+their status.
+.IP "-showSpeechIn BOOL"
+Enable (True) or disable (False) the display of SPEECH-IN results.
+Disabling the display makes the Speech Controller window smaller.
+.IP "-showSpeechPP BOOL"
+Enable (True) or disable (False) the display of SPEECH-PP results.
+Disabling the display makes the Speech Controller window smaller.
+.IP "-fontpat STR"
+Set the font pattern to the given
+.IR STR ,
+which should have a single "%d" in it representing the point size. The
+default is a pattern representing Helvetica bold.
+.IP "-fontsize N"
+Set the initial font size to
+.IR N .
+The default is 18.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.IP "X args"
+.I Tspeechx
+accepts all standard X Toolkit arguments; see
+.IR X (1)
+for details.
+.SH USAGE
+.PP
+.I Tspeechx
+sends messages to the Input Manager to LISTEN to the output of
+SPEECH-IN and SPEECH-PP, as well as MONITORing their status. The
+output words are processed and displayed in text windows; the status
+is displayed using a colored button. Either display can be hidden
+using the menus, and in addition the Speech Post-Processor can be
+taken offline, causing it to ignore messages until it is put back
+online.
+.PP
+The
+.I tspeechx
+"Talk" button can be operated in either of two modes, depending on the
+\-clickAndHold option value. If this is True (the default), a START
+message is sent to SPEECH-IN when the "Talk" button is pressed and a
+STOP message is sent when it is released. If it is False, one click
+sends the START message and a second click sends the STOP message. The
+label on the "Talk" button is set accordingly. See also
+.IR tkeyboard (1)
+for a means of starting and stopping speech recognition without using
+the mouse.
+.SH "SPEECH CONTROLLER MESSAGES"
+.PP
+The following KQML messages are understood by the Speech Controller. They
+should be addressed with ":receiver SPEECH-X". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(tell :content (start :uttnum N))"
+Sent by speech recognition modules at the start of an utterance.
+Clears the appropriate window and sets the utterance counter.
+.IP "(tell :content (word W :uttnum N :index I :frame F :score S))"
+Adds a word to the display for the appropriate module.
+.IP "(tell :content (backto :uttnum N :index I))"
+Invalidates words at index positions
+.I I
+and higher (inclusive) for the appropriate module.
+.IP "(tell :content (input-end :uttnum N))"
+Sent by SPEECH-IN when it receives the STOP message. Ignored.
+.IP "(tell :content (end :uttnum N))"
+Sent by speech recognition modules at the end of an utterance.
+.IP "(reply :content (status M S))"
+Sent by the Input Manager when the status of SPEECH-OUT or SPEECH-PP
+changes. Used to change the color of the status indicator on the
+Speech Controller panel.
+.IP "(request :content (reset))"
+Clears the Speech Controller display and resets any internal state.
+.IP "(request :content (exit :status N))"
+Requests that the Keyboard Manager exit with status
+.I N
+(default 0).
+.IP "(request :content (hide\-window))"
+Causes the Speech Controller display to iconify itself.
+.IP "(request :content (show\-window))"
+Causes the Speech Controller display to deiconify itself.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Treated as a RESET followed by SHOW-WINDOW.
+.IP "(request :content (end\-conversation)"
+Treated as a HIDE-WINDOW.
+.IP "(request :content (set\-button)"
+Causes the "Talk" button to be highlighted. Useful for replay.
+.IP "(request :content (unset\-button)"
+Causes the "Talk" button to not be highlighted. Useful for replay.
+.IP "(request :content (chdir DIR))"
+Ignored.
+.PP
+The following messages are generated by
+.I tspeechx
+to control speech recognition.
+.IP "(request :receiver SPEECH-IN :content (start))"
+Sent when the user first presses the "Talk" button.
+.IP "(request :receiver SPEECH-IN :content (stop))"
+Sent when the user releases the "Talk" button (in click-and-hold
+mode), or on the second click (in click-to-talk mode).
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Nope.
+.SH SEE ALSO
+.PP
+trains(1),
+tspeech(1),
+tspeechpp(1)
+.SH BUGS
+.PP
+I don't actually think so.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

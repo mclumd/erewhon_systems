@@ -1,0 +1,23 @@
+--- --- 16:22:51 00/18/2002
+SYS dsp highlight mentioned objs
+SYS say SAY   NORTHSTAR is at BURLINGTON.
+SYS dsp highlight mentioned objs
+SYS say SAY   METROLINER is at BALTIMORE.
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET is at CHICAGO.
+USR txt send the chicago train to toledo 
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET will traverse CHICAGO-TOLEDO.
+USR txt send the baltimore train to toledo 
+SYS dsp highlight mentioned objs
+SYS say SAY   METROLINER will traverse   BALTIMORE-SCRANTON, PITTSBURGH-SCRANTON, COLUMBUS-PITTSBURGH, and COLUMBUS-TOLEDO.
+USR txt send the toledo train to detroit 
+SYS dsp highlight mentioned objs
+SYS say SAY   METROLINER will traverse   BALTIMORE-SCRANTON, PITTSBURGH-SCRANTON, COLUMBUS-PITTSBURGH, COLUMBUS-TOLEDO, and DETROIT-TOLEDO.
+USR txt no 
+SYS dsp highlight mentioned objs
+SYS say SAY   ok, undone.
+SYS dsp highlight mentioned objs
+USR txt where are the trains 
+SYS dsp highlight mentioned objs
+SYS say SAY   NORTHSTAR is at BURLINGTON, BULLET is at TOLEDO and METROLINER is at TOLEDO.

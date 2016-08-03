@@ -1,0 +1,5 @@
+
+Made may 1999 by kpurang
+
+Removed SFX from the makefile because there is no AF.
+Removed speechy things from makefile because I don't want speech

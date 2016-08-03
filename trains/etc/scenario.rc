@@ -1,0 +1,51 @@
+(request :content
+ (define :label "CLE-CHA-ATL"
+	 :content (config :start (Cleveland Charlotte Atlanta)
+			  :goal (Montreal Boston Chicago)
+			  :ccities ((Cincinnati :heavy-traffic)
+				    (Columbus :heavy-traffic)
+				    (Buffalo :bad-weather)))))
+(request :content
+ (define :label "MIL-RIC-NYC"
+	 :content (config :start (Milwaukee Richmond New_York)
+			  :goal (Toronto Lexington Atlanta)
+			  :ccities ((Indianapolis :bad-weather)
+				    (Columbus :bad-weather)
+				    (Detroit :heavy-traffic)))))
+(request :content
+ (define :label "MIL-CLE-SCR"
+	 :content (config :start (Milwaukee Cleveland Scranton)
+			  :goal (Albany Raleigh Lexington)
+			  :ccities ((Buffalo :freezing-rain)
+				    (Syracuse :freezing-rain)
+				    (New_York :bad-weather)))))
+(request :content
+ (define :label "TOR-BOS-CHA"
+	 :content (config :start (Toronto Boston Charlotte)
+			  :goal (Lexington Philadelphia Washington)
+			  :ccities ((Pittsburgh :heavy-snow)
+				    (Buffalo :heavy-snow)
+				    (New_York :heavy-traffic)))))
+(request :content
+ (define :label "DET-MTL-ALB"
+	 :content (config :start (Detroit Montreal Albany)
+			  :goal (Milwaukee Lexington Washington)
+			  :ccities ((Baltimore :heavy-storms)
+				    (Pittsburgh :heavy-storms)
+				    (Philadelphia :heavy-storms)))))
+(request :content
+ (define :label "CLE-etc"
+	 :content (config :start (Charlotte Montreal Detroit
+				  Boston Cleveland Atlanta Lexington)
+			  :goal (Toronto Milwaukee Burlington
+Indianapolis Charlotte Buffalo Albany)
+			  :ccities ((Toronto :insurrection)
+				    (Cincinnati :heavy-traffic)
+				    (New_York :bad-weather)))))
+
+
+
+
+
+
+

@@ -1,0 +1,1190 @@
+Script started on Sat May 29 17:11:12 1999
+> make
+Making in config...
+Nothing to make
+Making in util...
+`libutil.a' is up to date.
+Making in KQML...
+`libKQML.a' is up to date.
+Making in trlib...
+`libtrlib.a' is up to date.
+Making in IM...
+`tim' is up to date.
+Making in PM...
+`tpm' is up to date.
+Making in Display...
+`tdisplay' is up to date.
+Making in Keyboard...
+`tkeyboard' is up to date.
+Making in Running...
+No need to make.
+Making in Splash...
+`tsplash' is up to date.
+Making in Tools...
+Making in Transcript...
+`ttranscript' is up to date.
+Making in Shortcut...
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS  main.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS -I/usr/imports/include -DSVR4 -DFUNCPROTO=15 -I/usr/openwin/include display.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS -I/usr/imports/include -DSVR4 -DFUNCPROTO=15 -I/usr/openwin/include edit.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS -I/usr/imports/include -DSVR4 -DFUNCPROTO=15 -I/usr/openwin/include save.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS  recv.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS  send.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS -DTRAINS_BASE=\"/fs/disco/group/systems/trains\" rc.c
+gcc -c  -DDEBUG  -DSYSV -DSOLARIS -I/usr/imports/include -DSVR4 -DFUNCPROTO=15 -I/usr/openwin/include menu_utils.c
+gcc  -DDEBUG  -DSYSV -DSOLARIS -o tshortcut -DTIMESTAMP="\"@(#)tshortcut 2.2.`cat version` `date`\"" config/timestamp.c  main.o display.o edit.o save.o recv.o send.o rc.o menu_utils.o -L/usr/imports/lib/X11 -R/usr/imports/lib/X11 -lXm  -L/usr/openwin/lib -R/usr/openwin/lib -lXmu -lXt -lX11 -lXext -lm trlib/libtrlib.a KQML/libKQML.a util/libutil.a  -lsocket -lnsl
+Making in Scenario...
+gcc -c    -DSYSV -DSOLARIS  main.c
+gcc -c    -DSYSV -DSOLARIS -I/usr/imports/include -DSVR4 -DFUNCPROTO=15 -I/usr/openwin/include display.c
+gcc -c    -DSYSV -DSOLARIS  recv.c
+gcc -c    -DSYSV -DSOLARIS  send.c
+gcc -c    -DSYSV -DSOLARIS -DTRAINS_BASE=\"/fs/disco/group/systems/trains\" rc.c
+gcc    -DSYSV -DSOLARIS -o tscenario -DTIMESTAMP="\"@(#)tscenario 2.2.`cat version` `date`\"" config/timestamp.c  main.o display.o recv.o send.o rc.o -L/usr/imports/lib/X11 -R/usr/imports/lib/X11 -lXm  -L/usr/openwin/lib -R/usr/openwin/lib -lXmu -lXt -lX11 -lXext -lm trlib/libtrlib.a KQML/libKQML.a util/libutil.a  -lsocket -lnsl
+Making in Replay...
+No need to make
+Making in PView...
+No need to make.
+Making in Parser...
+/usr/bin/make compile dump
+echo '(parser::compile-parser)' | \
+  /usr/imports/bin/composer -qq -batch -e '(setq parser-is-being-compiled t)' -e '(load "parser")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./parser.lisp
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): ; Fasl file parser/structures.fasl43 is up to date
+;;; Compiling file robust/parse.lisp
+; While compiling (:INTERNAL (:TOP-LEVEL-FORM "parse.lisp" 460) 0):
+Warning: Variable K is never used.
+; While compiling (:INTERNAL (:TOP-LEVEL-FORM "parse.lisp" 800) 0):
+Warning: Variable K is never used.
+; While compiling SETTYPES:
+Warning: Variable RESULT is never used.
+;;; Writing fasl file robust/parse.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::READ-IN-LIST.
+; Loading parser/structures.lisp
+; Fast loading robust/parse.fasl
+;;; Compiling file parser/trace.lisp
+;;; Writing fasl file parser/trace.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::READ-EMBEDDED-CONSTIT, PARSER::REDUCE-CONSTIT,
+         PARSER::GET-RULE-IDS.
+;;; Compiling file parser/Chart.lisp
+;;; Writing fasl file parser/Chart.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::NONLEXICALCONSTIT, PARSER::GET-PRINTABLE-CONSTIT,
+         PARSER::RULES-TO-TRACE, PARSER::TRACELEVEL,
+         PARSER::GET-TRACE-FEATURES, PARSER::GENERATE-GAPS,
+         PARSER::GAPSENABLED, PARSER::ADD-ARC-TO-CHART,
+         PARSER::MATCH-VALS, PARSER::GET-FVALUE,
+         PARSER::GET-FOOT-FEATURES, PARSER::ADD-FEATURE-VALUE,
+         PARSER::ADD-TO-AGENDA, PARSER::MERGE-FEATURE-VALUES,
+         PARSER::GET-ENTRY-BY-NAME, PARSER::SUBST-IN,
+         PARSER::CONSTIT-MATCH, PARSER::GETCSRULEPROB,
+         PARSER::GET-WORD-BY-POSITION, PARSER::IS-PROB-PARSE,
+         PARSER::GET-VAR-LIST, PARSER::COPY-VARS-IN-RULE,
+         PARSER::MAKE-ENTRY-WITH-SEM, PARSER::NOSEMENABLED,
+         PARSER::GEN-SYMBOL, PARSER::FCONSTIT-MATCH,
+         PARSER::GETMAXCHARTSIZE, PARSER::TRACE-MSG,
+         PARSER::VERBOSE-MSG, PARSER::GET-VALUE,
+         PARSER::GET-ENTRIES-BY-POSITION.
+;;; Compiling file parser/GrammarandLexicon.lisp
+;;; Writing fasl file parser/GrammarandLexicon.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::GETGRAMMAR, PARSER::GET-VALUE, PARSER::ADD-VAR,
+         PARSER::BUILD-VAR, PARSER::GET-VAR,
+         PARSER::GENERATE-GAP-FEATURES-IN-RULE, PARSER::GAPSDISABLED,
+         PARSER::GET-VAR-LIST, PARSER::VERIFY-AND-BUILD-CONSTIT,
+         PARSER::GET-DEFAULT-RULE-PROB, PARSER::VERIFY-RULE-ID,
+         PARSER::AUGMENT-GRAMMAR, PARSER::INDEX-RULES,
+         PARSER::GEN-SYMBOL-FOR-*, PARSER::NEW-*-NEEDED,
+         PARSER::SUBST-IN, PARSER::BUILD-ENTRY, PARSER::INSTANTIATEVAR,
+         PARSER::NOSEMENABLED, PARSER::GET-FVALUE, PARSER::ADD-TO-LEX,
+         PARSER::RETRIEVE-FROM-LEX, PARSER::INIT-VAR-TABLE,
+         PARSER::GET-LEXICON, PARSER::INIT-LEXICON,
+         PARSER::BUILD-CONSTIT.
+;;; Compiling file parser/FeatureHandling.lisp
+;;; Writing fasl file parser/FeatureHandling.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::SEMENABLED, PARSER::GET-GAP-FEAT-LIST,
+         PARSER::ADD-TO-AGENDA, PARSER::CONSTIT-MATCH,
+         PARSER::GET-GAP-CATS, PARSER::GEN-SYMBOL,
+         PARSER::FINDFIRSTHEAD, PARSER::LEXICALCONSTIT,
+         PARSER::VERBOSE-MSG2, PARSER::SUBST-IN, PARSER::MATCH-VALS.
+;;; Compiling file parser/onlineParser.lisp
+;;; Writing fasl file parser/onlineParser.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::EXTEND-ARC, PARSER::GET-ARCS, PARSER::ADD-TO-AGENDA,
+         PARSER::MAKE-NEW-BU-ACTIVE-ARCS, PARSER::PUT-IN-CHART,
+         PARSER::SUSPENDPARSE, PARSER::GET-STOPPING-CONDITION,
+         PARSER::PROCEDURAL-FILTER, PARSER::TRACE-ENTRY,
+         PARSER::PEEK-AGENDA, PARSER::MAKE-CHART,
+         PARSER::GETMAXCHARTSIZE, PARSER::INIT-AGENDA,
+         PARSER::BU-PARSE, PARSER::ADD-NEW-INPUT, PARSER::RESET-AGENDA,
+         PARSER::GET-NEXT-ENTRY, PARSER::AGENDA-ITEM-PENDING,
+         PARSER::CONSTIT-MATCH, PARSER::BUILD-CONSTIT,
+         PARSER::ADD-TO-UNKNOWN-WORDS, PARSER::BUILD-ENTRY,
+         PARSER::INSTANTIATEVAR, PARSER::RETRIEVE-FROM-LEX,
+         PARSER::IS-PROB-PARSE, PARSER::RESET-WORD-COUNT,
+         PARSER::GEN-ENTRIES-FROM-INPUT,
+         PARSER::UPDATE-MAX-POSITION-FOUND, PARSER::UP-MAX-POSITION,
+         PARSER::WORD-COUNT, PARSER::DECREASE-WORD-COUNT,
+         PARSER::BACKUP, PARSER::INPUT-ITEM-PENDING,
+         PARSER::FIND-VALUE, PARSER::CLEAR-CURRENTLDC-AFTER,
+         PARSER::CLEARCHARTAFTER, PARSER::RESET-MAX-POSITION,
+         PARSER::GET-MAX-POSITION.
+;;; Compiling file parser/hierarchFeatures.lisp
+; While compiling OPT-MAKE-ARC-FROM-RULE:
+Warning: Variable CONSTIT is never used.
+;;; Writing fasl file parser/hierarchFeatures.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::SUBTYPE, PARSER::BUILD-CONSTIT, PARSER::READ-FV-PAIR,
+         PARSER::READ-VALUE, PARSER::BUILD-VAR, PARSER::OCCURS-IN,
+         PARSER::ADD-TO-AGENDA, PARSER::BUILD-ENTRY,
+         PARSER::GET-RULE-PROB, PARSER::MERGE-FEATURE-VALUES,
+         PARSER::AUGMENT-FOOT-FEATS, PARSER::COPY-VARS-IN-RULE,
+         PARSER::EXTEND-ARC-WITH-CONSTIT, PARSER::MAKE-ARC-FROM-RULE,
+         PARSER::LOOKUP-RULES, PARSER::MATCH-LISTS,
+         PARSER::FCONSTIT-MATCH, PARSER::GET-MOST-SPECIFIC-BINDING.
+;;; Compiling file parser/attachment.lisp
+;;; Writing fasl file parser/attachment.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::REPLACE-FEATURE-VALUE, PARSER::GET-VALUE,
+         PARSER::FIND-FUNCTIONS, PARSER::INIT-ATTACHMENTS,
+         PARSER::VERIFY-AND-BUILD-CONSTIT, PARSER::CONSTIT-MATCH.
+;;; Compiling file parser/hierarchy-functions.lisp
+;;; Writing fasl file parser/hierarchy-functions.fasl
+;;; Fasl write complete
+;;; Compiling file parser/lex-functions.lisp
+;;; Writing fasl file parser/lex-functions.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::CLASSIFY-N, PARSER::BUILD-VAR, PARSER::GEN-SYMBOL,
+         PARSER::REPLACE-FEAT, PARSER::GET-VERB-EXCEPTION-LIST,
+         PARSER::GET-FVALUE.
+;;; Compiling file parser/char.lisp
+;;; Writing fasl file parser/char.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::FIND-BEST, PARSER::WORD-COUNT,
+         PARSER::MAP-TO-SAFE-CHARS.
+;;; Compiling file parser/printing.lisp
+;;; Writing fasl file parser/printing.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::LOOKUPWORD, PARSER::SUBST-IN, PARSER::MERGE-LISTS,
+         PARSER::IS-PROB-PARSE, PARSER::GET-CONSTITS-BY-POSITION,
+         PARSER::GET-CONSTITS-BY-NAME, PARSER::GET-VALUE,
+         PARSER::GET-ENTRY-BY-NAME, PARSER::GET-MAX-POSITION.
+;;; Compiling file robust/robustParser.lisp
+; While compiling CHECK-FOR-FOCUS:
+Warning: Variable CAT is never used.
+;;; Writing fasl file robust/robustParser.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::SPELL-CHECK, PARSER::TOKENIZE,
+         PARSER::PROCESS-MENU-ACTION, PARSER::PROCESS-CONFIRM-ACTION,
+         PARSER::PROCESS-MOUSE-ACTION, PARSER::BACKUPTOPOSITION,
+         PARSER::FIND-VALUE, PARSER::SET-MSG-STARTED,
+         PARSER::SET-CURRENT-SPEAKER, PARSER::GET-MSG-STARTED,
+         PARSER::SUBTYPE, PARSER::BACKUP, PARSER::CONTINUE-BU-PARSE,
+         PARSER::ADD-TO-TEMP-SYMBOL-TABLE,
+         PARSER::GET-TEMP-SYMBOL-TABLE,
+         PARSER::RESET-TEMP-SYMBOL-TABLE, PARSER::GET-ENTRY-BY-NAME,
+         PARSER::BUILD-CONSTIT-TREE, PARSER::SIMPLIFYCONSTRAINT,
+         PARSER::FIND-VALS-IN-CONSTIT-TREE,
+         PARSER::GET-ENTRIES-BY-POSITION,
+         PARSER::RELIABILITY-THRESHOLD, PARSER::FIND-BEST,
+         PARSER::TRACE-MSG, PARSER::GET-CAT-CONSTITS-BETWEEN,
+         PARSER::PRINT-ABBREV-TREE, PARSER::PRINT-TREE,
+         PARSER::SET-MOUSE-FOCUS, PARSER::GET-ACTIONS-MENTIONED,
+         PARSER::GET-PATHS-MENTIONED, PARSER::SORTNPSFORREFERENCE,
+         PARSER::GET-OBJECTS-MENTIONED, PARSER::GET-FOCUS,
+         PARSER::GET-ACTUAL-VALUES, PARSER::GET-SA-FLAGS,
+         PARSER::KEYWORDIFYLIST, PARSER::GET-VALUE,
+         PARSER::GET-INPUT-SEQ-FROM-ENTRY, PARSER::GET-UNKNOWN-WORDS,
+         PARSER::GET-MAX-POSITION, PARSER::NEWGETANALYSIS,
+         PARSER::START-BU-PARSE, PARSER::RESET-CURRENT-LDC.
+;;; Compiling file robust/attachments.lisp
+;;; Writing fasl file robust/attachments.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::ADD-TO-SA-MENTIONED, PARSER::ADD-TO-ACTION-MENTIONED,
+         PARSER::ADD-TO-PATHS-MENTIONED, PARSER::REPLACE-FEATURE-VALUE,
+         PARSER::GEN-SYMBOL, PARSER::GET-FVALUE, PARSER::GET-VALUE,
+         PARSER::ANNOUNCE, PARSER::SETFVALUE,
+         PARSER::ADD-TO-OBJECTS-MENTIONED,
+         PARSER::ADD-TO-FOCUS-CANDIDATES, PARSER::GETFVALUE,
+         PARSER::TRACE-MSG, PARSER::REMOVE-ENTRIES-AFTER,
+         PARSER::INIT-ATTACHMENTS.
+;;; Compiling file robust/mouse.lisp
+; While compiling FIND-SEM-OF-OBJ:
+Warning: Variable OBJ is never used.
+;;; Writing fasl file robust/mouse.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::SET-MSG-STARTED, PARSER::GETANALYSIS,
+         PARSER::STARTNEWUTTERANCE, PARSER::TOKENIZE,
+         PARSER::GET-MSG-STARTED, PARSER::SUBTYPE, PARSER::GET-VALUE,
+         PARSER::RETRIEVE-FROM-LEX.
+;;; Compiling file robust/kqml.lisp
+;;; Writing fasl file robust/kqml.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::GET-PVIEW-TREE, PARSER::SET-MSG-STARTED,
+         PARSER::GENUTTNUM, PARSER::TRAP-QUESTIONS,
+         PARSER::POST-PARSER, PARSER::PARSE, PARSER::GETUTTNUM,
+         PARSER::SEM-EQUAL, PARSER::CHECK.
+;;; Compiling file robust/speeling.lisp
+; While compiling INIT-SPELLCHECKLIST-TO-CITIES:
+Warning: Free reference to undeclared variable *LEXICON-CITY* assumed
+         special.
+Warning: Free reference to undeclared variable *LEXICON-CITY* assumed
+         special.
+;;; Writing fasl file robust/speeling.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::BASIC-NAME, PARSER::KB-REQUEST,
+         PARSER::RESET-WORDLIST, PARSER::SPEELING-CORRECTOR,
+         PARSER::GET-LEXICON.
+;;; Compiling file robust/types.lisp
+;;; Writing fasl file robust/types.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::WRITE-OUT-LIST, PARSER::VAR, PARSER::DEKEYWORDIFY,
+         PARSER::READ-IN-LIST.
+;;; Compiling file robust/unify.lisp
+;;; Writing fasl file robust/unify.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::SUBTYPE, PARSER::SUBST-VALUE, PARSER::DEKEYWORDIFY,
+         PARSER::RESOLVE-STATUS, PARSER::MEMBER-TREE, PARSER::INSERT,
+         PARSER::UPDATE, PARSER::KEYWORDIFY, PARSER::CHECK-EDGE,
+         PARSER::SWAP, PARSER::FIND-EDGES, PARSER::MATCH-VERB,
+         PARSER::FIND-CL, PARSER::LOOKUP, PARSER::VAR.
+;;; Compiling file robust/munger.lisp
+; While compiling INIT-MUNGER:
+Warning: Free reference to undeclared variable *TEMPLATE-FILE* assumed
+         special.
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+; While compiling SIMPLIFICATION:
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+; While compiling SA-ID-ALL:
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+; While compiling COMBINE-OBJECTS:
+Warning: Variable ACT2 is never used.
+Warning: Variable ACT1 is never used.
+; While compiling COMBINE-MODE:
+Warning: Variable ACT2 is never used.
+;;; Writing fasl file robust/munger.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::COMPAT, PARSER::FIRST-ONE, PARSER::SWAP,
+         PARSER::TRUE-HERE, PARSER::MATCH-PROPS, PARSER::ADJUST,
+         PARSER::ALTER-EDGE, PARSER::SUBTYPE, PARSER::DEKEYWORDIFY,
+         PARSER::VAR, PARSER::FIND-EDGES, PARSER::MATCH,
+         PARSER::FIND-TEMPLATES, PARSER::APPLY-FUN, PARSER::TRUE,
+         PARSER::MATCH-VERB, PARSER::FIND-CL, PARSER::PROPP,
+         PARSER::SEM-EQUAL, PARSER::FIND-RIGHT-TYPE,
+         PARSER::BEST-MEASURE.
+;;; Compiling file robust/parse.lisp
+; While compiling (:INTERNAL (:TOP-LEVEL-FORM "parse.lisp" 460) 0):
+Warning: Variable K is never used.
+; While compiling (:INTERNAL (:TOP-LEVEL-FORM "parse.lisp" 800) 0):
+Warning: Variable K is never used.
+; While compiling SETTYPES:
+Warning: Variable RESULT is never used.
+;;; Writing fasl file robust/parse.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::READ-IN-LIST.
+;;; Compiling file robust/support_funs.lisp
+; While compiling FIND-TEMPLATES:
+Warning: Free reference to undeclared variable *TEMPLATES* assumed
+         special.
+;;; Writing fasl file robust/support_funs.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::KEYWORDIFY, PARSER::LOOKUP, PARSER::MAKE-LOOKUP-TABLE.
+;;; Compiling file robust/questions.lisp
+;;; Writing fasl file robust/questions.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PARSER::LOOKUP, PARSER::FIND-EDGES, PARSER::MAKE-LOOKUP-TABLE,
+         PARSER::FIND-CL, PARSER::PROPP.
+; Loading parser/structures.lisp
+; Fast loading robust/parse.fasl
+; Fast loading parser/trace.fasl
+; Fast loading parser/Chart.fasl
+; Fast loading parser/GrammarandLexicon.fasl
+; Fast loading parser/FeatureHandling.fasl
+; Fast loading parser/onlineParser.fasl
+; Fast loading parser/hierarchFeatures.fasl
+; Fast loading parser/attachment.fasl
+; Fast loading parser/hierarchy-functions.fasl
+; Fast loading parser/lex-functions.fasl
+; Fast loading parser/char.fasl
+; Fast loading parser/printing.fasl
+; Fast loading robust/robustParser.fasl
+; Fast loading robust/attachments.fasl
+; Fast loading robust/mouse.fasl
+; Fast loading robust/kqml.fasl
+; Fast loading robust/speeling.fasl
+; Fast loading robust/types.fasl
+; Fast loading robust/unify.fasl
+; Fast loading robust/munger.fasl
+; Fast loading robust/parse.fasl
+; Fast loading robust/support_funs.fasl
+; Fast loading robust/questions.fasl
+; Loading grammar/hierarchy.lisp
+; Loading grammar/phrase-grammar.lisp
+; Loading grammar/clause-grammar.lisp
+; Loading grammar/robust.lisp
+; Loading grammar/lexicalRules.lisp
+; Loading grammar/nonverb-lex.lisp
+; Loading grammar/verb-lex.lisp
+USER(2): EOF ; Auto-exit
+; Exiting Lisp
+echo '(setq parser::*timestamp* "@(#)tparser 2.2.'`cat version` `date`'")' \
+     '(parser::dump-parser "tparser")' | \
+  /usr/imports/bin/composer -qq -batch -e '(load "parser")' -e '(load "dump-parser")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./parser.lisp
+;   Loading parser/structures.lisp
+;   Fast loading robust/parse.fasl
+;   Fast loading parser/trace.fasl
+;   Fast loading parser/Chart.fasl
+;   Fast loading parser/GrammarandLexicon.fasl
+;   Fast loading parser/FeatureHandling.fasl
+;   Fast loading parser/onlineParser.fasl
+;   Fast loading parser/hierarchFeatures.fasl
+;   Fast loading parser/attachment.fasl
+;   Fast loading parser/hierarchy-functions.fasl
+;   Fast loading parser/lex-functions.fasl
+;   Fast loading parser/char.fasl
+;   Fast loading parser/printing.fasl
+;   Fast loading robust/robustParser.fasl
+;   Fast loading robust/attachments.fasl
+;   Fast loading robust/mouse.fasl
+;   Fast loading robust/kqml.fasl
+;   Fast loading robust/speeling.fasl
+;   Fast loading robust/types.fasl
+;   Fast loading robust/unify.fasl
+;   Fast loading robust/munger.fasl
+;   Fast loading robust/parse.fasl
+;   Fast loading robust/support_funs.fasl
+;   Fast loading robust/questions.fasl
+;   Loading grammar/hierarchy.lisp
+;   Loading grammar/phrase-grammar.lisp
+;   Loading grammar/clause-grammar.lisp
+;   Loading grammar/robust.lisp
+;   Loading grammar/lexicalRules.lisp
+;   Loading grammar/nonverb-lex.lisp
+;   Loading grammar/verb-lex.lisp
+; Loading ./dump-parser.lisp
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): 
+"@(#)tparser 2.2.15 Sat May 29 17:11:54 EDT 1999"
+USER(2): 
+; Garbage collecting prior to dumping...
+; Dumping image file tparser...
+Warning: shared object files have been loaded into this image, and so
+         the resulting image will depend on clx:excldep.so,
+         clx:socket.so, and xcw:gc-cursor.so for successful operation.
+Warning: the resulting image will depend on
+         /usr/imports/allegro43/home/4.3_xc.lso for successful
+         operation.
+USER(3): EOF ; Auto-exit
+; Exiting Lisp
+Making in PSM...
+/usr/bin/make compile dump
+echo '(psm::compile-psm)' | \
+  /usr/imports/bin/composer -qq -batch -e '(setq psm-is-being-compiled t)' -e '(load "psm")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./psm.lisp
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): ; Fasl file structures.fasl43 is up to date
+; Loading ./structures.lisp
+;;; Compiling file Task_Tree.lisp
+; While compiling (:INTERNAL GATHER-CHANGES-FROM-PSM-HISTORY 0):
+Warning: Free reference to undeclared variable *ROOT-NODE-NAME* assumed
+         special.
+;;; Writing fasl file Task_Tree.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::PSM-HISTORY, PSM::MAKE-ERROR-MSG,
+         PSM::CURRENT-PSS-CHANGES, PSM::PUSH-PSM,
+         PSM::GET-PSS-CHANGES-BY-NAME, PSM::GET-PSS-BY-NAME,
+         PSM::CLEAR-UP-TO, PSM::FIND-CONSTRAINT, PSM::UPDATE-TREE,
+         PSM::DECLARE-AN-OBJECT, PSM::PSM-WARN.
+;;; Compiling file PSM.lisp
+; While compiling PROCESS-REJECT-SOLUTION:
+Warning: Variable SA-ARG is never used.
+; While compiling PROCESS-CONFIRM:
+Warning: Variable SA-ARGS is never used.
+; While compiling COMPUTE-SOLUTION-FROM-SUBGOALS:
+Warning: Variable PSS is never used.
+;;; Writing fasl file PSM.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::COMBINE-GO-SUBPLANS, PSM::ADD-DECOMPOSITION,
+         PSM::DELETE-TASK, PSM::MODIFY-NODE-CONTENT, PSM::FIND-ARG,
+         PSM::SET-FOCUS, PSM::MAKE-COPY-TASK-TREE, PSM::CURRENT-PSS,
+         PSM::BUILD-ANSWER, PSM::BUILD-ROUTE-ANSWER,
+         PSM::GET-ALTERNATE-SOLN, PSM::FIND-OBJECTS-IN-CONSTRAINTS,
+         PSM::GET-CONSTRAINTS-FROM-ACT, PSM::BUILD-IMPOSSIBLE-ANSWER,
+         PSM::ADD-NODE-NAME-TO-ANSWER, PSM::INTERPRET-DOMAIN-SA,
+         PSM::MAKE-ERROR-MSG, PSM::PSM-WARN, PSM::MAKE-SORRY-MSG,
+         PSM::GET-NODE-BY-NAME, PSM::FIND-ARG-IN-ACT, PSM::PUSH-PSM,
+         PSM::GENSYMBOL, PSM::INIT-KB, PSM::CLEAR-PSM-HISTORY,
+         PSM::CREATE-TASK-TREE.
+;;; Compiling file constraints.lisp
+;;; Writing fasl file constraints.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::APPLY-GO-CONSTRAINT, PSM::GENSYMBOL, PSM::DOMAIN-QUERY,
+         PSM::IN-ROUTE, PSM::FIND-TYPE,
+         PSM::FIND-ORIGINAL-LOC-OF-AGENT, PSM::CHECK-IF-TRUE,
+         PSM::GEN-FTA-CONSTRAINTS, PSM::REMOVE-FTA,
+         PSM::GET-FROM-TO-AGENT, PSM::PSM-WARN, PSM::MAKE-ERROR-MSG.
+;;; Compiling file domain_reasoner.lisp
+; While compiling REFINE-GO:
+Warning: Variable ACTION is never used.
+; While compiling DO-WHAT-YOU-CAN:
+Warning: Variable COMBINED-PREFERENCE is never used.
+Warning: Variable COMBINED-FILTERS is never used.
+; While compiling RESOLVE-EXTEND-DIRECTLY:
+Warning: Variable OLD-FROM is never used.
+; While compiling MODIFY-CONJUNCTIVE-GOAL:
+Warning: Variable PLAN-ID is never used.
+Warning: Variable OBJECTS is never used.
+Warning: Variable NEW-CONSTRAINTS is never used.
+Warning: Variable PRIOR-SOLN is never used.
+Warning: Variable OBJECTIVE is never used.
+; While compiling MODIFY-DIRECTLY:
+Warning: Variable OLD-FROM is never used.
+; While compiling CANCEL-GOAL:
+Warning: Variable PLAN-ID is never used.
+;;; Writing fasl file domain_reasoner.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::REDUCE-WITH-APPEND, PSM::ASSESS-INTERACTION,
+         PSM::HANDLE-PSM-QUERY, PSM::GET-KB, PSM::GEN-PLAN-FROM-ROUTE,
+         PSM::TRUNCATE-ROUTE-INFO-AT, PSM::REMOVE-CONSTRAINT-FROM-ACT,
+         PSM::REMOVE-CONSTRAINTS-MENTIONING-CITY,
+         PSM::CONSTRAINTS-OVERLAP, PSM::CONSTRAINT-HOLDS,
+         PSM::REPORT-P, PSM::LOOKUP-TRACK, PSM::LOOKUP-CITY,
+         PSM::CONSTRAINTS-SUBSUMED, PSM::REMOVE-CONSTRAINT,
+         PSM::DO-ROUTE-EXTENSION, PSM::SIMPLIFY-CONSTRAINTS,
+         PSM::CURRENT-PSS, PSM::MAKE-REPORT, PSM::APPLY-GO-CONSTRAINT,
+         PSM::MODIFY-ACT-INSTANCE, PSM::CONSTRUCT-ACTION,
+         PSM::MERGE-CONSTRAINTS, PSM::SIMPLIFY-GO-CONSTRAINTS,
+         PSM::FIND-BEST-ANSWERS, PSM::GET-NODE-BY-NAME,
+         PSM::DOWNGRADE-ANSWER-SCORE, PSM::DOWNGRADE-RECOGNITION-SCORE,
+         PSM::IS-ACTION, PSM::AGENT-IN-USE, PSM::FIND-WORST-ANSWERS,
+         PSM::GENSYMBOL, PSM::BUILD-IMPOSSIBLE-ANSWER,
+         PSM::MAKE-SORRY-MSG, PSM::COMBINE-PREFERENCE,
+         PSM::COMBINE-FILTERS, PSM::FIND-CONSTRAINT-IN-ACT,
+         PSM::FIND-ARG, PSM::BUILD-ANSWER, PSM::DOMAIN-QUERY,
+         PSM::FIND-CONSTRAINT, PSM::INSTANTIATE-ROUTE,
+         PSM::MAKE-ERROR-MSG, PSM::PSM-WARN, PSM::VALID-FILTER-FN,
+         PSM::SORT-CONSTRAINTS, PSM::GET-CONSTRAINTS-FROM-ACT,
+         PSM::FIND-ARG-IN-ACT, PSM::SA-TYPE.
+;;; Compiling file route-planner.lisp
+;;; Writing fasl file route-planner.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::DECLARE-AN-OBJECT, PSM::CONSTRUCT-ACTION,
+         PSM::FIND-CONSTRAINT, PSM::FIND-CONSTRAINT-IN-ACT,
+         PSM::INSTANTIATE-ACTION, PSM::ASSESS-INTERACTION,
+         PSM::REMOVE-FTA, PSM::GET-CONSTRAINTS-FROM-ACT,
+         PSM::GET-FROM-TO-AGENT-FROM-ACT, PSM::GET-KB, PSM::GENSYMBOL,
+         PSM::GET-CITIES, PSM::PSM-WARN, PSM::DEFINE-CITY,
+         PSM::MAKE-ERROR-MSG, PSM::GET-TRACKS, PSM::LOOKUP-TRACK,
+         PSM::LOOKUP-CITY.
+;;; Compiling file Interface.lisp
+; While compiling DE-LISTIFY-ANSWER:
+Warning: Variable ARGS is never used.
+;;; Writing fasl file Interface.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::FIND-UPDATE, PSM::PSM-WARN, PSM::ENCODE-UPDATE,
+         PSM::GENSYMBOL, PSM::CLEAR-SYMBOL-TABLES,
+         PSM::CLEAR-MESSAGE-SYMBOL-TABLE, PSM::MAKE-ERROR-MSG,
+         PSM::INTERPRET-SA, PSM::GET-NODE-BY-NAME, PSM::SOLVE,
+         PSM::CURRENT-PSS-ID, PSM::CURRENT-PSS,
+         PSM::BUILD-IMPOSSIBLE-ANSWER, PSM::UNDO-PSM,
+         PSM::HANDLE-PSM-ASSERT, PSM::FIND-ARG, PSM::RESET-MAP,
+         PSM::INIT-KB, PSM::INIT-PSM.
+;;; Compiling file kqml.lisp
+;;; Writing fasl file kqml.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::FIND-CONSTRAINT-IN-ACT, PSM::ALL-CONSTRAINTS-REDUNDANT,
+         PSM::GET-NODE-BY-NAME, PSM::CURRENT-PSS, PSM::QUICK-QUERY,
+         PSM::HANDLE-PSM-ASSERT, PSM::HANDLE-PSM-QUERY,
+         PSM::HANDLE-PSM-REQUEST.
+;;; Compiling file KB.lisp
+; While compiling FIND-DOMAIN-TUPLES:
+Warning: Variable PLAN is never used.
+; While compiling (:INTERNAL FIND-ENGINE-ROUTES 0):
+Warning: Variable SOLN is never used.
+; While compiling (:INTERNAL GET-ENGINE-ROUTE-CITIES-AND-TRACKS 0):
+Warning: Variable SOLN is never used.
+;;; Writing fasl file KB.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::GET-PROPS-FROM-KB, PSM::FIND-CONSTRAINT-IN-ACT,
+         PSM::HANDLE-QUERY-ACTIONS, PSM::HANDLE-QUERY-AGENT,
+         PSM::GET-NODE-BY-NAME, PSM::LOOKUP-CITY, PSM::GET-KB,
+         PSM::PREPARE-ANSWER-FROM-TUPLES, PSM::ADD-TO-KB,
+         PSM::MAKE-ERROR-MSG, PSM::KNOWN-PS-LEVEL-PREDICATE-NAMES,
+         PSM::CLEAR-ROUTE-TEMP-INFO, PSM::CHECK-FOR-ROUTE-INFO.
+; Fasl file query.fasl43 is up to date
+; Fasl file QueryPreds.fasl43 is up to date
+; Fasl file Test-Code.fasl43 is up to date
+;;; Compiling file solutions.lisp
+;;; Writing fasl file solutions.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         PSM::GET-CITIES, PSM::APPLY-GO-CONSTRAINT, PSM::GET-ACCESS-FN,
+         PSM::GET-OPERATOR, PSM::MAKE-ERROR-MSG, PSM::GET-TRACKS,
+         PSM::ITIN-ITEM-LOCATION, PSM::ITIN-ITEM-END-TIME,
+         PSM::CALC-DISTANCE, PSM::FILTER-LIST-OF-SOLUTIONS,
+         PSM::FILTER-BY-CONSTRAINTS, PSM::SORT-BY-PREFERENCE-FN,
+         PSM::GEN-BASIC-ROUTES, PSM::MAKE-SORRY-MSG, PSM::DOMAIN-QUERY,
+         PSM::GET-PROPS-FROM-KB, PSM::FIND-CONSTRAINT-IN-ACT,
+         PSM::PSM-WARN, PSM::SORT-CONSTRAINTS,
+         PSM::GEN-PLAN-FROM-ROUTE, PSM::FIND-ENGINES-ORIGINALLY-AT,
+         PSM::ROUTE-COST-FN.
+; Loading ./structures.lisp
+; Fast loading ./Task_Tree.fasl
+; Fast loading ./PSM.fasl
+; Fast loading ./constraints.fasl
+; Fast loading ./domain_reasoner.fasl
+; Fast loading ./route-planner.fasl
+; Fast loading ./Interface.fasl
+; Fast loading ./kqml.fasl
+; Fast loading ./KB.fasl
+; Loading ./query.lisp
+; Loading ./QueryPreds.lisp
+; Loading ./Test-Code.lisp
+; Fast loading ./solutions.fasl
+USER(2): EOF ; Auto-exit
+; Exiting Lisp
+echo '(setq psm::*timestamp* "@(#)tpsm 2.2.'`cat version` `date`'")' \
+     '(psm::dump-psm "tpsm")' | \
+  /usr/imports/bin/composer -qq -batch -e '(load "psm")' -e '(load "dump-psm")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./psm.lisp
+;   Loading ./structures.lisp
+;   Fast loading ./Task_Tree.fasl
+;   Fast loading ./PSM.fasl
+;   Fast loading ./constraints.fasl
+;   Fast loading ./domain_reasoner.fasl
+;   Fast loading ./route-planner.fasl
+;   Fast loading ./Interface.fasl
+;   Fast loading ./kqml.fasl
+;   Fast loading ./KB.fasl
+;   Loading ./query.lisp
+;   Loading ./QueryPreds.lisp
+;   Loading ./Test-Code.lisp
+;   Fast loading ./solutions.fasl
+; Loading ./dump-psm.lisp
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): 
+"@(#)tpsm 2.2.128 Sat May 29 17:12:06 EDT 1999"
+USER(2): 
+; Garbage collecting prior to dumping...
+; Dumping image file tpsm...
+Warning: shared object files have been loaded into this image, and so
+         the resulting image will depend on clx:excldep.so,
+         clx:socket.so, and xcw:gc-cursor.so for successful operation.
+Warning: the resulting image will depend on
+         /usr/imports/allegro43/home/4.3_xc.lso for successful
+         operation.
+USER(3): EOF ; Auto-exit
+; Exiting Lisp
+Making in DM...
+/usr/bin/make compile dump
+echo '(dm::compile-dm)' | \
+  /usr/imports/bin/composer -qq -batch -e '(setq dm-is-being-compiled t)' -e '(load "dm")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./dm.lisp
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): ; Loading cl-lib/trains-cl-lib-def.lisp
+; Loading id/logging-def.lisp
+; Loading id/tt-kernel/kqml-library-def.lisp
+; Loading id/tt-simple-kr-def.lisp
+; Loading modules/speechacts/sa-defs-def.lisp
+; Loading lymphocyte/lym-def.lisp
+; Loading modules/kb-lib/kb-lib-def.lisp
+; Loading modules/world-kb/world-kb-def.lisp
+; Loading modules/reference-resolution/user-model-kb-def.lisp
+; Loading modules/display-manager/display-kb-def.lisp
+; Loading modules/generator/self-model-kb-def.lisp
+; Loading modules/reference-resolution/reference-resolution-def.lisp
+; Loading modules/verbal-reasoner/verbal-reasoner-def.lisp
+; Loading modules/generator/generator-def.lisp
+; Loading modules/dm/context-manager-def.lisp
+; Loading modules/dm/discourse-manager-def.lisp
+; Loading modules/display-manager/display-parser-def.lisp
+; Loading id/tt-kernel/hack-def.lisp
+;;; Compiling file cl-lib/trains-cl-lib.lisp
+; Autoloading for EXCL::COMPLEX-LOOP-EXPANDER:
+; Fast loading from bundle code/loop.fasl.
+;;; Writing fasl file cl-lib/trains-cl-lib.fasl
+;;; Fasl write complete
+; Fast loading cl-lib/trains-cl-lib.fasl
+;;; Compiling file id/toplevel.lisp
+;;; Writing fasl file id/toplevel.fasl
+;;; Fasl write complete
+; Fast loading id/toplevel.fasl
+;;; Compiling file modules/speechacts/sa-defs.lisp
+; While compiling (:INTERNAL (METHOD PRINT-OBJECT (VARI T)) 0):
+Warning: Free reference to undeclared variable *PRINT-FOR-KQML* assumed
+         special.
+; While compiling MAKE-TYPE-PREDICATE:
+Warning: Free reference to undeclared variable *KQML-RECIPIENT* assumed
+         special.
+; While compiling (METHOD PRINT-OBJECT (COLLECTION T)):
+Warning: Free reference to undeclared variable *PRINT-FOR-KQML* assumed
+         special.
+; While compiling (METHOD PRINT-OBJECT (PATH-QUANTUM T)):
+Warning: Free reference to undeclared variable *PRINT-FOR-KQML* assumed
+         special.
+Warning: Variable *PRINT-FOR-KQML* is never used.
+;;; Writing fasl file modules/speechacts/sa-defs.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         SA-DEFS:MAKE-QUANTIFIER, SA-DEFS:MAKE-OPERATOR,
+         SA-DEFS:MAKE-PREDICATE, LOGGING:LOG-WARNING, LOGGING:DEBUG-P,
+         SA-DEFS:FIND-PREDICATE, SA-DEFS:FIND-QUANTIFIER,
+         SA-DEFS:FIND-OPERATOR.
+; Fast loading modules/speechacts/sa-defs.fasl
+;;; Compiling file id/tt-simple-kr.lisp
+;;; Writing fasl file id/tt-simple-kr.fasl
+;;; Fasl write complete
+; Fast loading id/tt-simple-kr.fasl
+;;; Compiling file id/tt-kernel/kqml-library.lisp
+;;; Writing fasl file id/tt-kernel/kqml-library.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::WAIT-FOR-REPLY, LOGGING:DEBUG-LOG,
+         KQML::DO-HACK-SERVICE, HACK::REGISTER-INTEREST-W-PM,
+         LOGGING:OPEN-LOG-STREAM-FOR-MODULE, LOGGING:LOG-WARNING,
+         LOGGING:DEBUG-P, KQML::LEGAL-SLOTS-FOR-CLASS, HACK:HANDLE-KQML.
+; Fast loading id/tt-kernel/kqml-library.fasl
+;;; Compiling file id/logging.lisp
+;;; Writing fasl file id/logging.fasl
+;;; Fasl write complete
+; Fast loading id/logging.fasl
+;;; Compiling file lymphocyte/pat-match.lisp
+; While compiling (METHOD FIND-MACRO-VARS (CONS)):
+Warning: Free reference to undeclared variable
+         LYMPHOCYTE-INTERNAL::+VAR-INTRODUCING-MACROS+ assumed special.
+;;; Writing fasl file lymphocyte/pat-match.fasl
+;;; Fasl write complete
+; Fast loading lymphocyte/pat-match.fasl
+;;; Compiling file lymphocyte/lym-defs.lisp
+;;; Writing fasl file lymphocyte/lym-defs.fasl
+;;; Fasl write complete
+; Fast loading lymphocyte/lym-defs.fasl
+;;; Compiling file lymphocyte/lym-language.lisp
+;;; Writing fasl file lymphocyte/lym-language.fasl
+;;; Fasl write complete
+; Fast loading lymphocyte/lym-language.fasl
+;;; Compiling file lymphocyte/lym-engine.lisp
+;;; Writing fasl file lymphocyte/lym-engine.fasl
+;;; Fasl write complete
+; Fast loading lymphocyte/lym-engine.fasl
+;;; Compiling file modules/kb-lib/kb-defs.lisp
+;;; Writing fasl file modules/kb-lib/kb-defs.fasl
+;;; Fasl write complete
+; Fast loading modules/kb-lib/kb-defs.fasl
+;;; Compiling file modules/kb-lib/kb-functions.lisp
+;;; Writing fasl file modules/kb-lib/kb-functions.fasl
+;;; Fasl write complete
+; Fast loading modules/kb-lib/kb-functions.fasl
+;;; Compiling file modules/kb-lib/kb-lib-hack-exports.lisp
+;;; Writing fasl file modules/kb-lib/kb-lib-hack-exports.fasl
+;;; Fasl write complete
+; Fast loading modules/kb-lib/kb-lib-hack-exports.fasl
+;;; Compiling file modules/world-kb/world-kb-defs.lisp
+; While compiling SETUP-DTRACK:
+Warning: Variable COST is never used.
+Warning: Variable DISTANCE is never used.
+Warning: Variable TO is never used.
+Warning: Variable FROM is never used.
+;;; Writing fasl file modules/world-kb/world-kb-defs.fasl
+;;; Fasl write complete
+; Fast loading modules/world-kb/world-kb-defs.fasl
+;;; Compiling file modules/world-kb/world-kb.lisp
+;;; Writing fasl file modules/world-kb/world-kb.fasl
+;;; Fasl write complete
+; Fast loading modules/world-kb/world-kb.fasl
+;;; Compiling file modules/reference-resolution/user-model-kb.lisp
+;;; Writing fasl file modules/reference-resolution/user-model-kb.fasl
+;;; Fasl write complete
+; Fast loading modules/reference-resolution/user-model-kb.fasl
+;;; Compiling file modules/display-manager/display-kb-defs.lisp
+;;; Writing fasl file modules/display-manager/display-kb-defs.fasl
+;;; Fasl write complete
+; Fast loading modules/display-manager/display-kb-defs.fasl
+;;; Compiling file modules/display-manager/display-kb.lisp
+;;; Writing fasl file modules/display-manager/display-kb.fasl
+;;; Fasl write complete
+; Fast loading modules/display-manager/display-kb.fasl
+;;; Compiling file modules/generator/self-model-kb.lisp
+;;; Writing fasl file modules/generator/self-model-kb.fasl
+;;; Fasl write complete
+; Fast loading modules/generator/self-model-kb.fasl
+;;; Compiling file
+;;;   modules/reference-resolution/reference-resolution-defs.lisp
+;;; Writing fasl file
+;;;   modules/reference-resolution/reference-resolution-defs.fasl
+;;; Fasl write complete
+; Fast loading
+;    modules/reference-resolution/reference-resolution-defs.fasl
+;;; Compiling file modules/reference-resolution/path-parser.lisp
+;;; Writing fasl file modules/reference-resolution/path-parser.fasl
+;;; Fasl write complete
+; Fast loading modules/reference-resolution/path-parser.fasl
+;;; Compiling file modules/reference-resolution/ref-rules-support.lisp
+;;; Writing fasl file
+;;;   modules/reference-resolution/ref-rules-support.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         REFERENCE-RESOLUTION::REF-AMBIGUOUS,
+         REFERENCE-RESOLUTION::ENGINES-ORIGINALLY-AT-LOCATION,
+         REFERENCE-RESOLUTION::ENGINES-AT-LOCATION.
+; Fast loading modules/reference-resolution/ref-rules-support.fasl
+;;; Compiling file modules/reference-resolution/ref-rules.lisp
+;;; Writing fasl file modules/reference-resolution/ref-rules.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         REFERENCE-RESOLUTION::HACK-INSTEAD,
+         REFERENCE-RESOLUTION::FIXUP-ROUTE,
+         REFERENCE-RESOLUTION::FIXUP-ROUTE-LATER,
+         REFERENCE-RESOLUTION::ENGINES-ORIGINALLY-AT-LOCATION,
+         REFERENCE-RESOLUTION::ENGINES-AT-LOCATION,
+         REFERENCE-RESOLUTION::GET-ENGINE-POSITIONS,
+         REFERENCE-RESOLUTION::REF-AMBIGUOUS,
+         REFERENCE-RESOLUTION::REF-UPDATE-FOCUS,
+         REFERENCE-RESOLUTION::GET-OBJECTS-OF-TYPE.
+; Fast loading modules/reference-resolution/ref-rules.fasl
+;;; Compiling file
+;;;   modules/reference-resolution/reference-resolution.lisp
+;;; Writing fasl file
+;;;   modules/reference-resolution/reference-resolution.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         REFERENCE-RESOLUTION::RESET-FOCUS-UPDATE-FLAG,
+         REFERENCE-RESOLUTION::REF-NEW-FOCUS.
+; Fast loading modules/reference-resolution/reference-resolution.fasl
+;;; Compiling file modules/verbal-reasoner/verbal-reasoner-predefs.lisp
+;;; Writing fasl file
+;;;   modules/verbal-reasoner/verbal-reasoner-predefs.fasl
+;;; Fasl write complete
+; Fast loading modules/verbal-reasoner/verbal-reasoner-predefs.fasl
+;;; Compiling file modules/verbal-reasoner/verbal-reasoner-defs.lisp
+;;; Writing fasl file modules/verbal-reasoner/verbal-reasoner-defs.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         VERBAL-REASONER::CLEAR-ROOT-PLAN,
+         VERBAL-REASONER::CLOSE-SUB-SA,
+         VERBAL-REASONER::PUSH-OUTPUT-SAS,
+         VERBAL-REASONER::CLEAR-OUTPUT-SAS,
+         VERBAL-REASONER::CLEAR-PROPOSED-SAS,
+         VERBAL-REASONER::SET-OUTPUT-SAS,
+         VERBAL-REASONER::GET-OUTPUT-SAS,
+         VERBAL-REASONER::GET-PROPOSED-SAS,
+         VERBAL-REASONER::CLEAR-NEW-STATE,
+         VERBAL-REASONER::CLEAR-PROPOSED-STATE,
+         VERBAL-REASONER::SET-NEW-STATE,
+         VERBAL-REASONER::GET-NEW-STATE,
+         VERBAL-REASONER::GET-PROPOSED-STATE,
+         VERBAL-REASONER::CLEAR-REQUEST-ERROR,
+         VERBAL-REASONER::GET-REQUEST-ERROR,
+         VERBAL-REASONER::CLEAR-ACTION, VERBAL-REASONER::GET-ACTION,
+         VERBAL-REASONER::CLEAR-PLAN, VERBAL-REASONER::GET-PLAN,
+         VERBAL-REASONER::CLEAR-PS-STATE,
+         VERBAL-REASONER::GET-PS-STATE,
+         VERBAL-REASONER::CLEAR-RECOGNIZED-OBJECTS,
+         VERBAL-REASONER::GET-RECOGNIZED-OBJECTS,
+         VERBAL-REASONER::CLEAR-RESPONSE-ROUTE,
+         VERBAL-REASONER::GET-RESPONSE-ROUTE,
+         VERBAL-REASONER::CLEAR-DID-CLOSE,
+         VERBAL-REASONER::CLEAR-FOCUS-CHANGED,
+         VERBAL-REASONER::CLEAR-HANDLING-QUESTION,
+         VERBAL-REASONER::CLEAR-HANDLING-REJECT,
+         VERBAL-REASONER::CLEAR-PRIOR-REJECT,
+         VERBAL-REASONER::CLEAR-REJECT-HANDLED,
+         VERBAL-REASONER::CLEAR-DID-UNDO,
+         VERBAL-REASONER::GET-DID-UNDO,
+         VERBAL-REASONER::CLEAR-REMAINING-ACTS,
+         VERBAL-REASONER::GET-REMAINING-ACTS.
+; Fast loading modules/verbal-reasoner/verbal-reasoner-defs.fasl
+;;; Compiling file modules/verbal-reasoner/verbal-reasoner.lisp
+; While compiling VR-ASK-YN-QUESTION:
+Warning: Free reference to undeclared variable *PS-REQUEST* assumed
+         special.
+;;; Writing fasl file modules/verbal-reasoner/verbal-reasoner.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         VERBAL-REASONER::EXECUTE-REPLAN-ROUTE,
+         VERBAL-REASONER::EXECUTE-REDO-EXTENSION,
+         VERBAL-REASONER::EXECUTE-HANDLE-PATHS,
+         VERBAL-REASONER::GET-LOCATION-CONTENTS,
+         VERBAL-REASONER::EXECUTE-UNDO, VERBAL-REASONER::MATCH-INPUT,
+         VERBAL-REASONER::PROCESS-PS-RESULT,
+         VERBAL-REASONER::RESET-GEP-CACHE,
+         VERBAL-REASONER::RESET-GLC-CACHE,
+         VERBAL-REASONER::GET-ENGINE-POSITION.
+; Fast loading modules/verbal-reasoner/verbal-reasoner.fasl
+;;; Compiling file modules/verbal-reasoner/prince-ps-interface.lisp
+;;; Writing fasl file modules/verbal-reasoner/prince-ps-interface.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK:MAIL-LOG-FILE.
+; Fast loading modules/verbal-reasoner/prince-ps-interface.fasl
+;;; Compiling file modules/verbal-reasoner/vr-lym-support.lisp
+;;; Writing fasl file modules/verbal-reasoner/vr-lym-support.fasl
+;;; Fasl write complete
+; Fast loading modules/verbal-reasoner/vr-lym-support.fasl
+;;; Compiling file modules/generator/generator-defs.lisp
+;;; Writing fasl file modules/generator/generator-defs.fasl
+;;; Fasl write complete
+; Fast loading modules/generator/generator-defs.fasl
+;;; Compiling file modules/generator/generator.lisp
+; While compiling GEN-CLOSE:
+Warning: Free reference to undeclared variable HACK::*SCORE-P* assumed
+         special.
+;;; Writing fasl file modules/generator/generator.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         GENERATOR::HANDLE-CROSS, GENERATOR::CHECK-FOR-CROSSED-ROUTES,
+         GENERATOR::GEN-HANDLE-INPUT, HACK::USER-SEX,
+         GENERATOR::GEN-EVALUATIVE-QUALIFICATION, HACK::USER-NAME,
+         GENERATOR::GEN-MODULE-COMPLAINT-DEFER.
+; Fast loading modules/generator/generator.fasl
+;;; Compiling file modules/generator/gen-lym-support.lisp
+;;; Writing fasl file modules/generator/gen-lym-support.fasl
+;;; Fasl write complete
+; Fast loading modules/generator/gen-lym-support.fasl
+;;; Compiling file modules/dm/context-manager.lisp
+;;; Writing fasl file modules/dm/context-manager.fasl
+;;; Fasl write complete
+; Fast loading modules/dm/context-manager.fasl
+;;; Compiling file modules/dm/discourse-manager.lisp
+; While compiling PROCESS-TIMEOUT:
+Warning: Free reference to undeclared variable
+         HACK::*MAXIMAL-TIMEOUT-VALUE* assumed special.
+;;; Writing fasl file modules/dm/discourse-manager.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK:HANDLE-KQML, HACK::COUNT-INTERACTIONS,
+         DISCOURSE-MANAGER::CLEAR-FRAME-PUSHER,
+         DISCOURSE-MANAGER::STANDARD-PUSH,
+         DISCOURSE-MANAGER::POP-TO-LAST-FRAME,
+         DISCOURSE-MANAGER::CLEAN-STACK,
+         DISCOURSE-MANAGER::PUSH-ON-CONTEXT.
+; Fast loading modules/dm/discourse-manager.fasl
+;;; Compiling file modules/display-manager/display-parser.lisp
+; While compiling PARSE-DISPLAY-COMMANDS:
+Warning: Variable UNCOMMITTED-UPDATE-P is never used.
+; While compiling (LABELS PARSE-DISPLAY-COMMANDS COMMIT-UPDATE):
+Warning: Variable FORCE-P is never used.
+;;; Writing fasl file modules/display-manager/display-parser.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::DO-SCORE, HACK:HANDLE-SPEECH-KQML, HACK:HANDLE-KQML,
+         HACK:SEND-TO-LOG.
+; Fast loading modules/display-manager/display-parser.fasl
+;;; Compiling file id/tt-lispmodule.lisp
+; While compiling COMMAND-LINE-INITS:
+Warning: Free reference to undeclared variable *TRAINS-SOCKET* assumed
+         special.
+Warning: Free reference to undeclared variable *SCORE-P* assumed
+         special.
+Warning: Free reference to undeclared variable *INITIAL-SEED* assumed
+         special.
+Warning: Free reference to undeclared variable *USE-TRUETALK* assumed
+         special.
+; While compiling START-CONVERSATION:
+Warning: Free reference to undeclared variable *SCORE-P* assumed
+         special.
+Warning: Free reference to undeclared variable *DO-DEMO* assumed
+         special.
+Warning: Free reference to undeclared variable *KNOWN-GOALS* assumed
+         special.
+Warning: Free reference to undeclared variable *VERSION-STRING* assumed
+         special.
+; While compiling SEND-KQML-TO-DISPLAY:
+Warning: Free reference to undeclared variable *DISPLAY-DELAY-TIME*
+         assumed special.
+; While compiling SEND-TO-DISPLAY:
+Warning: Free reference to undeclared variable *DISPLAY-DELAY-TIME*
+         assumed special.
+; While compiling DO-TOPLEVEL:
+Warning: Free reference to undeclared variable *GAME-IN-PROGESS*
+         assumed special.
+Warning: Free reference to undeclared variable *INITIAL-SEED* assumed
+         special.
+; While compiling MAIL-LOG-FILE:
+Warning: Free reference to undeclared variable *VERSION-STRING* assumed
+         special.
+;;; Writing fasl file id/tt-lispmodule.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::TRANSCRIPT-DIR, HACK::FAKE-FIRST-TIME,
+         HACK::PARSE-SUPERVISOR-MESSAGE, HACK:PARSE-CONFIG-MESSAGE,
+         HACK::HANDLE-STATUS-MESSAGE, HACK::SYSTEM-INTERACTIONS,
+         HACK::RESET-REGISTERED, HACK::HANDLE-SPEECH-ONLY,
+         HACK::CHECK-STATUS-W-PM, HACK::HANDLE-SPEECH,
+         HACK:CHECK-MODULE-RUNNING, HACK::SET-TRANSCRIPT-DIR,
+         HACK::RESET-KBS, HACK::OPEN-LOGS, HACK::SET-NAME,
+         HACK::SET-SEX, HACK::RESET-USER.
+; Fast loading id/tt-lispmodule.fasl
+;;; Compiling file id/tt-kernel/version.lisp
+;;; Writing fasl file id/tt-kernel/version.fasl
+;;; Fasl write complete
+; Fast loading id/tt-kernel/version.fasl
+;;; Compiling file id/tt-kernel/x-interface.lisp
+; While compiling RESET-KBS:
+Warning: Free reference to undeclared variable *INITIAL-SEED* assumed
+         special.
+;;; Writing fasl file id/tt-kernel/x-interface.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::HANDLE-SPEECH-ONLY, HACK::SWITCH-TO-MALE-VOICE,
+         HACK::STATE-PROBLEM, HACK::GENERATE-NEW-PROBLEM,
+         HACK::CHECK-FOR-DEMO, HACK::HANDLE-SPEECH,
+         HACK::SWITCH-TO-FEMALE-VOICE, HACK::RESET-INTERACTIONS,
+         HACK::RESET-SPEECH, HACK::IM-SYNC, HACK:HANDLE-SPEECH-KQML.
+; Fast loading id/tt-kernel/x-interface.fasl
+;;; Compiling file id/tt-kernel/scoring.lisp
+;;; Writing fasl file id/tt-kernel/scoring.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::RESET-INTERACTIONS, HACK::FIND-SOLUTION.
+; Fast loading id/tt-kernel/scoring.fasl
+;;; Compiling file id/tt-kernel/world-dump.lisp
+; While compiling (METHOD OTHER-CONFIG-MESSAGE (T T T)):
+Warning: Free reference to undeclared variable *INITIAL-SEED* assumed
+         special.
+Warning: Variable LINE is never used.
+; While compiling CHECK-FOR-DEMO:
+Warning: Variable DEMO-ALIST is never used.
+;;; Writing fasl file id/tt-kernel/world-dump.fasl
+;;; Fasl write complete
+Warning: While compiling these undefined functions were referenced:
+         HACK::REAL-USER-NAME, HACK::PRESET-NAMES, HACK::USER-SEX.
+; Fast loading id/tt-kernel/world-dump.fasl
+("cl-lib/trains-cl-lib" "id/toplevel" "modules/speechacts/sa-defs"
+ "id/tt-simple-kr" "id/tt-kernel/kqml-library" "id/logging"
+ "lymphocyte/pat-match" "lymphocyte/lym-defs" "lymphocyte/lym-language"
+ "lymphocyte/lym-engine" ...)
+USER(2): EOF ; Auto-exit
+; Exiting Lisp
+echo '(setq dm::*timestamp* "@(#)tdm 2.2.'`cat version` `date`'")' \
+     '(dm::dump-dm "tdm")' | \
+  /usr/imports/bin/composer -qq -batch -e '(load "dm")' -e '(load "dump-dm")'
+Allegro CL 4.3 [SPARC; R1] (6/10/96 21:24)
+Copyright (C) 1985-1996, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+; Loading ./dm.lisp
+;   Loading cl-lib/trains-cl-lib-def.lisp
+;   Loading id/logging-def.lisp
+;   Loading id/tt-kernel/kqml-library-def.lisp
+;   Loading id/tt-simple-kr-def.lisp
+;   Loading modules/speechacts/sa-defs-def.lisp
+;   Loading lymphocyte/lym-def.lisp
+;   Loading modules/kb-lib/kb-lib-def.lisp
+;   Loading modules/world-kb/world-kb-def.lisp
+;   Loading modules/reference-resolution/user-model-kb-def.lisp
+;   Loading modules/display-manager/display-kb-def.lisp
+;   Loading modules/generator/self-model-kb-def.lisp
+;   Loading modules/reference-resolution/reference-resolution-def.lisp
+;   Loading modules/verbal-reasoner/verbal-reasoner-def.lisp
+;   Loading modules/generator/generator-def.lisp
+;   Loading modules/dm/context-manager-def.lisp
+;   Loading modules/dm/discourse-manager-def.lisp
+;   Loading modules/display-manager/display-parser-def.lisp
+;   Loading id/tt-kernel/hack-def.lisp
+;   Fast loading cl-lib/trains-cl-lib.fasl
+;   Fast loading id/toplevel.fasl
+;   Fast loading modules/speechacts/sa-defs.fasl
+;   Fast loading id/tt-simple-kr.fasl
+;   Fast loading id/tt-kernel/kqml-library.fasl
+;   Fast loading id/logging.fasl
+;   Fast loading lymphocyte/pat-match.fasl
+;   Fast loading lymphocyte/lym-defs.fasl
+;   Fast loading lymphocyte/lym-language.fasl
+;   Fast loading lymphocyte/lym-engine.fasl
+;   Fast loading modules/kb-lib/kb-defs.fasl
+;   Fast loading modules/kb-lib/kb-functions.fasl
+;   Fast loading modules/kb-lib/kb-lib-hack-exports.fasl
+;   Fast loading modules/world-kb/world-kb-defs.fasl
+;   Fast loading modules/world-kb/world-kb.fasl
+;   Fast loading modules/reference-resolution/user-model-kb.fasl
+;   Fast loading modules/display-manager/display-kb-defs.fasl
+;   Fast loading modules/display-manager/display-kb.fasl
+;   Fast loading modules/generator/self-model-kb.fasl
+;   Fast loading
+;      modules/reference-resolution/reference-resolution-defs.fasl
+;   Fast loading modules/reference-resolution/path-parser.fasl
+;   Fast loading modules/reference-resolution/ref-rules-support.fasl
+;   Fast loading modules/reference-resolution/ref-rules.fasl
+;   Fast loading modules/reference-resolution/reference-resolution.fasl
+;   Fast loading modules/verbal-reasoner/verbal-reasoner-predefs.fasl
+;   Fast loading modules/verbal-reasoner/verbal-reasoner-defs.fasl
+;   Fast loading modules/verbal-reasoner/verbal-reasoner.fasl
+;   Fast loading modules/verbal-reasoner/prince-ps-interface.fasl
+;   Fast loading modules/verbal-reasoner/vr-lym-support.fasl
+;   Fast loading modules/generator/generator-defs.fasl
+;   Fast loading modules/generator/generator.fasl
+;   Fast loading modules/generator/gen-lym-support.fasl
+;   Fast loading modules/dm/context-manager.fasl
+;   Fast loading modules/dm/discourse-manager.fasl
+;   Fast loading modules/display-manager/display-parser.fasl
+;   Fast loading id/tt-lispmodule.fasl
+;   Fast loading id/tt-kernel/version.fasl
+;   Fast loading id/tt-kernel/x-interface.fasl
+;   Fast loading id/tt-kernel/scoring.fasl
+;   Fast loading id/tt-kernel/world-dump.fasl
+;   Loading modules/verbal-reasoner/vr-lym.lisp
+;   Loading modules/generator/gen-lym.lisp
+; Loading ./dump-dm.lisp
+;; Optimization settings: safety 1, space 1, speed 2, debug 0.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+USER(1): 
+"@(#)tdm 2.2.76 Sat May 29 17:12:31 EDT 1999"
+USER(2): 
+; Garbage collecting prior to dumping...
+; Dumping image file tdm...
+Warning: shared object files have been loaded into this image, and so
+         the resulting image will depend on clx:excldep.so,
+         clx:socket.so, and xcw:gc-cursor.so for successful operation.
+Warning: the resulting image will depend on
+         /usr/imports/allegro43/home/4.3_xc.lso for successful
+         operation.
+USER(3): EOF ; Auto-exit
+; Exiting Lisp
+> make install
+Making install in IM...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tim /fs/disco/group/systems/trains/bin
+test -d /fs/disco/group/systems/trains/etc || mkdir /fs/disco/group/systems/trains/etc
+cp -p im_logo.xpm /fs/disco/group/systems/trains/etc
+Making install in PM...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tpm /fs/disco/group/systems/trains/bin
+Making install in Display...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tdisplay /fs/disco/group/systems/trains/bin
+test -d /fs/disco/group/systems/trains/etc || mkdir /fs/disco/group/systems/trains/etc
+test -d /fs/disco/group/systems/trains/etc/maps || mkdir /fs/disco/group/systems/trains/etc/maps
+cp -p maps/* /fs/disco/group/systems/trains/etc/maps
+Making install in Keyboard...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tkeyboard /fs/disco/group/systems/trains/bin
+Making install in Running...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+sed 's@^TRAINS_BASE_DEFAULT=.*$@TRAINS_BASE_DEFAULT=/fs/disco/group/systems/trains@' trains.sh >/fs/disco/group/systems/trains/bin/trains
+chmod a+x /fs/disco/group/systems/trains/bin/trains
+sed 's@^TRAINS_BASE_DEFAULT=.*$@TRAINS_BASE_DEFAULT=/fs/disco/group/systems/trains@' trains.noaudio.sh >/fs/disco/group/systems/trains/bin/trains.noaudio
+chmod a+x /fs/disco/group/systems/trains/bin/trains.noaudio
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+sed 's@^AF_BASE=.*$@AF_BASE=/fs/that/cfa/trains_sun5/af/AF@' audio_server.sh >/fs/disco/group/systems/trains/bin/audio_server
+chmod a+x /fs/disco/group/systems/trains/bin/audio_server
+test -d /fs/disco/group/systems/trains/etc || mkdir /fs/disco/group/systems/trains/etc
+sed 's@^TRAINS_BASE_DEFAULT=.*$@TRAINS_BASE_DEFAULT=/fs/disco/group/systems/trains@' xtrains.sh >/fs/disco/group/systems/trains/etc/xtrains
+chmod a+x /fs/disco/group/systems/trains/etc/xtrains
+sed 's@^TRAINS_BASE_DEFAULT=.*$@TRAINS_BASE_DEFAULT=/fs/disco/group/systems/trains@' xinit.rc >/fs/disco/group/systems/trains/etc/xinit.rc
+chmod a+x /fs/disco/group/systems/trains/etc/xinit.rc
+cp -p twm.rc /fs/disco/group/systems/trains/etc
+Making install in Splash...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tsplash /fs/disco/group/systems/trains/bin
+cp -p splash.xpm /fs/disco/group/systems/trains/etc
+Making install in Tools...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tim_msg   tim_cat   tim_client   tim_exec /fs/disco/group/systems/trains/bin
+Making install in Transcript...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p ttranscript /fs/disco/group/systems/trains/bin
+Making install in Shortcut...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tshortcut /fs/disco/group/systems/trains/bin
+cp -p shortcut.rc /fs/disco/group/systems/trains/etc
+Making install in Scenario...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tscenario /fs/disco/group/systems/trains/bin
+cp -p scenario.rc /fs/disco/group/systems/trains/etc
+Making install in Replay...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+sed -e 's@TRAINS_VERSION=.*$@TRAINS_VERSION=2.2@' \
+    -e 's@TRAINS_BASE_DEFAULT=.*$@TRAINS_BASE_DEFAULT=/fs/disco/group/systems/trains@' \
+    treplay.sh >/fs/disco/group/systems/trains/bin/treplay
+chmod a+x /fs/disco/group/systems/trains/bin/treplay
+sed -e '1s@^#!.*$@#!/usr/imports/bin/perl5@' \
+    -e 's@TRAINS_BASE_DEFAULT =.*$@TRAINS_BASE_DEFAULT = "/fs/disco/group/systems/trains";@' \
+    treplay.pl >/fs/disco/group/systems/trains/bin/treplay.pl
+chmod a+x /fs/disco/group/systems/trains/bin/treplay.pl
+test -d /fs/disco/group/systems/trains/etc || mkdir /fs/disco/group/systems/trains/etc
+test -d /fs/disco/group/systems/trains/etc/replay || mkdir /fs/disco/group/systems/trains/etc/replay
+test -d /fs/disco/group/systems/trains/etc/replay/bitmaps || mkdir /fs/disco/group/systems/trains/etc/replay/bitmaps
+cp -p bitmaps/* /fs/disco/group/systems/trains/etc/replay/bitmaps
+Making install in PView...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+sed -e '1s@^#!.*$@#!/usr/imports/bin/perl5@' \
+    -e 's@TRAINS_BASE_DEFAULT =.*$@TRAINS_BASE_DEFAULT = "/fs/disco/group/systems/trains";@' \
+    tpview.pl >/fs/disco/group/systems/trains/bin/tpview
+chmod a+x /fs/disco/group/systems/trains/bin/tpview
+test -d /fs/disco/group/systems/trains/etc/pview || mkdir /fs/disco/group/systems/trains/etc/pview
+cp -p kqml.perl tree.perl /fs/disco/group/systems/trains/etc/pview
+Making install in Parser...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tparser /fs/disco/group/systems/trains/bin
+Making install in PSM...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tpsm /fs/disco/group/systems/trains/bin
+Making install in DM...
+test -d /fs/disco/group/systems/trains/bin || mkdir /fs/disco/group/systems/trains/bin
+cp -p tdm /fs/disco/group/systems/trains/bin
+test -d /fs/disco/group/systems/trains/etc || mkdir /fs/disco/group/systems/trains/etc
+test -d /fs/disco/group/systems/trains/etc/scenarios || mkdir /fs/disco/group/systems/trains/etc/scenarios
+cp -p scenarios/* /fs/disco/group/systems/trains/etc/scenarios
+> 
+script done on Sat May 29 17:13:31 1999

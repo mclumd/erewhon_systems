@@ -1,0 +1,58 @@
+(request :content
+ (default :depth 5 :thickness 2 :color black :fill 0))
+(request :content
+ (create :type track :start Avon :end Canandaigua))
+(request :content
+ (create :type track :start Avon :end Mount_Morris))
+(request :content
+ (create :type track :start Avon :end Rochester))
+(request :content
+ (create :type track :start Bath :end Corning))
+(request :content
+ (create :type track :start Bath :end Dansville))
+(request :content
+ (create :type track :start Bath :end Hornell))
+(request :content
+ (create :type track :start Bath :end Penn_Yan))
+(request :content
+ (create :type track :start Canandaigua :end Dansville))
+(request :content
+ (create :type track :start Canandaigua :end Geneva))
+(request :content
+ (create :type track :start Corning :end Elmira))
+(request :content
+ (create :type track :start Dansville :end Mount_Morris))
+(request :content
+ (create :type track :start East_Aurora :end Warsaw))
+(request :content
+ (create :type track :start East_Aurora :end Yorkshire))
+(request :content
+ (create :type track :start Elmira :end Ithaca))
+(request :content
+ (create :type track :start Elmira :end Watkins_Glen))
+(request :content
+ (create :type track :start Franklinville :end Olean))
+(request :content
+ (create :type track :start Franklinville :end Yorkshire))
+(request :content
+ (create :type track :start Fulton :end Sodus))
+(request :content
+ (create :type track :start Geneva :end Ithaca
+	:shape (multiline :points (Geneva (511 191) Ithaca))))
+(request :content
+ (create :type track :start Geneva :end Lyons))
+(request :content
+ (create :type track :start Hornell :end Olean))
+(request :content
+ (create :type track :start Geneva :end Penn_Yan))
+(request :content
+ (create :type track :start Jamestown :end Olean))
+(request :content
+ (create :type track :start Lyons :end Sodus))
+(request :content
+ (create :type track :start Mount_Morris :end Warsaw))
+(request :content
+ (create :type track :start Rochester :end Sodus))
+(request :content
+ (create :type track :start Penn_Yan :end Watkins_Glen
+	:shape (multiline :points (Penn_Yan (493 255) Watkins_Glen))))

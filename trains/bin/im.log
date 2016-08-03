@@ -1,0 +1,140 @@
+-- 19:45:31 [log starts]
+
+<6  19:45:34 (register :receiver IM :name PM)
+<PM 19:45:34 (tell :receiver IM :content (ready))
+<7  19:45:37 (register :receiver im :name init)
+<init 19:45:37 (request :receiver im :content (define-class user :parent any))
+<init 19:45:37 (request :receiver im :content (define-class user-input :parent user))
+<init 19:45:37 (request :receiver im :content (define-class speech-rec :parent user-input))
+<init 19:45:37 (request :receiver im :content (define-class user-output :parent user))
+<init 19:45:37 (request :receiver im :content (define-class system :parent any))
+<init 19:45:37 (request :receiver im :content (define-class runtime :parent any))
+<init 19:45:37 (request :receiver PM :content (start :name audio
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/taudio"
+			 :argv (/fs/disco/group/systems/trains/bin/taudio -mic False -linein True
+		                -speaker True -phones True -lineout True
+			        -input 70 -output 75 -monitor 0)))
+>PM 19:45:37 (request :receiver PM :content (start :name audio
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/taudio"
+			 :argv (/fs/disco/group/systems/trains/bin/taudio -mic False -linein True
+		                -speaker True -phones True -lineout True
+			        -input 70 -output 75 -monitor 0)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name speech-in
+			 :class speech-rec
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechin"
+			 :argv (/fs/disco/group/systems/trains/bin/tspeechin -sex m)))
+>PM 19:45:37 (request :receiver PM :content (start :name speech-in
+			 :class speech-rec
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechin"
+			 :argv (/fs/disco/group/systems/trains/bin/tspeechin -sex m)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name speech-pp
+			 :class speech-rec
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechpp"))
+>PM 19:45:37 (request :receiver PM :content (start :name speech-pp
+			 :class speech-rec
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechpp") :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name speech-x
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechx"
+			 :argv (/fs/disco/group/systems/trains/bin/tspeechx -iconic)))
+>PM 19:45:37 (request :receiver PM :content (start :name speech-x
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechx"
+			 :argv (/fs/disco/group/systems/trains/bin/tspeechx -iconic)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name speech-out
+			 :class user-output
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechout"))
+>PM 19:45:37 (request :receiver PM :content (start :name speech-out
+			 :class user-output
+			 :exec "/fs/disco/group/systems/trains/bin/tspeechout") :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name display
+			 :class (user-input user-output)
+			 :exec "/fs/disco/group/systems/trains/bin/tdisplay"
+			 :argv (/fs/disco/group/systems/trains/bin/tdisplay -map northeast -iconic -showTextIn False)))
+>PM 19:45:37 (request :receiver PM :content (start :name display
+			 :class (user-input user-output)
+			 :exec "/fs/disco/group/systems/trains/bin/tdisplay"
+			 :argv (/fs/disco/group/systems/trains/bin/tdisplay -map northeast -iconic -showTextIn False)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name keyboard
+			 :class user-input
+			 :exec "/fs/disco/group/systems/trains/bin/tkeyboard"
+			 :argv (/fs/disco/group/systems/trains/bin/tkeyboard -iconic -grab False)))
+>PM 19:45:37 (request :receiver PM :content (start :name keyboard
+			 :class user-input
+			 :exec "/fs/disco/group/systems/trains/bin/tkeyboard"
+			 :argv (/fs/disco/group/systems/trains/bin/tkeyboard -iconic -grab False)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name parser
+			 :class system
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tparser"))
+>PM 19:45:37 (request :receiver PM :content (start :name parser
+			 :class system
+			 :host dream
+			 :exec "/fs/disco/group/systems/trains/bin/tparser") :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name ps
+			 :class system
+			 :host dream
+                         :exec "/fs/disco/group/systems/trains/bin/tpsm"))
+>PM 19:45:37 (request :receiver PM :content (start :name ps
+			 :class system
+			 :host dream
+                         :exec "/fs/disco/group/systems/trains/bin/tpsm") :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name pview
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/tpview"))
+>PM 19:45:37 (request :receiver PM :content (start :name pview
+			 :class runtime
+			 :exec "/fs/disco/group/systems/trains/bin/tpview") :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name transcript
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/ttranscript"
+			 :argv (/fs/disco/group/systems/trains/bin/ttranscript -iconic)))
+>PM 19:45:37 (request :receiver PM :content (start :name transcript
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/ttranscript"
+			 :argv (/fs/disco/group/systems/trains/bin/ttranscript -iconic)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name shortcut
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/tshortcut"
+			 :argv (/fs/disco/group/systems/trains/bin/tshortcut -iconic)))
+>PM 19:45:37 (request :receiver PM :content (start :name shortcut
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/tshortcut"
+			 :argv (/fs/disco/group/systems/trains/bin/tshortcut -iconic)) :sender init)
+<init 19:45:37 (request :receiver PM :content (start :name scenario
+			 :class runtime
+			 
+                         :exec "/fs/disco/group/systems/trains/bin/tscenario"))
+>PM 19:45:37 (request :receiver PM :content (start :name scenario
+			 :class runtime
+			 
+                         :exec "/fs/disco/group/systems/trains/bin/tscenario") :sender init)
+<8  19:45:37 (register :receiver IM :name audio :class runtime)
+<init 19:45:37 (request :receiver PM :content (start :name dm
+			 :class system
+			 :host dream
+                         :exec "/fs/disco/group/systems/trains/bin/tdm"
+			 :argv (/fs/disco/group/systems/trains/bin/tdm -- -debug nil)))
+>PM 19:45:37 (request :receiver PM :content (start :name dm
+			 :class system
+			 :host dream
+                         :exec "/fs/disco/group/systems/trains/bin/tdm"
+			 :argv (/fs/disco/group/systems/trains/bin/tdm -- -debug nil)) :sender init)
+<9  19:45:37 (register :receiver IM :name speech-in :class speech-rec)
+<init 19:45:37 (request :receiver PM :content (start :name splash
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/tsplash"
+			 :argv (/fs/disco/group/systems/trains/bin/tsplash -sex m -asksave False)))
+>PM 19:45:37 (request :receiver PM :content (start :name splash
+			 :class runtime
+                         :exec "/fs/disco/group/systems/trains/bin/tsplash"
+			 :argv (/fs/disco/group/systems/trains/bin/tsplash -sex m -asksave False)) :sender init)
+<PM 19:45:37 (error :code 520 :comment "bad performative: start")
+<7  19:45:37 (register :receiver IM :name speech-pp :class speech-rec)
+<10 19:45:37 (register :receiver IM :name speech-out :class user-output)

@@ -1,0 +1,55 @@
+#
+# Northeast air routes
+#
+# George Ferguson, ferguson@cs.rochester.edu, 19 Apr 1995
+# Time-stamp: <95/04/19 15:10:49 ferguson>
+#
+# These objects are for a 762x727 canvas.
+#
+
+:default :displayed nil
+:create :track :start Albany :end New_York
+:create :track :start Albany :end Syracuse
+:create :track :start Albany :end Boston
+:create :track :start Atlanta :end Charlotte
+:create :track :start Baltimore :end New_York
+:create :track :start Baltimore :end Pittsburgh
+:create :track :start Boston :end Burlington
+:create :track :start Boston :end Montreal
+:create :track :start Boston :end New_York
+:create :track :start Boston :end Philadelphia
+:create :track :start Buffalo :end New_York
+:create :track :start Buffalo :end Pittsburgh
+:create :track :start Buffalo :end Syracuse
+:create :track :start Burlington :end Montreal
+:create :track :start Charleston :end Charlotte
+:create :track :start Charlotte :end Chicago
+:create :track :start Charlotte :end Chicago
+:create :track :start Charlotte :end Lexington
+:create :track :start Charlotte :end Raleigh
+:create :track :start Charlotte :end Richmond
+:create :track :start Charlotte :end Washington
+:create :track :start Charlotte :end Pittsburgh
+:create :track :start Chicago :end Cincinnati
+:create :track :start Chicago :end Detroit
+:create :track :start Chicago :end Indianapolis
+:create :track :start Chicago :end Milwaukee
+:create :track :start Chicago :end New_York
+:create :track :start Chicago :end Pittsburgh
+:create :track :start Chicago :end Toledo
+:create :track :start Cincinnati :end Pittsburgh
+:create :track :start Cleveland :end Pittsburgh
+:create :track :start Columbus :end Pittsburgh
+:create :track :start Detroit :end Toronto
+:create :track :start Montreal :end Toronto
+:create :track :start New_York :end Syracuse
+:create :track :start New_York :end Toronto
+:create :track :start New_York :end Pittsburgh
+:create :track :start New_York :end Washington
+:create :track :start Philadelphia :end Pittsburgh
+:create :track :start Philadelphia :end Scranton
+:create :track :start Philadelphia :end Washington
+:create :track :start Pittsburgh :end Washington
+:create :track :start Pittsburgh :end Scranton
+:create :track :start Pittsburgh :end Toronto
+:default :displayed t

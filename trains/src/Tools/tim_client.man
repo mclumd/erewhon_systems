@@ -1,0 +1,48 @@
+.\" Time-stamp: <96/10/14 16:31:09 ferguson>
+.TH TIM_CLIENT 1 "10 Oct 1996" "TRAINS Project"
+.SH NAME
+tim_client \- Send and receive KQML messages to/from TRAINS Input Manager
+.SH SYNOPSIS
+tim_client [-socket HOST:PORT]
+.SH DESCRIPTION
+.PP
+.I Tim_client
+is a fairly simple program that reads KQML messages from its standard input
+and sends them to the TRAINS Input Manager, and reads messages from
+the Input Manager and prints them to its standard output.
+.SH OPTIONS
+.PP
+.IP "-socket HOST:PORT"
+Connect to Input Manager at the given
+.I HOST
+and
+.IR PORT .
+The default is to use port 6200 on the local host, or the value of the
+environment variable TRAINS_SOCKET, if set.
+.I Tim_client
+will scan successive port numbers from that given trying to connect
+(see
+.IR tim (1)
+for details).
+.SH ENVIRONMENT
+.PP
+TRAINS_SOCKET			HOST:PORT at which to contact IM
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+None.
+.SH SEE ALSO
+.PP
+tim(1),
+tim_msg(1),
+tim_cat(1)
+.SH BUGS
+.PP
+Probably not.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
+
+

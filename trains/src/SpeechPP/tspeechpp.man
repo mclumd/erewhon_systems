@@ -1,0 +1,205 @@
+.\" Time-stamp: <96/10/15 15:14:11 ferguson>
+.TH TSPEECHPP 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+tspeechpp \- TRAINS Speech Post-Processor
+.SH SYNOPSIS
+.IP tspeechpp 10
+[\-s] [\-v] [\-t] [\-nt] [\-i] [\-m] [\-d]
+[\-f2] [\-fh] [\-fi]
+[\-w\ file] [\-{2,3}\ file] 
+[\-c\ file] [\-x\ file] [\-in\ file] [\-sc\ file] [\-mc\ file]
+[\-l\ log-dir] [\-q\ N]
+.SH DESCRIPTION
+.PP
+.I Tspeechpp
+is an error-correcting Speech Post-Processor.  Its sole purpose is to
+boost the word recognition accuracy rates for a continuous speech
+recognition (CSR) system.  It requires training on the behavior of the
+target CSR system in order to make appropriate corrections on unseen
+data.  It was designed and implemented at the University of Rochester
+Department of Computer Science specifically for the TRAINS project.
+Although it has only been trained for and used with the Sphinx-II
+speech recognition system from Carnegie Mellon University, it can be
+used with other
+continuous speech recognizers.  It can run standalone and
+interactively (when invoked with the -i argument) for testing, or it
+can communicate with other components of the TRAINS system via the
+TRAINS Input Manager.  If desired, when running interactively and
+invoked with the -s argument,
+.I tspeechpp
+provides diagnostic
+statistics.  These statistics can be made more verbose via the -v
+argument.
+.PP
+.I Tspeechpp
+is a "faceless" application, i.e., it has no display component
+itself. It responds to KQML messages on stdin that start and stop
+post-processing, and it broadcasts the results of the incremental
+processing to stdout.
+.SH OPTIONS
+.IP "-s"
+Specify that
+.I tspeechpp
+should provide diagnostic statistics to stdout.  Off by default.
+.IP "-v"
+Specify that
+.I tspeechpp
+should provide verbose diagnostic output to stdout.  Off by default.
+.IP "-t"
+Specify that
+.I tspeechpp
+should expect KQML messages on stdin and format its output as such
+messages on stdout.  This is the default.
+.IP "-nt"
+Specify that
+.I tspeechpp
+should expect raw words on stdin and provide only raw words on
+stdout.  This is off by default but can be used for interactive
+testing of the internal search process or for batch experiments.  Off
+by default.
+.IP "-i"
+Specify that
+.I tspeechpp
+should provide a prompt to an interactive user.  Off by default.
+.IP "-m"
+Specify that
+.I tspeechpp
+should use a minimum log probability threshold in its search among
+likeley corrections in order to prune the search space.  On by
+default in the installed version; therefore this switch is actually
+redundant as installed.
+.IP "-d"
+Specify that
+.I tspeechpp
+should dump its internal state at the end of an utterance.  This is a
+more recent addition than the "-n" or "-g" features and is probably
+more reliable.
+.IP "-f2"
+Specify that
+.I tspeechpp
+should use a 1->2 fertility model component in its channel model.
+.IP "-fh"
+Specify that
+.I tspeechpp
+should use a 2->1 (half) fertility model component in its channel model.
+.IP "-fi"
+Specify that
+.I tspeechpp
+should use a 0->1 (insertion) fertility model component in its channel
+model.
+.IP "-c file"
+Specify the confusion (1->1) channel model to be used. The default is
+the "TDC-75" model.
+.IP "-w file"
+Specify the wbic (word bigram count) file to be used. The default is
+the "TDC-75" model.
+.IP "-x file"
+Specify the deletion (1->0) file to be used. The default is
+the "TDC-75" model.  This is currently unused.
+.IP "-sc file"
+Specify the split-candidates (1->2) file to be used. The default is
+the "TDC-75" model.
+.IP "-in file"
+Specify the insertion (0->1) file to be used. The default is the
+"TDC-75" model.
+.IP "-mc file"
+Specify the merge-candidates (2->1) file to be used. The default is the
+"TDC-75" model.
+.IP "-{2|3} file"
+Specify the back-off language model file to be used, and specify whether
+bigrams (-2) alone or trigrams (-3) also should be used. The default
+is the "TDC-75" model.
+.IP "-l dir"
+Specify the log dir, where the initial log file should be written.
+.IP "-q N"
+Specify the depth (as a small positive integer) of the priority queue
+for maintaining top alternate hypotheses.  For valid "N-best"
+hypotheses, this number must be N.
+.SH USAGE
+.PP
+.I Tspeechpp
+first loads its channel and language model files.
+.PP
+Receipt of a START message initiates post-processing.  Words are
+broadcast as they are corrected, with a BACKTO message being used to
+indicate revision of a word previously output. The last word of
+the hypothesis is buffered to prevent excessive BACKTO's on the
+frontier of the correction process.  This process is complicated by
+the fact that BACKTO's also appear on the input as they come from
+.I tsphinx.
+Receipt of an END message terminates the utterance;
+.I tspeechpp
+finishes processing the utterance, and outputs any remaining words,
+followed by an END message.
+.SH "TSPEECHPP MESSAGES"
+.PP
+The following KQML messages are understood by
+.IR tspeechpp .
+They should be addressed with ":receiver SPEECH-PP". Case is
+insignificant outside of strings. Whitespace between messages is
+ignored.
+.IP "(request :content (start))"
+Start correction. Initiates broadcast of corrected words.
+.IP "(request :content (end))"
+Completes processing of the current utterance.
+.IP "(request :content (exit))"
+Request that 
+.I tspeechpp
+exit.
+.IP "(request :content (offline t))"
+Request that 
+.I tspeechpp
+go offline and ignore all subsequent messages except an EXIT.
+.IP "(request :content (offline nil))"
+Request that
+.I tspeechpp
+come back online into full activity.
+.IP "(request :content (chdir path-to-logdir))"
+Request that
+.I tspeechpp
+change its log directory and file as specified by the given path.
+.PP
+The following messages are generated by 
+.IR tspeechpp :
+.IP "(tell :receiver PM :content (ready))"
+Sent to the PM to indicate the module is ready for action.
+.IP "(tell :content (word STRING :index (I J) :uttnum N))"
+Broadcast to announce a new word in the hypothesis. The index
+identifies the start and end position of the word, which can in fact
+be several words as far as the parser is concerned, as in the token
+``I_WANT'', `NEW_YORK'', or ``COULDN'T''. Index positions start at 1.
+A single number I can be given, implying ``(I\ I+1)''.
+.IP "(tell :content (backto :index I))"
+Broadcast to indicate that any words previously output at index I or
+beyond (inclusive) are no longer valid parts of the hypothesis.
+.SH ENVIRONMENT
+.PP
+TRAINS_BASE			Root of TRAINS distribution
+.SH FILES
+.PP
+$TRAINS_BASE/SpeechPP/models	Location of default Speech-PP files
+.SH DIAGNOSTICS
+.PP
+Sometimes.
+.SH SEE ALSO
+.PP
+trains(1),
+tim(1),
+tspeech(1)
+.SH NOTES
+.I Tspeechpp
+is a Perl version 5 program. It was originally implemented in Perl for
+prototyping. A port to C was never attempted as Perl seemed to
+suffice, however, speed is now becoming an issue with the complex
+channel models.
+.PP
+.I Tspeechpp
+has been documented in several papers, including:
+.PP
+Eric K. Ringger and James F. Allen.  "A Fertility Channel Model for
+Post-Correction of Continuous Speech Recognition."
+.I "Proceedings of the Fourth International Conference on Spoken Processing (ICSLP'96)."
+October, 1996.
+.SH AUTHOR
+.PP
+Eric Ringger (ringger@cs.rochester.edu).

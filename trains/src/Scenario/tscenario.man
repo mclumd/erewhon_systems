@@ -1,0 +1,105 @@
+.\" Time-stamp: <Tue Nov 12 10:55:11 EST 1996 ferguson>
+.TH TSCENARIO 1 "12 Nov 1996" "U of Rochester"
+.SH NAME
+tscenario \- TRAINS Scenario Chooser
+.SH SYNOPSIS
+tscenario
+[\-f\ FILE]
+[\-random\ N] [\-preset N]
+[-debug\ where] [X Options]
+.SH DESCRIPTION
+.PP
+.I Tscenario
+is the TRAINS Scenario Chooser. It provides buttons for specifying
+either random or preset scenarios. It also arranges to step through
+preset scenarios one conversation at a time.
+.SH OPTIONS
+.PP
+.IP "-random N"
+Specify that the Scenario Chooser should start with an "N random
+engines" scenario.
+.IP "-preset N"
+Specify that the Scenario Chooser should start with preset scenarion
+number N.
+.IP "-f FILE"
+Specify startup file read to define the initial set of preset
+scenarios. The default is to read from TRAINS_BASE/etc/scenario.rc.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.SH USAGE
+.PP
+Selecting a random scenario sends a message of the form
+
+.ce
+(request :receiver DM :content (config enum N))
+
+to the Dialogue Manager, specifying
+.I N
+randomly-placed engines in the scenario.
+.PP
+Selecting a preset scenario sends the corresponding config message (as
+defined by the DEFINE message that defined the button, see below) to
+the Discourse Manager.
+.PP
+If a preset scenario is selected, then when the Scenario Chooser
+receives an END-CONVERSATION message, it automatically selects the
+next preset scenario (wrapping around at the end) and sends the
+appropriate message to the DM.
+.SH "SCENARIO CHOOSER MESSAGES"
+.PP
+The following KQML messages are understood by the Scenario Chooser. They
+should be addressed with ":receiver SCENARIO". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (define :label L :content C)"
+Creates a new preset scenario button labelled
+.I L
+which sends content
+.I C
+(typically a CONFIG message) to the DM when selected.
+.IP "(tell :content (chdir DIR))"
+Ignored.
+.IP "(tell :content (start-conversation))"
+Ignored.
+.IP "(tell :content (end-conversation))"
+If a preset scenario is selected, receipt of this message causes the
+Scenario Chooser to switch to the next scenarion and send the
+appropriate message to the DM.
+.IP "(request :content (hide-window))"
+Request that the Scenario Chooser iconify its window.
+.IP "(request :content (show-window))"
+Request that the Scenario Chooser deiconify its window.
+.IP "(request :content (exit :status N))"
+Request that the Scenario Chooser exit (with optional status
+.I N
+(default 0).
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+TRAINS_BASE		Used to find default startup file
+.SH FILES
+TRAINS_BASE/etc/scenario.rc	Default startup file
+.SH DIAGNOSTICS
+.PP
+Maybe.
+.SH SEE ALSO
+.PP
+trains(1),
+ttcl(1)
+.SH BUGS
+.PP
+Possibly.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
+
+

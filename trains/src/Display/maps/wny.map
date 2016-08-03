@@ -1,0 +1,14 @@
+(request :content
+ (canvas :title "TRAINS-96 - Western New York" :width 960 :height 637))
+
+(request :content (scale 1.5 1.5))
+
+(request :content (default :bg true))
+(request :content (map "wny-land"))
+(request :content (map "wny-cities"))
+(request :content (map "wny-tracks"))
+(request :content (default :bg false))
+(request :content (setbg))
+
+(request :content (default :thickness 1))
+(request :content (scale 1.0 1.0))

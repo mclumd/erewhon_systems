@@ -1,0 +1,326 @@
+.\" Time-stamp: <96/10/28 09:53:24 ferguson>
+.TH TDISPLAY 1 "28 Oct 1996" "TRAINS Project"
+.SH NAME
+tdisplay \- TRAINS Display Module
+.SH SYNOPSIS
+.IP tdisplay 9
+[\-map\ STR]
+[\-showMenus\ BOOL]
+[\-showTextIn\ BOOL]
+[\-showTextOut\ BOOL]
+[\-textInHeight\ N]
+[\-textOutHeight\ N]
+[\-scale\ M.N]
+[\-scaleX\ M.N]
+[\-scaleY\ M.N]
+[\-debug\ where] [X\ args]
+.SH DESCRIPTION
+.PP
+.I Tdisplay
+is the TRAINS Display module. It provides an object-oriented X window
+map display used by the generation component of the Discourse Manager.
+Objects on the map can be selected using the mouse, resulting in
+messages interpreted by the TRAINS Parser. The current version of the
+display also provides a "text out" window showing System utterances
+and a "text in" window into which the user can type (although the
+latter has been superseded by the Keyboard Manager,
+.IR tkeyboard (1)).
+.SH OPTIONS
+.PP
+.IP "-map STR"
+Specify the initial map displayed by the Display. Maps are looked for
+first in the current directory, then in TRAINS_BASE/etc/maps, both
+with and without the extension ".map". The default map is of the
+full-size Northeast U.S.
+.IP "-showMenus BOOL"
+Enable (True) or disable (False) the display of the application
+menubar. The default is True. Disabling it can be useful when screen
+real estate is at a premium.
+.IP "-showTextIn BOOL"
+Enable (True) or disable (False) the user input area underneath the
+map display.
+.IP "-showTextOut BOOL"
+Enable (True) or disable (False) the system output area above the
+map display.
+.IP "-textInHeight N"
+Specify the height of the user input area in pixels. The default is 100
+(about five lines).
+.IP "-textOutHeight N"
+Specify the height of the system output area in pixels. The default is 20
+(about one line).
+.IP "-scale M.N"
+.IP "-scaleX M.N"
+.IP "-scaleY M.N"
+Set initial scale factors for created objects. The defaults at 1.0,
+meaning no scaling. See the description of the SCALE request, below,
+for details.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.IP "X args"
+.I Tdisplay
+accepts all standard X Toolkit arguments; see
+.IR X (1)
+for details.
+.SH USAGE
+.PP
+.I Tdisplay
+begins by reading its initial mapfile. Mapfiles are simply files
+containing the same KQML messages understood by the Display during
+normal operation. It then processes KQML messages on its standard
+input and outputs messages corresponding to user mouse actions to
+standard output (as selective broadcasts). The key to the Display
+module is the large number of display operations it can perform, as
+detailed in the next section.
+.SH "DISPLAY MESSAGES"
+.PP
+The following KQML messages are understood by the Display. They
+should be addressed with ":receiver DISPLAY". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.SH "Object Manipulation Messages"
+.PP
+The following messages create and otherwise manipulate Display
+objects.
+.IP "(request :content (create :name :type :displayed :depth :bg"
+.nf
+.na
+              :color :fill :fillcolor :thickness :shape
+              [type-specific attrs]))
+.ad
+.fi
+This creates a new Display object and is by far the most complicated
+request understood by the Display. That makes it as good a place as
+any to start.
+.IP
+The :name attribute names the new object. The :type attribute is one
+of
+.IR city ,
+.IR track ,
+.IR route ,
+.IR engine ,
+or
+.IR region .
+The :displayed attribute can be
+.I t
+or
+.IR nil ,
+indicating whether the object is visible (and selectable) or not. The
+:depth attribute sets the depth of the object on the display--deeper
+objects (greater :depth) are drawn under less deep ones. The :bg
+attribute indicates whether the object is considered part of the
+"background" (i.e., is dynamic or not). See the SETBG request, below,
+for details. The :color and :fillcolor attributes are X color names
+(or X RGB color specs); see
+.IR X (1)
+for details. The :fill attribute varies from 0 (unfilled) to 100
+(completely filled), and the :thickness attribute affects the borders
+of the object.
+.IP
+The shape of the object can be specified using the :shape attribute
+using one of the following forms:
+
+.nf
+.na
+    (line :start LOC :end LOC)
+    (circle :center LOC :radius N)
+    (poylgon :center LOC :points|:rpoints (LOC1 LOC2 ...))
+    (multiline :points|:rpoints (LOC1 LOC2 ...))
+.ad
+.fi
+
+The LOC attributes (locations), can be the names of objects, meaning
+their centers, or a list of (X Y) coordinates in the Display window
+(the origin is the upper, left corner). For polygon and multiline
+shapes, :points means the locations are absolute coordinates and
+:rpoints means they are relative (after the first one, of course).
+Note that most objects have a default shape.
+.IP
+Finally, the create request can specify attributes specific to the
+type of object being created. These additional attributes are:
+
+.nf
+.na
+    city   :label STR :orientation O :ptsize N
+    track  :start LOC :end LOC
+    engine :at LOC :orientation O :outlined t|nil
+    route  :start CITY :tracks (OBJ1 OBJ2 ...)
+.ad
+.fi
+
+The :orientation
+.I O
+is one of
+.IR north ,
+.IR northeast ,
+.IR east ,
+etc., describing the position of the label relative to the object (for
+cities) and the position of the engine relative to the city it is :at
+(for engines). The :outlined attribute for engines is an alternative
+for ":fill 0" or ":fill 100". The default shape for a track is a line
+connecting the endpoints, for an engine it is a simple schematic
+engine thingo, and for a route it is a series of spline curves along
+the tracks in the route.
+.IP "(request :content (destroy OBJ))"
+Destroys the named object, removing it from the Display.
+.IP "(request :content (display OBJ))"
+Causes OBJ to be displayed.
+.IP "(request :content (undisplay OBJ))"
+Causes OBJ to be neither seen nor selectable.
+.IP "(request :content (set OBJ attr-value pairs))"
+Sets attributes of the given OBJ. Not all attributes can be set in
+this way, but most, like :displayed and :color can be. The shape
+cannot be changed, however.
+.IP "(request :content (default attr-value pairs))"
+Sets default values of some attributes for subsequent create requests.
+Again, most of the useful attributes can be set in this way, but not
+all of them.
+.SH "Object Highlighting Messages"
+.PP
+The following messages are used for the important job of highlighting
+object during a conversation.
+.IP "(request :content (highlight OBJ :color :type :flash))"
+Causes the given object to be highlighted. The :type attribute can be
+.IR object ,
+.IR circle ,
+or
+.IR rectangle ,
+meaning that either the object itself becomes colored (for an
+.I object
+highlight) or that the appropriate colored shape is drawn around the
+object (actually around its bounding box). The :flash attribute can be
+.IR nil ,
+meaning don't flash (the default),
+.IR t ,
+meaning flash the highlight forever, or a number, meaning that the
+highlight should flash that many times and then unhighlight. Multiple
+highlights can be applied to an object and they are rendered in the
+order they were applied.
+.IP "(request :content (unhighlight OBJ :color :type :flash))"
+Removes the matching highlight from the given object. If no attributes
+are given, all highlights are removed from the object.
+.SH "Dialog Box Messages"
+.PP
+The following messages provide popup dialog boxes of two types.
+.IP "(request :content (confirm TAG STR))"
+Displays a blocking confirmer with
+.I STR
+as its text. When the user selects either OK or CANCEL, the Display
+outputs a reply with :content
+
+.ce
+(confirm TAG t|nil)
+
+.IP "(request :content (dialog TYPE STR))"
+Displays a non-blocking dialog box of the given
+.I TYPE
+displaying
+.IR STR .
+Currently only the :goals type is supported, and the string is
+displayed in a dialog box labelled "Goals for this TRAINS scenario".
+No output is generated if this dialog box is dismissed.
+.SH "Display Control Messages"
+.PP
+The following messages affect global properties of the Display.
+.IP "(request :content (canvas :title STR :width N :height N))"
+Sets the title, height and width of the Display window. Changing this
+other than at the start of a map will cause unpredictable results at
+best.
+.IP "(request :content (translate X Y))"
+Translates the coordinates of subsequent request by the given amounts
+(in pixels). This affects primarily the interpretation of (X Y) pairs
+in create requests.
+.IP "(request :content (scale X Y))"
+Scales the coordinates of subsequent request by the given amounts
+(floating point values). This affects primarily the interpretation of
+(X Y) pairs in create requests.
+.IP "(request :content (setbg))"
+Sets the background pixmap of the Display's window to include any
+objects with the :bg attribute set to T. These objects are then not
+redrawn during Display updates. This is typically used once per map
+after the map objects have been created but before any engines,
+routes, etc. have been created.
+.IP "(request :content (say STR))"
+Adds STR to the system output window above the map display.
+.IP "(request :content (postscript FILENAME))"
+Dumps a color encapsulated Postscript file describing the current
+display to the given FILENAME.
+.IP "(request :content (map FILENAME))"
+Causes the given mapfile to be read.
+.IP "(request :content (refresh))"
+Causes the Display to redraw the map display (although see above
+regarding the setbg request).
+.IP "(request :content (restart))"
+Causes the Display to erase all objects and re-read its original
+mapfile.
+.SH "Module Control Messages"
+.PP
+The following messages are the standard TRAINS System messages.
+.IP "(request :content (exit :status N))"
+Requests that the Display exit with status
+.I N
+(default 0).
+.IP "(request :content (hide\-window))"
+Causes the Display to iconify itself.
+.IP "(request :content (show\-window))"
+Causes the Display to deiconify itself.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Treated as a RESTART followed by SHOW-WINDOW.
+.IP "(request :content (end\-conversation)"
+Treated as a HIDE-WINDOW.
+.IP "(request :content (chdir DIR))"
+Ignored.
+.SH "Display Output Messages" 
+.PP
+The following messages are generated by
+.I tdisplay
+as selective broadcasts in response to user keyboard and mouse actions.
+.IP "(tell :content (mouse :select obj1 obj2 ...))"
+Sent when the user clicks on an object. The objects are all those
+within a certain fuzz factor of the click, ordered by depth.
+.IP "(tell :content (mouse :drag obj :from obj :to obj1 obj2 ...))"
+Sent when the user drags an object. The destination object list is as
+described above for clicks.
+.IP "(tell :content (confirm TAG t|nil))"
+Sent when the user answers a dialog box confirmer.
+.IP "(tell :content (word W :index (I1 I2)))"
+Broadcast to announce a new word in the user's typed input. The :index
+argument identifies the start and end position of the word, which can
+in fact be several words as far as the parser is concerned, as in the
+token ``COULDN'T''. Index positions start at 1. A single number I can
+be given, implying ``(I\ I+1)''.
+.IP "(tell :content (backto :index I))"
+Broadcast to indicate that any words previously output at index I or
+beyond (inclusive) were erased by the user.
+.IP "(tell :content (end))"
+Broadcast to announce that the user hit Return.
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+TRAINS_BASE		Used to find mapfiles
+.SH FILES
+.PP
+TRAINS_BASE/etc/maps	Default location of mapfiles
+.SH DIAGNOSTICS
+.PP
+Colormap complaints are possible, even common, if your colormap fills
+up. They should break anything though...
+.SH SEE ALSO
+.PP
+trains(1),
+tparser(1),
+ttcl(1)
+.SH BUGS
+.PP
+This code was due to be replaced long ago. Perhaps some day...
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

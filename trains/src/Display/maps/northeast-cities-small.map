@@ -1,0 +1,87 @@
+(request :content
+ (default :depth 5 :radius 3 :color black :fill 100 :fillcolor black))
+
+(request :content
+ (create :type city :name Albany :orientation northwest
+	:shape (circle :center (596 170))))
+(request :content
+ (create :type city :name Atlanta :orientation west
+	:shape (circle :center (237 704))))
+(request :content
+ (create :type city :name Baltimore :orientation west
+	:shape (circle :center (525 359))))
+(request :content
+ (create :type city :name Buffalo :orientation southeast
+	:shape (circle :center (400 200))))
+(request :content
+ (create :type city :name Burlington :orientation east
+	:shape (circle :center (608 73))))
+(request :content
+ (create :type city :name Boston :orientation northwest
+	:shape (circle :center (701 155))))
+(request :content
+ (create :type city :name Charleston :orientation southwest
+	:shape (circle :center (334 458))))
+(request :content
+ (create :type city :name Charlotte :orientation east
+	:shape (circle :center (397 618))))
+(request :content
+ (create :type city :name Chicago :orientation south
+	:shape (circle :center (60 300))))
+(request :content
+ (create :type city :name Cincinnati :label "  Cincinnati" :orientation northeast
+	:shape (circle :center (213 433))))
+(request :content
+ (create :type city :name Cleveland :orientation south
+	:shape (circle :center (302 297))))
+(request :content
+ (create :type city :name Columbus :orientation southeast
+	:shape (circle :center (245 359))))
+(request :content
+ (create :type city :name Detroit :orientation west
+	:shape (circle :center (239 259))))
+(request :content
+ (create :type city :name Indianapolis :orientation southwest
+	:shape (circle :center (138 407))))
+(request :content
+ (create :type city :name Lexington :orientation west
+	:shape (circle :center (205 500))))
+(request :content
+ (create :type city :name Milwaukee :orientation north
+	:shape (circle :center (44 234))))
+(request :content
+ (create :type city :name Montreal :orientation east
+	:shape (circle :center (561 23))))
+(request :content
+ (create :type city :name New_York_City :label "New York " :orientation northwest
+	:shape (circle :center (614 255))))
+(request :content
+ (create :type city :name Philadelphia :orientation south
+	:shape (circle :center (572 315))))
+(request :content
+ (create :type city :name Pittsburgh :orientation southeast
+	:shape (circle :center (375 324))))
+(request :content
+ (create :type city :name Raleigh :orientation east
+	:shape (circle :center (521 542))))
+(request :content
+ (create :type city :name Richmond :orientation southwest
+	:shape (circle :center (506 466))))
+(request :content
+ (create :type city :name Scranton :label "Scranton " :orientation northwest
+	:shape (circle :center (535 284))))
+(request :content
+ (create :type city :name Syracuse :orientation north
+	:shape (circle :center (506 173))))
+(request :content
+ (create :type city :name Toledo :orientation southwest
+	:shape (circle :center (235 297))))
+(request :content
+ (create :type city :name Toronto :orientation west
+	:shape (circle :center (371 155))))
+(request :content
+ (create :type city :name Washington :orientation west
+	:shape (circle :center (503 387))))
+
+(request :content
+ (default :depth 0 :fill 0))

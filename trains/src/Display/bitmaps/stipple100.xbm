@@ -1,0 +1,4 @@
+#define stipple100_width 8
+#define stipple100_height 8
+static char stipple100_bits[] = {
+   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};

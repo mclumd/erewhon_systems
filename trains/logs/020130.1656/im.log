@@ -1,0 +1,1316 @@
+-- 16:56:07 [log starts]
+
+<parser 16:56:07 (REPLY :SENDER IM :RECEIVER PARSER :CONTENT (STATUS SPEECH-PP READY))
+>parser 16:56:07 (REPLY :SENDER IM :RECEIVER PARSER :CONTENT (STATUS SPEECH-PP READY))
+<splash 16:56:07 (broadcast :receiver im :content (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t)))
+>PM 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver PM)
+>display 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver display)
+>keyboard 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver keyboard)
+>parser 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver parser)
+>ps 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver ps)
+>dm 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver dm)
+>pview 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver pview)
+>transcript 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver transcript)
+>speech-aaa 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver speech-aaa)
+>speech-x 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver speech-x)
+>speech-pp 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver speech-pp)
+>outmgr 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver outmgr)
+>score 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver score)
+>al 16:56:07 (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver al)
+<parser 16:56:07 (REQUEST :CONTENT
+ (CHDIR "/fs/disco/group/systems/trains/logs/020130.1656") :SENDER
+ SPLASH :RECEIVER PARSER)
+>parser 16:56:07 (REQUEST :CONTENT (CHDIR "/fs/disco/group/systems/trains/logs/020130.1656") :SENDER SPLASH :RECEIVER PARSER)
+<score 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC NORTHSTAR PHILADELPHIA)
+ :FOCUS (NORTHSTAR) :MEDIA DISPLAY :CONSTRAINTS
+ (AND (TYPE NORTHSTAR ENGINE) (TYPE PHILADELPHIA CITY)
+      (AT-LOC NORTHSTAR PHILADELPHIA))
+ :RECEIVER OUTMGR)
+>outmgr 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC NORTHSTAR PHILADELPHIA) :FOCUS (NORTHSTAR) :MEDIA DISPLAY :CONSTRAINTS (AND (TYPE NORTHSTAR ENGINE) (TYPE PHILADELPHIA CITY)
+      (AT-LOC NORTHSTAR PHILADELPHIA)) :RECEIVER OUTMGR :sender score)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<score 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC METROLINER NEW_YORK_CITY)
+ :FOCUS (METROLINER) :MEDIA DISPLAY :CONSTRAINTS
+ (AND (TYPE METROLINER ENGINE) (TYPE NEW_YORK_CITY CITY)
+      (AT-LOC METROLINER NEW_YORK_CITY))
+ :RECEIVER OUTMGR)
+>outmgr 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC METROLINER NEW_YORK_CITY) :FOCUS (METROLINER) :MEDIA DISPLAY :CONSTRAINTS (AND (TYPE METROLINER ENGINE) (TYPE NEW_YORK_CITY CITY)
+      (AT-LOC METROLINER NEW_YORK_CITY)) :RECEIVER OUTMGR :sender score)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR YELLOW :FILLCOLOR WHITE
+  :FILL 100 :AT PHILADELPHIA :ORIENTATION EAST))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR YELLOW :FILLCOLOR WHITE
+  :FILL 100 :AT PHILADELPHIA :ORIENTATION EAST) :sender outmgr)
+<score 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC BULLET CHARLOTTE) :FOCUS
+ (BULLET) :MEDIA DISPLAY :CONSTRAINTS
+ (AND (TYPE BULLET ENGINE) (TYPE CHARLOTTE CITY)
+      (AT-LOC BULLET CHARLOTTE))
+ :RECEIVER OUTMGR)
+>outmgr 16:56:07 (EXPRESS :SPEECH-ACT INFORM :CONTENT (AT-LOC BULLET CHARLOTTE) :FOCUS (BULLET) :MEDIA DISPLAY :CONSTRAINTS (AND (TYPE BULLET ENGINE) (TYPE CHARLOTTE CITY)
+      (AT-LOC BULLET CHARLOTTE)) :RECEIVER OUTMGR :sender score)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<score 16:56:07 (REQUEST :RE 99999 :REPLY-WITH CPS37 :RECEIVER PS :CONTENT
+ (:NEW-PROBLEM :CONTENT
+  (:AND (:AND (:TYPE WASHINGTON :CITY) (:DELAY :SNOW WASHINGTON 3))
+   (:TYPE TORONTO :CITY)
+   (:AND (:TYPE TOLEDO :CITY) (:DELAY :ZEALOTS TOLEDO 12))
+   (:TYPE SYRACUSE :CITY) (:TYPE SCRANTON :CITY) (:TYPE RICHMOND :CITY)
+   (:TYPE RALEIGH :CITY) (:TYPE PITTSBURGH :CITY)
+   (:TYPE PHILADELPHIA :CITY) (:TYPE NEW_YORK :CITY)
+   (:TYPE MONTREAL :CITY) (:TYPE MILWAUKEE :CITY)
+   (:TYPE LEXINGTON :CITY) (:TYPE INDIANAPOLIS :CITY)
+   (:TYPE DETROIT :CITY)
+   (:AND (:TYPE COLUMBUS :CITY) (:DELAY :HEAVY-STORMS COLUMBUS 4))
+   (:TYPE CLEVELAND :CITY) (:TYPE CINCINNATI :CITY)
+   (:TYPE CHICAGO :CITY) (:TYPE CHARLOTTE :CITY)
+   (:TYPE CHARLESTON :CITY) (:TYPE BOSTON :CITY)
+   (:TYPE BURLINGTON :CITY) (:TYPE BUFFALO :CITY)
+   (:TYPE BALTIMORE :CITY) (:TYPE ATLANTA :CITY) (:TYPE ALBANY :CITY)
+   (:AND (:TYPE SCRANTON-SYRACUSE :TRACK)
+    (:CONNECTION SCRANTON-SYRACUSE SCRANTON SYRACUSE :TRAIN 160 4.75))
+   (:AND (:TYPE RICHMOND-WASHINGTON :TRACK)
+    (:CONNECTION RICHMOND-WASHINGTON RICHMOND WASHINGTON :TRAIN 109 3))
+   (:AND (:TYPE RALEIGH-RICHMOND :TRACK)
+    (:CONNECTION RALEIGH-RICHMOND RALEIGH RICHMOND :TRAIN 196 5.56))
+   (:AND (:TYPE PITTSBURGH-SCRANTON :TRACK)
+    (:CONNECTION PITTSBURGH-SCRANTON PITTSBURGH SCRANTON :TRAIN 300 9))
+   (:AND (:TYPE PHILADELPHIA-SCRANTON :TRACK)
+    (:CONNECTION PHILADELPHIA-SCRANTON PHILADELPHIA SCRANTON :TRAIN 104
+     3.56))
+   (:AND (:TYPE NEW_YORK_CITY-PHILADELPHIA :TRACK)
+    (:CONNECTION NEW_YORK_CITY-PHILADELPHIA NEW_YORK PHILADELPHIA
+     :TRAIN 91 2.52))
+   (:AND (:TYPE NEW_YORK_CITY-SCRANTON :TRACK)
+    (:CONNECTION NEW_YORK_CITY-SCRANTON NEW_YORK SCRANTON :TRAIN 151
+     3.75))
+   (:AND (:TYPE MONTREAL-TORONTO :TRACK)
+    (:CONNECTION MONTREAL-TORONTO MONTREAL TORONTO :TRAIN 323 7.28))
+   (:AND (:TYPE INDIANAPOLIS-LEXINGTON :TRACK)
+    (:CONNECTION INDIANAPOLIS-LEXINGTON INDIANAPOLIS LEXINGTON :TRAIN
+     200 4.5))
+   (:AND (:TYPE DETROIT-TORONTO :TRACK)
+    (:CONNECTION DETROIT-TORONTO DETROIT TORONTO :TRAIN 240 6))
+   (:AND (:TYPE DETROIT-TOLEDO :TRACK)
+    (:CONNECTION DETROIT-TOLEDO DETROIT TOLEDO :TRAIN 58 2.25))
+   (:AND (:TYPE CINCINNATI-COLUMBUS :TRACK)
+    (:CONNECTION CINCINNATI-COLUMBUS COLUMBUS CINCINNATI :TRAIN 120 4))
+   (:AND (:TYPE COLUMBUS-PITTSBURGH :TRACK)
+    (:CONNECTION COLUMBUS-PITTSBURGH COLUMBUS PITTSBURGH :TRAIN 182
+     6.5))
+   (:AND (:TYPE COLUMBUS-INDIANAPOLIS :TRACK)
+    (:CONNECTION COLUMBUS-INDIANAPOLIS COLUMBUS INDIANAPOLIS :TRAIN 171
+     5.5))
+   (:AND (:TYPE COLUMBUS-TOLEDO :TRACK)
+    (:CONNECTION COLUMBUS-TOLEDO COLUMBUS TOLEDO :TRAIN 133 3.75))
+   (:AND (:TYPE CLEVELAND-TOLEDO :TRACK)
+    (:CONNECTION CLEVELAND-TOLEDO CLEVELAND TOLEDO :TRAIN 107 3.22))
+   (:AND (:TYPE CINCINNATI-LEXINGTON :TRACK)
+    (:CONNECTION CINCINNATI-LEXINGTON CINCINNATI LEXINGTON :TRAIN 80
+     2))
+   (:AND (:TYPE CINCINNATI-INDIANAPOLIS :TRACK)
+    (:CONNECTION CINCINNATI-INDIANAPOLIS CINCINNATI INDIANAPOLIS :TRAIN
+     132 5.25))
+   (:AND (:TYPE CHICAGO-TOLEDO :TRACK)
+    (:CONNECTION CHICAGO-TOLEDO CHICAGO TOLEDO :TRAIN 234 6.35))
+   (:AND (:TYPE CHICAGO-INDIANAPOLIS :TRACK)
+    (:CONNECTION CHICAGO-INDIANAPOLIS CHICAGO INDIANAPOLIS :TRAIN 195
+     7.18))
+   (:AND (:TYPE CHICAGO-MILWAUKEE :TRACK)
+    (:CONNECTION CHICAGO-MILWAUKEE CHICAGO MILWAUKEE :TRAIN 90 2.3))
+   (:AND (:TYPE CHARLOTTE-RALEIGH :TRACK)
+    (:CONNECTION CHARLOTTE-RALEIGH CHARLOTTE RALEIGH :TRAIN 172 5.3))
+   (:AND (:TYPE CHARLESTON-CHARLOTTE :TRACK)
+    (:CONNECTION CHARLESTON-CHARLOTTE CHARLESTON CHARLOTTE :TRAIN 400
+     12))
+   (:AND (:TYPE CHARLESTON-RICHMOND :TRACK)
+    (:CONNECTION CHARLESTON-RICHMOND CHARLESTON RICHMOND :TRAIN 306
+     8.75))
+   (:AND (:TYPE CHARLESTON-PITTSBURGH :TRACK)
+    (:CONNECTION CHARLESTON-PITTSBURGH CHARLESTON PITTSBURGH :TRAIN 213
+     7.1))
+   (:AND (:TYPE CHARLESTON-CINCINNATI :TRACK)
+    (:CONNECTION CHARLESTON-CINCINNATI CHARLESTON CINCINNATI :TRAIN 210
+     7))
+   (:AND (:TYPE BOSTON-NEW_YORK_CITY :TRACK)
+    (:CONNECTION BOSTON-NEW_YORK_CITY BOSTON NEW_YORK :TRAIN 231 6.63))
+   (:AND (:TYPE BURLINGTON-MONTREAL :TRACK)
+    (:CONNECTION BURLINGTON-MONTREAL BURLINGTON MONTREAL :TRAIN 100
+     3.75))
+   (:AND (:TYPE BUFFALO-PITTSBURGH :TRACK)
+    (:CONNECTION BUFFALO-PITTSBURGH BUFFALO PITTSBURGH :TRAIN 249
+     7.28))
+   (:AND (:TYPE BUFFALO-SYRACUSE :TRACK)
+    (:CONNECTION BUFFALO-SYRACUSE BUFFALO SYRACUSE :TRAIN 152 3.52))
+   (:AND (:TYPE BUFFALO-TORONTO :TRACK)
+    (:CONNECTION BUFFALO-TORONTO BUFFALO TORONTO :TRAIN 90 6.12))
+   (:AND (:TYPE BUFFALO-CLEVELAND :TRACK)
+    (:CONNECTION BUFFALO-CLEVELAND BUFFALO CLEVELAND :TRAIN 187 4.47))
+   (:AND (:TYPE BALTIMORE-PHILADELPHIA :TRACK)
+    (:CONNECTION BALTIMORE-PHILADELPHIA BALTIMORE PHILADELPHIA :TRAIN
+     94 2.2))
+   (:AND (:TYPE BALTIMORE-SCRANTON :TRACK)
+    (:CONNECTION BALTIMORE-SCRANTON BALTIMORE SCRANTON :TRAIN 142
+     5.25))
+   (:AND (:TYPE BALTIMORE-WASHINGTON :TRACK)
+    (:CONNECTION BALTIMORE-WASHINGTON BALTIMORE WASHINGTON :TRAIN 41
+     1.1))
+   (:AND (:TYPE ATLANTA-LEXINGTON :TRACK)
+    (:CONNECTION ATLANTA-LEXINGTON ATLANTA LEXINGTON :TRAIN 400 11))
+   (:AND (:TYPE ATLANTA-CHARLOTTE :TRACK)
+    (:CONNECTION ATLANTA-CHARLOTTE ATLANTA CHARLOTTE :TRAIN 257 6.92))
+   (:AND (:TYPE ALBANY-SYRACUSE :TRACK)
+    (:CONNECTION ALBANY-SYRACUSE ALBANY SYRACUSE :TRAIN 144 3.95))
+   (:AND (:TYPE ALBANY-NEW_YORK_CITY :TRACK)
+    (:CONNECTION ALBANY-NEW_YORK_CITY ALBANY NEW_YORK :TRAIN 141 3.62))
+   (:AND (:TYPE ALBANY-BOSTON :TRACK)
+    (:CONNECTION ALBANY-BOSTON ALBANY BOSTON :TRAIN 199 7.5))
+   (:AND (:TYPE ALBANY-BURLINGTON :TRACK)
+    (:CONNECTION ALBANY-BURLINGTON ALBANY BURLINGTON :TRAIN 140 5))
+   (:AND (:TYPE NORTHSTAR :ENGINE) (:AT-LOC NORTHSTAR PHILADELPHIA))
+   (:AND (:TYPE METROLINER :ENGINE) (:AT-LOC METROLINER NEW_YORK_CITY))
+   (:AND (:TYPE BULLET :ENGINE) (:AT-LOC BULLET CHARLOTTE)))))
+>ps 16:56:07 (REQUEST :RE 99999 :REPLY-WITH CPS37 :RECEIVER PS :CONTENT (:NEW-PROBLEM :CONTENT
+  (:AND (:AND (:TYPE WASHINGTON :CITY) (:DELAY :SNOW WASHINGTON 3))
+   (:TYPE TORONTO :CITY)
+   (:AND (:TYPE TOLEDO :CITY) (:DELAY :ZEALOTS TOLEDO 12))
+   (:TYPE SYRACUSE :CITY) (:TYPE SCRANTON :CITY) (:TYPE RICHMOND :CITY)
+   (:TYPE RALEIGH :CITY) (:TYPE PITTSBURGH :CITY)
+   (:TYPE PHILADELPHIA :CITY) (:TYPE NEW_YORK :CITY)
+   (:TYPE MONTREAL :CITY) (:TYPE MILWAUKEE :CITY)
+   (:TYPE LEXINGTON :CITY) (:TYPE INDIANAPOLIS :CITY)
+   (:TYPE DETROIT :CITY)
+   (:AND (:TYPE COLUMBUS :CITY) (:DELAY :HEAVY-STORMS COLUMBUS 4))
+   (:TYPE CLEVELAND :CITY) (:TYPE CINCINNATI :CITY)
+   (:TYPE CHICAGO :CITY) (:TYPE CHARLOTTE :CITY)
+   (:TYPE CHARLESTON :CITY) (:TYPE BOSTON :CITY)
+   (:TYPE BURLINGTON :CITY) (:TYPE BUFFALO :CITY)
+   (:TYPE BALTIMORE :CITY) (:TYPE ATLANTA :CITY) (:TYPE ALBANY :CITY)
+   (:AND (:TYPE SCRANTON-SYRACUSE :TRACK)
+    (:CONNECTION SCRANTON-SYRACUSE SCRANTON SYRACUSE :TRAIN 160 4.75))
+   (:AND (:TYPE RICHMOND-WASHINGTON :TRACK)
+    (:CONNECTION RICHMOND-WASHINGTON RICHMOND WASHINGTON :TRAIN 109 3))
+   (:AND (:TYPE RALEIGH-RICHMOND :TRACK)
+    (:CONNECTION RALEIGH-RICHMOND RALEIGH RICHMOND :TRAIN 196 5.56))
+   (:AND (:TYPE PITTSBURGH-SCRANTON :TRACK)
+    (:CONNECTION PITTSBURGH-SCRANTON PITTSBURGH SCRANTON :TRAIN 300 9))
+   (:AND (:TYPE PHILADELPHIA-SCRANTON :TRACK)
+    (:CONNECTION PHILADELPHIA-SCRANTON PHILADELPHIA SCRANTON :TRAIN 104
+     3.56))
+   (:AND (:TYPE NEW_YORK_CITY-PHILADELPHIA :TRACK)
+    (:CONNECTION NEW_YORK_CITY-PHILADELPHIA NEW_YORK PHILADELPHIA
+     :TRAIN 91 2.52))
+   (:AND (:TYPE NEW_YORK_CITY-SCRANTON :TRACK)
+    (:CONNECTION NEW_YORK_CITY-SCRANTON NEW_YORK SCRANTON :TRAIN 151
+     3.75))
+   (:AND (:TYPE MONTREAL-TORONTO :TRACK)
+    (:CONNECTION MONTREAL-TORONTO MONTREAL TORONTO :TRAIN 323 7.28))
+   (:AND (:TYPE INDIANAPOLIS-LEXINGTON :TRACK)
+    (:CONNECTION INDIANAPOLIS-LEXINGTON INDIANAPOLIS LEXINGTON :TRAIN
+     200 4.5))
+   (:AND (:TYPE DETROIT-TORONTO :TRACK)
+    (:CONNECTION DETROIT-TORONTO DETROIT TORONTO :TRAIN 240 6))
+   (:AND (:TYPE DETROIT-TOLEDO :TRACK)
+    (:CONNECTION DETROIT-TOLEDO DETROIT TOLEDO :TRAIN 58 2.25))
+   (:AND (:TYPE CINCINNATI-COLUMBUS :TRACK)
+    (:CONNECTION CINCINNATI-COLUMBUS COLUMBUS CINCINNATI :TRAIN 120 4))
+   (:AND (:TYPE COLUMBUS-PITTSBURGH :TRACK)
+    (:CONNECTION COLUMBUS-PITTSBURGH COLUMBUS PITTSBURGH :TRAIN 182
+     6.5))
+   (:AND (:TYPE COLUMBUS-INDIANAPOLIS :TRACK)
+    (:CONNECTION COLUMBUS-INDIANAPOLIS COLUMBUS INDIANAPOLIS :TRAIN 171
+     5.5))
+   (:AND (:TYPE COLUMBUS-TOLEDO :TRACK)
+    (:CONNECTION COLUMBUS-TOLEDO COLUMBUS TOLEDO :TRAIN 133 3.75))
+   (:AND (:TYPE CLEVELAND-TOLEDO :TRACK)
+    (:CONNECTION CLEVELAND-TOLEDO CLEVELAND TOLEDO :TRAIN 107 3.22))
+   (:AND (:TYPE CINCINNATI-LEXINGTON :TRACK)
+    (:CONNECTION CINCINNATI-LEXINGTON CINCINNATI LEXINGTON :TRAIN 80
+     2))
+   (:AND (:TYPE CINCINNATI-INDIANAPOLIS :TRACK)
+    (:CONNECTION CINCINNATI-INDIANAPOLIS CINCINNATI INDIANAPOLIS :TRAIN
+     132 5.25))
+   (:AND (:TYPE CHICAGO-TOLEDO :TRACK)
+    (:CONNECTION CHICAGO-TOLEDO CHICAGO TOLEDO :TRAIN 234 6.35))
+   (:AND (:TYPE CHICAGO-INDIANAPOLIS :TRACK)
+    (:CONNECTION CHICAGO-INDIANAPOLIS CHICAGO INDIANAPOLIS :TRAIN 195
+     7.18))
+   (:AND (:TYPE CHICAGO-MILWAUKEE :TRACK)
+    (:CONNECTION CHICAGO-MILWAUKEE CHICAGO MILWAUKEE :TRAIN 90 2.3))
+   (:AND (:TYPE CHARLOTTE-RALEIGH :TRACK)
+    (:CONNECTION CHARLOTTE-RALEIGH CHARLOTTE RALEIGH :TRAIN 172 5.3))
+   (:AND (:TYPE CHARLESTON-CHARLOTTE :TRACK)
+    (:CONNECTION CHARLESTON-CHARLOTTE CHARLESTON CHARLOTTE :TRAIN 400
+     12))
+   (:AND (:TYPE CHARLESTON-RICHMOND :TRACK)
+    (:CONNECTION CHARLESTON-RICHMOND CHARLESTON RICHMOND :TRAIN 306
+     8.75))
+   (:AND (:TYPE CHARLESTON-PITTSBURGH :TRACK)
+    (:CONNECTION CHARLESTON-PITTSBURGH CHARLESTON PITTSBURGH :TRAIN 213
+     7.1))
+   (:AND (:TYPE CHARLESTON-CINCINNATI :TRACK)
+    (:CONNECTION CHARLESTON-CINCINNATI CHARLESTON CINCINNATI :TRAIN 210
+     7))
+   (:AND (:TYPE BOSTON-NEW_YORK_CITY :TRACK)
+    (:CONNECTION BOSTON-NEW_YORK_CITY BOSTON NEW_YORK :TRAIN 231 6.63))
+   (:AND (:TYPE BURLINGTON-MONTREAL :TRACK)
+    (:CONNECTION BURLINGTON-MONTREAL BURLINGTON MONTREAL :TRAIN 100
+     3.75))
+   (:AND (:TYPE BUFFALO-PITTSBURGH :TRACK)
+    (:CONNECTION BUFFALO-PITTSBURGH BUFFALO PITTSBURGH :TRAIN 249
+     7.28))
+   (:AND (:TYPE BUFFALO-SYRACUSE :TRACK)
+    (:CONNECTION BUFFALO-SYRACUSE BUFFALO SYRACUSE :TRAIN 152 3.52))
+   (:AND (:TYPE BUFFALO-TORONTO :TRACK)
+    (:CONNECTION BUFFALO-TORONTO BUFFALO TORONTO :TRAIN 90 6.12))
+   (:AND (:TYPE BUFFALO-CLEVELAND :TRACK)
+    (:CONNECTION BUFFALO-CLEVELAND BUFFALO CLEVELAND :TRAIN 187 4.47))
+   (:AND (:TYPE BALTIMORE-PHILADELPHIA :TRACK)
+    (:CONNECTION BALTIMORE-PHILADELPHIA BALTIMORE PHILADELPHIA :TRAIN
+     94 2.2))
+   (:AND (:TYPE BALTIMORE-SCRANTON :TRACK)
+    (:CONNECTION BALTIMORE-SCRANTON BALTIMORE SCRANTON :TRAIN 142
+     5.25))
+   (:AND (:TYPE BALTIMORE-WASHINGTON :TRACK)
+    (:CONNECTION BALTIMORE-WASHINGTON BALTIMORE WASHINGTON :TRAIN 41
+     1.1))
+   (:AND (:TYPE ATLANTA-LEXINGTON :TRACK)
+    (:CONNECTION ATLANTA-LEXINGTON ATLANTA LEXINGTON :TRAIN 400 11))
+   (:AND (:TYPE ATLANTA-CHARLOTTE :TRACK)
+    (:CONNECTION ATLANTA-CHARLOTTE ATLANTA CHARLOTTE :TRAIN 257 6.92))
+   (:AND (:TYPE ALBANY-SYRACUSE :TRACK)
+    (:CONNECTION ALBANY-SYRACUSE ALBANY SYRACUSE :TRAIN 144 3.95))
+   (:AND (:TYPE ALBANY-NEW_YORK_CITY :TRACK)
+    (:CONNECTION ALBANY-NEW_YORK_CITY ALBANY NEW_YORK :TRAIN 141 3.62))
+   (:AND (:TYPE ALBANY-BOSTON :TRACK)
+    (:CONNECTION ALBANY-BOSTON ALBANY BOSTON :TRAIN 199 7.5))
+   (:AND (:TYPE ALBANY-BURLINGTON :TRACK)
+    (:CONNECTION ALBANY-BURLINGTON ALBANY BURLINGTON :TRAIN 140 5))
+   (:AND (:TYPE NORTHSTAR :ENGINE) (:AT-LOC NORTHSTAR PHILADELPHIA))
+   (:AND (:TYPE METROLINER :ENGINE) (:AT-LOC METROLINER NEW_YORK_CITY))
+   (:AND (:TYPE BULLET :ENGINE) (:AT-LOC BULLET CHARLOTTE)))) :sender score)
+<ps 16:56:07 (REPLY :CONTENT
+ (ANSWER :RESULT (:CLEARED) :PLAN-ID R341 :PS-STATE PSS522) :RECEIVER
+ SCORE :IN-REPLY-TO CPS37 :RE 99999)
+>score 16:56:07 (REPLY :CONTENT (ANSWER :RESULT (:CLEARED) :PLAN-ID R341 :PS-STATE PSS522) :RECEIVER SCORE :IN-REPLY-TO CPS37 :RE 99999 :sender ps)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   NORTHSTAR is at PHILADELPHIA."))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   NORTHSTAR is at PHILADELPHIA.") :sender outmgr)
+<score 16:56:07 (TELL :RECEIVER DM :CONTENT (PLAN-STATE :PLAN-ID R341 :PS-STATE PSS522))
+>dm 16:56:07 (TELL :RECEIVER DM :CONTENT (PLAN-STATE :PLAN-ID R341 :PS-STATE PSS522) :sender score)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME METROLINER :COLOR YELLOW :FILLCOLOR GREEN
+  :FILL 100 :AT NEW_YORK_CITY :ORIENTATION EAST))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME METROLINER :COLOR YELLOW :FILLCOLOR GREEN
+  :FILL 100 :AT NEW_YORK_CITY :ORIENTATION EAST) :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT METROLINER :COLOR GREEN :TYPE OBJECT :FLASH 10))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT METROLINER :COLOR GREEN :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   METROLINER is at NEW_YORK_CITY."))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   METROLINER is at NEW_YORK_CITY.") :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR LIGHTBLUE :FILLCOLOR RED
+  :FILL 100 :AT CHARLOTTE :ORIENTATION EAST))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR LIGHTBLUE :FILLCOLOR RED
+  :FILL 100 :AT CHARLOTTE :ORIENTATION EAST) :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 16:56:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   BULLET is at CHARLOTTE."))
+>transcript 16:56:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   BULLET is at CHARLOTTE.") :sender outmgr)
+<keyboard 16:56:38 (tell :content (word "send" :index 1))
+>parser 16:56:38 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 16:56:38 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 16:56:39 (tell :content (word "the" :index 2))
+>parser 16:56:39 (tell :content (word "the" :index 2) :sender keyboard :receiver parser)
+>transcript 16:56:39 (tell :content (word "the" :index 2) :sender keyboard :receiver transcript)
+<keyboard 16:56:40 (tell :content (word "charlotte" :index 3))
+>parser 16:56:40 (tell :content (word "charlotte" :index 3) :sender keyboard :receiver parser)
+>transcript 16:56:40 (tell :content (word "charlotte" :index 3) :sender keyboard :receiver transcript)
+<keyboard 16:57:19 (tell :content (word "train" :index 4))
+>parser 16:57:19 (tell :content (word "train" :index 4) :sender keyboard :receiver parser)
+>transcript 16:57:19 (tell :content (word "train" :index 4) :sender keyboard :receiver transcript)
+<keyboard 16:57:19 (tell :content (word "to" :index 5))
+>parser 16:57:19 (tell :content (word "to" :index 5) :sender keyboard :receiver parser)
+>transcript 16:57:19 (tell :content (word "to" :index 5) :sender keyboard :receiver transcript)
+<keyboard 16:57:19 (tell :content (word "richmond" :index 6))
+>parser 16:57:19 (tell :content (word "richmond" :index 6) :sender keyboard :receiver parser)
+>transcript 16:57:19 (tell :content (word "richmond" :index 6) :sender keyboard :receiver transcript)
+<keyboard 16:57:19 (tell :content (end))
+>parser 16:57:19 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 16:57:19 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 16:57:20 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V11621 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11573) (:CLASS :CITY)
+    (:LEX :CHARLOTTE) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11584) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11584 :V11573)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11621) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11613) (:CONSTRAINT (:TO :V11613 :V11621))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11560) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11560 :*YOU*) (:LOBJ :V11560 :V11584)
+     (:LCOMP :V11560 :V11613))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11584)) :SETTING NIL :INPUT
+  (SEND THE CHARLOTTE TRAIN TO RICHMOND))
+ :RE 1)
+>dm 16:57:20 (TELL :CONTENT (SA-REQUEST :FOCUS :V11621 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11573) (:CLASS :CITY)
+    (:LEX :CHARLOTTE) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11584) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11584 :V11573)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11621) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11613) (:CONSTRAINT (:TO :V11613 :V11621))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11560) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11560 :*YOU*) (:LOBJ :V11560 :V11584)
+     (:LCOMP :V11560 :V11613))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11584)) :SETTING NIL :INPUT
+  (SEND THE CHARLOTTE TRAIN TO RICHMOND)) :RE 1 :sender parser :receiver dm)
+<dm 16:57:21 (ask-all :aspect (?v11584) :content (:and (:type richmond :city) (:type ?v11584 :engine) (:at-loc ?v11584 charlotte) (:type charlotte :city)) :sender dm :receiver ps :re msg12 :reply-with msg57)
+>ps 16:57:21 (ask-all :aspect (?v11584) :content (:and (:type richmond :city) (:type ?v11584 :engine) (:at-loc ?v11584 charlotte) (:type charlotte :city)) :sender dm :receiver ps :re msg12 :reply-with msg57)
+<ps 16:57:21 (REPLY :CONTENT (ANSWER :RESULT ((BULLET)) :VARS (?V11584)) :RECEIVER
+ DM :IN-REPLY-TO MSG57 :RE MSG12)
+>dm 16:57:21 (REPLY :CONTENT (ANSWER :RESULT ((BULLET)) :VARS (?V11584)) :RECEIVER DM :IN-REPLY-TO MSG57 :RE MSG12 :sender ps)
+<dm 16:57:22 (request :content (:new-subplan :plan-id r341 :content (:go go1 (:and (:agent bullet) (:to richmond)))) :sender dm :receiver ps :re msg12 :reply-with msg68)
+>ps 16:57:22 (request :content (:new-subplan :plan-id r341 :content (:go go1 (:and (:agent bullet) (:to richmond)))) :sender dm :receiver ps :re msg12 :reply-with msg68)
+<ps 16:57:22 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS549
+  :RESULT
+  (:NEW-SUBPLAN :OBJECTS (BULLET CHARLOTTE RICHMOND) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO1 (:AGENT BULLET) (:TO RICHMOND) (:FROM CHARLOTTE)) :AGENT
+    BULLET :ACTIONS
+    ((:GO GO545 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO546 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND)))))
+  :REASON NIL)
+ :RECEIVER DM :IN-REPLY-TO MSG68 :RE MSG12)
+>dm 16:57:22 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS549
+  :RESULT
+  (:NEW-SUBPLAN :OBJECTS (BULLET CHARLOTTE RICHMOND) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO1 (:AGENT BULLET) (:TO RICHMOND) (:FROM CHARLOTTE)) :AGENT
+    BULLET :ACTIONS
+    ((:GO GO545 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO546 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND)))))
+  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG68 :RE MSG12 :sender ps)
+<dm 16:57:23 (request :content (:update-pss :ps-state pss549) :sender dm :receiver ps :re msg12 :reply-with msg88)
+>ps 16:57:23 (request :content (:update-pss :ps-state pss549) :sender dm :receiver ps :re msg12 :reply-with msg88)
+<ps 16:57:23 (REPLY :CONTENT
+ (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM
+ :IN-REPLY-TO MSG88 :RE MSG12)
+>dm 16:57:23 (REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM :IN-REPLY-TO MSG88 :RE MSG12 :sender ps)
+<dm 16:57:23 (express :speech-act inform_plan :focus (path1) :media unspecified :content (move-engine-along-path bullet path1) :constraints (and (type path1 route) (type bullet engine) (source path1 charlotte) (dest path1 richmond) (tracks path1 (charlotte-raleigh raleigh-richmond))) :sender dm :receiver outmgr :re msg12 :reply-with msg101)
+>outmgr 16:57:23 (express :speech-act inform_plan :focus (path1) :media unspecified :content (move-engine-along-path bullet path1) :constraints (and (type path1 route) (type bullet engine) (source path1 charlotte) (dest path1 richmond) (tracks path1 (charlotte-raleigh raleigh-richmond))) :sender dm :receiver outmgr :re msg12 :reply-with msg101)
+<outmgr 16:57:23 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:57:23 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH1 :COLOR PINK :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH1 :COLOR PINK :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)) :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR GREEN :FILLCOLOR RED :FILL
+  100 :AT RICHMOND :ORIENTATION EAST))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR GREEN :FILLCOLOR RED :FILL
+  100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH1 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH1 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND."))
+>speech-aaa 16:57:23 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND.") :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND."))
+>display 16:57:23 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND.") :sender outmgr)
+<outmgr 16:57:23 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND."))
+>transcript 16:57:23 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND.") :sender outmgr)
+<keyboard 16:57:55 (tell :content (word "send" :index 1))
+>parser 16:57:55 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 16:57:55 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 16:57:56 (tell :content (word "the" :index 2))
+>parser 16:57:56 (tell :content (word "the" :index 2) :sender keyboard :receiver parser)
+>transcript 16:57:56 (tell :content (word "the" :index 2) :sender keyboard :receiver transcript)
+<keyboard 16:57:57 (tell :content (word "philadelphia" :index 3))
+>parser 16:57:57 (tell :content (word "philadelphia" :index 3) :sender keyboard :receiver parser)
+>transcript 16:57:57 (tell :content (word "philadelphia" :index 3) :sender keyboard :receiver transcript)
+<keyboard 16:58:00 (tell :content (word "train" :index 4))
+>parser 16:58:00 (tell :content (word "train" :index 4) :sender keyboard :receiver parser)
+>transcript 16:58:00 (tell :content (word "train" :index 4) :sender keyboard :receiver transcript)
+<keyboard 16:58:00 (tell :content (word "to" :index 5))
+>parser 16:58:00 (tell :content (word "to" :index 5) :sender keyboard :receiver parser)
+>transcript 16:58:00 (tell :content (word "to" :index 5) :sender keyboard :receiver transcript)
+<keyboard 16:58:00 (tell :content (word "richmond" :index 6))
+>parser 16:58:00 (tell :content (word "richmond" :index 6) :sender keyboard :receiver parser)
+>transcript 16:58:00 (tell :content (word "richmond" :index 6) :sender keyboard :receiver transcript)
+<keyboard 16:58:00 (tell :content (end))
+>parser 16:58:00 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 16:58:00 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 16:58:01 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V11715 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11667) (:CLASS :CITY)
+    (:LEX :PHILADELPHIA) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11678) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11678 :V11667)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11715) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11707) (:CONSTRAINT (:TO :V11707 :V11715))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11654) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11654 :*YOU*) (:LOBJ :V11654 :V11678)
+     (:LCOMP :V11654 :V11707))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11678)) :SETTING NIL :INPUT
+  (SEND THE PHILADELPHIA TRAIN TO RICHMOND))
+ :RE 2)
+>dm 16:58:01 (TELL :CONTENT (SA-REQUEST :FOCUS :V11715 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11667) (:CLASS :CITY)
+    (:LEX :PHILADELPHIA) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11678) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11678 :V11667)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11715) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11707) (:CONSTRAINT (:TO :V11707 :V11715))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11654) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11654 :*YOU*) (:LOBJ :V11654 :V11678)
+     (:LCOMP :V11654 :V11707))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11678)) :SETTING NIL :INPUT
+  (SEND THE PHILADELPHIA TRAIN TO RICHMOND)) :RE 2 :sender parser :receiver dm)
+<dm 16:58:02 (ask-all :aspect (?v11678) :content (:and (:type richmond :city) (:type ?v11678 :engine) (:at-loc ?v11678 philadelphia) (:type philadelphia :city)) :sender dm :receiver ps :re msg102 :reply-with msg147)
+>ps 16:58:02 (ask-all :aspect (?v11678) :content (:and (:type richmond :city) (:type ?v11678 :engine) (:at-loc ?v11678 philadelphia) (:type philadelphia :city)) :sender dm :receiver ps :re msg102 :reply-with msg147)
+<ps 16:58:02 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR)) :VARS (?V11678))
+ :RECEIVER DM :IN-REPLY-TO MSG147 :RE MSG102)
+>dm 16:58:02 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR)) :VARS (?V11678)) :RECEIVER DM :IN-REPLY-TO MSG147 :RE MSG102 :sender ps)
+<dm 16:58:03 (request :content (:new-subplan :plan-id r341 :content (:go go2 (:and (:agent northstar) (:to richmond)))) :sender dm :receiver ps :re msg102 :reply-with msg158)
+>ps 16:58:03 (request :content (:new-subplan :plan-id r341 :content (:go go2 (:and (:agent northstar) (:to richmond)))) :sender dm :receiver ps :re msg102 :reply-with msg158)
+<ps 16:58:03 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS611
+  :RESULT
+  (:NEW-SUBPLAN :OBJECTS (NORTHSTAR PHILADELPHIA RICHMOND) :PLAN
+   (PLAN610 :GOAL
+    (:GO GO2 (:AGENT NORTHSTAR) (:TO RICHMOND) (:FROM PHILADELPHIA))
+    :AGENT NORTHSTAR :ACTIONS
+    ((:GO GO606 (:FROM PHILADELPHIA) (:TO BALTIMORE)
+      (:TRACK BALTIMORE-PHILADELPHIA))
+     (:GO GO607 (:FROM BALTIMORE) (:TO WASHINGTON)
+      (:TRACK BALTIMORE-WASHINGTON))
+     (:GO GO608 (:FROM WASHINGTON) (:TO RICHMOND)
+      (:TRACK RICHMOND-WASHINGTON)))))
+  :REASON NIL)
+ :RECEIVER DM :IN-REPLY-TO MSG158 :RE MSG102)
+>dm 16:58:03 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS611
+  :RESULT
+  (:NEW-SUBPLAN :OBJECTS (NORTHSTAR PHILADELPHIA RICHMOND) :PLAN
+   (PLAN610 :GOAL
+    (:GO GO2 (:AGENT NORTHSTAR) (:TO RICHMOND) (:FROM PHILADELPHIA))
+    :AGENT NORTHSTAR :ACTIONS
+    ((:GO GO606 (:FROM PHILADELPHIA) (:TO BALTIMORE)
+      (:TRACK BALTIMORE-PHILADELPHIA))
+     (:GO GO607 (:FROM BALTIMORE) (:TO WASHINGTON)
+      (:TRACK BALTIMORE-WASHINGTON))
+     (:GO GO608 (:FROM WASHINGTON) (:TO RICHMOND)
+      (:TRACK RICHMOND-WASHINGTON)))))
+  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG158 :RE MSG102 :sender ps)
+<dm 16:58:04 (request :content (:update-pss :ps-state pss611) :sender dm :receiver ps :re msg102 :reply-with msg182)
+>ps 16:58:04 (request :content (:update-pss :ps-state pss611) :sender dm :receiver ps :re msg102 :reply-with msg182)
+<ps 16:58:04 (REPLY :CONTENT
+ (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN610) :RECEIVER DM
+ :IN-REPLY-TO MSG182 :RE MSG102)
+>dm 16:58:04 (REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN610) :RECEIVER DM :IN-REPLY-TO MSG182 :RE MSG102 :sender ps)
+<dm 16:58:04 (express :speech-act inform_plan :focus (path2) :media unspecified :content (move-engine-along-path northstar path2) :constraints (and (type path2 route) (type northstar engine) (source path2 philadelphia) (dest path2 richmond) (tracks path2 (baltimore-philadelphia baltimore-washington richmond-washington))) :sender dm :receiver outmgr :re msg102 :reply-with msg195)
+>outmgr 16:58:04 (express :speech-act inform_plan :focus (path2) :media unspecified :content (move-engine-along-path northstar path2) :constraints (and (type path2 route) (type northstar engine) (source path2 philadelphia) (dest path2 richmond) (tracks path2 (baltimore-philadelphia baltimore-washington richmond-washington))) :sender dm :receiver outmgr :re msg102 :reply-with msg195)
+<outmgr 16:58:04 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:58:04 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH2 :COLOR YELLOW :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH2 :COLOR YELLOW :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)) :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR) :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR WHITE :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR WHITE :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH2 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH2 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON."))
+>speech-aaa 16:58:04 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON.") :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON."))
+>display 16:58:04 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON.") :sender outmgr)
+<outmgr 16:58:04 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON."))
+>transcript 16:58:04 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON.") :sender outmgr)
+<keyboard 16:58:56 (tell :content (word "send" :index 1))
+>parser 16:58:56 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 16:58:56 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 16:58:58 (tell :content (word "the" :index 2))
+>parser 16:58:58 (tell :content (word "the" :index 2) :sender keyboard :receiver parser)
+>transcript 16:58:58 (tell :content (word "the" :index 2) :sender keyboard :receiver transcript)
+<keyboard 16:58:58 (tell :content (word "richmond" :index 3))
+>parser 16:58:58 (tell :content (word "richmond" :index 3) :sender keyboard :receiver parser)
+>transcript 16:58:58 (tell :content (word "richmond" :index 3) :sender keyboard :receiver transcript)
+<keyboard 16:59:03 (tell :content (word "train" :index 4))
+>parser 16:59:03 (tell :content (word "train" :index 4) :sender keyboard :receiver parser)
+>transcript 16:59:03 (tell :content (word "train" :index 4) :sender keyboard :receiver transcript)
+<keyboard 16:59:03 (tell :content (word "to" :index 5))
+>parser 16:59:03 (tell :content (word "to" :index 5) :sender keyboard :receiver parser)
+>transcript 16:59:03 (tell :content (word "to" :index 5) :sender keyboard :receiver transcript)
+<keyboard 16:59:03 (tell :content (word "charleston" :index 6))
+>parser 16:59:03 (tell :content (word "charleston" :index 6) :sender keyboard :receiver parser)
+>transcript 16:59:03 (tell :content (word "charleston" :index 6) :sender keyboard :receiver transcript)
+<keyboard 16:59:03 (tell :content (end))
+>parser 16:59:03 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 16:59:03 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 16:59:03 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V11809 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11761) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11772) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11772 :V11761)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11809) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11801) (:CONSTRAINT (:TO :V11801 :V11809))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11748) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11748 :*YOU*) (:LOBJ :V11748 :V11772)
+     (:LCOMP :V11748 :V11801))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11772)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON))
+ :RE 3)
+>dm 16:59:03 (TELL :CONTENT (SA-REQUEST :FOCUS :V11809 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11761) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11772) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11772 :V11761)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11809) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11801) (:CONSTRAINT (:TO :V11801 :V11809))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11748) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11748 :*YOU*) (:LOBJ :V11748 :V11772)
+     (:LCOMP :V11748 :V11801))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11772)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON)) :RE 3 :sender parser :receiver dm)
+<dm 16:59:04 (ask-all :aspect (?v11772) :content (:and (:type charleston :city) (:type ?v11772 :engine) (:at-loc ?v11772 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg196 :reply-with msg241)
+>ps 16:59:04 (ask-all :aspect (?v11772) :content (:and (:type charleston :city) (:type ?v11772 :engine) (:at-loc ?v11772 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg196 :reply-with msg241)
+<ps 16:59:04 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11772))
+ :RECEIVER DM :IN-REPLY-TO MSG241 :RE MSG196)
+>dm 16:59:04 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11772)) :RECEIVER DM :IN-REPLY-TO MSG241 :RE MSG196 :sender ps)
+<dm 16:59:05 (request :content (:new-subplan :plan-id r341 :content (:go go3 (:and (:agent northstar) (:to charleston)))) :sender dm :receiver ps :re msg196 :reply-with msg253)
+>ps 16:59:05 (request :content (:new-subplan :plan-id r341 :content (:go go3 (:and (:agent northstar) (:to charleston)))) :sender dm :receiver ps :re msg196 :reply-with msg253)
+<ps 16:59:05 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS612 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO NORTHSTAR :MSG NIL))
+ :RECEIVER DM :IN-REPLY-TO MSG253 :RE MSG196)
+>dm 16:59:05 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS612 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO NORTHSTAR :MSG NIL)) :RECEIVER DM :IN-REPLY-TO MSG253 :RE MSG196 :sender ps)
+<dm 16:59:06 (request :content (:do-what-you-can :plan-id r341 :content (:go go4 (:and (:agent northstar) (:to charleston)))) :sender dm :receiver ps :re msg196 :reply-with msg262)
+>ps 16:59:06 (request :content (:do-what-you-can :plan-id r341 :content (:go go4 (:and (:agent northstar) (:to charleston)))) :sender dm :receiver ps :re msg196 :reply-with msg262)
+<ps 16:59:06 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS693
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND NORTHSTAR PHILADELPHIA)
+   :PLAN
+   (PLAN610 :GOAL
+    (:GO GO644 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM PHILADELPHIA)
+     (:AGENT NORTHSTAR))
+    :AGENT NORTHSTAR :ACTIONS
+    ((:GO GO645 (:FROM PHILADELPHIA) (:TO BALTIMORE)
+      (:TRACK BALTIMORE-PHILADELPHIA))
+     (:GO GO646 (:FROM BALTIMORE) (:TO WASHINGTON)
+      (:TRACK BALTIMORE-WASHINGTON))
+     (:GO GO647 (:FROM WASHINGTON) (:TO RICHMOND)
+      (:TRACK RICHMOND-WASHINGTON))
+     (:GO GO648 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL)
+ :RECEIVER DM :IN-REPLY-TO MSG262 :RE MSG196)
+>dm 16:59:06 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS693
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND NORTHSTAR PHILADELPHIA)
+   :PLAN
+   (PLAN610 :GOAL
+    (:GO GO644 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM PHILADELPHIA)
+     (:AGENT NORTHSTAR))
+    :AGENT NORTHSTAR :ACTIONS
+    ((:GO GO645 (:FROM PHILADELPHIA) (:TO BALTIMORE)
+      (:TRACK BALTIMORE-PHILADELPHIA))
+     (:GO GO646 (:FROM BALTIMORE) (:TO WASHINGTON)
+      (:TRACK BALTIMORE-WASHINGTON))
+     (:GO GO647 (:FROM WASHINGTON) (:TO RICHMOND)
+      (:TRACK RICHMOND-WASHINGTON))
+     (:GO GO648 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG262 :RE MSG196 :sender ps)
+<dm 16:59:07 (request :content (:update-pss :ps-state pss693) :sender dm :receiver ps :re msg196 :reply-with msg291)
+>ps 16:59:07 (request :content (:update-pss :ps-state pss693) :sender dm :receiver ps :re msg196 :reply-with msg291)
+<ps 16:59:07 (REPLY :CONTENT
+ (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN610) :RECEIVER DM
+ :IN-REPLY-TO MSG291 :RE MSG196)
+>dm 16:59:07 (REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN610) :RECEIVER DM :IN-REPLY-TO MSG291 :RE MSG196 :sender ps)
+<dm 16:59:07 (express :speech-act inform_plan :focus (path3) :media unspecified :content (move-engine-along-path northstar path3) :constraints (and (type path3 route) (type northstar engine) (source path3 philadelphia) (dest path3 charleston) (tracks path3 (baltimore-philadelphia baltimore-washington richmond-washington charleston-richmond))) :sender dm :receiver outmgr :re msg196 :reply-with msg304)
+>outmgr 16:59:07 (express :speech-act inform_plan :focus (path3) :media unspecified :content (move-engine-along-path northstar path3) :constraints (and (type path3 route) (type northstar engine) (source path3 philadelphia) (dest path3 charleston) (tracks path3 (baltimore-philadelphia baltimore-washington richmond-washington charleston-richmond))) :sender dm :receiver outmgr :re msg196 :reply-with msg304)
+<outmgr 16:59:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 16:59:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH3 :COLOR TURQUOISE :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON
+   CHARLESTON-RICHMOND)))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH3 :COLOR TURQUOISE :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON
+   CHARLESTON-RICHMOND)) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR PALEGREEN :FILLCOLOR WHITE
+  :FILL 100 :AT CHARLESTON :ORIENTATION EAST))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR PALEGREEN :FILLCOLOR WHITE
+  :FILL 100 :AT CHARLESTON :ORIENTATION EAST) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH3 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH3 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND."))
+>speech-aaa 16:59:07 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND."))
+>display 16:59:07 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY
+  "NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 16:59:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND."))
+>transcript 16:59:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND.") :sender outmgr)
+<keyboard 17:00:23 (tell :content (word "no" :index 1))
+>parser 17:00:23 (tell :content (word "no" :index 1) :sender keyboard :receiver parser)
+>transcript 17:00:23 (tell :content (word "no" :index 1) :sender keyboard :receiver transcript)
+<keyboard 17:00:23 (tell :content (end))
+>parser 17:00:23 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 17:00:23 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 17:00:23 (TELL :CONTENT
+ (SA-REJECT :FOCUS NIL :OBJECTS NIL :PATHS NIL :DEFS NIL :SEMANTICS :NO
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT) (:OBJECT)) :SETTING NIL :INPUT (NO))
+ :RE 4)
+>dm 17:00:23 (TELL :CONTENT (SA-REJECT :FOCUS NIL :OBJECTS NIL :PATHS NIL :DEFS NIL :SEMANTICS :NO
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT) (:OBJECT)) :SETTING NIL :INPUT (NO)) :RE 4 :sender parser :receiver dm)
+<dm 17:00:24 (request :content (:undo :ps-state pss611) :sender dm :receiver ps :re msg305 :reply-with msg312)
+>ps 17:00:24 (request :content (:undo :ps-state pss611) :sender dm :receiver ps :re msg305 :reply-with msg312)
+<ps 17:00:24 (REPLY :CONTENT
+ (ANSWER :RESULT (:UNDONE :CHANGED-PLANS (PLAN610) :DELETED-PLANS NIL)
+  :PS-STATE PSS611)
+ :RECEIVER DM :IN-REPLY-TO MSG312 :RE MSG305)
+>dm 17:00:24 (REPLY :CONTENT (ANSWER :RESULT (:UNDONE :CHANGED-PLANS (PLAN610) :DELETED-PLANS NIL)
+  :PS-STATE PSS611) :RECEIVER DM :IN-REPLY-TO MSG312 :RE MSG305 :sender ps)
+<dm 17:00:24 (express :speech-act ok :media unspecified :sender dm :receiver outmgr :re msg305 :reply-with msg317)
+>outmgr 17:00:24 (express :speech-act ok :media unspecified :sender dm :receiver outmgr :re msg305 :reply-with msg317)
+<outmgr 17:00:24 (ASK-ALL :ASPECT (?V11598 ?V11562) :CONTENT
+ (:AND (:AT-LOC ?V11598 ?V11562) (:TYPE ?V11598 :ENGINE)
+  (:TYPE ?V11562 :CITY))
+ :SENDER OUTMGR :RECEIVER PS :RE MSG229 :REPLY-WITH MSG230)
+>ps 17:00:24 (ASK-ALL :ASPECT (?V11598 ?V11562) :CONTENT (:AND (:AT-LOC ?V11598 ?V11562) (:TYPE ?V11598 :ENGINE)
+  (:TYPE ?V11562 :CITY)) :SENDER OUTMGR :RECEIVER PS :RE MSG229 :REPLY-WITH MSG230)
+<ps 17:00:24 (REPLY :CONTENT
+ (ANSWER :RESULT ((BULLET RICHMOND) (NORTHSTAR RICHMOND)) :VARS
+  (?V11598 ?V11562))
+ :RECEIVER OUTMGR :IN-REPLY-TO MSG230 :RE MSG229)
+>outmgr 17:00:24 (REPLY :CONTENT (ANSWER :RESULT ((BULLET RICHMOND) (NORTHSTAR RICHMOND)) :VARS
+  (?V11598 ?V11562)) :RECEIVER OUTMGR :IN-REPLY-TO MSG230 :RE MSG229 :sender ps)
+<outmgr 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY "ok, undone."))
+>speech-aaa 17:00:24 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY "ok, undone.") :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY "ok, undone."))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY "ok, undone.") :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   ok, undone."))
+>transcript 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   ok, undone.") :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR ORANGE :FILLCOLOR RED :FILL
+  100 :AT RICHMOND :ORIENTATION EAST))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR ORANGE :FILLCOLOR RED :FILL
+  100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH3))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH3) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH3))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH3) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH2 :COLOR CYAN :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH2 :COLOR CYAN :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:00:24 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2) :sender outmgr)
+<outmgr 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2))
+>display 17:00:24 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH2) :sender outmgr)
+<outmgr 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH2 :COLOR CYAN :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)))
+>display 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH2 :COLOR CYAN :THICKNESS 2 :START
+  PHILADELPHIA :TRACKS
+  (BALTIMORE-PHILADELPHIA BALTIMORE-WASHINGTON RICHMOND-WASHINGTON)) :sender outmgr)
+<outmgr 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR))
+>display 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR) :sender outmgr)
+<outmgr 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST))
+>display 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH2 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:00:25 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH2 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<display 17:00:25 (error :receiver outmgr :code 551 :comment "bad value: PATH3")
+>outmgr 17:00:25 (error :receiver outmgr :code 551 :comment "bad value: PATH3" :sender display)
+<display 17:00:25 (error :receiver outmgr :code 551 :comment "bad value: PATH2")
+>outmgr 17:00:25 (error :receiver outmgr :code 551 :comment "bad value: PATH2" :sender display)
+<keyboard 17:00:38 (tell :content (word "send" :index 1))
+>parser 17:00:38 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 17:00:38 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 17:00:39 (tell :content (word "the" :index 2))
+>parser 17:00:39 (tell :content (word "the" :index 2) :sender keyboard :receiver parser)
+>transcript 17:00:39 (tell :content (word "the" :index 2) :sender keyboard :receiver transcript)
+<keyboard 17:00:40 (tell :content (word "richmond" :index 3))
+>parser 17:00:40 (tell :content (word "richmond" :index 3) :sender keyboard :receiver parser)
+>transcript 17:00:40 (tell :content (word "richmond" :index 3) :sender keyboard :receiver transcript)
+<keyboard 17:00:49 (tell :content (word "train" :index 4))
+>parser 17:00:49 (tell :content (word "train" :index 4) :sender keyboard :receiver parser)
+>transcript 17:00:49 (tell :content (word "train" :index 4) :sender keyboard :receiver transcript)
+<keyboard 17:00:49 (tell :content (word "to" :index 5))
+>parser 17:00:49 (tell :content (word "to" :index 5) :sender keyboard :receiver parser)
+>transcript 17:00:49 (tell :content (word "to" :index 5) :sender keyboard :receiver transcript)
+<keyboard 17:00:49 (tell :content (word "charleston" :index 6))
+>parser 17:00:49 (tell :content (word "charleston" :index 6) :sender keyboard :receiver parser)
+>transcript 17:00:49 (tell :content (word "charleston" :index 6) :sender keyboard :receiver transcript)
+<keyboard 17:00:49 (tell :content (end))
+>parser 17:00:49 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 17:00:49 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 17:00:50 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V11922 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11874) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11885) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11885 :V11874)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11922) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11914) (:CONSTRAINT (:TO :V11914 :V11922))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11861) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11861 :*YOU*) (:LOBJ :V11861 :V11885)
+     (:LCOMP :V11861 :V11914))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11885)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON))
+ :RE 5)
+>dm 17:00:50 (TELL :CONTENT (SA-REQUEST :FOCUS :V11922 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11874) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11885) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11885 :V11874)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11922) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V11914) (:CONSTRAINT (:TO :V11914 :V11922))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11861) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11861 :*YOU*) (:LOBJ :V11861 :V11885)
+     (:LCOMP :V11861 :V11914))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11885)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON)) :RE 5 :sender parser :receiver dm)
+<dm 17:00:51 (ask-all :aspect (?v11885) :content (:and (:type charleston :city) (:type ?v11885 :engine) (:at-loc ?v11885 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg318 :reply-with msg363)
+>ps 17:00:51 (ask-all :aspect (?v11885) :content (:and (:type charleston :city) (:type ?v11885 :engine) (:at-loc ?v11885 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg318 :reply-with msg363)
+<ps 17:00:51 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11885))
+ :RECEIVER DM :IN-REPLY-TO MSG363 :RE MSG318)
+>dm 17:00:51 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11885)) :RECEIVER DM :IN-REPLY-TO MSG363 :RE MSG318 :sender ps)
+<dm 17:00:52 (request :content (:new-subplan :plan-id r341 :content (:go go5 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg318 :reply-with msg375)
+>ps 17:00:52 (request :content (:new-subplan :plan-id r341 :content (:go go5 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg318 :reply-with msg375)
+<ps 17:00:52 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS694 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO BULLET :MSG NIL))
+ :RECEIVER DM :IN-REPLY-TO MSG375 :RE MSG318)
+>dm 17:00:52 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS694 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO BULLET :MSG NIL)) :RECEIVER DM :IN-REPLY-TO MSG375 :RE MSG318 :sender ps)
+<dm 17:00:52 (request :content (:do-what-you-can :plan-id r341 :content (:go go6 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg318 :reply-with msg384)
+>ps 17:00:52 (request :content (:do-what-you-can :plan-id r341 :content (:go go6 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg318 :reply-with msg384)
+<ps 17:00:52 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS746
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND BULLET CHARLOTTE) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO726 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM CHARLOTTE)
+     (:AGENT BULLET))
+    :AGENT BULLET :ACTIONS
+    ((:GO GO727 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO728 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND))
+     (:GO GO729 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL)
+ :RECEIVER DM :IN-REPLY-TO MSG384 :RE MSG318)
+>dm 17:00:52 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS746
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND BULLET CHARLOTTE) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO726 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM CHARLOTTE)
+     (:AGENT BULLET))
+    :AGENT BULLET :ACTIONS
+    ((:GO GO727 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO728 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND))
+     (:GO GO729 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG384 :RE MSG318 :sender ps)
+<dm 17:00:53 (request :content (:update-pss :ps-state pss746) :sender dm :receiver ps :re msg318 :reply-with msg409)
+>ps 17:00:53 (request :content (:update-pss :ps-state pss746) :sender dm :receiver ps :re msg318 :reply-with msg409)
+<ps 17:00:53 (REPLY :CONTENT
+ (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM
+ :IN-REPLY-TO MSG409 :RE MSG318)
+>dm 17:00:53 (REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM :IN-REPLY-TO MSG409 :RE MSG318 :sender ps)
+<dm 17:00:53 (express :speech-act inform_plan :focus (path4) :media unspecified :content (move-engine-along-path bullet path4) :constraints (and (type path4 route) (type bullet engine) (source path4 charlotte) (dest path4 charleston) (tracks path4 (charlotte-raleigh raleigh-richmond charleston-richmond))) :sender dm :receiver outmgr :re msg318 :reply-with msg422)
+>outmgr 17:00:53 (express :speech-act inform_plan :focus (path4) :media unspecified :content (move-engine-along-path bullet path4) :constraints (and (type path4 route) (type bullet engine) (source path4 charlotte) (dest path4 charleston) (tracks path4 (charlotte-raleigh raleigh-richmond charleston-richmond))) :sender dm :receiver outmgr :re msg318 :reply-with msg422)
+<outmgr 17:00:53 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:00:53 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1) :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH4 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS
+  (CHARLOTTE-RALEIGH RALEIGH-RICHMOND CHARLESTON-RICHMOND)))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH4 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS
+  (CHARLOTTE-RALEIGH RALEIGH-RICHMOND CHARLESTON-RICHMOND)) :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT CHARLESTON :ORIENTATION EAST))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT CHARLESTON :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH4 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:00:53 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH4 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:00:54 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>speech-aaa 17:00:54 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 17:00:54 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>display 17:00:54 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 17:00:54 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>transcript 17:00:54 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)
+<keyboard 17:01:11 (tell :content (word "no" :index 1))
+>parser 17:01:11 (tell :content (word "no" :index 1) :sender keyboard :receiver parser)
+>transcript 17:01:11 (tell :content (word "no" :index 1) :sender keyboard :receiver transcript)
+<keyboard 17:01:11 (tell :content (end))
+>parser 17:01:11 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 17:01:11 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 17:01:11 (TELL :CONTENT
+ (SA-REJECT :FOCUS NIL :OBJECTS NIL :PATHS NIL :DEFS NIL :SEMANTICS :NO
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT) (:OBJECT)) :SETTING NIL :INPUT (NO))
+ :RE 6)
+>dm 17:01:11 (TELL :CONTENT (SA-REJECT :FOCUS NIL :OBJECTS NIL :PATHS NIL :DEFS NIL :SEMANTICS :NO
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT) (:OBJECT)) :SETTING NIL :INPUT (NO)) :RE 6 :sender parser :receiver dm)
+<dm 17:01:12 (request :content (:undo :ps-state pss611) :sender dm :receiver ps :re msg423 :reply-with msg430)
+>ps 17:01:12 (request :content (:undo :ps-state pss611) :sender dm :receiver ps :re msg423 :reply-with msg430)
+<ps 17:01:12 (REPLY :CONTENT
+ (ANSWER :RESULT (:UNDONE :CHANGED-PLANS (PLAN548) :DELETED-PLANS NIL)
+  :PS-STATE PSS611)
+ :RECEIVER DM :IN-REPLY-TO MSG430 :RE MSG423)
+>dm 17:01:12 (REPLY :CONTENT (ANSWER :RESULT (:UNDONE :CHANGED-PLANS (PLAN548) :DELETED-PLANS NIL)
+  :PS-STATE PSS611) :RECEIVER DM :IN-REPLY-TO MSG430 :RE MSG423 :sender ps)
+<dm 17:01:12 (express :speech-act ok :media unspecified :sender dm :receiver outmgr :re msg423 :reply-with msg435)
+>outmgr 17:01:12 (express :speech-act ok :media unspecified :sender dm :receiver outmgr :re msg423 :reply-with msg435)
+<outmgr 17:01:12 (ASK-ALL :ASPECT (?V11598 ?V11562) :CONTENT
+ (:AND (:AT-LOC ?V11598 ?V11562) (:TYPE ?V11598 :ENGINE)
+  (:TYPE ?V11562 :CITY))
+ :SENDER OUTMGR :RECEIVER PS :RE MSG242 :REPLY-WITH MSG243)
+>ps 17:01:12 (ASK-ALL :ASPECT (?V11598 ?V11562) :CONTENT (:AND (:AT-LOC ?V11598 ?V11562) (:TYPE ?V11598 :ENGINE)
+  (:TYPE ?V11562 :CITY)) :SENDER OUTMGR :RECEIVER PS :RE MSG242 :REPLY-WITH MSG243)
+<ps 17:01:13 (REPLY :CONTENT
+ (ANSWER :RESULT ((BULLET RICHMOND) (NORTHSTAR RICHMOND)) :VARS
+  (?V11598 ?V11562))
+ :RECEIVER OUTMGR :IN-REPLY-TO MSG243 :RE MSG242)
+>outmgr 17:01:13 (REPLY :CONTENT (ANSWER :RESULT ((BULLET RICHMOND) (NORTHSTAR RICHMOND)) :VARS
+  (?V11598 ?V11562)) :RECEIVER OUTMGR :IN-REPLY-TO MSG243 :RE MSG242 :sender ps)
+<outmgr 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY "ok, undone."))
+>speech-aaa 17:01:13 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY "ok, undone.") :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY "ok, undone."))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY "ok, undone.") :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   ok, undone."))
+>transcript 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   ok, undone.") :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT RICHMOND :ORIENTATION EAST))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY NORTHSTAR) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME NORTHSTAR :COLOR CYAN :FILLCOLOR WHITE
+  :FILL 100 :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT NORTHSTAR :COLOR WHITE :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH4))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH4) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH4))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH4) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH1 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH1 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:01:13 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH1 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH1 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS (CHARLOTTE-RALEIGH RALEIGH-RICHMOND)) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT RICHMOND :ORIENTATION EAST))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT RICHMOND :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH1 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:01:13 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH1 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<display 17:01:13 (error :receiver outmgr :code 551 :comment "bad value: PATH4")
+>outmgr 17:01:13 (error :receiver outmgr :code 551 :comment "bad value: PATH4" :sender display)
+<display 17:01:13 (error :receiver outmgr :code 551 :comment "bad value: PATH1")
+>outmgr 17:01:13 (error :receiver outmgr :code 551 :comment "bad value: PATH1" :sender display)
+<keyboard 17:01:28 (tell :content (word "send" :index 1))
+>parser 17:01:28 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 17:01:28 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 17:01:29 (tell :content (word "the" :index 2))
+>parser 17:01:29 (tell :content (word "the" :index 2) :sender keyboard :receiver parser)
+>transcript 17:01:29 (tell :content (word "the" :index 2) :sender keyboard :receiver transcript)
+<keyboard 17:01:30 (tell :content (word "richmond" :index 3))
+>parser 17:01:30 (tell :content (word "richmond" :index 3) :sender keyboard :receiver parser)
+>transcript 17:01:30 (tell :content (word "richmond" :index 3) :sender keyboard :receiver transcript)
+<keyboard 17:01:40 (tell :content (word "train" :index 4))
+>parser 17:01:40 (tell :content (word "train" :index 4) :sender keyboard :receiver parser)
+>transcript 17:01:40 (tell :content (word "train" :index 4) :sender keyboard :receiver transcript)
+<keyboard 17:01:40 (tell :content (word "to" :index 5))
+>parser 17:01:40 (tell :content (word "to" :index 5) :sender keyboard :receiver parser)
+>transcript 17:01:40 (tell :content (word "to" :index 5) :sender keyboard :receiver transcript)
+<keyboard 17:01:40 (tell :content (word "charleston" :index 6))
+>parser 17:01:40 (tell :content (word "charleston" :index 6) :sender keyboard :receiver parser)
+>transcript 17:01:40 (tell :content (word "charleston" :index 6) :sender keyboard :receiver transcript)
+<keyboard 17:01:40 (tell :content (end))
+>parser 17:01:40 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 17:01:40 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 17:01:41 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V12036 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11987) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11998) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11998 :V11987)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V12036) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V12027) (:CONSTRAINT (:TO :V12027 :V12036))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11974) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11974 :*YOU*) (:LOBJ :V11974 :V11998)
+     (:LCOMP :V11974 :V12027))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11998)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON))
+ :RE 7)
+>dm 17:01:41 (TELL :CONTENT (SA-REQUEST :FOCUS :V12036 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11987) (:CLASS :CITY)
+    (:LEX :RICHMOND) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11998) (:CLASS :TRAIN)
+    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11998 :V11987)))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V12036) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V12027) (:CONSTRAINT (:TO :V12027 :V12036))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V11974) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V11974 :*YOU*) (:LOBJ :V11974 :V11998)
+     (:LCOMP :V11974 :V12027))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11998)) :SETTING NIL :INPUT
+  (SEND THE RICHMOND TRAIN TO CHARLESTON)) :RE 7 :sender parser :receiver dm)
+<dm 17:01:42 (ask-all :aspect (?v11998) :content (:and (:type charleston :city) (:type ?v11998 :engine) (:at-loc ?v11998 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg436 :reply-with msg481)
+>ps 17:01:42 (ask-all :aspect (?v11998) :content (:and (:type charleston :city) (:type ?v11998 :engine) (:at-loc ?v11998 richmond) (:type richmond :city)) :sender dm :receiver ps :re msg436 :reply-with msg481)
+<ps 17:01:42 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11998))
+ :RECEIVER DM :IN-REPLY-TO MSG481 :RE MSG436)
+>dm 17:01:42 (REPLY :CONTENT (ANSWER :RESULT ((NORTHSTAR) (BULLET)) :VARS (?V11998)) :RECEIVER DM :IN-REPLY-TO MSG481 :RE MSG436 :sender ps)
+<dm 17:01:43 (express :speech-act train-ref-err :media unspecified :sender dm :receiver outmgr :re msg436 :reply-with msg488)
+>outmgr 17:01:43 (express :speech-act train-ref-err :media unspecified :sender dm :receiver outmgr :re msg436 :reply-with msg488)
+<outmgr 17:01:43 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:01:43 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:01:43 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY "Please specify actual train name.."))
+>speech-aaa 17:01:43 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY "Please specify actual train name..") :sender outmgr)
+<outmgr 17:01:43 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY "Please specify actual train name.."))
+>display 17:01:43 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY "Please specify actual train name..") :sender outmgr)
+<outmgr 17:01:43 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   Please specify actual train name.."))
+>transcript 17:01:43 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   Please specify actual train name..") :sender outmgr)
+<keyboard 17:01:59 (tell :content (word "send" :index 1))
+>parser 17:01:59 (tell :content (word "send" :index 1) :sender keyboard :receiver parser)
+>transcript 17:01:59 (tell :content (word "send" :index 1) :sender keyboard :receiver transcript)
+<keyboard 17:02:03 (tell :content (word "bullet" :index 2))
+>parser 17:02:03 (tell :content (word "bullet" :index 2) :sender keyboard :receiver parser)
+>transcript 17:02:03 (tell :content (word "bullet" :index 2) :sender keyboard :receiver transcript)
+<keyboard 17:02:04 (tell :content (word "to" :index 3))
+>parser 17:02:04 (tell :content (word "to" :index 3) :sender keyboard :receiver parser)
+>transcript 17:02:04 (tell :content (word "to" :index 3) :sender keyboard :receiver transcript)
+<keyboard 17:02:04 (tell :content (word "charleston" :index 4))
+>parser 17:02:04 (tell :content (word "charleston" :index 4) :sender keyboard :receiver parser)
+>transcript 17:02:04 (tell :content (word "charleston" :index 4) :sender keyboard :receiver transcript)
+<keyboard 17:02:04 (tell :content (end))
+>parser 17:02:04 (tell :content (end) :sender keyboard :receiver parser)
+>transcript 17:02:04 (tell :content (end) :sender keyboard :receiver transcript)
+<parser 17:02:04 (TELL :CONTENT
+ (SA-REQUEST :FOCUS :V12098 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V12077) (:CLASS :ENGINE)
+    (:LEX :BULLET) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V12098) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V12090) (:CONSTRAINT (:TO :V12090 :V12098))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V12070) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V12070 :*YOU*) (:LOBJ :V12070 :V12077)
+     (:LCOMP :V12070 :V12090))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V12077)) :SETTING NIL :INPUT
+  (SEND BULLET TO CHARLESTON))
+ :RE 8)
+>dm 17:02:04 (TELL :CONTENT (SA-REQUEST :FOCUS :V12098 :OBJECTS
+  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V12077) (:CLASS :ENGINE)
+    (:LEX :BULLET) (:SORT :INDIVIDUAL))
+   (:DESCRIPTION (:STATUS :NAME) (:VAR :V12098) (:CLASS :CITY)
+    (:LEX :CHARLESTON) (:SORT :INDIVIDUAL)))
+  :PATHS ((:PATH (:VAR :V12090) (:CONSTRAINT (:TO :V12090 :V12098))))
+  :DEFS NIL :SEMANTICS
+  (:PROP (:VAR :V12070) (:CLASS :MOVE)
+   (:CONSTRAINT
+    (:AND (:LSUBJ :V12070 :*YOU*) (:LOBJ :V12070 :V12077)
+     (:LCOMP :V12070 :V12090))))
+  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD
+  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V12077)) :SETTING NIL :INPUT
+  (SEND BULLET TO CHARLESTON)) :RE 8 :sender parser :receiver dm)
+<dm 17:02:05 (request :content (:new-subplan :plan-id r341 :content (:go go7 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg489 :reply-with msg526)
+>ps 17:02:05 (request :content (:new-subplan :plan-id r341 :content (:go go7 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg489 :reply-with msg526)
+<ps 17:02:05 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS747 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO BULLET :MSG NIL))
+ :RECEIVER DM :IN-REPLY-TO MSG526 :RE MSG489)
+>dm 17:02:05 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :IMPOSSIBLE :ANSWER-SCORE :IMPOSSIBLE
+  :PS-STATE PSS747 :RESULT NIL :REASON
+  (:REASON :TYPE :MULTIPLE-USE-OF-AGENT :INFO BULLET :MSG NIL)) :RECEIVER DM :IN-REPLY-TO MSG526 :RE MSG489 :sender ps)
+<dm 17:02:06 (request :content (:do-what-you-can :plan-id r341 :content (:go go8 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg489 :reply-with msg535)
+>ps 17:02:06 (request :content (:do-what-you-can :plan-id r341 :content (:go go8 (:and (:agent bullet) (:to charleston)))) :sender dm :receiver ps :re msg489 :reply-with msg535)
+<ps 17:02:06 (REPLY :CONTENT
+ (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS799
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND BULLET CHARLOTTE) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO779 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM CHARLOTTE)
+     (:AGENT BULLET))
+    :AGENT BULLET :ACTIONS
+    ((:GO GO780 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO781 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND))
+     (:GO GO782 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL)
+ :RECEIVER DM :IN-REPLY-TO MSG535 :RE MSG489)
+>dm 17:02:06 (REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS799
+  :RESULT
+  (NEW-SUBPLAN :OBJECTS (CHARLESTON RICHMOND BULLET CHARLOTTE) :PLAN
+   (PLAN548 :GOAL
+    (:GO GO779 (:TO CHARLESTON) (:VIA RICHMOND) (:FROM CHARLOTTE)
+     (:AGENT BULLET))
+    :AGENT BULLET :ACTIONS
+    ((:GO GO780 (:FROM CHARLOTTE) (:TO RALEIGH)
+      (:TRACK CHARLOTTE-RALEIGH))
+     (:GO GO781 (:FROM RALEIGH) (:TO RICHMOND)
+      (:TRACK RALEIGH-RICHMOND))
+     (:GO GO782 (:FROM RICHMOND) (:TO CHARLESTON)
+      (:TRACK CHARLESTON-RICHMOND)))))
+  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG535 :RE MSG489 :sender ps)
+<dm 17:02:07 (request :content (:update-pss :ps-state pss799) :sender dm :receiver ps :re msg489 :reply-with msg560)
+>ps 17:02:07 (request :content (:update-pss :ps-state pss799) :sender dm :receiver ps :re msg489 :reply-with msg560)
+<ps 17:02:07 (REPLY :CONTENT
+ (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM
+ :IN-REPLY-TO MSG560 :RE MSG489)
+>dm 17:02:07 (REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN548) :RECEIVER DM :IN-REPLY-TO MSG560 :RE MSG489 :sender ps)
+<dm 17:02:07 (express :speech-act inform_plan :focus (path5) :media unspecified :content (move-engine-along-path bullet path5) :constraints (and (type path5 route) (type bullet engine) (source path5 charlotte) (dest path5 charleston) (tracks path5 (charlotte-raleigh raleigh-richmond charleston-richmond))) :sender dm :receiver outmgr :re msg489 :reply-with msg573)
+>outmgr 17:02:07 (express :speech-act inform_plan :focus (path5) :media unspecified :content (move-engine-along-path bullet path5) :constraints (and (type path5 route) (type bullet engine) (source path5 charlotte) (dest path5 charleston) (tracks path5 (charlotte-raleigh raleigh-richmond charleston-richmond))) :sender dm :receiver outmgr :re msg489 :reply-with msg573)
+<outmgr 17:02:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS dsp highlight mentioned objs"))
+>transcript 17:02:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS dsp highlight mentioned objs") :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY PATH1) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ROUTE :NAME PATH5 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS
+  (CHARLOTTE-RALEIGH RALEIGH-RICHMOND CHARLESTON-RICHMOND)))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ROUTE :NAME PATH5 :COLOR CYAN :THICKNESS 2 :START
+  CHARLOTTE :TRACKS
+  (CHARLOTTE-RALEIGH RALEIGH-RICHMOND CHARLESTON-RICHMOND)) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (DESTROY BULLET) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT CHARLESTON :ORIENTATION EAST))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (CREATE :TYPE ENGINE :NAME BULLET :COLOR CYAN :FILLCOLOR RED :FILL 100
+  :AT CHARLESTON :ORIENTATION EAST) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT BULLET :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (HIGHLIGHT PATH5 :COLOR RED :TYPE OBJECT :FLASH 10))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (HIGHLIGHT PATH5 :COLOR RED :TYPE OBJECT :FLASH 10) :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER SPEECH-AAA :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>speech-aaa 17:02:07 (REQUEST :RECEIVER SPEECH-AAA :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT
+ (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>display 17:02:07 (REQUEST :RECEIVER DISPLAY :CONTENT (SAY
+  "BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)
+<outmgr 17:02:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT
+ (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND."))
+>transcript 17:02:07 (REQUEST :RECEIVER TRANSCRIPT :CONTENT (LOG "SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.") :sender outmgr)

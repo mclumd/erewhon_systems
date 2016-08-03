@@ -1,0 +1,4 @@
+(TELL :RECEIVER IM :CONTENT (READY))
+(REQUEST :CONTENT
+ (CHDIR "/fs/disco/group/systems/trains/logs/020411.1944") :SENDER
+ SPLASH :RECEIVER PS)

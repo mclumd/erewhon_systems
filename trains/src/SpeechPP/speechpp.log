@@ -1,0 +1,10 @@
+======================== Begin SpeechPP (v. ) Log ========================
+tspeechpp.pl:  EST
+
+Configuration Parameters:
+Using Back-off LM (by default)
+Using Bigram Back-off LM (by default)
+Communicating with Trains Modules (by default)
+Using Min. Log-Prob. for LM (by default)
+
+out>:  (request :receiver im :content (listen speech-in))

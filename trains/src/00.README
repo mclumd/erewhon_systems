@@ -1,0 +1,156 @@
+	       README for TRAINS System sources, v2.2
+
+			     20 Jan 1997
+
+
+** Please read the file 00.LICENSE before proceeding. If you do not **
+** agree to the terms therein, please do not use this code.         **
+
+
+You will need to edit the Makefile in this directory to specify which
+modules to make (and install). Certain modules require additional
+software not provided in the TRAINS distribution. The rest of this
+document will help you decide what to make (and what other things you
+might need to get first).
+
+After you've read this, you can do:
+	% make
+Then, to install in the directory specified in the configuration file
+(see next section):
+	% make install
+	% make install.man (if you care about manpages)
+
+To run the system, run the script "trains" (installed in the bin/
+directory by "make install"). You can set the environment variable
+TRAINS_BASE at runtime if you want to run from a different directory
+tree. Note that both bin/ and etc/ must be visible at run-time. See
+the manpage(s) for more information.
+
+
+Configuration
+-------------
+
+  You will need to edit files in the config/ directory or create new
+  ones, depending on your configuration. Refer to the README in that
+  directory for details. You should probably do this after deciding
+  what to make (after reading the rest of this file).
+
+  You will also have to modify the script "trains" in the Running
+  directory if you don't build everything. The version
+  "trains.noaudio" launches only the non-audio modules. In fact, there
+  may be other things in there that deserve your attention, although
+  they should be pretty portable scripts.
+
+  If you are using audio (via AudioFile, see below), you should edit
+  the script "audio_server" in the Running directory to do whatever it
+  takes to start the AudioFile server.
+
+
+Main Modules:
+---- -------
+
+  - IM (Input Manager):
+	Socket-based KQML message-passing server with X/Motif display.
+	Uses Xpm for its iconic mode display.
+  - PM (Process Manager):
+	Launch and kill processes, connecting them to the IM (faceless).
+  - Display:
+	Object-oriented X Window System map display.
+  - Keyboard:
+	Keyboard input module (X/Motif).
+  - Splash:
+	X/Motif/Xpm splash screen, for setting user parameters,
+	starting conversations, and saving sessions.
+  - Running:
+	Scripts and accessories for actually running the system.
+	Edit these to change what is launched as part of the system.
+  - Tools:
+	Several small programs for injecting KQML messages into the
+	system. Used to bootstrap the system.
+
+Lisp Modules:
+---- -------
+
+  - Parser:
+	Robust chart parser. Fully portable.
+  - PSM (Problem Solver):
+	Incremental problem solving module. Fully portable.
+  - DM (Discourse Manager):
+	Has some Allegro CL dependencies, but probably portable.
+
+Speech Modules:
+------ -------
+
+  - Audio:
+	X/Motif audio control panel for AudioFile server.
+  - SpeechIn:
+	Faceless speech recognition engine based on Sphinx-II from CMU
+	using AudioFile input.
+	Requires Sphinx-II sources and TRAINS patches to them.
+  - SpeechPP:
+	Faceless statistical speech post-processor (Perl5).
+  - SpeechX:
+	X/Motif speech recognition controller.
+  - SpeechOut:
+	Faceless speech generation engine using Entropics TrueTalk
+	system and AudioFile output.
+	Requires TrueTalk and TrueTalk Developer licenses from Entropics.
+
+Miscellaneous Modules
+------------- -------
+
+  - Shortcut:
+	X/Motif panel for injecting messages into the system.
+  - Transcript:
+	Maintains readable text transcript file of session.
+  - PView:
+	Perl5/PerlTk parse tree viewer.
+  - Replay:
+	Perl5/PerlTk replay facility, with full audio playback.
+
+
+Other Software used by TRAINS-96 v2.1
+----- -------- ---- -- --------- ----
+
+The following packages are used by at least some modules of the TRAINS
+system (as detailed above):
+
+  - X11R5 (or higher) - Available from ftp.x.org
+	Most modules with X displays use Motif (which is not free).
+
+  - Xpm = X Pixmap Library - Available from ftp.x.org
+
+  - AudioFile v3.1 server and libraries - Available from crl.dec.com
+
+  - Perl v5.002 (or higher) - See ftp.perl.com
+	Some modules use Perl/Tk for their GUI.
+
+  - Sphinx-II Speech Recognition System sources from CMU.
+	We have patched this code to work with TRAINS.
+
+  - TrueTalk Speech Generation system from Entropics Inc.
+	You need "Developer Licenses" to access the API.
+
+  - Lisp:
+	The Parser and PSM should work under any Common Lisp, although
+	they have only been tested using Allegro CL 4.3. You may need
+	to adjust the code in the file dump-<module>.lisp (in each
+	directory) if you need to use another method to dump a
+	standalone Lisp executable. See also the file
+	config/make.rules.dump for the commands used by "make compile"
+	and "make dump" (and "make all") for Lisp modules.
+
+	The DM (Discourse Manager) has a few more Allegro
+	dependencies. See the README in its directory for some hints.
+	Good luck.
+
+	Finally, you could conceivably replace the dumped executables
+	with scripts that launch your installed Lisp, load the
+	necessary Lisp files (preferably compiled versions), then run
+	the toplevel function defined in the dump-<module>.lisp file
+	(which you won't need anymore). In fact, I have provided just
+	such scripts in the Lisp module directories (named
+	"<MODULE>.sh"). You'll need to arrange for TRAINS_BASE to be
+	set before the are invoked and/or adjust the script so it can
+	find the Lisp files at runtime.
+

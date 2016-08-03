@@ -1,0 +1,19 @@
+#
+# northeast-air.map: Northeast US with air links
+#
+# George Ferguson, ferguson@cs.rochester.edu, 19 Apr 1995
+# Time-stamp: <95/07/28 14:46:35 ferguson>
+#
+# This map was originally drawn for a 762x727 canvas.
+#
+
+:canvas :title "TRAINS-95 - Northeast U.S. (Air)" :width 762 :height 727
+
+:default :bg true
+#include "northeast-land"
+#include "northeast-cities"
+#include "northeast-flights"
+:default :bg false
+:setbg
+
+:default :thickness 1

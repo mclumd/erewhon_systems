@@ -1,0 +1,81 @@
+#
+# make.rules.prog : Build a program for the TRAINS System
+#
+# George Ferguson, ferguson@cs.rochester.edu, 9 Jan 1997
+# Time-stamp: <Mon Jan 20 15:04:18 EST 1997 ferguson>
+#
+# The following should be defined before this file is included:
+#  MODULE - The name for this component, ie., its TRAINS directory name
+#  PROG - The executable to build
+#  SRCS - The source files to compile
+#  HDRS - Any header files that are part of the package
+#  MANS - Any manpages
+#  XTRA - Anything else that should be checked-in with SRCS, HDRS, and MANS
+#
+
+#
+# TRAINS System version information
+#
+include config/make.version
+
+#
+# Platform-specific definitions
+#
+include config/make.defs.$(UNAME)
+
+#
+# You shouldn't have to change these
+#
+CFLAGS = $(CDEBUGFLAGS) $(EXTRA_DEFS) $(SPECIAL_DEFS) $(CDEFS)
+LIBS   = $(EXTRA_LIBS) $(SPECIAL_LIBS) $(CLIBS)
+OBJS   = $(SRCS:%.c=%.o)
+
+#
+# Main program target
+#
+$(PROG): $(OBJS) $(EXTRA_DEPS) version
+	$(CC) $(CFLAGS) -o $@ -DTIMESTAMP="\"@(#)$(PROG) $(TRAINS_VERSION).`cat version` `date`\"" config/timestamp.c $(LDFLAGS) $(OBJS) $(LIBS)
+
+#
+# Make objects from C sources with per-file defs allowed
+#
+.c.o:
+	$(CC) -c $(CFLAGS) $(EXTRA_DEFS_$<) $<
+
+#
+# Module version number depends on source files having changed
+#
+version: $(SRCS) $(HDRS)
+	mv version version~ || echo 0 >version~
+	expr `cat version~` + 1 >version
+
+#
+# Clean
+#
+clean::
+	rm -f $(PROG) $(OBJS)
+
+#
+# Install and install.man
+#
+install:: $(PROG)
+	test -d $(TRAINS_BASE)/bin || mkdir $(TRAINS_BASE)/bin
+	$(CP) $(PROG) $(TRAINS_BASE)/bin
+
+install.man::
+	test -d $(TRAINS_BASE)/man || mkdir $(TRAINS_BASE)/man
+	test -d $(TRAINS_BASE)/man/man1 || mkdir $(TRAINS_BASE)/man/man1
+	$(CP) $(PROG).man $(TRAINS_BASE)/man/man1/$(PROG).1
+
+#
+# Depend
+#
+depend:
+	$(MAKEDEPEND) $(CFLAGS) $(SRCS)
+
+#
+# Check-in
+#
+ci:
+	test -d RCS || mkdir RCS
+	ci -u -t-"" -m"`date`" Makefile version $(SRCS) $(HDRS) $(MANS) $(XTRA) </dev/null

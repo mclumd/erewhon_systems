@@ -1,0 +1,33 @@
+--- --- 16:56:07 00/30/2002
+SYS dsp highlight mentioned objs
+SYS say SAY   NORTHSTAR is at PHILADELPHIA.
+SYS dsp highlight mentioned objs
+SYS say SAY   METROLINER is at NEW_YORK_CITY.
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET is at CHARLOTTE.
+USR txt send the charlotte train to richmond 
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, and RALEIGH-RICHMOND.
+USR txt send the philadelphia train to richmond 
+SYS dsp highlight mentioned objs
+SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, and RICHMOND-WASHINGTON.
+USR txt send the richmond train to charleston 
+SYS dsp highlight mentioned objs
+SYS say SAY   NORTHSTAR will traverse   BALTIMORE-PHILADELPHIA, BALTIMORE-WASHINGTON, RICHMOND-WASHINGTON, and CHARLESTON-RICHMOND.
+USR txt no 
+SYS dsp highlight mentioned objs
+SYS say SAY   ok, undone.
+SYS dsp highlight mentioned objs
+USR txt send the richmond train to charleston 
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.
+USR txt no 
+SYS dsp highlight mentioned objs
+SYS say SAY   ok, undone.
+SYS dsp highlight mentioned objs
+USR txt send the richmond train to charleston 
+SYS dsp highlight mentioned objs
+SYS say SAY   Please specify actual train name..
+USR txt send bullet to charleston 
+SYS dsp highlight mentioned objs
+SYS say SAY   BULLET will traverse   CHARLOTTE-RALEIGH, RALEIGH-RICHMOND, and CHARLESTON-RICHMOND.

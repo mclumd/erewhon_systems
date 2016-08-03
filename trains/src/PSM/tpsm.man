@@ -1,0 +1,61 @@
+.\" Time-stamp: <96/10/15 15:03:07 ferguson>
+.TH TPSM 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+tpsm \- TRAINS Problem Solving module
+.SH SYNOPSIS
+tpsm [lisp args]
+.SH DESCRIPTION
+.PP
+.I Tpsm
+is a dumped Allegro Common Lisp image that implements the TRAINS
+Problem Solving module. The PS module manages planning and plan
+recognition services for the TRAINS System. It reads KQML messages
+(requests) from standard input and writes KQML messages (replies) to
+standard output.
+.SH OPTIONS
+.PP
+You can pass any arguments suitable for dumped Lisp images. I don't
+know why you would want to, however.
+.SH USAGE
+.PP
+The Problem Solving module maintains a hierarchical goal tree as well
+as a linear history of the problem solving state. Requests perform
+operations on the goal tree and/or move back and forth through the
+history. An important aspect of the PS module is that it supports two
+different classes of requests:
+.IP 1.
+Interpretation requests, which test the feasibility of an operation
+without actually recording it; and
+.IP 2.
+Update requests, which modify the problem solving state.
+.PP
+This allows other modules to pursue alternative interpretations prior
+to committing to one.
+.SH "PROBLEM SOLVING MESSAGES"
+.PP
+I am not going to attempt to document the PS module here. Further
+information is available in online documentation and various technical
+reports.
+.SH ENVIRONMENT
+.PP
+The dumped Allegro CL image depends on a shared library for execution.
+You can specify the location of this library using the environment
+variable ALLEGRO_CL_HOME if it is not in the same place as when the
+image was dumped.
+.SH FILES
+.PP
+ps.log		Problem Solving log
+.SH DIAGNOSTICS
+.PP
+Not many. Uses ERROR and SORRY performatives to indicate problems.
+.SH SEE ALSO
+.PP
+trains(1)
+.SH BUGS
+.PP
+Crashes regularly. On the other hand, its behavior has increased the
+robustness of the rest of the system that has to deal with it. At
+least it (usually) doesn't drop into the Lisp debugger.
+.SH AUTHOR
+.PP
+James Allen (james@cs.rochester.edu).

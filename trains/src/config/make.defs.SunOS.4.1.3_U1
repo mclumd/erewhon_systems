@@ -1,0 +1,51 @@
+#
+# make.SunOS.4.1.3_U1.defs : Definitions for make under SunOS.4.1.3_U1
+#
+# George Ferguson, ferguson@cs.rochester.edu,  3 Nov 1995
+# Time-stamp: <Sun Jan 12 11:47:49 EST 1997 ferguson>
+#
+
+CC    = gcc
+CDEFS =
+CLIBS =
+
+# X Windows
+XROOT = /usr/staff
+XDEFS = -I$(XROOT)/include
+XLIBS = -L/usr/grads/lib -lXaw3d -L$(XROOT)/lib -lXmu -lXt -lX11 -lXext -lm
+
+# Motif (use static lib for hacked 4.1.3 build)
+MOTIFROOT = /u/trains/Motif
+MOTIFDEFS = -I$(MOTIFROOT)/include $(XDEFS)
+MOTIFLIBS = $(MOTIFROOT)/lib/libXm.a -L$(XROOT)/lib -lXmu -lXt -lX11 -lXext -lm
+
+# XPM
+XPMROOT = /usr/grads
+XPMDEFS = -I$(XPMROOT)/include
+XPMLIBS = $(XPMROOT)/lib/libXpm.a
+
+# AudioFile
+AFBASE = /u/trains/AF
+AFDEFS = -I$(AFBASE)/include
+AFLIBS = -L$(AFBASE)/lib/$(UNAME) -lAFext -lAF
+
+# TRAINS libraries
+TRLIB   = trlib/libtrlib.a
+KQMLLIB = KQML/libKQML.a
+UTILLIB = util/libutil.a
+TRAINSLIBS = $(TRLIB) $(KQMLLIB) $(UTILLIB)
+
+# Lisp (you could also use plain "cl -qq -batch")
+LISP = /s5/acl4.3/build/vanilla-no-clim -qq -batch
+# Extension for compiled lisp files (usually "fasl")
+FASL = fasl43
+
+# Miscellaneous programs
+RANLIB = ranlib
+MAKEDEPEND = makedepend
+CP = cp -p
+RM = rm -f
+
+# Some modules can use old perl, most need Perl v5.002 or higher
+PERL  = /usr/staff/bin/perl
+PERL5 = /usr/grads/bin/perl5

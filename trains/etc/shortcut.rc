@@ -1,0 +1,6 @@
+(request :content (define :label "IM Exit" :content (request :receiver IM :content (exit 0))))
+(request :content (define :label "End Conversation" :content (broadcast :receiver im :content (tell :content (end-conversation)))))
+(request :content (define :label "Show Transcript" :content (request :receiver TRANSCRIPT :content (show-window))))
+(request :content (define :label "Show Parse Tree" :content (request :receiver PVIEW :content (show-window))))
+(request :content (define :label "Kill DM" :content (request :receiver PM :content (kill dm))))
+(request :content (define :label "Start DM (micro)" :content (request :receiver PM :content (start :name dm :host micro :exec "/u/trains/96/2.2/bin/ttcl" :argv (tdm -- -debug t) :connect nil))))

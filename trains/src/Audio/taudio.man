@@ -1,0 +1,112 @@
+.\" Time-stamp: <96/10/10 13:08:59 ferguson>
+.TH TAUDIO 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+taudio \- TRAINS Audio Manager
+.SH SYNOPSIS
+.IP taudio 7
+[\-audio\ server] [\-input\ N] [\-output\ N]
+[\-mic\ BOOL] [\-linein\ BOOL]
+[\-speaker\ BOOL] [\-phones\ BOOL] [\-lineout\ BOOL]
+[\-meterRunning BOOL] [\-debug\ where] [X\ args]
+.SH DESCRIPTION
+.PP
+.I Taudio
+is the TRAINS Audio Manager. It provides an X/Motif display for
+monitoring and adjusting audio input and output ports and levels.
+.SH OPTIONS
+.PP
+.IP "-audio host:device"
+Connect to the AudioFile server at the given address. The default is
+the value of the environment variable AUDIOFILE, if set, otherwise the
+current host.
+.IP "-input N"
+Set initial input (record) level to
+.IR N .
+.IP "-output N"
+Set initial output (play) level to
+.IR N .
+.IP "-mic BOOL"
+Enable (True) or disable (False) the microphone input initially.
+.IP "-linein BOOL"
+Enable (True) or disable (False) the line level input initially.
+.IP "-speaker BOOL"
+Enable (True) or disable (False) the speaker output initially.
+.IP "-phones BOOL"
+Enable (True) or disable (False) the headphone output initially.
+.IP "-lineout BOOL"
+Enable (True) or disable (False) the line level output initially.
+.IP "-meterRunning BOOL"
+If True, the input level "VU meter" is enabled initially. The default
+is False, which reduces the amount of work the Audio Manager has to do.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.IP "X args"
+.I Taudio
+accepts all standard X Toolkit arguments; see
+.IR X (1)
+for details.
+.SH USAGE
+.PP
+.I Taudio
+first connects to the AudioFile server given by the \-server argument
+or the AUDIOFILE environment variable. If any of the level options
+(e.g., \-input) or port configuration options (e.g., \-mic) were given,
+.I taudio
+configures the server, otherwise the settings are left unchanged.
+.PP
+Input and output levels can then be adjusted using the sliders, and
+input and output ports can be selected using the menus. Note that
+input ports are mutually exclusive, while output ports can all be on
+at once. The "VU meter" input level display can be enabled and
+disabled from the Input menu. It is recommended that it be left
+disabled once levels are set to reduce the load on the audio server.
+.SH "AUDIO MANAGER MESSAGES"
+.PP
+The following KQML messages are understood by the Audio Manager. They
+should be addressed with ":receiver AUDIO". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (exit :status N))"
+Requests that the Audio Manager exit with status
+.I N
+(default 0).
+.IP "(request :content (hide\-window))"
+Causes the Audio Manager display to iconify itself.
+.IP "(request :content (show\-window))"
+Causes the Audio Manager display to deiconify itself.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Ignored.
+.IP "(request :content (end\-conversation)"
+Ignored.
+.IP "(request :content (chdir DIR))"
+Ignored.
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+AUDIOFILE			HOST:DEVICE for AudioFile server
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Some.
+.SH SEE ALSO
+.PP
+trains(1),
+tim(1)
+.SH BUGS
+.PP
+Not really a bug, but it would be nice to have some way to control the
+"monitor" level provided by the Sun audio hardware.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

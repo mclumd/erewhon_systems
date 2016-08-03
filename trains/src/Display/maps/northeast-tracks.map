@@ -1,0 +1,95 @@
+(request :content
+ (default :thickness 2 :color black :depth 6))
+
+(request :content
+ (create :type track :start Albany :end Burlington :distance 140 :time 5))
+(request :content
+ (create :type track :start Albany :end Boston :distance 199 :time 7.5))
+(request :content
+ (create :type track :start Albany :end New_York_City :distance 141 :time 3.62))
+(request :content
+ (create :type track :start Albany :end Syracuse :distance 144 :time 3.92))
+(request :content
+ (create :type track :start Atlanta :end Charlotte :distance 257 :time 6.92))
+(request :content
+ (create :type track :start Atlanta :end Lexington :distance 400 :time 11))
+(request :content
+ (create :type track :start Baltimore :end Washington :distance 41 :time 1.1))
+(request :content
+ (create :type track :start Baltimore :end Scranton :distance 142 :time 5.25))
+(request :content
+ (create :type track :start Baltimore :end Philadelphia :distance 94 :time 2.2))
+(request :content
+ (create :type track :start Buffalo :end Cleveland :distance 187 :time 4.47
+	:shape (multiline :points (Buffalo (378 240) (358 254) Cleveland))))
+(request :content
+ (create :type track :start Buffalo :end Toronto :distance 90 :time 6.12
+	:shape (multiline :points (Buffalo (358 184) Toronto))))
+(request :content
+ (create :type track :start Buffalo :end Syracuse :distance 152 :time 5.52))
+(request :content
+ (create :type track :start Buffalo :end Pittsburgh :distance 249 :time 7.28))
+(request :content
+ (create :type track :start Burlington :end Montreal :distance 100 :time 3.75))
+(request :content
+ (create :type track :start Boston :end New_York_City :distance 231 :time 6.63))
+(request :content
+ (create :type track :start Charleston :end Cincinnati :distance 210 :time 7))
+(request :content
+ (create :type track :start Charleston :end Pittsburgh :distance 390 :time 11.5))
+(request :content
+ (create :type track :start Charleston :end Richmond :distance 392 :time 11.96))
+(request :content
+ (create :type track :start Charleston :end Charlotte :distance 270 :time 7.5))
+(request :content
+ (create :type track :start Charlotte :end Raleigh :distance 172 :time 5.3))
+(request :content
+ (create :type track :start Chicago :end Milwaukee :distance 90 :time 2.3
+	:shape (multiline :points (Chicago (47 270) Milwaukee))))
+(request :content
+ (create :type track :start Chicago :end Indianapolis :distance 195 :time 7.18))
+(request :content
+ (create :type track :start Chicago :end Toledo :distance 234 :time 6.35
+	:shape (multiline :points (Chicago (77 320) Toledo))))
+(request :content
+ (create :type track :start Cincinnati :end Indianapolis :distance 132 :time 5.25))
+(request :content
+ (create :type track :start Cincinnati :end Lexington :distance 150 :time 3.5))
+(request :content
+ (create :type track :start Cleveland :end Toledo :distance 107 :time 3.22
+	:shape (multiline :points (Cleveland (264 306) Toledo))))
+(request :content
+ (create :type track :start Columbus :end Toledo :distance 107 :time 3.22))
+(request :content
+ (create :type track :start Columbus :end Indianapolis :distance 140 :time 5.5))
+(request :content
+ (create :type track :start Columbus :end Pittsburgh :distance 300 :time 9))
+(request :content
+ (create :type track :start Columbus :end Cincinnati :distance 120 :time 4))
+(request :content
+ (create :type track :start Detroit :end Toledo :distance 58 :time 2.25
+	:shape (multiline :points (Detroit (230 276) Toledo))))
+(request :content
+ (create :type track :start Detroit :end Toronto :distance 300 :time 8.18))
+(request :content
+ (create :type track :start Indianapolis :end Lexington :distance 200 :time 4.5))
+(request :content
+ (create :type track :start Montreal :end Toronto :distance 323 :time 7.28))
+(request :content
+ (create :type track :start New_York_City :end Philadelphia :distance 91 :time 2.5))
+(request :content
+ (create :type track :start New_York_City :end Scranton :distance 151 :time 3.75))
+(request :content
+ (create :type track :start Philadelphia :end Scranton :distance 104 :time 3.56))
+(request :content
+ (create :type track :start Pittsburgh :end Scranton :distance 300 :time 9))
+(request :content
+ (create :type track :start Raleigh :end Richmond :distance 196 :time 5.56))
+(request :content
+ (create :type track :start Richmond :end Washington :distance 109 :time 3
+	:shape (multiline :points (Richmond (500 412) Washington))))
+(request :content
+ (create :type track :start Scranton :end Syracuse :distance 160 :time 4.75))
+
+(request :content
+ (default :thickness 1 :color black :depth 0))

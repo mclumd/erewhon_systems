@@ -1,0 +1,10 @@
+======================== Begin SpeechPP (v. ) Log ========================
+
+Configuration Parameters:
+Using Back-off LM (by default)
+Using Bigram Back-off LM (by default)
+Communicating with Trains Modules (by default)
+Using Min. Log-Prob. for LM (by default)
+
+================================================================
+in <:  (tell :content (start-conversation :name "D. Purushothaman,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver speech-pp)

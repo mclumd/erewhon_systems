@@ -1,0 +1,118 @@
+.\" Time-stamp: <Fri Jan 10 14:31:18 EST 1997 ferguson>
+.TH TRAINS 1 "10 Jan 1997" "TRAINS Project"
+.SH NAME
+trains \- Run the TRAINS System
+.SH SYNOPSIS
+trains [\-sex\ m|f] [\-xinit]
+.SH DESCRIPTION
+.PP
+The script
+.I trains
+runs the TRAINS system by performing the following functions:
+.IP 1.
+Examining environment variables;
+.IP 2.
+Starting the AudioFile server;
+.IP 3.
+Starting the Input Manager,
+.IR tim (1),
+and the Process Manager,
+.IR tpm (1);
+.IP 4.
+Starting other modules by sending START messages to the Process
+Manager using
+.IR tim_cat (1).
+.PP
+This script is the place to start if you want to customize some aspect
+of the TRAINS System, such as running a different executable for a
+particular module, running an executable with different arguments, or
+running a different set of modules altogether. See the reference
+listed below for further details.
+.SH OPTIONS
+.PP
+.IP "-sex m|f"
+Specify default sex for
+.IR tspeechin (1)
+and
+.IR tsplash (1).
+The default is the environment variable TRAINS_USER_SEX, if set,
+otherwise "m".
+.IP -xinit
+Special command-line option passed when
+.I trains
+is called from the OpenWindows Session Manager. In this case, it
+is being run by
+.I xinit (1),
+and so execs an appropriate
+.I xinit
+startup script (which eventually re-runs the
+.I trains
+script).
+.SH USAGE
+.PP
+You simply run
+.I trains
+from your shell. It will even check that X is running and, if it
+isn't, will offer to start the X server with a configuration suitable
+for demos. How great is that?
+.SH ENVIRONMENT
+The following environment variables are checked by the
+.I trains
+script.
+.IP DISPLAY
+X Windows display. The default is screen 0 on the local host.
+.IP TRAINS_BASE
+Root of TRAINS directory tree. The default is installation-dependent.
+.IP TRAINS_LOGS
+Directory for session logs. The default is "TRAINS_BASE/logs".
+.IP TRAINS_SPEECH_IN_HOST
+Host to run speech recognition modules
+.IR tspeech (1)
+and
+.IR tspeechpp (1).
+The default is the current host.
+.IP TRAINS_LISP_HOST
+Host to run Lisp modules
+.IR ttcl (1),
+.IR tparser (1),
+and
+.IR tpsm (1).
+The default is the current host.
+.IP TRAINS_DM_HOST
+Host to run
+.IR ttcl (1)
+(overrides TRAINS_LISP_HOST).
+.IP AUDIOFILE
+If set to HOST:0, AudioFile audio server runs on HOST.
+.IP TRAINS_AUDIO_HOST
+Host to run AudioFile audio server. The default is the same host as
+used for DISPLAY.
+.IP TRAINS_USER_SEX
+If set, for example to "f", this is passed as the \-sex argument to
+.IR tspeech (1)
+and sets the default on the splash screen,
+.IR tsplash (1).
+.SH FILES
+.PP
+None. Er, that is, none besides the myriad TRAINS System programs it
+needs to launch...
+.SH DIAGNOSTICS
+.PP
+Prints some configuration information during startup.
+.SH SEE ALSO
+.PP
+tim(1),
+tpm(1)
+.PP
+George Ferguson, James F. Allen, and Brad Miller,
+.I "The Design and Implementation of the TRAINS-96 System:"
+.I "A Prototype Mixed-Initiative Planning Assistant,"
+TRAINS Technical Note 96-5, Computer Science Dept., University of
+Rochester, October, 1996.
+http://www.cs.rochester.edu/research/trains/
+.SH BUGS
+.PP
+Probably not in this script.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).

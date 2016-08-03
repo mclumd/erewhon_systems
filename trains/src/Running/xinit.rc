@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# xinit.rc - Startup file for xinit(1) for TRAINS
+#
+# George Ferguson, ferguson@cs.rochester.edu, 17 Sep 1996
+# Time-stamp: <Mon Jan 20 14:51:29 EST 1997 ferguson>
+#
+
+TRAINS_BASE_DEFAULT=/u/trains/96/2.2
+
+# Set TRAINS_BASE unless set
+if test -z "$TRAINS_BASE"; then
+    TRAINS_BASE=$TRAINS_BASE_DEFAULT
+fi
+
+# Make sure the X binaries are in our PATH
+if test -d /opt; then
+    # Solaris
+    PATH="$PATH:/usr/openwin/bin"; export PATH
+else
+    # SunOS
+    PATH="$PATH:/usr/staff/bin"; export PATH
+fi
+
+# Console xterm for error messages
+xterm -geometry 80x5+0+0 -name console -C -sb -fn fixed &
+
+# Clock
+xclock -geometry -0+0 -bg blue -fg yellow -hd yellow &
+
+# Xterm running TRAINS
+xterm -geometry 80x25-0+350 -sb -title TRAINS -e /bin/csh -c "$TRAINS_BASE/bin/trains $@; exec csh" &
+
+# Set background to a dark color
+xsetroot -solid grey10
+
+# Finally, start the window manager (in the foreground!)
+twm -f $TRAINS_BASE/etc/twm.rc

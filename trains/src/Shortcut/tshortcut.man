@@ -1,0 +1,85 @@
+.\" Time-stamp: <96/10/10 13:07:13 ferguson>
+.TH TSHORTCUT 1 "10 Oct 1996" "U of Rochester"
+.SH NAME
+tshortcut \- TRAINS Shortcut Panel
+.SH SYNOPSIS
+tshortcut [\-f\ FILE] [-debug\ where] [X Options]
+.SH DESCRIPTION
+.PP
+.I Tshortcut
+is the TRAINS Shortcut Panel. It allows arbitrary messages to be sent
+to modules of the TRAINS System by clicking on buttons. The set of
+buttons can be edited to add new buttons or modify existing ones.
+.SH OPTIONS
+.PP
+.IP "-f FILE"
+Specify startup file read to define the initial set of shortcut
+definitions. The default is to read from TRAINS_BASE/etc/shortcut.rc.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.SH USAGE
+.PP
+Double-clicking on a shortcut item sends the corresponding
+performative into the system via the Input Manager.
+.PP
+The File menu provides the following items for manipulating shortcuts:
+"New" allows the creation of a new shortcut, "Delete" deletes the
+currently-selected shortcut, "Edit" edits it, and "Save As" allows the
+current set of shortcuts to be saved to a file (for later use with the
+-f option).
+.SH "SHORTCUT PANEL MESSAGES"
+.PP
+The following KQML messages are understood by the Shortcut Panel. They
+should be addressed with ":receiver SHORTCUT". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (define :label L :content C)"
+Creates a new shortcut labelled
+.I L
+which sends content
+.I C
+(a performative) when selected.
+.IP "(request :content (hide-window))"
+Request that the Shortcut Panel iconify its window.
+.IP "(request :content (show-window))"
+Request that the Shortcut Panel deiconify its window.
+.IP "(request :content (exit :status N))"
+Request that the Shortcut Panel exit (with optional status
+.I N
+(default 0).
+.IP "(tell :content (start-conversation))"
+Ignored.
+.IP "(tell :content (end-conversation))"
+Ignored.
+.IP "(tell :content (chdir DIR))"
+Ignored.
+.SH ENVIRONMENT
+.PP
+DISPLAY			HOST:SCREEN for X server
+.br
+TRAINS_BASE		Used to find default startup file
+.SH FILES
+TRAINS_BASE/etc/shortcut.rc	Default startup file
+.SH DIAGNOSTICS
+.PP
+Maybe.
+.SH SEE ALSO
+.PP
+trains(1),
+tim(1)
+.SH BUGS
+.PP
+Possibly.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
+
+

@@ -1,0 +1,52 @@
+#
+# Makefile.defs.OSF1.V3.2 : Definitions for make under OSF1.V3.2
+#
+# George Ferguson, ferguson@cs.rochester.edu, 29 Jan 1996
+# Time-stamp: <Sun Jan 12 11:48:19 EST 1997 ferguson>
+#
+
+CC    = cc
+CDEFS =
+CLIBS =
+
+# X Windows
+XROOT = /usr
+XDEFS = -DDEC -DR5_XLIB -DSMT -DFUNCPROTO=3 -I$(XROOT)/include
+XLIBS = -L$(XROOT)/lib -lXaw -lXmu -lXt -lX11 -lXext -lm
+
+# Motif
+MOTIFROOT = XXX
+MOTIFDEFS = -I$(MOTIFROOT)/include $(XDEFS)
+MOTIFLIBS = -L$(MOTIFROOT)/lib -lXm \
+	    -L$(XROOT)/lib -lXmu -lXt -lX11 -lXext -lm
+
+# XPM
+XPMROOT = XXX
+XPMDEFS = -I$(XPMROOT)/include
+XPMLIBS = $(XPMROOT)/lib/libXpm.a
+
+# AudioFile
+AFBASE = /u/trains/AF
+AFDEFS = -I$(AFBASE)/include
+AFLIBS = -L$(AFBASE)/lib/$(UNAME) -lAFext -lAF
+
+# TRAINS libraries
+TRLIB   = trlib/$(UNAME)/libtrlib.a
+KQMLLIB = KQML/$(UNAME)/libKQML.a
+UTILLIB = util/$(UNAME)/libutil.a
+TRAINSLIBS = $(TRLIB) $(KQMLLIB) $(UTILLIB)
+
+# Lisp (you could also use plain "cl -qq -batch")
+LISP = cl -qq -batch
+# Extension for compiled lisp files (usually "fasl")
+FASL = fasl
+
+# Miscellaneous programs
+RANLIB = ranlib
+MAKEDEPEND = makedepend
+CP = cp -p
+RM = rm -f
+
+# Some modules can use old perl, most need Perl v5.002 or higher
+PERL  = /usr/staff/bin/perl
+PERL5 = /usr/grads/bin/perl5

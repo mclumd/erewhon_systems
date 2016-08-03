@@ -1,0 +1,4 @@
+rm -f core
+rm -f *.log
+rm -f transcript
+rm -f pm.start.*

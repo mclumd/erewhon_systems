@@ -1,0 +1,85 @@
+Error: Received signal number 2 (Keyboard interrupt)
+Evaluation stack:
+
+   (EXCL::INTERNAL-INVOKE-DEBUGGER "Error"
+                                   #<INTERRUPT-SIGNAL @ #x5b830a> T)
+   (CERROR "continue computation" INTERRUPT-SIGNAL :FORMAT-CONTROL
+           "Received signal number ~s ~@[(~a)~]" :FORMAT-ARGUMENTS
+           (2 "Keyboard interrupt"))
+ ->(MP::INTERRUPT-BREAK 2)
+   (SYS::..RUNTIME-OPERATION . :UNKNOWN-ARGS)
+   (SYS::..RUNTIME-OPERATION MP::INTERRUPT-BREAK (2))
+   (SYS::RESUME-SCHEDULER NIL)
+   (MP::PROCESS-WAIT-1 "waiting for input"
+                       #<Function (:INTERNAL
+                                   MP:PROCESS-WAIT-WITH-TIMEOUT
+                                   0)>
+                       (#<clock event 182922043.192 @
+                          5b7d7a=5b7baa=5b7cc2>
+                        #<Function MULTI-STREAM-WAIT-FOR-INPUT-WAIT-FUNCTION>
+                        ((#<BIDIRECTIONAL-TERMINAL-STREAM  fd 0/1 @
+                            #x5b53b2>)
+                         #<STANDARD-GENERIC-FUNCTION STREAM-LISTEN>
+                         (NIL))
+                        (NIL)))
+   (MP:PROCESS-WAIT-WITH-TIMEOUT "waiting for input" 20
+                                 #<Function MULTI-STREAM-WAIT-FOR-INPUT-WAIT-FUNCTION>
+                                 (#<BIDIRECTIONAL-TERMINAL-STREAM
+                                     fd 0/1
+                                    @
+                                    #x5b53b2>)
+                                 #<STANDARD-GENERIC-FUNCTION
+                                   STREAM-LISTEN>
+                                 (NIL))
+   (MP:WAIT-FOR-INPUT-AVAILABLE
+      (#<BIDIRECTIONAL-TERMINAL-STREAM  fd 0/1 @ #x5b53b2>) :TIMEOUT 20)
+   (HACK:CHECK-MODULE-RUNNING HACK::DISPLAY NIL)
+   (HACK:WAIT-FOR-MODULE-READY DISPLAY)
+   (HACK:SETUP-IM-INTERFACE T (DISPLAY PARSER PS))
+   (HACK:DO-TOPLEVEL "DM" (DISPLAY PARSER PS) T)
+   (TOYTRAINS-TOPLEVEL)
+   (SYS::..RUNTIME-OPERATION . :UNKNOWN-ARGS)
+   (SYS::..RUNTIME-OPERATION TOYTRAINS-TOPLEVEL NIL)
+   (EXCL::%EVAL (APPLY DM::*DM-RESTART-FUNCTION* NIL))
+   (EXCL::EVAL-AS-PROGN ((APPLY DM::*DM-RESTART-FUNCTION* NIL)))
+   (LET
+      ((EXCL::*HANDLER-CLUSTERS*
+        (LOCALLY (DECLARE (EXCL::DYNAMIC-EXTENT-CONSING))
+          (CONS (LIST (CONS 'ERROR
+                            #'(LAMBDA (DM::E)
+                                (DM::ZOOM-AND-EXIT DM::E))))
+                (EXCL::FAST EXCL::*HANDLER-CLUSTERS*)))))
+      (DECLARE (DYNAMIC-EXTENT EXCL::*HANDLER-CLUSTERS*))
+      (APPLY DM::*DM-RESTART-FUNCTION* NIL))
+   [... EXCL::%EVAL ]
+   (EXCL::EVAL-AS-PROGN
+      ((HANDLER-BIND ((ERROR
+                       #'(LAMBDA (DM::E) (DM::ZOOM-AND-EXIT DM::E))))
+         (APPLY DM::*DM-RESTART-FUNCTION* NIL))))
+   (BLOCK DM::MY-RESTART-FUNCTION
+          (SETQ *TERMINAL-IO*
+                (MAKE-INSTANCE 'BIDIRECTIONAL-TERMINAL-STREAM :FN-IN 0
+                               :FN-OUT 2))
+          (SETQ *INITIAL-TERMINAL-IO* *TERMINAL-IO*)
+          (SETQ *ERROR-OUTPUT* *TERMINAL-IO*)
+          (FORMAT *TERMINAL-IO* "~%~A: ~A~%"
+                  (SYS:COMMAND-LINE-ARGUMENT 0) DM::*TIMESTAMP*)
+          (FINISH-OUTPUT *TERMINAL-IO*)
+          (HANDLER-BIND ((ERROR
+                          #'(LAMBDA (DM::E)
+                              (DM::ZOOM-AND-EXIT DM::E))))
+            (APPLY DM::*DM-RESTART-FUNCTION* NIL)))
+   [... EXCL::%EVAL ]
+   (DM::MY-RESTART-FUNCTION)
+   (DM::MY-RESTART-FUNCTION)
+   (SYS::..RUNTIME-OPERATION . :UNKNOWN-ARGS)
+   (SYS::..RUNTIME-OPERATION DM::MY-RESTART-FUNCTION NIL)
+   (TPL:START-INTERACTIVE-TOP-LEVEL
+      #<BIDIRECTIONAL-TERMINAL-STREAM [initial terminal io] fd 0/1 @
+        #xd7eaa>
+      DM::MY-RESTART-FUNCTION NIL)
+   (EXCL::START-LISP-EXECUTION)
+   (EXCL::SETUP-REQUIRED-STACK-GROUP-BINDINGS
+      #<Function START-LISP-EXECUTION-1>)
+   (EXCL::START-REBORN-LISP)
+   (SYS::..RUNTIME-OPERATION)

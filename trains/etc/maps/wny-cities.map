@@ -1,0 +1,68 @@
+(request :content
+ (default :depth 5 :radius 5 :color black :fill 100 :fillcolor black))
+(request :content
+ (create :type city :name Avon :orientation northwest
+	:shape (circle :center (342 171))))
+(request :content
+ (create :type city :name Bath :orientation southwest
+	:shape (circle :center (417 320))))
+(request :content
+ (create :type city :name Canandaigua :orientation north
+	:shape (circle :center (428 181))))
+(request :content
+ (create :type city :name Corning
+	:shape (circle :center (470 374))))
+(request :content
+ (create :type city :name Dansville :orientation southwest
+	:shape (circle :center (342 267))))
+(request :content
+ (create :type city :name East_Aurora :orientation north :label "East Aurora"
+	:shape (circle :center (160 198))))
+(request :content
+ (create :type city :name Elmira :orientation south
+        :shape (circle :center (519 395) :radius 8)))
+(request :content
+ (create :type city :name Franklinville :orientation west
+	:shape (circle :center (181 315))))
+(request :content
+ (create :type city :name Fulton :orientation north
+	:shape (circle :center (614 80))))
+(request :content
+ (create :type city :name Geneva :orientation northeast
+	:shape (circle :center (497 187))))
+(request :content
+ (create :type city :name Hornell
+	:shape (circle :center (347 325))))
+(request :content
+ (create :type city :name Ithaca :orientation southeast
+	:shape (circle :center (572 310))))
+(request :content
+ (create :type city :name Jamestown
+        :shape (circle :center (26 379) :radius 8)))
+(request :content
+ (create :type city :name Mount_Morris :label "Mt. Morris"
+	:shape (circle :center (310 224))))
+(request :content
+ (create :type city :name Lyons :orientation northeast
+	:shape (circle :center (492 139))))
+(request :content
+ (create :type city :name Olean
+	:shape (circle :center (187 390))))
+(request :content
+ (create :type city :name Penn_Yan :orientation west :label "Penn Yan"
+	:shape (circle :center (487 245))))
+(request :content
+ (create :type city :name Rochester :orientation northwest
+        :shape (circle :center (379 95) :radius 8)))
+(request :content
+ (create :type city :name Sodus :orientation north
+	:shape (circle :center (487 90))))
+(request :content
+ (create :type city :name Warsaw :orientation north
+	:shape (circle :center (251 213))))
+(request :content
+ (create :type city :name Watkins_Glen :orientation southwest :label "Watkins Glen"
+	:shape (circle :center (508 315))))
+(request :content
+ (create :type city :name Yorkshire :orientation west
+	:shape (circle :center (176 261))))

@@ -1,0 +1,129 @@
+.\" Time-stamp: <96/10/10 18:53:07 ferguson>
+.TH TPM 1 "9 Oct 1996" "TRAINS Project"
+.SH NAME
+tpm \- TRAINS Process Manager
+.SH SYNOPSIS
+tpm [-socket host:port] [-debug where]
+.SH DESCRIPTION
+.PP
+.I Tpm
+is the TRAINS Process Manager. It provides process management services
+in response to KQML messages. It can launch processes (optionally
+connecting them to the TRAINS Input Manager), as well as killing them.
+Note that process status reporting is now handled by the Input Manager.
+.SH OPTIONS
+.PP
+.IP "-socket host:port"
+Connect to the Input Manager on
+.I host
+at
+.I port
+rather than the default (localhost:6200, unless the environment
+variable TRAINS_SOCKET is set). If the Input
+Manager cannot be found, processes can still be launched but will be
+unable to exchange messages (which sort of limits their use, I would
+think). The Process Manager will scan successive ports attempting to
+connect to the Input Manager if the initial value is unconnectable.
+.IP "-debug where"
+Specify that copious debugging information should be written to
+.IR where .
+If
+.I where
+is a hyphen ("-"), output is to stderr, if it starts with a pipe ("|")
+the rest of the argument is passed to
+.IR popen (3),
+otherwise it is taken to be a filename to which to write. Be careful
+to escape pipes and spaces from the shell.
+.SH USAGE
+.PP
+After starting
+.I tpm
+from the shell (which has to happen after the Input Manager,
+.IR tim (1),
+is started), the TRAINS system is typically bootstrapped by sending
+initial messages to the Process Manager using one of the Input Manager
+utilities like
+.IR tim_cat (1).
+.SH "PROCESS MANAGER MESSAGES"
+.PP
+The following KQML messages are understood by the Process Manager. They
+should be addressed with ":receiver PM". Case is insignificant outside
+of strings. Whitespace between messages is ignored (but rigorously
+enforced within messages according to the KQML spec).
+.IP "(request :content (start :name M :host HOST :exec FILE"
+.nf
+.na
+              :argv (args) :envp (envs) :connect t|nil))
+.fi
+.ad
+Sender is asking to start a process named
+.I M
+executing
+.I FILE
+on
+.I HOST
+(default is the local host). The argument list and environment of the
+process can be set with the optional parameters. Note that :argv, if
+used, must specify argv[0], typically the basename of the executable,
+and :envp, if used, should be a list of strings of the form "VAR=VALUE".
+The elements of :argv and :envp can be tokens or strings (and must be
+strings is they include whitespace and the like).
+.IP
+If the :connect parameter is non-nil (the default), the process is
+started with stdin and stdout connected to the Input Manager (if
+possible). Otherwise the process can find the address of the Input
+Manager in its environment as the value of TRAINS_SOCKET in the form
+"host:port" (if the Process Manager knows the address at connect time).
+It must then arrange to connect to the Input Manager by itself using
+this information.
+.IP "(request :content (kill M :signal N))"
+Sender is asking to terminate process
+.I M
+by sending signal
+.I N
+(default 2, SIGTERM).
+.IP "(request :content (dump))"
+Requests the Process Manager to dump a description of the current set
+of processes to stderr.
+.IP "(request :content (exit :status N))"
+Requests that the Process Manager itself exit with status
+.I N
+(default 0). This terminates all processes managed by the Process
+Manager.
+.IP "(request :content (chdir DIR))"
+Ignored.
+.IP "(request :content (show\-window))"
+Ignored.
+.IP "(request :content (hide\-window))"
+Ignored.
+.IP "(request :content (start\-conversation :name N :lang L :sex S))"
+Ignored.
+.IP "(request :content (end\-conversation)"
+Ignored.
+.SH ENVIRONMENT
+.PP
+TRAINS_SOCKET		HOST:PORT for Input Manager connection
+.SH FILES
+.PP
+None.
+.SH DIAGNOSTICS
+.PP
+Copious.
+.PP
+In particular, when a process managed by the Process Manager dies, the
+PM will (usually) complain that "read was interrupted". This is
+normal: the PM was asleep in read(2) when the SIGCHLD for the child's
+death was received (and handled). I could specialcase the error
+message, but it doesn't seem worth it. The TRAINS processes aren't
+supposed to die anyway...
+.SH SEE ALSO
+.PP
+trains(1),
+tim(1),
+tim_client(1)
+.SH BUGS
+.PP
+Undoubtedly, although this program is now fairly simple.
+.SH AUTHOR
+.PP
+George Ferguson (ferguson@cs.rochester.edu).
