@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC  -Wall  -shared -Wl,-soname,libplayerinterface.so.3.0 -o libplayerinterface.so.3.0.2 CMakeFiles/playerinterface.dir/playerxdr.o CMakeFiles/playerinterface.dir/functiontable.o CMakeFiles/playerinterface.dir/addr_util.o CMakeFiles/playerinterface.dir/interface_util.o ../libplayercommon/libplayercommon.so.3.0.2 -Wl,-rpath,/fs/erewhon/group/systems/utils/lib 

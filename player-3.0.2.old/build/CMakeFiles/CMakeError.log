@@ -1,0 +1,500 @@
+Determining if files dns_sd.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: error: dns_sd.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <dns_sd.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/filio.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: error: sys/filio.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <sys/filio.h>
+
+
+int main(){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: error: ieeefp.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(){return 0;}
+
+Determining if the function GEOSGeomFromWKB_buf exists in the geos_c failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=GEOSGeomFromWKB_buf   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=GEOSGeomFromWKB_buf   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lgeos_c 
+/usr/bin/ld: cannot find -lgeos_c
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file Device.h exists failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -D__LINUX__ -DUNIX -DLINUX -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:20: error: Device.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if files dc1394/control.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:28: error: dc1394/control.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <dc1394/control.h>
+
+
+int main(){return 0;}
+
+Determining if files libraw1394/raw1394.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:32: error: libraw1394/raw1394.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <libraw1394/raw1394.h>
+
+
+int main(){return 0;}
+
+Determining if files libdc1394/dc1394_control.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:38: error: libdc1394/dc1394_control.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <libdc1394/dc1394_control.h>
+
+
+int main(){return 0;}
+
+Determining if files yarp/os/all.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: error: yarp/os/all.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <yarp/os/all.h>
+
+
+int main(){return 0;}
+
+Determining if files yarp/sig/all.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:26: error: yarp/sig/all.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <yarp/sig/all.h>
+
+
+int main(){return 0;}
+
+Determining if files unicap.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: error: unicap.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <unicap.h>
+
+
+int main(){return 0;}
+
+Determining if the function main exists in the roboop failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=main   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:9: error: conflicting types for ‘main’
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:3: error: previous declaration of ‘main’ was here
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c: In function ‘main’:
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:11: error: too few arguments to function ‘main’
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if files phidget21.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: error: phidget21.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <phidget21.h>
+
+
+int main(){return 0;}
+
+Determining if files /include/canlib.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:29: error: /include/canlib.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include </include/canlib.h>
+
+
+int main(){return 0;}
+
+Determining if files robotinocom.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: error: robotinocom.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <robotinocom.h>
+
+
+int main(){return 0;}
+
+Determining if files xtimer.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: error: xtimer.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <xtimer.h>
+
+
+int main(){return 0;}
+
+Determining if files xthread.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:21: error: xthread.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <xthread.h>
+
+
+int main(){return 0;}
+
+Determining if files libusbSR.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: error: libusbSR.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <libusbSR.h>
+
+
+int main(){return 0;}
+
+Determining if the include file libMesaSR.h exists failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:23: error: libMesaSR.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if files isense/isense.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:27: error: isense/isense.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <isense/isense.h>
+
+
+int main(){return 0;}
+
+Determining if files sphinx2/ckd_alloc.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:31: error: sphinx2/ckd_alloc.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <sphinx2/ckd_alloc.h>
+
+
+int main(){return 0;}
+
+Determining if the include file SVS/svsclass.h exists failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:26: error: SVS/svsclass.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if files libparticle.h exist failed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: error: libparticle.h: No such file or directory
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <libparticle.h>
+
+
+int main(){return 0;}
+

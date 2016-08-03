@@ -1,0 +1,934 @@
+The system is: Linux - 2.6.18-194.26.1.el5 - i686
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc        CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+Target: i386-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=i386-redhat-linux
+Thread model: posix
+gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)
+ /usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o /usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp']
+  ignore line: [/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec]
+  ignore line: [/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i386-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=i386-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)]
+  link line: [ /usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o /usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o]
+    arg [/usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/i386-redhat-linux/4.1.2;/usr/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++         CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Using built-in specs.
+Target: i386-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=i386-redhat-linux
+Thread model: posix
+gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)
+ /usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o /usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp']
+  ignore line: [/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec]
+  ignore line: [/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i386-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=i386-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)]
+  link line: [ /usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2 --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o /usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2 -L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o]
+    arg [/usr/libexec/gcc/i386-redhat-linux/4.1.2/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+    arg [-L/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..] ==> dir [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2] ==> [/usr/lib/gcc/i386-redhat-linux/4.1.2]
+  collapse dir [/usr/lib/gcc/i386-redhat-linux/4.1.2/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/i386-redhat-linux/4.1.2;/usr/lib]
+
+
+Determining if the function getaddrinfo exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=getaddrinfo   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=getaddrinfo   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function xdr_free exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=xdr_free   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=xdr_free   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function xdr_longlong_t exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=xdr_longlong_t   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=xdr_longlong_t   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_TIMESPEC succeded with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/usr/bin/gcc   -Wall  -DHAVE_STRUCT_TIMESPEC   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/src.c
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/src.c:2: warning: unused variable ‘tmp’
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DHAVE_STRUCT_TIMESPEC   CMakeFiles/cmTryCompileExec.dir/src.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <time.h>
+int main () { struct timespec *tmp; return 0; }
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=gettimeofday   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=gettimeofday   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function usleep exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=usleep   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=usleep   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function cfmakeraw exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=cfmakeraw   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=cfmakeraw   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dirname exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=dirname   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=dirname   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getopt exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=getopt   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=getopt   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getopt_long exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=getopt_long   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=getopt_long   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/joystick.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lt_dlopenext exists in the ltdl passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=lt_dlopenext   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=lt_dlopenext   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lltdl -ldl 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function nanosleep exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=nanosleep   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=nanosleep   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=poll   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=poll   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function atan2 exists in the m passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=atan2   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘atan2’
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=atan2   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lm 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function round exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=round   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘round’
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=round   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lm 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function rint exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=rint   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+/fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘rint’
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=rint   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lm 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function jpeg_read_header exists in the jpeg passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=jpeg_read_header   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=jpeg_read_header   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -ljpeg 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdio.h;jpeglib.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function compressBound exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=compressBound -I/fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/zlib.h   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=compressBound   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lz 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function compress2 exists in the z passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=compress2   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=compress2   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lz 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files zlib.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=clock_gettime   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lrt 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=clock_gettime   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lrt 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files alsa/asoundlib.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdio.h;jpeglib.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/types.h;linux/videodev.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/types.h;linux/videodev2.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the inb_p exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+File /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/io.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef inb_p
+  cmakeRequireSymbol(0,&inb_p);
+#endif
+  return 0;
+}
+
+Determining if the outb_p exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+File /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/io.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef outb_p
+  cmakeRequireSymbol(0,&outb_p);
+#endif
+  return 0;
+}
+
+Determining if files sys/io.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files usb.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/joystick.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/serial.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files asm/ioctls.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/serial.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files linux/wireless.h exist passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -Wall     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall     CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec -rdynamic 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gtk_dialog_new_with_buttons exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=gtk_dialog_new_with_buttons -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng12   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=gtk_dialog_new_with_buttons   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gtk_button_set_use_stock exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=gtk_button_set_use_stock -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng12   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=gtk_button_set_use_stock   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gtk_dialog_run exists passed with the following output:
+Change Dir: /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+gmake[1]: Entering directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_progress_report /fs/erewhon/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -Wall  -DCHECK_FUNCTION_EXISTS=gtk_dialog_run -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng12   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /fs/erewhon/group/systems/utils/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/fs/erewhon/group/systems/utils/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc    -Wall  -DCHECK_FUNCTION_EXISTS=gtk_dialog_run   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0 
+gmake[1]: Leaving directory `/fs/metacog/group/systems/player-3.0.2/build/CMakeFiles/CMakeTmp'
+
+

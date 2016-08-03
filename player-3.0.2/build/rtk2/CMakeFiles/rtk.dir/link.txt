@@ -1,0 +1,2 @@
+/usr/bin/ar cr librtk.a  CMakeFiles/rtk.dir/rtk.o CMakeFiles/rtk.dir/rtk_canvas.o CMakeFiles/rtk.dir/rtk_canvas_movie.o CMakeFiles/rtk.dir/rtk_fig.o CMakeFiles/rtk.dir/rtk_region.o CMakeFiles/rtk.dir/rtk_menu.o CMakeFiles/rtk.dir/rtk_table.o
+/usr/bin/ranlib librtk.a

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/fs/erewhon/group/systems/player-3.0.2/utils/logsplitter/logsplitter.c
+stdio.h
+-
+string.h
+-
+sys/types.h
+-
+stdlib.h
+-
+time.h
+-
+math.h
+-
+sys/stat.h
+-
+unistd.h
+-
+

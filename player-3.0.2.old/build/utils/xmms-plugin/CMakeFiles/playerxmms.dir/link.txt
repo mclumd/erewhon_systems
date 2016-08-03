@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplayerxmms.a  CMakeFiles/playerxmms.dir/playerxmms.o
+/usr/bin/ranlib libplayerxmms.a

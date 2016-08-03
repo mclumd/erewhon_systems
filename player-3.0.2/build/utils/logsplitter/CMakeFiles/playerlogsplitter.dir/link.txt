@@ -1,0 +1,1 @@
+/usr/bin/gcc   -Wall   CMakeFiles/playerlogsplitter.dir/logsplitter.o  -o playerlogsplitter -rdynamic -lm -Wl,-rpath,/fs/erewhon/group/systems/utils/lib 
