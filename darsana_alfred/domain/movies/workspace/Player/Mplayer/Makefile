@@ -1,0 +1,3 @@
+all:    *.java
+	javac *.java
+

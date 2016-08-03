@@ -1,0 +1,11 @@
+#! /bin/sh
+setenv ALFRED_BASE /fs/erewhon/group/systems/darsana_alfred
+setenv ACDM_BASE $ALFRED_BASE/Acdm
+rm $ACDM_BASE/logs/history
+rm $ACDM_BASE/logs/debugal
+rm $ACDM_BASE/logs/debugca
+
+$ALFRED_BASE/Carne/carne sfile $ACDM_BASE/etc/hostfile delay 0 load $ACDM_BASE/src/dm.pl debug $ACDM_BASE/logs/debugca
+#inkqml false
+chmod g+w $ACDM_BASE/logs/debugca
+chmod g+w $ACDM_BASE/etc/hostfile

@@ -1,0 +1,20 @@
+#! /bin/sh
+#sleep 20
+setenv ALFRED_BASE /fs/erewhon/group/systems/darsana_alfred/
+setenv ACDM_BASE $ALFRED_BASE/Acdm
+#xterm -bg black -fg green -e \
+Alma/alma \
+delay 0.1 \
+alfile $ACDM_BASE/src/acdm.al \
+sfile $ACDM_BASE/etc/hostfile \
+load $ACDM_BASE/src/tdm.alpr \
+history $ACDM_BASE/logs/history &
+#keyboard true &
+#debug 3 '/$ACDM_BASE/logs/debugal' &
+
+chmod g+w $ACDM_BASE/logs/debugal
+chmod g+w $ACDM_BASE/logs/history
+
+#keyboard true run false
+#sdb, sr
+

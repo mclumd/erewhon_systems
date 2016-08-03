@@ -1,0 +1,92 @@
+%***********************
+%Prolog code to be run within ALMA 
+
+:- ensure_loaded(library(lists)).
+:- ensure_loaded(library(sets)).
+:- ensure_loaded(library(occurs)).
+:- ensure_loaded(library(unify)).
+
+delete_form(A) :-
+df(A).
+
+
+mult_gather_all([S|Schemae],Asserts) :-
+gather_all(S,Asserts1),
+mult_gather_all(Schemae,Asserts2),
+append(Asserts1,Asserts2,Asserts).
+mult_gather_all([],[]).
+
+copy_all(Phase2,[A|Asserts],ID) :-
+A =.. [Phase,A1,ID1],
+Q =.. [Phase2,A1,ID],
+af(Q),
+copy_all(Phase2,Asserts,ID).
+copy_all(Phase2,[],ID).
+
+assert_all([A|Asserts]) :-
+af(A),
+assert_all(Asserts).
+assert_all([]).
+
+%finds the set of insatantiations of Term for which all Literals are true
+%for each Literal, finds the set of tokens of that literal in the kb
+%then finds the set of tokens of the term in all the tokens of the literal
+%the intersection of all these sets gives us the desired result
+log_findall(Term,[],NegLiterals,[]).
+log_findall(Term,Literals,NegLiterals,FinalTokens) :-
+log_findall1(Term,[],Literals,NegLiterals,FinalTokens).
+
+log_findall1(Term,TermTokensList,[Lit|Literals],NegLiterals,FinalTokens) :-
+get_term_tokens(Term,Lit,TermTokens),
+append([TermTokens],TermTokensList,TermTokensList1),
+log_findall1(Term,TermTokensList1,Literals,NegLiterals,FinalTokens).
+log_findall1(Term,TermTokensList,[],NegLiterals,FinalTokens) :-
+intersection(TermTokensList,PosTokens),
+findall(Token,(member(Token,PosTokens),member(NegLit,NegLiterals),
+               recsub(Token,Term,NegLit,NegLit1), pos_int(NegLit1)),NegTokens),
+remove_dups(NegTokens,NegTokens1),
+subtract(PosTokens,NegTokens1,FinalTokens).
+
+log_findall2(Term,PosTokens,[NegLit|NegLiterals],FinalTokens) :-
+log_findall2(Term,PosTokens,[],FinalTokens).
+
+
+%gets the tokens of Term found in all the Tokens of one literal
+get_term_tokens(Term,Lit,TermTokens) :-
+gather_all(Lit,LitTokens),
+findall(Term,(contains_term(Term,Lit),unify(Lit,LitToken),member(LitToken,LitTokens)),TermTokens).
+
+recsub(Term1,Term2,Expr,Expr2) :- 
+((var(Expr), Term1 == Expr,Expr2 = Term2);
+ (is_list(Expr), recsublist(Term1,Term2,Expr,Expr2));
+ (compound(Expr), Expr =.. [Func|Args],
+   recsublist(Term1,Term2,[Func|Args],Expr3),
+   Expr2 =.. Expr3);
+  Expr2 = Expr).
+
+recsublist(Term1,Term2,[Expr|Exprs],Expr2) :-
+recsub(Term1,Term2,Expr,Expr3),
+recsublist(Term1,Term2,Exprs,Expr4),
+append([Expr3],Expr4,Expr2).
+recsublist(Term1,Term2,[],[]).
+
+/* not used? - not sure what it does
+alltrue(Qualifier,QueryForms) :-
+gather_all(Qualifier,Qs),
+get_bindings(2,Qs,QBinds),
+alltrue(QBinds,QuerForms).
+alltrue(QBinds,[F|Forms]) :- 
+get_bindings(1,F,FBinds),
+subset(QBinds,FBinds),
+alltrue(QBinds,Forms).
+alltrue(_,[]).
+
+get_bindings(Num,[F|Forms],FormBinds) :-
+F =.. [_|AList],
+nth1(Num,AList,A),
+get_bindings(Num,Forms,FormBinds1),
+append(A,FormBinds1,FormBinds).
+get_bindings(Num,[],[]).
+
+*/
+

@@ -1,0 +1,28 @@
+
+DOMAIN		STUDENTS*	EMAIL
+
+House		[Michael]	mike000@mail.umd.edu
+		Jee		jhwang7@umd.edu
+
+Movie		[Sonny]		singha@wam.umd.edu
+		Chy		chunyan.mi@gmail.com
+		Iva		valva@wam.umd.edu
+		Siro		srkim@umd.edu
+
+Chess		[Dominique]	domfotso@gmail.com
+		[Luis]		lmarti@umd.edu
+		[Messay]	messay5@yahoo.com
+		Joon		jhong5@umd.edu
+
+Email		[Alexey]	alexv@umd.edu
+		Sattam		sdeb@wam.umd.edu
+
+Adventure	Luis		lmarti@umd.edu
+		Messay		messay5@yahoo.com
+
+Draughts	Dominique	domfotso@gmail.com
+
+
+* a bracketed name [] indicates someone who has stopped 
+  (or will soon stop) working on that domain.
+

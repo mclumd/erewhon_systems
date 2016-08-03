@@ -1,0 +1,99 @@
+
+!ENTRY org.eclipse.ui.ide 4 4 Dec 09, 2005 03:41:48.464
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 Dec 09, 2005 03:41:48.495
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 Dec 09, 2005 03:41:48.496
+!MESSAGE Could not write workspace metadata: /export/home/group/systems/Alfred/domain/movies/workspace/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree.
+!STACK 0
+java.io.FileNotFoundException: /export/home/group/systems/Alfred/domain/movies/workspace/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:49)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:914)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1327)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:1707)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:468)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+
+!ENTRY org.eclipse.core.runtime 4 2 Dec 09, 2005 03:41:49.91
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.runtime".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.ui.actions.DeleteResourceAction.<init>(DeleteResourceAction.java:174)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.createWorkbenchAction(DeleteAction.java:78)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.selectionChanged(DeleteAction.java:57)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchSelectionChanged(SelectionDispatchAction.java:200)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.selectionChanged(SelectionDispatchAction.java:195)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:159)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java:615)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:747)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:157)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:1394)
+	at org.eclipse.jface.viewers.StructuredViewer.handleDoubleSelect(StructuredViewer.java:617)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:721)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:189)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:186)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:236)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:82)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:731)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:2938)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2642)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1377)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1348)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:254)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:141)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:96)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:335)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:183)
+	at org.eclipse.core.launcher.Main.run(Main.java:644)
+	at org.eclipse.core.launcher.Main.main(Main.java:628)
+
+!ENTRY org.eclipse.core.runtime 4 2 Dec 09, 2005 03:41:53.623
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.runtime".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.ui.actions.CopyProjectAction.<init>(CopyProjectAction.java:85)
+	at org.eclipse.ui.actions.MoveProjectAction.<init>(MoveProjectAction.java:55)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.ReorgMoveAction.createWorkbenchAction(ReorgMoveAction.java:102)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.ReorgMoveAction.selectionChanged(ReorgMoveAction.java:55)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchSelectionChanged(SelectionDispatchAction.java:200)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.selectionChanged(SelectionDispatchAction.java:195)
+	at org.eclipse.jdt.ui.actions.MoveAction.selectionChanged(MoveAction.java:107)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:159)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java:615)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:747)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:157)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:1394)
+	at org.eclipse.jface.viewers.StructuredViewer.handleDoubleSelect(StructuredViewer.java:617)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:721)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:189)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:186)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:236)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:82)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:731)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:2938)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2642)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1377)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1348)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:254)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:141)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:96)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:335)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:183)
+	at org.eclipse.core.launcher.Main.run(Main.java:644)
+	at org.eclipse.core.launcher.Main.main(Main.java:628)

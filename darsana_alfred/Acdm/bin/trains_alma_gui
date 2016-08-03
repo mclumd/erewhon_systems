@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /fs/disco/group/systems/alma/Alma/gi/
+appletviewer almagui.html
+
+

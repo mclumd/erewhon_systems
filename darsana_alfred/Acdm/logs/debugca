@@ -1,0 +1,1116 @@
+Args: [sfile,/fs/disco/group/systems/Acdm/etc/hostfile,delay,0,load,/fs/disco/group/systems/Acdm/src/dm.pl,debug,/fs/disco/group/systems/Acdm/logs/debugca]Received: call(ah_init,[],0)
+19:35:24:900001
+Sending af(kqml_expr(kqml1,[register,receiver,im,name,dm]))
+19:35:24:979443
+Sending af(last_perf(kqml1))
+19:35:24:980723
+Sending af(kqml_expr(kqml3,[ready]))
+19:35:24:983726
+Sending af(kqml_expr(kqml2,[tell,receiver,im,content,kqml3]))
+19:35:24:984897
+Sending af(last_perf(kqml2))
+19:35:24:985826
+Sending af(kqml_expr(kqml5,[listen,parser]))
+19:35:24:989435
+Sending af(kqml_expr(kqml4,[request,sender,dm,receiver,im,content,kqml5]))
+19:35:24:990422
+Sending af(last_perf(kqml4))
+19:35:24:991376
+Sending done(call(ah_init,[],0),ah_init)
+Kqml(request :content (chdir "/fs/disco/group/systems/trains/logs/020416.1935") :sender splash :receiver dm)
+19:35:40:301271
+Sending af(gather_asserts)
+19:35:40:301888
+Sending af(kqml_expr(kqml7,[chdir,[47,102,115,47,100,105,115,99,111,47,103,114,111,117,112,47,115,121,115,116,101,109,115,47,116,114,97,105,110,115,47,108,111,103,115,47,48,50,48,52,49,54,46,49,57,51,53]]))
+19:35:40:311296
+Sending af(kqml_expr(kqml6,[request,content,kqml7,sender,splash,receiver,dm]))
+19:35:40:312992
+Sending af(last_perf(kqml6))
+19:35:40:314245
+Sending af(new_message(kqml6))
+19:35:40:315716
+Received: call(ah_preprocess_msg(kqml6),[new_message(kqml6)],kqml6)
+19:35:40:432755
+Sending af(msgname(kqml6,msg6))
+19:35:40:435645
+Sending af(new_message_kv(kqml6))
+19:35:40:436676
+Sending done(call(ah_preprocess_msg(kqml6),[new_message(kqml6)],kqml6),ah_preprocess_msg(kqml6))
+Kqml(tell :content (start-conversation :name "&,,,," :lang "US English" :sex "male" :intro nil :goals :rootabega :scoring t) :sender splash :receiver dm)
+19:35:40:516868
+Sending af(kqml_expr(kqml9,[start-conversation,name,[38,44,44,44,44],lang,[85,83,32,69,110,103,108,105,115,104],sex,[109,97,108,101],intro,nil,goals,rootabega,scoring,t]))
+19:35:40:519624
+Sending af(kqml_expr(kqml8,[tell,content,kqml9,sender,splash,receiver,dm]))
+19:35:40:521278
+Sending af(last_perf(kqml8))
+19:35:40:522270
+Sending af(new_message(kqml8))
+19:35:40:523433
+Received: call(ah_preprocess_msg(kqml8),[new_message(kqml8)],kqml8)
+19:35:40:766224
+Sending af(kqml_head(kqml8,tell))
+19:35:40:768100
+Sending af(kqml_kv(kqml8,[content,kqml9]))
+19:35:40:769226
+Sending af(kqml_kv(kqml8,[sender,splash]))
+19:35:40:770181
+Sending af(kqml_kv(kqml8,[receiver,dm]))
+19:35:40:771122
+Sending af(sender(kqml8,splash))
+19:35:40:772851
+Sending af(msgname(kqml8,msg8))
+19:35:40:773900
+Sending af(new_message_kv(kqml8))
+19:35:40:774808
+Sending done(call(ah_preprocess_msg(kqml8),[new_message(kqml8)],kqml8),ah_preprocess_msg(kqml8))
+Kqml(TELL :RECEIVER DM :CONTENT (PLAN-STATE :PLAN-ID R341 :PS-STATE PSS522) :sender score)
+19:35:41:199838
+Sending af(kqml_expr(kqml11,[plan-state,plan-id,r341,ps-state,pss522]))
+19:35:41:201886
+Sending af(kqml_expr(kqml10,[tell,receiver,dm,content,kqml11,sender,score]))
+19:35:41:203411
+Sending af(last_perf(kqml10))
+19:35:41:204428
+Sending af(new_message(kqml10))
+19:35:41:205802
+Received: call(ah_preprocess_msg(kqml10),[new_message(kqml10)],kqml10)
+19:35:41:324650
+Sending af(kqml_head(kqml10,tell))
+19:35:41:326749
+Sending af(kqml_kv(kqml10,[receiver,dm]))
+19:35:41:327876
+Sending af(kqml_kv(kqml10,[content,kqml11]))
+19:35:41:328825
+Sending af(kqml_kv(kqml10,[sender,score]))
+19:35:41:329763
+Sending af(kqml_head(kqml11,plan-state))
+19:35:41:330684
+Sending af(kqml_kv(kqml11,[plan-id,r341]))
+19:35:41:331625
+Sending af(kqml_kv(kqml11,[ps-state,pss522]))
+19:35:41:332649
+Sending af(sender(kqml10,score))
+19:35:41:334305
+Sending af(msgname(kqml10,msg10))
+19:35:41:335585
+Sending af(new_message_kv(kqml10))
+19:35:41:336559
+Sending done(call(ah_preprocess_msg(kqml10),[new_message(kqml10)],kqml10),ah_preprocess_msg(kqml10))
+Received: call(ah_translate_score(kqml10),[new_message(kqml10)],kqml10)
+19:35:41:465534
+Sending af(initial_ps_state(pss522))
+19:35:41:467491
+Sending done(call(ah_translate_score(kqml10),[new_message(kqml10)],kqml10),ah_translate_score(kqml10))
+Kqml(TELL :CONTENT (SA-WH-QUESTION :FOCUS :V11562 :OBJECTS  ((:DESCRIPTION (:STATUS :WH) (:VAR :V11562) (:CLASS :LOCATION)    (:LEX :WHERE) (:SORT :INDIVIDUAL))   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11598) (:SORT :SET)    (:CLASS (:PRED (:ARG :ELEM11605) (:CLASS :TRAIN)))))  :PATHS NIL :DEFS NIL :SEMANTICS  (:PROP (:VAR :V11584) (:CLASS (:BE :AT-LOC))   (:CONSTRAINT    (:AND (:LSUBJ :V11584 :V11598) (:LOBJ :V11584 :V11562))))  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD  :SYNTAX ((:SUBJECT . :V11598) (:OBJECT)) :SETTING NIL :INPUT  (WHERE BE THE TRAIN PUNC-QUESTION-MARK)) :RE 1 :sender parser :receiver dm)
+19:36:12:754461
+Sending af(kqml_expr(kqml16,[status,wh]))
+19:36:12:757388
+Sending af(kqml_expr(kqml17,[var,v11562]))
+19:36:12:765712
+Sending af(kqml_expr(kqml18,[class,location]))
+19:36:12:767299
+Sending af(kqml_expr(kqml19,[lex,where]))
+19:36:12:768604
+Sending af(kqml_expr(kqml20,[sort,individual]))
+19:36:12:769961
+Sending af(kqml_expr(kqml15,[description,kqml16,kqml17,kqml18,kqml19,kqml20]))
+19:36:12:771060
+Sending af(kqml_expr(kqml22,[status,definite]))
+19:36:12:772682
+Sending af(kqml_expr(kqml23,[var,v11598]))
+19:36:12:774026
+Sending af(kqml_expr(kqml24,[sort,set]))
+19:36:12:775342
+Sending af(kqml_expr(kqml27,[arg,elem11605]))
+19:36:12:777272
+Sending af(kqml_expr(kqml28,[class,train]))
+19:36:12:778643
+Sending af(kqml_expr(kqml26,[pred,kqml27,kqml28]))
+19:36:12:779912
+Sending af(kqml_expr(kqml25,[class,kqml26]))
+19:36:12:780950
+Sending af(kqml_expr(kqml21,[description,kqml22,kqml23,kqml24,kqml25]))
+19:36:12:782028
+Sending af(kqml_expr(kqml14,[kqml15,kqml21]))
+19:36:12:783072
+Sending af(kqml_expr(kqml30,[var,v11584]))
+19:36:12:784933
+Sending af(kqml_expr(kqml32,[be,at-loc]))
+19:36:12:787019
+Sending af(kqml_expr(kqml31,[class,kqml32]))
+19:36:12:788109
+Sending af(kqml_expr(kqml35,[lsubj,v11584,v11598]))
+19:36:12:790041
+Sending af(kqml_expr(kqml36,[lobj,v11584,v11562]))
+19:36:12:791819
+Sending af(kqml_expr(kqml34,[and,kqml35,kqml36]))
+19:36:12:792964
+Sending af(kqml_expr(kqml33,[constraint,kqml34]))
+19:36:12:794033
+Sending af(kqml_expr(kqml29,[prop,kqml30,kqml31,kqml33]))
+19:36:12:795139
+Sending af(kqml_expr(kqml38,[subject,.,v11598]))
+19:36:12:798288
+Sending af(kqml_expr(kqml39,[object]))
+19:36:12:799730
+Sending af(kqml_expr(kqml37,[kqml38,kqml39]))
+19:36:12:801064
+Sending af(kqml_expr(kqml40,[where,be,the,train,punc-question-mark]))
+19:36:12:803351
+Sending af(kqml_expr(kqml13,[sa-wh-question,focus,v11562,objects,kqml14,paths,nil,defs,nil,semantics,kqml29,noise,nil,social-context,nil,reliability,100,(mode),keyboard,syntax,kqml37,setting,nil,input,kqml40]))
+19:36:12:805269
+Sending af(kqml_expr(kqml12,[tell,content,kqml13,re,1,sender,parser,receiver,dm]))
+19:36:12:807547
+Sending af(last_perf(kqml12))
+19:36:12:808616
+Sending af(new_message(kqml12))
+19:36:12:811643
+Received: call(ah_preprocess_msg(kqml12),[new_message(kqml12)],kqml12)
+19:36:12:945026
+Sending af(kqml_head(kqml12,tell))
+19:36:12:957172
+Sending af(kqml_kv(kqml12,[content,kqml13]))
+19:36:12:958262
+Sending af(kqml_kv(kqml12,[re,1]))
+19:36:12:959204
+Sending af(kqml_kv(kqml12,[sender,parser]))
+19:36:12:960158
+Sending af(kqml_kv(kqml12,[receiver,dm]))
+19:36:12:961110
+Sending af(kqml_head(kqml13,sa-wh-question))
+19:36:12:962047
+Sending af(kqml_kv(kqml13,[focus,v11562]))
+19:36:12:963001
+Sending af(kqml_kv(kqml13,[objects,kqml14]))
+19:36:12:963965
+Sending af(kqml_kv(kqml13,[paths,nil]))
+19:36:12:964940
+Sending af(kqml_kv(kqml13,[defs,nil]))
+19:36:12:966113
+Sending af(kqml_kv(kqml13,[semantics,kqml29]))
+19:36:12:967147
+Sending af(kqml_kv(kqml13,[noise,nil]))
+19:36:12:968139
+Sending af(kqml_kv(kqml13,[social-context,nil]))
+19:36:12:969125
+Sending af(kqml_kv(kqml13,[reliability,100]))
+19:36:12:970116
+Sending af(kqml_kv(kqml13,[(mode),keyboard]))
+19:36:12:971126
+Sending af(kqml_kv(kqml13,[syntax,kqml37]))
+19:36:12:972139
+Sending af(kqml_kv(kqml13,[setting,nil]))
+19:36:12:973142
+Sending af(kqml_kv(kqml13,[input,kqml40]))
+19:36:12:974151
+Sending af(kqml_head(kqml15,description))
+19:36:12:983235
+Sending af(kqml_kv(kqml15,[status,wh]))
+19:36:12:984266
+Sending af(kqml_kv(kqml15,[var,v11562]))
+19:36:12:985269
+Sending af(kqml_kv(kqml15,[class,location]))
+19:36:12:986451
+Sending af(kqml_kv(kqml15,[lex,where]))
+19:36:12:987481
+Sending af(kqml_kv(kqml15,[sort,individual]))
+19:36:12:988501
+Sending af(kqml_head(kqml21,description))
+19:36:12:989503
+Sending af(kqml_kv(kqml21,[status,definite]))
+19:36:12:990519
+Sending af(kqml_kv(kqml21,[var,v11598]))
+19:36:12:991774
+Sending af(kqml_kv(kqml21,[sort,set]))
+19:36:12:992822
+Sending af(kqml_kv(kqml27,[arg,elem11605]))
+19:36:12:993919
+Sending af(kqml_kv(kqml28,[class,train]))
+19:36:12:994978
+Sending af(kqml_kv(kqml21,[class,kqml26]))
+19:36:13:2521
+Sending af(kqml_head(kqml29,prop))
+19:36:13:3671
+Sending af(kqml_kv(kqml29,[var,v11584]))
+19:36:13:4712
+Sending af(kqml_kv(kqml32,[be,at-loc]))
+19:36:13:6018
+Sending af(kqml_kv(kqml29,[class,kqml32]))
+19:36:13:7306
+Sending af(kqml_kv(kqml29,[constraint,kqml34]))
+19:36:13:8482
+Sending af(sender(kqml12,parser))
+19:36:13:9541
+Sending af(ireq(re(kqml12,1),kqml12))
+19:36:13:10597
+Sending af(msgname(kqml12,msg12))
+19:36:13:11655
+Sending af(new_message_kv(kqml12))
+19:36:13:12665
+Sending done(call(ah_preprocess_msg(kqml12),[new_message(kqml12)],kqml12),ah_preprocess_msg(kqml12))
+Received: call(ah_translate_parse(kqml12),[new_message(kqml12)],kqml12)
+19:36:13:190153
+Sending af(curr_utt(kqml12))
+19:36:13:202457
+Sending af(ireq(type(kqml12,sa-wh-question),kqml12))
+19:36:13:203661
+Sending af(ireq(focus(kqml12,v11562),kqml12))
+19:36:13:204683
+Sending af(ireq(obj(kqml12,v11562),kqml12))
+19:36:13:205722
+Sending af(ireq(status(v11562,wh),kqml12))
+19:36:13:208263
+Sending af(ireq(constraint(kqml12,[status,v11562,wh]),kqml12))
+19:36:13:209295
+Sending af(ireq(sort-of(v11562,individual),kqml12))
+19:36:13:210506
+Sending af(ireq(constraint(kqml12,[sort-of,v11562,individual]),kqml12))
+19:36:13:213222
+Sending af(ireq(lex(v11562,null),kqml12))
+19:36:13:214309
+Sending af(ireq(constraint(kqml12,[lex,v11562,where]),kqml12))
+19:36:13:217048
+Sending af(ireq(class(v11562,location),kqml12))
+19:36:13:218255
+Sending af(ireq(constraint(kqml12,[class,v11562,location]),kqml12))
+19:36:13:219309
+Sending af(ireq(obj(kqml12,v11598),kqml12))
+19:36:13:222122
+Sending af(ireq(status(v11598,definite),kqml12))
+19:36:13:223189
+Sending af(ireq(constraint(kqml12,[status,v11598,definite]),kqml12))
+19:36:13:224244
+Sending af(ireq(class(v11598,train),kqml12))
+19:36:13:227351
+Sending af(ireq(constraint(kqml12,[class,v11598,train]),kqml12))
+19:36:13:228446
+Sending af(ireq(sort-of(v11598,set),kqml12))
+19:36:13:230758
+Sending af(ireq(constraint(kqml12,[sort-of,v11598,set]),kqml12))
+19:36:13:231896
+Sending af(ireq(sem(kqml12,v11584),kqml12))
+19:36:13:233170
+Sending af(ireq(lsubj(v11584,v11598),kqml12))
+19:36:13:234237
+Sending af(ireq(lobj(v11584,v11562),kqml12))
+19:36:13:235297
+Sending af(ireq(at-loc(v11598,v11562),kqml12))
+19:36:13:236581
+Sending af(ireq(constraint(kqml12,[at-loc,v11598,v11562]),kqml12))
+19:36:13:237689
+Sending af(ireq(class(v11584,beatloc),kqml12))
+19:36:13:238742
+Sending af(ireq(lf(v11584,[at-loc,v11598,v11562]),kqml12))
+19:36:13:239870
+Sending af(ireq(lex(v11598,null),kqml12))
+19:36:13:241111
+Sending af(ireq(psConstraint(kqml12,[class,v11562,location],[type,v11562,city]),kqml12))
+19:36:13:243064
+Sending af(ireq(psConstraint(kqml12,[class,v11598,train],[type,v11598,engine]),kqml12))
+19:36:13:244570
+Sending af(ireq(psConstraint(kqml12,[at-loc,v11598,v11562],[at-loc,v11598,v11562]),kqml12))
+19:36:13:258390
+Sending done(call(ah_translate_parse(kqml12),[new_message(kqml12)],kqml12),ah_translate_parse(kqml12))
+Received: call(ah_kbr_question(kqml12,all,[],_7087),[dreq(re(kqml12,1),kqml12),dreq(status(v11562,wh),kqml12),dreq(status(v11598,definite),kqml12),dreq(constraint(kqml12,[status,v11562,wh]),kqml12),dreq(constraint(kqml12,[sort-of,v11562,individual]),kqml12),dreq(constraint(kqml12,[lex,v11562,where]),kqml12),dreq(constraint(kqml12,[class,v11562,location]),kqml12),dreq(constraint(kqml12,[status,v11598,definite]),kqml12),dreq(constraint(kqml12,[class,v11598,train]),kqml12),dreq(constraint(kqml12,[sort-of,v11598,set]),kqml12),dreq(constraint(kqml12,[at-loc,v11598,v11562]),kqml12),dreq(sort-of(v11562,individual),kqml12),dreq(sort-of(v11598,set),kqml12),dreq(sem(kqml12,v11584),kqml12),dreq(lobj(v11584,v11562),kqml12),dreq(at-loc(v11598,v11562),kqml12),dreq(class(v11562,location),kqml12),dreq(class(v11598,train),kqml12),dreq(class(v11584,beatloc),kqml12),dreq(lf(v11584,[at-loc,v11598,v11562]),kqml12),dreq(psConstraint(kqml12,[class,v11562,location],[type,v11562,city]),kqml12),dreq(psConstraint(kqml12,[class,v11598,train],[type,v11598,engine]),kqml12),dreq(psConstraint(kqml12,[at-loc,v11598,v11562],[at-loc,v11598,v11562]),kqml12),dreq(disambiguate(kqml12,v11562),kqml12),dreq(disambiguate(kqml12,v11598),kqml12),dreq(lex(v11562,null),kqml12),dreq(lex(v11598,null),kqml12),dreq(obj(kqml12,v11562),kqml12),dreq(obj(kqml12,v11598),kqml12),dreq(focus(kqml12,v11562),kqml12),dreq(lsubj(v11584,v11598),kqml12),dreq(type(kqml12,sa-wh-question),kqml12),dreq(psbstate(kqml12,pss522),kqml12)],kqml12)
+19:36:13:558096
+Sending af(dreq(psAspects(kqml12,[v11598,v11562]),kqml12))
+19:36:13:563556
+Sending af(kqml_expr(kqml41,[?v11598,?v11562]))
+19:36:13:565087
+Sending af(kqml_expr(kqml42,[:at-loc,?v11598,?v11562]))
+19:36:13:566859
+Sending af(kqml_expr(kqml43,[:type,?v11598,:engine]))
+19:36:13:568614
+Sending af(kqml_expr(kqml44,[:type,?v11562,:city]))
+19:36:13:570321
+Sending af(kqml_expr(kqml45,[:and,kqml42,kqml43,kqml44]))
+19:36:13:571959
+Sending af(kqml_head(kqml46,ask-all))
+19:36:13:573090
+Sending af(kqml_kv(kqml46,[:aspect,kqml41]))
+19:36:13:574070
+Sending af(kqml_kv(kqml46,[:content,kqml45]))
+19:36:13:575045
+Sending af(kqml_kv(kqml46,[:sender,dm]))
+19:36:13:576199
+Sending af(kqml_kv(kqml46,[:receiver,ps]))
+19:36:13:577205
+Sending af(kqml_kv(kqml46,[:re,msg12]))
+19:36:13:578241
+Sending af(kqml_kv(kqml46,[:reply-with,msg46]))
+19:36:13:579285
+Sending af(msgname(kqml46,msg46))
+19:36:13:582401
+Sending done(call(ah_kbr_question(kqml12,all,[],_6707),[dreq(re(kqml12,1),kqml12),dreq(status(v11562,wh),kqml12),dreq(status(v11598,definite),kqml12),dreq(constraint(kqml12,[status,v11562,wh]),kqml12),dreq(constraint(kqml12,[sort-of,v11562,individual]),kqml12),dreq(constraint(kqml12,[lex,v11562,where]),kqml12),dreq(constraint(kqml12,[class,v11562,location]),kqml12),dreq(constraint(kqml12,[status,v11598,definite]),kqml12),dreq(constraint(kqml12,[class,v11598,train]),kqml12),dreq(constraint(kqml12,[sort-of,v11598,set]),kqml12),dreq(constraint(kqml12,[at-loc,v11598,v11562]),kqml12),dreq(sort-of(v11562,individual),kqml12),dreq(sort-of(v11598,set),kqml12),dreq(sem(kqml12,v11584),kqml12),dreq(lobj(v11584,v11562),kqml12),dreq(at-loc(v11598,v11562),kqml12),dreq(class(v11562,location),kqml12),dreq(class(v11598,train),kqml12),dreq(class(v11584,beatloc),kqml12),dreq(lf(v11584,[at-loc,v11598,v11562]),kqml12),dreq(psConstraint(kqml12,[class,v11562,location],[type,v11562,city]),kqml12),dreq(psConstraint(kqml12,[class,v11598,train],[type,v11598,engine]),kqml12),dreq(psConstraint(kqml12,[at-loc,v11598,v11562],[at-loc,v11598,v11562]),kqml12),dreq(disambiguate(kqml12,v11562),kqml12),dreq(disambiguate(kqml12,v11598),kqml12),dreq(lex(v11562,null),kqml12),dreq(lex(v11598,null),kqml12),dreq(obj(kqml12,v11562),kqml12),dreq(obj(kqml12,v11598),kqml12),dreq(focus(kqml12,v11562),kqml12),dreq(lsubj(v11584,v11598),kqml12),dreq(type(kqml12,sa-wh-question),kqml12),dreq(psbstate(kqml12,pss522),kqml12)],kqml12),ah_kbr_question(kqml12,all,[],kqml46))
+Kqml(REPLY :CONTENT (ANSWER :RESULT  ((NORTHSTAR ATLANTA) (METROLINER DETROIT) (BULLET WASHINGTON)) :VARS  (?V11598 ?V11562)) :RECEIVER DM :IN-REPLY-TO MSG46 :RE MSG12 :sender ps)
+19:36:13:641705
+Sending af(kqml_expr(kqml50,[northstar,atlanta]))
+19:36:13:643748
+Sending af(kqml_expr(kqml51,[metroliner,detroit]))
+19:36:13:645224
+Sending af(kqml_expr(kqml52,[bullet,washington]))
+19:36:13:647090
+Sending af(kqml_expr(kqml49,[kqml50,kqml51,kqml52]))
+19:36:13:648133
+Sending af(kqml_expr(kqml53,[?v11598,?v11562]))
+19:36:13:649543
+Sending af(kqml_expr(kqml48,[answer,result,kqml49,vars,kqml53]))
+19:36:13:650608
+Sending af(kqml_expr(kqml47,[reply,content,kqml48,receiver,dm,in-reply-to,msg46,re,msg12,sender,ps]))
+19:36:13:652403
+Sending af(last_perf(kqml47))
+19:36:13:653406
+Sending af(new_message(kqml47))
+19:36:13:654955
+Received: call(ah_preprocess_msg(kqml47),[new_message(kqml47)],kqml47)
+19:36:13:828166
+Sending af(kqml_head(kqml47,reply))
+19:36:13:831624
+Sending af(kqml_kv(kqml47,[content,kqml48]))
+19:36:13:832656
+Sending af(kqml_kv(kqml47,[receiver,dm]))
+19:36:13:833588
+Sending af(kqml_kv(kqml47,[in-reply-to,msg46]))
+19:36:13:834527
+Sending af(kqml_kv(kqml47,[re,msg12]))
+19:36:13:835483
+Sending af(kqml_kv(kqml47,[sender,ps]))
+19:36:13:837033
+Sending af(kqml_head(kqml48,answer))
+19:36:13:837987
+Sending af(kqml_kv(kqml48,[result,kqml49]))
+19:36:13:838928
+Sending af(kqml_kv(kqml48,[vars,kqml53]))
+19:36:13:839880
+Sending af(sender(kqml47,ps))
+19:36:13:842769
+Sending af(ireq(re(kqml47,msg12),kqml47))
+19:36:13:843757
+Sending af(in-reply-to(kqml47,msg46))
+19:36:13:844710
+Sending af(msgname(kqml47,msg47))
+19:36:13:845682
+Sending af(new_message_kv(kqml47))
+19:36:13:847127
+Sending done(call(ah_preprocess_msg(kqml47),[new_message(kqml47)],kqml47),ah_preprocess_msg(kqml47))
+Received: call(ah_translate_kbr(kqml12,kqml47),[new_message(kqml47),dreq(lf(v11584,[at-loc,v11598,v11562]),kqml12),dreq(lex(v11562,null),kqml12),dreq(lex(v11598,null),kqml12)],kqml47)
+19:36:13:994543
+Sending af(dreq(result(kqml47,kqml49),kqml12))
+19:36:13:997986
+Sending af(dreq(candidates(v11598,[northstar,metroliner,bullet]),kqml12))
+19:36:13:999491
+Sending af(dreq(candidates(v11562,[atlanta,detroit,washington]),kqml12))
+19:36:14:556
+Sending done(call(ah_translate_kbr(kqml12,kqml47),[new_message(kqml47),dreq(lf(v11584,[at-loc,v11598,v11562]),kqml12),dreq(lex(v11562,null),kqml12),dreq(lex(v11598,null),kqml12)],kqml47),ah_translate_kbr(kqml12,kqml47))
+Received: call(ah_outmgrconfirm(kqml12,inform,_7161),[pact(type(kqml12,sa-wh-question),kqml12),pact(focus(kqml12,v11562),kqml12),pact(lsubj(v11584,v11598),kqml12),pact(obj(kqml12,v11562),kqml12),pact(obj(kqml12,v11598),kqml12),pact(lex(v11598,[northstar,metroliner,bullet]),kqml12),pact(lex(v11562,[atlanta,detroit,washington]),kqml12),pact(disambiguate(kqml12,v11562),kqml12),pact(disambiguate(kqml12,v11598),kqml12),pact(psConstraint(kqml12,[class,v11562,location],[type,v11562,city]),kqml12),pact(psConstraint(kqml12,[class,v11598,train],[type,v11598,engine]),kqml12),pact(psConstraint(kqml12,[at-loc,v11598,v11562],[at-loc,v11598,v11562]),kqml12),pact(result(kqml47,kqml49),kqml12),pact(result(kqml12,T),kqml12),pact(candidates(v11598,[northstar,metroliner,bullet]),kqml12),pact(candidates(v11562,[atlanta,detroit,washington]),kqml12),pact(lf(v11584,[at-loc,v11598,v11562]),kqml12),pact(class(v11562,location),kqml12),pact(class(v11598,train),kqml12),pact(class(v11584,beatloc),kqml12),pact(at-loc(v11598,v11562),kqml12),pact(lobj(v11584,v11562),kqml12),pact(sem(kqml12,v11584),kqml12),pact(sort-of(v11562,individual),kqml12),pact(sort-of(v11598,set),kqml12),pact(constraint(kqml12,[status,v11562,wh]),kqml12),pact(constraint(kqml12,[sort-of,v11562,individual]),kqml12),pact(constraint(kqml12,[lex,v11562,where]),kqml12),pact(constraint(kqml12,[class,v11562,location]),kqml12),pact(constraint(kqml12,[status,v11598,definite]),kqml12),pact(constraint(kqml12,[class,v11598,train]),kqml12),pact(constraint(kqml12,[sort-of,v11598,set]),kqml12),pact(constraint(kqml12,[at-loc,v11598,v11562]),kqml12),pact(status(v11562,wh),kqml12),pact(status(v11598,definite),kqml12),pact(re(kqml12,1),kqml12),pact(psAspects(kqml12,[v11598,v11562]),kqml12),pact(psbstate(kqml12,pss522),kqml12),pact(psstate(kqml12,pss522),kqml12)],kqml12)
+19:36:14:341815
+Sending af(kqml_expr(kqml54,[at-loc,bullet,washington]))
+19:36:14:346778
+Sending af(kqml_expr(kqml55,[at-loc,metroliner,detroit]))
+19:36:14:348072
+Sending af(kqml_expr(kqml56,[at-loc,northstar,atlanta]))
+19:36:14:349224
+Sending af(kqml_expr(kqml57,[and,kqml56,kqml55,kqml54]))
+19:36:14:350421
+Sending af(kqml_expr(kqml58,[northstar,metroliner,bullet]))
+19:36:14:351596
+Sending af(kqml_expr(kqml59,[type,bullet,engine]))
+19:36:14:352866
+Sending af(kqml_expr(kqml60,[type,washington,city]))
+19:36:14:354024
+Sending af(kqml_expr(kqml61,[type,metroliner,engine]))
+19:36:14:355238
+Sending af(kqml_expr(kqml62,[type,detroit,city]))
+19:36:14:356589
+Sending af(kqml_expr(kqml63,[type,northstar,engine]))
+19:36:14:357824
+Sending af(kqml_expr(kqml64,[type,atlanta,city]))
+19:36:14:359000
+Sending af(kqml_expr(kqml65,[and,kqml63,kqml64,kqml61,kqml62,kqml59,kqml60]))
+19:36:14:360316
+Sending af(kqml_head(kqml66,express))
+19:36:14:361515
+Sending af(kqml_kv(kqml66,[:speech-act,inform]))
+19:36:14:362533
+Sending af(kqml_kv(kqml66,[:focus,kqml58]))
+19:36:14:363546
+Sending af(kqml_kv(kqml66,[:media,unspecified]))
+19:36:14:364561
+Sending af(kqml_kv(kqml66,[:content,kqml57]))
+19:36:14:365584
+Sending af(kqml_kv(kqml66,[:constraints,kqml65]))
+19:36:14:366778
+Sending af(kqml_kv(kqml66,[:sender,dm]))
+19:36:14:367830
+Sending af(kqml_kv(kqml66,[:receiver,outmgr]))
+19:36:14:368870
+Sending af(kqml_kv(kqml66,[:re,msg12]))
+19:36:14:369939
+Sending af(kqml_kv(kqml66,[:reply-with,msg66]))
+19:36:14:371022
+Sending af(msgname(kqml66,msg66))
+19:36:14:377251
+Sending done(call(ah_outmgrconfirm(kqml12,inform,_6706),[pact(type(kqml12,sa-wh-question),kqml12),pact(focus(kqml12,v11562),kqml12),pact(lsubj(v11584,v11598),kqml12),pact(obj(kqml12,v11562),kqml12),pact(obj(kqml12,v11598),kqml12),pact(lex(v11598,[northstar,metroliner,bullet]),kqml12),pact(lex(v11562,[atlanta,detroit,washington]),kqml12),pact(disambiguate(kqml12,v11562),kqml12),pact(disambiguate(kqml12,v11598),kqml12),pact(psConstraint(kqml12,[class,v11562,location],[type,v11562,city]),kqml12),pact(psConstraint(kqml12,[class,v11598,train],[type,v11598,engine]),kqml12),pact(psConstraint(kqml12,[at-loc,v11598,v11562],[at-loc,v11598,v11562]),kqml12),pact(result(kqml47,kqml49),kqml12),pact(result(kqml12,T),kqml12),pact(candidates(v11598,[northstar,metroliner,bullet]),kqml12),pact(candidates(v11562,[atlanta,detroit,washington]),kqml12),pact(lf(v11584,[at-loc,v11598,v11562]),kqml12),pact(class(v11562,location),kqml12),pact(class(v11598,train),kqml12),pact(class(v11584,beatloc),kqml12),pact(at-loc(v11598,v11562),kqml12),pact(lobj(v11584,v11562),kqml12),pact(sem(kqml12,v11584),kqml12),pact(sort-of(v11562,individual),kqml12),pact(sort-of(v11598,set),kqml12),pact(constraint(kqml12,[status,v11562,wh]),kqml12),pact(constraint(kqml12,[sort-of,v11562,individual]),kqml12),pact(constraint(kqml12,[lex,v11562,where]),kqml12),pact(constraint(kqml12,[class,v11562,location]),kqml12),pact(constraint(kqml12,[status,v11598,definite]),kqml12),pact(constraint(kqml12,[class,v11598,train]),kqml12),pact(constraint(kqml12,[sort-of,v11598,set]),kqml12),pact(constraint(kqml12,[at-loc,v11598,v11562]),kqml12),pact(status(v11562,wh),kqml12),pact(status(v11598,definite),kqml12),pact(re(kqml12,1),kqml12),pact(psAspects(kqml12,[v11598,v11562]),kqml12),pact(psbstate(kqml12,pss522),kqml12),pact(psstate(kqml12,pss522),kqml12)],kqml12),ah_outmgrconfirm(kqml12,inform,kqml66))
+Kqml(TELL :CONTENT (SA-REQUEST :FOCUS :V11692 :OBJECTS  ((:DESCRIPTION (:STATUS :NAME) (:VAR :V11644) (:CLASS :CITY)    (:LEX :WASHINGTON) (:SORT :INDIVIDUAL))   (:DESCRIPTION (:STATUS :DEFINITE) (:VAR :V11655) (:CLASS :TRAIN)    (:SORT :INDIVIDUAL) (:CONSTRAINT (:ASSOC-WITH :V11655 :V11644)))   (:DESCRIPTION (:STATUS :NAME) (:VAR :V11692) (:CLASS :CITY)    (:LEX :SCRANTON) (:SORT :INDIVIDUAL)))  :PATHS ((:PATH (:VAR :V11684) (:CONSTRAINT (:TO :V11684 :V11692))))  :DEFS NIL :SEMANTICS  (:PROP (:VAR :V11631) (:CLASS :MOVE)   (:CONSTRAINT    (:AND (:LSUBJ :V11631 :*YOU*) (:LOBJ :V11631 :V11655)     (:LCOMP :V11631 :V11684))))  :NOISE NIL :SOCIAL-CONTEXT NIL :RELIABILITY 100 :MODE KEYBOARD  :SYNTAX ((:SUBJECT . :*YOU*) (:OBJECT . :V11655)) :SETTING NIL :INPUT  (SEND THE WASHINGTON TRAIN TO SCRANTON)) :RE 2 :sender parser :receiver dm)
+19:36:34:288618
+Sending af(kqml_expr(kqml71,[status,name]))
+19:36:34:291143
+Sending af(kqml_expr(kqml72,[var,v11644]))
+19:36:34:300360
+Sending af(kqml_expr(kqml73,[class,city]))
+19:36:34:301724
+Sending af(kqml_expr(kqml74,[lex,washington]))
+19:36:34:303078
+Sending af(kqml_expr(kqml75,[sort,individual]))
+19:36:34:304433
+Sending af(kqml_expr(kqml70,[description,kqml71,kqml72,kqml73,kqml74,kqml75]))
+19:36:34:305527
+Sending af(kqml_expr(kqml77,[status,definite]))
+19:36:34:307455
+Sending af(kqml_expr(kqml78,[var,v11655]))
+19:36:34:308808
+Sending af(kqml_expr(kqml79,[class,train]))
+19:36:34:310137
+Sending af(kqml_expr(kqml80,[sort,individual]))
+19:36:34:311488
+Sending af(kqml_expr(kqml82,[assoc-with,v11655,v11644]))
+19:36:34:313223
+Sending af(kqml_expr(kqml81,[constraint,kqml82]))
+19:36:34:314283
+Sending af(kqml_expr(kqml76,[description,kqml77,kqml78,kqml79,kqml80,kqml81]))
+19:36:34:315385
+Sending af(kqml_expr(kqml84,[status,name]))
+19:36:34:317634
+Sending af(kqml_expr(kqml85,[var,v11692]))
+19:36:34:319024
+Sending af(kqml_expr(kqml86,[class,city]))
+19:36:34:320358
+Sending af(kqml_expr(kqml87,[lex,scranton]))
+19:36:34:321739
+Sending af(kqml_expr(kqml88,[sort,individual]))
+19:36:34:323117
+Sending af(kqml_expr(kqml83,[description,kqml84,kqml85,kqml86,kqml87,kqml88]))
+19:36:34:324257
+Sending af(kqml_expr(kqml69,[kqml70,kqml76,kqml83]))
+19:36:34:325341
+Sending af(kqml_expr(kqml91,[var,v11684]))
+19:36:34:327291
+Sending af(kqml_expr(kqml93,[to,v11684,v11692]))
+19:36:34:329021
+Sending af(kqml_expr(kqml92,[constraint,kqml93]))
+19:36:34:330115
+Sending af(kqml_expr(kqml90,[path,kqml91,kqml92]))
+19:36:34:331180
+Sending af(kqml_expr(kqml89,[kqml90]))
+19:36:34:332209
+Sending af(kqml_expr(kqml95,[var,v11631]))
+19:36:34:334221
+Sending af(kqml_expr(kqml96,[class,move]))
+19:36:34:335626
+Sending af(kqml_expr(kqml99,[lsubj,v11631,*you*]))
+19:36:34:337768
+Sending af(kqml_expr(kqml100,[lobj,v11631,v11655]))
+19:36:34:339359
+Sending af(kqml_expr(kqml101,[lcomp,v11631,v11684]))
+19:36:34:340949
+Sending af(kqml_expr(kqml98,[and,kqml99,kqml100,kqml101]))
+19:36:34:342158
+Sending af(kqml_expr(kqml97,[constraint,kqml98]))
+19:36:34:343260
+Sending af(kqml_expr(kqml94,[prop,kqml95,kqml96,kqml97]))
+19:36:34:344950
+Sending af(kqml_expr(kqml103,[subject,.,*you*]))
+19:36:34:347956
+Sending af(kqml_expr(kqml104,[object,.,v11655]))
+19:36:34:349618
+Sending af(kqml_expr(kqml102,[kqml103,kqml104]))
+19:36:34:350829
+Sending af(kqml_expr(kqml105,[send,the,washington,train,to,scranton]))
+19:36:34:352967
+Sending af(kqml_expr(kqml68,[sa-request,focus,v11692,objects,kqml69,paths,kqml89,defs,nil,semantics,kqml94,noise,nil,social-context,nil,reliability,100,(mode),keyboard,syntax,kqml102,setting,nil,input,kqml105]))
+19:36:34:354733
+Sending af(kqml_expr(kqml67,[tell,content,kqml68,re,2,sender,parser,receiver,dm]))
+19:36:34:356808
+Sending af(last_perf(kqml67))
+19:36:34:357929
+Sending af(new_message(kqml67))
+19:36:34:361671
+Received: call(ah_preprocess_msg(kqml67),[new_message(kqml67)],kqml67)
+19:36:34:505667
+Sending af(kqml_head(kqml67,tell))
+19:36:34:521320
+Sending af(kqml_kv(kqml67,[content,kqml68]))
+19:36:34:529416
+Sending af(kqml_kv(kqml67,[re,2]))
+19:36:34:530432
+Sending af(kqml_kv(kqml67,[sender,parser]))
+19:36:34:531385
+Sending af(kqml_kv(kqml67,[receiver,dm]))
+19:36:34:532343
+Sending af(kqml_head(kqml68,sa-request))
+19:36:34:533269
+Sending af(kqml_kv(kqml68,[focus,v11692]))
+19:36:34:534209
+Sending af(kqml_kv(kqml68,[objects,kqml69]))
+19:36:34:535169
+Sending af(kqml_kv(kqml68,[paths,kqml89]))
+19:36:34:536137
+Sending af(kqml_kv(kqml68,[defs,nil]))
+19:36:34:537289
+Sending af(kqml_kv(kqml68,[semantics,kqml94]))
+19:36:34:538268
+Sending af(kqml_kv(kqml68,[noise,nil]))
+19:36:34:539255
+Sending af(kqml_kv(kqml68,[social-context,nil]))
+19:36:34:540241
+Sending af(kqml_kv(kqml68,[reliability,100]))
+19:36:34:541245
+Sending af(kqml_kv(kqml68,[(mode),keyboard]))
+19:36:34:542260
+Sending af(kqml_kv(kqml68,[syntax,kqml102]))
+19:36:34:543271
+Sending af(kqml_kv(kqml68,[setting,nil]))
+19:36:34:544291
+Sending af(kqml_kv(kqml68,[input,kqml105]))
+19:36:34:545305
+Sending af(kqml_head(kqml70,description))
+19:36:34:557192
+Sending af(kqml_kv(kqml70,[status,name]))
+19:36:34:558228
+Sending af(kqml_kv(kqml70,[var,v11644]))
+19:36:34:559232
+Sending af(kqml_kv(kqml70,[class,city]))
+19:36:34:560244
+Sending af(kqml_kv(kqml70,[lex,washington]))
+19:36:34:561267
+Sending af(kqml_kv(kqml70,[sort,individual]))
+19:36:34:562299
+Sending af(kqml_head(kqml76,description))
+19:36:34:563300
+Sending af(kqml_kv(kqml76,[status,definite]))
+19:36:34:564309
+Sending af(kqml_kv(kqml76,[var,v11655]))
+19:36:34:565347
+Sending af(kqml_kv(kqml76,[class,train]))
+19:36:34:567694
+Sending af(kqml_kv(kqml76,[sort,individual]))
+19:36:34:568833
+Sending af(kqml_kv(kqml76,[constraint,kqml82]))
+19:36:34:569920
+Sending af(kqml_head(kqml83,description))
+19:36:34:572097
+Sending af(kqml_kv(kqml83,[status,name]))
+19:36:34:573202
+Sending af(kqml_kv(kqml83,[var,v11692]))
+19:36:34:574265
+Sending af(kqml_kv(kqml83,[class,city]))
+19:36:34:575323
+Sending af(kqml_kv(kqml83,[lex,scranton]))
+19:36:34:576556
+Sending af(kqml_kv(kqml83,[sort,individual]))
+19:36:34:577649
+Sending af(kqml_head(kqml90,path))
+19:36:34:578679
+Sending af(kqml_kv(kqml90,[var,v11684]))
+19:36:34:579725
+Sending af(kqml_kv(kqml90,[constraint,kqml93]))
+19:36:34:580837
+Sending af(kqml_head(kqml94,prop))
+19:36:34:581868
+Sending af(kqml_kv(kqml94,[var,v11631]))
+19:36:34:582911
+Sending af(kqml_kv(kqml94,[class,move]))
+19:36:34:584040
+Sending af(kqml_kv(kqml94,[constraint,kqml98]))
+19:36:34:585284
+Sending af(sender(kqml67,parser))
+19:36:34:586604
+Sending af(ireq(re(kqml67,2),kqml67))
+19:36:34:587714
+Sending af(msgname(kqml67,msg67))
+19:36:34:588798
+Sending af(new_message_kv(kqml67))
+19:36:34:589852
+Sending done(call(ah_preprocess_msg(kqml67),[new_message(kqml67)],kqml67),ah_preprocess_msg(kqml67))
+Received: call(ah_translate_parse(kqml67),[new_message(kqml67)],kqml67)
+19:36:34:788099
+Sending af(curr_utt(kqml67))
+19:36:34:797111
+Sending af(ireq(type(kqml67,sa-request),kqml67))
+19:36:34:798289
+Sending af(ireq(focus(kqml67,v11692),kqml67))
+19:36:34:799304
+Sending af(ireq(obj(kqml67,v11644),kqml67))
+19:36:34:800343
+Sending af(ireq(status(v11644,name),kqml67))
+19:36:34:801316
+Sending af(ireq(constraint(kqml67,[status,v11644,name]),kqml67))
+19:36:34:802330
+Sending af(ireq(sort-of(v11644,individual),kqml67))
+19:36:34:803404
+Sending af(ireq(constraint(kqml67,[sort-of,v11644,individual]),kqml67))
+19:36:34:804429
+Sending af(ireq(lex(v11644,washington),kqml67))
+19:36:34:805485
+Sending af(ireq(constraint(kqml67,[lex,v11644,washington]),kqml67))
+19:36:34:806849
+Sending af(ireq(class(v11644,city),kqml67))
+19:36:34:807977
+Sending af(ireq(constraint(kqml67,[class,v11644,city]),kqml67))
+19:36:34:809023
+Sending af(ireq(obj(kqml67,v11655),kqml67))
+19:36:34:810224
+Sending af(ireq(status(v11655,definite),kqml67))
+19:36:34:811237
+Sending af(ireq(constraint(kqml67,[status,v11655,definite]),kqml67))
+19:36:34:812299
+Sending af(ireq(at-loc(v11655,v11644),kqml67))
+19:36:34:813440
+Sending af(ireq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67))
+19:36:34:814513
+Sending af(ireq(sort-of(v11655,individual),kqml67))
+19:36:34:815608
+Sending af(ireq(constraint(kqml67,[sort-of,v11655,individual]),kqml67))
+19:36:34:831956
+Sending af(ireq(class(v11655,train),kqml67))
+19:36:34:833173
+Sending af(ireq(constraint(kqml67,[class,v11655,train]),kqml67))
+19:36:34:834254
+Sending af(ireq(obj(kqml67,v11692),kqml67))
+19:36:34:835474
+Sending af(ireq(status(v11692,name),kqml67))
+19:36:34:836668
+Sending af(ireq(constraint(kqml67,[status,v11692,name]),kqml67))
+19:36:34:837774
+Sending af(ireq(sort-of(v11692,individual),kqml67))
+19:36:34:838902
+Sending af(ireq(constraint(kqml67,[sort-of,v11692,individual]),kqml67))
+19:36:34:840010
+Sending af(ireq(lex(v11692,scranton),kqml67))
+19:36:34:841145
+Sending af(ireq(constraint(kqml67,[lex,v11692,scranton]),kqml67))
+19:36:34:842269
+Sending af(ireq(class(v11692,city),kqml67))
+19:36:34:843412
+Sending af(ireq(constraint(kqml67,[class,v11692,city]),kqml67))
+19:36:34:844538
+Sending af(ireq(path(kqml67,v11684),kqml67))
+19:36:34:845861
+Sending af(ireq(to(v11684,v11692),kqml67))
+19:36:34:847520
+Sending af(ireq(constraint(kqml67,[to,v11684,v11692]),kqml67))
+19:36:34:848654
+Sending af(ireq(sem(kqml67,v11631),kqml67))
+19:36:34:849786
+Sending af(ireq(lsubj(v11631,*you*),kqml67))
+19:36:34:850895
+Sending af(ireq(lobj(v11631,v11655),kqml67))
+19:36:34:851991
+Sending af(ireq(lcomp(v11631,v11684),kqml67))
+19:36:34:853106
+Sending af(ireq(class(v11631,move),kqml67))
+19:36:34:854245
+Sending af(ireq(lf(v11631,[move,v11655,v11692]),kqml67))
+19:36:34:855442
+Sending af(ireq(lex(v11655,null),kqml67))
+19:36:34:857254
+Sending af(ireq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67))
+19:36:34:859352
+Sending af(ireq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67))
+19:36:34:860930
+Sending af(ireq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67))
+19:36:34:862485
+Sending af(ireq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67))
+19:36:34:864148
+Sending done(call(ah_translate_parse(kqml67),[new_message(kqml67)],kqml67),ah_translate_parse(kqml67))
+Received: call(ah_kbr_question(kqml67,all,[],_1118),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67)
+19:36:35:329596
+Sending af(dreq(psAspects(kqml67,[v11655]),kqml67))
+19:36:35:335104
+Sending af(kqml_expr(kqml106,[?v11655]))
+19:36:35:336655
+Sending af(kqml_expr(kqml107,[:type,scranton,:city]))
+19:36:35:338274
+Sending af(kqml_expr(kqml108,[:type,?v11655,:engine]))
+19:36:35:339901
+Sending af(kqml_expr(kqml109,[:at-loc,?v11655,washington]))
+19:36:35:341674
+Sending af(kqml_expr(kqml110,[:type,washington,:city]))
+19:36:35:343377
+Sending af(kqml_expr(kqml111,[:and,kqml107,kqml108,kqml109,kqml110]))
+19:36:35:344819
+Sending af(kqml_head(kqml112,ask-all))
+19:36:35:345961
+Sending af(kqml_kv(kqml112,[:aspect,kqml106]))
+19:36:35:347105
+Sending af(kqml_kv(kqml112,[:content,kqml111]))
+19:36:35:348113
+Sending af(kqml_kv(kqml112,[:sender,dm]))
+19:36:35:349120
+Sending af(kqml_kv(kqml112,[:receiver,ps]))
+19:36:35:350112
+Sending af(kqml_kv(kqml112,[:re,msg67]))
+19:36:35:351158
+Sending af(kqml_kv(kqml112,[:reply-with,msg112]))
+19:36:35:352215
+Sending af(msgname(kqml112,msg112))
+19:36:35:355625
+Sending done(call(ah_kbr_question(kqml67,all,[],_591),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67),ah_kbr_question(kqml67,all,[],kqml112))
+Kqml(REPLY :CONTENT (ANSWER :RESULT ((BULLET)) :VARS (?V11655)) :RECEIVER DM :IN-REPLY-TO MSG112 :RE MSG67 :sender ps)
+19:36:35:404855
+Sending af(kqml_expr(kqml116,[bullet]))
+19:36:35:407304
+Sending af(kqml_expr(kqml115,[kqml116]))
+19:36:35:408371
+Sending af(kqml_expr(kqml117,[?v11655]))
+19:36:35:409622
+Sending af(kqml_expr(kqml114,[answer,result,kqml115,vars,kqml117]))
+19:36:35:410667
+Sending af(kqml_expr(kqml113,[reply,content,kqml114,receiver,dm,in-reply-to,msg112,re,msg67,sender,ps]))
+19:36:35:412527
+Sending af(last_perf(kqml113))
+19:36:35:413556
+Sending af(new_message(kqml113))
+19:36:35:414944
+Received: call(ah_preprocess_msg(kqml113),[new_message(kqml113)],kqml113)
+19:36:35:696531
+Sending af(kqml_head(kqml113,reply))
+19:36:35:699299
+Sending af(kqml_kv(kqml113,[content,kqml114]))
+19:36:35:700340
+Sending af(kqml_kv(kqml113,[receiver,dm]))
+19:36:35:701293
+Sending af(kqml_kv(kqml113,[in-reply-to,msg112]))
+19:36:35:702249
+Sending af(kqml_kv(kqml113,[re,msg67]))
+19:36:35:703203
+Sending af(kqml_kv(kqml113,[sender,ps]))
+19:36:35:704176
+Sending af(kqml_head(kqml114,answer))
+19:36:35:705112
+Sending af(kqml_kv(kqml114,[result,kqml115]))
+19:36:35:706068
+Sending af(kqml_kv(kqml114,[vars,kqml117]))
+19:36:35:707203
+Sending af(sender(kqml113,ps))
+19:36:35:709572
+Sending af(ireq(re(kqml113,msg67),kqml113))
+19:36:35:710566
+Sending af(in-reply-to(kqml113,msg112))
+19:36:35:711506
+Sending af(msgname(kqml113,msg113))
+19:36:35:712488
+Sending af(new_message_kv(kqml113))
+19:36:35:713398
+Sending done(call(ah_preprocess_msg(kqml113),[new_message(kqml113)],kqml113),ah_preprocess_msg(kqml113))
+Received: call(ah_translate_kbr(kqml67,kqml113),[new_message(kqml113),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67)],kqml113)
+19:36:35:872414
+Sending af(dreq(result(kqml113,kqml115),kqml67))
+19:36:35:875498
+Sending af(dreq(candidates(v11655,[bullet]),kqml67))
+19:36:35:876915
+Sending done(call(ah_translate_kbr(kqml67,kqml113),[new_message(kqml113),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67)],kqml113),ah_translate_kbr(kqml67,kqml113))
+Received: call(ah_resolve_ref(kqml67,v11655,[bullet]),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(psAspects(kqml67,[v11655]),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(candidates(v11655,[bullet]),kqml67),dreq(result(kqml113,kqml115),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67)
+19:36:36:78566
+Send df(dreq(lex(v11655,_5370),kqml67))
+19:36:36:83833
+Sending af(dreq(lex(v11655,[bullet]),kqml67))
+19:36:36:84851
+Sending done(call(ah_resolve_ref(kqml67,v11655,[bullet]),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(psAspects(kqml67,[v11655]),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(candidates(v11655,[bullet]),kqml67),dreq(result(kqml113,kqml115),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,null),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67),ah_resolve_ref(kqml67,v11655,[bullet]))
+Received: call(ah_ir_question(kqml67,:new-subplan,_1154),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(psAspects(kqml67,[v11655]),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(candidates(v11655,[bullet]),kqml67),dreq(result(kqml113,kqml115),kqml67),dreq(result(kqml67,T),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,[bullet]),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67)
+19:36:36:451418
+Sending af(kqml_expr(kqml118,[:agent,[bullet]]))
+19:36:36:457320
+Sending af(kqml_expr(kqml119,[:to,scranton]))
+19:36:36:458700
+Sending af(kqml_expr(kqml120,[:and,kqml118,kqml119]))
+19:36:36:459877
+Sending af(kqml_expr(kqml121,[:go,go1,kqml120]))
+19:36:36:461034
+Sending af(kqml_head(kqml122,:new-subplan))
+19:36:36:462134
+Sending af(kqml_kv(kqml122,[:plan-id,r341]))
+19:36:36:463101
+Sending af(kqml_kv(kqml122,[:content,kqml121]))
+19:36:36:464065
+Sending af(kqml_head(kqml123,request))
+19:36:36:465159
+Sending af(kqml_kv(kqml123,[:content,kqml122]))
+19:36:36:466147
+Sending af(kqml_kv(kqml123,[:sender,dm]))
+19:36:36:467378
+Sending af(kqml_kv(kqml123,[:receiver,ps]))
+19:36:36:468363
+Sending af(kqml_kv(kqml123,[:re,msg67]))
+19:36:36:469385
+Sending af(kqml_kv(kqml123,[:reply-with,msg123]))
+19:36:36:470437
+Sending af(msgname(kqml123,msg123))
+19:36:36:473445
+Sending done(call(ah_ir_question(kqml67,:new-subplan,_590),[dreq(path(kqml67,v11684),kqml67),dreq(to(v11684,v11692),kqml67),dreq(lcomp(v11631,v11684),kqml67),dreq(psAspects(kqml67,[v11655]),kqml67),dreq(re(kqml67,2),kqml67),dreq(status(v11644,name),kqml67),dreq(status(v11655,definite),kqml67),dreq(status(v11692,name),kqml67),dreq(constraint(kqml67,[status,v11644,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11644,individual]),kqml67),dreq(constraint(kqml67,[lex,v11644,washington]),kqml67),dreq(constraint(kqml67,[class,v11644,city]),kqml67),dreq(constraint(kqml67,[status,v11655,definite]),kqml67),dreq(constraint(kqml67,[at-loc,v11655,v11644]),kqml67),dreq(constraint(kqml67,[sort-of,v11655,individual]),kqml67),dreq(constraint(kqml67,[class,v11655,train]),kqml67),dreq(constraint(kqml67,[status,v11692,name]),kqml67),dreq(constraint(kqml67,[sort-of,v11692,individual]),kqml67),dreq(constraint(kqml67,[lex,v11692,scranton]),kqml67),dreq(constraint(kqml67,[class,v11692,city]),kqml67),dreq(constraint(kqml67,[to,v11684,v11692]),kqml67),dreq(sort-of(v11644,individual),kqml67),dreq(sort-of(v11655,individual),kqml67),dreq(sort-of(v11692,individual),kqml67),dreq(sem(kqml67,v11631),kqml67),dreq(lobj(v11631,v11655),kqml67),dreq(at-loc(v11655,v11644),kqml67),dreq(class(v11644,city),kqml67),dreq(class(v11655,train),kqml67),dreq(class(v11692,city),kqml67),dreq(class(v11631,move),kqml67),dreq(lf(v11631,[move,v11655,v11692]),kqml67),dreq(candidates(v11655,[bullet]),kqml67),dreq(result(kqml113,kqml115),kqml67),dreq(result(kqml67,T),kqml67),dreq(psConstraint(kqml67,[class,v11644,city],[type,washington,city]),kqml67),dreq(psConstraint(kqml67,[at-loc,v11655,v11644],[at-loc,v11655,washington]),kqml67),dreq(psConstraint(kqml67,[class,v11655,train],[type,v11655,engine]),kqml67),dreq(psConstraint(kqml67,[class,v11692,city],[type,scranton,city]),kqml67),dreq(disambiguate(kqml67,v11655),kqml67),dreq(lex(v11644,washington),kqml67),dreq(lex(v11692,scranton),kqml67),dreq(lex(v11655,[bullet]),kqml67),dreq(obj(kqml67,v11644),kqml67),dreq(obj(kqml67,v11655),kqml67),dreq(obj(kqml67,v11692),kqml67),dreq(focus(kqml67,v11692),kqml67),dreq(lsubj(v11631,*you*),kqml67),dreq(type(kqml67,sa-request),kqml67),dreq(psbstate(kqml67,pss522),kqml67)],kqml67),ah_ir_question(kqml67,:new-subplan,kqml123))
+Kqml(REPLY :CONTENT (:ANSWER :RECOGNITION-SCORE :GOOD :ANSWER-SCORE :GOOD :PS-STATE PSS557  :RESULT  (:NEW-SUBPLAN :OBJECTS (BULLET WASHINGTON SCRANTON) :PLAN   (PLAN556 :GOAL    (:GO GO1 (:AGENT BULLET) (:TO SCRANTON) (:FROM WASHINGTON)) :AGENT    BULLET :ACTIONS    ((:GO GO553 (:FROM WASHINGTON) (:TO BALTIMORE)      (:TRACK BALTIMORE-WASHINGTON))     (:GO GO554 (:FROM BALTIMORE) (:TO SCRANTON)      (:TRACK BALTIMORE-SCRANTON)))))  :REASON NIL) :RECEIVER DM :IN-REPLY-TO MSG123 :RE MSG67 :sender ps)
+19:36:36:555835
+Sending af(kqml_expr(kqml127,[bullet,washington,scranton]))
+19:36:36:559619
+Sending af(kqml_expr(kqml130,[agent,bullet]))
+19:36:36:561880
+Sending af(kqml_expr(kqml131,[to,scranton]))
+19:36:36:563346
+Sending af(kqml_expr(kqml132,[from,washington]))
+19:36:36:564846
+Sending af(kqml_expr(kqml129,[go,go1,kqml130,kqml131,kqml132]))
+19:36:36:566075
+Sending af(kqml_expr(kqml135,[from,washington]))
+19:36:36:569924
+Sending af(kqml_expr(kqml136,[to,baltimore]))
+19:36:36:572676
+Sending af(kqml_expr(kqml137,[track,baltimore-washington]))
+19:36:36:574370
+Sending af(kqml_expr(kqml134,[go,go553,kqml135,kqml136,kqml137]))
+19:36:36:575625
+Sending af(kqml_expr(kqml139,[from,baltimore]))
+19:36:36:577686
+Sending af(kqml_expr(kqml140,[to,scranton]))
+19:36:36:579244
+Sending af(kqml_expr(kqml141,[track,baltimore-scranton]))
+19:36:36:580878
+Sending af(kqml_expr(kqml138,[go,go554,kqml139,kqml140,kqml141]))
+19:36:36:582137
+Sending af(kqml_expr(kqml133,[kqml134,kqml138]))
+19:36:36:583280
+Sending af(kqml_expr(kqml128,[plan556,goal,kqml129,agent,bullet,actions,kqml133]))
+19:36:36:584539
+Sending af(kqml_expr(kqml126,[new-subplan,objects,kqml127,plan,kqml128]))
+19:36:36:585806
+Sending af(kqml_expr(kqml125,[answer,recognition-score,good,answer-score,good,ps-state,pss557,result,kqml126,reason,nil]))
+19:36:36:587506
+Sending af(kqml_expr(kqml124,[reply,content,kqml125,receiver,dm,in-reply-to,msg123,re,msg67,sender,ps]))
+19:36:36:589507
+Sending af(last_perf(kqml124))
+19:36:36:590577
+Sending af(new_message(kqml124))
+19:36:36:593042
+Received: call(ah_preprocess_msg(kqml124),[new_message(kqml124)],kqml124)
+19:36:36:900123
+Sending af(kqml_head(kqml124,reply))
+19:36:36:907819
+Sending af(kqml_kv(kqml124,[content,kqml125]))
+19:36:36:908877
+Sending af(kqml_kv(kqml124,[receiver,dm]))
+19:36:36:909825
+Sending af(kqml_kv(kqml124,[in-reply-to,msg123]))
+19:36:36:910772
+Sending af(kqml_kv(kqml124,[re,msg67]))
+19:36:36:911727
+Sending af(kqml_kv(kqml124,[sender,ps]))
+19:36:36:912690
+Sending af(kqml_head(kqml125,answer))
+19:36:36:913636
+Sending af(kqml_kv(kqml125,[recognition-score,good]))
+19:36:36:914589
+Sending af(kqml_kv(kqml125,[answer-score,good]))
+19:36:36:915559
+Sending af(kqml_kv(kqml125,[ps-state,pss557]))
+19:36:36:916686
+Sending af(kqml_kv(kqml125,[result,kqml126]))
+19:36:36:917686
+Sending af(kqml_kv(kqml125,[reason,nil]))
+19:36:36:918678
+Sending af(kqml_head(kqml126,new-subplan))
+19:36:36:919645
+Sending af(kqml_kv(kqml126,[objects,kqml127]))
+19:36:36:920614
+Sending af(kqml_kv(kqml126,[plan,kqml128]))
+19:36:36:921601
+Sending af(kqml_head(kqml129,go))
+19:36:36:927772
+Sending af(kqml_head2(kqml129,go1))
+19:36:36:928768
+Sending af(kqml_kv(kqml129,[agent,bullet]))
+19:36:36:929755
+Sending af(kqml_kv(kqml129,[to,scranton]))
+19:36:36:930759
+Sending af(kqml_kv(kqml129,[from,washington]))
+19:36:36:931773
+Sending af(kqml_head(kqml134,go))
+19:36:36:932758
+Sending af(kqml_head2(kqml134,go553))
+19:36:36:933729
+Sending af(kqml_kv(kqml134,[from,washington]))
+19:36:36:934729
+Sending af(kqml_kv(kqml134,[to,baltimore]))
+19:36:36:935750
+Sending af(kqml_kv(kqml134,[track,baltimore-washington]))
+19:36:36:937405
+Sending af(kqml_head(kqml138,go))
+19:36:36:938437
+Sending af(kqml_head2(kqml138,go554))
+19:36:36:939422
+Sending af(kqml_kv(kqml138,[from,baltimore]))
+19:36:36:940435
+Sending af(kqml_kv(kqml138,[to,scranton]))
+19:36:36:941477
+Sending af(kqml_kv(kqml138,[track,baltimore-scranton]))
+19:36:36:942523
+Sending af(sender(kqml124,ps))
+19:36:36:943557
+Sending af(ireq(re(kqml124,msg67),kqml124))
+19:36:36:944584
+Sending af(in-reply-to(kqml124,msg123))
+19:36:36:945576
+Sending af(msgname(kqml124,msg124))
+19:36:36:946777
+Sending af(new_message_kv(kqml124))
+19:36:36:947782
+Sending done(call(ah_preprocess_msg(kqml124),[new_message(kqml124)],kqml124),ah_preprocess_msg(kqml124))
+Received: call(ah_translate_ir(kqml67,kqml124,_616),[new_message(kqml124)],kqml124)
+19:36:37:152639
+Sending af(pact(plan(plan556),kqml67))
+19:36:37:159002
+Sending af(pact(agent(plan556,bullet),kqml67))
+19:36:37:160108
+Sending af(pact(objects(kqml127),kqml67))
+19:36:37:161049
+Sending af(pact(goal(plan556,go1),kqml67))
+19:36:37:162008
+Sending af(pact(type(go1,go),kqml67))
+19:36:37:162967
+Sending af(pact(agent(go1,bullet),kqml67))
+19:36:37:163943
+Sending af(pact(from(go1,washington),kqml67))
+19:36:37:164934
+Sending af(pact(to(go1,scranton),kqml67))
+19:36:37:165919
+Sending af(pact(action(kqml67,plan556,go553),kqml67))
+19:36:37:167241
+Sending af(pact(type(go553,go),kqml67))
+19:36:37:168254
+Sending af(pact(from(go553,washington),kqml67))
+19:36:37:169240
+Sending af(pact(to(go553,baltimore),kqml67))
+19:36:37:170223
+Sending af(pact(track(go553,baltimore-washington),kqml67))
+19:36:37:171225
+Sending af(pact(action(kqml67,plan556,go554),kqml67))
+19:36:37:172302
+Sending af(pact(type(go554,go),kqml67))
+19:36:37:173317
+Sending af(pact(from(go554,baltimore),kqml67))
+19:36:37:174324
+Sending af(pact(to(go554,scranton),kqml67))
+19:36:37:175352
+Sending af(pact(track(go554,baltimore-scranton),kqml67))
+19:36:37:176360
+Sending af(pact(psstate(kqml67,pss557),kqml67))
+19:36:37:177593
+Sending done(call(ah_translate_ir(kqml67,kqml124,_590),[new_message(kqml124)],kqml124),ah_translate_ir(kqml67,kqml124,kqml126))
+Received: call(ah_ur_question(kqml67,:update-pss,pss557,_614),[],kqml67)
+19:36:37:357583
+Sending af(kqml_expr(kqml142,[:update-pss,:ps-state,pss557]))
+19:36:37:358618
+Sending af(kqml_head(kqml143,request))
+19:36:37:359840
+Sending af(kqml_kv(kqml143,[:content,kqml142]))
+19:36:37:360811
+Sending af(kqml_kv(kqml143,[:sender,dm]))
+19:36:37:361784
+Sending af(kqml_kv(kqml143,[:receiver,ps]))
+19:36:37:362743
+Sending af(kqml_kv(kqml143,[:re,msg67]))
+19:36:37:363762
+Sending af(kqml_kv(kqml143,[:reply-with,msg143]))
+19:36:37:364790
+Sending af(msgname(kqml143,msg143))
+19:36:37:366969
+Sending done(call(ah_ur_question(kqml67,:update-pss,pss557,_591),[],kqml67),ah_ur_question(kqml67,:update-pss,pss557,kqml143))
+Kqml(REPLY :CONTENT (ANSWER :RESULT (:PSS-UPDATE :SUCCESS) :PLAN-ID PLAN556) :RECEIVER DM :IN-REPLY-TO MSG143 :RE MSG67 :sender ps)
+19:36:37:401982
+Sending af(kqml_expr(kqml146,[pss-update,success]))
+19:36:37:403846
+Sending af(kqml_expr(kqml145,[answer,result,kqml146,plan-id,plan556]))
+19:36:37:405182
+Sending af(kqml_expr(kqml144,[reply,content,kqml145,receiver,dm,in-reply-to,msg143,re,msg67,sender,ps]))
+19:36:37:407213
+Sending af(last_perf(kqml144))
+19:36:37:408243
+Sending af(new_message(kqml144))
+19:36:37:409482
+Received: call(ah_outmgrconfirm(kqml67,:update-pss,_764),[pact(track(go553,baltimore-washington),kqml67),pact(track(go554,baltimore-scranton),kqml67),pact(action(kqml67,plan556,go553),kqml67),pact(action(kqml67,plan556,go554),kqml67),pact(to(go1,scranton),kqml67),pact(to(go553,baltimore),kqml67),pact(to(go554,scranton),kqml67),pact(from(go1,washington),kqml67),pact(from(go553,washington),kqml67),pact(from(go554,baltimore),kqml67),pact(goal(plan556,go1),kqml67),pact(objects(kqml127),kqml67),pact(agent(plan556,bullet),kqml67),pact(agent(go1,bullet),kqml67),pact(plan(plan556),kqml67),pact(type(go1,go),kqml67),pact(type(go553,go),kqml67),pact(type(go554,go),kqml67),pact(psstate(kqml67,pss557),kqml67)],kqml67)
+19:36:37:532782
+Sending af(kqml_expr(kqml147,[type,path1,route]))
+19:36:37:535664
+Sending af(kqml_expr(kqml148,[move-engine-along-path,bullet,path1]))
+19:36:37:537132
+Sending af(kqml_expr(kqml149,[type,bullet,engine]))
+19:36:37:538309
+Sending af(kqml_expr(kqml150,[source,path1,washington]))
+19:36:37:539480
+Sending af(kqml_expr(kqml151,[dest,path1,scranton]))
+19:36:37:540654
+Sending af(kqml_expr(kqml152,[baltimore-washington,baltimore-scranton]))
+19:36:37:542068
+Sending af(kqml_expr(kqml153,[tracks,path1,kqml152]))
+19:36:37:543232
+Sending af(kqml_expr(kqml154,[and,kqml147,kqml149,kqml150,kqml151,kqml153]))
+19:36:37:544464
+Sending af(kqml_expr(kqml155,[path1]))
+19:36:37:545627
+Sending af(kqml_head(kqml156,express))
+19:36:37:546935
+Sending af(kqml_kv(kqml156,[:speech-act,inform_plan]))
+19:36:37:547952
+Sending af(kqml_kv(kqml156,[:focus,kqml155]))
+19:36:37:548965
+Sending af(kqml_kv(kqml156,[:media,unspecified]))
+19:36:37:549963
+Sending af(kqml_kv(kqml156,[:content,kqml148]))
+19:36:37:550965
+Sending af(kqml_kv(kqml156,[:constraints,kqml154]))
+19:36:37:551966
+Sending af(kqml_kv(kqml156,[:sender,dm]))
+19:36:37:552982
+Sending af(kqml_kv(kqml156,[:receiver,outmgr]))
+19:36:37:554004
+Sending af(kqml_kv(kqml156,[:re,msg67]))
+19:36:37:555074
+Sending af(kqml_kv(kqml156,[:reply-with,msg156]))
+19:36:37:556148
+Sending af(msgname(kqml156,msg156))
+19:36:37:561110
+Sending done(call(ah_outmgrconfirm(kqml67,:update-pss,_590),[pact(track(go553,baltimore-washington),kqml67),pact(track(go554,baltimore-scranton),kqml67),pact(action(kqml67,plan556,go553),kqml67),pact(action(kqml67,plan556,go554),kqml67),pact(to(go1,scranton),kqml67),pact(to(go553,baltimore),kqml67),pact(to(go554,scranton),kqml67),pact(from(go1,washington),kqml67),pact(from(go553,washington),kqml67),pact(from(go554,baltimore),kqml67),pact(goal(plan556,go1),kqml67),pact(objects(kqml127),kqml67),pact(agent(plan556,bullet),kqml67),pact(agent(go1,bullet),kqml67),pact(plan(plan556),kqml67),pact(type(go1,go),kqml67),pact(type(go553,go),kqml67),pact(type(go554,go),kqml67),pact(psstate(kqml67,pss557),kqml67)],kqml67),ah_outmgrconfirm(kqml67,:update-pss,kqml156))
+Received: call(ah_preprocess_msg(kqml144),[new_message(kqml144)],kqml144)
+19:36:37:613218
+Sending af(kqml_head(kqml144,reply))
+19:36:37:621660
+Sending af(kqml_kv(kqml144,[content,kqml145]))
+19:36:37:622693
+Sending af(kqml_kv(kqml144,[receiver,dm]))
+19:36:37:623635
+Sending af(kqml_kv(kqml144,[in-reply-to,msg143]))
+19:36:37:624593
+Sending af(kqml_kv(kqml144,[re,msg67]))
+19:36:37:625558
+Sending af(kqml_kv(kqml144,[sender,ps]))
+19:36:37:626770
+Sending af(kqml_head(kqml145,answer))
+19:36:37:627753
+Sending af(kqml_kv(kqml145,[result,kqml146]))
+19:36:37:628709
+Sending af(kqml_kv(kqml145,[plan-id,plan556]))
+19:36:37:629674
+Sending af(kqml_head(kqml146,pss-update))
+19:36:37:630753
+Sending af(sender(kqml144,ps))
+19:36:37:633789
+Sending af(ireq(re(kqml144,msg67),kqml144))
+19:36:37:634828
+Sending af(in-reply-to(kqml144,msg143))
+19:36:37:635781
+Sending af(msgname(kqml144,msg144))
+19:36:37:637323
+Sending af(new_message_kv(kqml144))
+19:36:37:638300
+Sending done(call(ah_preprocess_msg(kqml144),[new_message(kqml144)],kqml144),ah_preprocess_msg(kqml144))
+Received: call(ah_confirmsuccess(kqml67,kqml144),[new_message(kqml144)],kqml67)
+19:36:37:864442
+Sending done(call(ah_confirmsuccess(kqml67,kqml144),[new_message(kqml144)],kqml67),ah_confirmsuccess(kqml67,kqml144))

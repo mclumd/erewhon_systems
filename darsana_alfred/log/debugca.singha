@@ -1,0 +1,362 @@
+Args: [sfile,/fs/disco/group/systems/Alfred/etc/hostfile.singha,delay,0,load,/fs/disco/group/systems/Alfred/src/main.pl,debug,/fs/disco/group/systems/Alfred/log/debugca.singha]Received: call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL)],s1)
+14:52:1:766862
+memory[497992,122040]
+global_stack[24800,38608]
+local_stack[628,64880]
+atoms[2787,71938,43240]
+Sending af(main_verb(s1,play))
+14:52:1:771923
+Sending done(call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL)],s1),ac_main_verb(s1))
+Received: call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Os),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL)],s1)
+14:52:1:776623
+memory[498372,121660]
+global_stack[24392,39016]
+local_stack[628,64880]
+atoms[2792,72032,43200]
+Sending af(link(s1,val0,val1,Wi))
+14:52:1:777790
+Sending af(link(s1,val1,val2,Os))
+14:52:1:778429
+Sending done(call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Os),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL)],s1),ac_find_links(s1))
+Received: call(ac_find_command(s1),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL),main_verb(s1,play)],s1)
+14:52:2:62534
+memory[498888,121144]
+global_stack[25048,38360]
+local_stack[628,64880]
+atoms[2818,72506,42992]
+Sending af(domain_command(s1,play,play))
+14:52:2:65637
+Sending done(call(ac_find_command(s1),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL),main_verb(s1,play)],s1),ac_find_command(s1))
+Received: call(ac_find_intention(s1,domain,play),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),link(s1,val0,val1,Wi),link(s1,val1,val2,Os),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL),verb(s1,val1)],s1)
+14:52:2:918515
+memory[499928,120104]
+global_stack[25684,37724]
+local_stack[628,64880]
+atoms[2823,72598,42952]
+Sending af(val(s1,v0,val1))
+14:52:2:924026
+Sending af(type(s1,v0,verb))
+14:52:2:924691
+Sending af(intention(s1,domain,[play,David.asf]))
+14:52:2:925369
+Sending done(call(ac_find_intention(s1,domain,play),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),link(s1,val0,val1,Wi),link(s1,val1,val2,Os),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,play),value_of(s1,val2,David.asf),value_of(s1,val3,RIGHT-WALL),verb(s1,val1)],s1),ac_find_intention(s1,domain,play))
+Received: call(ac_action(s1,domain,[5,[play,David.asf]]),[],s1)
+14:52:3:628855
+memory[500632,119400]
+global_stack[24128,39280]
+local_stack[628,64880]
+atoms[2827,72702,42920]
+Sending af(send_to_domain(s1,5,[[play,David.asf]]))
+14:52:3:629644
+Sending done(call(ac_action(s1,domain,[5,[play,David.asf]]),[],s1),ac_action(s1,domain,[5,[play,David.asf]]))
+Received: call(ac_post_process(s1,[[play,David.asf]]),[],s1)
+14:52:3:866512
+memory[499080,120952]
+global_stack[24108,39300]
+local_stack[628,64880]
+atoms[2829,72754,42904]
+Sending done(call(ac_post_process(s1,[[play,David.asf]]),[],s1),ac_post_process(s1,[[play,David.asf]]))
+Received: call(ac_report_action([[play,David.asf]]),[],s1)
+14:52:3:868700
+memory[499112,120920]
+global_stack[24100,39308]
+local_stack[628,64880]
+atoms[2830,72780,42896]
+Sending done(call(ac_report_action([[play,David.asf]]),[],s1),ac_report_action([[play,David.asf]]))
+Received: call(ac_find_links(s2),[links(s2,l0,val0,val5,RW),links(s2,l0,val0,val1,Wi),links(s2,l0,val1,val3,MVp),links(s2,l0,val1,val2,Os),links(s2,l0,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL)],s2)
+14:52:35:452691
+memory[499172,120860]
+global_stack[24600,38808]
+local_stack[628,64880]
+atoms[2836,72880,42848]
+Sending af(link(s2,val0,val1,Wi))
+14:52:35:454138
+Sending af(link(s2,val1,val3,MVp))
+14:52:35:454829
+Sending af(link(s2,val1,val2,Os))
+14:52:35:455421
+Sending af(link(s2,val3,val4,Jp))
+14:52:35:456144
+Sending done(call(ac_find_links(s2),[links(s2,l0,val0,val5,RW),links(s2,l0,val0,val1,Wi),links(s2,l0,val1,val3,MVp),links(s2,l0,val1,val2,Os),links(s2,l0,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL)],s2),ac_find_links(s2))
+Received: call(ac_main_verb(s2),[verb(s2,val1),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL)],s2)
+14:52:35:564618
+memory[499840,120192]
+global_stack[24352,39056]
+local_stack[628,64880]
+atoms[2841,73010,42808]
+Sending af(main_verb(s2,set))
+14:52:35:565677
+Sending done(call(ac_main_verb(s2),[verb(s2,val1),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL)],s2),ac_main_verb(s2))
+Received: call(ac_find_command(s2),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL),main_verb(s2,set)],s2)
+14:52:35:996130
+memory[499712,120320]
+global_stack[25152,38256]
+local_stack[628,64880]
+atoms[2843,73062,42792]
+Sending af(domain_command(s2,set,set))
+14:52:35:999636
+Sending done(call(ac_find_command(s2),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL),main_verb(s2,set)],s2),ac_find_command(s2))
+Received: call(ac_find_intention(s2,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s2,val0,val1,Wi),link(s2,val1,val3,MVp),link(s2,val1,val2,Os),link(s2,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL),verb(s2,val1)],s2)
+14:52:36:480734
+memory[500760,119272]
+global_stack[25732,37676]
+local_stack[628,64880]
+atoms[2847,73140,42760]
+Sending af(val(s2,v0,val1))
+14:52:36:491187
+Sending af(type(s2,v0,verb))
+14:52:36:491846
+Sending af(intention(s2,domain,[set,height,800]))
+14:52:36:492418
+Sending done(call(ac_find_intention(s2,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s2,val0,val1,Wi),link(s2,val1,val3,MVp),link(s2,val1,val2,Os),link(s2,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,set),value_of(s2,val2,height),value_of(s2,val3,to),value_of(s2,val4,800),value_of(s2,val5,RIGHT-WALL),verb(s2,val1)],s2),ac_find_intention(s2,domain,set))
+Received: call(ac_action(s2,domain,[5,[set,height,800]]),[],s2)
+14:52:36:779144
+memory[501984,118048]
+global_stack[24156,39252]
+local_stack[628,64880]
+atoms[2851,73244,42728]
+Sending af(send_to_domain(s2,5,[[set,height,800]]))
+14:52:36:779941
+Sending done(call(ac_action(s2,domain,[5,[set,height,800]]),[],s2),ac_action(s2,domain,[5,[set,height,800]]))
+Received: call(ac_post_process(s2,[[set,height,800]]),[],s2)
+14:52:36:821749
+memory[500036,119996]
+global_stack[24136,39272]
+local_stack[628,64880]
+atoms[2853,73296,42712]
+Sending done(call(ac_post_process(s2,[[set,height,800]]),[],s2),ac_post_process(s2,[[set,height,800]]))
+Received: call(ac_report_action([[set,height,800]]),[],s2)
+14:52:36:823949
+memory[500028,120004]
+global_stack[24128,39280]
+local_stack[628,64880]
+atoms[2854,73322,42704]
+Sending done(call(ac_report_action([[set,height,800]]),[],s2),ac_report_action([[set,height,800]]))
+Received: call(ac_prompt(671),[],671)
+14:53:26:1640
+memory[500056,119976]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2856,73364,42688]
+Sending done(call(ac_prompt(671),[],671),ac_prompt(671))
+Received: call(ac_prompt(1025),[],1025)
+14:54:14:554378
+memory[499948,120084]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2858,73408,42672]
+Sending done(call(ac_prompt(1025),[],1025),ac_prompt(1025))
+Received: call(ac_prompt(1379),[],1379)
+14:55:3:147512
+memory[499980,120052]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2860,73452,42656]
+Sending done(call(ac_prompt(1379),[],1379),ac_prompt(1379))
+Received: call(ac_find_links(s3),[links(s3,l0,val0,val5,RW),links(s3,l0,val0,val1,Wi),links(s3,l0,val1,val3,MVp),links(s3,l0,val1,val2,Os),links(s3,l0,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL)],s3)
+14:55:22:359711
+memory[500008,120024]
+global_stack[24600,38808]
+local_stack[628,64880]
+atoms[2862,73492,42640]
+Sending af(link(s3,val0,val1,Wi))
+14:55:22:361165
+Sending af(link(s3,val1,val3,MVp))
+14:55:22:361859
+Sending af(link(s3,val1,val2,Os))
+14:55:22:362450
+Sending af(link(s3,val3,val4,Jp))
+14:55:22:363041
+Sending done(call(ac_find_links(s3),[links(s3,l0,val0,val5,RW),links(s3,l0,val0,val1,Wi),links(s3,l0,val1,val3,MVp),links(s3,l0,val1,val2,Os),links(s3,l0,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL)],s3),ac_find_links(s3))
+Received: call(ac_main_verb(s3),[verb(s3,val1),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL)],s3)
+14:55:22:391814
+memory[500788,119244]
+global_stack[24352,39056]
+local_stack[628,64880]
+atoms[2867,73622,42600]
+Sending af(main_verb(s3,set))
+14:55:22:392877
+Sending done(call(ac_main_verb(s3),[verb(s3,val1),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL)],s3),ac_main_verb(s3))
+Received: call(ac_find_command(s3),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL),main_verb(s3,set)],s3)
+14:55:22:806497
+memory[500660,119372]
+global_stack[25152,38256]
+local_stack[628,64880]
+atoms[2869,73674,42584]
+Sending af(domain_command(s3,set,set))
+14:55:22:810154
+Sending done(call(ac_find_command(s3),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL),main_verb(s3,set)],s3),ac_find_command(s3))
+Received: call(ac_find_intention(s3,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s3,val0,val1,Wi),link(s3,val1,val3,MVp),link(s3,val1,val2,Os),link(s3,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL),verb(s3,val1)],s3)
+14:55:23:454907
+memory[501696,118336]
+global_stack[25732,37676]
+local_stack[628,64880]
+atoms[2871,73726,42568]
+Sending af(val(s3,v0,val1))
+14:55:23:465278
+Sending af(type(s3,v0,verb))
+14:55:23:465930
+Sending af(intention(s3,domain,[set,width,800]))
+14:55:23:466500
+Sending done(call(ac_find_intention(s3,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s3,val0,val1,Wi),link(s3,val1,val3,MVp),link(s3,val1,val2,Os),link(s3,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,set),value_of(s3,val2,width),value_of(s3,val3,to),value_of(s3,val4,800),value_of(s3,val5,RIGHT-WALL),verb(s3,val1)],s3),ac_find_intention(s3,domain,set))
+Received: call(ac_action(s3,domain,[5,[set,width,800]]),[],s3)
+14:55:23:720622
+memory[502928,117104]
+global_stack[24156,39252]
+local_stack[628,64880]
+atoms[2875,73830,42536]
+Sending af(send_to_domain(s3,5,[[set,width,800]]))
+14:55:23:721401
+Sending done(call(ac_action(s3,domain,[5,[set,width,800]]),[],s3),ac_action(s3,domain,[5,[set,width,800]]))
+Received: call(ac_post_process(s3,[[set,width,800]]),[],s3)
+14:55:24:17644
+memory[500980,119052]
+global_stack[24128,39280]
+local_stack[628,64880]
+atoms[2877,73882,42520]
+Sending done(call(ac_post_process(s3,[[set,width,800]]),[],s3),ac_post_process(s3,[[set,width,800]]))
+Received: call(ac_report_action([[set,width,800]]),[],s3)
+14:55:24:20585
+memory[500972,119060]
+global_stack[24120,39288]
+local_stack[628,64880]
+atoms[2878,73908,42512]
+Sending done(call(ac_report_action([[set,width,800]]),[],s3),ac_report_action([[set,width,800]]))
+Received: call(ac_find_links(s4),[links(s4,l0,val0,val5,RW),links(s4,l0,val0,val1,Wi),links(s4,l0,val1,val3,MVp),links(s4,l0,val1,val2,Os),links(s4,l0,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL)],s4)
+14:56:6:280073
+memory[501012,119020]
+global_stack[24584,38824]
+local_stack[628,64880]
+atoms[2881,73966,42488]
+Sending af(link(s4,val0,val1,Wi))
+14:56:6:281523
+Sending af(link(s4,val1,val3,MVp))
+14:56:6:282202
+Sending af(link(s4,val1,val2,Os))
+14:56:6:282797
+Sending af(link(s4,val3,val4,Jp))
+14:56:6:283378
+Sending done(call(ac_find_links(s4),[links(s4,l0,val0,val5,RW),links(s4,l0,val0,val1,Wi),links(s4,l0,val1,val3,MVp),links(s4,l0,val1,val2,Os),links(s4,l0,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL)],s4),ac_find_links(s4))
+Received: call(ac_main_verb(s4),[verb(s4,val1),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL)],s4)
+14:56:6:306090
+memory[501652,118380]
+global_stack[24336,39072]
+local_stack[628,64880]
+atoms[2886,74096,42448]
+Sending af(main_verb(s4,set))
+14:56:6:307139
+Sending done(call(ac_main_verb(s4),[verb(s4,val1),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL)],s4),ac_main_verb(s4))
+Received: call(ac_find_command(s4),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL),main_verb(s4,set)],s4)
+14:56:6:656770
+memory[501524,118508]
+global_stack[25136,38272]
+local_stack[628,64880]
+atoms[2888,74148,42432]
+Sending af(domain_command(s4,set,set))
+14:56:6:660430
+Sending done(call(ac_find_command(s4),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL),main_verb(s4,set)],s4),ac_find_command(s4))
+Received: call(ac_find_intention(s4,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s4,val0,val1,Wi),link(s4,val1,val3,MVp),link(s4,val1,val2,Os),link(s4,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL),verb(s4,val1)],s4)
+14:56:7:275316
+memory[502560,117472]
+global_stack[25716,37692]
+local_stack[628,64880]
+atoms[2890,74200,42416]
+Sending af(val(s4,v0,val1))
+14:56:7:285639
+Sending af(type(s4,v0,verb))
+14:56:7:286290
+Sending af(intention(s4,domain,[set,width,10]))
+14:56:7:286858
+Sending done(call(ac_find_intention(s4,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s4,val0,val1,Wi),link(s4,val1,val3,MVp),link(s4,val1,val2,Os),link(s4,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,set),value_of(s4,val2,width),value_of(s4,val3,to),value_of(s4,val4,10),value_of(s4,val5,RIGHT-WALL),verb(s4,val1)],s4),ac_find_intention(s4,domain,set))
+Received: call(ac_action(s4,domain,[5,[set,width,10]]),[],s4)
+14:56:7:594999
+memory[503808,116224]
+global_stack[24140,39268]
+local_stack[628,64880]
+atoms[2894,74304,42384]
+Sending af(send_to_domain(s4,5,[[set,width,10]]))
+14:56:7:595770
+Sending done(call(ac_action(s4,domain,[5,[set,width,10]]),[],s4),ac_action(s4,domain,[5,[set,width,10]]))
+Received: call(ac_post_process(s4,[[set,width,10]]),[],s4)
+14:56:7:767045
+memory[501860,118172]
+global_stack[24120,39288]
+local_stack[628,64880]
+atoms[2896,74356,42368]
+Sending done(call(ac_post_process(s4,[[set,width,10]]),[],s4),ac_post_process(s4,[[set,width,10]]))
+Received: call(ac_report_action([[set,width,10]]),[],s4)
+14:56:7:769217
+memory[501852,118180]
+global_stack[24112,39296]
+local_stack[628,64880]
+atoms[2897,74382,42360]
+Sending done(call(ac_report_action([[set,width,10]]),[],s4),ac_report_action([[set,width,10]]))
+Received: call(ac_find_links(s5),[links(s5,l0,val0,val5,RW),links(s5,l0,val0,val1,Wi),links(s5,l0,val1,val3,MVp),links(s5,l0,val1,val2,Os),links(s5,l0,val3,val4,Jp),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL)],s5)
+14:56:39:2000
+memory[501876,118156]
+global_stack[24584,38824]
+local_stack[628,64880]
+atoms[2899,74420,42344]
+Sending af(link(s5,val0,val1,Wi))
+14:56:39:3447
+Sending af(link(s5,val1,val3,MVp))
+14:56:39:4129
+Sending af(link(s5,val1,val2,Os))
+14:56:39:4715
+Sending af(link(s5,val3,val4,Jp))
+14:56:39:5297
+Sending done(call(ac_find_links(s5),[links(s5,l0,val0,val5,RW),links(s5,l0,val0,val1,Wi),links(s5,l0,val1,val3,MVp),links(s5,l0,val1,val2,Os),links(s5,l0,val3,val4,Jp),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL)],s5),ac_find_links(s5))
+Received: call(ac_main_verb(s5),[verb(s5,val1),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL)],s5)
+14:56:39:54610
+memory[502500,117532]
+global_stack[24344,39064]
+local_stack[628,64880]
+atoms[2904,74542,42304]
+Sending af(main_verb(s5,set))
+14:56:39:55707
+Sending done(call(ac_main_verb(s5),[verb(s5,val1),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL)],s5),ac_main_verb(s5))
+Received: call(ac_find_command(s5),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL),main_verb(s5,set)],s5)
+14:56:39:774944
+memory[502372,117660]
+global_stack[25152,38256]
+local_stack[628,64880]
+atoms[2906,74594,42288]
+Sending af(domain_command(s5,set,set))
+14:56:39:778484
+Sending done(call(ac_find_command(s5),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL),main_verb(s5,set)],s5),ac_find_command(s5))
+Received: call(ac_find_intention(s5,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s5,val0,val1,Wi),link(s5,val1,val3,MVp),link(s5,val1,val2,Os),link(s5,val3,val4,Jp),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL),verb(s5,val1)],s5)
+14:56:40:531695
+memory[503408,116624]
+global_stack[25732,37676]
+local_stack[628,64880]
+atoms[2908,74646,42272]
+Sending af(val(s5,v0,val1))
+14:56:40:542132
+Sending af(type(s5,v0,verb))
+14:56:40:552082
+Sending af(intention(s5,domain,[set,width,40]))
+14:56:40:552702
+Sending done(call(ac_find_intention(s5,domain,set),[isa(number,10),isa(number,800),isa(number,40),isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),link(s5,val0,val1,Wi),link(s5,val1,val3,MVp),link(s5,val1,val2,Os),link(s5,val3,val4,Jp),value_of(s5,val0,LEFT-WALL),value_of(s5,val1,set),value_of(s5,val2,width),value_of(s5,val3,to),value_of(s5,val4,40),value_of(s5,val5,RIGHT-WALL),verb(s5,val1)],s5),ac_find_intention(s5,domain,set))
+Received: call(ac_action(s5,domain,[5,[set,width,40]]),[],s5)
+14:56:40:855712
+memory[504656,115376]
+global_stack[24156,39252]
+local_stack[628,64880]
+atoms[2912,74750,42240]
+Sending af(send_to_domain(s5,5,[[set,width,40]]))
+14:56:40:856508
+Sending done(call(ac_action(s5,domain,[5,[set,width,40]]),[],s5),ac_action(s5,domain,[5,[set,width,40]]))
+Received: call(ac_post_process(s5,[[set,width,40]]),[],s5)
+14:56:40:905044
+memory[502708,117324]
+global_stack[24136,39272]
+local_stack[628,64880]
+atoms[2914,74802,42224]
+Sending done(call(ac_post_process(s5,[[set,width,40]]),[],s5),ac_post_process(s5,[[set,width,40]]))
+Received: call(ac_report_action([[set,width,40]]),[],s5)
+14:56:40:907204
+memory[502700,117332]
+global_stack[24128,39280]
+local_stack[628,64880]
+atoms[2915,74828,42216]
+Sending done(call(ac_report_action([[set,width,40]]),[],s5),ac_report_action([[set,width,40]]))

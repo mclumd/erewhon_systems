@@ -1,0 +1,15 @@
+######################################################################
+To create a domain dictionary
+
+
+Within your domain directory eg. trains create a directory called KB
+
+Contents of dd.pl
+For each object in your domain write an isa statement
+
+eg.
+isa(movie, 'rome.avi').
+isa(train, 'Bullet').
+######################################################################
+
+

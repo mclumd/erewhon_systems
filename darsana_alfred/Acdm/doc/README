@@ -1,0 +1,22 @@
+At the LREQ level, the KQML message is converted into a series of kqml_expr assertions to capture the structure of the KQML message. To capture the keywords and their values the KQML message is also stored as a series of kqml_kv assertions.
+
+At the IREQ level, the contexts, type, focus, semantics and the objects of the utterance are identified and stored as ireq assertions. For each object, the specified properties like status, class, lex, sort-of and at-loc are asserted as constraints for the object. Those objects with no lex values are assigned null values. Based on the constraints, the problem solver constraints are determined and asserted as ireq level psConstraint assertions. The problem solver constraints include type and at-loc. The semantics of the utterance is asserted as lf with the logical form of the utterance. The class, lcomp, lsubj and lobj of the logical form is also asserted.
+
+ 
+DREQ level inherits all ireq assertions. In addition, it disambiguates all lex assertions with null values, by retracting all lex assertions with null values and asserting new lex assertions with constant values. Currently, lex of an object is a list of possible values that the object could take. If we are querying the system about all trains at newyork, associating this list as lex is correct. However, if we are trying to bind a unique value, then, we need a mechanism to choose one value from the list and bind this value. A general rule to determine whether an object can take only a unique value has to be devised.
+
+
+At the PACT level, a plan for updating the problem solver state is obtained from the problem solver and asserted. The information includes final psstate, objects and goals in the plan. For each goal, the agent, starting city, ending city and the actions to be performed to realize the plan are asserted. And, for each action, the agent, track, from and to cities are asserted.
+
+
+At the EACT level, the problem solver state is updated to the new psstate.
+
+
+Send X No Send X.
+
+Solution:
+At the DREQ level, when we disambiguate the objects, we could check whether a similar disambiguation was done earlier. If the current utterance has a logical form of class 'no move' or if the type of the previous utterance is 'sa-reject' then we could try a different binding than the earlier. For this we need to keep track of possible candidates and the actual binding for each disambiguation.
+
+
+
+

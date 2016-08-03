@@ -1,0 +1,20 @@
+post_process(_, [dom, [C|_]]):-
+    isa(domain,dom),
+    \+ clause(result(C,_),true),!.
+
+post_process(_, [dom, [C|_]]):-
+    isa(domain,dom), !,
+    clause(result(C,O),true),
+    af(domain_expect(Utt, [observation, O])),!,
+    af(desire(Utt,[inform, O, current])).
+
+
+post_process(_, [[C|_]]):-
+    \+ clause(result(C,_),true),!.
+
+post_process(Utt, [[C|_]]):-
+    clause(result(C,O),true),
+    af(domain_expect(Utt, [observation, O])),!,
+    af(desire(Utt,[inform, O, current])).
+
+

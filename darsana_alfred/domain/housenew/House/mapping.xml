@@ -1,0 +1,42 @@
+
+
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Object Mapping DTD Version 1.0//EN"
+                         "http://castor.exolab.org/mapping.dtd">
+
+<mapping>
+        <class name="Furniture">
+                <field name="_name"
+                       type="java.lang.String"
+                       direct="true">
+                        <bind-xml name="reference" node="attribute"/>
+                </field>
+
+                <field name="_icon"
+                       type="java.lang.String"
+                       direct="true">
+                        <bind-xml name="Quantity" node="element"/>
+                </field>
+
+                <field name="_socket"
+                       type="integer"
+                       direct="true">
+                        <bind-xml name="UnitPrice" node="element"/>
+                </field>
+
+                <field name="_x"
+                       type="integer"
+                       direct="true">
+                        <bind-xml name="Description" node="element"/>
+                </field>
+                
+                <field name="_y"
+                       type="integer"
+                       direct="true">
+                        <bind-xml name="Description" node="element"/>
+                </field>
+        </class>
+
+</mapping>
+            
+

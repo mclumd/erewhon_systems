@@ -1,0 +1,22 @@
+%ALMA-based dialog manager Version 3:
+%Last updated - Oct 3 2000 - D.Purushothaman
+%Commands 
+/*Send TRAIN_DESCRIPTOR to CITY
+  Send TRAIN_DESCRIPTOR to CITY. No. Send TRAIN_DESCRIPTOR to CITY 
+  Where are the trains
+  Where is TRAIN_NAME
+  Which train is at CITY
+  Is TRAIN_NAME at CITY
+  Is there a train at CITY*/	
+
+TRAIN_DESCRIPTOR - TRAIN_NAME or the CITY train
+
+TRAIN_NAME - metroliner, bullet, northstar
+
+/* Contradiction handling for move and not move */
+/* If the system cannot resolve reference problems independently, 
+it will send a message to the output manager informing that a 
+reference resolution problem has occured..*/
+
+
+% Credits:  Version 1: Carl Andersen and David Traum 1997-2000

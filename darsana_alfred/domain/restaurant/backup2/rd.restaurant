@@ -1,0 +1,9 @@
+#! /bin/sh
+ALFRED_BASE=/fs/disco/group/systems/Alfred
+DOMAIN=$ALFRED_BASE/domain/restaurant
+HOSTFILE=$ALFRED_BASE/etc/domainhost.$LOGNAME
+APP=Restaurants
+java -cp $DOMAIN $APP $HOSTFILE 
+
+
+

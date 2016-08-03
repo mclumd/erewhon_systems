@@ -1,0 +1,72 @@
+/*
+Name: 		alfred_functions.alma
+Title: 		Alfred Functions
+Author: 	Scott Fults
+
+Created: 	7/01/08
+Modified:
+		7/01/08 by SF, added ID generator
+		7/18/08 by SF, incorporated member-of-list function from
+			english_rules.alma.
+
+Description:	This file defines the functions used by Alfred.
+
+
+To-Do:		
+
+Calls:
+
+*/
+
+
+
+/*
+name:		member
+
+Form:		has(L, member, X)
+
+Summary:	X is a member of the list L.
+
+Parameters:	L is a list, X is an entity in that list
+
+*/ 
+
+
+	
+	// To find out if X is a member of L, recursively go through 
+	// the list.
+	// TO-DO: forward chaining creates infinite predicates of 
+	// form 'has([H'', H', ... H, X], member, X)'
+	
+	+has([X . T], member, X).
+	+has(T, member, X)
+		-> has([H . T], member, X).
+
+
+/*
+name:		successor
+
+Form:		has(X, successor, Y)
+
+Summary:	X is ordered immediately before Y in a list
+
+Parameters:	L is a list, X and Y are entities in that list
+
+*/
+
+
+
+	// Relate each member of the list to the member that 
+	// comes after it via the 'successor' predicate. Find the two
+	// list members, then find their ID numbers, and relate
+	// via 'successor'.
+	// TO-DO: 
+	+has([X.[Y.T]], _, _)
+		-> has(X, successor, Y).
+	+has([X.T], _, _) & has([H . [X.T]], _, _)
+		-> has(H, sucessor, X).
+	+has([X.T], _, _) -> has(T, _, _).
+	
+
+
+

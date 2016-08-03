@@ -1,0 +1,2 @@
+#! /usr/imports/bin/tcsh -f
+./alma run false keyboard true

@@ -1,0 +1,8 @@
+isa(mail, 'email').
+
+isa(mail, 'mail').
+
+
+    
+
+   

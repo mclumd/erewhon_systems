@@ -1,0 +1,33 @@
+#########################################################
+HELP 1.1
+To make files group executable
+
+chmod g+X filename
+
+OR
+
+chmod g+X *
+
+
+#########################################################
+HELP 1.2
+To make files group readable and writable
+
+
+chmod g+rw filename
+
+OR
+
+chmod g+rw *
+
+#########################################################
+HELP 1.3
+
+To change group to active
+
+chgrp active filename
+ 
+OR 
+
+chgrp active *
+#########################################################

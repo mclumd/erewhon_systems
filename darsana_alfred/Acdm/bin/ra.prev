@@ -1,0 +1,20 @@
+#! /usr/imports/bin/tcsh -f
+
+#sleep 20
+setenv ACDM_BASE /fs/disco/group/systems/Acdm
+#xterm -bg black -fg green -e \
+/fs/disco/group/systems/alma/alma \
+delay 0.1 \
+alfile $ACDM_BASE/src/acdm.al \
+sfile $ACDM_BASE/etc/hostfile \
+load $ACDM_BASE/src/tdm.alpr \
+history $ACDM_BASE/logs/history &
+#keyboard true &
+#debug 3 '/$ACDM_BASE/logs/debugal' &
+
+chmod g+w $ACDM_BASE/logs/debugal
+chmod g+w $ACDM_BASE/logs/history
+
+#keyboard true run false
+#sdb, sr
+

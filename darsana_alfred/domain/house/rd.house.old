@@ -1,0 +1,8 @@
+#! /bin/sh
+ALFRED_BASE=/a/erewhon.cs.umd.edu/export/home/anhan/Alfred
+DOMAIN=$ALFRED_BASE/domain/house
+HOSTFILE=$ALFRED_BASE/etc/domainhost.$LOGNAME
+APP=sys
+java -cp $DOMAIN $APP $HOSTFILE
+
+

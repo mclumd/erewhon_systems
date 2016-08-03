@@ -1,0 +1,409 @@
+Args: [sfile,/fs/disco/group/systems/Alfred/etc/hostfile.perlis,delay,0,load,/fs/disco/group/systems/Alfred/src/main.pl,debug,/fs/disco/group/systems/Alfred/log/debugca.perlis]Received: call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL)],s1)
+10:17:45:784049
+memory[498376,121656]
+global_stack[24896,38512]
+local_stack[628,64880]
+atoms[2791,71992,43208]
+Sending af(main_verb(s1,move))
+10:17:45:786770
+Sending done(call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL)],s1),ac_main_verb(s1))
+Received: call(ac_find_links(s1),[links(s1,l0,val0,val5,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val3,MVp),links(s1,l0,val1,val2,Os),links(s1,l0,val3,val4,Jp),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL)],s1)
+10:17:45:791108
+memory[498948,121084]
+global_stack[24600,38808]
+local_stack[628,64880]
+atoms[2798,72114,43152]
+Sending af(link(s1,val0,val1,Wi))
+10:17:45:792475
+Sending af(link(s1,val1,val3,MVp))
+10:17:45:793122
+Sending af(link(s1,val1,val2,Os))
+10:17:45:793707
+Sending af(link(s1,val3,val4,Jp))
+10:17:45:794285
+Sending done(call(ac_find_links(s1),[links(s1,l0,val0,val5,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val3,MVp),links(s1,l0,val1,val2,Os),links(s1,l0,val3,val4,Jp),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL)],s1),ac_find_links(s1))
+Received: call(ac_find_command(s1),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL),main_verb(s1,move)],s1)
+10:17:46:11559
+memory[500828,119204]
+global_stack[26648,36760]
+local_stack[628,64880]
+atoms[2870,73196,42576]
+Sending af(domain_command(s1,move,move))
+10:17:46:18907
+Sending done(call(ac_find_command(s1),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL),main_verb(s1,move)],s1),ac_find_command(s1))
+Received: call(ac_find_intention(s1,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s1,val0,val1,Wi),link(s1,val1,val3,MVp),link(s1,val1,val2,Os),link(s1,val3,val4,Jp),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL),verb(s1,val1)],s1)
+10:17:46:521809
+memory[503288,116744]
+global_stack[27224,36184]
+local_stack[628,64880]
+atoms[2877,73316,42520]
+Sending af(val(s1,v0,val1))
+10:17:46:535936
+Sending af(type(s1,v0,verb))
+10:17:46:536637
+Sending af(intention(s1,domain,[a2,a4]))
+10:17:46:537191
+Sending done(call(ac_find_intention(s1,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s1,val0,val1,Wi),link(s1,val1,val3,MVp),link(s1,val1,val2,Os),link(s1,val3,val4,Jp),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,move),value_of(s1,val2,a2),value_of(s1,val3,to),value_of(s1,val4,a4),value_of(s1,val5,RIGHT-WALL),verb(s1,val1)],s1),ac_find_intention(s1,domain,move))
+Received: call(ac_action(s1,domain,[5,[a2,a4]]),[],s1)
+10:17:46:991195
+memory[504344,115688]
+global_stack[24144,39264]
+local_stack[628,64880]
+atoms[2881,73420,42488]
+Sending af(send_to_domain(s1,5,[[a2,a4]]))
+10:17:46:992000
+Sending done(call(ac_action(s1,domain,[5,[a2,a4]]),[],s1),ac_action(s1,domain,[5,[a2,a4]]))
+Received: call(ac_post_process(s1,[[a2,a4]]),[],s1)
+10:17:47:36528
+memory[501108,118924]
+global_stack[24116,39292]
+local_stack[628,64880]
+atoms[2883,73472,42472]
+Sending done(call(ac_post_process(s1,[[a2,a4]]),[],s1),ac_post_process(s1,[[a2,a4]]))
+Received: call(ac_report_action([[a2,a4]]),[],s1)
+10:17:47:40219
+memory[501140,118892]
+global_stack[24108,39300]
+local_stack[628,64880]
+atoms[2884,73498,42464]
+Sending done(call(ac_report_action([[a2,a4]]),[],s1),ac_report_action([[a2,a4]]))
+Received: call(ac_find_links(s2),[links(s2,l0,val0,val5,RW),links(s2,l0,val0,val1,Wi),links(s2,l0,val1,val3,MVp),links(s2,l0,val1,val2,Os),links(s2,l0,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL)],s2)
+10:18:20:25809
+memory[501180,118852]
+global_stack[24592,38816]
+local_stack[628,64880]
+atoms[2887,73556,42440]
+Sending af(link(s2,val0,val1,Wi))
+10:18:20:27262
+Sending af(link(s2,val1,val3,MVp))
+10:18:20:27939
+Sending af(link(s2,val1,val2,Os))
+10:18:20:28523
+Sending af(link(s2,val3,val4,Jp))
+10:18:20:29105
+Sending done(call(ac_find_links(s2),[links(s2,l0,val0,val5,RW),links(s2,l0,val0,val1,Wi),links(s2,l0,val1,val3,MVp),links(s2,l0,val1,val2,Os),links(s2,l0,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL)],s2),ac_find_links(s2))
+Received: call(ac_main_verb(s2),[verb(s2,val1),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL)],s2)
+10:18:20:49815
+memory[501848,118184]
+global_stack[24344,39064]
+local_stack[628,64880]
+atoms[2892,73686,42400]
+Sending af(main_verb(s2,move))
+10:18:20:50856
+Sending done(call(ac_main_verb(s2),[verb(s2,val1),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL)],s2),ac_main_verb(s2))
+Received: call(ac_find_command(s2),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL),main_verb(s2,move)],s2)
+10:18:20:272218
+memory[501720,118312]
+global_stack[26656,36752]
+local_stack[628,64880]
+atoms[2894,73738,42384]
+Sending af(domain_command(s2,move,move))
+10:18:20:279342
+Sending done(call(ac_find_command(s2),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL),main_verb(s2,move)],s2),ac_find_command(s2))
+Received: call(ac_find_intention(s2,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s2,val0,val1,Wi),link(s2,val1,val3,MVp),link(s2,val1,val2,Os),link(s2,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL),verb(s2,val1)],s2)
+10:18:20:722560
+memory[504272,115760]
+global_stack[27224,36184]
+local_stack[628,64880]
+atoms[2896,73790,42368]
+Sending af(val(s2,v0,val1))
+10:18:20:736674
+Sending af(type(s2,v0,verb))
+10:18:20:737377
+Sending af(intention(s2,domain,[a7,a5]))
+10:18:20:737934
+Sending done(call(ac_find_intention(s2,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s2,val0,val1,Wi),link(s2,val1,val3,MVp),link(s2,val1,val2,Os),link(s2,val3,val4,Jp),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,move),value_of(s2,val2,a7),value_of(s2,val3,to),value_of(s2,val4,a5),value_of(s2,val5,RIGHT-WALL),verb(s2,val1)],s2),ac_find_intention(s2,domain,move))
+Received: call(ac_action(s2,domain,[5,[a7,a5]]),[],s2)
+10:18:20:993282
+memory[505240,114792]
+global_stack[24144,39264]
+local_stack[628,64880]
+atoms[2900,73894,42336]
+Sending af(send_to_domain(s2,5,[[a7,a5]]))
+10:18:20:994090
+Sending done(call(ac_action(s2,domain,[5,[a7,a5]]),[],s2),ac_action(s2,domain,[5,[a7,a5]]))
+Received: call(ac_post_process(s2,[[a7,a5]]),[],s2)
+10:18:21:141125
+memory[502004,118028]
+global_stack[24124,39284]
+local_stack[628,64880]
+atoms[2902,73946,42320]
+Sending done(call(ac_post_process(s2,[[a7,a5]]),[],s2),ac_post_process(s2,[[a7,a5]]))
+Received: call(ac_report_action([[a7,a5]]),[],s2)
+10:18:21:143257
+memory[501996,118036]
+global_stack[24116,39292]
+local_stack[628,64880]
+atoms[2903,73972,42312]
+Sending done(call(ac_report_action([[a7,a5]]),[],s2),ac_report_action([[a7,a5]]))
+Received: call(ac_prompt(762),[],762)
+10:19:7:747992
+memory[502028,118004]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2905,74016,42296]
+Sending done(call(ac_prompt(762),[],762),ac_prompt(762))
+Received: call(ac_prompt(1116),[],1116)
+10:19:54:408936
+memory[501936,118096]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2906,74042,42288]
+Sending done(call(ac_prompt(1116),[],1116),ac_prompt(1116))
+Received: call(ac_prompt(1470),[],1470)
+10:20:41:320409
+memory[501968,118064]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2908,74086,42272]
+Sending done(call(ac_prompt(1470),[],1470),ac_prompt(1470))
+Received: call(ac_prompt(1824),[],1824)
+10:21:28:371435
+memory[502000,118032]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2910,74130,42256]
+Sending done(call(ac_prompt(1824),[],1824),ac_prompt(1824))
+Received: call(ac_prompt(2178),[],2178)
+10:22:15:623549
+memory[502032,118000]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2912,74174,42240]
+Sending done(call(ac_prompt(2178),[],2178),ac_prompt(2178))
+Received: call(ac_prompt(2532),[],2532)
+10:23:3:335588
+memory[502064,117968]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2914,74218,42224]
+Sending done(call(ac_prompt(2532),[],2532),ac_prompt(2532))
+Received: call(ac_prompt(2886),[],2886)
+10:23:50:925320
+memory[502084,117948]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2915,74244,42216]
+Sending done(call(ac_prompt(2886),[],2886),ac_prompt(2886))
+Received: call(ac_prompt(3240),[],3240)
+10:24:38:619765
+memory[502116,117916]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2917,74288,42200]
+Sending done(call(ac_prompt(3240),[],3240),ac_prompt(3240))
+Received: call(ac_prompt(3594),[],3594)
+10:25:26:708196
+memory[502148,117884]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2919,74332,42184]
+Sending done(call(ac_prompt(3594),[],3594),ac_prompt(3594))
+Received: call(ac_find_links(s3),[links(s3,l0,val0,val5,RW),links(s3,l0,val0,val1,Wi),links(s3,l0,val1,val3,MVp),links(s3,l0,val1,val2,Os),links(s3,l0,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL)],s3)
+10:25:55:825293
+memory[502176,117856]
+global_stack[24600,38808]
+local_stack[628,64880]
+atoms[2921,74372,42168]
+Sending af(link(s3,val0,val1,Wi))
+10:25:55:826750
+Sending af(link(s3,val1,val3,MVp))
+10:25:55:827435
+Sending af(link(s3,val1,val2,Os))
+10:25:55:828021
+Sending af(link(s3,val3,val4,Jp))
+10:25:55:828606
+Sending done(call(ac_find_links(s3),[links(s3,l0,val0,val5,RW),links(s3,l0,val0,val1,Wi),links(s3,l0,val1,val3,MVp),links(s3,l0,val1,val2,Os),links(s3,l0,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL)],s3),ac_find_links(s3))
+Received: call(ac_main_verb(s3),[verb(s3,val1),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL)],s3)
+10:25:55:852929
+memory[502956,117076]
+global_stack[24352,39056]
+local_stack[628,64880]
+atoms[2926,74502,42128]
+Sending af(main_verb(s3,move))
+10:25:55:853995
+Sending done(call(ac_main_verb(s3),[verb(s3,val1),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL)],s3),ac_main_verb(s3))
+Received: call(ac_find_command(s3),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL),main_verb(s3,move)],s3)
+10:25:56:203213
+memory[502828,117204]
+global_stack[26656,36752]
+local_stack[628,64880]
+atoms[2928,74554,42112]
+Sending af(domain_command(s3,move,move))
+10:25:56:210228
+Sending done(call(ac_find_command(s3),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL),main_verb(s3,move)],s3),ac_find_command(s3))
+Received: call(ac_find_intention(s3,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s3,val0,val1,Wi),link(s3,val1,val3,MVp),link(s3,val1,val2,Os),link(s3,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL),verb(s3,val1)],s3)
+10:25:56:750716
+memory[505380,114652]
+global_stack[27224,36184]
+local_stack[628,64880]
+atoms[2930,74606,42096]
+Sending af(val(s3,v0,val1))
+10:25:56:764723
+Sending af(type(s3,v0,verb))
+10:25:56:765416
+Sending af(intention(s3,domain,[b2,b4]))
+10:25:56:765969
+Sending done(call(ac_find_intention(s3,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s3,val0,val1,Wi),link(s3,val1,val3,MVp),link(s3,val1,val2,Os),link(s3,val3,val4,Jp),value_of(s3,val0,LEFT-WALL),value_of(s3,val1,move),value_of(s3,val2,b2),value_of(s3,val3,to),value_of(s3,val4,b4),value_of(s3,val5,RIGHT-WALL),verb(s3,val1)],s3),ac_find_intention(s3,domain,move))
+Received: call(ac_action(s3,domain,[5,[b2,b4]]),[],s3)
+10:25:57:139959
+memory[506356,113676]
+global_stack[24144,39264]
+local_stack[628,64880]
+atoms[2934,74710,42064]
+Sending af(send_to_domain(s3,5,[[b2,b4]]))
+10:25:57:140765
+Sending done(call(ac_action(s3,domain,[5,[b2,b4]]),[],s3),ac_action(s3,domain,[5,[b2,b4]]))
+Received: call(ac_post_process(s3,[[b2,b4]]),[],s3)
+10:25:57:216373
+memory[503120,116912]
+global_stack[24124,39284]
+local_stack[628,64880]
+atoms[2936,74762,42048]
+Sending done(call(ac_post_process(s3,[[b2,b4]]),[],s3),ac_post_process(s3,[[b2,b4]]))
+Received: call(ac_report_action([[b2,b4]]),[],s3)
+10:25:57:218533
+memory[503112,116920]
+global_stack[24116,39292]
+local_stack[628,64880]
+atoms[2937,74788,42040]
+Sending done(call(ac_report_action([[b2,b4]]),[],s3),ac_report_action([[b2,b4]]))
+Received: call(ac_find_links(s4),[links(s4,l0,val0,val5,RW),links(s4,l0,val0,val1,Wi),links(s4,l0,val1,val3,MVp),links(s4,l0,val1,val2,Os),links(s4,l0,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL)],s4)
+10:26:6:781568
+memory[503152,116880]
+global_stack[24584,38824]
+local_stack[628,64880]
+atoms[2940,74846,42016]
+Sending af(link(s4,val0,val1,Wi))
+10:26:6:783023
+Sending af(link(s4,val1,val3,MVp))
+10:26:6:783701
+Sending af(link(s4,val1,val2,Os))
+10:26:6:784285
+Sending af(link(s4,val3,val4,Jp))
+10:26:6:784866
+Sending done(call(ac_find_links(s4),[links(s4,l0,val0,val5,RW),links(s4,l0,val0,val1,Wi),links(s4,l0,val1,val3,MVp),links(s4,l0,val1,val2,Os),links(s4,l0,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL)],s4),ac_find_links(s4))
+Received: call(ac_main_verb(s4),[verb(s4,val1),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL)],s4)
+10:26:6:808481
+memory[503820,116212]
+global_stack[24336,39072]
+local_stack[628,64880]
+atoms[2945,74976,41976]
+Sending af(main_verb(s4,move))
+10:26:6:809534
+Sending done(call(ac_main_verb(s4),[verb(s4,val1),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL)],s4),ac_main_verb(s4))
+Received: call(ac_find_command(s4),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL),main_verb(s4,move)],s4)
+10:26:7:61973
+memory[503688,116344]
+global_stack[26632,36776]
+local_stack[628,64880]
+atoms[2947,75026,41960]
+Sending af(domain_command(s4,move,move))
+10:26:7:68907
+Sending done(call(ac_find_command(s4),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL),main_verb(s4,move)],s4),ac_find_command(s4))
+Received: call(ac_find_intention(s4,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s4,val0,val1,Wi),link(s4,val1,val3,MVp),link(s4,val1,val2,Os),link(s4,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL),verb(s4,val1)],s4)
+10:26:7:687090
+memory[506236,113796]
+global_stack[27208,36200]
+local_stack[628,64880]
+atoms[2949,75076,41944]
+Sending af(val(s4,v0,val1))
+10:26:7:701357
+Sending af(type(s4,v0,verb))
+10:26:7:702048
+Sending af(intention(s4,domain,[a5,b6]))
+10:26:7:702604
+Sending done(call(ac_find_intention(s4,domain,move),[isa(end,to),isa(position,a1),isa(position,a2),isa(position,a3),isa(position,a4),isa(position,a5),isa(position,a6),isa(position,a7),isa(position,a8),isa(position,b1),isa(position,b2),isa(position,b3),isa(position,b4),isa(position,b5),isa(position,b6),isa(position,b7),isa(position,b8),isa(position,c1),isa(position,c2),isa(position,c3),isa(position,c4),isa(position,c5),isa(position,c6),isa(position,c7),isa(position,c8),isa(position,d1),isa(position,d2),isa(position,d3),isa(position,d4),isa(position,d5),isa(position,d6),isa(position,d7),isa(position,d8),isa(position,e1),isa(position,e2),isa(position,e3),isa(position,e4),isa(position,e5),isa(position,e6),isa(position,e7),isa(position,e8),isa(position,f1),isa(position,f2),isa(position,f3),isa(position,f4),isa(position,f5),isa(position,f6),isa(position,f7),isa(position,f8),isa(position,g1),isa(position,g2),isa(position,g3),isa(position,g4),isa(position,g5),isa(position,g6),isa(position,g7),isa(position,g8),isa(position,h1),isa(position,h2),isa(position,h3),isa(position,h4),isa(position,h5),isa(position,h6),isa(position,h7),isa(position,h8),isa(dcommand,move),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),structure(move,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,position],[v2,end],[v3,position]],[v1,v3]),link(s4,val0,val1,Wi),link(s4,val1,val3,MVp),link(s4,val1,val2,Os),link(s4,val3,val4,Jp),value_of(s4,val0,LEFT-WALL),value_of(s4,val1,move),value_of(s4,val2,a5),value_of(s4,val3,to),value_of(s4,val4,b6),value_of(s4,val5,RIGHT-WALL),verb(s4,val1)],s4),ac_find_intention(s4,domain,move))
+Received: call(ac_action(s4,domain,[5,[a5,b6]]),[],s4)
+10:26:8:158328
+memory[507228,112804]
+global_stack[24128,39280]
+local_stack[628,64880]
+atoms[2953,75180,41912]
+Sending af(send_to_domain(s4,5,[[a5,b6]]))
+10:26:8:159129
+Sending done(call(ac_action(s4,domain,[5,[a5,b6]]),[],s4),ac_action(s4,domain,[5,[a5,b6]]))
+Received: call(ac_post_process(s4,[[a5,b6]]),[],s4)
+10:26:8:300968
+memory[503992,116040]
+global_stack[24108,39300]
+local_stack[628,64880]
+atoms[2955,75232,41896]
+Sending done(call(ac_post_process(s4,[[a5,b6]]),[],s4),ac_post_process(s4,[[a5,b6]]))
+Received: call(ac_report_action([[a5,b6]]),[],s4)
+10:26:8:303133
+memory[503984,116048]
+global_stack[24100,39308]
+local_stack[628,64880]
+atoms[2956,75258,41888]
+Sending done(call(ac_report_action([[a5,b6]]),[],s4),ac_report_action([[a5,b6]]))
+Received: call(ac_prompt(4292),[],4292)
+10:26:56:812185
+memory[504004,116028]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2957,75284,41880]
+Sending done(call(ac_prompt(4292),[],4292),ac_prompt(4292))
+Received: call(ac_prompt(4646),[],4646)
+10:27:45:391670
+memory[503924,116108]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2959,75328,41864]
+Sending done(call(ac_prompt(4646),[],4646),ac_prompt(4646))
+Received: call(ac_prompt(5000),[],5000)
+10:28:34:173012
+memory[503956,116076]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2961,75372,41848]
+Sending done(call(ac_prompt(5000),[],5000),ac_prompt(5000))
+Received: call(ac_prompt(5354),[],5354)
+10:29:23:144271
+memory[503988,116044]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2963,75416,41832]
+Sending done(call(ac_prompt(5354),[],5354),ac_prompt(5354))
+Received: call(ac_prompt(5708),[],5708)
+10:30:12:345127
+memory[504020,116012]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2965,75460,41816]
+Sending done(call(ac_prompt(5708),[],5708),ac_prompt(5708))
+Received: call(ac_prompt(6062),[],6062)
+10:31:1:697200
+memory[504052,115980]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2967,75504,41800]
+Sending done(call(ac_prompt(6062),[],6062),ac_prompt(6062))
+Received: call(ac_prompt(6416),[],6416)
+10:31:51:238453
+memory[504072,115960]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2968,75530,41792]
+Sending done(call(ac_prompt(6416),[],6416),ac_prompt(6416))
+Received: call(ac_prompt(6770),[],6770)
+10:32:41:330313
+memory[504104,115928]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2970,75574,41776]
+Sending done(call(ac_prompt(6770),[],6770),ac_prompt(6770))
+Received: call(ac_prompt(7124),[],7124)
+10:33:31:581325
+memory[504136,115896]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2972,75618,41760]
+Sending done(call(ac_prompt(7124),[],7124),ac_prompt(7124))
+Received: call(ac_prompt(7478),[],7478)
+10:34:21:906992
+memory[504168,115864]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2974,75662,41744]
+Sending done(call(ac_prompt(7478),[],7478),ac_prompt(7478))

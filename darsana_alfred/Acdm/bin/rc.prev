@@ -1,0 +1,11 @@
+#! /usr/imports/bin/tcsh -f
+
+setenv ACDM_BASE /fs/disco/group/systems/Acdm
+rm $ACDM_BASE/logs/history
+rm $ACDM_BASE/logs/debugal
+rm $ACDM_BASE/logs/debugca
+
+/fs/disco/group/systems/carne/carne sfile $ACDM_BASE/etc/hostfile delay 0 load $ACDM_BASE/src/dm.pl debug $ACDM_BASE/logs/debugca
+#inkqml false
+chmod g+w $ACDM_BASE/logs/debugca
+chmod g+w $ACDM_BASE/etc/hostfile

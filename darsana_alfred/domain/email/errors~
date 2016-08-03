@@ -1,0 +1,52 @@
+javac -classpath /fs/disco/group/systems/javamail/javamail-1.3.3_01//lib/imap.jar:/fs/disco/group/systems/javamail/javamail-1.3.3_01//lib/mailapi.jar:/fs/disco/group/systems/javamail/javamail-1.3.3_01//lib/pop3.jar:/fs/disco/group/systems/javamail/javamail-1.3.3_01//lib/smtp.jar:/fs/disco/group/systems/javamail/javamail-1.3.3_01//lib/mail.jar Emailer.java
+Emailer.java:27: package javax.mail does not exist
+import javax.mail.*;
+^
+Emailer.java:28: package javax.mail.internet does not exist
+import javax.mail.internet.*;
+^
+Emailer.java:72: cannot find symbol
+symbol  : method getProcess()
+location: class Emailer
+			fileWriter.write ("process " + getProcess() + "\n");
+                                                       ^
+Emailer.java:193: cannot find symbol
+symbol  : class Session
+location: class Emailer
+	Session session = Session.getDefaultInstance( fMailServerConfig, null );
+        ^
+Emailer.java:193: cannot find symbol
+symbol  : variable Session
+location: class Emailer
+	Session session = Session.getDefaultInstance( fMailServerConfig, null );
+                          ^
+Emailer.java:195: cannot find symbol
+symbol  : class MimeMessage
+location: class Emailer
+	MimeMessage message = new MimeMessage( session );
+        ^
+Emailer.java:195: cannot find symbol
+symbol  : class MimeMessage
+location: class Emailer
+	MimeMessage message = new MimeMessage( session );
+                                  ^
+Emailer.java:201: package Message does not exist
+	    message.addRecipient(Message.RecipientType.TO, new InternetAddress(aToEmailAddr));
+                                        ^
+Emailer.java:201: cannot find symbol
+symbol  : class InternetAddress
+location: class Emailer
+	    message.addRecipient(Message.RecipientType.TO, new InternetAddress(aToEmailAddr));
+                                                               ^
+Emailer.java:205: cannot find symbol
+symbol  : variable Transport
+location: class Emailer
+	    Transport.send( message );
+            ^
+Emailer.java:207: cannot find symbol
+symbol  : class MessagingException
+location: class Emailer
+	catch (MessagingException ex){
+               ^
+11 errors
+make: *** [all] Error 1

@@ -1,0 +1,5 @@
+isa(acommand, 'run').
+isa(acommand, 'quit').
+isa(acommand, 'show domains').
+isa(acommand, 'hide domains').
+

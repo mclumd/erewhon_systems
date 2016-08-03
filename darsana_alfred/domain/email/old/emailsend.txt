@@ -1,0 +1,4 @@
+From: sdeb@wam.umd.edu
+To: alexv@umd.edu
+Subject: Sending email
+Body: I just implemented the send email functionality

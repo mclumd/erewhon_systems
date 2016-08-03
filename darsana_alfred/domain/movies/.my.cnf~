@@ -1,0 +1,5 @@
+[client]
+socket=/export/home/disco/.mysql.sock
+[mysqld]
+datadir=/export/home/disco/mysql
+socket=/export/home/disco/.mysql.sock

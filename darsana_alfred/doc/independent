@@ -1,0 +1,13 @@
+#################################################################
+To run the components independently
+
+open a new window
+Go to Alfred/bin
+Type rd.domainname
+
+open another window then
+Type runparser
+Type runcarne
+Type runalma
+
+#################################################################

@@ -1,0 +1,42 @@
+This file provides some help with how to get a new domain connected to alfred and file naming conventions used
+
+#######################################################################
+HELP 1.1
+Sample shell script for a domain. bin/rd.trains.
+
+ALFRED_BASE=/a/erewhon.cs.umd.edu/export/home/anhan/Alfred
+DOMAIN=$ALFRED_BASE/domain/trains
+HOSTFILE=$ALFRED_BASE/etc/domainhost.$LOGNAME
+$DOMAIN/trains $HOSTFILE
+
+Note that "trains" should be replaced with the appropriate name of the domain. Save the file as rd.correctDomainName in bin directory
+
+and change the group permissions if it is for the group
+
+#######################################################################
+HELP 1.2 
+Where to save the connection info?
+
+The domain should accept the filename as a parameter.
+
+For eg. if movies is your main domain program, one should be able to specify 
+"movies filename" which would cause the program to write the connection info in the filename provided.
+
+#######################################################################
+HELP 1.3
+What to save as connection info in the given file 
+port Port#
+host hostname
+process processID
+
+Note that Port# is the port number that a client (e.g. Alfred) can listen at. Hostname is the name of the host machine (the IP address) where the domain program is running
+processID is the id of the process that runs the given domain. i.e., the number that you see against the domain program when you type "ps" in your machine.
+
+#######################################################################
+HELP 1.4
+Sample code to save the connection info
+in Java 	domain/movies/Settings.java
+in C/C++ 	domain/trains/trains.c
+
+#######################################################################
+

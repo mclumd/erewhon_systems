@@ -1,0 +1,285 @@
+/*
+Name: 		english_rules.alma
+Title: 		English Rules
+Author: 	Scott Fults
+
+Created:	6/25/08
+Modified:	
+		6/25/08 by SF, created tokenization rules
+		7/18/08 by SF, revised tokenization rules
+		
+Description:	This file contains Alfred's initial knowledge 
+		of English rules, including rules that govern 
+		tokenization of utterances into words, looking 
+		up words in the lexicon, assigning theta-roles, 
+		building syntactic structure, and building a 
+		logical form.
+		
+		The rules are organized as follows:
+			1) 
+			2) Tokenization Rules
+			3) Lexical Lookup Rules
+			4) Syntax Rules
+			5) Compositional Semantics Rules
+
+
+To-Do:		
+
+
+
+Calls: 	tokenize(STRING, LIST) -	LIST is an ordered list of all words
+					found in STRING.
+	unique_ID(X) - 			X is a unique number.
+	get_placement(WORD, LIST, X) -	WORD is an item in LIST at position X.
+*/ 
+
+// Load calls.
+loadcall "get_placement" "alma.callfile.GetPlacement".
+
+/*Get-utterance:
+	Take new utterances and make them current utterances. Current 
+	utterances are being worked on.
+*/
+
+	+isa(ID, utterance) &
+	isa(ID, new)
+		-> isa(ID, current) & -isa(ID, new).
+
+/*
+Tokenization Rules:
+	Use the 'tokenize' call to find L, an ordered list of words
+	from the utterance U. All members W of L receive a random
+	ID number from 'unique_id' call, which is then used as the name
+	of the word. Each ID is then stated to have spelling W.
+*/
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, spelling, Sp) &
+	tokenize(Sp, L)
+		-> has(U, tokenized_word_list, L).
+	
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, spelling, A) &
+	tokenize(A, L) &
+	has(L, member, W) & 
+	unique_id(ID)
+		-> isa(ID, word) &
+		has(U, word, ID) &
+		has(ID, spelling, W).
+
+//	Next, record the relative order of the words in a tokenized
+//	list L of the words in utterance U.
+
+
+
+
+// Lexical Look-Up Rules:
+
+	+isa(U, utterance) & 
+	isa(U, current) &
+	has(U, word, X) & 
+	has(X, spelling, Sp) & 
+	isa(L, lexeme) & 
+	has(L, form, L1) & 
+	has(L1, spelling, Sp) 
+		-> has(L, token, X) &
+		has(L1, token, X).
+
+	+isa(L, lexeme) &
+	has(L, token, X) &
+	has(L, part_of_speech, Y)
+		-> has(X, part_of_speech, Y).
+	
+	+isa(L, lexeme) &
+	has(L, form, L1) &
+	has(L1, token, X) &
+	isa(L1, nonfinite)
+		-> isa(X, nonfinite).
+
+	+isa(L, lexeme) &
+	has(L, form, L1) &
+	has(L1, token, X) &
+	isa(L1, finite)
+		-> isa(X, finite).
+
+
+// Syntax Rules:
+
+
+
+	// If the sentence is in the imperative (command) form, then
+	// add the silent pronoun to the beginning.
+	+isa(U, utterance) &
+	isa(U, current) &
+	tokenize(U, L) &
+	has(U, word, X) &
+	has(X, part_of_speech, verb) &
+	isa(X, nonfinite) &
+	get_placement(X, L, 0) &
+	unique_id(ID) &
+	isa(Y, lexeme) &
+	isa(Y, pronoun) & 
+	has(Y, form, Y1) &
+	isa(Y1, silent)
+		-> isa(ID, word) &
+		has(U, word, ID) &
+		has(Y, token, ID) &
+		has(Y1, token, ID) &
+		isa(ID, silent) &
+		has(ID, successor, X).
+
+	// If a word is a noun, then there is another constituent 
+	// of the utterance and it is a N. This has the word as its 
+	// terminal/daughter.
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, word, X) &
+	has(X, part_of_speech, noun) &
+	has(X, spelling, Sp) &
+	unique_id(ID)
+		-> isa(ID, n) &
+		has(U, constituent, ID) &
+		has(ID, terminal, X) &
+		has(ID, daughter, X) &
+		has(ID, spelling, Sp).
+
+	// If a word is a verb, then then there is another constituent 
+	// of the utterance and it is a V. This has the word as its 
+	// terminal/daughter.
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, word, X) &
+	has(X, part_of_speech, verb) &
+	has(X, spelling, Sp) &
+	unique_id(ID)
+		-> isa(ID, v) &
+		has(U, constituent, ID) &
+		has(ID, terminal, X) &
+		has(ID, daughter, X) &
+		has(ID, spelling, Sp).
+
+	// If a word is a preposition, then then there is another 
+	// constituent of the utterance and it is a P. This has the 
+	// word as its terminal/daughter.
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, word, X) &
+	has(X, part_of_speech, preposition) &
+	has(X, spelling, Sp) &
+	unique_id(ID)
+		-> isa(ID, p) &
+		has(U, constituent, ID) &
+		has(ID, terminal, X) &
+		has(ID, daughter, X) &
+		has(ID, spelling, Sp).
+
+	// NP -> N
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, constituent, X) &
+	isa(X, n) &
+	has(X, spelling, Sp) &
+	unique_id(ID)
+		-> isa(ID, np) &
+		has(U, constituent, ID) &
+		has(ID, daughter, X) &
+		has(ID, spelling, Sp).
+
+	// VP -> V
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, constituent, X) &
+	isa(X, v) &
+	has(X, spelling, Sp) &
+	unique_id(ID)
+		-> isa(ID, vp) &
+		has(U, constituent, ID) &
+		has(ID, daughter, X) &
+		has(ID, spelling, Sp).
+
+	// PP -> P NP
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, constituent, X) &
+	isa(X, p) &
+	has(X, spelling, Sp1) &
+	has(U, constituent, Y) &
+	isa(Y, np) &
+	has(Y, spelling, Sp2) &
+	combine(Sp1, Sp2, Sp3) &
+	unique_id(ID)
+		-> isa(ID, pp) &
+		isa(ID, phrase) &
+		has(U, constituent, ID) &
+		has(ID, daughter, X) &
+		has(ID, daughter, Y) &
+		has(X, complement, Y) &
+		has(ID, spelling, Sp3).
+
+	// VP -> VP PP
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, constituent, X) &
+	isa(X, vp) &
+	has(X, spelling, Sp1) &
+	has(U, constituent, Y) &
+	isa(Y, pp) &
+	has(Y, spelling, Sp2) &
+	combine(Sp1, Sp2, Sp3) &
+	unique_id(ID)
+		-> isa(ID, vp) &
+		isa(ID, phrase) &
+		has(U, constituent, ID) &
+		has(ID, daughter, X) &
+		has(ID, daughter, Y) &
+		has(ID, spelling, Sp3).
+	
+	// S -> NP VP
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, spelling, Sp1) &
+	has(U, constituent, X) &
+	isa(X, np) &
+	has(X, spelling, Sp2) &
+	has(U, constituent, Y) &
+	isa(Y, vp) &
+	has(Y, spelling, Sp3) &
+	combine(Sp2, Sp3, Sp4) &
+	unique_id(ID)
+		-> isa(ID, s) &
+		has(U, parse, ID) &
+		has(ID, daughter, X) &
+		has(ID, daughter, Y) &
+		has(U, subject, X) &
+		has(U, predicate, Y).
+
+
+
+// Theta-Role Rules:
+
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, parse, S) &
+	isa(S, s) &
+	has(U, subject, X)
+	-> isa(X, agent).
+
+	+isa(U, utterance) &
+	isa(U, current) &
+	has(U, constituent, X) &
+	isa(X, pp) &
+	has(X, daughter, Y) &
+	isa(Y, p) &
+	has(X, daughter, Z) &
+	has(Y, complement, Z) &
+	has(Y, assignment, Theta)
+		-> isa(Z, Theta).
+
+
+// Logical Form Rules:
+
+
+
+
+
