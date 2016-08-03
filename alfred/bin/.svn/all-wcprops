@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/repository/alfred/!svn/ver/1/bin
+END
+testfile
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repository/alfred/!svn/ver/1/bin/testfile
+END
+rp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repository/alfred/!svn/ver/1/bin/rp
+END
+runparser
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repository/alfred/!svn/ver/1/bin/runparser
+END
+rr
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repository/alfred/!svn/ver/1/bin/rr
+END
+runtrains
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repository/alfred/!svn/ver/1/bin/runtrains
+END
+rui.bak
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/1/bin/rui.bak
+END
+alfred
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repository/alfred/!svn/ver/1/bin/alfred
+END
+rui
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repository/alfred/!svn/ver/2/bin/rui
+END
+runalma
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/1/bin/runalma
+END
+rc.bak
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repository/alfred/!svn/ver/1/bin/rc.bak
+END
+rac.bak
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/1/bin/rac.bak
+END
+ra
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repository/alfred/!svn/ver/1/bin/ra
+END
+rc
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repository/alfred/!svn/ver/2/bin/rc
+END
+rac
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repository/alfred/!svn/ver/2/bin/rac
+END
+crc
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repository/alfred/!svn/ver/8/bin/crc
+END
+crac
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repository/alfred/!svn/ver/8/bin/crac
+END
+texput.log
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repository/alfred/!svn/ver/1/bin/texput.log
+END
+racd
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repository/alfred/!svn/ver/1/bin/racd
+END
+runcarne
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repository/alfred/!svn/ver/1/bin/runcarne
+END

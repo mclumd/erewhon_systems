@@ -1,0 +1,479 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/1/domain/chess/xboard
+END
+xhistory.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xhistory.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/Makefile.in
+END
+xedittags.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xedittags.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.h
+END
+READ_ME
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/READ_ME
+END
+childio.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/childio.c
+END
+pxboard
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/pxboard
+END
+xboard.texinfo.in
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.texinfo.in
+END
+childio.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/childio.h
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/COPYRIGHT
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/COPYING
+END
+xboard.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.info
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/Makefile
+END
+xboard.old.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.old.c
+END
+xboard
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard
+END
+xboard.doc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.doc
+END
+zippy.lines
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zippy.lines
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/configure.in
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.status
+END
+xboard.man
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.man
+END
+cmail.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/cmail.in
+END
+zic2xpm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zic2xpm
+END
+gpl.texinfo
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/gpl.texinfo
+END
+xboard.randofu.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.randofu.c
+END
+xboard.c.orig
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.c.orig
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.h.in
+END
+zic2xpm.doc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zic2xpm.doc
+END
+ToDo
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/1/domain/chess/xboard/ToDo
+END
+engine-intf.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repository/alfred/!svn/ver/1/domain/chess/xboard/engine-intf.html
+END
+zic2xpm.man
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zic2xpm.man
+END
+gnuchessx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/gnuchessx
+END
+comment.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/comment.in
+END
+zippy.README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zippy.README
+END
+config.cache
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.cache
+END
+moves.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/moves.c
+END
+parser.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/parser.c
+END
+zic2xpm.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zic2xpm.c
+END
+xgamelist.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xgamelist.c
+END
+moves.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/moves.h
+END
+gnuchess
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/gnuchess
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/configure
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/parser.h
+END
+comment.awk
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/comment.awk
+END
+xgamelist.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xgamelist.h
+END
+pgntags.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/pgntags.c
+END
+cmail
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/alfred/!svn/ver/1/domain/chess/xboard/cmail
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.log
+END
+parser.l
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/parser.l
+END
+gamelist.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/gamelist.c
+END
+ChangeLog.2
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/ChangeLog.2
+END
+xboard.texi
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.texi
+END
+cmail.doc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/cmail.doc
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.guess
+END
+xboard.texinfo
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.texinfo
+END
+kk13.pgn
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/kk13.pgn
+END
+currxboard.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/alfred/!svn/ver/1/domain/chess/xboard/currxboard.c
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/config.sub
+END
+cmail.man
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/cmail.man
+END
+frontend.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/frontend.h
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/INSTALL
+END
+backendz.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/backendz.h
+END
+backend.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/backend.c
+END
+backend.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repository/alfred/!svn/ver/1/domain/chess/xboard/backend.h
+END
+lists.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/lists.c
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/alfred/!svn/ver/1/domain/chess/xboard/mkinstalldirs
+END
+lists.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/lists.h
+END
+zippy.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zippy.c
+END
+ics-parsing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repository/alfred/!svn/ver/1/domain/chess/xboard/ics-parsing.txt
+END
+acconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/acconfig.h
+END
+xboard.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.c
+END
+zippy.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/zippy.h
+END
+xboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xboard.h
+END
+FAQ
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/alfred/!svn/ver/1/domain/chess/xboard/FAQ
+END
+stamp-h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/alfred/!svn/ver/1/domain/chess/xboard/stamp-h
+END
+FAQ.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/FAQ.html
+END
+xhistory.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xhistory.c
+END
+xedittags.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repository/alfred/!svn/ver/1/domain/chess/xboard/xedittags.c
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/alfred/!svn/ver/1/domain/chess/xboard/install-sh
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/alfred/!svn/ver/1/domain/chess/xboard/common.h
+END

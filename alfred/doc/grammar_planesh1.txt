@@ -1,0 +1,155 @@
+/*Planesh:
+*/
+
+
+/*Build a domain.*/
+isa(d3, domain, d3).
+
+/*Build a language and make it part of the domain.*/
+isa(d3, language, c4).
+has(d3, language, d3, c4).
+
+/*Make categories*/
+/*
+
+c4cat1 -- c4cat4
+
+*/
+
+isa(c4, category, c4cat1).
+has(c4, category, c4, c4cat1).
+has(c4, label, c4cat1, gram).
+
+isa(c4, category, c4cat2).
+has(c4, category, c4, c4cat2).
+has(c4, label, c4cat2, c).
+
+isa(c4, category, c4cat3).
+has(c4, category, c4, c4cat3).
+has(c4, label, c4cat3, plane).
+
+isa(c4, category, c4cat4).
+has(c4, category, c4, c4cat4).
+has(c4, label, c4cat4, app_path).
+
+
+
+
+/*Domain Syntax Rules:*/
+/*
+
+c4syntax1 -- c4syntax6
+
+*/
+
+/*S -> CP*/
+isa(c4, domain_syntax_rule, c4syntax0).
+has(c4, domain_syntax_rule, c4, c4syntax0).
+has(c4, left_hand_side, c4syntax0, s).
+has(c4, right_hand_side, c4syntax0, [cp]).
+has(c4, semantic_checker_rule, c4syntax0, scr1).
+
+/*CP -> C.GramP*/
+isa(c4, domain_syntax_rule, c4syntax1).
+has(c4, domain_syntax_rule, c4, c4syntax1).
+has(c4, left_hand_side, c4syntax1, cp).
+has(c4, right_hand_side, c4syntax1, [c, gramp]).
+has(c4, semantic_checker_rule, c4syntax1, scr3).
+
+/*GramP -> Gram*/
+isa(c4, domain_syntax_rule, c4syntax2).
+has(c4, domain_syntax_rule, c4, c4syntax2).
+has(c4, left_hand_side, c4syntax2, gramp).
+has(c4, right_hand_side, c4syntax2, [gram]).
+has(c4, semantic_checker_rule, c4syntax2, scr4).
+
+/*CP -> C . planesP*/
+isa(c4, domain_syntax_rule, c4syntax3).
+has(c4, domain_syntax_rule, c4, c4syntax3).
+has(c4, left_hand_side, c4syntax3, cp).
+has(c4, right_hand_side, c4syntax3, [c, planesp]).
+has(c4, semantic_checker_rule, c4syntax3, scr3).
+
+/*planesP -> planes*/
+isa(c4, domain_syntax_rule, c4syntax4).
+has(c4, domain_syntax_rule, c4, c4syntax4).
+has(c4, left_hand_side, c4syntax4, planesp).
+has(c4, right_hand_side, c4syntax4, [plane]).
+has(c4, semantic_checker_rule, c4syntax4, scr4).
+
+/*CP -> C . app_pathP*/
+isa(c4, domain_syntax_rule, c4syntax5).
+has(c4, domain_syntax_rule, c4, c4syntax5).
+has(c4, left_hand_side, c4syntax5, cp).
+has(c4, right_hand_side, c4syntax5, [c, app_pathp]).
+has(c4, semantic_checker_rule, c4syntax5, scr3).
+
+/*App_pathPP -> app_path*/
+isa(c4, domain_syntax_rule, c4syntax6).
+has(c4, domain_syntax_rule, c4, c4syntax6).
+has(c4, left_hand_side, c4syntax6, app_pathp).
+has(c4, right_hand_side, c4syntax6, [app_path]).
+has(c4, semantic_checker_rule, c4syntax6, scr4).
+
+
+/*Make concepts for event_participants, i.e., meanings of theta-roles.
+  Make sure this meaning is linked to the English equivalent theta-role.*/
+
+/*
+c4theta1 -- c4theta1
+*/
+
+/*Patient*/
+isa(meanstheta1, meaning, meanstheta1).
+isa(meanstheta1, event_participant, meanstheta1).
+
+/*Make concepts for Planish theta-roles*/
+/*Patient*/
+isa(c4, theta_role, c4theta1).
+has(c4, theta_role, c4, c4theta1).
+has(c4theta1, content, c4theta1, meanstheta1).
+
+
+/*Create lexemes and their meanings:*/
+
+/*
+c4lex1 -- c4lex10
+means1 -- means10
+*/
+
+
+/*---- Commands ----*/
+/*Use "do_add_lexeme(lexemeID, LangID, string, categoryID, meaningID, semantic_type, theta_role_assigned)*/
+/*report*/
+do_add_lexeme(c4lex1, c4, report, c4cat2, means1, predicate, c4theta1).
+
+/*circle*/
+do_add_lexeme(c4lex3, c4, circle, c4cat2, means3, predicate, c4theta1).
+
+/*disconnect*/
+do_add_lexeme(c4lex6, c4, disconnect, c4cat2, means6, predicate, c4theta1).
+
+/*land*/
+do_add_lexeme(c4lex7, c4, land, c4cat2, means7, predicate, c4theta1).
+
+/*---- Arguments ----*/
+/*Grammar*/
+do_add_lexeme(c4lex2, c4, grammar, c4cat1, means2, constant, nil).
+
+/*Plane33*/
+do_add_lexeme(c4lex4, c4, plane33, c4cat3, means4, constant, nil).
+
+/*Plane44*/
+do_add_lexeme(c4lex9, c4, plane44, c4cat3, means9, constant, nil).
+
+/*Planes (This appears odd, but "planes" should be translated as "all" in Planesh, meaning "all planes".)*/
+do_add_lexeme(c4lex5, c4, all, c4cat3, means5, constant, nil).
+
+/*Approachpath22*/
+do_add_lexeme(c4lex8, c4, path22, c4cat4, means8, constant, nil).
+
+/*Approachpath11*/
+do_add_lexeme(c4lex10, c4, path11, c4cat4, means10, constant, nil).
+
+
+

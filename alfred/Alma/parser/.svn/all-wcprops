@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repository/alfred/!svn/ver/1/Alma/parser
+END
+almaparse.pl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/alfred/!svn/ver/1/Alma/parser/almaparse.pl
+END
+cnf.pl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/alfred/!svn/ver/1/Alma/parser/cnf.pl
+END
+taparse.pl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repository/alfred/!svn/ver/1/Alma/parser/taparse.pl
+END
+cnf.qof
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/alfred/!svn/ver/1/Alma/parser/cnf.qof
+END

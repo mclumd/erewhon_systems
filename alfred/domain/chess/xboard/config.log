@@ -1,0 +1,59 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:552: checking for gcc
+configure:665: checking whether the C compiler (gcc   ) works
+configure:681: gcc -o conftest     conftest.c  1>&5
+configure:707: checking whether the C compiler (gcc   ) is a cross-compiler
+configure:712: checking whether we are using GNU C
+configure:740: checking whether gcc accepts -g
+configure:772: checking how to run the C preprocessor
+configure:852: checking for POSIXized ISC
+configure:903: checking for a BSD compatible install
+configure:960: checking for lex
+configure:994: checking for flex
+configure:1028: checking for yywrap in -ll
+configure:1070: checking lex output file root
+configure:1091: checking whether yytext is a pointer
+configure:1137: checking for remsh
+configure:1174: checking for nroff
+configure:1207: checking for awk
+configure:1247: checking for perl
+configure:1298: checking for ANSI C header files
+configure:1402: checking whether time.h and sys/time.h may both be included
+configure:1437: checking for sys/wait.h that is POSIX.1 compatible
+configure:1483: checking for dirent.h that defines DIR
+configure:1521: checking for opendir in -ldir
+configure:1604: checking return type of signal handlers
+configure:1648: checking for stropts.h
+configure:1648: checking for sys/time.h
+configure:1648: checking for string.h
+configure:1648: checking for unistd.h
+configure:1648: checking for sys/systeminfo.h
+configure:1688: checking for fcntl.h
+configure:1728: checking for sys/socket.h
+configure:1766: checking for stddef.h
+configure:1851: checking for _getpty
+configure:1851: checking for grantpt
+configure:1851: checking for setitimer
+configure:1851: checking for usleep
+configure:1906: checking for gettimeofday
+configure:1961: checking for random
+configure:2016: checking for gethostname
+configure:2069: checking for setlocale
+configure:2169: checking for getpseudotty in -lseq
+configure:2221: checking for X
+configure:2470: checking whether -R must be followed by a space
+configure:2480: gcc -o conftest     conftest.c  -R/usr/openwin/lib 1>&5
+configure:2535: checking for dnet_ntoa in -ldnet
+configure:2576: checking for dnet_ntoa in -ldnet_stub
+configure:2624: checking for gethostbyname
+configure:2673: checking for gethostbyname in -lnsl
+configure:2722: checking for connect
+configure:2771: checking for connect in -lsocket
+configure:2814: checking for remove
+configure:2906: checking for shmat
+configure:3007: checking for IceConnectionNumber in -lICE
+configure:3064: checking host system type
+configure:3284: checking for X11/xpm.h
+configure:3377: checking whether ptys or pipes should be used

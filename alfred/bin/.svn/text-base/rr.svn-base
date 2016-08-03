@@ -1,0 +1,10 @@
+#! /bin/sh
+ALFRED_BASE=/fs/quibit/scott/linAlfred
+DOMAIN=$ALFRED_BASE/testing
+HOSTFILE=$ALFRED_BASE/etc/domainhost.$LOGNAME
+$DOMAIN/testrover $HOSTFILE
+
+
+
+
+

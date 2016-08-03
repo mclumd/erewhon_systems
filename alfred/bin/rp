@@ -1,0 +1,5 @@
+#! /usr/imports/bin/tcsh -f
+setenv ALFRED_BASE /fs/metacog/group/systems/linAlfred
+setenv PARSER_BASE $ALFRED_BASE/LinkParser
+$PARSER_BASE/parse $PARSER_BASE/data/4.0.dict -coff -alma $ALFRED_BASE/etc/parserhost.$LOGNAME
+

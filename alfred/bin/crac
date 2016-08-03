@@ -1,0 +1,14 @@
+#! /usr/local/bin/tcsh -f
+
+# crac -- Compile and Run Alma -- M. Covington 2010
+
+setenv ALFRED_BASE /fs/erewhon/covington/alfred
+setenv ALMA_BASE $ALFRED_BASE/Alma
+
+cd $ALMA_BASE
+echo "Compiling and running Alma..."
+
+#$ALMA_BASE/alma alfile $ALFRED_BASE/src/main.al load $ALFRED_BASE/src/routines.pl sfile $ALFRED_BASE/etc/hostfile.$LOGNAME history $ALFRED_BASE/log/history.$LOGNAME debug 3 $ALFRED_BASE/log/debugal.$LOGNAME dfile $ALFRED_BASE/etc/ui.$LOGNAME 
+
+prolog +l alma-wrapper.pl +z alfile $ALFRED_BASE/src/main.al load $ALFRED_BASE/src/routines.pl sfile $ALFRED_BASE/etc/hostfile.$LOGNAME history $ALFRED_BASE/log/history.$LOGNAME debug 3 $ALFRED_BASE/log/debugal.$LOGNAME dfile $ALFRED_BASE/etc/ui.$LOGNAME 
+

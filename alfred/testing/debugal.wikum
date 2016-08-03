@@ -1,0 +1,524 @@
+Args: [alfile,/fs/metacog/group/wikum/linAlfred_wikum/src/main.al,load,/fs/metacog/group/wikum/linAlfred_wikum/src/routines.pl,sfile,/fs/metacog/group/wikum/linAlfred_wikum/etc/hostfile.wikum,history,/fs/metacog/group/wikum/linAlfred_wikum/log/history.wikum,debug,3,/fs/metacog/group/wikum/linAlfred_wikum/log/debugal.wikum,dfile,/fs/metacog/group/wikum/linAlfred_wikum/etc/ui.wikum]
+Adding unify_dags([cat:np,num:sg,_9664],[cat:np,_9709])
+Asserted 0: [unify_dags([cat:np,num:sg,_9664],[cat:np,_9709])]
+Adding fif(unify_dags(_9628,_9647),conclusion(call(ac_unification_dags(_9628,_9647),[_9628,_9647])))
+Asserted 1: [not(unify_dags(_9628,_9647)),conclusion(call(ac_unification_dags(_9628,_9647),[_9628,_9647]))]
+
+17:11:33:877349
+Step1
+
+not idling 1
+Asserted 0: [unify_dags([cat:np,num:sg,_10588],[cat:np,_10592])]
+Asserted 1: [not(unify_dags(_10536,_10537)),conclusion(call(ac_unification_dags(_10536,_10537),[_10536,_10537]))]
+Asserted 2: [now(1)]
+Agenda
+[[produc,1,0,fc],1]
+Production resolve([not(unify_dags(_14589,_14590)),conclusion(call(ac_unification_dags(_14589,_14590),[_14589,_14590]))],[unify_dags([cat:np,num:sg,_14656],[cat:np,_14660])],[],[[[conclusion(call(ac_unification_dags([cat:np,num:sg,_14723],[cat:np,_14727]),[[cat:np,num:sg,_14723],[cat:np,_14727]]))],_14789]])
+Conclusion call(ac_unification_dags([cat:np,num:sg,_14723],[cat:np,_14727]),[[cat:np,num:sg,_14723],[cat:np,_14727]])
+
+17:11:33:879000
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 922944
+Number of clauses: 4
+Length of agenda: 0
+
+17:11:33:879157
+Step2
+Deleting 2: [now(1)]
+
+not idling 2
+Asserted 3: [call(ac_unification_dags([cat:np,num:sg,_10935],[cat:np,_10939]),[[cat:np,num:sg,_10935],[cat:np,_10939]])]
+Asserted 4: [now(2)]
+Deleting 3: [call(ac_unification_dags([cat:np,num:sg,_10935],[cat:np,_10939]),[[cat:np,num:sg,_10935],[cat:np,_10939]])]
+Agenda
+[[handle_call,ac_unification_dags([cat:np,num:sg,_14397],[cat:np,_14401]),[[cat:np,num:sg,_14397],[cat:np,_14401]],nil],1]
+
+17:11:33:880413
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 924420
+Number of clauses: 3
+Length of agenda: 0
+
+17:11:33:880559
+Step3
+Deleting 4: [now(2)]
+Sending call(ac_unification_dags([cat:np,num:sg,_10617],[cat:np,_10621]),[[cat:np,num:sg,_10617],[cat:np,_10621]])
+
+not idling 3
+Asserted 5: [doing(ac_unification_dags([cat:np,num:sg,_11125],[cat:np,_11129]),[[cat:np,num:sg,_11125],[cat:np,_11129]])]
+Asserted 6: [now(3)]
+Agenda
+
+17:11:33:886845
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 924320
+Number of clauses: 2
+Length of agenda: 0
+
+17:11:33:887005
+Step4
+Deleting 6: [now(3)]
+Received af(trying2([cat:np,num:sg,_10540],[cat:np,_10545]))
+Adding trying2([cat:np,num:sg,_10540],[cat:np,_10545])
+Asserted 8: [trying2([cat:np,num:sg,_10540],[cat:np,_10545])]
+Received af(done_unify_1([cat:np,num:sg|_10839],[cat:np,num:sg|_10839]))
+Adding done_unify_1([cat:np,num:sg|_10839],[cat:np,num:sg|_10839])
+Asserted 9: [done_unify_1([cat:np,num:sg|_10839],[cat:np,num:sg|_10839])]
+Received af(doing_unify_2([cat:np,num:sg|_11368],[cat:np,abc:de|_11379]))
+Adding doing_unify_2([cat:np,num:sg|_11368],[cat:np,abc:de|_11379])
+Asserted 10: [doing_unify_2([cat:np,num:sg|_11368],[cat:np,abc:de|_11379])]
+Received af(trying_to([cat:np,abc:de|_11896]))
+Adding trying_to([cat:np,abc:de|_11896])
+Asserted 11: [trying_to([cat:np,abc:de|_11896])]
+Received af(trying_to([abc:de|_12291]))
+Adding trying_to([abc:de|_12291])
+Asserted 12: [trying_to([abc:de|_12291])]
+Received af(done_unify_2([cat:np,num:sg,abc:de|_12674],[cat:np,abc:de,num:sg|_12674]))
+Adding done_unify_2([cat:np,num:sg,abc:de|_12674],[cat:np,abc:de,num:sg|_12674])
+Asserted 13: [done_unify_2([cat:np,num:sg,abc:de|_12674],[cat:np,abc:de,num:sg|_12674])]
+Received failed(call(ac_unification_dags([cat:np,num:sg,_13325],[cat:np,_13330]),[[cat:np,num:sg,_13325],[cat:np,_13330]]),ac_unification_dags([cat:np,num:sg,_13325],[cat:np,_13330]),[[cat:np,num:sg,_13325],[cat:np,_13330]])
+Deleting 5: [doing(ac_unification_dags([cat:np,num:sg,_13621],[cat:np,_13625]),[[cat:np,num:sg,_13621],[cat:np,_13625]])]
+Adding failed(ac_unification_dags([cat:np,num:sg,_13325],[cat:np,_13330]),[[cat:np,num:sg,_13325],[cat:np,_13330]])
+Asserted 14: [failed(ac_unification_dags([cat:np,num:sg,_13325],[cat:np,_13330]),[[cat:np,num:sg,_13325],[cat:np,_13330]])]
+
+not idling 4
+Asserted 7: [now(4)]
+Asserted 8: [trying2([cat:np,num:sg,_14114],[cat:np,_14118])]
+Asserted 9: [done_unify_1([cat:np,num:sg|_14064],[cat:np,num:sg|_14064])]
+Asserted 10: [doing_unify_2([cat:np,num:sg|_14012],[cat:np,abc:de|_14022])]
+Asserted 11: [trying_to([cat:np,abc:de|_13970])]
+Asserted 12: [trying_to([abc:de|_13929])]
+Asserted 13: [done_unify_2([cat:np,num:sg,abc:de|_13878],[cat:np,abc:de,num:sg|_13878])]
+Asserted 14: [failed(ac_unification_dags([cat:np,num:sg,_13815],[cat:np,_13819]),[[cat:np,num:sg,_13815],[cat:np,_13819]])]
+Agenda
+
+17:11:33:891048
+Filter time: 10ms
+Inference time: 0ms
+Memory used: 934868
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:33:891207
+Step5
+Deleting 7: [now(4)]
+Adding idling(5)
+Asserted 16: [idling(5)]
+Asserted 15: [now(5)]
+Asserted 16: [idling(5)]
+Agenda
+
+17:11:33:993117
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 929896
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:33:993264
+Step6
+Deleting 15: [now(5)]
+Adding idling(6)
+Asserted 18: [idling(6)]
+Asserted 17: [now(6)]
+Asserted 18: [idling(6)]
+Agenda
+
+17:11:34:95124
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 930792
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:95275
+Step7
+Deleting 17: [now(6)]
+Adding idling(7)
+Asserted 20: [idling(7)]
+Asserted 19: [now(7)]
+Asserted 20: [idling(7)]
+Agenda
+
+17:11:34:196151
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 931508
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:196298
+Step8
+Deleting 19: [now(7)]
+Adding idling(8)
+Asserted 22: [idling(8)]
+Asserted 21: [now(8)]
+Asserted 22: [idling(8)]
+Agenda
+
+17:11:34:297154
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 932232
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:297303
+Step9
+Deleting 21: [now(8)]
+Adding idling(9)
+Asserted 24: [idling(9)]
+Asserted 23: [now(9)]
+Asserted 24: [idling(9)]
+Agenda
+
+17:11:34:398211
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 933052
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:398362
+Step10
+Deleting 23: [now(9)]
+Adding idling(10)
+Asserted 26: [idling(10)]
+Asserted 25: [now(10)]
+Asserted 26: [idling(10)]
+Agenda
+
+17:11:34:499234
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 933812
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:499381
+Step11
+Deleting 25: [now(10)]
+Adding idling(11)
+Asserted 28: [idling(11)]
+Asserted 27: [now(11)]
+Asserted 28: [idling(11)]
+Agenda
+
+17:11:34:600252
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 934540
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:600406
+Step12
+Deleting 27: [now(11)]
+Adding idling(12)
+Asserted 30: [idling(12)]
+Asserted 29: [now(12)]
+Asserted 30: [idling(12)]
+Agenda
+
+17:11:34:701267
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 935252
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:701416
+Step13
+Deleting 29: [now(12)]
+Adding idling(13)
+Asserted 32: [idling(13)]
+Asserted 31: [now(13)]
+Asserted 32: [idling(13)]
+Agenda
+
+17:11:34:802257
+Filter time: 10ms
+Inference time: 0ms
+Memory used: 936060
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:802407
+Step14
+Deleting 31: [now(13)]
+Adding idling(14)
+Asserted 34: [idling(14)]
+Asserted 33: [now(14)]
+Asserted 34: [idling(14)]
+Agenda
+
+17:11:34:903262
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 936772
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:34:903406
+Step15
+Deleting 33: [now(14)]
+Adding idling(15)
+Asserted 36: [idling(15)]
+Asserted 35: [now(15)]
+Asserted 36: [idling(15)]
+Agenda
+
+17:11:35:4323
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 937448
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:4476
+Step16
+Deleting 35: [now(15)]
+Adding idling(16)
+Asserted 38: [idling(16)]
+Asserted 37: [now(16)]
+Asserted 38: [idling(16)]
+Agenda
+
+17:11:35:105331
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 938140
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:105484
+Step17
+Deleting 37: [now(16)]
+Adding idling(17)
+Asserted 40: [idling(17)]
+Asserted 39: [now(17)]
+Asserted 40: [idling(17)]
+Agenda
+
+17:11:35:206337
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 938980
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:206496
+Step18
+Deleting 39: [now(17)]
+Adding idling(18)
+Asserted 42: [idling(18)]
+Asserted 41: [now(18)]
+Asserted 42: [idling(18)]
+Agenda
+
+17:11:35:307333
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 939708
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:307484
+Step19
+Deleting 41: [now(18)]
+Adding idling(19)
+Asserted 44: [idling(19)]
+Asserted 43: [now(19)]
+Asserted 44: [idling(19)]
+Agenda
+
+17:11:35:408420
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 940420
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:408569
+Step20
+Deleting 43: [now(19)]
+Adding idling(20)
+Asserted 46: [idling(20)]
+Asserted 45: [now(20)]
+Asserted 46: [idling(20)]
+Agenda
+
+17:11:35:509457
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 941132
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:509603
+Step21
+Deleting 45: [now(20)]
+Adding idling(21)
+Asserted 48: [idling(21)]
+Asserted 47: [now(21)]
+Asserted 48: [idling(21)]
+Agenda
+
+17:11:35:610530
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 941892
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:610681
+Step22
+Deleting 47: [now(21)]
+Adding idling(22)
+Asserted 50: [idling(22)]
+Asserted 49: [now(22)]
+Asserted 50: [idling(22)]
+Agenda
+
+17:11:35:711585
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 942636
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:711737
+Step23
+Deleting 49: [now(22)]
+Adding idling(23)
+Asserted 52: [idling(23)]
+Asserted 51: [now(23)]
+Asserted 52: [idling(23)]
+Agenda
+
+17:11:35:812575
+Filter time: 10ms
+Inference time: 0ms
+Memory used: 943348
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:812723
+Step24
+Deleting 51: [now(23)]
+Adding idling(24)
+Asserted 54: [idling(24)]
+Asserted 53: [now(24)]
+Asserted 54: [idling(24)]
+Agenda
+
+17:11:35:913550
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 944060
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:35:913694
+Step25
+Deleting 53: [now(24)]
+Adding idling(25)
+Asserted 56: [idling(25)]
+Asserted 55: [now(25)]
+Asserted 56: [idling(25)]
+Agenda
+
+17:11:36:14681
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 944772
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:14830
+Step26
+Deleting 55: [now(25)]
+Adding idling(26)
+Asserted 58: [idling(26)]
+Asserted 57: [now(26)]
+Asserted 58: [idling(26)]
+Agenda
+
+17:11:36:115708
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 945484
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:115861
+Step27
+Deleting 57: [now(26)]
+Adding idling(27)
+Asserted 60: [idling(27)]
+Asserted 59: [now(27)]
+Asserted 60: [idling(27)]
+Agenda
+
+17:11:36:216717
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 946132
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:216869
+Step28
+Deleting 59: [now(27)]
+Adding idling(28)
+Asserted 62: [idling(28)]
+Asserted 61: [now(28)]
+Asserted 62: [idling(28)]
+Agenda
+
+17:11:36:317783
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 946828
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:317932
+Step29
+Deleting 61: [now(28)]
+Adding idling(29)
+Asserted 64: [idling(29)]
+Asserted 63: [now(29)]
+Asserted 64: [idling(29)]
+Agenda
+
+17:11:36:418775
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 948036
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:418920
+Step30
+Deleting 63: [now(29)]
+Adding idling(30)
+Asserted 66: [idling(30)]
+Asserted 65: [now(30)]
+Asserted 66: [idling(30)]
+Agenda
+
+17:11:36:519825
+Filter time: 0ms
+Inference time: 0ms
+Memory used: 948748
+Number of clauses: 6
+Length of agenda: 0
+
+17:11:36:519977
+Step31
+Deleting 65: [now(30)]
+Received quit

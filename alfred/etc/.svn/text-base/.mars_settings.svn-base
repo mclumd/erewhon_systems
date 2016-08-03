@@ -1,0 +1,45 @@
+# ** mars.logfile ** redirects logger output to this file
+#                 ** if it's not set, we'll output to the console
+# mars.logfile=last_run.html
+# mars.logfile=jpaper.html
+
+# ** mars.timeline ** location of the timeline file to use
+#mars.timeline=/home/schmill/systems/moncon/domains/mars/jpaper_config.tl
+mars.timeline=/fs/metacog/group/mcl/moncon/domains/mars/jpaper_config.tl
+
+# ** mars.config ** location of the domain configuration file to use
+#mars.config=/home/schmill/systems/moncon/domains/mars/assets/tty_config.mars
+# mars.config=/home/schmill/systems/moncon/domains/mars/assets/alfred_config.mars
+#mars.config=/fs/metacog/group/mcl/moncon/domains/mars/assets/tty_config.mars
+mars.config=/fs/metacog/group/mcl/moncon/domains/mars/assets/alfred_config.mars
+
+# ** mars.datafile ** location of the data/instrumentation file to write
+mars.datafile=mars_data.out
+
+# ** mars.eventprob ** probability of a random event occurring
+mars.eventprob=0.0
+
+# ** mars.domain_seed ** random seed to use at initialization
+mars.domain_seed=385386
+
+# ** mars.throttleUs ** number of miliseconds to sleep between simulation steps
+mars.throttleUs=100000
+
+# ** mars.usemcl.<agent_class> ** attempts to wrap any agent of the specified
+#                              ** class in MCL wrappers
+mars.usemcl.mars_rover=true
+
+# ** mars.noEvents ** turns off domain events processing on the timeline 
+mars.noEvents=true
+
+# ** mars.timeline ** turns off Sensor Break Events in moncon timeline proc
+moncon.noSBEs=true
+
+# ** mars.timeline ** turns off Effector Break Events in moncon timeline proc
+moncon.noEBEs=true
+
+# ** mars.rover.ml--- ** schedule for running maintenance actions
+mars.rover.mlMRevery=100
+mars.rover.mlSRevery=200
+mars.rover.mlERevery=200
+
