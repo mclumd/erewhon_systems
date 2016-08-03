@@ -1,0 +1,136 @@
+(in-package :shop2)
+
+(defdomain blocks-hgn-poly
+					 ((:operator (!pickup ?a)
+											 ((on-table ?a)
+												(arm-empty)
+												(clear ?a))
+											 ((clear ?a)
+												(arm-empty)
+												(on-table ?a))
+											 ((holding ?a)))
+
+						(:operator (!putdown ?a)
+											 ((holding ?a))
+											 ((holding ?a))
+											 ((clear ?a)
+												(arm-empty)
+												(on-table ?a)))
+
+						(:operator (!stack ?a ?b)
+											 ((holding ?a)
+												(clear ?b))
+											 ((holding ?a)
+												(clear ?b))
+											 ((arm-empty)
+												(on ?a ?b)
+												(clear ?a)))
+
+						(:operator (!unstack ?a ?b)
+											 ((on ?a ?b)
+												(arm-empty)
+												(clear ?a))
+											 ((on ?a ?b)
+												(arm-empty)
+												(clear ?a))
+											 ((holding ?a)
+												(clear ?b)))
+
+						(:operator (!assert-goals-achieved ?g)
+											 ((forall (?z) (block ?z) (not (need-to-move ?z)))
+												(goal-asserted ?g))
+											 ()
+											 ((goal-achieved ?g)))
+
+						(:gdr (move-block-onto-block ?g ?x ?y ?z)
+									((goal-achieved ?g))
+									(:first (goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on ?x ?y)
+									 (goal (on ?x ?z))
+									 (different ?y ?z)
+									 (clear ?z)
+									 (not (need-to-move ?z)))
+									((holding ?x) (on ?x ?z)))
+
+						(:gdr (move-block-onto-table ?g ?x ?y)
+									((goal-achieved ?g))
+									(:first (goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on ?x ?y)
+									 (goal (on-table ?x)))
+									((holding ?x) (on-table ?x)))
+
+						(:gdr (move-block-from-table-onto-block ?g ?x ?y)
+									((goal-achieved ?g))
+									(:first (goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on-table ?x)
+									 (goal (on ?x ?y))
+									 (clear ?y)
+									 (not (need-to-move ?y)))
+									((holding ?x) (on ?x ?y)))
+
+						(:gdr (move-block-out-of-the-way-1 ?g ?x ?y ?z)
+									((goal-achieved ?g))
+									((goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on ?x ?y)
+									 (goal (on ?x ?z))
+									 (different ?y ?z)
+									 (not (clear ?z)))
+									((holding ?x) (on-table ?x)))
+
+						(:gdr (move-block-out-of-the-way-2 ?g ?x ?y ?z)
+									((goal-achieved ?g))
+									((goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on ?x ?y)
+									 (goal (on ?x ?z))
+									 (different ?y ?z)
+									 (need-to-move ?z))
+									((holding ?x) (on-table ?x)))
+
+						(:gdr (move-block-out-of-the-way-3 ?g ?x ?y)
+									((goal-achieved ?g))
+									((goal-asserted ?g)
+									 (arm-empty)
+									 (clear ?x)
+									 (on ?x ?y)
+									 (goal (on ?x ?y))
+									 (need-to-move ?y))
+									((holding ?x) (on-table ?x)))
+
+;						(:gdr (assert-goals-into-state ?g)
+;									(goal-achieved ?g)
+;									((not (goal-asserted ?g)))
+;									((goal-asserted ?g)))
+
+
+						(:- (same ?x ?x) nil)
+						(:- (different ?x ?y) ((not (same ?x ?y))))
+
+						(:- (need-to-move ?x)
+								;; need to move x if x needs to go from one block to another   
+								((on ?x ?y)  (goal (on ?x ?z)) (different ?y ?z))
+								;; need to move x if x needs to go from table to block   
+								((on-table ?x) (goal (on ?x ?z)))
+								;; need to move x if x needs to go from block to table   
+								((on ?x ?y)  (goal (on-table ?x)))
+								;; need to move x if x is on y and y needs to be clear
+								((on ?x ?y) (goal (clear ?y)))
+								;; need to move x if x is on z and something else needs to be on z
+								((on ?x ?z) (goal (on ?y ?z)) (different ?x ?y))
+								;; need to move x if x is on something else that needs to be moved 
+								((on ?x ?w) (need-to-move ?w)))))
+						
+;						(:- (in-position ?x) 
+;								((on ?x ?y) (goal (on ?x ?y)) (not (need-to-move ?y)))
+
+
+

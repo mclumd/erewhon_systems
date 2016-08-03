@@ -1,0 +1,20 @@
+
+I forgot to mention one more thing; the plans are written into  a file called "plans" (which is currently set via the o-file parameter in the load file). This is just in case you manage to run SHOP2, but have no idea where the plans got written :) 
+
+-------------------------------------------------------------------------------------------------
+
+I've attached an archive of GDP here containing a new file called shop2-load-michael.lisp. I'm not sure if the code linked on the webpage is the latest version, so I'm playing safe. The way to run SHOP2 would now be to:
+
+- go into the trunk directory.
+
+- set the d-file and p-file (domain file  and problem file respectively) parameters in the shop2-load-michael file (right now, it's set to some blocks-world domain and problem file).
+
+- compile the load file using the command: (compile-file "shop2-load-michael.lisp")
+
+- load the file using: (load "shop2-load-michael.lisp")
+
+If all goes well, it ought to work. It worked on allegro lisp for me. Hopefully it should work on clisp as well. If not, see if you can install allegro lisp and try it on that. Even if its not usable for research purposes, it's certainly the best lisp implementation around and at least for playing around with lisp, it's very useful.
+
+Hope this helps!
+
+-vikas

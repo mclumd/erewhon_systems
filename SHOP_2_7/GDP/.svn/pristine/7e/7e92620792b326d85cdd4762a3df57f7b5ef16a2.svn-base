@@ -1,0 +1,22 @@
+(in-package :shop2)
+
+(defun translate-to-pddl (domain-name n)
+	(dolist (x '(10 9 8 7 6 5 4 3 2 1))
+		(with-open-file (stream (concatenate 'string "strips_" domain-name "_" (write-to-string n) "_" (write-to-string x) ".pddl")
+														:direction :output
+														:if-exists :supersede
+														:if-does-not-exist :create)
+			(format t "x : ~A ~%" x)
+			(let* ((problem (nth (- 10 x) *all-problems*))
+						 (start-state (car (problem->state *domain* problem)))
+						 (goal (goal-list-from-problem problem))
+						 (constants (get-objects-from-state-helper start-state nil)))
+				(format stream "(define (problem ~A_prob_~A_~A)~%" domain-name n x)
+				(format stream "  (:domain ~A)~%" domain-name)
+				(format stream "  ~S~%" (cons ':objects constants))
+				(format stream "  ~S~%" (cons ':init start-state))
+				(format stream "  ~S)" (if (null (cdr goal))
+																 (cons ':goal goal)
+																 (list ':goal (cons 'and goal))))
+				(close stream)))))
+;	(format t "state : ~A ~% goals : ~A ~% constants : ~A ~%" start-state goal constants)))))

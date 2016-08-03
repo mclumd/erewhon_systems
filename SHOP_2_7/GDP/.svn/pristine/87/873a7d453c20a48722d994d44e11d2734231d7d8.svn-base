@@ -1,0 +1,58 @@
+(in-package :shop2)
+
+(defdomain blocks-hgn-simpl
+					 ((:operator (!pickup ?a)
+											 ((on-table ?a)
+												(arm-empty)
+												(clear ?a))
+											 ((clear ?a)
+												(arm-empty)
+												(on-table ?a))
+											 ((holding ?a)))
+
+						(:operator (!putdown ?a)
+											 ((holding ?a))
+											 ((holding ?a))
+											 ((clear ?a)
+												(arm-empty)
+												(on-table ?a)))
+
+						(:operator (!stack ?a ?b)
+											 ((holding ?a)
+												(clear ?b))
+											 ((holding ?a)
+												(clear ?b))
+											 ((arm-empty)
+												(on ?a ?b)
+												(clear ?a)))
+
+						(:operator (!unstack ?a ?b)
+											 ((on ?a ?b)
+												(arm-empty)
+												(clear ?a))
+											 ((on ?a ?b)
+												(arm-empty)
+												(clear ?a))
+											 ((holding ?a)
+												(clear ?b)))
+
+            (:gdr (move-block-onto-block ?a ?b)
+                  ((on ?a ?b))
+                  ((arm-empty))
+                  (((clear ?a) (clear ?b))
+                   ((holding ?a))))
+
+            (:gdr (clear-block ?a ?b)
+                  ((clear ?a))
+                  ((on ?b ?a) (arm-empty))
+                  (((clear ?b))
+                   ((holding ?b))
+                   ((on-table ?b))))
+
+            (:gdr (move-block-onto-table ?a)
+                  ((on-table ?a))
+                  ((arm-empty))
+                  (((clear ?a))
+                   ((holding ?a))))))
+
+

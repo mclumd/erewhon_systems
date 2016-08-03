@@ -1,0 +1,505 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+*all-problems*	decls.lisp	/^(defvar *all-problems* nil)         ; all problems that have been defined$/;"	f
+*attribution-list*	common.lisp	/^(defparameter *attribution-list* nil) ; sources of facts from external access$/;"	f
+*back-quote-name*	decls.lisp	/^(defparameter *back-quote-name*$/;"	f
+*break-on-backtrack*	decls.lisp	/^(defvar *break-on-backtrack* nil$/;"	f
+*current-plan*	decls.lisp	/^(defparameter *current-plan* nil)  ; current plan$/;"	f
+*current-state*	common.lisp	/^(defparameter *current-state* nil) ; current state (for find-satisfiers)$/;"	f
+*current-tasks*	decls.lisp	/^(defparameter *current-tasks* nil) ; current task$/;"	f
+*defdomain-verbose*	input.lisp	/^(defvar *defdomain-verbose* t)$/;"	f
+*define-silently*	input.lisp	/^(defvar *define-silently* nil$/;"	f
+*depth-cutoff*	decls.lisp	/^(defparameter *depth-cutoff* nil)   ; maximum allowable depth for SEEK-PLANS$/;"	f
+*domain*	thpr-decls.lisp	/^(defvar *domain* nil)$/;"	f
+*expansions*	decls.lisp	/^(defparameter *expansions* 0)       ; number of task expansions so far$/;"	f
+*explanation*	decls.lisp	/^(defparameter *explanation* nil)    ; whether to return explanations$/;"	f
+*external-access*	common.lisp	/^(defparameter *external-access* nil)  ; whether to access external data$/;"	f
+*gc*	decls.lisp	/^(defparameter *gc* t)        ; whether to call GC each time we call SEEK-PLANS$/;"	f
+*hand-steer*	decls.lisp	/^(defvar *hand-steer* nil$/;"	f
+*hgn-output*	decls.lisp	/^(defparameter *hgn-output* nil)$/;"	f
+*inferences*	common.lisp	/^(defparameter *inferences* 0)       ; number of logical inferences so far$/;"	f
+*infinity*	decls.lisp	/^(defparameter *infinity* most-positive-fixnum)$/;"	f
+*internal-time-limit*	decls.lisp	/^(defparameter *internal-time-limit* nil)  ; maximum time (in units) for execution$/;"	f
+*internal-time-tag*	decls.lisp	/^(defparameter *internal-time-tag* nil)    ; catch tag to throw to when time expires$/;"	f
+*leashed*	decls.lisp	/^(defvar *leashed* nil$/;"	f
+*make-problem-silently*	input.lisp	/^(defvar *make-problem-silently* nil$/;"	f
+*operator-tasks*	decls.lisp	/^(defparameter *operator-tasks* nil) ; record of the task atom for operators$/;"	f
+*optimal-cost*	decls.lisp	/^(defparameter *optimal-cost* 0)     ; cost of *optimal-plan*$/;"	f
+*optimal-plan*	decls.lisp	/^(defparameter *optimal-plan* 'fail) ; optimal plan found so far$/;"	f
+*optimize-cost*	decls.lisp	/^(defparameter *optimize-cost* nil)  ; whether to optimize with branch and bound$/;"	f
+*plan-tree*	decls.lisp	/^(defparameter *plan-tree* nil)      ; whether to return the tree$/;"	f
+*planning-graph*	decls.lisp	/^(defparameter *planning-graph* nil)$/;"	f
+*plans-found*	decls.lisp	/^(defparameter *plans-found* nil)    ; list of plans found so far$/;"	f
+*pp*	decls.lisp	/^(defparameter *pp* t)               ; what value to use for *PRINT-PRETTY*$/;"	f
+*print-plans*	decls.lisp	/^(defvar *print-plans*)              ; whether to print out the plans we find$/;"	f
+*print-stats*	decls.lisp	/^(defvar *print-stats*)              ; whether to print statistics$/;"	f
+*protections*	decls.lisp	/^(defparameter *protections* nil)    ; initial protection list set to nil$/;"	f
+*pshort*	decls.lisp	/^(defvar *pshort*)  ; whether to skip ops that begin with !! when printing plans$/;"	f
+*relevant-time*	decls.lisp	/^(defparameter *relevant-time* 0)$/;"	f
+*scrambled*	decls.lisp	/^(defparameter *scrambled* nil)$/;"	f
+*shop-trace*	tracer.lisp	/^(defvar *shop-trace* nil)$/;"	f
+*shop-trace-stream*	tracer.lisp	/^(defvar *shop-trace-stream* t)$/;"	f
+*start-real-time*	debugging.lisp	/^(defvar *start-real-time*)$/;"	f
+*start-run-time*	debugging.lisp	/^(defvar *start-run-time*)$/;"	f
+*state*	thpr-decls.lisp	/^(defvar *state*)$/;"	f
+*state-changed-p*	decls.lisp	/^(defparameter *state-changed-p* t)$/;"	f
+*state-encoding*	common.lisp	/^(defparameter *state-encoding* :hash) ; current encoding of states$/;"	f
+*states-found*	decls.lisp	/^(defvar *states-found* nil)             ;associated with *PLANS-FOUND* [2004\/09\/14:rpg]$/;"	f
+*subtask-parents*	decls.lisp	/^(defparameter *subtask-parents* nil) ; record of the parents in the tree$/;"	f
+*tasklist*	decls.lisp	/^(defparameter *tasklist* nil)       ; initial task list set to nil$/;"	f
+*time-limit*	decls.lisp	/^(defparameter *time-limit* nil)     ; maximum time (in seconds) for execution$/;"	f
+*trace-query*	tracer.lisp	/^(defvar *trace-query* nil)$/;"	f
+*traced-methods*	debugging.lisp	/^(defvar *traced-methods* nil)           ; break when attempting to$/;"	f
+*traced-tasks*	debugging.lisp	/^(defvar *traced-tasks* nil)             ; break when attempting to$/;"	f
+*unifiers-found*	decls.lisp	/^(defvar *unifiers-found* nil)   ;associated with *PLANS-FOUND*$/;"	f
+*use-heuristic*	decls.lisp	/^(defparameter *use-heuristic* t)$/;"	f
+*verbose*	decls.lisp	/^(defparameter *verbose* 1)          ; default value for VERBOSE in FIND-PLANS$/;"	f
+*which*	decls.lisp	/^(defparameter *which* :first)       ; default value for WHICH in FIND-PLANS$/;"	f
++shopyright+	shop2.lisp	/^(defconstant +shopyright+$/;"	f
+:shop2	package.lisp	/^(defpackage :shop2$/;"	f
+:shop2-user	package.lisp	/^(defpackage :shop2-user$/;"	f
+:shop2.common	package-common.lisp	/^(defpackage :shop2.common$/;"	f
+:shop2.theorem-prover	package-thpr.lisp	/^(defpackage :shop2.theorem-prover$/;"	f
+:shop2.unifier	package-unifier.lisp	/^(defpackage :shop2.unifier$/;"	f
+BIT-statebody-increment-position	state-utils.lisp	/^(defun BIT-statebody-increment-position$/;"	f
+BIT-statebody-search-array	state-utils.lisp	/^(defun BIT-statebody-search-array$/;"	f
+DUMMY-external-access-hook	theorem-prover.lisp	/^(defun DUMMY-external-access-hook (goal)$/;"	f
+LIST-insert-atom-into-statebody	state-utils.lisp	/^(defun LIST-insert-atom-into-statebody (atom statebody)$/;"	f
+LIST-remove-atom-from-statebody	state-utils.lisp	/^(defun LIST-remove-atom-from-statebody (atom statebody)$/;"	f
+PD-problem1	basic-example-replanning.lisp	/^(defproblem PD-problem1 logistics$/;"	f
+SHOP-TRACE-ITEMS	debugging.lisp	/^(defconstant SHOP-TRACE-ITEMS$/;"	f
+acceptable-cost-p	search.lisp	/^(defun acceptable-cost-p (cost)$/;"	f
+achieve-subtasks	gnp-search.lisp	/^(defun achieve-subtasks (current-state task-list goal-history)$/;"	f
+achieve-subtasks-given-toptask-options	gnp-search.lisp	/^(defun achieve-subtasks-given-toptask-options (current-state task-list toptask-options goal-history)$/;"	f
+action-add-effects	ff-heuristic.lisp	/^(defun action-add-effects (action-head)$/;"	f
+action-operator	ff-heuristic.lisp	/^(defun action-operator (action-head)$/;"	f
+action-preconditions	ff-heuristic.lisp	/^(defun action-preconditions (action-head)$/;"	f
+action-type	state-utils.lisp	/^(deftype action-type () '(member add delete))$/;"	f
+action?	gnp-utils.lisp	/^(defun action? (op)$/;"	f
+actions-domain-mixin	decls.lisp	/^(defclass actions-domain-mixin ()$/;"	f
+add-assocs	tree-funs.lisp	/^(defmethod add-assocs ((ts new-tree-store) new-index-assocs)$/;"	f
+add-atom-to-state	state-decls.lisp	/^(defgeneric add-atom-to-state (atom state depth operator)$/;"	f
+add-atom-to-state	state-utils.lisp	/^(defmethod add-atom-to-state (atom (st tagged-state) depth operator)$/;"	f
+add-operator-task	tree-funs.lisp	/^(defmethod add-operator-task ((ts new-tree-store) task operator$/;"	f
+add-operator-task	tree-funs.lisp	/^(defmethod add-operator-task ((ts tree-store) task operator$/;"	f
+add-protection	protections.lisp	/^(defun add-protection (protections protect depth operator state)$/;"	f
+add-reduction	tree-funs.lisp	/^(defmethod add-reduction ((ts new-tree-store) task reduction$/;"	f
+add-reduction	tree-funs.lisp	/^(defmethod add-reduction ((ts tree-store) task reduction$/;"	f
+add-source	theorem-prover.lisp	/^(defun add-source (unified-goal external explanation)$/;"	f
+already-immediate-p	task-reductions.lisp	/^(defun already-immediate-p (reduction)$/;"	f
+applicable-actions	ff-heuristic.lisp	/^(defun applicable-actions (state)$/;"	f
+applicable-actions-optimized	ff-heuristic.lisp	/^(defun applicable-actions-optimized (pg state)$/;"	f
+apply-action	pddl.lisp	/^(defun apply-action (state task-body action protections depth$/;"	f
+apply-action-to-state	gnp-utils.lisp	/^(defun apply-action-to-state (state action)$/;"	f
+apply-method	decls.lisp	/^(defgeneric apply-method (domain state task method protections depth in-unifier)$/;"	f
+apply-method	task-reductions.lisp	/^(defmethod apply-method ((domain domain) state task-body method protections depth$/;"	f
+apply-operator	decls.lisp	/^(defgeneric apply-operator (domain state task-body operator protections depth in-unifier)$/;"	f
+apply-operator	task-reductions.lisp	/^(defmethod apply-operator ((domain domain) state task-body operator protections depth$/;"	f
+apply-plan-to-state	gnp-utils.lisp	/^(defun apply-plan-to-state (state plan)$/;"	f
+apply-substitution	unify.lisp	/^(defmacro apply-substitution (target a-list)$/;"	f
+atom-in-state-p	state-decls.lisp	/^(defgeneric atom-in-state-p (atom state)$/;"	f
+atom-in-state-p	state-utils.lisp	/^(defmethod atom-in-state-p (atom (st bit-state))$/;"	f
+atom-in-state-p	state-utils.lisp	/^(defmethod atom-in-state-p (atom (st hash-state))$/;"	f
+atom-in-state-p	state-utils.lisp	/^(defmethod atom-in-state-p (atom (st list-state))$/;"	f
+atom-in-state-p	state-utils.lisp	/^(defmethod atom-in-state-p (atom (st mixed-state))$/;"	f
+axioms	decls.lisp	/^(defmethod axioms ((domain domain) (name symbol))$/;"	f
+axioms	thpr-decls.lisp	/^(defgeneric axioms (thpr-domain predicate)$/;"	f
+backtrack	output.lisp	/^(defun backtrack (format-string &rest args)$/;"	f
+bad-argument	thpr-decls.lisp	/^(define-condition bad-argument (error theorem-prover-condition)$/;"	f
+binding-list-value	unify.lisp	/^(defun binding-list-value (var binding-list &optional (if-not-found :error))$/;"	f
+bindings-of-gdr-achieving-goal	gnp-utils.lisp	/^(defun bindings-of-gdr-achieving-goal (task-condition task-goal current-state gdr)$/;"	f
+bindings-of-operator-achieving-goal	gnp-utils.lisp	/^(defun bindings-of-operator-achieving-goal (goal current-state op)$/;"	f
+build-action-preconditions	ff-heuristic.lisp	/^(defun build-action-preconditions (initial-state)$/;"	f
+call	decls.lisp	/^(defmacro call (fn &rest params)$/;"	f
+catch-internal-time	decls.lisp	/^(defmacro catch-internal-time (&rest body)$/;"	f
+check-constraints	unify.lisp	/^(defun check-constraints (binding)$/;"	f
+choose-immediate-task	search.lisp	/^(defun choose-immediate-task (immediate-tasks unifier)$/;"	f
+complex-node-children	tree-accessors.lisp	/^(defun complex-node-children (tree-node)$/;"	f
+complex-node-p	tree-accessors.lisp	/^(defun complex-node-p (tree-node)$/;"	f
+complex-node-task	tree-accessors.lisp	/^(defun complex-node-task (tree-node)$/;"	f
+compose-substitutions	unify.lisp	/^(defun compose-substitutions (sub1 sub2)$/;"	f
+conditional-effects-mixin	pddl.lisp	/^(defclass conditional-effects-mixin ()$/;"	f
+constraint-failure	unify.lisp	/^(define-condition constraint-failure (error)$/;"	f
+copy-hash-table	state-utils.lisp	/^(defun copy-hash-table (H1 &optional (copy-fn #'identity))$/;"	f
+copy-instance	tree-funs.lisp	/^(defmethod copy-instance ((nts new-tree-store)$/;"	f
+copy-state	state-decls.lisp	/^(defgeneric copy-state (state)$/;"	f
+copy-state	state-utils.lisp	/^(defmethod copy-state ((st bit-state))$/;"	f
+copy-state	state-utils.lisp	/^(defmethod copy-state ((st hash-state))$/;"	f
+copy-state	state-utils.lisp	/^(defmethod copy-state ((st list-state))$/;"	f
+copy-state	state-utils.lisp	/^(defmethod copy-state ((st mixed-state))$/;"	f
+copy-task-node	gnp-utils.lisp	/^(defun copy-task-node (task)$/;"	f
+copy-task-tree	task-reductions.lisp	/^(defun copy-task-tree (tt)$/;"	f
+decompose-task-using-action	gnp-search.lisp	/^(defun decompose-task-using-action (task action state)$/;"	f
+decompose-task-using-method	gnp-search.lisp	/^(defun decompose-task-using-method (task method-head state goal-history)$/;"	f
+decompose-task-using-method-list	gnp-search.lisp	/^(defun decompose-task-using-method-list (task method-list state)$/;"	f
+def-logical-keyword	theorem-prover.lisp	/^(defmacro def-logical-keyword ((name domain-specializer) &body forms)$/;"	f
+def-operator-type	ff-heuristic.lisp	/^(defun def-operator-type (list-of-op-types)$/;"	f
+def-problem-set	input.lisp	/^(defmacro def-problem-set (list-name problem-list)$/;"	f
+defconstant	decls.lisp	/^(defmacro defconstant (name value &optional doc)$/;"	f
+defdomain	input.lisp	/^(defmacro defdomain (name-and-options items)$/;"	f
+defproblem	input.lisp	/^(defmacro defproblem (problem-name &rest args)$/;"	f
+delete-atom-from-state	state-decls.lisp	/^(defgeneric delete-atom-from-state (atom state depth operator)$/;"	f
+delete-atom-from-state	state-utils.lisp	/^(defmethod delete-atom-from-state (atom (st tagged-state) depth operator)$/;"	f
+delete-problem	decls.lisp	/^(defgeneric delete-problem (problem)$/;"	f
+delete-protection	protections.lisp	/^(defun delete-protection (protections protect depth operator state)$/;"	f
+delete-task-main-list	task-reductions.lisp	/^(defun delete-task-main-list (L TASK deleted)$/;"	f
+delete-task-top-list	task-reductions.lisp	/^(defun delete-task-top-list (L ML TASK)$/;"	f
+determine-verbosity	output.lisp	/^(defun determine-verbosity (verbose)$/;"	f
+do-conjunct	theorem-prover.lisp	/^(defun do-conjunct (domain goal1 remaining state bindings level just1)$/;"	f
+do-problems	input.lisp	/^(defun do-problems (problems &rest keywords)$/;"	f
+domain	decls.lisp	/^(defclass domain (actions-domain-mixin shop2.theorem-prover:thpr-domain)$/;"	f
+domain-name-string	gnp-classical.lisp	/^(defun domain-name-string ()$/;"	f
+dump-higher-cost-plans!	search.lisp	/^(defun dump-higher-cost-plans! ()$/;"	f
+dump-previous-plans!	search.lisp	/^(defun dump-previous-plans! ()$/;"	f
+empty-tree	tree-funs.lisp	/^(defun empty-tree ()$/;"	f
+equality-mixin	pddl.lisp	/^(defclass equality-mixin ()$/;"	f
+existential-precondition-mixin	pddl.lisp	/^(defclass existential-precondition-mixin ()$/;"	f
+explain-satisfier	theorem-prover.lisp	/^(defun explain-satisfier (unified-goal state &optional external$/;"	f
+extend-plan-tree-nodes	tree-reductions.lisp	/^(defun extend-plan-tree-nodes (base-nodes)$/;"	f
+external-find-satisfiers	theorem-prover.lisp	/^(defun external-find-satisfiers (domain goal state)$/;"	f
+external-query	theorem-prover.lisp	/^(defun external-query (domain query state)$/;"	f
+extract-adds-and-deletes	pddl.lisp	/^(defun extract-adds-and-deletes (effect-expr state)$/;"	f
+extract-relaxed-plan	ff-heuristic.lisp	/^(defun extract-relaxed-plan (graph formula)$/;"	f
+extract-relaxed-plan-helper	ff-heuristic.lisp	/^(defun extract-relaxed-plan-helper (graph formula-vector max-level plan)$/;"	f
+extract-shop-tree	tree-funs.lisp	/^(defmethod extract-shop-tree ((ts tree-store) plan)$/;"	f
+extract-subtasks	tree-reductions.lisp	/^(defun extract-subtasks (reduction)$/;"	f
+extract-subtree	tree-reductions.lisp	/^(defun extract-subtree (root-node nodes)$/;"	f
+extract-tree	tree-reductions.lisp	/^(defun extract-tree (plan)$/;"	f
+extract-variables	theorem-prover.lisp	/^(defun extract-variables (expr)$/;"	f
+ff-difficulty-heuristic	ff-heuristic.lisp	/^(defun ff-difficulty-heuristic (graph action)$/;"	f
+find-all-complex-node-for-task	tree-accessors.lisp	/^(defun find-all-complex-node-for-task (task-name tree)$/;"	f
+find-all-complex-node-if	tree-accessors.lisp	/^(defun find-all-complex-node-if (fun tree)$/;"	f
+find-binding	unify.lisp	/^(defun find-binding (target binding-list)$/;"	f
+find-complex-node-for-task	tree-accessors.lisp	/^(defun find-complex-node-for-task (task-name tree)$/;"	f
+find-complex-node-if	tree-accessors.lisp	/^(defun find-complex-node-if (fun tree)$/;"	f
+find-domain	input.lisp	/^(defun find-domain (name &optional (if-not-found :error))$/;"	f
+find-next-main-list	task-reductions.lisp	/^(defun find-next-main-list (task L)$/;"	f
+find-plans	shop2.lisp	/^(defun find-plans (problem$/;"	f
+find-plans-1	shop2.lisp	/^(defun find-plans-1 (domain state tasks which &optional problem)$/;"	f
+find-problem	decls.lisp	/^(defun find-problem (name)$/;"	f
+find-satisfiers	theorem-prover.lisp	/^(defun find-satisfiers (goals state &optional just-one (level 0)$/;"	f
+first-word-equal	theorem-prover.lisp	/^(defun first-word-equal (string1 string2)$/;"	f
+fix-uninterned-bindings	unify.lisp	/^(defun fix-uninterned-bindings (bindings query-vars)$/;"	f
+force-immediate	task-reductions.lisp	/^(defun force-immediate (reductions)$/;"	f
+force-immediate-reduction	task-reductions.lisp	/^(defun force-immediate-reduction (reduction)$/;"	f
+force-immediate-unordered	task-reductions.lisp	/^(defun force-immediate-unordered (unordered-list &optional previous)$/;"	f
+fully-instantiated-goal	theorem-prover.lisp	/^(defun fully-instantiated-goal (goal)$/;"	f
+gdr-goal	gnp-utils.lisp	/^(defun gdr-goal (gdr)$/;"	f
+gdr-head	gnp-utils.lisp	/^(defun gdr-head (gdr)$/;"	f
+gdr-preconditions	gnp-utils.lisp	/^(defun gdr-preconditions (gdr)$/;"	f
+gdr-subgoals	gnp-utils.lisp	/^(defun gdr-subgoals (gdr)$/;"	f
+generate-formula-vector	ff-heuristic.lisp	/^(defun generate-formula-vector (graph formula)$/;"	f
+get-alist	unify.lisp	/^(defun get-alist (variables)$/;"	f
+get-attribution	theorem-prover.lisp	/^(defun get-attribution (unified-query)$/;"	f
+get-immediate-list	search.lisp	/^(defun get-immediate-list (tl)$/;"	f
+get-method-object-from-head	gnp-utils.lisp	/^(defun get-method-object-from-head (m-head)$/;"	f
+get-objects-from-state	gnp-utils.lisp	/^(defun get-objects-from-state (state)$/;"	f
+get-objects-from-state-helper	gnp-utils.lisp	/^(defun get-objects-from-state-helper (atoms objects)$/;"	f
+get-problems	input.lisp	/^(defun get-problems (name &key print)$/;"	f
+get-state	decls.lisp	/^(defgeneric get-state (problem)$/;"	f
+get-task-body	task-reductions.lisp	/^(defun get-task-body (task1)$/;"	f
+get-task-list-from-goal-list	gnp-utils.lisp	/^(defun get-task-list-from-goal-list (goal-list task)$/;"	f
+get-task-name	task-reductions.lisp	/^(defun get-task-name (task1)$/;"	f
+get-tasks	decls.lisp	/^(defgeneric get-tasks (problem)$/;"	f
+get-top-tasks	task-reductions.lisp	/^(defun get-top-tasks (L)$/;"	f
+goal-decomposition-planner	gnp-funcs.lisp	/^(defun goal-decomposition-planner (current-state current-task-node)$/;"	f
+goal-equalp	theorem-prover.lisp	/^(defun goal-equalp (g1 g2)$/;"	f
+goal-list-from-problem	gnp-utils.lisp	/^(defun goal-list-from-problem (problem)$/;"	f
+goal-predicate-in-add-effects	gnp-utils.lisp	/^(defun goal-predicate-in-add-effects (goal add-effects)$/;"	f
+goals-from-task	gnp-utils.lisp	/^(defun goals-from-task (task)$/;"	f
+goals-from-task-node	gnp-utils.lisp	/^(defun goals-from-task-node (task-node)$/;"	f
+goals-in-add-effects	gnp-utils.lisp	/^(defun goals-in-add-effects (goals add-effects)$/;"	f
+groundp	unify.lisp	/^(defun groundp (literal)$/;"	f
+handle-domain-options	decls.lisp	/^(defgeneric handle-domain-options (domain &key type &allow-other-keys)$/;"	f
+handle-domain-options	input.lisp	/^(defmethod handle-domain-options ((domain domain) &key type)$/;"	f
+has-axioms-mixin	thpr-decls.lisp	/^(defclass has-axioms-mixin ()$/;"	f
+include-in-tag	state-decls.lisp	/^(defgeneric include-in-tag (action atom tag)$/;"	f
+include-in-tag	state-utils.lisp	/^(defmethod include-in-tag (action atom (st tagged-state))$/;"	f
+incorporate-unifiers	theorem-prover.lisp	/^(defun incorporate-unifiers (unifiers remaining just-one$/;"	f
+indented-format	output.lisp	/^(defun indented-format (indentation &rest body)$/;"	f
+initialize-problem	decls.lisp	/^(defgeneric initialize-problem (problem &key)$/;"	f
+initialize-problem	input.lisp	/^(defmethod initialize-problem ((problem problem) &key state tasks)$/;"	f
+insert-atom	state-decls.lisp	/^(defgeneric insert-atom (atom state)$/;"	f
+insert-atom	state-utils.lisp	/^(defmethod insert-atom (atom (st bit-state))$/;"	f
+insert-atom	state-utils.lisp	/^(defmethod insert-atom (atom (st hash-state))$/;"	f
+insert-atom	state-utils.lisp	/^(defmethod insert-atom (atom (st list-state))$/;"	f
+insert-atom	state-utils.lisp	/^(defmethod insert-atom (atom (st mixed-state))$/;"	f
+install-domain	decls.lisp	/^(defgeneric install-domain (domain &optional redefine-ok)$/;"	f
+install-domain	input.lisp	/^(defmethod install-domain ((domain domain) &optional redefine-ok)$/;"	f
+instantiation-error	thpr-decls.lisp	/^(define-condition instantiation-error (error theorem-prover-condition)$/;"	f
+internal-operator-p	task-reductions.lisp	/^(defun internal-operator-p (operator-name)$/;"	f
+invoke-classical-planner	gnp-classical.lisp	/^(defun invoke-classical-planner (current-state goals objects)$/;"	f
+invoke-external-query	theorem-prover.lisp	/^(defun invoke-external-query (query state)$/;"	f
+iota	tree-funs.lisp	/^(defun iota (start end)$/;"	f
+logical-keywordp	thpr-decls.lisp	/^(defgeneric logical-keywordp (symbol domain)$/;"	f
+logistics	basic-example-replanning.lisp	/^(defdomain logistics$/;"	f
+make-binding-list	unify.lisp	/^(defun make-binding-list (variables bindings)$/;"	f
+make-bit-state	state-utils.lisp	/^(defun make-bit-state (atoms)$/;"	f
+make-complex-node	tree-accessors.lisp	/^(defun make-complex-node (task children)$/;"	f
+make-domain	input.lisp	/^(defun make-domain (name &optional items)$/;"	f
+make-gdr	gnp-utils.lisp	/^(defun make-gdr (head goal pre subgoals)$/;"	f
+make-hash-state	state-utils.lisp	/^(defun make-hash-state (atoms)$/;"	f
+make-initial-state	state-decls.lisp	/^(defgeneric make-initial-state (domain state-encoding atoms &key)$/;"	f
+make-initial-state	state-utils.lisp	/^(defmethod make-initial-state (domain (state-encoding (eql :bit)) atoms &key)$/;"	f
+make-initial-state	state-utils.lisp	/^(defmethod make-initial-state (domain (state-encoding (eql :hash)) atoms &key)$/;"	f
+make-initial-state	state-utils.lisp	/^(defmethod make-initial-state (domain (state-encoding (eql :list))  atoms &key)$/;"	f
+make-initial-state	state-utils.lisp	/^(defmethod make-initial-state (domain (state-encoding (eql :mixed)) atoms &key)$/;"	f
+make-list-state	state-utils.lisp	/^(defun make-list-state (atoms)$/;"	f
+make-mixed-state	state-utils.lisp	/^(defun make-mixed-state (atoms)$/;"	f
+make-problem	input.lisp	/^(defun make-problem (problem-name-etc state tasks &rest extras &aux domain-name)$/;"	f
+make-problem-set	input.lisp	/^(defun make-problem-set (list-name problem-list)$/;"	f
+make-state	state-utils.lisp	/^(defun make-state (atoms &optional (state-encoding *state-encoding*))$/;"	f
+max-level-among-prop-nodes	ff-heuristic.lisp	/^(defun max-level-among-prop-nodes (graph prop-nodes)$/;"	f
+merge-binding-set-lists	theorem-prover.lisp	/^(defun merge-binding-set-lists (binding-sets1 binding-sets2$/;"	f
+merge-binding-sets	theorem-prover.lisp	/^(defun merge-binding-sets (binding-set1 binding-set2)$/;"	f
+method-object-from-head	ff-heuristic.lisp	/^(defun method-object-from-head (m-head)$/;"	f
+method-subgoals	ff-heuristic.lisp	/^(defun method-subgoals (m-head)$/;"	f
+method-value	gnp-decls.lisp	/^(defstruct method-value$/;"	f
+methods	decls.lisp	/^(defgeneric methods (domain task-name)$/;"	f
+methods	decls.lisp	/^(defmethod methods ((domain domain) (name symbol))$/;"	f
+min-level-among-action-nodes	ff-heuristic.lisp	/^(defun min-level-among-action-nodes (graph action-nodes)$/;"	f
+new-assocs	tree-funs.lisp	/^(defmethod new-assocs ((tree new-tree-store) old-tasks new-tasks)$/;"	f
+new-tree-store	tree-funs.lisp	/^(defclass new-tree-store ()$/;"	f
+no-method-for-task	decls.lisp	/^(define-condition no-method-for-task (shop-error)$/;"	f
+node-children	tree-reductions.lisp	/^(defun node-children (node nodes)$/;"	f
+occurs	unify.lisp	/^(defun occurs (variable-name expr)$/;"	f
+of-type-exprs	pddl.lisp	/^(defun of-type-exprs (vars types)$/;"	f
+operator	decls.lisp	/^(defgeneric operator (domain task-name)$/;"	f
+operator	decls.lisp	/^(defmethod operator ((domain domain) (name symbol))$/;"	f
+operator	search.lisp	/^(deftype operator ()$/;"	f
+operator-task	tree-reductions.lisp	/^(defun operator-task (operator-node)$/;"	f
+optimize-continue-p	search.lisp	/^(defun optimize-continue-p (which)$/;"	f
+option-list-for-task	gnp-utils.lisp	/^(defun option-list-for-task (task-node current-state)$/;"	f
+option-value	gnp-decls.lisp	/^(defstruct option-value$/;"	f
+order-actions	gnp-utils.lisp	/^(defun order-actions (a)$/;"	f
+order-methods	gnp-utils.lisp	/^(defun order-methods (state methods task-goal)$/;"	f
+order-options	gnp-utils.lisp	/^(defun order-options (state options task-goal)$/;"	f
+parse-domain-item	decls.lisp	/^(defgeneric parse-domain-item (domain item-keyword item)$/;"	f
+parse-domain-item	input.lisp	/^(defmethod parse-domain-item ((domain domain) (item-key (eql ':-)) item)$/;"	f
+parse-domain-item	input.lisp	/^(defmethod parse-domain-item ((domain domain) (item-key (eql ':gdr)) item)$/;"	f
+parse-domain-item	input.lisp	/^(defmethod parse-domain-item ((domain domain) (item-key (eql ':method)) item)$/;"	f
+parse-domain-item	input.lisp	/^(defmethod parse-domain-item ((domain domain) (item-key (eql ':operator)) item)$/;"	f
+parse-domain-item	pddl.lisp	/^(defmethod parse-domain-item ((domain simple-pddl-domain) (item-key (eql ':action)) item)$/;"	f
+parse-domain-item	pddl.lisp	/^(defmethod parse-domain-item ((domain simple-pddl-domain) (item-key (eql ':predicates)) item)$/;"	f
+parse-domain-item	pddl.lisp	/^(defmethod parse-domain-item ((domain simple-pddl-domain) (item-key (eql ':types)) item)$/;"	f
+parse-domain-items	decls.lisp	/^(defgeneric parse-domain-items (domain items)$/;"	f
+parse-domain-items	input.lisp	/^(defmethod parse-domain-items ((domain domain) items)$/;"	f
+parse-domain-items	pddl.lisp	/^(defmethod parse-domain-items :around ((domain equality-mixin) items)$/;"	f
+pddl-action	search.lisp	/^(deftype pddl-action ()$/;"	f
+pddl-domain	pddl.lisp	/^(defclass pddl-domain ( conditional-effects-mixin existential-precondition-mixin universal-precondition-mixin equality-mixin simple-pddl-domain )$/;"	f
+pg	ff-heuristic.lisp	/^(defstruct pg$/;"	f
+pg-node	ff-heuristic.lisp	/^(defstruct pg-node$/;"	f
+plan-cost	output.lisp	/^(defun plan-cost (plan)$/;"	f
+plan-operator-nodes	tree-reductions.lisp	/^(defun plan-operator-nodes (plan &optional (n 0))$/;"	f
+plan-tree-nodes	tree-reductions.lisp	/^(defun plan-tree-nodes (base-nodes)$/;"	f
+planning-graph-expand	ff-heuristic.lisp	/^(defun planning-graph-expand (graph)$/;"	f
+planning-graph-expand-optimized	ff-heuristic.lisp	/^(defun planning-graph-expand-optimized (graph)$/;"	f
+planning-graph-extract	ff-heuristic.lisp	/^(defun planning-graph-extract (graph goals)$/;"	f
+planning-graph-extract-helper	ff-heuristic.lisp	/^(defun planning-graph-extract-helper (graph goals plan)$/;"	f
+planning-graph-init	ff-heuristic.lisp	/^(defun planning-graph-init (state)$/;"	f
+planning-graph-level	ff-heuristic.lisp	/^(defun planning-graph-level (graph formula)$/;"	f
+planning-graph-level-ff	ff-heuristic.lisp	/^(defun planning-graph-level-ff (current-state subgoals)$/;"	f
+planning-graph-modify	ff-heuristic.lisp	/^(defun planning-graph-modify (old-pg new-state goals)$/;"	f
+planning-graph-print	ff-heuristic.lisp	/^(defun planning-graph-print (graph)$/;"	f
+planning-graph-rp-heuristic	ff-heuristic.lisp	/^(defun planning-graph-rp-heuristic (graph formula)$/;"	f
+planning-graph-rp-heuristic-optimized	ff-heuristic.lisp	/^(defun planning-graph-rp-heuristic-optimized (new-pg new-state goals state-changed-p)$/;"	f
+planning-graph-rp-heuristic-simple	ff-heuristic.lisp	/^(defun planning-graph-rp-heuristic-simple (new-pg new-state goals)$/;"	f
+pretty-print-task-list	gnp-utils.lisp	/^(defun pretty-print-task-list (task-list)$/;"	f
+primitive-node-p	tree-accessors.lisp	/^(defun primitive-node-p (tree-node)$/;"	f
+primitive-node-task	tree-accessors.lisp	/^(defun primitive-node-task (tree-node)$/;"	f
+primitive-op-p	gnp-utils.lisp	/^(defun primitive-op-p (op)$/;"	f
+primitivep	decls.lisp	/^(defmacro primitivep (x) `(and (symbolp ,x) (get ,x 'primitive)))$/;"	f
+print-axioms	theorem-prover.lisp	/^(defun print-axioms (&optional name (domain *domain*))$/;"	f
+print-belief-state-readably	theorem-prover.lisp	/^(defun print-belief-state-readably (belief-state &optional (stream t))$/;"	f
+print-contents-from-child-list	gnp-utils.lisp	/^(defun print-contents-from-child-list (task-list)$/;"	f
+print-current-plan	output.lisp	/^(defun print-current-plan ()$/;"	f
+print-current-state	output.lisp	/^(defun print-current-state ()$/;"	f
+print-current-tasks	output.lisp	/^(defun print-current-tasks ()$/;"	f
+print-methods	debugging.lisp	/^(defun print-methods (&optional name (domain *domain*))$/;"	f
+print-object	decls.lisp	/^(defmethod print-object ((obj domain) str)$/;"	f
+print-object	decls.lisp	/^(defmethod print-object ((x problem) stream)$/;"	f
+print-operator	debugging.lisp	/^(defun print-operator (operator &optional (stream t))$/;"	f
+print-operators	debugging.lisp	/^(defun print-operators (&optional name (domain *domain*))$/;"	f
+print-output-file	output.lisp	/^(defun print-output-file (plan)$/;"	f
+print-stats	output.lisp	/^(defun print-stats (depth plans tasks inferences runtime realtime)$/;"	f
+print-stats-header	output.lisp	/^(defun print-stats-header (label)$/;"	f
+print1	output.lisp	/^(defun print1 (obj)$/;"	f
+problem	decls.lisp	/^(defclass problem ()$/;"	f
+problem->state	decls.lisp	/^(defgeneric problem->state (domain problem)$/;"	f
+problem->state	input.lisp	/^(defmethod problem->state ((domain domain) problem)$/;"	f
+problem-state	decls.lisp	/^(defgeneric problem-state (problem)$/;"	f
+problem-tasks	decls.lisp	/^(defgeneric problem-tasks (problem)$/;"	f
+process-action	pddl.lisp	/^(defgeneric process-action (domain action-def)$/;"	f
+process-action	pddl.lisp	/^(defmethod process-action ((domain simple-pddl-domain) action-def)$/;"	f
+process-ff-output	gnp-classical.lisp	/^(defun process-ff-output (ff-output)$/;"	f
+process-gdr	input.lisp	/^(defmethod process-gdr ((domain domain) gdr)$/;"	f
+process-method	decls.lisp	/^(defgeneric process-method (domain method-def)$/;"	f
+process-method	input.lisp	/^(defmethod process-method ((domain domain) method)$/;"	f
+process-operator	decls.lisp	/^(defgeneric process-operator (domain operator-def)$/;"	f
+process-operator	input.lisp	/^(defmethod process-operator ((domain domain) operator)$/;"	f
+process-pre	decls.lisp	/^(defgeneric process-pre (domain precondition)$/;"	f
+process-pre	input.lisp	/^(defmethod process-pre (domain pre)$/;"	f
+process-task-list	input.lisp	/^(defun process-task-list (tasks)$/;"	f
+protection-ok	protections.lisp	/^(defun protection-ok (state protections head)$/;"	f
+pull-tag-info	state-utils.lisp	/^(defun pull-tag-info (tags-info tag)$/;"	f
+push-last	decls.lisp	/^(defmacro push-last (item list)$/;"	f
+query	theorem-prover.lisp	/^(defun query (goals state &key just-one (domain *domain*))$/;"	f
+query-current-state	output.lisp	/^(defun query-current-state (first-symbol)$/;"	f
+quotify	decls.lisp	/^(defun quotify (x) ; lifted from YAPS; added check for "call" and "eval"$/;"	f
+randomize-list	list-shuffle.lisp	/^(defun randomize-list (l l-shuffled)$/;"	f
+real-apply-substitution	unify.lisp	/^(defun real-apply-substitution (target binding-list)$/;"	f
+real-seek-satisfiers	theorem-prover.lisp	/^(defun real-seek-satisfiers (domain goals state bindings level just1)$/;"	f
+real-seek-satisfiers-for	theorem-prover.lisp	/^(defmethod real-seek-satisfiers-for (domain goal-head goal other-goals$/;"	f
+real-seek-satisfiers-for	thpr-decls.lisp	/^(defgeneric real-seek-satisfiers-for$/;"	f
+record-initial-task-net	tree-funs.lisp	/^(defun record-initial-task-net (task-list)$/;"	f
+record-operator	tree-reductions.lisp	/^(defun record-operator (task1 operator unifier)$/;"	f
+record-reduction	tree-reductions.lisp	/^(defun record-reduction (task1 reduction unifier)$/;"	f
+regularize-axiom	decls.lisp	/^(defgeneric regularize-axiom (domain axiom-def)$/;"	f
+regularize-axiom	input.lisp	/^(defmethod regularize-axiom ((domain domain) axiom)$/;"	f
+remove-atom	state-decls.lisp	/^(defgeneric remove-atom (atom state)$/;"	f
+remove-atom	state-utils.lisp	/^(defmethod remove-atom (atom (st bit-state))$/;"	f
+remove-atom	state-utils.lisp	/^(defmethod remove-atom (atom (st hash-state))$/;"	f
+remove-atom	state-utils.lisp	/^(defmethod remove-atom (atom (st list-state))$/;"	f
+remove-atom	state-utils.lisp	/^(defmethod remove-atom (atom (st mixed-state))$/;"	f
+remove-costs	search.lisp	/^(defun remove-costs (plan-and-costs)$/;"	f
+remove-internal-operators	tree-accessors.lisp	/^(defun remove-internal-operators (complex-node)$/;"	f
+remove-nth	list-shuffle.lisp	/^(defun remove-nth (n l)$/;"	f
+remove-nth-helper	list-shuffle.lisp	/^(defun remove-nth-helper (n l i)$/;"	f
+replace-task-main-list	task-reductions.lisp	/^(defun replace-task-main-list (ML t1 t2)$/;"	f
+replace-task-top-list	task-reductions.lisp	/^(defun replace-task-top-list (L t1 t2) ;;t2 is reduction, L is top-tasks$/;"	f
+report-no-method	decls.lisp	/^(defun report-no-method (x str)$/;"	f
+report-task-arity-mismatch	decls.lisp	/^(defun report-task-arity-mismatch (condition stream)$/;"	f
+rest-shop2-axiom-p	input.lisp	/^(defun rest-shop2-axiom-p (ax)$/;"	f
+retract-state-changes	state-decls.lisp	/^(defgeneric retract-state-changes (state tag)$/;"	f
+retract-state-changes	state-utils.lisp	/^(defmethod retract-state-changes ((st tagged-state) tag)$/;"	f
+search-tree	input.lisp	/^(defun search-tree (item tree)$/;"	f
+seek-plans	decls.lisp	/^(defgeneric seek-plans (domain state tasks top-tasks partial-plan partial-plan-cost depth which-plans$/;"	f
+seek-plans	search.lisp	/^(defmethod seek-plans ((domain domain) state tasks top-tasks partial-plan partial-plan-cost$/;"	f
+seek-plans-nonprimitive	decls.lisp	/^(defgeneric seek-plans-nonprimitive (domain task1 task-name task-body state tasks top-tasks$/;"	f
+seek-plans-nonprimitive	search.lisp	/^(defmethod seek-plans-nonprimitive ((domain domain) task1 task-name task-body state tasks$/;"	f
+seek-plans-null	decls.lisp	/^(defgeneric seek-plans-null (domain state which-plans partial-plan partial-plan-cost depth unifier)$/;"	f
+seek-plans-null	search.lisp	/^(defmethod seek-plans-null ((domain domain) state which-plans partial-plan partial-plan-cost depth unifier)$/;"	f
+seek-plans-primitive	decls.lisp	/^(defgeneric seek-plans-primitive (domain task1 task-name task-body state tasks top-tasks$/;"	f
+seek-plans-primitive	search.lisp	/^(defmethod seek-plans-primitive ((domain domain) task1 task-name task-body state tasks top-tasks$/;"	f
+seek-plans-task	decls.lisp	/^(defgeneric seek-plans-task (domain task1 state tasks top-tasks partial-plan$/;"	f
+seek-plans-task	search.lisp	/^(defmethod seek-plans-task (domain task1 state tasks top-tasks partial-plan$/;"	f
+seek-satisfiers	theorem-prover.lisp	/^(defmacro seek-satisfiers (goals state bindings level just1$/;"	f
+set-domain	input.lisp	/^(defun set-domain (name)$/;"	f
+set-variable-property	unify.lisp	/^(defgeneric set-variable-property (domain x)$/;"	f
+set-variable-property	unify.lisp	/^(defmethod set-variable-property ((domain t) x)$/;"	f
+shop-condition	decls.lisp	/^(define-condition shop-condition ()$/;"	f
+shop-error	decls.lisp	/^(define-condition shop-error (shop-condition error)$/;"	f
+shop-fail	common.lisp	/^(defmacro shop-fail () `'fail)$/;"	f
+shop-trace	debugging.lisp	/^(defmacro shop-trace (&rest items)$/;"	f
+shop-trace-1	debugging.lisp	/^(defun shop-trace-1 (items)$/;"	f
+shop-trace-axiom	debugging.lisp	/^(defun shop-trace-axiom (axiom-name)$/;"	f
+shop-trace-info	debugging.lisp	/^(defun shop-trace-info ()$/;"	f
+shop-trace-method	debugging.lisp	/^(defun shop-trace-method (meth-name)$/;"	f
+shop-trace-task	debugging.lisp	/^(defun shop-trace-task (taskname)$/;"	f
+shop-tree	tree-funs.lisp	/^(defmethod shop-tree ((ts tree-store) plan)$/;"	f
+shop-tree-extend-plan-tree-nodes	tree-funs.lisp	/^(defmethod shop-tree-extend-plan-tree-nodes ((ts tree-store) base-nodes)$/;"	f
+shop-tree-extract-subtree	tree-funs.lisp	/^(defmethod shop-tree-extract-subtree ((ts tree-store)root-node nodes)$/;"	f
+shop-tree-node-children	tree-funs.lisp	/^(defmethod shop-tree-node-children ((ts tree-store) node nodes)$/;"	f
+shop-tree-operator-task	tree-funs.lisp	/^(defmethod shop-tree-operator-task ((ts tree-store) operator-node)$/;"	f
+shop-tree-plan-tree-nodes	tree-funs.lisp	/^(defmethod shop-tree-plan-tree-nodes ((ts tree-store) base-nodes)$/;"	f
+shop-union	unify.lisp	/^(defun shop-union (s1 s2 &key (test #'eql))$/;"	f
+shop-untrace	debugging.lisp	/^(defmacro shop-untrace (&rest items)$/;"	f
+shop-untrace-1	debugging.lisp	/^(defun shop-untrace-1 (items)$/;"	f
+shop-untrace-all	debugging.lisp	/^(defun shop-untrace-all ()$/;"	f
+shop-variable	unify.lisp	/^(deftype shop-variable ()$/;"	f
+shop2-axiom-p	input.lisp	/^(defun shop2-axiom-p (ax)$/;"	f
+shorter-plan	search.lisp	/^(defun shorter-plan (plan)$/;"	f
+simple-backquote	decls.lisp	/^(defmacro simple-backquote (x)$/;"	f
+simple-pddl-domain	pddl.lisp	/^(defclass simple-pddl-domain ( domain )$/;"	f
+standard-satisfiers-for-and	theorem-prover.lisp	/^(defun standard-satisfiers-for-and (domain arguments other-goals$/;"	f
+standard-satisfiers-for-assign	theorem-prover.lisp	/^(defun standard-satisfiers-for-assign (domain arguments other-goals$/;"	f
+standard-satisfiers-for-assign*	theorem-prover.lisp	/^(defun standard-satisfiers-for-assign* (domain arguments other-goals$/;"	f
+standard-satisfiers-for-call	theorem-prover.lisp	/^(defun standard-satisfiers-for-call (domain arguments other-goals$/;"	f
+standard-satisfiers-for-enforce	theorem-prover.lisp	/^(defun standard-satisfiers-for-enforce (domain arguments other-goals$/;"	f
+standard-satisfiers-for-eval	theorem-prover.lisp	/^(defun standard-satisfiers-for-eval (domain arguments other-goals$/;"	f
+standard-satisfiers-for-exists	theorem-prover.lisp	/^(defun standard-satisfiers-for-exists (domain arguments other-goals$/;"	f
+standard-satisfiers-for-external	theorem-prover.lisp	/^(defun standard-satisfiers-for-external (domain arguments other-goals$/;"	f
+standard-satisfiers-for-forall	theorem-prover.lisp	/^(defun standard-satisfiers-for-forall (domain arguments other-goals$/;"	f
+standard-satisfiers-for-imply	theorem-prover.lisp	/^(defun standard-satisfiers-for-imply (domain arguments other-goals$/;"	f
+standard-satisfiers-for-not	theorem-prover.lisp	/^(defun standard-satisfiers-for-not (domain arguments other-goals$/;"	f
+standard-satisfiers-for-or	theorem-prover.lisp	/^(defun standard-satisfiers-for-or (domain arguments other-goals$/;"	f
+standard-satisfiers-for-setof	theorem-prover.lisp	/^(defun standard-satisfiers-for-setof (domain arguments other-goals$/;"	f
+standardize	unify.lisp	/^(defun standardize (expr &optional subs)$/;"	f
+standardizer	unify.lisp	/^(defun standardizer (expression)$/;"	f
+state-all-atoms-for-predicate	state-decls.lisp	/^(defgeneric state-all-atoms-for-predicate (state pred))$/;"	f
+state-all-atoms-for-predicate	state-utils.lisp	/^(defmethod state-all-atoms-for-predicate ((st bit-state) pred)$/;"	f
+state-all-atoms-for-predicate	state-utils.lisp	/^(defmethod state-all-atoms-for-predicate ((st hash-state) pred)$/;"	f
+state-all-atoms-for-predicate	state-utils.lisp	/^(defmethod state-all-atoms-for-predicate ((st list-state) pred)$/;"	f
+state-all-atoms-for-predicate	state-utils.lisp	/^(defmethod state-all-atoms-for-predicate ((st mixed-state) pred)$/;"	f
+state-atoms	state-decls.lisp	/^(defgeneric state-atoms (state)$/;"	f
+state-atoms	state-utils.lisp	/^(defmethod state-atoms ((st bit-state))$/;"	f
+state-atoms	state-utils.lisp	/^(defmethod state-atoms ((st hash-state))$/;"	f
+state-atoms	state-utils.lisp	/^(defmethod state-atoms ((st list-state))$/;"	f
+state-atoms	state-utils.lisp	/^(defmethod state-atoms ((st mixed-state))$/;"	f
+state-candidate-atoms-for-goal	state-decls.lisp	/^(defgeneric state-candidate-atoms-for-goal (state goal))$/;"	f
+state-candidate-atoms-for-goal	state-utils.lisp	/^(defmethod state-candidate-atoms-for-goal ((st bit-state) goal)$/;"	f
+state-candidate-atoms-for-goal	state-utils.lisp	/^(defmethod state-candidate-atoms-for-goal ((st hash-state) goal)$/;"	f
+state-candidate-atoms-for-goal	state-utils.lisp	/^(defmethod state-candidate-atoms-for-goal ((st list-state) goal)$/;"	f
+state-candidate-atoms-for-goal	state-utils.lisp	/^(defmethod state-candidate-atoms-for-goal ((st mixed-state) goal)$/;"	f
+state-objects	gnp-utils.lisp	/^(defun state-objects (current-state)$/;"	f
+state-trajectory	state-decls.lisp	/^(defgeneric state-trajectory (state)$/;"	f
+state-trajectory	state-utils.lisp	/^(defmethod state-trajectory ((st tagged-state))$/;"	f
+state-update	state-utils.lisp	/^(defstruct state-update$/;"	f
+store-plan!	search.lisp	/^(defun store-plan! (plan state unifier)$/;"	f
+strip-NOPs	task-reductions.lisp	/^(defun strip-NOPs (plan)$/;"	f
+strip-tree-tags	tree-reductions.lisp	/^(defun strip-tree-tags (tree)$/;"	f
+subset	gnp-utils.lisp	/^(defun subset (l1 l2)$/;"	f
+tag-state	state-decls.lisp	/^(defgeneric tag-state (state)$/;"	f
+tag-state	state-utils.lisp	/^(defmethod tag-state ((st tagged-state))$/;"	f
+task-args	tree-accessors.lisp	/^(defun task-args (task)$/;"	f
+task-arity-mismatch	decls.lisp	/^(define-condition task-arity-mismatch (shop-error)$/;"	f
+task-index	tree-funs.lisp	/^(defmethod task-index ((ts new-tree-store) task)$/;"	f
+task-name	tree-accessors.lisp	/^(defun task-name (task)$/;"	f
+task-sorter	decls.lisp	/^(defgeneric task-sorter (domain tasks unifier)$/;"	f
+task-sorter	search.lisp	/^(defmethod task-sorter ((domain domain) task-list unifier)$/;"	f
+tasks-from-task-net	tree-funs.lisp	/^(defun tasks-from-task-net (L)$/;"	f
+tconc	ff-heuristic.lisp	/^(defstruct tconc$/;"	f
+tconc-add	ff-heuristic.lisp	/^(defun tconc-add (l x)$/;"	f
+tconc-add-list	ff-heuristic.lisp	/^(defun tconc-add-list (l l-new)$/;"	f
+tconc-list	ff-heuristic.lisp	/^(defun tconc-list (l)$/;"	f
+tconc-pop	ff-heuristic.lisp	/^(defun tconc-pop (l)$/;"	f
+theorem-prover-condition	thpr-decls.lisp	/^(define-condition theorem-prover-condition ()$/;"	f
+thpr-domain	thpr-decls.lisp	/^(defclass thpr-domain (has-axioms-mixin)$/;"	f
+time-expired-p	search.lisp	/^(defun time-expired-p ()$/;"	f
+to-string	output.lisp	/^(defun to-string (num &optional (max-decimal 1))$/;"	f
+trace-print	tracer.lisp	/^(defmacro trace-print (type item state &rest formats)$/;"	f
+translate-effect	pddl.lisp	/^(defgeneric translate-effect (domain expression)$/;"	f
+translate-effect	pddl.lisp	/^(defmethod translate-effect ((domain conditional-effects-mixin) effect)$/;"	f
+translate-effect	pddl.lisp	/^(defmethod translate-effect ((domain simple-pddl-domain) effect)$/;"	f
+translate-pddl-quantifier	pddl.lisp	/^(defun translate-pddl-quantifier (expression quantifier)$/;"	f
+translate-precondition	pddl.lisp	/^(defgeneric translate-precondition (domain expression)$/;"	f
+translate-precondition	pddl.lisp	/^(defmethod translate-precondition ((domain existential-precondition-mixin) expression)$/;"	f
+translate-precondition	pddl.lisp	/^(defmethod translate-precondition ((domain simple-pddl-domain) expression)$/;"	f
+translate-precondition	pddl.lisp	/^(defmethod translate-precondition ((domain universal-precondition-mixin) expression)$/;"	f
+translate-to-pddl	translate_to_pddl.lisp	/^(defun translate-to-pddl (domain-name n)$/;"	f
+tree-node-task	tree-accessors.lisp	/^(defun tree-node-task (tree-node)$/;"	f
+tree-node-task-name	tree-accessors.lisp	/^(defun tree-node-task-name (tree-node)$/;"	f
+tree-store	tree-funs.lisp	/^(defclass tree-store ()$/;"	f
+typed-list-vars	pddl.lisp	/^(defun typed-list-vars (typed-list)$/;"	f
+undo-state-update	state-decls.lisp	/^(defgeneric undo-state-update (state-update-keyword state-update state)$/;"	f
+undo-state-update	state-utils.lisp	/^(defmethod undo-state-update ((keyword (eql 'add)) change state)$/;"	f
+undo-state-update	state-utils.lisp	/^(defmethod undo-state-update ((keyword (eql 'delete)) change state)$/;"	f
+unify	unify.lisp	/^(defun unify (e1 e2)$/;"	f
+unify-fail	unify.lisp	/^(defmacro unify-fail (e1 e2)$/;"	f
+unify-p	unify.lisp	/^(defmacro unify-p (e1 e2)$/;"	f
+unify1	unify.lisp	/^(defun unify1 (e1 e2)$/;"	f
+universal-precondition-mixin	pddl.lisp	/^(defclass universal-precondition-mixin ()$/;"	f
+user-choose-task	search.lisp	/^(defun user-choose-task (task-list unifier &optional (immediate nil))$/;"	f
+validator-export	pddl.lisp	/^(defgeneric validator-export (domain plan stream)$/;"	f
+validator-export	pddl.lisp	/^(defmethod validator-export ((domain simple-pddl-domain) (plan list) stream)$/;"	f
+variable-gensym	unify.lisp	/^(defun variable-gensym (&optional base-name)$/;"	f
+variable-name	unify.lisp	/^(defun variable-name (x) x)$/;"	f
+variable-p	unify.lisp	/^(defmacro variable-p (x)$/;"	f
+variablep	unify.lisp	/^(defun variablep (x)$/;"	f
+well-formed-listp	task-reductions.lisp	/^(defun well-formed-listp (l)$/;"	f
+write-pddl-plan	pddl.lisp	/^(defun write-pddl-plan (plan &key (domain *domain*) (stream t stream-supplied-p) (filename nil))$/;"	f
+write-problem-as-pddl	gnp-classical.lisp	/^(defun write-problem-as-pddl (objects start-state goal)$/;"	f

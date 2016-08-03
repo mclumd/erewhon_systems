@@ -1,0 +1,263 @@
+--------------------- 
+ Problem : P10_25 
+--plan : ((!UNSTACK B10 B7) (!PUTDOWN B10) (!UNSTACK B9 B1)
+          (!PUTDOWN B9) (!PICKUP B2) (!STACK B2 B1) (!PICKUP B5)
+          (!STACK B5 B2) (!UNSTACK B8 B6) (!PUTDOWN B8)
+          (!UNSTACK B6 B4) (!STACK B6 B5) (!PICKUP B7) (!STACK B7 B6)
+          (!PICKUP B9) (!STACK B9 B7) (!PICKUP B8) (!STACK B8 B4)) 
+--plan cost : 18 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_24 
+--plan : ((!UNSTACK B10 B8) (!STACK B10 B7) (!UNSTACK B9 B2)
+          (!PUTDOWN B9) (!UNSTACK B2 B1) (!PUTDOWN B2) (!UNSTACK B6 B5)
+          (!PUTDOWN B6) (!UNSTACK B5 B4) (!PUTDOWN B5) (!UNSTACK B4 B3)
+          (!STACK B4 B2) (!PICKUP B5) (!STACK B5 B4) (!PICKUP B6)
+          (!STACK B6 B5) (!PICKUP B3) (!STACK B3 B1) (!PICKUP B8)
+          (!STACK B8 B3) (!PICKUP B9) (!STACK B9 B8)) 
+--plan cost : 22 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_23 
+--plan : ((!UNSTACK B7 B4) (!PUTDOWN B7) (!UNSTACK B5 B2) (!PUTDOWN B5)
+          (!UNSTACK B6 B3) (!PUTDOWN B6) (!PICKUP B3) (!STACK B3 B2)
+          (!UNSTACK B4 B1) (!STACK B4 B3) (!PICKUP B7) (!STACK B7 B1)
+          (!PICKUP B8) (!STACK B8 B7) (!PICKUP B5) (!STACK B5 B4)
+          (!PICKUP B6) (!STACK B6 B5) (!PICKUP B9) (!STACK B9 B6)) 
+--plan cost : 20 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_22 
+--plan : ((!UNSTACK B3 B1) (!PUTDOWN B3) (!UNSTACK B5 B2) (!PUTDOWN B5)
+          (!PICKUP B2) (!STACK B2 B1) (!PICKUP B3) (!STACK B3 B2)
+          (!UNSTACK B10 B7) (!PUTDOWN B10) (!UNSTACK B9 B6)
+          (!PUTDOWN B9) (!UNSTACK B7 B4) (!STACK B7 B6) (!PICKUP B10)
+          (!STACK B10 B7) (!PICKUP B4) (!STACK B4 B3) (!PICKUP B5)
+          (!STACK B5 B4) (!PICKUP B8) (!STACK B8 B5) (!PICKUP B9)
+          (!STACK B9 B8)) 
+--plan cost : 24 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_21 
+--plan : ((!UNSTACK B9 B6) (!PUTDOWN B9) (!UNSTACK B7 B3) (!PUTDOWN B7)
+          (!UNSTACK B8 B4) (!PUTDOWN B8) (!PICKUP B4) (!STACK B4 B3)
+          (!UNSTACK B6 B5) (!PUTDOWN B6) (!UNSTACK B5 B2)
+          (!STACK B5 B4) (!PICKUP B7) (!STACK B7 B5) (!PICKUP B9)
+          (!STACK B9 B7) (!PICKUP B10) (!STACK B10 B9) (!PICKUP B6)
+          (!STACK B6 B2) (!PICKUP B8) (!STACK B8 B6)) 
+--plan cost : 22 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_20 
+--plan : ((!UNSTACK B9 B4) (!PUTDOWN B9) (!UNSTACK B8 B7) (!PUTDOWN B8)
+          (!UNSTACK B7 B5) (!PUTDOWN B7) (!UNSTACK B5 B2) (!PUTDOWN B5)
+          (!PICKUP B6) (!STACK B6 B5) (!PICKUP B10) (!STACK B10 B7)
+          (!PICKUP B9) (!STACK B9 B2) (!PICKUP B8) (!STACK B8 B6)) 
+--plan cost : 16 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_19 
+--plan : ((!UNSTACK B8 B7) (!PUTDOWN B8) (!UNSTACK B6 B5) (!PUTDOWN B6)
+          (!UNSTACK B7 B4) (!PUTDOWN B7) (!UNSTACK B5 B3) (!PUTDOWN B5)
+          (!UNSTACK B4 B1) (!STACK B4 B3) (!PICKUP B6) (!STACK B6 B4)
+          (!PICKUP B5) (!STACK B5 B1) (!PICKUP B7) (!STACK B7 B5)
+          (!PICKUP B8) (!STACK B8 B7) (!PICKUP B10) (!STACK B10 B8)) 
+--plan cost : 20 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_18 
+--plan : ((!UNSTACK B8 B3) (!PUTDOWN B8) (!UNSTACK B3 B2) (!PUTDOWN B3)
+          (!UNSTACK B7 B6) (!PUTDOWN B7) (!UNSTACK B6 B1) (!PUTDOWN B6)
+          (!PICKUP B2) (!STACK B2 B1) (!UNSTACK B9 B5) (!PUTDOWN B9)
+          (!UNSTACK B5 B4) (!STACK B5 B3) (!PICKUP B7) (!STACK B7 B5)
+          (!PICKUP B4) (!STACK B4 B2) (!PICKUP B9) (!STACK B9 B4)) 
+--plan cost : 20 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_17 
+--plan : ((!UNSTACK B10 B7) (!PUTDOWN B10) (!UNSTACK B7 B4)
+          (!PUTDOWN B7) (!UNSTACK B4 B1) (!PUTDOWN B4) (!UNSTACK B9 B6)
+          (!PUTDOWN B9) (!UNSTACK B6 B5) (!STACK B6 B4)
+          (!UNSTACK B5 B2) (!PUTDOWN B5) (!PICKUP B8) (!STACK B8 B6)
+          (!PICKUP B9) (!STACK B9 B8) (!PICKUP B2) (!STACK B2 B1)
+          (!PICKUP B3) (!STACK B3 B2) (!PICKUP B10) (!STACK B10 B3)) 
+--plan cost : 22 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_16 
+--plan : ((!UNSTACK B8 B5) (!PUTDOWN B8) (!UNSTACK B9 B6) (!PUTDOWN B9)
+          (!UNSTACK B6 B3) (!PUTDOWN B6) (!UNSTACK B7 B4)
+          (!STACK B7 B6) (!PICKUP B9) (!STACK B9 B7) (!PICKUP B10)
+          (!STACK B10 B9) (!UNSTACK B5 B1) (!PUTDOWN B5)
+          (!UNSTACK B3 B2) (!PUTDOWN B3) (!PICKUP B2) (!STACK B2 B1)
+          (!PICKUP B3) (!STACK B3 B2) (!PICKUP B4) (!STACK B4 B3)
+          (!PICKUP B5) (!STACK B5 B4) (!PICKUP B8) (!STACK B8 B5)) 
+--plan cost : 26 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_15 
+--plan : ((!UNSTACK B10 B9) (!PUTDOWN B10) (!UNSTACK B8 B7)
+          (!PUTDOWN B8) (!UNSTACK B9 B5) (!STACK B9 B8)
+          (!UNSTACK B7 B6) (!PUTDOWN B7) (!UNSTACK B5 B4) (!PUTDOWN B5)
+          (!UNSTACK B4 B3) (!PUTDOWN B4) (!UNSTACK B3 B2) (!PUTDOWN B3)
+          (!PICKUP B5) (!STACK B5 B2)) 
+--plan cost : 16 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_14 
+--plan : ((!UNSTACK B10 B1) (!PUTDOWN B10) (!UNSTACK B7 B4)
+          (!PUTDOWN B7) (!UNSTACK B8 B5) (!PUTDOWN B8) (!UNSTACK B4 B3)
+          (!PUTDOWN B4) (!UNSTACK B3 B2) (!STACK B3 B1) (!PICKUP B8)
+          (!STACK B8 B3) (!PICKUP B4) (!STACK B4 B2) (!PICKUP B5)
+          (!STACK B5 B4) (!PICKUP B6) (!STACK B6 B5) (!PICKUP B7)
+          (!STACK B7 B6) (!PICKUP B10) (!STACK B10 B7)) 
+--plan cost : 22 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_13 
+--plan : ((!UNSTACK B3 B1) (!PUTDOWN B3) (!UNSTACK B10 B7)
+          (!PUTDOWN B10) (!UNSTACK B7 B6) (!STACK B7 B3)
+          (!UNSTACK B9 B8) (!STACK B9 B7) (!UNSTACK B8 B2)
+          (!PUTDOWN B8) (!UNSTACK B6 B5) (!PUTDOWN B6) (!UNSTACK B5 B4)
+          (!PUTDOWN B5) (!PICKUP B4) (!STACK B4 B1) (!PICKUP B5)
+          (!STACK B5 B4) (!PICKUP B6) (!STACK B6 B5)) 
+--plan cost : 20 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_12 
+--plan : ((!UNSTACK B8 B7) (!PUTDOWN B8) (!UNSTACK B10 B5)
+          (!STACK B10 B8) (!UNSTACK B9 B3) (!PUTDOWN B9)
+          (!UNSTACK B7 B6) (!PUTDOWN B7) (!UNSTACK B5 B4) (!PUTDOWN B5)
+          (!UNSTACK B6 B2) (!PUTDOWN B6) (!PICKUP B3) (!STACK B3 B2)
+          (!PICKUP B5) (!STACK B5 B3) (!PICKUP B6) (!STACK B6 B5)
+          (!PICKUP B7) (!STACK B7 B6) (!PICKUP B9) (!STACK B9 B7)) 
+--plan cost : 22 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_11 
+--plan : ((!UNSTACK B5 B4) (!PUTDOWN B5) (!UNSTACK B9 B8) (!PUTDOWN B9)
+          (!UNSTACK B10 B7) (!STACK B10 B9) (!PICKUP B7) (!STACK B7 B5)
+          (!UNSTACK B8 B6) (!STACK B8 B7) (!UNSTACK B4 B3)
+          (!PUTDOWN B4) (!UNSTACK B3 B2) (!PUTDOWN B3) (!UNSTACK B2 B1)
+          (!PUTDOWN B2) (!PICKUP B3) (!STACK B3 B2) (!PICKUP B4)
+          (!STACK B4 B3) (!PICKUP B6) (!STACK B6 B4)) 
+--plan cost : 22 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_10 
+--plan : ((!UNSTACK B10 B7) (!PUTDOWN B10) (!UNSTACK B9 B8)
+          (!PUTDOWN B9) (!UNSTACK B8 B1) (!STACK B8 B7)
+          (!UNSTACK B4 B3) (!PUTDOWN B4) (!UNSTACK B6 B5) (!PUTDOWN B6)
+          (!UNSTACK B3 B2) (!PUTDOWN B3) (!PICKUP B2) (!STACK B2 B1)
+          (!PICKUP B3) (!STACK B3 B2) (!PICKUP B4) (!STACK B4 B3)
+          (!PICKUP B5) (!STACK B5 B4) (!PICKUP B6) (!STACK B6 B5)
+          (!PICKUP B9) (!STACK B9 B6)) 
+--plan cost : 24 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_9 
+--plan : ((!UNSTACK B10 B8) (!PUTDOWN B10) (!UNSTACK B8 B6)
+          (!PUTDOWN B8) (!UNSTACK B9 B5) (!STACK B9 B8)
+          (!UNSTACK B3 B1) (!PUTDOWN B3) (!UNSTACK B6 B4) (!PUTDOWN B6)
+          (!UNSTACK B5 B2) (!PUTDOWN B5) (!PICKUP B2) (!STACK B2 B1)
+          (!PICKUP B3) (!STACK B3 B2) (!PICKUP B4) (!STACK B4 B3)
+          (!PICKUP B5) (!STACK B5 B4) (!PICKUP B6) (!STACK B6 B5)
+          (!PICKUP B7) (!STACK B7 B6)) 
+--plan cost : 24 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_8 
+--plan : ((!UNSTACK B2 B1) (!PUTDOWN B2) (!UNSTACK B8 B7)
+          (!STACK B8 B2) (!UNSTACK B7 B5) (!PUTDOWN B7)
+          (!UNSTACK B6 B4) (!PUTDOWN B6) (!UNSTACK B4 B3) (!PUTDOWN B4)
+          (!PICKUP B5) (!STACK B5 B4) (!PICKUP B3) (!STACK B3 B1)
+          (!PICKUP B6) (!STACK B6 B3) (!PICKUP B10) (!STACK B10 B6)) 
+--plan cost : 18 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_7 
+--plan : ((!UNSTACK B4 B3) (!PUTDOWN B4) (!UNSTACK B8 B7) (!PUTDOWN B8)
+          (!PICKUP B5) (!STACK B5 B3) (!UNSTACK B9 B6) (!STACK B9 B5)
+          (!PICKUP B10) (!STACK B10 B6) (!PICKUP B7) (!STACK B7 B4)) 
+--plan cost : 12 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_6 
+--plan : ((!UNSTACK B5 B3) (!PUTDOWN B5) (!UNSTACK B7 B4)
+          (!STACK B7 B5) (!UNSTACK B10 B8) (!STACK B10 B7)
+          (!UNSTACK B4 B2) (!STACK B4 B3) (!PICKUP B6) (!STACK B6 B4)
+          (!PICKUP B9) (!STACK B9 B6) (!PICKUP B8) (!STACK B8 B2)) 
+--plan cost : 14 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_5 
+--plan : ((!UNSTACK B9 B6) (!STACK B9 B8) (!UNSTACK B10 B5)
+          (!PUTDOWN B10) (!UNSTACK B6 B4) (!STACK B6 B5)
+          (!UNSTACK B7 B3) (!PUTDOWN B7) (!UNSTACK B4 B2) (!PUTDOWN B4)
+          (!UNSTACK B3 B1) (!STACK B3 B2) (!PICKUP B4) (!STACK B4 B1)
+          (!PICKUP B7) (!STACK B7 B4)) 
+--plan cost : 16 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_4 
+--plan : ((!UNSTACK B4 B2) (!PUTDOWN B4) (!UNSTACK B10 B8)
+          (!PUTDOWN B10) (!UNSTACK B6 B1) (!PUTDOWN B6) (!PICKUP B2)
+          (!STACK B2 B1) (!UNSTACK B9 B5) (!PUTDOWN B9) (!PICKUP B5)
+          (!STACK B5 B4) (!PICKUP B9) (!STACK B9 B5) (!UNSTACK B8 B7)
+          (!PUTDOWN B8) (!UNSTACK B7 B3) (!PUTDOWN B7) (!PICKUP B8)
+          (!STACK B8 B7) (!PICKUP B3) (!STACK B3 B2) (!PICKUP B6)
+          (!STACK B6 B3)) 
+--plan cost : 24 
+--plan generation time : 0.02 
+ 
+--------------------- 
+ Problem : P10_3 
+--plan : ((!UNSTACK B10 B7) (!PUTDOWN B10) (!UNSTACK B7 B5)
+          (!PUTDOWN B7) (!UNSTACK B5 B3) (!PUTDOWN B5) (!UNSTACK B4 B2)
+          (!PUTDOWN B4) (!UNSTACK B2 B1) (!PUTDOWN B2) (!PICKUP B3)
+          (!STACK B3 B2) (!PICKUP B4) (!STACK B4 B1) (!UNSTACK B8 B6)
+          (!STACK B8 B4) (!PICKUP B6) (!STACK B6 B3) (!PICKUP B9)
+          (!STACK B9 B6)) 
+--plan cost : 20 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_2 
+--plan : ((!UNSTACK B4 B1) (!PUTDOWN B4) (!UNSTACK B5 B2) (!PUTDOWN B5)
+          (!PICKUP B2) (!STACK B2 B1) (!UNSTACK B10 B9) (!PUTDOWN B10)
+          (!UNSTACK B9 B3) (!PUTDOWN B9) (!PICKUP B4) (!STACK B4 B3)
+          (!PICKUP B5) (!STACK B5 B4) (!PICKUP B6) (!STACK B6 B5)
+          (!PICKUP B7) (!STACK B7 B6) (!PICKUP B10) (!STACK B10 B9)) 
+--plan cost : 20 
+--plan generation time : 0.0 
+ 
+--------------------- 
+ Problem : P10_1 
+--plan : ((!UNSTACK B3 B2) (!PUTDOWN B3) (!UNSTACK B6 B5) (!PUTDOWN B6)
+          (!UNSTACK B5 B4) (!PUTDOWN B5) (!PICKUP B10) (!STACK B10 B5)
+          (!PICKUP B4) (!STACK B4 B2) (!PICKUP B6) (!STACK B6 B4)
+          (!PICKUP B7) (!STACK B7 B6) (!UNSTACK B9 B8) (!STACK B9 B7)) 
+--plan cost : 16 
+--plan generation time : 0.02 
+ 
