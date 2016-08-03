@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -O3 -DNDEBUG -Wall    -shared -Wl,-soname,lasernoise.so -o lasernoise.so CMakeFiles/lasernoise.dir/lasernoise.o ../../libstage/libstage.so.3.2.2 -lGLU -lGL -lSM -lICE -lX11 -lXext /usr/local/libtool/lib/libltdl.so -Wl,-rpath,/fs/erewhon/group/systems/Stage-3.2.2-Source/libstage:/usr/local/libtool/lib: 

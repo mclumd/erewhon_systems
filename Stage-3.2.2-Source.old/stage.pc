@@ -1,0 +1,8 @@
+prefix=/fs/erewhon/group/systems/utils
+
+Name: stage
+Description: Stage robot simulation program, C++ library and Player plugin - part of the Player/Stage Project
+Version: 3.2.2
+Requires: 
+Libs: -L${prefix}/lib -lstage 
+Cflags: -I${prefix}/include/Stage-3.2  
