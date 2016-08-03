@@ -1,0 +1,29 @@
+;;-------------------------------
+(in-package :shop2)
+;;---------------------------------------------
+
+(defproblem p_some_problem blocks-htn
+(
+    (arm-empty)
+    (block b2)
+    (block b3)
+    (block b4)
+    (block b2)
+    (notonfire 1)
+    (on-table b2)
+    (on b3 b2)
+    (notonfire 3)
+    (on b4 b3)
+    (clear b4)
+    (on-table b2)
+    (clear b2)
+    (notonfire 2)
+)
+(;Goal Task Network
+    (achieve-goals (
+        (arm-empty)
+        (on b2 b3)
+        (notonfire 2)
+        (notonfire 4)
+)));End of goal task network
+)

@@ -1,0 +1,1 @@
+Turned off sockets, reverting explicit tree structure in goal generation, checking for three cycle behavior.

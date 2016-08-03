@@ -1,0 +1,6 @@
+--------------------- 
+ Problem : P_SOME_PROBLEM 
+--plan : ((!PICKUP B3) (!STACK B3 B2)) 
+--plan cost : 2 
+--plan generation time : 0.02 
+ 

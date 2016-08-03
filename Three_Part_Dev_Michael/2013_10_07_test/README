@@ -1,0 +1,4 @@
+Turned off sockets, reverting explicit tree structure in goal generation, checking for three cycle behavior.
+
+Found the error, it was scenario 1. Regenerated the rule using the -n flag for FOIL, no negated rule, altered leaf1, now works.
+

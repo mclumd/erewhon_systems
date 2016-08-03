@@ -1,0 +1,237 @@
+World observed: 
+          / \  
+         /   \ 
+        /  t1 \
+        -------
+       |  b3  |
+        -------
+        -------
+       |  b2  |
+        -------
+        -------
+       |  b1  |
+        -------
+----------------------------
+
+
+No anomaly detected.
+
+No anomaly: Skipping Assess.
+
+Firefighter guidance activated.   
+No firefighting goal generated.
+TF-tree goal gen activated.
+Goal generated: on(t1 b2)
+
+New goal generated and sent to planner.
+
+Planning...
+Planning complete.
+Plan:  unstack(t1, b3) putdown(t1) unstack(b3, b2) putdown(b3) pickup(t1) stack(t1, b2)
+
+Adopting new plan.
+Executing action unstack(t1, b3) from plan:
+unstack(t1, b3) putdown(t1) unstack(b3, b2) putdown(b3) pickup(t1) stack(t1, b2)
+
+Simulating action: unstack(t1, b3)
+Simulating action: lightonfire(Gui Montag, b1)
+
+World observed: 
+              
+              
+              
+        -------
+       |  b3  |
+        -------
+        -------
+       |  b2  |
+        -------
+        -------
+       | *b1* |
+        -------
+----------------------------
+
+
+No anomaly detected.
+
+No anomaly: Skipping Assess.
+
+Firefighter guidance activated.   
+Goal generated: notonfire(b1)
+
+New goal generated and sent to planner.
+
+Planning...
+Planning complete.
+Plan:  putoutfire(b1)
+
+Adopting new plan.
+Saving partially complete plan.
+Executing action putoutfire(b1) from plan:
+putoutfire(b1)
+
+Simulating action: putoutfire(b1)
+
+World observed: 
+              
+              
+              
+        -------
+       |  b3  |
+        -------
+        -------
+       |  b2  |
+        -------
+        -------
+       |  b1  |
+        -------
+----------------------------
+
+
+Anomaly detected.
+
+anomaly valence:  change-increasing
+Anomaly type = onfire
+[0.0 0.0 0.0 0.26 0.0 0.0 0.2 0.26]
+M-A frame:
+(anomaly.1
+	(predicate (value onfire))
+	(valence-class (value change-increasing))
+	(intensity (value high))
+	(window-range (start 11) (end 21)))
+
+Firefighter guidance activated.   
+No firefighting goal generated.
+
+No new goal generated. No goal will be sent to planner.
+
+No goal received by planner. Skipping planning.
+
+No action from current plan: Reloading old plan.
+Executing action putdown(t1) from plan:
+unstack(t1, b3) putdown(t1) unstack(b3, b2) putdown(b3) pickup(t1) stack(t1, b2)
+
+Simulating action: putdown(t1)
+
+World observed: 
+        -------              
+       |  b3  |              
+        -------              
+        -------              
+       |  b2  |              
+        -------              
+        -------          / \  
+       |  b1  |         /   \ 
+        -------        /  t1 \
+------------------------------------------
+
+
+Anomaly detected.
+
+anomaly valence:  change-increasing
+Anomaly type = onfire
+[0.01 0.0 0.0 0.25 0.0 0.01 0.2 0.25]
+M-A frame:
+(anomaly.2
+	(predicate (value onfire))
+	(valence-class (value change-increasing))
+	(intensity (value high))
+	(window-range (start 12) (end 22)))
+
+Firefighter guidance activated.   
+No firefighting goal generated.
+
+No new goal generated. No goal will be sent to planner.
+
+No goal received by planner. Skipping planning.
+
+Executing action unstack(b3, b2) from plan:
+unstack(t1, b3) putdown(t1) unstack(b3, b2) putdown(b3) pickup(t1) stack(t1, b2)
+
+Simulating action: unstack(b3, b2)
+
+World observed: 
+                            
+                            
+                            
+        -------              
+       |  b2  |              
+        -------              
+        -------          / \  
+       |  b1  |         /   \ 
+        -------        /  t1 \
+------------------------------------------
+
+
+Anomaly detected.
+
+anomaly valence:  change-increasing
+Anomaly type = onfire
+[0.01 0.0 0.0 0.23 0.0 0.01 0.19 0.23]
+M-A frame:
+(anomaly.3
+	(predicate (value onfire))
+	(valence-class (value change-increasing))
+	(intensity (value high))
+	(window-range (start 13) (end 23)))
+
+Firefighter guidance activated.   
+No firefighting goal generated.
+
+No new goal generated. No goal will be sent to planner.
+
+No goal received by planner. Skipping planning.
+
+Executing action putdown(b3) from plan:
+unstack(t1, b3) putdown(t1) unstack(b3, b2) putdown(b3) pickup(t1) stack(t1, b2)
+
+Simulating action: putdown(b3)
+Simulating action: lightonfire(Gui Montag, b1)
+
+World observed: 
+        -------                            
+       |  b2  |                            
+        -------                            
+        -------        -------          / \  
+       | *b1* |       |  b3  |         /   \ 
+        -------        -------        /  t1 \
+--------------------------------------------------------
+
+
+Anomaly detected.
+
+anomaly valence:  change-increasing
+Anomaly type = onfire
+[0.01 0.0 0.0 0.23 0.0 0.01 0.19 0.23]
+M-A frame:
+(anomaly.4
+	(predicate (value onfire))
+	(valence-class (value change-increasing))
+	(intensity (value high))
+	(window-range (start 14) (end 24)))
+
+Firefighter guidance activated.   
+Goal generated: notonfire(b1)
+
+New goal generated and sent to planner.
+
+Planning...
+Planning complete.
+Plan:  putoutfire(b1)
+
+Adopting new plan.
+Saving partially complete plan.
+Executing action putoutfire(b1) from plan:
+putoutfire(b1)
+
+Simulating action: putoutfire(b1)
+
+World observed: 
+        -------                            
+       |  b2  |                            
+        -------                            
+        -------        -------          / \  
+       |  b1  |       |  b3  |         /   \ 
+        -------        -------        /  t1 \
+--------------------------------------------------------
+
