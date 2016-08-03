@@ -1,0 +1,7 @@
+# Archive files
+*.tar
+*.tar.bz2
+
+# Movie files
+*.avi
+*.ogm
