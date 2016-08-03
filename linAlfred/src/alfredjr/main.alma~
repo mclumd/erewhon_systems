@@ -1,0 +1,41 @@
+/*
+Name: 		main.alma
+Title: 		Alfred Start-Up File
+Author: 	Scott Fults
+
+Created: 	8/15/08
+Modified:
+
+Description:	Main loop...retrieves and delivers utterances.
+
+To-Do:		
+
+Calls:
+		GetUtterance
+		Unique_ID
+
+*/
+
+loadcall "get_utterance" "alma.callfile.GetUtterance".
+loadcall "unique_id" "alma.callfile.UniqueID".
+
+//	The GetUtterance call will: 1) create 
+//	a user-interface window; 2) try to retrieve a user utterance 
+//	that has been entered into the window; 3) if there is no 
+//	utterance, then it tries again every step until an utterance is 
+//	entered; 4) if there is an utterance U, it generates a unique
+//	ID and saves it in the formulas 'isa(ID,new_utterance)' & 
+//	'has(ID, spelling, U); 5) because the select command below 
+//	does not include a number (in the brackets), the command is
+//	interpreted as looking for an infinite number of new utterances.
+//	Therefore, steps 2,3,4 are repeated throughout the session.
+
+#{isa(ID, utterance) & isa(ID, new) & has(ID, spelling, X)}[] get_utterance(ID,X).
+
+//	The query below directs Alfred to look for a rover command string
+//	if there is a current utterance.
+//	When one is found, the string itself becomes the value of the predicate
+//	'rover_command_string'.
+
+
+

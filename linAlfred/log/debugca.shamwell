@@ -1,0 +1,767 @@
+Args: [sfile,/fs/metacog/group/systems/linAlfred/etc/hostfile.shamwell,delay,0,load,/fs/metacog/group/systems/linAlfred/src/main.pl,debug,/fs/metacog/group/systems/linAlfred/log/debugca.shamwell]Received: call(ac_token_utt(s1,"send metroliner to baltimore"),[s1,"send metroliner to baltimore"])
+21:35:54:759824
+memory[529476,30396]
+global_stack[25928,100964]
+local_stack[628,64880]
+atoms[2096,49722,48768]
+Received: _7252
+21:35:54:759945
+Sending af(isa(s1,leftwall,s1w0))
+21:35:54:759987
+Sending af(has(s1,leftwall,s1,s1w0))
+21:35:54:760068
+Sending af(isa(s1,word,s1w1))
+21:35:54:760128
+Sending af(has(s1,word,s1,s1w1))
+21:35:54:760179
+Sending af(has(s1,successor,s1w0,s1w1))
+21:35:54:760228
+Sending af(has(s1,spelling,s1w1,s1sp1))
+21:35:54:760279
+Sending af(isa(s1,spelling,s1sp1))
+21:35:54:760326
+Sending af(isa(s1,leftwall,s1w1ltr0))
+21:35:54:760379
+Sending af(has(s1,leftwall,s1sp1,s1w1ltr0))
+21:35:54:760475
+Sending af(isa(s1,letter,s1w1ltr1))
+21:35:54:760523
+Sending af(has(s1,letter,s1sp1,s1w1ltr1))
+21:35:54:760573
+Sending af(has(s1,successor,s1w1ltr0,s1w1ltr1))
+21:35:54:760624
+Sending af(has(s1,ascii_code,s1w1ltr1,115))
+21:35:54:760672
+Sending af(isa(s1,letter,s1w1ltr2))
+21:35:54:760730
+Sending af(has(s1,letter,s1sp1,s1w1ltr2))
+21:35:54:760779
+Sending af(has(s1,successor,s1w1ltr1,s1w1ltr2))
+21:35:54:760826
+Sending af(has(s1,ascii_code,s1w1ltr2,101))
+21:35:54:760873
+Sending af(isa(s1,letter,s1w1ltr3))
+21:35:54:760929
+Sending af(has(s1,letter,s1sp1,s1w1ltr3))
+21:35:54:760971
+Sending af(has(s1,successor,s1w1ltr2,s1w1ltr3))
+21:35:54:761010
+Sending af(has(s1,ascii_code,s1w1ltr3,110))
+21:35:54:761048
+Sending af(isa(s1,letter,s1w1ltr4))
+21:35:54:761095
+Sending af(has(s1,letter,s1sp1,s1w1ltr4))
+21:35:54:761137
+Sending af(has(s1,successor,s1w1ltr3,s1w1ltr4))
+21:35:54:761175
+Sending af(has(s1,ascii_code,s1w1ltr4,100))
+21:35:54:761212
+Sending af(isa(s1,word,s1w2))
+21:35:54:761262
+Sending af(has(s1,word,s1,s1w2))
+21:35:54:761307
+Sending af(has(s1,successor,s1w1,s1w2))
+21:35:54:761347
+Sending af(has(s1,spelling,s1w2,s1sp2))
+21:35:54:761388
+Sending af(isa(s1,spelling,s1sp2))
+21:35:54:761397
+Sending af(isa(s1,leftwall,s1w2ltr0))
+21:35:54:761494
+Sending af(has(s1,leftwall,s1sp2,s1w2ltr0))
+21:35:54:761532
+Sending af(isa(s1,letter,s1w2ltr1))
+21:35:54:761569
+Sending af(has(s1,letter,s1sp2,s1w2ltr1))
+21:35:54:761609
+Sending af(has(s1,successor,s1w2ltr0,s1w2ltr1))
+21:35:54:761648
+Sending af(has(s1,ascii_code,s1w2ltr1,109))
+21:35:54:761686
+Sending af(isa(s1,letter,s1w2ltr2))
+21:35:54:761773
+Sending af(has(s1,letter,s1sp2,s1w2ltr2))
+21:35:54:761813
+Sending af(has(s1,successor,s1w2ltr1,s1w2ltr2))
+21:35:54:761851
+Sending af(has(s1,ascii_code,s1w2ltr2,101))
+21:35:54:761897
+Sending af(isa(s1,letter,s1w2ltr3))
+21:35:54:761950
+Sending af(has(s1,letter,s1sp2,s1w2ltr3))
+21:35:54:761989
+Sending af(has(s1,successor,s1w2ltr2,s1w2ltr3))
+21:35:54:762027
+Sending af(has(s1,ascii_code,s1w2ltr3,116))
+21:35:54:762065
+Sending af(isa(s1,letter,s1w2ltr4))
+21:35:54:762115
+Sending af(has(s1,letter,s1sp2,s1w2ltr4))
+21:35:54:762159
+Sending af(has(s1,successor,s1w2ltr3,s1w2ltr4))
+21:35:54:762198
+Sending af(has(s1,ascii_code,s1w2ltr4,114))
+21:35:54:762238
+Sending af(isa(s1,letter,s1w2ltr5))
+21:35:54:762286
+Sending af(has(s1,letter,s1sp2,s1w2ltr5))
+21:35:54:762328
+Sending af(has(s1,successor,s1w2ltr4,s1w2ltr5))
+21:35:54:762367
+Sending af(has(s1,ascii_code,s1w2ltr5,111))
+21:35:54:762397
+Sending af(isa(s1,letter,s1w2ltr6))
+21:35:54:762503
+Sending af(has(s1,letter,s1sp2,s1w2ltr6))
+21:35:54:762543
+Sending af(has(s1,successor,s1w2ltr5,s1w2ltr6))
+21:35:54:762588
+Sending af(has(s1,ascii_code,s1w2ltr6,108))
+21:35:54:762628
+Sending af(isa(s1,letter,s1w2ltr7))
+21:35:54:762679
+Sending af(has(s1,letter,s1sp2,s1w2ltr7))
+21:35:54:762718
+Sending af(has(s1,successor,s1w2ltr6,s1w2ltr7))
+21:35:54:762757
+Sending af(has(s1,ascii_code,s1w2ltr7,105))
+21:35:54:762794
+Sending af(isa(s1,letter,s1w2ltr8))
+21:35:54:762844
+Sending af(has(s1,letter,s1sp2,s1w2ltr8))
+21:35:54:762885
+Sending af(has(s1,successor,s1w2ltr7,s1w2ltr8))
+21:35:54:762923
+Sending af(has(s1,ascii_code,s1w2ltr8,110))
+21:35:54:762964
+Sending af(isa(s1,letter,s1w2ltr9))
+21:35:54:763012
+Sending af(has(s1,letter,s1sp2,s1w2ltr9))
+21:35:54:763051
+Sending af(has(s1,successor,s1w2ltr8,s1w2ltr9))
+21:35:54:763091
+Sending af(has(s1,ascii_code,s1w2ltr9,101))
+21:35:54:763129
+Sending af(isa(s1,letter,s1w2ltr10))
+21:35:54:763177
+Sending af(has(s1,letter,s1sp2,s1w2ltr10))
+21:35:54:763218
+Sending af(has(s1,successor,s1w2ltr9,s1w2ltr10))
+21:35:54:763256
+Sending af(has(s1,ascii_code,s1w2ltr10,114))
+21:35:54:763294
+Sending af(isa(s1,word,s1w3))
+21:35:54:763345
+Sending af(has(s1,word,s1,s1w3))
+21:35:54:763386
+Sending af(has(s1,successor,s1w2,s1w3))
+21:35:54:763397
+Sending af(has(s1,spelling,s1w3,s1sp3))
+21:35:54:763483
+Sending af(isa(s1,spelling,s1sp3))
+21:35:54:763523
+Sending af(isa(s1,leftwall,s1w3ltr0))
+21:35:54:763573
+Sending af(has(s1,leftwall,s1sp3,s1w3ltr0))
+21:35:54:763614
+Sending af(isa(s1,letter,s1w3ltr1))
+21:35:54:763651
+Sending af(has(s1,letter,s1sp3,s1w3ltr1))
+21:35:54:763689
+Sending af(has(s1,successor,s1w3ltr0,s1w3ltr1))
+21:35:54:763731
+Sending af(has(s1,ascii_code,s1w3ltr1,116))
+21:35:54:763770
+Sending af(isa(s1,letter,s1w3ltr2))
+21:35:54:763817
+Sending af(has(s1,letter,s1sp3,s1w3ltr2))
+21:35:54:763858
+Sending af(has(s1,successor,s1w3ltr1,s1w3ltr2))
+21:35:54:763897
+Sending af(has(s1,ascii_code,s1w3ltr2,111))
+21:35:54:763937
+Sending af(isa(s1,word,s1w4))
+21:35:54:763988
+Sending af(has(s1,word,s1,s1w4))
+21:35:54:764027
+Sending af(has(s1,successor,s1w3,s1w4))
+21:35:54:764067
+Sending af(has(s1,spelling,s1w4,s1sp4))
+21:35:54:764108
+Sending af(isa(s1,spelling,s1sp4))
+21:35:54:764145
+Sending af(isa(s1,leftwall,s1w4ltr0))
+21:35:54:764187
+Sending af(has(s1,leftwall,s1sp4,s1w4ltr0))
+21:35:54:764225
+Sending af(isa(s1,letter,s1w4ltr1))
+21:35:54:764262
+Sending af(has(s1,letter,s1sp4,s1w4ltr1))
+21:35:54:764302
+Sending af(has(s1,successor,s1w4ltr0,s1w4ltr1))
+21:35:54:764340
+Sending af(has(s1,ascii_code,s1w4ltr1,98))
+21:35:54:764378
+Sending af(isa(s1,letter,s1w4ltr2))
+21:35:54:764397
+Sending af(has(s1,letter,s1sp4,s1w4ltr2))
+21:35:54:764486
+Sending af(has(s1,successor,s1w4ltr1,s1w4ltr2))
+21:35:54:764525
+Sending af(has(s1,ascii_code,s1w4ltr2,97))
+21:35:54:764562
+Sending af(isa(s1,letter,s1w4ltr3))
+21:35:54:764612
+Sending af(has(s1,letter,s1sp4,s1w4ltr3))
+21:35:54:764650
+Sending af(has(s1,successor,s1w4ltr2,s1w4ltr3))
+21:35:54:764688
+Sending af(has(s1,ascii_code,s1w4ltr3,108))
+21:35:54:764734
+Sending af(isa(s1,letter,s1w4ltr4))
+21:35:54:764784
+Sending af(has(s1,letter,s1sp4,s1w4ltr4))
+21:35:54:764823
+Sending af(has(s1,successor,s1w4ltr3,s1w4ltr4))
+21:35:54:764863
+Sending af(has(s1,ascii_code,s1w4ltr4,116))
+21:35:54:764901
+Sending af(isa(s1,letter,s1w4ltr5))
+21:35:54:764949
+Sending af(has(s1,letter,s1sp4,s1w4ltr5))
+21:35:54:764994
+Sending af(has(s1,successor,s1w4ltr4,s1w4ltr5))
+21:35:54:765032
+Sending af(has(s1,ascii_code,s1w4ltr5,105))
+21:35:54:765072
+Sending af(isa(s1,letter,s1w4ltr6))
+21:35:54:765121
+Sending af(has(s1,letter,s1sp4,s1w4ltr6))
+21:35:54:765160
+Sending af(has(s1,successor,s1w4ltr5,s1w4ltr6))
+21:35:54:765197
+Sending af(has(s1,ascii_code,s1w4ltr6,109))
+21:35:54:765235
+Sending af(isa(s1,letter,s1w4ltr7))
+21:35:54:765285
+Sending af(has(s1,letter,s1sp4,s1w4ltr7))
+21:35:54:765323
+Sending af(has(s1,successor,s1w4ltr6,s1w4ltr7))
+21:35:54:765361
+Sending af(has(s1,ascii_code,s1w4ltr7,111))
+21:35:54:765397
+Sending af(isa(s1,letter,s1w4ltr8))
+21:35:54:765495
+Sending af(has(s1,letter,s1sp4,s1w4ltr8))
+21:35:54:765534
+Sending af(has(s1,successor,s1w4ltr7,s1w4ltr8))
+21:35:54:765574
+Sending af(has(s1,ascii_code,s1w4ltr8,114))
+21:35:54:765612
+Sending af(isa(s1,letter,s1w4ltr9))
+21:35:54:765661
+Sending af(has(s1,letter,s1sp4,s1w4ltr9))
+21:35:54:765700
+Sending af(has(s1,successor,s1w4ltr8,s1w4ltr9))
+21:35:54:765740
+Sending af(has(s1,ascii_code,s1w4ltr9,101))
+21:35:54:765778
+Sending done(call(ac_token_utt(s1,"send metroliner to baltimore"),[s1,"send metroliner to baltimore"]),ac_token_utt(s1,"send metroliner to baltimore"))
+Received: call(ac_token_utt(s2,"send metroliner to baltimore"),[s2,"send metroliner to baltimore"])
+21:37:11:67734
+memory[861092,91996]
+global_stack[25272,429280]
+local_stack[628,64880]
+atoms[2268,53910,47392]
+Received: _7252
+21:37:11:67787
+Sending af(isa(s2,leftwall,s2w0))
+21:37:11:67822
+Sending af(has(s2,leftwall,s2,s2w0))
+21:37:11:67919
+Sending af(isa(s2,word,s2w1))
+21:37:11:67980
+Sending af(has(s2,word,s2,s2w1))
+21:37:11:68029
+Sending af(has(s2,successor,s2w0,s2w1))
+21:37:11:68077
+Sending af(has(s2,spelling,s2w1,s2sp1))
+21:37:11:68132
+Sending af(isa(s2,spelling,s2sp1))
+21:37:11:68179
+Sending af(isa(s2,leftwall,s2w1ltr0))
+21:37:11:68233
+Sending af(has(s2,leftwall,s2sp1,s2w1ltr0))
+21:37:11:68282
+Sending af(isa(s2,letter,s2w1ltr1))
+21:37:11:68327
+Sending af(has(s2,letter,s2sp1,s2w1ltr1))
+21:37:11:68368
+Sending af(has(s2,successor,s2w1ltr0,s2w1ltr1))
+21:37:11:68406
+Sending af(has(s2,ascii_code,s2w1ltr1,115))
+21:37:11:68444
+Sending af(isa(s2,letter,s2w1ltr2))
+21:37:11:68492
+Sending af(has(s2,letter,s2sp1,s2w1ltr2))
+21:37:11:68531
+Sending af(has(s2,successor,s2w1ltr1,s2w1ltr2))
+21:37:11:68569
+Sending af(has(s2,ascii_code,s2w1ltr2,101))
+21:37:11:68607
+Sending af(isa(s2,letter,s2w1ltr3))
+21:37:11:68654
+Sending af(has(s2,letter,s2sp1,s2w1ltr3))
+21:37:11:68696
+Sending af(has(s2,successor,s2w1ltr2,s2w1ltr3))
+21:37:11:68735
+Sending af(has(s2,ascii_code,s2w1ltr3,110))
+21:37:11:68773
+Sending af(isa(s2,letter,s2w1ltr4))
+21:37:11:68820
+Sending af(has(s2,letter,s2sp1,s2w1ltr4))
+21:37:11:68846
+Sending af(has(s2,successor,s2w1ltr3,s2w1ltr4))
+21:37:11:68931
+Sending af(has(s2,ascii_code,s2w1ltr4,100))
+21:37:11:68969
+Sending af(isa(s2,word,s2w2))
+21:37:11:69018
+Sending af(has(s2,word,s2,s2w2))
+21:37:11:69057
+Sending af(has(s2,successor,s2w1,s2w2))
+21:37:11:69095
+Sending af(has(s2,spelling,s2w2,s2sp2))
+21:37:11:69136
+Sending af(isa(s2,spelling,s2sp2))
+21:37:11:69173
+Sending af(isa(s2,leftwall,s2w2ltr0))
+21:37:11:69218
+Sending af(has(s2,leftwall,s2sp2,s2w2ltr0))
+21:37:11:69257
+Sending af(isa(s2,letter,s2w2ltr1))
+21:37:11:69294
+Sending af(has(s2,letter,s2sp2,s2w2ltr1))
+21:37:11:69332
+Sending af(has(s2,successor,s2w2ltr0,s2w2ltr1))
+21:37:11:69371
+Sending af(has(s2,ascii_code,s2w2ltr1,109))
+21:37:11:69410
+Sending af(isa(s2,letter,s2w2ltr2))
+21:37:11:69458
+Sending af(has(s2,letter,s2sp2,s2w2ltr2))
+21:37:11:69496
+Sending af(has(s2,successor,s2w2ltr1,s2w2ltr2))
+21:37:11:69535
+Sending af(has(s2,ascii_code,s2w2ltr2,101))
+21:37:11:69573
+Sending af(isa(s2,letter,s2w2ltr3))
+21:37:11:69620
+Sending af(has(s2,letter,s2sp2,s2w2ltr3))
+21:37:11:69659
+Sending af(has(s2,successor,s2w2ltr2,s2w2ltr3))
+21:37:11:69697
+Sending af(has(s2,ascii_code,s2w2ltr3,116))
+21:37:11:69737
+Sending af(isa(s2,letter,s2w2ltr4))
+21:37:11:69786
+Sending af(has(s2,letter,s2sp2,s2w2ltr4))
+21:37:11:69825
+Sending af(has(s2,successor,s2w2ltr3,s2w2ltr4))
+21:37:11:69846
+Sending af(has(s2,ascii_code,s2w2ltr4,114))
+21:37:11:69933
+Sending af(isa(s2,letter,s2w2ltr5))
+21:37:11:69981
+Sending af(has(s2,letter,s2sp2,s2w2ltr5))
+21:37:11:70021
+Sending af(has(s2,successor,s2w2ltr4,s2w2ltr5))
+21:37:11:70059
+Sending af(has(s2,ascii_code,s2w2ltr5,111))
+21:37:11:70097
+Sending af(isa(s2,letter,s2w2ltr6))
+21:37:11:70145
+Sending af(has(s2,letter,s2sp2,s2w2ltr6))
+21:37:11:70183
+Sending af(has(s2,successor,s2w2ltr5,s2w2ltr6))
+21:37:11:70221
+Sending af(has(s2,ascii_code,s2w2ltr6,108))
+21:37:11:70258
+Sending af(isa(s2,letter,s2w2ltr7))
+21:37:11:70309
+Sending af(has(s2,letter,s2sp2,s2w2ltr7))
+21:37:11:70348
+Sending af(has(s2,successor,s2w2ltr6,s2w2ltr7))
+21:37:11:70386
+Sending af(has(s2,ascii_code,s2w2ltr7,105))
+21:37:11:70424
+Sending af(isa(s2,letter,s2w2ltr8))
+21:37:11:70471
+Sending af(has(s2,letter,s2sp2,s2w2ltr8))
+21:37:11:70510
+Sending af(has(s2,successor,s2w2ltr7,s2w2ltr8))
+21:37:11:70548
+Sending af(has(s2,ascii_code,s2w2ltr8,110))
+21:37:11:70586
+Sending af(isa(s2,letter,s2w2ltr9))
+21:37:11:70633
+Sending af(has(s2,letter,s2sp2,s2w2ltr9))
+21:37:11:70671
+Sending af(has(s2,successor,s2w2ltr8,s2w2ltr9))
+21:37:11:70709
+Sending af(has(s2,ascii_code,s2w2ltr9,101))
+21:37:11:70747
+Sending af(isa(s2,letter,s2w2ltr10))
+21:37:11:70796
+Sending af(has(s2,letter,s2sp2,s2w2ltr10))
+21:37:11:70835
+Sending af(has(s2,successor,s2w2ltr9,s2w2ltr10))
+21:37:11:70846
+Sending af(has(s2,ascii_code,s2w2ltr10,114))
+21:37:11:70931
+Sending af(isa(s2,word,s2w3))
+21:37:11:70980
+Sending af(has(s2,word,s2,s2w3))
+21:37:11:71019
+Sending af(has(s2,successor,s2w2,s2w3))
+21:37:11:71057
+Sending af(has(s2,spelling,s2w3,s2sp3))
+21:37:11:71098
+Sending af(isa(s2,spelling,s2sp3))
+21:37:11:71135
+Sending af(isa(s2,leftwall,s2w3ltr0))
+21:37:11:71177
+Sending af(has(s2,leftwall,s2sp3,s2w3ltr0))
+21:37:11:71217
+Sending af(isa(s2,letter,s2w3ltr1))
+21:37:11:71254
+Sending af(has(s2,letter,s2sp3,s2w3ltr1))
+21:37:11:71291
+Sending af(has(s2,successor,s2w3ltr0,s2w3ltr1))
+21:37:11:71332
+Sending af(has(s2,ascii_code,s2w3ltr1,116))
+21:37:11:71370
+Sending af(isa(s2,letter,s2w3ltr2))
+21:37:11:71417
+Sending af(has(s2,letter,s2sp3,s2w3ltr2))
+21:37:11:71456
+Sending af(has(s2,successor,s2w3ltr1,s2w3ltr2))
+21:37:11:71493
+Sending af(has(s2,ascii_code,s2w3ltr2,111))
+21:37:11:71531
+Sending af(isa(s2,word,s2w4))
+21:37:11:71580
+Sending af(has(s2,word,s2,s2w4))
+21:37:11:71619
+Sending af(has(s2,successor,s2w3,s2w4))
+21:37:11:71656
+Sending af(has(s2,spelling,s2w4,s2sp4))
+21:37:11:71697
+Sending af(isa(s2,spelling,s2sp4))
+21:37:11:71734
+Sending af(isa(s2,leftwall,s2w4ltr0))
+21:37:11:71775
+Sending af(has(s2,leftwall,s2sp4,s2w4ltr0))
+21:37:11:71813
+Sending af(isa(s2,letter,s2w4ltr1))
+21:37:11:71846
+Sending af(has(s2,letter,s2sp4,s2w4ltr1))
+21:37:11:71935
+Sending af(has(s2,successor,s2w4ltr0,s2w4ltr1))
+21:37:11:71973
+Sending af(has(s2,ascii_code,s2w4ltr1,98))
+21:37:11:72011
+Sending af(isa(s2,letter,s2w4ltr2))
+21:37:11:72058
+Sending af(has(s2,letter,s2sp4,s2w4ltr2))
+21:37:11:72097
+Sending af(has(s2,successor,s2w4ltr1,s2w4ltr2))
+21:37:11:72135
+Sending af(has(s2,ascii_code,s2w4ltr2,97))
+21:37:11:72172
+Sending af(isa(s2,letter,s2w4ltr3))
+21:37:11:72220
+Sending af(has(s2,letter,s2sp4,s2w4ltr3))
+21:37:11:72258
+Sending af(has(s2,successor,s2w4ltr2,s2w4ltr3))
+21:37:11:72296
+Sending af(has(s2,ascii_code,s2w4ltr3,108))
+21:37:11:72334
+Sending af(isa(s2,letter,s2w4ltr4))
+21:37:11:72612
+Sending af(has(s2,letter,s2sp4,s2w4ltr4))
+21:37:11:72653
+Sending af(has(s2,successor,s2w4ltr3,s2w4ltr4))
+21:37:11:72691
+Sending af(has(s2,ascii_code,s2w4ltr4,116))
+21:37:11:72729
+Sending af(isa(s2,letter,s2w4ltr5))
+21:37:11:72777
+Sending af(has(s2,letter,s2sp4,s2w4ltr5))
+21:37:11:72815
+Sending af(has(s2,successor,s2w4ltr4,s2w4ltr5))
+21:37:11:72846
+Sending af(has(s2,ascii_code,s2w4ltr5,105))
+21:37:11:72929
+Sending af(isa(s2,letter,s2w4ltr6))
+21:37:11:72977
+Sending af(has(s2,letter,s2sp4,s2w4ltr6))
+21:37:11:73015
+Sending af(has(s2,successor,s2w4ltr5,s2w4ltr6))
+21:37:11:73053
+Sending af(has(s2,ascii_code,s2w4ltr6,109))
+21:37:11:73090
+Sending af(isa(s2,letter,s2w4ltr7))
+21:37:11:73137
+Sending af(has(s2,letter,s2sp4,s2w4ltr7))
+21:37:11:73175
+Sending af(has(s2,successor,s2w4ltr6,s2w4ltr7))
+21:37:11:73213
+Sending af(has(s2,ascii_code,s2w4ltr7,111))
+21:37:11:73256
+Sending af(isa(s2,letter,s2w4ltr8))
+21:37:11:73304
+Sending af(has(s2,letter,s2sp4,s2w4ltr8))
+21:37:11:73342
+Sending af(has(s2,successor,s2w4ltr7,s2w4ltr8))
+21:37:11:73380
+Sending af(has(s2,ascii_code,s2w4ltr8,114))
+21:37:11:73418
+Sending af(isa(s2,letter,s2w4ltr9))
+21:37:11:73466
+Sending af(has(s2,letter,s2sp4,s2w4ltr9))
+21:37:11:73504
+Sending af(has(s2,successor,s2w4ltr8,s2w4ltr9))
+21:37:11:73542
+Sending af(has(s2,ascii_code,s2w4ltr9,101))
+21:37:11:73579
+Sending done(call(ac_token_utt(s2,"send metroliner to baltimore"),[s2,"send metroliner to baltimore"]),ac_token_utt(s2,"send metroliner to baltimore"))
+Received: call(ac_token_utt(s3,"send train to baltimore"),[s3,"send train to baltimore"])
+21:37:18:802037
+memory[864160,88928]
+global_stack[25200,429352]
+local_stack[628,64880]
+atoms[2439,58080,46024]
+Received: _7232
+21:37:18:802090
+Sending af(isa(s3,leftwall,s3w0))
+21:37:18:802126
+Sending af(has(s3,leftwall,s3,s3w0))
+21:37:18:802188
+Sending af(isa(s3,word,s3w1))
+21:37:18:802248
+Sending af(has(s3,word,s3,s3w1))
+21:37:18:802296
+Sending af(has(s3,successor,s3w0,s3w1))
+21:37:18:802343
+Sending af(has(s3,spelling,s3w1,s3sp1))
+21:37:18:802394
+Sending af(isa(s3,spelling,s3sp1))
+21:37:18:802442
+Sending af(isa(s3,leftwall,s3w1ltr0))
+21:37:18:802495
+Sending af(has(s3,leftwall,s3sp1,s3w1ltr0))
+21:37:18:802542
+Sending af(isa(s3,letter,s3w1ltr1))
+21:37:18:802586
+Sending af(has(s3,letter,s3sp1,s3w1ltr1))
+21:37:18:802626
+Sending af(has(s3,successor,s3w1ltr0,s3w1ltr1))
+21:37:18:802665
+Sending af(has(s3,ascii_code,s3w1ltr1,115))
+21:37:18:802703
+Sending af(isa(s3,letter,s3w1ltr2))
+21:37:18:802752
+Sending af(has(s3,letter,s3sp1,s3w1ltr2))
+21:37:18:802790
+Sending af(has(s3,successor,s3w1ltr1,s3w1ltr2))
+21:37:18:802828
+Sending af(has(s3,ascii_code,s3w1ltr2,101))
+21:37:18:802866
+Sending af(isa(s3,letter,s3w1ltr3))
+21:37:18:802917
+Sending af(has(s3,letter,s3sp1,s3w1ltr3))
+21:37:18:802956
+Sending af(has(s3,successor,s3w1ltr2,s3w1ltr3))
+21:37:18:802995
+Sending af(has(s3,ascii_code,s3w1ltr3,110))
+21:37:18:803033
+Sending af(isa(s3,letter,s3w1ltr4))
+21:37:18:803081
+Sending af(has(s3,letter,s3sp1,s3w1ltr4))
+21:37:18:803119
+Sending af(has(s3,successor,s3w1ltr3,s3w1ltr4))
+21:37:18:803157
+Sending af(has(s3,ascii_code,s3w1ltr4,100))
+21:37:18:803195
+Sending af(isa(s3,word,s3w2))
+21:37:18:803245
+Sending af(has(s3,word,s3,s3w2))
+21:37:18:803284
+Sending af(has(s3,successor,s3w1,s3w2))
+21:37:18:803322
+Sending af(has(s3,spelling,s3w2,s3sp2))
+21:37:18:803363
+Sending af(isa(s3,spelling,s3sp2))
+21:37:18:803401
+Sending af(isa(s3,leftwall,s3w2ltr0))
+21:37:18:803443
+Sending af(has(s3,leftwall,s3sp2,s3w2ltr0))
+21:37:18:803481
+Sending af(isa(s3,letter,s3w2ltr1))
+21:37:18:803518
+Sending af(has(s3,letter,s3sp2,s3w2ltr1))
+21:37:18:803557
+Sending af(has(s3,successor,s3w2ltr0,s3w2ltr1))
+21:37:18:803594
+Sending af(has(s3,ascii_code,s3w2ltr1,116))
+21:37:18:803633
+Sending af(isa(s3,letter,s3w2ltr2))
+21:37:18:803680
+Sending af(has(s3,letter,s3sp2,s3w2ltr2))
+21:37:18:803719
+Sending af(has(s3,successor,s3w2ltr1,s3w2ltr2))
+21:37:18:803757
+Sending af(has(s3,ascii_code,s3w2ltr2,114))
+21:37:18:803795
+Sending af(isa(s3,letter,s3w2ltr3))
+21:37:18:803843
+Sending af(has(s3,letter,s3sp2,s3w2ltr3))
+21:37:18:803881
+Sending af(has(s3,successor,s3w2ltr2,s3w2ltr3))
+21:37:18:803922
+Sending af(has(s3,ascii_code,s3w2ltr3,97))
+21:37:18:803960
+Sending af(isa(s3,letter,s3w2ltr4))
+21:37:18:804008
+Sending af(has(s3,letter,s3sp2,s3w2ltr4))
+21:37:18:804047
+Sending af(has(s3,successor,s3w2ltr3,s3w2ltr4))
+21:37:18:804086
+Sending af(has(s3,ascii_code,s3w2ltr4,105))
+21:37:18:804124
+Sending af(isa(s3,letter,s3w2ltr5))
+21:37:18:804171
+Sending af(has(s3,letter,s3sp2,s3w2ltr5))
+21:37:18:804210
+Sending af(has(s3,successor,s3w2ltr4,s3w2ltr5))
+21:37:18:804248
+Sending af(has(s3,ascii_code,s3w2ltr5,110))
+21:37:18:804286
+Sending af(isa(s3,word,s3w3))
+21:37:18:804337
+Sending af(has(s3,word,s3,s3w3))
+21:37:18:804376
+Sending af(has(s3,successor,s3w2,s3w3))
+21:37:18:804414
+Sending af(has(s3,spelling,s3w3,s3sp3))
+21:37:18:804454
+Sending af(isa(s3,spelling,s3sp3))
+21:37:18:804492
+Sending af(isa(s3,leftwall,s3w3ltr0))
+21:37:18:804534
+Sending af(has(s3,leftwall,s3sp3,s3w3ltr0))
+21:37:18:804572
+Sending af(isa(s3,letter,s3w3ltr1))
+21:37:18:804609
+Sending af(has(s3,letter,s3sp3,s3w3ltr1))
+21:37:18:804646
+Sending af(has(s3,successor,s3w3ltr0,s3w3ltr1))
+21:37:18:804684
+Sending af(has(s3,ascii_code,s3w3ltr1,116))
+21:37:18:804722
+Sending af(isa(s3,letter,s3w3ltr2))
+21:37:18:804769
+Sending af(has(s3,letter,s3sp3,s3w3ltr2))
+21:37:18:804808
+Sending af(has(s3,successor,s3w3ltr1,s3w3ltr2))
+21:37:18:804846
+Sending af(has(s3,ascii_code,s3w3ltr2,111))
+21:37:18:804884
+Sending af(isa(s3,word,s3w4))
+21:37:18:804936
+Sending af(has(s3,word,s3,s3w4))
+21:37:18:804974
+Sending af(has(s3,successor,s3w3,s3w4))
+21:37:18:805012
+Sending af(has(s3,spelling,s3w4,s3sp4))
+21:37:18:805053
+Sending af(isa(s3,spelling,s3sp4))
+21:37:18:805090
+Sending af(isa(s3,leftwall,s3w4ltr0))
+21:37:18:805132
+Sending af(has(s3,leftwall,s3sp4,s3w4ltr0))
+21:37:18:805170
+Sending af(isa(s3,letter,s3w4ltr1))
+21:37:18:805206
+Sending af(has(s3,letter,s3sp4,s3w4ltr1))
+21:37:18:805244
+Sending af(has(s3,successor,s3w4ltr0,s3w4ltr1))
+21:37:18:805282
+Sending af(has(s3,ascii_code,s3w4ltr1,98))
+21:37:18:805319
+Sending af(isa(s3,letter,s3w4ltr2))
+21:37:18:805367
+Sending af(has(s3,letter,s3sp4,s3w4ltr2))
+21:37:18:805406
+Sending af(has(s3,successor,s3w4ltr1,s3w4ltr2))
+21:37:18:805444
+Sending af(has(s3,ascii_code,s3w4ltr2,97))
+21:37:18:805482
+Sending af(isa(s3,letter,s3w4ltr3))
+21:37:18:805530
+Sending af(has(s3,letter,s3sp4,s3w4ltr3))
+21:37:18:805569
+Sending af(has(s3,successor,s3w4ltr2,s3w4ltr3))
+21:37:18:805607
+Sending af(has(s3,ascii_code,s3w4ltr3,108))
+21:37:18:805645
+Sending af(isa(s3,letter,s3w4ltr4))
+21:37:18:805693
+Sending af(has(s3,letter,s3sp4,s3w4ltr4))
+21:37:18:805731
+Sending af(has(s3,successor,s3w4ltr3,s3w4ltr4))
+21:37:18:805769
+Sending af(has(s3,ascii_code,s3w4ltr4,116))
+21:37:18:805807
+Sending af(isa(s3,letter,s3w4ltr5))
+21:37:18:805855
+Sending af(has(s3,letter,s3sp4,s3w4ltr5))
+21:37:18:805899
+Sending af(has(s3,successor,s3w4ltr4,s3w4ltr5))
+21:37:18:805938
+Sending af(has(s3,ascii_code,s3w4ltr5,105))
+21:37:18:805976
+Sending af(isa(s3,letter,s3w4ltr6))
+21:37:18:806024
+Sending af(has(s3,letter,s3sp4,s3w4ltr6))
+21:37:18:806062
+Sending af(has(s3,successor,s3w4ltr5,s3w4ltr6))
+21:37:18:806100
+Sending af(has(s3,ascii_code,s3w4ltr6,109))
+21:37:18:806138
+Sending af(isa(s3,letter,s3w4ltr7))
+21:37:18:806186
+Sending af(has(s3,letter,s3sp4,s3w4ltr7))
+21:37:18:806225
+Sending af(has(s3,successor,s3w4ltr6,s3w4ltr7))
+21:37:18:806263
+Sending af(has(s3,ascii_code,s3w4ltr7,111))
+21:37:18:806300
+Sending af(isa(s3,letter,s3w4ltr8))
+21:37:18:806348
+Sending af(has(s3,letter,s3sp4,s3w4ltr8))
+21:37:18:806386
+Sending af(has(s3,successor,s3w4ltr7,s3w4ltr8))
+21:37:18:806424
+Sending af(has(s3,ascii_code,s3w4ltr8,114))
+21:37:18:806462
+Sending af(isa(s3,letter,s3w4ltr9))
+21:37:18:806510
+Sending af(has(s3,letter,s3sp4,s3w4ltr9))
+21:37:18:806549
+Sending af(has(s3,successor,s3w4ltr8,s3w4ltr9))
+21:37:18:806587
+Sending af(has(s3,ascii_code,s3w4ltr9,101))
+21:37:18:806624
+Sending done(call(ac_token_utt(s3,"send train to baltimore"),[s3,"send train to baltimore"]),ac_token_utt(s3,"send train to baltimore"))

@@ -1,0 +1,3918 @@
+tim:createIMSocket: creating socket
+tim:createIMSocket: socket fd=4
+tim:createIMSocket: binding socket, port=6200
+tim:createIMSocket: listening on socket
+tim:createIMSocket: done; sock=4, port=6200
+tim:registerFd: fd=4, flags=4
+tim:registerFd: done
+tim:openLog: pathname=im.log
+tim:displayInit: initializing display
+tim:registerFd: fd=6, flags=8
+tim:registerFd: done
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:exposeCB: EXPOSE!
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 0,0
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:exposeCB: done
+tim:displayProcessEvents: done
+tim:displayInit: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 6
+tim:doSelect: select returned 1
+tim:doSelect: fd 4 ready for accept
+tim:acceptCallback: accepting connection on fd=4
+tim:acceptCallback: new socket is fd 7
+tim:registerFd: fd=7, flags=1
+tim:registerFd: done
+tim:acceptCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 7 ready for read
+tim:inputCallback: reading from fd=7
+tim:inputCallback: processing msg from fd=7
+tim:receiveMsg: from fd=7, verb=register
+tim:receiveRegister: from fd=7
+tim:receiveRegister: name=PM
+tim:receiveRegister: finding/creating client
+tim:newClient: name = "PM"
+tim:newClient: lastClient now = 0x690d0
+tim:clientSetFd: client=PM, fd=7
+tim:clientSetFd: setting client PM fd=7
+tim:clientSetFd: client is new repr. at fd=7
+tim:clientSetFd: done
+tim:newClient: done
+tim:receiveRegister: created new client PM
+tim:receiveRegister: adding client to class=Any
+tim:addClientToClass: this=PM, class=Any
+tim:addClientToClass: adding to class to client list
+tim:addClientToList: done
+tim:addClientToClass: updating class listeners
+tim:updateClassListenersRecursively: this=PM, class=Any
+tim:updateClassListenersRecursively: done
+tim:addClientToClass: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 1 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: client=PM, state=2
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 1 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveRegister: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 7 ready for read
+tim:inputCallback: reading from fd=7
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 7 ready for read
+tim:inputCallback: reading from fd=7
+tim:inputCallback: processing msg from fd=7
+tim:displayDrawRecv: name=PM, recvCount=0
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=7, verb=tell
+tim:receiveTellReady: 
+tim:clientSetStatus: client=PM, state=3
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 1 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveTellReady: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 7 ready for read
+tim:inputCallback: reading from fd=7
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=PM, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 4 ready for accept
+tim:acceptCallback: accepting connection on fd=4
+tim:acceptCallback: new socket is fd 8
+tim:registerFd: fd=8, flags=1
+tim:registerFd: done
+tim:acceptCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:receiveMsg: from fd=8, verb=register
+tim:receiveRegister: from fd=8
+tim:receiveRegister: name=init
+tim:receiveRegister: finding/creating client
+tim:newClient: name = "init"
+tim:newClient: lastClient now = 0x69230
+tim:clientSetFd: client=init, fd=8
+tim:clientSetFd: setting client init fd=8
+tim:clientSetFd: client is new repr. at fd=8
+tim:clientSetFd: done
+tim:newClient: done
+tim:receiveRegister: created new client init
+tim:receiveRegister: adding client to class=Any
+tim:addClientToClass: this=init, class=Any
+tim:addClientToClass: adding to class to client list
+tim:addClientToList: done
+tim:addClientToClass: updating class listeners
+tim:updateClassListenersRecursively: this=init, class=Any
+tim:updateClassListenersRecursively: done
+tim:addClientToClass: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: init
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: init, theta=180.000000
+tim:displayLayoutClient: init: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for init
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=init at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: client=init, state=2
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: init
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: init, theta=180.000000
+tim:displayLayoutClient: init: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for init
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=init at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveRegister: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=0
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="user"
+tim:receiveRequestDefineClass: parent="any"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="user"
+tim:newClientClass: adding to super=Any
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=1
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="user-input"
+tim:receiveRequestDefineClass: parent="user"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="user-input"
+tim:newClientClass: adding to super=user
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=2
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="speech-rec"
+tim:receiveRequestDefineClass: parent="user-input"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="speech-rec"
+tim:newClientClass: adding to super=user-input
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=3
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="user-output"
+tim:receiveRequestDefineClass: parent="user"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="user-output"
+tim:newClientClass: adding to super=user
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=4
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="system"
+tim:receiveRequestDefineClass: parent="any"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="system"
+tim:newClientClass: adding to super=Any
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=5
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=request
+tim:receiveRequestDefineClass: 
+tim:receiveRequestDefineClass: classname="runtime"
+tim:receiveRequestDefineClass: parent="any"
+tim:receiveRequestDefineClass: creating new class
+tim:newClientClass: name="runtime"
+tim:newClientClass: adding to super=Any
+tim:newClientClass: done
+tim:receiveRequestDefineClass: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=init, recvCount=6
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=PM, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to PM, fd=7
+tim:output: sending to fd=7
+tim:output: trying to write 126 bytes, fd=7, msg="(request :receiver pm :content (start :name grapher
+			 :class user
+			 :exec "/fs/that/perlises/alma/grapher") :sender init)
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: EOF!
+tim:closeClient: fd=8
+tim:clientUnlistenToAny: this=init
+tim:clientUnlistenToClass: this=init, class=Any
+tim:deleteClientFromListeners: this=init, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:deleteClientFromListeners: this=PM, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:clientUnlistenToClass: this=init, class=runtime
+tim:deleteClientFromClassListeners: this=runtime, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=init, class=system
+tim:deleteClientFromClassListeners: this=system, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=init, class=user
+tim:clientUnlistenToClass: this=init, class=user-output
+tim:deleteClientFromClassListeners: this=user-output, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=init, class=user-input
+tim:clientUnlistenToClass: this=init, class=speech-rec
+tim:deleteClientFromClassListeners: this=speech-rec, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user-input, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=Any, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToAny: done
+tim:clientUnmonitorAny: this=init
+tim:clientUnmonitorClass: this=init, class=Any
+tim:deleteClientFromMonitors: this=init, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:deleteClientFromMonitors: this=PM, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:clientUnmonitorClass: this=init, class=runtime
+tim:deleteClientFromClassMonitors: this=runtime, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=init, class=system
+tim:deleteClientFromClassMonitors: this=system, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=init, class=user
+tim:clientUnmonitorClass: this=init, class=user-output
+tim:deleteClientFromClassMonitors: this=user-output, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=init, class=user-input
+tim:clientUnmonitorClass: this=init, class=speech-rec
+tim:deleteClientFromClassMonitors: this=speech-rec, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user-input, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=Any, client=init
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorAny: done
+tim:closeClient: deferring deletion until display completes
+tim:clientSetFd: client=<null>, fd=8
+tim:clientSetFd: erasing repr. at fd=8
+tim:clientSetFd: done
+tim:outputFlush: fd=8
+tim:unregisterFd: fd=8, flags=2
+tim:unregisterFd: done
+tim:outputFlush: done
+tim:unregisterFd: fd=8, flags=7
+tim:unregisterFd: done, new maxfd=7
+tim:closeClient: closing fd=8
+tim:closeClient: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 4 ready for accept
+tim:acceptCallback: accepting connection on fd=4
+tim:acceptCallback: new socket is fd 8
+tim:registerFd: fd=8, flags=1
+tim:registerFd: done
+tim:acceptCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:receiveMsg: from fd=8, verb=register
+tim:receiveRegister: from fd=8
+tim:receiveRegister: name=grapher
+tim:receiveRegister: class=user
+tim:receiveRegister: finding/creating client
+tim:newClient: name = "grapher"
+tim:newClient: lastClient now = 0x69318
+tim:clientSetFd: client=grapher, fd=8
+tim:clientSetFd: setting client grapher fd=8
+tim:clientSetFd: client is new repr. at fd=8
+tim:clientSetFd: done
+tim:newClient: done
+tim:receiveRegister: created new client grapher
+tim:receiveRegister: adding client to class=user
+tim:addClientToClass: this=grapher, class=user
+tim:addClientToClass: adding to class to client list
+tim:addClientToList: done
+tim:addClientToClass: updating class listeners
+tim:updateClassListenersRecursively: this=grapher, class=user
+tim:updateClassListenersRecursively: this=grapher, class=Any
+tim:updateClassListenersRecursively: done
+tim:updateClassListenersRecursively: done
+tim:addClientToClass: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: dead client: init
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=init at 192,24
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: client=grapher, state=2
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: dead client: init
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=init at 192,24
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveRegister: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=7
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=6
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=init, recvCount=1
+tim:deleteClient: name = "init"
+tim:deleteClientFromClasses: this=init
+tim:deleteClientFromClass: this=init, class=Any
+tim:deleteClientFromList: done
+tim:deleteClientFromClass: done
+tim:deleteClientFromClasses: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=PM, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:deleteClient: done
+tim:recvTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=grapher, recvCount=0
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=register
+tim:receiveRegister: from fd=8
+tim:receiveRegister: name=grapher
+tim:receiveRegister: finding/creating client
+tim:receiveRegister: resetting existing client grapher
+tim:clientSetFd: client=grapher, fd=-1
+tim:clientSetFd: clearing repr. for fd=8
+tim:clientSetFd: setting client grapher fd=-1
+tim:clientSetFd: done
+tim:clientUnlistenToClass: this=grapher, class=Any
+tim:deleteClientFromListeners: this=PM, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:clientUnlistenToClass: this=grapher, class=runtime
+tim:deleteClientFromClassListeners: this=runtime, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=system
+tim:deleteClientFromClassListeners: this=system, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=user
+tim:deleteClientFromListeners: this=grapher, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:clientUnlistenToClass: this=grapher, class=user-output
+tim:deleteClientFromClassListeners: this=user-output, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=user-input
+tim:clientUnlistenToClass: this=grapher, class=speech-rec
+tim:deleteClientFromClassListeners: this=speech-rec, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user-input, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=Any, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnmonitorClass: this=grapher, class=Any
+tim:deleteClientFromMonitors: this=PM, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:clientUnmonitorClass: this=grapher, class=runtime
+tim:deleteClientFromClassMonitors: this=runtime, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=system
+tim:deleteClientFromClassMonitors: this=system, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=user
+tim:deleteClientFromMonitors: this=grapher, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:clientUnmonitorClass: this=grapher, class=user-output
+tim:deleteClientFromClassMonitors: this=user-output, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=user-input
+tim:clientUnmonitorClass: this=grapher, class=speech-rec
+tim:deleteClientFromClassMonitors: this=speech-rec, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user-input, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=Any, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClasses: this=grapher
+tim:deleteClientFromClass: this=grapher, class=user
+tim:deleteClientFromList: done
+tim:deleteClientFromClass: done
+tim:deleteClientFromClasses: done
+tim:clientSetFd: client=grapher, fd=8
+tim:clientSetFd: setting client grapher fd=8
+tim:clientSetFd: client is new repr. at fd=8
+tim:clientSetFd: done
+tim:receiveRegister: adding client to class=Any
+tim:addClientToClass: this=grapher, class=Any
+tim:addClientToClass: adding to class to client list
+tim:addClientToList: done
+tim:addClientToClass: updating class listeners
+tim:updateClassListenersRecursively: this=grapher, class=Any
+tim:updateClassListenersRecursively: done
+tim:addClientToClass: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: client=grapher, state=2
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveRegister: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: processing msg from fd=8
+tim:displayDrawRecv: name=grapher, recvCount=1
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=8, verb=tell
+tim:receiveTellReady: 
+tim:clientSetStatus: client=grapher, state=3
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=180.000000
+tim:displayLayoutClient: grapher: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveTellReady: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=grapher, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=grapher, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 8
+tim:doSelect: select returned 1
+tim:doSelect: fd 4 ready for accept
+tim:acceptCallback: accepting connection on fd=4
+tim:acceptCallback: new socket is fd 9
+tim:registerFd: fd=9, flags=1
+tim:registerFd: done
+tim:acceptCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:receiveMsg: from fd=9, verb=register
+tim:receiveRegister: from fd=9
+tim:receiveRegister: name=alma
+tim:receiveRegister: finding/creating client
+tim:newClient: name = "alma"
+tim:newClient: lastClient now = 0x69560
+tim:clientSetFd: client=alma, fd=9
+tim:clientSetFd: setting client alma fd=9
+tim:clientSetFd: client is new repr. at fd=9
+tim:clientSetFd: done
+tim:newClient: done
+tim:receiveRegister: created new client alma
+tim:receiveRegister: adding client to class=Any
+tim:addClientToClass: this=alma, class=Any
+tim:addClientToClass: adding to class to client list
+tim:addClientToList: done
+tim:addClientToClass: updating class listeners
+tim:updateClassListenersRecursively: this=alma, class=Any
+tim:updateClassListenersRecursively: done
+tim:addClientToClass: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: main client: alma
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 3 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=120.000000
+tim:displayLayoutClient: grapher: rad=64, theta=120.000000
+tim:displayLayoutClient: x=53, y=183
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: alma, theta=240.000000
+tim:displayLayoutClient: alma: rad=64, theta=240.000000
+tim:displayLayoutClient: x=52, y=72
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for alma
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 53,183
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=alma at 52,72
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: client=alma, state=2
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: main client: alma
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 3 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=120.000000
+tim:displayLayoutClient: grapher: rad=64, theta=120.000000
+tim:displayLayoutClient: x=53, y=183
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: alma, theta=240.000000
+tim:displayLayoutClient: alma: rad=64, theta=240.000000
+tim:displayLayoutClient: x=52, y=72
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for alma
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 53,183
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=alma at 52,72
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveRegister: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:receiveMsg: from fd=9, verb=tell
+tim:receiveTellReady: 
+tim:clientSetStatus: client=alma, state=3
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: grapher
+tim:displayDoLayout: main client: alma
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 3 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: grapher, theta=120.000000
+tim:displayLayoutClient: grapher: rad=64, theta=120.000000
+tim:displayLayoutClient: x=53, y=183
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for grapher
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: alma, theta=240.000000
+tim:displayLayoutClient: alma: rad=64, theta=240.000000
+tim:displayLayoutClient: x=52, y=72
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for alma
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=grapher at 53,183
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=alma at 52,72
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:clientSetStatus: broadcasting status message
+tim:clientSetStatus: done
+tim:receiveTellReady: done
+tim:receiveMsg: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 110 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 0 :form "[track(grnblt,cp)]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 106 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 1 :form "[track(cp,ft)]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=2
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=2
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 106 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 2 :form "[track(ft,gp)]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=3
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=3
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 107 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 3 :form "[track(ft,usc)]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=4
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=4
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 107 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 4 :form "[track(usc,gp)]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=5
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=5
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 160 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 5 :form "[track(_5939,_5940),not(track(_5946,_5940)),not(track(_5939,_5946))]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=6
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=6
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 114 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 6 :form "[bs(track(grnblt,gp))]" :type fc  :step 1))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=7
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=7
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=6
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=6
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=5
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=4
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=3
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 125 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 7 :form "[not(track(grnblt,gp))]" :type bc  :parent 6 :step 2))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 132 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 8 :form "[doing_bs(7,track(grnblt,gp))]" :type fc  :parent 7 :step 2))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 159 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 9 :form "[not(track(_5925,gp)),not(track(grnblt,_5925))]" :type bc  :parent 7 :parent 5 :step 3))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 132 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 10 :form "[not(track(cp,gp))]" :type bc  :parent 9 :parent 0 :step 4))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 136 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 11 :form "[not(track(grnblt,ft))]" :type bc  :parent 9 :parent 2 :step 4))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=2
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=2
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 137 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 12 :form "[not(track(grnblt,usc))]" :type bc  :parent 9 :parent 4 :step 4))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=3
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=3
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 154 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 13 :form "[not(track(grnblt,gp)),not(track(gp,gp))]" :type bc  :parent 9 :parent 5 :step 4))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=4
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=4
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 158 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 14 :form "[not(track(gp,grnblt)),not(track(grnblt,gp))]" :type bc  :parent 9 :parent 5 :step 4))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=5
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=4
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=3
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 157 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 15 :form "[not(track(_6349,gp)),not(track(cp,_6349))]" :type bc  :parent 10 :parent 5 :step 5))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 161 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 16 :form "[not(track(_6290,ft)),not(track(grnblt,_6290))]" :type bc  :parent 11 :parent 5 :step 5))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=2
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=2
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 162 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 17 :form "[not(track(_6231,usc)),not(track(grnblt,_6231))]" :type bc  :parent 12 :parent 5 :step 5))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=3
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=3
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 18 :form "[not(track(_6047,gp)),not(track(grnblt,_6047)),not(track(gp,grnblt))]" :type bc  :parent 14 :parent 5 :step 5))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=4
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=4
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 19 :form "[not(track(_5981,grnblt)),not(track(gp,_5981)),not(track(grnblt,gp))]" :type bc  :parent 14 :parent 5 :step 5))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=5
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=4
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=3
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 133 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 20 :form "[not(track(ft,gp))]" :type bc  :parent 15 :parent 1 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 151 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 21 :form "[not(track(cp,gp)),not(track(gp,gp))]" :type bc  :parent 15 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=2
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=2
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 151 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 22 :form "[not(track(gp,cp)),not(track(cp,gp))]" :type bc  :parent 15 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=3
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=3
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 137 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 23 :form "[not(track(grnblt,cp))]" :type bc  :parent 16 :parent 1 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=4
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=4
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 155 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 24 :form "[not(track(grnblt,ft)),not(track(ft,ft))]" :type bc  :parent 16 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=5
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=5
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 159 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 25 :form "[not(track(ft,grnblt)),not(track(grnblt,ft))]" :type bc  :parent 16 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=6
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=6
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 158 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 26 :form "[not(track(grnblt,usc)),not(track(usc,usc))]" :type bc  :parent 17 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=7
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=7
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 161 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 27 :form "[not(track(usc,grnblt)),not(track(grnblt,usc))]" :type bc  :parent 17 :parent 5 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=8
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=8
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 155 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 28 :form "[not(track(cp,gp)),not(track(gp,grnblt))]" :type bc  :parent 18 :parent 0 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=9
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=9
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 159 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 29 :form "[not(track(grnblt,ft)),not(track(gp,grnblt))]" :type bc  :parent 18 :parent 2 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=10
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=10
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 160 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 30 :form "[not(track(grnblt,usc)),not(track(gp,grnblt))]" :type bc  :parent 18 :parent 4 :step 6))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=11
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=11
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=10
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=10
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=9
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=9
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=8
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=8
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=7
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=7
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=6
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=6
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=5
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=4
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=3
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 132 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 31 :form "[track(grnblt,gp)]" :type fc  :parent 2 :parent 20 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=1
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=1
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 157 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 32 :form "[not(track(_7434,gp)),not(track(ft,_7434))]" :type bc  :parent 20 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=2
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=2
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 175 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 33 :form "[not(track(_7250,gp)),not(track(cp,_7250)),not(track(gp,cp))]" :type bc  :parent 22 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=3
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=3
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 175 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 34 :form "[not(track(_7184,cp)),not(track(gp,_7184)),not(track(cp,gp))]" :type bc  :parent 22 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=4
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=4
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 161 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 35 :form "[not(track(_7089,cp)),not(track(grnblt,_7089))]" :type bc  :parent 23 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=5
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=5
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 36 :form "[not(track(_6905,ft)),not(track(grnblt,_6905)),not(track(ft,grnblt))]" :type bc  :parent 25 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=6
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=6
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 37 :form "[not(track(_6839,grnblt)),not(track(ft,_6839)),not(track(grnblt,ft))]" :type bc  :parent 25 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=7
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=7
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 185 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 38 :form "[not(track(_6655,usc)),not(track(grnblt,_6655)),not(track(usc,grnblt))]" :type bc  :parent 27 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=8
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=8
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 185 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 39 :form "[not(track(_6589,grnblt)),not(track(usc,_6589)),not(track(grnblt,usc))]" :type bc  :parent 27 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=9
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=9
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 179 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 40 :form "[not(track(_6523,grnblt)),not(track(gp,_6523)),not(track(cp,gp))]" :type bc  :parent 28 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=10
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=10
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 179 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 41 :form "[not(track(_6457,gp)),not(track(cp,_6457)),not(track(gp,grnblt))]" :type bc  :parent 28 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=11
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=11
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 42 :form "[not(track(_6391,grnblt)),not(track(gp,_6391)),not(track(grnblt,ft))]" :type bc  :parent 29 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=12
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=12
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 183 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 43 :form "[not(track(_6325,ft)),not(track(grnblt,_6325)),not(track(gp,grnblt))]" :type bc  :parent 29 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=13
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=13
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 184 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 44 :form "[not(track(_6259,grnblt)),not(track(gp,_6259)),not(track(grnblt,usc))]" :type bc  :parent 30 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=14
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=14
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 184 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 45 :form "[not(track(_6193,usc)),not(track(grnblt,_6193)),not(track(gp,grnblt))]" :type bc  :parent 30 :parent 5 :step 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=15
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=15
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 19))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=16
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=16
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 45))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=17
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=17
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 44))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=18
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=18
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 30))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=19
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=19
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 43))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=20
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=20
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 42))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=21
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=21
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 29))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=22
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=22
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 41))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=23
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=23
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 40))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=24
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=24
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 28))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=25
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=25
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 18))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=26
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=26
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 14))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=27
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=27
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 13))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=28
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=28
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 39))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=29
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=29
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 38))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=30
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=30
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 27))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=31
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=31
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 26))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=32
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=32
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 17))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=33
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=33
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 12))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=34
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=34
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 37))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=35
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=35
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 36))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=36
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=36
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 25))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=37
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=37
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 24))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=38
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=38
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 35))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=39
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=39
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 23))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=40
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=40
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 16))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=41
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=41
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 11))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=42
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=42
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 34))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=43
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=43
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 33))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=44
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=44
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 22))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=45
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=45
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 21))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=46
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=46
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 32))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=47
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=47
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 20))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=48
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=48
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 15))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=49
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=49
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 66 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 10))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=50
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=50
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 65 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 9))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=51
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=51
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 65 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 7))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=52
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=52
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 65 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (delnode :name 8))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=53
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=53
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=52
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=52
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=51
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=51
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=50
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=50
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=49
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=49
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=48
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=48
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=47
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=47
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=46
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=46
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=45
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=45
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=44
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=44
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=43
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=43
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=42
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=42
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=41
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=41
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=40
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=40
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=39
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=39
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=38
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=38
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=37
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=37
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=36
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=36
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=35
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=35
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=34
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=34
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=33
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=33
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=32
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=32
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=31
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=31
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=30
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=30
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=29
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=29
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=28
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=28
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=27
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=27
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=26
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=26
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=25
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=25
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=24
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=24
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=23
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=23
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=22
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=22
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=21
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=21
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=20
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=20
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=19
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=19
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=18
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=18
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=17
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=17
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=16
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=16
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=15
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=15
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=14
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=14
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=13
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=13
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=12
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=12
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=11
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=11
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=10
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=10
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=9
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=9
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=8
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=8
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=7
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=7
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=6
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=6
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=5
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=5
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=4
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=4
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=3
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=3
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=2
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=2
+tim:sendTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 132 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (addnode :name 46 :form "[done_bs(7,track(grnblt,gp))]" :type fc  :parent 7 :step 8))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: processing msg from fd=9
+tim:displayDrawRecv: name=alma, recvCount=0
+tim:displayDrawRecv: done
+tim:displayDrawSend: name=grapher, sendCount=0
+tim:displayDrawSend: done
+tim:sendPerformative1: sending to grapher, fd=8
+tim:output: sending to fd=8
+tim:output: trying to write 55 bytes, fd=8, msg="(tell :sender alma :receiver grapher :content (gexit))
+"
+tim:output: msg sent completely
+tim:sendPerformative1: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: select returned 1
+tim:doSelect: fd 8 ready for read
+tim:inputCallback: reading from fd=8
+tim:inputCallback: EOF!
+tim:closeClient: fd=8
+tim:clientUnlistenToAny: this=grapher
+tim:clientUnlistenToClass: this=grapher, class=Any
+tim:deleteClientFromListeners: this=alma, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:deleteClientFromListeners: this=grapher, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:deleteClientFromListeners: this=PM, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:clientUnlistenToClass: this=grapher, class=runtime
+tim:deleteClientFromClassListeners: this=runtime, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=system
+tim:deleteClientFromClassListeners: this=system, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=user
+tim:clientUnlistenToClass: this=grapher, class=user-output
+tim:deleteClientFromClassListeners: this=user-output, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=grapher, class=user-input
+tim:clientUnlistenToClass: this=grapher, class=speech-rec
+tim:deleteClientFromClassListeners: this=speech-rec, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user-input, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=Any, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToAny: done
+tim:clientUnmonitorAny: this=grapher
+tim:clientUnmonitorClass: this=grapher, class=Any
+tim:deleteClientFromMonitors: this=alma, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:deleteClientFromMonitors: this=grapher, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:deleteClientFromMonitors: this=PM, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:clientUnmonitorClass: this=grapher, class=runtime
+tim:deleteClientFromClassMonitors: this=runtime, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=system
+tim:deleteClientFromClassMonitors: this=system, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=user
+tim:clientUnmonitorClass: this=grapher, class=user-output
+tim:deleteClientFromClassMonitors: this=user-output, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=grapher, class=user-input
+tim:clientUnmonitorClass: this=grapher, class=speech-rec
+tim:deleteClientFromClassMonitors: this=speech-rec, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user-input, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=Any, client=grapher
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorAny: done
+tim:closeClient: deferring deletion until display completes
+tim:clientSetFd: client=<null>, fd=8
+tim:clientSetFd: erasing repr. at fd=8
+tim:clientSetFd: done
+tim:outputFlush: fd=8
+tim:unregisterFd: fd=8, flags=2
+tim:unregisterFd: done
+tim:outputFlush: done
+tim:unregisterFd: fd=8, flags=7
+tim:unregisterFd: done
+tim:closeClient: closing fd=8
+tim:closeClient: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9, usec=500000
+tim:doSelect: timeout: processing X events
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:recvTimerCB: name=alma, recvCount=1
+tim:recvTimerCB: done
+tim:displayProcessEvents: processing next event
+tim:sendTimerCB: name=grapher, sendCount=1
+tim:deleteClient: name = "grapher"
+tim:deleteClientFromClasses: this=grapher
+tim:deleteClientFromClass: this=grapher, class=Any
+tim:deleteClientFromList: done
+tim:deleteClientFromClass: done
+tim:deleteClientFromClasses: done
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: main client: alma
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 2 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayDoLayout: main client: alma, theta=180.000000
+tim:displayLayoutClient: alma: rad=64, theta=180.000000
+tim:displayLayoutClient: x=21, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for alma
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=alma at 21,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:deleteClient: done
+tim:sendTimerCB: done
+tim:displayProcessEvents: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 9
+tim:doSelect: select returned 1
+tim:doSelect: fd 9 ready for read
+tim:inputCallback: reading from fd=9
+tim:inputCallback: EOF!
+tim:closeClient: fd=9
+tim:clientUnlistenToAny: this=alma
+tim:clientUnlistenToClass: this=alma, class=Any
+tim:deleteClientFromListeners: this=alma, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:deleteClientFromListeners: this=PM, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromListeners: done
+tim:clientUnlistenToClass: this=alma, class=runtime
+tim:deleteClientFromClassListeners: this=runtime, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=alma, class=system
+tim:deleteClientFromClassListeners: this=system, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=alma, class=user
+tim:clientUnlistenToClass: this=alma, class=user-output
+tim:deleteClientFromClassListeners: this=user-output, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToClass: this=alma, class=user-input
+tim:clientUnlistenToClass: this=alma, class=speech-rec
+tim:deleteClientFromClassListeners: this=speech-rec, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user-input, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=user, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:deleteClientFromClassListeners: this=Any, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassListeners: done
+tim:clientUnlistenToClass: done
+tim:clientUnlistenToAny: done
+tim:clientUnmonitorAny: this=alma
+tim:clientUnmonitorClass: this=alma, class=Any
+tim:deleteClientFromMonitors: this=alma, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:deleteClientFromMonitors: this=PM, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromMonitors: done
+tim:clientUnmonitorClass: this=alma, class=runtime
+tim:deleteClientFromClassMonitors: this=runtime, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=alma, class=system
+tim:deleteClientFromClassMonitors: this=system, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=alma, class=user
+tim:clientUnmonitorClass: this=alma, class=user-output
+tim:deleteClientFromClassMonitors: this=user-output, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorClass: this=alma, class=user-input
+tim:clientUnmonitorClass: this=alma, class=speech-rec
+tim:deleteClientFromClassMonitors: this=speech-rec, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user-input, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=user, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:deleteClientFromClassMonitors: this=Any, client=alma
+tim:deleteClientFromList: done
+tim:deleteClientFromClassMonitors: done
+tim:clientUnmonitorClass: done
+tim:clientUnmonitorAny: done
+tim:deleteClient: name = "alma"
+tim:deleteClientFromClasses: this=alma
+tim:deleteClientFromClass: this=alma, class=Any
+tim:deleteClientFromList: done
+tim:deleteClientFromClass: done
+tim:deleteClientFromClasses: done
+tim:deleteClient: lastClient now = 0x69560
+tim:displayDoLayout: counting clients
+tim:displayDoLayout: main client: PM
+tim:displayDoLayout: width=256, height=256
+tim:displayDoLayout: 1 main clients to layout
+tim:displayDoLayout: main client: PM, theta=0.000000
+tim:displayLayoutClient: PM: rad=64, theta=0.000000
+tim:displayLayoutClient: x=149, y=128
+tim:displayLayoutClient: done
+tim:displayLayoutChildren: laying out children for PM
+tim:displayLayoutChildren: 0 children to layout
+tim:displayRedraw: clearing window
+tim:displayDrawCircle: name=IM at 85,128
+tim:displayDrawCircle: done
+tim:displayDrawCircle: name=PM at 149,128
+tim:displayDrawCircle: done
+tim:displayRedraw: syncing display
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: done
+tim:displayRedraw: done
+tim:displayDoLayout: done
+tim:deleteClient: done
+tim:clientSetFd: client=<null>, fd=9
+tim:clientSetFd: erasing repr. at fd=9
+tim:clientSetFd: done
+tim:outputFlush: fd=9
+tim:unregisterFd: fd=9, flags=2
+tim:unregisterFd: done
+tim:outputFlush: done
+tim:unregisterFd: fd=9, flags=7
+tim:unregisterFd: done, new maxfd=7
+tim:closeClient: closing fd=9
+tim:closeClient: done
+tim:inputCallback: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:displayProcessEvents: done
+tim:doSelect: done
+tim:main: IM main loop -----------------------------------------------
+tim:doSelect: starting...
+tim:doSelect: calling select, maxfd = 7
+tim:doSelect: select returned 1
+tim:doSelect: fd 6 (X display) ready for read
+tim:displayProcessEvents: checking for events
+tim:displayProcessEvents: processing next event
+tim:exitCB: exiting

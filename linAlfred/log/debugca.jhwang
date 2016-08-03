@@ -1,0 +1,112 @@
+Args: [sfile,/fs/disco/group/systems/Alfred/etc/hostfile.jhwang,delay,0,load,/fs/disco/group/systems/Alfred/src/main.pl,debug,/fs/disco/group/systems/Alfred/log/debugca.jhwang]Received: call(ac_prompt(352),[],352)
+10:24:2:452263
+memory[498312,121720]
+global_stack[24608,38800]
+local_stack[628,64880]
+atoms[2783,71872,43272]
+Sending done(call(ac_prompt(352),[],352),ac_prompt(352))
+Received: call(ac_prompt(706),[],706)
+10:24:49:392960
+memory[498528,121504]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2784,71898,43264]
+Sending done(call(ac_prompt(706),[],706),ac_prompt(706))
+Received: call(ac_prompt(1060),[],1060)
+10:25:36:344072
+memory[498560,121472]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2786,71942,43248]
+Sending done(call(ac_prompt(1060),[],1060),ac_prompt(1060))
+Received: call(ac_prompt(1414),[],1414)
+10:26:23:635180
+memory[498592,121440]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2788,71986,43232]
+Sending done(call(ac_prompt(1414),[],1414),ac_prompt(1414))
+Received: call(ac_prompt(1768),[],1768)
+10:27:11:167395
+memory[498624,121408]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2790,72030,43216]
+Sending done(call(ac_prompt(1768),[],1768),ac_prompt(1768))
+Received: call(ac_prompt(2122),[],2122)
+10:27:59:7651
+memory[498640,121392]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2791,72054,43208]
+Sending done(call(ac_prompt(2122),[],2122),ac_prompt(2122))
+Received: call(ac_prompt(2476),[],2476)
+10:28:47:88505
+memory[498672,121360]
+global_stack[24072,39336]
+local_stack[628,64880]
+atoms[2793,72098,43192]
+Sending done(call(ac_prompt(2476),[],2476),ac_prompt(2476))
+Received: call(ac_prompt(2830),[],2830)
+10:29:35:773175
+memory[498704,121328]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2795,72142,43176]
+Sending done(call(ac_prompt(2830),[],2830),ac_prompt(2830))
+Received: call(ac_prompt(3184),[],3184)
+10:30:32:812976
+memory[498736,121296]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2797,72186,43160]
+Sending done(call(ac_prompt(3184),[],3184),ac_prompt(3184))
+Received: call(ac_prompt(3538),[],3538)
+10:31:26:613506
+memory[498768,121264]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2799,72230,43144]
+Sending done(call(ac_prompt(3538),[],3538),ac_prompt(3538))
+Received: call(ac_prompt(3892),[],3892)
+10:32:17:555989
+memory[498800,121232]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2801,72274,43128]
+Sending done(call(ac_prompt(3892),[],3892),ac_prompt(3892))
+Received: call(ac_prompt(4246),[],4246)
+10:33:8:499519
+memory[498832,121200]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2803,72318,43112]
+Sending done(call(ac_prompt(4246),[],4246),ac_prompt(4246))
+Received: call(ac_prompt(4600),[],4600)
+10:34:2:437593
+memory[498864,121168]
+global_stack[24064,39344]
+local_stack[628,64880]
+atoms[2805,72362,43096]
+Sending done(call(ac_prompt(4600),[],4600),ac_prompt(4600))
+Received: call(ac_prompt(4954),[],4954)
+10:34:52:219239
+memory[498884,121148]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2806,72388,43088]
+Sending done(call(ac_prompt(4954),[],4954),ac_prompt(4954))
+Received: call(ac_prompt(5308),[],5308)
+10:35:41:870001
+memory[498916,121116]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2808,72432,43072]
+Sending done(call(ac_prompt(5308),[],5308),ac_prompt(5308))
+Received: call(ac_prompt(5662),[],5662)
+10:36:32:221836
+memory[498948,121084]
+global_stack[24080,39328]
+local_stack[628,64880]
+atoms[2810,72476,43056]
+Sending done(call(ac_prompt(5662),[],5662),ac_prompt(5662))

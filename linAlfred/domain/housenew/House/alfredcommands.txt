@@ -1,0 +1,19 @@
+House Commands With Alfred
+
+MoveTo(Person p, Room r, int posX, int posY)
+-Moves the specificed person to the specified room at the specified position
+
+Interact(Person p, int pos)
+-Interacts with the object adjacent to the person in the given direction pos (0=above, 1=below, 2=left, 3=right)
+--Has various effects depending on what object it is
+
+CreateRoom(String name, int x, int y, int width, int height)
+-Creates a new room in a house
+
+DecorateRoom(Room r, int x, int y, String type)
+-Creates furniture in a room at the given position of the given type
+--Throws an error if an invalid type or invalid position
+--Should be able to add mutlilayed furniture such as a desk with a light
+
+CreatePerson(String name, Room r, int x, int y)
+-Creates a new person in a room at a given location

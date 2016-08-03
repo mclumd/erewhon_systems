@@ -1,0 +1,446 @@
+
+step(1)
+add(now(1))  142  []
+add(contra(X1, X2, X3) & eval_bound(name_to_time(X2, X4), [X2]) & eval_bound(name_to_time(X1, X5), [X1]) & eval_bound(;(->(>(X4, X5), =(X6, X1)), =(X6, X2)), [X5, X4, X1, X2]) -f-> conclusion(reinstate(X6)))  141  []
+add(done(ac_think(X7, X8), X9, X7) & eval_bound(member(equil(X10, X11), X9), [X9, X11, X10]) & eval_bound(=(X8, [equil, X11, X12]), [X8]) & eval_bound(\+(matchwords(X10, X13, X14)), [X10]) & eval_bound(\+(pos_int(satisfied(X7, X8))), [X7, X8]) & equil(X10, X11) -f-> conclusion(need(X7, [equil, X10, X12])))  140  []
+add(done(ac_think(X15, X16), X17, X15) & eval_bound(member(equil(X18, X19), X17), [X17, X18, X19]) & eval_bound(=(X16, [equil, X18, X20]), [X16]) & eval_bound(\+(matchwords(X19, X21, X22)), [X19]) & eval_bound(\+(pos_int(satisfied(X15, X16))), [X15, X16]) & equil(X18, X19) -f-> conclusion(need(X15, [equil, X19, X20])))  139  []
+add(update_expect_list(X23, X24) & eval_bound(df(update_expect_list(X23, X24)), [X23, X24]) & eval_bound(delete_expect_lists(X23), [X23]) -f-> conclusion(expect_list(X24)))  138  []
+add(eval_bound(union(X25, X26, X27), [X25, X26]) & eval_bound(\==(X25, X26), [X25, X26]) & expect_list(X26) & expect_list(X25) -f-> conclusion(update_expect_lists([X25, X26], X27)))  137  []
+add(satisfied(X28, X29) & expect(X28, X29) & eval_bound(delete(X30, [X28, X29], X31), [X28, X29, X30]) & eval_bound(member([X28, X29], X30), [X28, X29, X30]) & expect_list(X30) -f-> conclusion(update_expect_list([X30], X31)))  136  []
+add(expect(X32, X33) & eval_bound(\+(member([X32, X33], X34)), [X32, X33, X34]) & eval_bound(\+(pos_int_u(update_expect_list(X35, X36))), ) & eval_bound(\+(pos_int_u(satisfied(X32, X33))), [X32, X33]) & expect_list(X34) -f-> conclusion(update_expect_list([X34], [[X32, X33], X34])))  135  []
+add(done(ac_ask(X37, X38), X39, X40) -f-> conclusion(expect(X37, X38)))  134  []
+add(failed(ac_ask(X41, X42), X43, X44) -f-> conclusion(call(ac_report_fail(X41, [ask, X42]), , X41)))  133  []
+add(eval_bound(idling_for_steps(100), ) & eval_bound(\+(asking(X45, X46, )), [X45, X46]) & idling(X47) & expect_list([[X45, X46], X48]) -f-> conclusion(call(ac_ask(X45, X46), , X45)))  132  []
+add(done(ac_think(X49, X50), X51, X49) & eval_bound(=(X50, [equil, X52]), [X50]) & eval_bound(\+(asking(X49, X50, )), [X49, X50]) & eval_bound(\+(pos_int_u(satisfied(X53, X50))), [X50]) & eval_bound(\+(pos_int_u(expect(X54, X50))), [X50]) -f-> conclusion(call(ac_ask(X49, X50), , X49)))  131  []
+add(done(ac_think(X55, X56), X57, X55) & eval_bound(=(X56, [disambiguate, X59, X58]), [X56]) & eval_bound(\+(pos_int(satisfied(X55, X56))), [X55, X56]) -f-> conclusion(need(X55, [equil, X59, X58])))  130  []
+add(failed(ac_think(X60, X61), X62, X60) -f-> conclusion(call(ac_report_fail(X60, [think, X61]), , X60)))  129  []
+add(need(X63, X64) & eval_bound(sort(X65, X66), [X65]) & eval_bound(mult_gather_all([equil(X83, X84), isa(X81, X82), structure(X77, X78, X79, X80), value_of(X63, X75, X76), verb(X63, X74), val(X63, X72, X73), link(X63, X69, X70, X71), type(X63, X67, X68)], X65), [X63]) & eval_bound(\+(thought(X63, X64, X66)), [X63, X64, X66]) & eval_bound(\+(thinking(X63, X64, X66)), [X63, X64, X66]) & eval_bound(\+(pos_int_u(satisfied(X63, X64))), [X63, X64]) & equil(X85, X86) -f-> conclusion(call(ac_think(X63, X64), X66, X63)))  128  []
+add(need(X87, X88) & isa(X89, X90) & eval_bound(sort(X91, X92), [X91]) & eval_bound(mult_gather_all([equil(X109, X110), isa(X107, X108), structure(X103, X104, X105, X106), value_of(X87, X101, X102), verb(X87, X100), val(X87, X98, X99), link(X87, X95, X96, X97), type(X87, X93, X94)], X91), [X87]) & eval_bound(\+(thought(X87, X88, X92)), [X87, X88, X92]) & eval_bound(\+(thinking(X87, X88, X92)), [X87, X88, X92]) & eval_bound(\+(pos_int_u(satisfied(X87, X88))), [X87, X88]) -f-> conclusion(call(ac_think(X87, X88), X92, X87)))  127  []
+add(done(ac_think(X111, X112), X113, X111) & need(X111, X114) & eval_bound(sort(X115, X116), [X115]) & eval_bound(mult_gather_all([equil(X133, X134), isa(X131, X132), structure(X127, X128, X129, X130), value_of(X111, X125, X126), verb(X111, X124), val(X111, X122, X123), link(X111, X119, X120, X121), type(X111, X117, X118)], X115), [X111]) & eval_bound(\+(thought(X111, X114, X116)), [X111, X114, X116]) & eval_bound(\+(thinking(X111, X114, X116)), [X111, X114, X116]) & eval_bound(\+(pos_int_u(satisfied(X111, X114))), [X111, X114]) -f-> conclusion(call(ac_think(X111, X114), X116, X111)))  126  []
+add(sent_to_domain(X135, X136, X137) -f-> conclusion(call(ac_report_action(X137), , X135)))  125  []
+add(sent_to_domain(X138, X139, X140) & eval_bound(mult_gather_all([result(X141, X142)], X143), ) -f-> conclusion(call(ac_post_process(X138, X140), X143, X138)))  124  []
+add(send_to_domain(X144, X145, X146) & eval_bound(sending_to_domain(X145, X146), [X145, X146]) -f-> conclusion(sent_to_domain(X144, X145, X146)))  123  []
+add(failed(ac_action(X147, X148, X149), X150, X147) -f-> conclusion(call(ac_report_fail(X147, [action, X149]), , X147)))  122  []
+add(desire(update, X151, X152) & eval_bound(mult_gather_all([equil(X159, X160), isa(X157, X158), structure(X153, X154, X155, X156)], X161), ) & equil(X162, X152) -f-> conclusion(call(ac_action(a, alfred, [update, X151, X152, X162]), X161, a)))  121  []
+add(desire(update, X163, X164) & eval_bound(mult_gather_all([equil(X171, X172), isa(X169, X170), structure(X165, X166, X167, X168)], X173), ) & equil(X164, X174) -f-> conclusion(call(ac_action(a, alfred, [update, X163, X164, X174]), X173, a)))  120  []
+add(intention(X175, domain, X176) & eval_bound(domain_tag(X177), ) -f-> conclusion(call(ac_action(X175, domain, [X177, X176]), , X175)))  119  []
+add(intention(X178, alfred, X179) & eval_bound(mult_gather_all([equil(X186, X187), isa(X184, X185), structure(X180, X181, X182, X183)], X188), ) & eval_bound(clause(step_number(X189), true), ) & eval_bound(\==(X179, [undo]), [X179]) -f-> conclusion(call(ac_action(X178, alfred, X179, X189), X188, X178)))  118  []
+add(intention(X190, alfred, [undo]) & eval_bound(pos_int_u(intention(X191, domain, X192)), [X191]) & eval_bound(pos_int_u(belief(domain, X192)), [X192]) & eval_bound(domain_tag(X193), ) & utt_list([X190, X191, X194]) -f-> conclusion(call(ac_action(X190, domain, [X193, undo, X192]), , X190)))  117  []
+add(intention(X195, alfred, [undo]) & eval_bound(pos_int_u(intention(X196, alfred, X197)), [X196]) & eval_bound(pos_int_u(belief(alfred, X197)), [X197]) & utt_list([X195, X196, X198]) -f-> conclusion(call(ac_action(X195, alfred, [undo, X197]), , X195)))  116  []
+add(intention(X199, X200, X201) | conclusion(not(belief(X200, X201))))  115  []
+add(intention(X202, X203, X204) -f-> conclusion(belief(X203, X204)))  114  []
+add(need(X205, X206) & eval_bound(\+(pos_int_u(satisfied(X205, X206))), [X205, X206]) & satisfiedallneeds(X205) -f-> conclusion(not(satisfiedallneeds(X205))))  113  []
+add(satisfied(X207, X208) & eval_bound(satisfied_needs(X207), [X207]) & eval_bound(pos_int_u(done(ac_think(X207, X209), X210, X207)), [X207]) & eval_bound(\+(pos_int_u(doing(ac_think(X207, X211), X212, X207))), [X207]) -f-> conclusion(satisfiedallneeds(X207)))  112  []
+add(done(ac_think(X213, X214), X215, X213) & eval_bound(satisfied_needs(X213), [X213]) & eval_bound(pos_int_u(done(ac_think(X213, X216), X217, X213)), [X213]) & eval_bound(\+(pos_int_u(doing(ac_think(X213, X218), X219, X213))), [X213]) -f-> conclusion(satisfiedallneeds(X213)))  111  []
+add(error(X220, EXTRA_LINK, [X223, X222, X221]) -f-> conclusion(need(X220, [fix_xlink, X223, X222, X221])))  110  []
+add(error(X224, LINK_NF, [X225]) -f-> conclusion(need(X224, [fix_mlink, X225])))  109  []
+add(error(X226, Item_NF, [X228, X227]) -f-> conclusion(need(X226, [disambiguate, X227, X228])))  108  []
+add(error(X229, Verb_NF_in_DD, [X230]) -f-> conclusion(need(X229, [equil, X230, dcommand])))  107  []
+add(failed(ac_find_intention(X231, X232, X233), X234, X231) -f-> conclusion(call(ac_report_fail(X231, [find_intention]), , X231)))  106  []
+add(complex_command(X235, X236, X237) & eval_bound(mult_gather_all([isa(X246, X247), structure(X237, X243, X244, X245), link(X235, X240, X241, X242), value_of(X235, X238, X239)], X248), [X235, X237]) & eval_bound(\+(pos_int_u(intention(X235, X249, X250))), [X235]) & eval_bound(\+(pos_int_u(doing(ac_think(X235, X251), X252, X235))), [X235]) & satisfiedallneeds(X235) -f-> conclusion(call(ac_find_intention(X235, complex, X237), X248, X235)))  105  []
+add(alfred_command(X253, X254, X255) & eval_bound(mult_gather_all([isa(X265, X266), structure(X255, X262, X263, X264), link(X253, X259, X260, X261), value_of(X253, X257, X258), verb(X253, X256)], X267), [X253, X255]) & eval_bound(\+(pos_int_u(intention(X253, X268, X269))), [X253]) & eval_bound(\+(pos_int_u(doing(ac_think(X253, X270), X271, X253))), [X253]) & satisfiedallneeds(X253) -f-> conclusion(call(ac_find_intention(X253, alfred, X255), X267, X253)))  104  []
+add(domain_command(X272, X273, X274) & eval_bound(mult_gather_all([isa(X284, X285), structure(X274, X281, X282, X283), link(X272, X278, X279, X280), value_of(X272, X276, X277), verb(X272, X275)], X286), [X272, X274]) & eval_bound(\+(pos_int_u(intention(X272, X287, X288))), [X272]) & eval_bound(\+(pos_int_u(doing(ac_think(X272, X289), X290, X272))), [X272]) & satisfiedallneeds(X272) -f-> conclusion(call(ac_find_intention(X272, domain, X274), X286, X272)))  103  []
+add(failed(ac_find_command(X291), X292, X291) -f-> conclusion(call(ac_report_fail(X291, [find_command]), , X291)))  102  []
+add(done(ac_find_command(X293), X294, X293) -f-> conclusion(satisfiedallneeds(X293)))  101  []
+add(eval_bound(mult_gather_all([isa(X301, X302), value_of(X295, X299, X300), equil(X297, X298), main_verb(X295, X296)], X303), [X295]) & eval_bound(\+(pos_int_u(domain_command(X295, X304, X305))), [X295]) & eval_bound(\+(pos_int_u(doing(ac_think(X295, X306), X307, X295))), [X295]) & eval_bound(\+(pos_int_u(complex_command(X295, X308, X309))), [X295]) & eval_bound(\+(pos_int_u(alfred_command(X295, X310, X311))), [X295]) & satisfiedallneeds(X295) -f-> conclusion(call(ac_find_command(X295), X303, X295)))  100  []
+add(main_verb(X312, X313) & eval_bound(mult_gather_all([isa(X319, X320), value_of(X312, X317, X318), equil(X315, X316), main_verb(X312, X314)], X321), [X312]) & eval_bound(\+(pos_int_u(domain_command(X312, X322, X323))), [X312]) & eval_bound(\+(pos_int_u(doing(ac_think(X312, X324), X325, X312))), [X312]) & eval_bound(\+(pos_int_u(complex_command(X312, X326, X327))), [X312]) & eval_bound(\+(pos_int_u(alfred_command(X312, X328, X329))), [X312]) -f-> conclusion(call(ac_find_command(X312), X321, X312)))  99  []
+add(failed(ac_main_verb(X330), X331, X330) -f-> conclusion(call(ac_report_fail(X330, [main_verb]), , X330)))  98  []
+add(verb(X332, X333) & eval_bound(mult_gather_all([verb(X332, X336), value_of(X332, X334, X335)], X337), [X332]) & parsed(X332) -f-> conclusion(call(ac_main_verb(X332), X337, X332)))  97  []
+add(unused_cost(X338, X339, 0) -f-> conclusion(parsed(X338)))  96  []
+add(done(ac_fix_linkage(X340, X341), X342, X340) & eval_bound(mult_gather_all([value_of(X340, X348, X349), link(X340, X345, X346, X347), unused_cost(X340, X343, X344)], X350), [X340]) -f-> conclusion(call(ac_find_unused_cost(X340), X350, X340)))  95  []
+add(failed(ac_fix_linkage(X351, 5), X352, X351) -f-> conclusion(call(ac_report_fail(X351, [fix_linkage]), , X351)))  94  []
+add(failed(ac_fix_linkage(X353, X354), X355, X353) & fix_link_length(X353, X354) & eval_bound(is(X356, +(X354, 1)), [X354]) & eval_bound(\==(X354, 5), [X354]) & eval_bound(df(fix_link_length(X353, X354)), [X353, X354]) -f-> conclusion(fix_link_length(X353, X356)))  93  []
+add(fix_link_length(X357, X358) & eval_bound(mult_gather_all([value_of(X357, X369, X370), verb(X357, X368), isa(X366, X367), structure(X362, X363, X364, X365), link(X357, X359, X360, X361)], X371), [X357]) & eval_bound(\+(pos_int_u(done(ac_fix_linkage(X357, X358), X372, X357))), [X357, X358]) & eval_bound(\+(pos_int_u(doing(ac_fix_linkage(X357, X358), X373, X357))), [X357, X358]) -f-> conclusion(call(ac_fix_linkage(X357, X358), X371, X357)))  92  []
+add(link(X374, X375, X376, X377) & unused_cost(X374, X378, X379) & done(ac_find_links(X374), X380, X374) & eval_bound(\==(X379, 0), [X379]) & eval_bound(\+(pos_int_u(fix_link_length(X374, X381))), [X374]) -f-> conclusion(fix_link_length(X374, 2)))  91  []
+add(failed(ac_parse_phrase(X382, X383), X384, X382) -f-> conclusion(fix_link_length(X382, 2)))  90  []
+add(done(ac_find_links(X385), X386, X385) & eval_bound(mult_gather_all([value_of(X385, X391, X392), isa(X389, X390), equil(X387, X388)], X393), [X385]) & eval_bound(\+(pos_int_u(link(X385, X394, X395, X396))), [X385]) & eval_bound(\+(pos_int_u(response(X397, X398, X385))), [X385]) -f-> conclusion(call(ac_parse_phrase(X385, ), X393, X385)))  89  []
+add(response(X399, X400, X401) & done(ac_find_links(X401), X402, X401) & eval_bound(mult_gather_all([value_of(X401, X407, X408), isa(X405, X406), equil(X403, X404)], X409), [X401]) & eval_bound(\+(pos_int_u(link(X401, X410, X411, X412))), [X401]) -f-> conclusion(call(ac_parse_phrase(X401, X400), X409, X401)))  88  []
+add(eval_bound(mult_gather_all([links(X413, X416, X417, X418, X419), value_of(X413, X414, X415)], X420), [X413]) & end_of_parse(X413) -f-> conclusion(call(ac_find_links(X413), X420, X413)))  87  []
+add(expect(X421, X422) & eval_bound(compare(>, X423, X421), [X423, X421]) & eval_bound(\+(pos_int_u(response(X421, X422, X424))), [X421, X422]) & utterance(X423) -f-> conclusion(response(X421, X422, X423)))  86  []
+add(update_utt_list(X425, X426) & eval_bound(df(utt_list(X426)), [X426]) -f-> conclusion(utt_list([X425, X426])))  85  []
+add(eval_bound(\+(member(X427, X428)), [X427, X428]) & utterance(X427) & utt_list(X428) -f-> conclusion(update_utt_list(X427, X428)))  84  []
+add(done(ac_report_observation(X429, X430, X431), X432, X429) & desire(X429, [inform, X430, X433]) -f-> conclusion(satisfied(X429, [inform, X430, X433])))  83  []
+add(observation(X434, X435, X436) & eval_bound(mult_gather_all([observation(X434, X441, X442), isa(X439, X440), equil(X437, X438)], X443), [X434]) & eval_bound(\+(pos_int_u(satisfied(X444, [inform, X434, X445]))), [X444, X434, X445]) & desire(X444, [inform, X434, X445]) -f-> conclusion(call(ac_report_observation(X444, X434, X445), X443, X444)))  82  []
+add(observation(X446, X447, X448) & eval_bound(\+(pos_int_u(satisfied(X449, [observation, X446]))), [X449, X446]) & domain_expect(X449, [observation, X446]) -f-> conclusion(satisfied(X449, [observation, X446])))  81  []
+add(observation(X450, X451) & eval_bound(pos_int_u(now(X452)), ) & eval_bound(df(observation(X450, X451)), [X450, X451]) -f-> conclusion(observation(X450, X451, X452)))  80  []
+add(eval_bound(idling_for_steps(350), ) & idling(X453) -f-> conclusion(call(ac_prompt(X453), , X453)))  79  []
+add(utt_list())  78  []
+add(expect_list())  77  []
+add(isa(end, to))  76  []
+add(isa(position, h8))  75  []
+add(isa(position, h7))  74  []
+add(isa(position, h6))  73  []
+add(isa(position, h5))  72  []
+add(isa(position, h4))  71  []
+add(isa(position, h3))  70  []
+add(isa(position, h2))  69  []
+add(isa(position, h1))  68  []
+add(isa(position, g8))  67  []
+add(isa(position, g7))  66  []
+add(isa(position, g6))  65  []
+add(isa(position, g5))  64  []
+add(isa(position, g4))  63  []
+add(isa(position, g3))  62  []
+add(isa(position, g2))  61  []
+add(isa(position, g1))  60  []
+add(isa(position, f8))  59  []
+add(isa(position, f7))  58  []
+add(isa(position, f6))  57  []
+add(isa(position, f5))  56  []
+add(isa(position, f4))  55  []
+add(isa(position, f3))  54  []
+add(isa(position, f2))  53  []
+add(isa(position, f1))  52  []
+add(isa(position, e8))  51  []
+add(isa(position, e7))  50  []
+add(isa(position, e6))  49  []
+add(isa(position, e5))  48  []
+add(isa(position, e4))  47  []
+add(isa(position, e3))  46  []
+add(isa(position, e2))  45  []
+add(isa(position, e1))  44  []
+add(isa(position, d8))  43  []
+add(isa(position, d7))  42  []
+add(isa(position, d6))  41  []
+add(isa(position, d5))  40  []
+add(isa(position, d4))  39  []
+add(isa(position, d3))  38  []
+add(isa(position, d2))  37  []
+add(isa(position, d1))  36  []
+add(isa(position, c8))  35  []
+add(isa(position, c7))  34  []
+add(isa(position, c6))  33  []
+add(isa(position, c5))  32  []
+add(isa(position, c4))  31  []
+add(isa(position, c3))  30  []
+add(isa(position, c2))  29  []
+add(isa(position, c1))  28  []
+add(isa(position, b8))  27  []
+add(isa(position, b7))  26  []
+add(isa(position, b6))  25  []
+add(isa(position, b5))  24  []
+add(isa(position, b4))  23  []
+add(isa(position, b3))  22  []
+add(isa(position, b2))  21  []
+add(isa(position, b1))  20  []
+add(isa(position, a8))  19  []
+add(isa(position, a7))  18  []
+add(isa(position, a6))  17  []
+add(isa(position, a5))  16  []
+add(isa(position, a4))  15  []
+add(isa(position, a3))  14  []
+add(isa(position, a2))  13  []
+add(isa(position, a1))  12  []
+add(structure(move, [[v0, v1, O], [v0, v2, MV], [v2, v3, J]], [[v0, verb], [v1, position], [v2, end], [v3, position]], [v0, v1, v3]))  11  []
+add(isa(dcommand, move))  10  []
+add(structure(no, , , [undo]))  9  []
+add(isa(conjunct, and))  8  []
+add(isa(acommand, no))  7  []
+add(isa(lw, LEFT-WALL))  6  []
+add(isa(qnmark, ?))  5  []
+add(isa(qnword, what))  4  []
+add(structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]))  3  []
+add(structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]))  2  []
+add(structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]))  1  []
+add(isa(acommand, is))  0  []
+End of Step----------------------------------
+
+step(2)
+add(idling(2))  144  []
+add(now(2))  143  []
+delete(now(1))  142  []
+End of Step----------------------------------
+
+step(3)
+add(idling(3))  146  []
+add(now(3))  145  []
+delete(now(2))  143  []
+End of Step----------------------------------
+
+step(4)
+add(idling(4))  148  []
+add(now(4))  147  []
+delete(now(3))  145  []
+End of Step----------------------------------
+
+step(5)
+add(idling(5))  150  []
+add(now(5))  149  []
+delete(now(4))  147  []
+End of Step----------------------------------
+
+step(6)
+add(idling(6))  152  []
+add(now(6))  151  []
+delete(now(5))  149  []
+End of Step----------------------------------
+
+step(7)
+add(idling(7))  154  []
+add(now(7))  153  []
+delete(now(6))  151  []
+End of Step----------------------------------
+
+step(8)
+add(idling(8))  156  []
+add(now(8))  155  []
+delete(now(7))  153  []
+End of Step----------------------------------
+
+step(9)
+add(idling(9))  158  []
+add(now(9))  157  []
+delete(now(8))  155  []
+End of Step----------------------------------
+
+step(10)
+add(idling(10))  160  []
+add(now(10))  159  []
+delete(now(9))  157  []
+End of Step----------------------------------
+
+step(11)
+add(idling(11))  162  []
+add(now(11))  161  []
+delete(now(10))  159  []
+End of Step----------------------------------
+
+step(12)
+add(idling(12))  164  []
+add(now(12))  163  []
+delete(now(11))  161  []
+End of Step----------------------------------
+
+step(13)
+add(idling(13))  166  []
+add(now(13))  165  []
+delete(now(12))  163  []
+End of Step----------------------------------
+
+step(14)
+add(idling(14))  168  []
+add(now(14))  167  []
+delete(now(13))  165  []
+End of Step----------------------------------
+
+step(15)
+add(idling(15))  170  []
+add(now(15))  169  []
+delete(now(14))  167  []
+End of Step----------------------------------
+
+step(16)
+add(idling(16))  172  []
+add(now(16))  171  []
+delete(now(15))  169  []
+End of Step----------------------------------
+
+step(17)
+add(idling(17))  174  []
+add(now(17))  173  []
+delete(now(16))  171  []
+End of Step----------------------------------
+
+step(18)
+add(idling(18))  176  []
+add(now(18))  175  []
+delete(now(17))  173  []
+End of Step----------------------------------
+
+step(19)
+add(idling(19))  178  []
+add(now(19))  177  []
+delete(now(18))  175  []
+End of Step----------------------------------
+
+step(20)
+add(idling(20))  180  []
+add(now(20))  179  []
+delete(now(19))  177  []
+End of Step----------------------------------
+
+step(21)
+add(idling(21))  182  []
+add(now(21))  181  []
+delete(now(20))  179  []
+End of Step----------------------------------
+
+step(22)
+add(idling(22))  184  []
+add(now(22))  183  []
+delete(now(21))  181  []
+End of Step----------------------------------
+
+step(23)
+add(idling(23))  186  []
+add(now(23))  185  []
+delete(now(22))  183  []
+End of Step----------------------------------
+
+step(24)
+add(idling(24))  188  []
+add(now(24))  187  []
+delete(now(23))  185  []
+End of Step----------------------------------
+
+step(25)
+add(idling(25))  190  []
+add(now(25))  189  []
+delete(now(24))  187  []
+End of Step----------------------------------
+
+step(26)
+add(idling(26))  192  []
+add(now(26))  191  []
+delete(now(25))  189  []
+End of Step----------------------------------
+
+step(27)
+add(idling(27))  194  []
+add(now(27))  193  []
+delete(now(26))  191  []
+End of Step----------------------------------
+
+step(28)
+add(idling(28))  196  []
+add(now(28))  195  []
+delete(now(27))  193  []
+End of Step----------------------------------
+
+step(29)
+add(idling(29))  198  []
+add(now(29))  197  []
+delete(now(28))  195  []
+End of Step----------------------------------
+
+step(30)
+add(idling(30))  200  []
+add(now(30))  199  []
+delete(now(29))  197  []
+End of Step----------------------------------
+
+step(31)
+add(idling(31))  202  []
+add(now(31))  201  []
+delete(now(30))  199  []
+End of Step----------------------------------
+
+step(32)
+add(idling(32))  204  []
+add(now(32))  203  []
+delete(now(31))  201  []
+End of Step----------------------------------
+
+step(33)
+add(idling(33))  206  []
+add(now(33))  205  []
+delete(now(32))  203  []
+End of Step----------------------------------
+
+step(34)
+add(idling(34))  208  []
+add(now(34))  207  []
+delete(now(33))  205  []
+End of Step----------------------------------
+
+step(35)
+add(idling(35))  210  []
+add(now(35))  209  []
+delete(now(34))  207  []
+End of Step----------------------------------
+
+step(36)
+add(idling(36))  212  []
+add(now(36))  211  []
+delete(now(35))  209  []
+End of Step----------------------------------
+
+step(37)
+add(idling(37))  214  []
+add(now(37))  213  []
+delete(now(36))  211  []
+End of Step----------------------------------
+
+step(38)
+add(idling(38))  216  []
+add(now(38))  215  []
+delete(now(37))  213  []
+End of Step----------------------------------
+
+step(39)
+add(idling(39))  218  []
+add(now(39))  217  []
+delete(now(38))  215  []
+End of Step----------------------------------
+
+step(40)
+add(idling(40))  220  []
+add(now(40))  219  []
+delete(now(39))  217  []
+End of Step----------------------------------
+
+step(41)
+add(idling(41))  222  []
+add(now(41))  221  []
+delete(now(40))  219  []
+End of Step----------------------------------
+
+step(42)
+add(idling(42))  224  []
+add(now(42))  223  []
+delete(now(41))  221  []
+End of Step----------------------------------
+
+step(43)
+add(idling(43))  226  []
+add(now(43))  225  []
+delete(now(42))  223  []
+End of Step----------------------------------
+
+step(44)
+add(idling(44))  228  []
+add(now(44))  227  []
+delete(now(43))  225  []
+End of Step----------------------------------
+
+step(45)
+add(idling(45))  230  []
+add(now(45))  229  []
+delete(now(44))  227  []
+End of Step----------------------------------
+
+step(46)
+add(idling(46))  232  []
+add(now(46))  231  []
+delete(now(45))  229  []
+End of Step----------------------------------
+
+step(47)
+add(idling(47))  234  []
+add(now(47))  233  []
+delete(now(46))  231  []
+End of Step----------------------------------
+
+step(48)
+add(idling(48))  236  []
+add(now(48))  235  []
+delete(now(47))  233  []
+End of Step----------------------------------
+
+step(49)
+add(idling(49))  238  []
+add(now(49))  237  []
+delete(now(48))  235  []
+End of Step----------------------------------
+
+step(50)
+add(idling(50))  240  []
+add(now(50))  239  []
+delete(now(49))  237  []
+End of Step----------------------------------
+
+step(51)
+add(idling(51))  242  []
+add(now(51))  241  []
+delete(now(50))  239  []
+End of Step----------------------------------

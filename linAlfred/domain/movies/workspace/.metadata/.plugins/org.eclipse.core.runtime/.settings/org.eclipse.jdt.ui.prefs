@@ -1,0 +1,9 @@
+#Fri Dec 09 03:41:57 EST 2005
+useAnnotationsPrefPage=true
+org.eclipse.jdt.ui.formatterprofiles.version=6
+org.eclipse.jface.textfont=1|courier|12|0|MOTIF|1|-adobe-courier-medium-r-*-*-*-120-*-*-*-*-*-*;
+eclipse.preferences.version=1
+fontPropagated=true
+Refactoring.ErrorPage.severityThreshold=2
+useQuickDiffPrefPage=true
+tabWidthPropagated=true

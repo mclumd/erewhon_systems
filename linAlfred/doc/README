@@ -1,0 +1,41 @@
+To run the system 
+1.have 3 windows running 
+2.go to /fs/disco/group/systems/ALFRED/bin in each window
+3. run rc in one window
+4. run rp in the next window
+5. run ra in the third window
+5. now run rd.DOMAIN in a fourth window.
+
+
+
+
+Some examples of working English inputs to various ALfred domains
+
+
+MOVIES
+ play rome.avi
+ play traider.mov
+ fullscreen
+ stop
+ Playmaximized is play and maximize
+ maximize is fullscreen
+
+HOUSE
+ light on Room1 nw
+ light off Room1 nw
+
+TRAINS
+ send metroliner to baltimore
+ send metro to the city
+ city is baltimore
+ metro is metroliner
+ shoot Metroliner to Baltimore
+ shoot is send
+ shoot metro to Balty
+
+POOL
+ switch on the heater1
+ switch on heater2
+ switch on cooler1
+ switch on cooler2
+

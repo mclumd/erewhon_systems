@@ -1,0 +1,1685 @@
+
+step(1)
+add(now(1))  97  []
+add(contra(X1, X2, X3) & eval_bound(name_to_time(X2, X4), [X2]) & eval_bound(name_to_time(X1, X5), [X1]) & eval_bound(;(->(>(X4, X5), =(X6, X1)), =(X6, X2)), [X5, X4, X1, X2]) -f-> conclusion(reinstate(X6)))  96  []
+add(done(ac_think(X7, X8), X9, X7) & eval_bound(member(equil(X10, X11), X9), [X9, X11, X10]) & eval_bound(=(X8, [equil, X11, X12]), [X8]) & eval_bound(\+(matchwords(X10, X13, X14)), [X10]) & eval_bound(\+(pos_int(satisfied(X7, X8))), [X7, X8]) & equil(X10, X11) -f-> conclusion(need(X7, [equil, X10, X12])))  95  []
+add(done(ac_think(X15, X16), X17, X15) & eval_bound(member(equil(X18, X19), X17), [X17, X18, X19]) & eval_bound(=(X16, [equil, X18, X20]), [X16]) & eval_bound(\+(matchwords(X19, X21, X22)), [X19]) & eval_bound(\+(pos_int(satisfied(X15, X16))), [X15, X16]) & equil(X18, X19) -f-> conclusion(need(X15, [equil, X19, X20])))  94  []
+add(update_expect_list(X23, X24) & eval_bound(df(update_expect_list(X23, X24)), [X23, X24]) & eval_bound(delete_expect_lists(X23), [X23]) -f-> conclusion(expect_list(X24)))  93  []
+add(eval_bound(union(X25, X26, X27), [X25, X26]) & eval_bound(\==(X25, X26), [X25, X26]) & expect_list(X26) & expect_list(X25) -f-> conclusion(update_expect_lists([X25, X26], X27)))  92  []
+add(satisfied(X28, X29) & expect(X28, X29) & eval_bound(delete(X30, [X28, X29], X31), [X28, X29, X30]) & eval_bound(member([X28, X29], X30), [X28, X29, X30]) & expect_list(X30) -f-> conclusion(update_expect_list([X30], X31)))  91  []
+add(expect(X32, X33) & eval_bound(\+(member([X32, X33], X34)), [X32, X33, X34]) & eval_bound(\+(pos_int_u(update_expect_list(X35, X36))), ) & eval_bound(\+(pos_int_u(satisfied(X32, X33))), [X32, X33]) & expect_list(X34) -f-> conclusion(update_expect_list([X34], [[X32, X33], X34])))  90  []
+add(done(ac_ask(X37, X38), X39, X40) -f-> conclusion(expect(X37, X38)))  89  []
+add(failed(ac_ask(X41, X42), X43, X44) -f-> conclusion(call(ac_report_fail(X41, [ask, X42]), , X41)))  88  []
+add(eval_bound(idling_for_steps(100), ) & eval_bound(\+(asking(X45, X46, )), [X45, X46]) & idling(X47) & expect_list([[X45, X46], X48]) -f-> conclusion(call(ac_ask(X45, X46), , X45)))  87  []
+add(done(ac_think(X49, X50), X51, X49) & eval_bound(=(X50, [equil, X52]), [X50]) & eval_bound(\+(asking(X49, X50, )), [X49, X50]) & eval_bound(\+(pos_int_u(satisfied(X53, X50))), [X50]) & eval_bound(\+(pos_int_u(expect(X54, X50))), [X50]) -f-> conclusion(call(ac_ask(X49, X50), , X49)))  86  []
+add(done(ac_think(X55, X56), X57, X55) & eval_bound(=(X56, [disambiguate, X59, X58]), [X56]) & eval_bound(\+(pos_int(satisfied(X55, X56))), [X55, X56]) -f-> conclusion(need(X55, [equil, X59, X58])))  85  []
+add(failed(ac_think(X60, X61), X62, X60) -f-> conclusion(call(ac_report_fail(X60, [think, X61]), , X60)))  84  []
+add(need(X63, X64) & eval_bound(sort(X65, X66), [X65]) & eval_bound(mult_gather_all([equil(X83, X84), isa(X81, X82), structure(X77, X78, X79, X80), value_of(X63, X75, X76), verb(X63, X74), val(X63, X72, X73), link(X63, X69, X70, X71), type(X63, X67, X68)], X65), [X63]) & eval_bound(\+(thought(X63, X64, X66)), [X63, X64, X66]) & eval_bound(\+(thinking(X63, X64, X66)), [X63, X64, X66]) & eval_bound(\+(pos_int_u(satisfied(X63, X64))), [X63, X64]) & equil(X85, X86) -f-> conclusion(call(ac_think(X63, X64), X66, X63)))  83  []
+add(need(X87, X88) & isa(X89, X90) & eval_bound(sort(X91, X92), [X91]) & eval_bound(mult_gather_all([equil(X109, X110), isa(X107, X108), structure(X103, X104, X105, X106), value_of(X87, X101, X102), verb(X87, X100), val(X87, X98, X99), link(X87, X95, X96, X97), type(X87, X93, X94)], X91), [X87]) & eval_bound(\+(thought(X87, X88, X92)), [X87, X88, X92]) & eval_bound(\+(thinking(X87, X88, X92)), [X87, X88, X92]) & eval_bound(\+(pos_int_u(satisfied(X87, X88))), [X87, X88]) -f-> conclusion(call(ac_think(X87, X88), X92, X87)))  82  []
+add(done(ac_think(X111, X112), X113, X111) & need(X111, X114) & eval_bound(sort(X115, X116), [X115]) & eval_bound(mult_gather_all([equil(X133, X134), isa(X131, X132), structure(X127, X128, X129, X130), value_of(X111, X125, X126), verb(X111, X124), val(X111, X122, X123), link(X111, X119, X120, X121), type(X111, X117, X118)], X115), [X111]) & eval_bound(\+(thought(X111, X114, X116)), [X111, X114, X116]) & eval_bound(\+(thinking(X111, X114, X116)), [X111, X114, X116]) & eval_bound(\+(pos_int_u(satisfied(X111, X114))), [X111, X114]) -f-> conclusion(call(ac_think(X111, X114), X116, X111)))  81  []
+add(sent_to_domain(X135, X136, X137) -f-> conclusion(call(ac_report_action(X137), , X135)))  80  []
+add(sent_to_domain(X138, X139, X140) & eval_bound(mult_gather_all([result(X144, X145), isa(X142, X143), domain_list(X141)], X146), ) -f-> conclusion(call(ac_post_process(X138, X140), X146, X138)))  79  []
+add(send_to_domain(X147, X148, X149) & eval_bound(sending_to_domain(X148, X149), [X148, X149]) -f-> conclusion(sent_to_domain(X147, X148, X149)))  78  []
+add(failed(ac_action(X150, X151, X152), X153, X150) -f-> conclusion(call(ac_report_fail(X150, [action, X152]), , X150)))  77  []
+add(desire(update, X154, X155) & eval_bound(mult_gather_all([equil(X162, X163), isa(X160, X161), structure(X156, X157, X158, X159)], X164), ) & equil(X165, X155) -f-> conclusion(call(ac_action(a, alfred, [update, X154, X155, X165]), X164, a)))  76  []
+add(desire(update, X166, X167) & eval_bound(mult_gather_all([equil(X174, X175), isa(X172, X173), structure(X168, X169, X170, X171)], X176), ) & equil(X167, X177) -f-> conclusion(call(ac_action(a, alfred, [update, X166, X167, X177]), X176, a)))  75  []
+add(intention(X178, domain, X179) & eval_bound(domain_tag(X180), ) -f-> conclusion(call(ac_action(X178, domain, [X180, X179]), , X178)))  74  []
+add(intention(X181, alfred, X182) & eval_bound(mult_gather_all([equil(X189, X190), isa(X187, X188), structure(X183, X184, X185, X186)], X191), ) & eval_bound(clause(step_number(X192), true), ) & eval_bound(\==(X182, [undo]), [X182]) -f-> conclusion(call(ac_action(X181, alfred, X182, X192), X191, X181)))  73  []
+add(intention(X193, alfred, [undo]) & eval_bound(pos_int_u(intention(X194, domain, X195)), [X194]) & eval_bound(pos_int_u(belief(domain, X195)), [X195]) & eval_bound(domain_tag(X196), ) & utt_list([X193, X194, X197]) -f-> conclusion(call(ac_action(X193, domain, [X196, undo, X195]), , X193)))  72  []
+add(intention(X198, alfred, [undo]) & eval_bound(pos_int_u(intention(X199, alfred, X200)), [X199]) & eval_bound(pos_int_u(belief(alfred, X200)), [X200]) & utt_list([X198, X199, X201]) -f-> conclusion(call(ac_action(X198, alfred, [undo, X200]), , X198)))  71  []
+add(intention(X202, X203, X204) | conclusion(not(belief(X203, X204))))  70  []
+add(intention(X205, X206, X207) -f-> conclusion(belief(X206, X207)))  69  []
+add(need(X208, X209) & eval_bound(\+(pos_int_u(satisfied(X208, X209))), [X208, X209]) & satisfiedallneeds(X208) -f-> conclusion(not(satisfiedallneeds(X208))))  68  []
+add(satisfied(X210, X211) & eval_bound(satisfied_needs(X210), [X210]) & eval_bound(pos_int_u(done(ac_think(X210, X212), X213, X210)), [X210]) & eval_bound(\+(pos_int_u(doing(ac_think(X210, X214), X215, X210))), [X210]) -f-> conclusion(satisfiedallneeds(X210)))  67  []
+add(done(ac_think(X216, X217), X218, X216) & eval_bound(satisfied_needs(X216), [X216]) & eval_bound(pos_int_u(done(ac_think(X216, X219), X220, X216)), [X216]) & eval_bound(\+(pos_int_u(doing(ac_think(X216, X221), X222, X216))), [X216]) -f-> conclusion(satisfiedallneeds(X216)))  66  []
+add(error(X223, EXTRA_LINK, [X226, X225, X224]) -f-> conclusion(need(X223, [fix_xlink, X226, X225, X224])))  65  []
+add(error(X227, LINK_NF, [X228]) -f-> conclusion(need(X227, [fix_mlink, X228])))  64  []
+add(error(X229, Item_NF, [X231, X230]) -f-> conclusion(need(X229, [disambiguate, X230, X231])))  63  []
+add(error(X232, Verb_NF_in_DD, [X233]) -f-> conclusion(need(X232, [equil, X233, dcommand])))  62  []
+add(failed(ac_find_intention(X234, X235, X236), X237, X234) -f-> conclusion(call(ac_report_fail(X234, [find_intention]), , X234)))  61  []
+add(complex_command(X238, X239, X240) & eval_bound(mult_gather_all([isa(X249, X250), structure(X240, X246, X247, X248), link(X238, X243, X244, X245), value_of(X238, X241, X242)], X251), [X238, X240]) & eval_bound(\+(pos_int_u(intention(X238, X252, X253))), [X238]) & eval_bound(\+(pos_int_u(doing(ac_think(X238, X254), X255, X238))), [X238]) & satisfiedallneeds(X238) -f-> conclusion(call(ac_find_intention(X238, complex, X240), X251, X238)))  60  []
+add(alfred_command(X256, X257, X258) & eval_bound(mult_gather_all([isa(X268, X269), structure(X258, X265, X266, X267), link(X256, X262, X263, X264), value_of(X256, X260, X261), verb(X256, X259)], X270), [X256, X258]) & eval_bound(\+(pos_int_u(intention(X256, X271, X272))), [X256]) & eval_bound(\+(pos_int_u(doing(ac_think(X256, X273), X274, X256))), [X256]) & satisfiedallneeds(X256) -f-> conclusion(call(ac_find_intention(X256, alfred, X258), X270, X256)))  59  []
+add(domain_command(X275, X276, X277) & eval_bound(mult_gather_all([isa(X288, X289), domain_list(X287), structure(X277, X284, X285, X286), link(X275, X281, X282, X283), value_of(X275, X279, X280), verb(X275, X278)], X290), [X275, X277]) & eval_bound(\+(pos_int_u(intention(X275, X291, X292))), [X275]) & eval_bound(\+(pos_int_u(doing(ac_think(X275, X293), X294, X275))), [X275]) & satisfiedallneeds(X275) -f-> conclusion(call(ac_find_intention(X275, domain, X277), X290, X275)))  58  []
+add(failed(ac_find_command(X295), X296, X295) -f-> conclusion(call(ac_report_fail(X295, [find_command]), , X295)))  57  []
+add(done(ac_find_command(X297), X298, X297) -f-> conclusion(satisfiedallneeds(X297)))  56  []
+add(eval_bound(mult_gather_all([isa(X305, X306), value_of(X299, X303, X304), equil(X301, X302), main_verb(X299, X300)], X307), [X299]) & eval_bound(\+(pos_int_u(domain_command(X299, X308, X309))), [X299]) & eval_bound(\+(pos_int_u(doing(ac_think(X299, X310), X311, X299))), [X299]) & eval_bound(\+(pos_int_u(complex_command(X299, X312, X313))), [X299]) & eval_bound(\+(pos_int_u(alfred_command(X299, X314, X315))), [X299]) & satisfiedallneeds(X299) -f-> conclusion(call(ac_find_command(X299), X307, X299)))  55  []
+add(main_verb(X316, X317) & eval_bound(mult_gather_all([isa(X323, X324), value_of(X316, X321, X322), equil(X319, X320), main_verb(X316, X318)], X325), [X316]) & eval_bound(\+(pos_int_u(domain_command(X316, X326, X327))), [X316]) & eval_bound(\+(pos_int_u(doing(ac_think(X316, X328), X329, X316))), [X316]) & eval_bound(\+(pos_int_u(complex_command(X316, X330, X331))), [X316]) & eval_bound(\+(pos_int_u(alfred_command(X316, X332, X333))), [X316]) -f-> conclusion(call(ac_find_command(X316), X325, X316)))  54  []
+add(failed(ac_main_verb(X334), X335, X334) -f-> conclusion(call(ac_report_fail(X334, [main_verb]), , X334)))  53  []
+add(verb(X336, X337) & eval_bound(mult_gather_all([verb(X336, X340), value_of(X336, X338, X339)], X341), [X336]) & parsed(X336) -f-> conclusion(call(ac_main_verb(X336), X341, X336)))  52  []
+add(unused_cost(X342, X343, 0) -f-> conclusion(parsed(X342)))  51  []
+add(done(ac_fix_linkage(X344, X345), X346, X344) & eval_bound(mult_gather_all([value_of(X344, X352, X353), link(X344, X349, X350, X351), unused_cost(X344, X347, X348)], X354), [X344]) -f-> conclusion(call(ac_find_unused_cost(X344), X354, X344)))  50  []
+add(failed(ac_fix_linkage(X355, 5), X356, X355) -f-> conclusion(call(ac_report_fail(X355, [fix_linkage]), , X355)))  49  []
+add(failed(ac_fix_linkage(X357, X358), X359, X357) & fix_link_length(X357, X358) & eval_bound(is(X360, +(X358, 1)), [X358]) & eval_bound(\==(X358, 5), [X358]) & eval_bound(df(fix_link_length(X357, X358)), [X357, X358]) -f-> conclusion(fix_link_length(X357, X360)))  48  []
+add(fix_link_length(X361, X362) & eval_bound(mult_gather_all([value_of(X361, X373, X374), verb(X361, X372), isa(X370, X371), structure(X366, X367, X368, X369), link(X361, X363, X364, X365)], X375), [X361]) & eval_bound(\+(pos_int_u(done(ac_fix_linkage(X361, X362), X376, X361))), [X361, X362]) & eval_bound(\+(pos_int_u(doing(ac_fix_linkage(X361, X362), X377, X361))), [X361, X362]) -f-> conclusion(call(ac_fix_linkage(X361, X362), X375, X361)))  47  []
+add(link(X378, X379, X380, X381) & unused_cost(X378, X382, X383) & done(ac_find_links(X378), X384, X378) & eval_bound(\==(X383, 0), [X383]) & eval_bound(\+(pos_int_u(fix_link_length(X378, X385))), [X378]) -f-> conclusion(fix_link_length(X378, 2)))  46  []
+add(failed(ac_parse_phrase(X386, X387), X388, X386) -f-> conclusion(fix_link_length(X386, 2)))  45  []
+add(done(ac_find_links(X389), X390, X389) & eval_bound(mult_gather_all([value_of(X389, X395, X396), isa(X393, X394), equil(X391, X392)], X397), [X389]) & eval_bound(\+(pos_int_u(link(X389, X398, X399, X400))), [X389]) & eval_bound(\+(pos_int_u(response(X401, X402, X389))), [X389]) -f-> conclusion(call(ac_parse_phrase(X389, ), X397, X389)))  44  []
+add(response(X403, X404, X405) & done(ac_find_links(X405), X406, X405) & eval_bound(mult_gather_all([value_of(X405, X411, X412), isa(X409, X410), equil(X407, X408)], X413), [X405]) & eval_bound(\+(pos_int_u(link(X405, X414, X415, X416))), [X405]) -f-> conclusion(call(ac_parse_phrase(X405, X404), X413, X405)))  43  []
+add(eval_bound(mult_gather_all([links(X417, X420, X421, X422, X423), value_of(X417, X418, X419)], X424), [X417]) & end_of_parse(X417) -f-> conclusion(call(ac_find_links(X417), X424, X417)))  42  []
+add(expect(X425, X426) & eval_bound(compare(>, X427, X425), [X427, X425]) & eval_bound(\+(pos_int_u(response(X425, X426, X428))), [X425, X426]) & utterance(X427) -f-> conclusion(response(X425, X426, X427)))  41  []
+add(update_utt_list(X429, X430) & eval_bound(df(utt_list(X430)), [X430]) -f-> conclusion(utt_list([X429, X430])))  40  []
+add(eval_bound(\+(member(X431, X432)), [X431, X432]) & utterance(X431) & utt_list(X432) -f-> conclusion(update_utt_list(X431, X432)))  39  []
+add(done(ac_report_observation(X433, X434, X435), X436, X433) & desire(X433, [inform, X434, X437]) -f-> conclusion(satisfied(X433, [inform, X434, X437])))  38  []
+add(observation(X438, X439, X440) & eval_bound(mult_gather_all([observation(X438, X445, X446), isa(X443, X444), equil(X441, X442)], X447), [X438]) & eval_bound(\+(pos_int_u(satisfied(X448, [inform, X438, X449]))), [X448, X438, X449]) & desire(X448, [inform, X438, X449]) -f-> conclusion(call(ac_report_observation(X448, X438, X449), X447, X448)))  37  []
+add(observation(X450, X451, X452) & eval_bound(\+(pos_int_u(satisfied(X453, [observation, X450]))), [X453, X450]) & domain_expect(X453, [observation, X450]) -f-> conclusion(satisfied(X453, [observation, X450])))  36  []
+add(observation(X454, X455) & eval_bound(pos_int_u(now(X456)), ) & eval_bound(df(observation(X454, X455)), [X454, X455]) -f-> conclusion(observation(X454, X455, X456)))  35  []
+add(eval_bound(idling_for_steps(350), ) & idling(X457) -f-> conclusion(call(ac_prompt(X457), , X457)))  34  []
+add(domain_list())  33  []
+add(utt_list())  32  []
+add(expect_list())  31  []
+add(isa(room, living))  30  []
+add(isa(room, kitchen))  29  []
+add(isa(room, pantry))  28  []
+add(isa(room, corridor))  27  []
+add(isa(room, room3))  26  []
+add(isa(room, room2))  25  []
+add(isa(room, master))  24  []
+add(isa(room, room1))  23  []
+add(isa(direction, sw))  22  []
+add(isa(direction, se))  21  []
+add(isa(direction, ne))  20  []
+add(isa(direction, e))  19  []
+add(isa(direction, toilet))  18  []
+add(isa(direction, desk))  17  []
+add(isa(direction, w))  16  []
+add(isa(direction, nw))  15  []
+add(isa(status, off))  14  []
+add(isa(status, on))  13  []
+add(isa(domain, house))  12  []
+add(structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]))  11  []
+add(isa(dcommand, light))  10  []
+add(structure(no, , , [undo]))  9  []
+add(isa(conjunct, and))  8  []
+add(isa(acommand, no))  7  []
+add(isa(lw, LEFT-WALL))  6  []
+add(isa(qnmark, ?))  5  []
+add(isa(qnword, what))  4  []
+add(structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]))  3  []
+add(structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]))  2  []
+add(structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]))  1  []
+add(isa(acommand, is))  0  []
+End of Step----------------------------------
+
+step(2)
+add(idling(2))  99  []
+add(now(2))  98  []
+delete(now(1))  97  []
+End of Step----------------------------------
+
+step(3)
+add(idling(3))  101  []
+add(now(3))  100  []
+delete(now(2))  98  []
+End of Step----------------------------------
+
+step(4)
+add(idling(4))  103  []
+add(now(4))  102  []
+delete(now(3))  100  []
+End of Step----------------------------------
+
+step(5)
+add(idling(5))  105  []
+add(now(5))  104  []
+delete(now(4))  102  []
+End of Step----------------------------------
+
+step(6)
+add(idling(6))  107  []
+add(now(6))  106  []
+delete(now(5))  104  []
+End of Step----------------------------------
+
+step(7)
+add(idling(7))  109  []
+add(now(7))  108  []
+delete(now(6))  106  []
+End of Step----------------------------------
+
+step(8)
+add(idling(8))  111  []
+add(now(8))  110  []
+delete(now(7))  108  []
+End of Step----------------------------------
+
+step(9)
+add(idling(9))  113  []
+add(now(9))  112  []
+delete(now(8))  110  []
+End of Step----------------------------------
+
+step(10)
+add(idling(10))  115  []
+add(now(10))  114  []
+delete(now(9))  112  []
+End of Step----------------------------------
+
+step(11)
+add(idling(11))  117  []
+add(now(11))  116  []
+delete(now(10))  114  []
+End of Step----------------------------------
+
+step(12)
+add(idling(12))  119  []
+add(now(12))  118  []
+delete(now(11))  116  []
+End of Step----------------------------------
+
+step(13)
+add(idling(13))  121  []
+add(now(13))  120  []
+delete(now(12))  118  []
+End of Step----------------------------------
+
+step(14)
+add(idling(14))  123  []
+add(now(14))  122  []
+delete(now(13))  120  []
+End of Step----------------------------------
+
+step(15)
+add(idling(15))  125  []
+add(now(15))  124  []
+delete(now(14))  122  []
+End of Step----------------------------------
+
+step(16)
+add(idling(16))  127  []
+add(now(16))  126  []
+delete(now(15))  124  []
+End of Step----------------------------------
+
+step(17)
+add(idling(17))  129  []
+add(now(17))  128  []
+delete(now(16))  126  []
+End of Step----------------------------------
+
+step(18)
+add(idling(18))  131  []
+add(now(18))  130  []
+delete(now(17))  128  []
+End of Step----------------------------------
+
+step(19)
+add(idling(19))  133  []
+add(now(19))  132  []
+delete(now(18))  130  []
+End of Step----------------------------------
+
+step(20)
+add(idling(20))  135  []
+add(now(20))  134  []
+delete(now(19))  132  []
+End of Step----------------------------------
+
+step(21)
+add(idling(21))  137  []
+add(now(21))  136  []
+delete(now(20))  134  []
+End of Step----------------------------------
+
+step(22)
+add(idling(22))  139  []
+add(now(22))  138  []
+delete(now(21))  136  []
+End of Step----------------------------------
+
+step(23)
+add(idling(23))  141  []
+add(now(23))  140  []
+delete(now(22))  138  []
+End of Step----------------------------------
+
+step(24)
+add(idling(24))  143  []
+add(now(24))  142  []
+delete(now(23))  140  []
+End of Step----------------------------------
+
+step(25)
+add(idling(25))  145  []
+add(now(25))  144  []
+delete(now(24))  142  []
+End of Step----------------------------------
+
+step(26)
+add(idling(26))  147  []
+add(now(26))  146  []
+delete(now(25))  144  []
+End of Step----------------------------------
+
+step(27)
+add(idling(27))  149  []
+add(now(27))  148  []
+delete(now(26))  146  []
+End of Step----------------------------------
+
+step(28)
+add(idling(28))  151  []
+add(now(28))  150  []
+delete(now(27))  148  []
+End of Step----------------------------------
+
+step(29)
+add(idling(29))  153  []
+add(now(29))  152  []
+delete(now(28))  150  []
+End of Step----------------------------------
+
+step(30)
+add(idling(30))  155  []
+add(now(30))  154  []
+delete(now(29))  152  []
+End of Step----------------------------------
+
+step(31)
+add(idling(31))  157  []
+add(now(31))  156  []
+delete(now(30))  154  []
+End of Step----------------------------------
+
+step(32)
+add(idling(32))  159  []
+add(now(32))  158  []
+delete(now(31))  156  []
+End of Step----------------------------------
+
+step(33)
+add(idling(33))  161  []
+add(now(33))  160  []
+delete(now(32))  158  []
+End of Step----------------------------------
+
+step(34)
+add(idling(34))  163  []
+add(now(34))  162  []
+delete(now(33))  160  []
+End of Step----------------------------------
+
+step(35)
+add(idling(35))  165  []
+add(now(35))  164  []
+delete(now(34))  162  []
+End of Step----------------------------------
+
+step(36)
+add(idling(36))  167  []
+add(now(36))  166  []
+delete(now(35))  164  []
+End of Step----------------------------------
+
+step(37)
+add(idling(37))  169  []
+add(now(37))  168  []
+delete(now(36))  166  []
+End of Step----------------------------------
+
+step(38)
+add(idling(38))  171  []
+add(now(38))  170  []
+delete(now(37))  168  []
+End of Step----------------------------------
+
+step(39)
+add(idling(39))  173  []
+add(now(39))  172  []
+delete(now(38))  170  []
+End of Step----------------------------------
+
+step(40)
+add(idling(40))  175  []
+add(now(40))  174  []
+delete(now(39))  172  []
+End of Step----------------------------------
+
+step(41)
+add(idling(41))  177  []
+add(now(41))  176  []
+delete(now(40))  174  []
+End of Step----------------------------------
+
+step(42)
+add(idling(42))  179  []
+add(now(42))  178  []
+delete(now(41))  176  []
+End of Step----------------------------------
+
+step(43)
+add(idling(43))  181  []
+add(now(43))  180  []
+delete(now(42))  178  []
+End of Step----------------------------------
+
+step(44)
+add(idling(44))  183  []
+add(now(44))  182  []
+delete(now(43))  180  []
+End of Step----------------------------------
+
+step(45)
+add(idling(45))  185  []
+add(now(45))  184  []
+delete(now(44))  182  []
+End of Step----------------------------------
+
+step(46)
+add(idling(46))  187  []
+add(now(46))  186  []
+delete(now(45))  184  []
+End of Step----------------------------------
+
+step(47)
+add(idling(47))  189  []
+add(now(47))  188  []
+delete(now(46))  186  []
+End of Step----------------------------------
+
+step(48)
+add(idling(48))  191  []
+add(now(48))  190  []
+delete(now(47))  188  []
+End of Step----------------------------------
+
+step(49)
+add(idling(49))  193  []
+add(now(49))  192  []
+delete(now(48))  190  []
+End of Step----------------------------------
+
+step(50)
+add(idling(50))  195  []
+add(now(50))  194  []
+delete(now(49))  192  []
+End of Step----------------------------------
+
+step(51)
+add(idling(51))  197  []
+add(now(51))  196  []
+delete(now(50))  194  []
+End of Step----------------------------------
+
+step(52)
+add(idling(52))  199  []
+add(now(52))  198  []
+delete(now(51))  196  []
+End of Step----------------------------------
+
+step(53)
+add(idling(53))  201  []
+add(now(53))  200  []
+delete(now(52))  198  []
+End of Step----------------------------------
+
+step(54)
+add(idling(54))  203  []
+add(now(54))  202  []
+delete(now(53))  200  []
+End of Step----------------------------------
+
+step(55)
+add(idling(55))  205  []
+add(now(55))  204  []
+delete(now(54))  202  []
+End of Step----------------------------------
+
+step(56)
+add(idling(56))  207  []
+add(now(56))  206  []
+delete(now(55))  204  []
+End of Step----------------------------------
+
+step(57)
+add(idling(57))  209  []
+add(now(57))  208  []
+delete(now(56))  206  []
+End of Step----------------------------------
+
+step(58)
+add(idling(58))  211  []
+add(now(58))  210  []
+delete(now(57))  208  []
+End of Step----------------------------------
+
+step(59)
+add(idling(59))  213  []
+add(now(59))  212  []
+delete(now(58))  210  []
+End of Step----------------------------------
+
+step(60)
+add(idling(60))  215  []
+add(now(60))  214  []
+delete(now(59))  212  []
+End of Step----------------------------------
+
+step(61)
+add(idling(61))  217  []
+add(now(61))  216  []
+delete(now(60))  214  []
+End of Step----------------------------------
+
+step(62)
+add(idling(62))  219  []
+add(now(62))  218  []
+delete(now(61))  216  []
+End of Step----------------------------------
+
+step(63)
+add(idling(63))  221  []
+add(now(63))  220  []
+delete(now(62))  218  []
+End of Step----------------------------------
+
+step(64)
+add(idling(64))  223  []
+add(now(64))  222  []
+delete(now(63))  220  []
+End of Step----------------------------------
+
+step(65)
+add(idling(65))  225  []
+add(now(65))  224  []
+delete(now(64))  222  []
+End of Step----------------------------------
+
+step(66)
+add(idling(66))  227  []
+add(now(66))  226  []
+delete(now(65))  224  []
+End of Step----------------------------------
+
+step(67)
+add(idling(67))  229  []
+add(now(67))  228  []
+delete(now(66))  226  []
+End of Step----------------------------------
+
+step(68)
+add(idling(68))  231  []
+add(now(68))  230  []
+delete(now(67))  228  []
+End of Step----------------------------------
+
+step(69)
+add(idling(69))  233  []
+add(now(69))  232  []
+delete(now(68))  230  []
+End of Step----------------------------------
+
+step(70)
+add(idling(70))  235  []
+add(now(70))  234  []
+delete(now(69))  232  []
+End of Step----------------------------------
+
+step(71)
+add(idling(71))  237  []
+add(now(71))  236  []
+delete(now(70))  234  []
+End of Step----------------------------------
+
+step(72)
+add(idling(72))  239  []
+add(now(72))  238  []
+delete(now(71))  236  []
+End of Step----------------------------------
+
+step(73)
+add(idling(73))  241  []
+add(now(73))  240  []
+delete(now(72))  238  []
+End of Step----------------------------------
+
+step(74)
+add(idling(74))  243  []
+add(now(74))  242  []
+delete(now(73))  240  []
+End of Step----------------------------------
+
+step(75)
+add(idling(75))  245  []
+add(now(75))  244  []
+delete(now(74))  242  []
+End of Step----------------------------------
+
+step(76)
+add(idling(76))  247  []
+add(now(76))  246  []
+delete(now(75))  244  []
+End of Step----------------------------------
+
+step(77)
+add(idling(77))  249  []
+add(now(77))  248  []
+delete(now(76))  246  []
+End of Step----------------------------------
+
+step(78)
+add(idling(78))  251  []
+add(now(78))  250  []
+delete(now(77))  248  []
+End of Step----------------------------------
+
+step(79)
+add(idling(79))  253  []
+add(now(79))  252  []
+delete(now(78))  250  []
+End of Step----------------------------------
+
+step(80)
+add(idling(80))  255  []
+add(now(80))  254  []
+delete(now(79))  252  []
+End of Step----------------------------------
+
+step(81)
+add(idling(81))  257  []
+add(now(81))  256  []
+delete(now(80))  254  []
+End of Step----------------------------------
+
+step(82)
+add(idling(82))  259  []
+add(now(82))  258  []
+delete(now(81))  256  []
+End of Step----------------------------------
+
+step(83)
+add(idling(83))  261  []
+add(now(83))  260  []
+delete(now(82))  258  []
+End of Step----------------------------------
+
+step(84)
+add(idling(84))  263  []
+add(now(84))  262  []
+delete(now(83))  260  []
+End of Step----------------------------------
+
+step(85)
+add(idling(85))  265  []
+add(now(85))  264  []
+delete(now(84))  262  []
+End of Step----------------------------------
+
+step(86)
+add(idling(86))  267  []
+add(now(86))  266  []
+delete(now(85))  264  []
+End of Step----------------------------------
+
+step(87)
+add(idling(87))  269  []
+add(now(87))  268  []
+delete(now(86))  266  []
+End of Step----------------------------------
+
+step(88)
+add(idling(88))  271  []
+add(now(88))  270  []
+delete(now(87))  268  []
+End of Step----------------------------------
+
+step(89)
+add(idling(89))  273  []
+add(now(89))  272  []
+delete(now(88))  270  []
+End of Step----------------------------------
+
+step(90)
+add(idling(90))  275  []
+add(now(90))  274  []
+delete(now(89))  272  []
+End of Step----------------------------------
+
+step(91)
+add(idling(91))  277  []
+add(now(91))  276  []
+delete(now(90))  274  []
+End of Step----------------------------------
+
+step(92)
+add(idling(92))  279  []
+add(now(92))  278  []
+delete(now(91))  276  []
+End of Step----------------------------------
+
+step(93)
+add(idling(93))  281  []
+add(now(93))  280  []
+delete(now(92))  278  []
+End of Step----------------------------------
+
+step(94)
+add(utterance(s1))  283  []
+add(now(94))  282  []
+delete(now(93))  280  []
+End of Step----------------------------------
+
+step(95)
+add(end_of_parse(s1))  299  []
+add(verb(s1, val1))  298  []
+add(links(s1, l0, val3, val4, Jp))  297  []
+add(links(s1, l0, val1, val2, Os))  296  []
+add(links(s1, l0, val1, val3, MVp))  295  []
+add(links(s1, l0, val0, val1, Wi))  294  []
+add(links(s1, l0, val0, val5, RW))  293  []
+add(value_of(s1, val5, RIGHT-WALL))  292  []
+add(value_of(s1, val4, baltimore))  291  []
+add(value_of(s1, val3, to))  290  []
+add(value_of(s1, val2, metro))  289  []
+add(value_of(s1, val1, send))  288  []
+add(value_of(s1, val0, LEFT-WALL))  287  []
+add(unused_cost(s1, l0, 0))  286  []
+add(now(95))  285  []
+add(update_utt_list(s1, ))  284  [[39,283,32]]
+delete(utt_list())  32  []
+delete(now(94))  282  []
+End of Step----------------------------------
+
+step(96)
+add(now(96))  303  []
+add(call(ac_find_links(s1), [links(s1, l0, val0, val5, RW), links(s1, l0, val0, val1, Wi), links(s1, l0, val1, val3, MVp), links(s1, l0, val1, val2, Os), links(s1, l0, val3, val4, Jp), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  302  [[42,299]]
+add(parsed(s1))  301  [[51,286]]
+add(utt_list([s1]))  300  [[40,284]]
+delete(now(95))  285  []
+End of Step----------------------------------
+
+step(97)
+add(now(97))  306  []
+add(call(ac_main_verb(s1), [verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  305  [[52,301,298]]
+add(doing(ac_find_links(s1), [links(s1, l0, val0, val5, RW), links(s1, l0, val0, val1, Wi), links(s1, l0, val1, val3, MVp), links(s1, l0, val1, val2, Os), links(s1, l0, val3, val4, Jp), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  304  []
+delete(now(96))  303  []
+End of Step----------------------------------
+
+step(98)
+add(done(ac_find_links(s1), [links(s1, l0, val0, val5, RW), links(s1, l0, val0, val1, Wi), links(s1, l0, val1, val3, MVp), links(s1, l0, val1, val2, Os), links(s1, l0, val3, val4, Jp), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  313  []
+add(link(s1, val3, val4, Jp))  312  []
+add(link(s1, val1, val2, Os))  311  []
+add(link(s1, val1, val3, MVp))  310  []
+add(link(s1, val0, val1, Wi))  309  []
+add(now(98))  308  []
+add(doing(ac_main_verb(s1), [verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  307  []
+delete(doing(ac_find_links(s1), [links(s1, l0, val0, val5, RW), links(s1, l0, val0, val1, Wi), links(s1, l0, val1, val3, MVp), links(s1, l0, val1, val2, Os), links(s1, l0, val3, val4, Jp), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  304  []
+delete(now(97))  306  []
+End of Step----------------------------------
+
+step(99)
+add(main_verb(s1, send))  315  []
+add(now(99))  314  []
+delete(now(98))  308  []
+End of Step----------------------------------
+
+step(100)
+add(now(100))  317  []
+add(call(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  316  [[54,315]]
+delete(now(99))  314  []
+End of Step----------------------------------
+
+step(101)
+add(now(101))  319  []
+add(doing(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  318  []
+delete(now(100))  317  []
+End of Step----------------------------------
+
+step(102)
+add(done(ac_main_verb(s1), [verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  321  []
+add(now(102))  320  []
+delete(doing(ac_main_verb(s1), [verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL)], s1))  307  []
+delete(now(101))  319  []
+End of Step----------------------------------
+
+step(103)
+add(done(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  324  []
+add(error(s1, Item_NF, [command, send]))  323  []
+add(now(103))  322  []
+delete(doing(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  318  []
+delete(now(102))  320  []
+End of Step----------------------------------
+
+step(104)
+add(now(104))  327  []
+add(satisfiedallneeds(s1))  326  [[56,324]]
+add(need(s1, [disambiguate, send, command]))  325  [[63,323]]
+delete(now(103))  322  []
+End of Step----------------------------------
+
+step(105)
+add(not(satisfiedallneeds(s1)))  328  [[68,325,326]]
+add(now(105))  357  []
+add(call(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  355  [[55,326]]
+add(call(ac_think(s1, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  329  [[82,325,23]]
+delete(now(104))  327  []
+End of Step----------------------------------
+
+step(106)
+add(now(106))  365  []
+add(doing(ac_think(s1, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  364  []
+add(doing(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  363  []
+add(distrusted(356, 105))  362  [[326]]
+add(contra(356, 326, 105))  361  [[356,326]]
+add(contra(328, 326, 105))  358  [[328,326]]
+add(distrusted(328, 105))  360  [[326]]
+add(distrusted(326, 105))  359  [[328]]
+delete(now(105))  357  []
+End of Step----------------------------------
+
+step(107)
+add(done(ac_think(s1, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  369  []
+add(now(107))  368  []
+add(not(satisfiedallneeds(s1)))  366  [[96,358]]
+delete(doing(ac_think(s1, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  364  []
+delete(now(106))  365  []
+End of Step----------------------------------
+
+step(108)
+add(now(108))  372  []
+add(need(s1, [equil, send, command]))  371  [[85,369]]
+delete(now(107))  368  []
+End of Step----------------------------------
+
+step(109)
+add(now(109))  400  []
+add(call(ac_think(s1, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  373  [[81,371,369]]
+delete(doing(ac_find_command(s1), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), main_verb(s1, send)], s1))  363  []
+delete(now(108))  372  []
+End of Step----------------------------------
+
+step(110)
+add(now(110))  403  []
+add(doing(ac_think(s1, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(qs1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  402  []
+delete(now(109))  400  []
+End of Step----------------------------------
+
+step(111)
+add(done(ac_think(s1, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  405  []
+add(now(111))  404  []
+delete(doing(ac_think(s1, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s1, val1), value_of(s1, val0, LEFT-WALL), value_of(s1, val1, send), value_of(s1, val2, metro), value_of(s1, val3, to), value_of(s1, val4, baltimore), value_of(s1, val5, RIGHT-WALL), link(s1, val0, val1, Wi), link(s1, val1, val2, Os), link(s1, val1, val3, MVp), link(s1, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s1))  402  []
+delete(now(110))  403  []
+End of Step----------------------------------
+
+step(112)
+add(now(112))  407  []
+add(call(ac_ask(s1, [equil, send, command]), , s1))  406  [[86,405]]
+delete(now(111))  404  []
+End of Step----------------------------------
+
+step(113)
+add(now(113))  409  []
+add(doing(ac_ask(s1, [equil, send, command]), , s1))  408  []
+delete(now(112))  407  []
+End of Step----------------------------------
+
+step(114)
+add(done(ac_ask(s1, [equil, send, command]), , s1))  411  []
+add(now(114))  410  []
+delete(doing(ac_ask(s1, [equil, send, command]), , s1))  408  []
+delete(now(113))  409  []
+End of Step----------------------------------
+
+step(115)
+add(now(115))  413  []
+add(expect(s1, [equil, send, command]))  412  [[89,411]]
+delete(now(114))  410  []
+End of Step----------------------------------
+
+step(116)
+add(now(116))  415  []
+add(update_expect_list([], [[s1, [equil, send, command]]]))  414  [[90,412,31]]
+delete(expect_list())  31  []
+delete(update_expect_list([], [[s1, [equil, send, command]]]))  414  [[90,412,31]]
+delete(now(115))  413  []
+End of Step----------------------------------
+
+step(117)
+add(now(117))  417  []
+add(expect_list([[s1, [equil, send, command]]]))  416  [[93,414]]
+delete(now(116))  415  []
+End of Step----------------------------------
+
+step(118)
+add(idling(118))  419  []
+add(now(118))  418  []
+delete(now(117))  417  []
+End of Step----------------------------------
+
+step(119)
+add(idling(119))  421  []
+add(now(119))  420  []
+delete(now(118))  418  []
+End of Step----------------------------------
+
+step(120)
+add(idling(120))  423  []
+add(now(120))  422  []
+delete(now(119))  420  []
+End of Step----------------------------------
+
+step(121)
+add(idling(121))  425  []
+add(now(121))  424  []
+delete(now(120))  422  []
+End of Step----------------------------------
+
+step(122)
+add(idling(122))  427  []
+add(now(122))  426  []
+delete(now(121))  424  []
+End of Step----------------------------------
+
+step(123)
+add(idling(123))  429  []
+add(now(123))  428  []
+delete(now(122))  426  []
+End of Step----------------------------------
+
+step(124)
+add(idling(124))  431  []
+add(now(124))  430  []
+delete(now(123))  428  []
+End of Step----------------------------------
+
+step(125)
+add(idling(125))  433  []
+add(now(125))  432  []
+delete(now(124))  430  []
+End of Step----------------------------------
+
+step(126)
+add(idling(126))  435  []
+add(now(126))  434  []
+delete(now(125))  432  []
+End of Step----------------------------------
+
+step(127)
+add(idling(127))  437  []
+add(now(127))  436  []
+delete(now(126))  434  []
+End of Step----------------------------------
+
+step(128)
+add(idling(128))  439  []
+add(now(128))  438  []
+delete(now(127))  436  []
+End of Step----------------------------------
+
+step(129)
+add(idling(129))  441  []
+add(now(129))  440  []
+delete(now(128))  438  []
+End of Step----------------------------------
+
+step(130)
+add(idling(130))  443  []
+add(now(130))  442  []
+delete(now(129))  440  []
+End of Step----------------------------------
+
+step(131)
+add(idling(131))  445  []
+add(now(131))  444  []
+delete(now(130))  442  []
+End of Step----------------------------------
+
+step(132)
+add(idling(132))  447  []
+add(now(132))  446  []
+delete(now(131))  444  []
+End of Step----------------------------------
+
+step(133)
+add(idling(133))  449  []
+add(now(133))  448  []
+delete(now(132))  446  []
+End of Step----------------------------------
+
+step(134)
+add(idling(134))  451  []
+add(now(134))  450  []
+delete(now(133))  448  []
+End of Step----------------------------------
+
+step(135)
+add(idling(135))  453  []
+add(now(135))  452  []
+delete(now(134))  450  []
+End of Step----------------------------------
+
+step(136)
+add(idling(136))  455  []
+add(now(136))  454  []
+delete(now(135))  452  []
+End of Step----------------------------------
+
+step(137)
+add(idling(137))  457  []
+add(now(137))  456  []
+delete(now(136))  454  []
+End of Step----------------------------------
+
+step(138)
+add(idling(138))  459  []
+add(now(138))  458  []
+delete(now(137))  456  []
+End of Step----------------------------------
+
+step(139)
+add(idling(139))  461  []
+add(now(139))  460  []
+delete(now(138))  458  []
+End of Step----------------------------------
+
+step(140)
+add(idling(140))  463  []
+add(now(140))  462  []
+delete(now(139))  460  []
+End of Step----------------------------------
+
+step(141)
+add(idling(141))  465  []
+add(now(141))  464  []
+delete(now(140))  462  []
+End of Step----------------------------------
+
+step(142)
+add(idling(142))  467  []
+add(now(142))  466  []
+delete(now(141))  464  []
+End of Step----------------------------------
+
+step(143)
+add(idling(143))  469  []
+add(now(143))  468  []
+delete(now(142))  466  []
+End of Step----------------------------------
+
+step(144)
+add(idling(144))  471  []
+add(now(144))  470  []
+delete(now(143))  468  []
+End of Step----------------------------------
+
+step(145)
+add(idling(145))  473  []
+add(now(145))  472  []
+delete(now(144))  470  []
+End of Step----------------------------------
+
+step(146)
+add(idling(146))  475  []
+add(now(146))  474  []
+delete(now(145))  472  []
+End of Step----------------------------------
+
+step(147)
+add(idling(147))  477  []
+add(now(147))  476  []
+delete(now(146))  474  []
+End of Step----------------------------------
+
+step(148)
+add(idling(148))  479  []
+add(now(148))  478  []
+delete(now(147))  476  []
+End of Step----------------------------------
+
+step(149)
+add(idling(149))  481  []
+add(now(149))  480  []
+delete(now(148))  478  []
+End of Step----------------------------------
+
+step(150)
+add(idling(150))  483  []
+add(now(150))  482  []
+delete(now(149))  480  []
+End of Step----------------------------------
+
+step(151)
+add(idling(151))  485  []
+add(now(151))  484  []
+delete(now(150))  482  []
+End of Step----------------------------------
+
+step(152)
+add(idling(152))  487  []
+add(now(152))  486  []
+delete(now(151))  484  []
+End of Step----------------------------------
+
+step(153)
+add(idling(153))  489  []
+add(now(153))  488  []
+delete(now(152))  486  []
+End of Step----------------------------------
+
+step(154)
+add(idling(154))  491  []
+add(now(154))  490  []
+delete(now(153))  488  []
+End of Step----------------------------------
+
+step(155)
+add(idling(155))  493  []
+add(now(155))  492  []
+delete(now(154))  490  []
+End of Step----------------------------------
+
+step(156)
+add(idling(156))  495  []
+add(now(156))  494  []
+delete(now(155))  492  []
+End of Step----------------------------------
+
+step(157)
+add(idling(157))  497  []
+add(now(157))  496  []
+delete(now(156))  494  []
+End of Step----------------------------------
+
+step(158)
+add(idling(158))  499  []
+add(now(158))  498  []
+delete(now(157))  496  []
+End of Step----------------------------------
+
+step(159)
+add(idling(159))  501  []
+add(now(159))  500  []
+delete(now(158))  498  []
+End of Step----------------------------------
+
+step(160)
+add(idling(160))  503  []
+add(now(160))  502  []
+delete(now(159))  500  []
+End of Step----------------------------------
+
+step(161)
+add(idling(161))  505  []
+add(now(161))  504  []
+delete(now(160))  502  []
+End of Step----------------------------------
+
+step(162)
+add(idling(162))  507  []
+add(now(162))  506  []
+delete(now(161))  504  []
+End of Step----------------------------------
+
+step(163)
+add(idling(163))  509  []
+add(now(163))  508  []
+delete(now(162))  506  []
+End of Step----------------------------------
+
+step(164)
+add(idling(164))  511  []
+add(now(164))  510  []
+delete(now(163))  508  []
+End of Step----------------------------------
+
+step(165)
+add(idling(165))  513  []
+add(now(165))  512  []
+delete(now(164))  510  []
+End of Step----------------------------------
+
+step(166)
+add(idling(166))  515  []
+add(now(166))  514  []
+delete(now(165))  512  []
+End of Step----------------------------------
+
+step(167)
+add(idling(167))  517  []
+add(now(167))  516  []
+delete(now(166))  514  []
+End of Step----------------------------------
+
+step(168)
+add(idling(168))  519  []
+add(now(168))  518  []
+delete(now(167))  516  []
+End of Step----------------------------------
+
+step(169)
+add(idling(169))  521  []
+add(now(169))  520  []
+delete(now(168))  518  []
+End of Step----------------------------------
+
+step(170)
+add(idling(170))  523  []
+add(now(170))  522  []
+delete(now(169))  520  []
+End of Step----------------------------------
+
+step(171)
+add(idling(171))  525  []
+add(now(171))  524  []
+delete(now(170))  522  []
+End of Step----------------------------------
+
+step(172)
+add(idling(172))  527  []
+add(now(172))  526  []
+delete(now(171))  524  []
+End of Step----------------------------------
+
+step(173)
+add(idling(173))  529  []
+add(now(173))  528  []
+delete(now(172))  526  []
+End of Step----------------------------------
+
+step(174)
+add(idling(174))  531  []
+add(now(174))  530  []
+delete(now(173))  528  []
+End of Step----------------------------------
+
+step(175)
+add(idling(175))  533  []
+add(now(175))  532  []
+delete(now(174))  530  []
+End of Step----------------------------------
+
+step(176)
+add(idling(176))  535  []
+add(now(176))  534  []
+delete(now(175))  532  []
+End of Step----------------------------------
+
+step(177)
+add(idling(177))  537  []
+add(now(177))  536  []
+delete(now(176))  534  []
+End of Step----------------------------------
+
+step(178)
+add(idling(178))  539  []
+add(now(178))  538  []
+delete(now(177))  536  []
+End of Step----------------------------------
+
+step(179)
+add(idling(179))  541  []
+add(now(179))  540  []
+delete(now(178))  538  []
+End of Step----------------------------------
+
+step(180)
+add(idling(180))  543  []
+add(now(180))  542  []
+delete(now(179))  540  []
+End of Step----------------------------------
+
+step(181)
+add(idling(181))  545  []
+add(now(181))  544  []
+delete(now(180))  542  []
+End of Step----------------------------------
+
+step(182)
+add(idling(182))  547  []
+add(now(182))  546  []
+delete(now(181))  544  []
+End of Step----------------------------------
+
+step(183)
+add(idling(183))  549  []
+add(now(183))  548  []
+delete(now(182))  546  []
+End of Step----------------------------------
+
+step(184)
+add(idling(184))  551  []
+add(now(184))  550  []
+delete(now(183))  548  []
+End of Step----------------------------------
+
+step(185)
+add(idling(185))  553  []
+add(now(185))  552  []
+delete(now(184))  550  []
+End of Step----------------------------------
+
+step(186)
+add(idling(186))  555  []
+add(now(186))  554  []
+delete(now(185))  552  []
+End of Step----------------------------------
+
+step(187)
+add(idling(187))  557  []
+add(now(187))  556  []
+delete(now(186))  554  []
+End of Step----------------------------------
+
+step(188)
+add(idling(188))  559  []
+add(now(188))  558  []
+delete(now(187))  556  []
+End of Step----------------------------------
+
+step(189)
+add(idling(189))  561  []
+add(now(189))  560  []
+delete(now(188))  558  []
+End of Step----------------------------------
+
+step(190)
+add(idling(190))  563  []
+add(now(190))  562  []
+delete(now(189))  560  []
+End of Step----------------------------------
+
+step(191)
+add(idling(191))  565  []
+add(now(191))  564  []
+delete(now(190))  562  []
+End of Step----------------------------------
+
+step(192)
+add(idling(192))  567  []
+add(now(192))  566  []
+delete(now(191))  564  []
+End of Step----------------------------------
+
+step(193)
+add(idling(193))  569  []
+add(now(193))  568  []
+delete(now(192))  566  []
+End of Step----------------------------------
+
+step(194)
+add(idling(194))  571  []
+add(now(194))  570  []
+delete(now(193))  568  []
+End of Step----------------------------------
+
+step(195)
+add(idling(195))  573  []
+add(now(195))  572  []
+delete(now(194))  570  []
+End of Step----------------------------------
+
+step(196)
+add(idling(196))  575  []
+add(now(196))  574  []
+delete(now(195))  572  []
+End of Step----------------------------------
+
+step(197)
+add(idling(197))  577  []
+add(now(197))  576  []
+delete(now(196))  574  []
+End of Step----------------------------------
+
+step(198)
+add(idling(198))  579  []
+add(now(198))  578  []
+delete(now(197))  576  []
+End of Step----------------------------------
+
+step(199)
+add(idling(199))  581  []
+add(now(199))  580  []
+delete(now(198))  578  []
+End of Step----------------------------------
+
+step(200)
+add(idling(200))  583  []
+add(now(200))  582  []
+delete(now(199))  580  []
+End of Step----------------------------------
+
+step(201)
+add(idling(201))  585  []
+add(now(201))  584  []
+delete(now(200))  582  []
+End of Step----------------------------------
+
+step(202)
+add(idling(202))  587  []
+add(now(202))  586  []
+delete(now(201))  584  []
+End of Step----------------------------------
+
+step(203)
+add(idling(203))  589  []
+add(now(203))  588  []
+delete(now(202))  586  []
+End of Step----------------------------------
+
+step(204)
+add(idling(204))  591  []
+add(now(204))  590  []
+delete(now(203))  588  []
+End of Step----------------------------------
+
+step(205)
+add(idling(205))  593  []
+add(now(205))  592  []
+delete(now(204))  590  []
+End of Step----------------------------------
+
+step(206)
+add(idling(206))  595  []
+add(now(206))  594  []
+delete(now(205))  592  []
+End of Step----------------------------------
+
+step(207)
+add(idling(207))  597  []
+add(now(207))  596  []
+delete(now(206))  594  []
+End of Step----------------------------------
+
+step(208)
+add(idling(208))  599  []
+add(now(208))  598  []
+delete(now(207))  596  []
+End of Step----------------------------------
+
+step(209)
+add(idling(209))  601  []
+add(now(209))  600  []
+delete(now(208))  598  []
+End of Step----------------------------------
+
+step(210)
+add(idling(210))  603  []
+add(now(210))  602  []
+delete(now(209))  600  []
+End of Step----------------------------------
+
+step(211)
+add(idling(211))  605  []
+add(now(211))  604  []
+delete(now(210))  602  []
+End of Step----------------------------------
+
+step(212)
+add(idling(212))  607  []
+add(now(212))  606  []
+delete(now(211))  604  []
+End of Step----------------------------------
+
+step(213)
+add(idling(213))  609  []
+add(now(213))  608  []
+delete(now(212))  606  []
+End of Step----------------------------------
+
+step(214)
+add(idling(214))  611  []
+add(now(214))  610  []
+delete(now(213))  608  []
+End of Step----------------------------------
+
+step(215)
+add(idling(215))  613  []
+add(now(215))  612  []
+delete(now(214))  610  []
+End of Step----------------------------------
+
+step(216)
+add(idling(216))  615  []
+add(now(216))  614  []
+delete(now(215))  612  []
+End of Step----------------------------------
+
+step(217)
+add(idling(217))  617  []
+add(now(217))  616  []
+delete(now(216))  614  []
+End of Step----------------------------------
+
+step(218)
+add(idling(218))  619  []
+add(now(218))  618  []
+delete(now(217))  616  []
+End of Step----------------------------------
+
+step(219)
+add(now(219))  621  []
+add(call(ac_ask(s1, [equil, send, command]), , s1))  620  [[87,619,416]]
+delete(now(218))  618  []
+End of Step----------------------------------
+
+step(220)
+add(now(220))  623  []
+add(doing(ac_ask(s1, [equil, send, command]), , s1))  622  []
+delete(now(219))  621  []
+End of Step----------------------------------
+
+step(221)
+add(now(221))  624  []
+delete(doing(ac_ask(s1, [equil, send, command]), , s1))  622  []
+delete(now(220))  623  []
+End of Step----------------------------------
+
+step(222)
+add(utterance(s2))  627  []
+add(now(222))  626  []
+delete(now(221))  624  []
+End of Step----------------------------------
+
+step(223)
+add(end_of_parse(s2))  644  []
+add(verb(s2, val1))  643  []
+add(links(s2, l0, val3, val4, Jp))  642  []
+add(links(s2, l0, val1, val2, Os))  641  []
+add(links(s2, l0, val1, val3, MVp))  640  []
+add(links(s2, l0, val0, val1, Wi))  639  []
+add(links(s2, l0, val0, val5, RW))  638  []
+add(value_of(s2, val5, RIGHT-WALL))  637  []
+add(value_of(s2, val4, atlanta))  636  []
+add(value_of(s2, val3, to))  635  []
+add(value_of(s2, val2, northstar))  634  []
+add(value_of(s2, val1, send))  633  []
+add(value_of(s2, val0, LEFT-WALL))  632  []
+add(unused_cost(s2, l0, 0))  631  []
+add(now(223))  630  []
+add(response(s1, [equil, send, command], s2))  629  [[41,627,412]]
+add(update_utt_list(s2, [s1]))  628  [[39,627,300]]
+delete(utt_list([s1]))  300  [[40,284]]
+delete(now(222))  626  []
+End of Step----------------------------------
+
+step(224)
+add(now(224))  648  []
+add(call(ac_find_links(s2), [links(s2, l0, val0, val5, RW), links(s2, l0, val0, val1, Wi), links(s2, l0, val1, val3, MVp), links(s2, l0, val1, val2, Os), links(s2, l0, val3, val4, Jp), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  647  [[42,644]]
+add(parsed(s2))  646  [[51,631]]
+add(utt_list([s2, s1]))  645  [[40,628]]
+delete(now(223))  630  []
+End of Step----------------------------------
+
+step(225)
+add(now(225))  651  []
+add(call(ac_main_verb(s2), [verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  650  [[52,646,643]]
+add(doing(ac_find_links(s2), [links(s2, l0, val0, val5, RW), links(s2, l0, val0, val1, Wi), links(s2, l0, val1, val3, MVp), links(s2, l0, val1, val2, Os), links(s2, l0, val3, val4, Jp), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  649  []
+delete(now(224))  648  []
+End of Step----------------------------------
+
+step(226)
+add(done(ac_find_links(s2), [links(s2, l0, val0, val5, RW), links(s2, l0, val0, val1, Wi), links(s2, l0, val1, val3, MVp), links(s2, l0, val1, val2, Os), links(s2, l0, val3, val4, Jp), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  658  []
+add(link(s2, val3, val4, Jp))  657  []
+add(link(s2, val1, val2, Os))  656  []
+add(link(s2, val1, val3, MVp))  655  []
+add(link(s2, val0, val1, Wi))  654  []
+add(now(226))  653  []
+add(doing(ac_main_verb(s2), [verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  652  []
+delete(doing(ac_find_links(s2), [links(s2, l0, val0, val5, RW), links(s2, l0, val0, val1, Wi), links(s2, l0, val1, val3, MVp), links(s2, l0, val1, val2, Os), links(s2, l0, val3, val4, Jp), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  649  []
+delete(now(225))  651  []
+End of Step----------------------------------
+
+step(227)
+add(main_verb(s2, send))  660  []
+add(now(227))  659  []
+delete(now(226))  653  []
+End of Step----------------------------------
+
+step(228)
+add(now(228))  662  []
+add(call(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  661  [[54,660]]
+delete(now(227))  659  []
+End of Step----------------------------------
+
+step(229)
+add(now(229))  664  []
+add(doing(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  663  []
+delete(now(228))  662  []
+End of Step----------------------------------
+
+step(230)
+add(done(ac_main_verb(s2), [verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  666  []
+add(now(230))  665  []
+delete(doing(ac_main_verb(s2), [verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL)], s2))  652  []
+delete(now(229))  664  []
+End of Step----------------------------------
+
+step(231)
+add(done(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  669  []
+add(error(s2, Item_NF, [command, send]))  668  []
+add(now(231))  667  []
+delete(doing(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  663  []
+delete(now(230))  665  []
+End of Step----------------------------------
+
+step(232)
+add(now(232))  672  []
+add(satisfiedallneeds(s2))  671  [[56,669]]
+add(need(s2, [disambiguate, send, command]))  670  [[63,668]]
+delete(now(231))  667  []
+End of Step----------------------------------
+
+step(233)
+add(not(satisfiedallneeds(s2)))  673  [[68,670,671]]
+add(now(233))  702  []
+add(call(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  700  [[55,671]]
+add(call(ac_think(s2, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  674  [[82,670,23]]
+delete(now(232))  672  []
+End of Step----------------------------------
+
+step(234)
+add(now(234))  710  []
+add(doing(ac_think(s2, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  709  []
+add(doing(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  708  []
+add(distrusted(701, 233))  707  [[671]]
+add(contra(701, 671, 233))  706  [[701,671]]
+add(contra(673, 671, 233))  703  [[673,671]]
+add(distrusted(673, 233))  705  [[671]]
+add(distrusted(671, 233))  704  [[673]]
+delete(now(233))  702  []
+End of Step----------------------------------
+
+step(235)
+add(done(ac_think(s2, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  714  []
+add(now(235))  713  []
+add(not(satisfiedallneeds(s2)))  711  [[96,703]]
+delete(doing(ac_think(s2, [disambiguate, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  709  []
+delete(now(234))  710  []
+End of Step----------------------------------
+
+step(236)
+add(now(236))  717  []
+add(need(s2, [equil, send, command]))  716  [[85,714]]
+delete(now(235))  713  []
+End of Step----------------------------------
+
+step(237)
+add(now(237))  745  []
+add(call(ac_think(s2, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  718  [[81,716,714]]
+delete(doing(ac_find_command(s2), [isa(room, room1), isa(room, master), isa(room, room2), isa(room, room3), isa(room, corridor), isa(room, pantry), isa(room, kitchen), isa(room, living), isa(direction, nw), isa(direction, w), isa(direction, desk), isa(direction, toilet), isa(direction, e), isa(direction, ne), isa(direction, se), isa(direction, sw), isa(status, on), isa(status, off), isa(domain, house), isa(dcommand, light), isa(conjunct, and), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(acommand, is), isa(acommand, no), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), main_verb(s2, send)], s2))  708  []
+delete(now(236))  717  []
+End of Step----------------------------------
+
+step(238)
+add(now(238))  748  []
+add(doing(ac_think(s2, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  747  []
+delete(now(237))  745  []
+End of Step----------------------------------
+
+step(239)
+add(done(ac_think(s2, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  750  []
+add(now(239))  749  []
+delete(doing(ac_think(s2, [equil, send, command]), [isa(acommand, is), isa(acommand, no), isa(conjunct, and), isa(dcommand, light), isa(direction, desk), isa(direction, e), isa(direction, ne), isa(direction, nw), isa(direction, se), isa(direction, sw), isa(direction, toilet), isa(direction, w), isa(domain, house), isa(lw, LEFT-WALL), isa(qnmark, ?), isa(qnword, what), isa(room, corridor), isa(room, kitchen), isa(room, living), isa(room, master), isa(room, pantry), isa(room, room1), isa(room, room2), isa(room, room3), isa(status, off), isa(status, on), verb(s2, val1), value_of(s2, val0, LEFT-WALL), value_of(s2, val1, send), value_of(s2, val2, northstar), value_of(s2, val3, to), value_of(s2, val4, atlanta), value_of(s2, val5, RIGHT-WALL), link(s2, val0, val1, Wi), link(s2, val1, val2, Os), link(s2, val1, val3, MVp), link(s2, val3, val4, Jp), structure(is, [[v0, v1, S], [v1, v2, O]], [[v1, verb]], [equil, v0, v2]), structure(is, [[v0, v1, S], [v1, v3, O], [v2, v3, s^], [v3, v4, s^]], [[v1, verb], [v3, conjunct]], [compose, v0, v2, v4]), structure(is, [[v0, v4, X], [v0, v1, W], [v1, v2, S], [v2, v3, O]], [[v0, lw], [v1, qnword], [v2, verb], [v4, qnmark]], [what, v3]), structure(light, [[v1, v2, MV], [v2, v4, J], [v3, v4, AN]], [[v1, verb], [v2, status], [v3, room], [v4, direction]], [[domain, [v1, v2, v3, v4]]]), structure(no, , , [undo])], s2))  747  []
+delete(now(238))  748  []
+End of Step----------------------------------
+
+step(240)
+add(idling(240))  752  []
+add(now(240))  751  []
+delete(now(239))  749  []
+End of Step----------------------------------
+
+step(241)
+add(idling(241))  754  []
+add(now(241))  753  []
+delete(now(240))  751  []
+End of Step----------------------------------
+
+step(242)
+add(idling(242))  756  []
+add(now(242))  755  []
+delete(now(241))  753  []
+End of Step----------------------------------
+
+step(243)
+add(idling(243))  758  []
+add(now(243))  757  []
+delete(now(242))  755  []
+End of Step----------------------------------
+
+step(244)
+add(idling(244))  760  []
+add(now(244))  759  []
+delete(now(243))  757  []
+End of Step----------------------------------
+
+step(245)
+add(idling(245))  762  []
+add(now(245))  761  []
+delete(now(244))  759  []
+End of Step----------------------------------
+
+step(246)
+add(idling(246))  764  []
+add(now(246))  763  []
+delete(now(245))  761  []
+End of Step----------------------------------
+
+step(247)
+add(idling(247))  766  []
+add(now(247))  765  []
+delete(now(246))  763  []
+End of Step----------------------------------
+
+step(248)
+add(idling(248))  768  []
+add(now(248))  767  []
+delete(now(247))  765  []
+End of Step----------------------------------
+
+step(249)
+add(idling(249))  770  []
+add(now(249))  769  []
+delete(now(248))  767  []
+End of Step----------------------------------
+
+step(250)
+add(idling(250))  772  []
+add(now(250))  771  []
+delete(now(249))  769  []
+End of Step----------------------------------
+
+step(251)
+add(idling(251))  774  []
+add(now(251))  773  []
+delete(now(250))  771  []
+End of Step----------------------------------

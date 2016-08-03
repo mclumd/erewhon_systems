@@ -1,0 +1,396 @@
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+NNNNAAAAMMMMEEEE
+     cmail - an email chess helper
+
+SSSSYYYYNNNNOOOOPPPPSSSSIIIISSSS
+     ccccmmmmaaaaiiiillll [ooooppppttttiiiioooonnnnssss]
+
+DDDDEEEESSSSCCCCRRRRIIIIPPPPTTTTIIIIOOOONNNN
+     The _c_m_a_i_l program will help you play  chess  by  email  with
+     opponents  of  your choice using an X interface.  To use it,
+     you will need to be able to run _x_b_o_a_r_d with which  _c_m_a_i_l  is
+     distributed,  available by anonymous FTP from numerous sites
+     around the world. It has been tested with _x_b_o_a_r_d _3._2; it may
+     require modification for other versions.
+
+OOOOPPPPTTTTIIIIOOOONNNNSSSS
+     You will usually run cmail without giving any options.   See
+     the next section for instructions.
+
+     -hhhh      Displays _c_m_a_i_l usage information.
+
+     -cccc      Shows the  conditions  of  the  GNU  General  Public
+             License.
+
+     -wwww      Shows the warranty notice of the GNU General  Public
+             License.
+
+     -[[[[xxxx]]]]vvvv   Provides or inhibits verbose output from  _c_m_a_i_l  and
+             _x_b_o_a_r_d,  useful  for  debugging.  The  -xxxxvvvv form also
+             inhibits the cmail introduction message.
+
+     -[[[[xxxx]]]]mmmmaaaaiiiillll
+             Invokes or inhibits the sending of  a  mail  message
+             containing the move.
+
+     -[[[[xxxx]]]]xxxxbbbbooooaaaarrrrdddd
+             Invokes or inhibits the running  of  _x_b_o_a_r_d  on  the
+             game file.
+
+     -[[[[xxxx]]]]rrrreeeeuuuusssseeee
+             Invokes or inhibits the reuse of an existing  _x_b_o_a_r_d
+             to display the current game.
+
+     -rrrreeeemmmmaaaaiiiillll Resends the last mail message for  that  game.  This
+             inhibits running _x_b_o_a_r_d.
+
+     -ggggaaaammmmeeee _n_a_m_e
+             The name of the game to be processed.
+
+     -((((wwww||||bbbb||||))))ggggaaaammmmeeeessss _n_u_m_b_e_r
+             Number of games to start as White, as  Black  or  in
+             total.  Default  is 1 as white and none as black. If
+             only one colour is specified then none of the  other
+
+
+
+SunOS 5.8                 Last change:                          1
+
+
+
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+             colour  is  assumed.  If no colour is specified then
+             equal numbers of White and Black games are  started,
+             with  the extra game being as White if an odd number
+             of total games is specified.
+
+     -((((mmmmeeee||||oooopppppppp)))) _s_h_o_r_t _n_a_m_e
+             A one-word alias for yourself or your opponent.
+
+     -((((wwww||||bbbb||||mmmmyyyy||||oooopppppppp))))nnnnaaaammmmeeee _f_u_l_l _n_a_m_e
+             The full name of  White,  Black,  yourself  or  your
+             opponent.
+
+     -((((wwww||||bbbb||||mmmmyyyy||||oooopppppppp))))nnnnaaaa _n_e_t _a_d_d_r_e_s_s
+             The email address of White, Black, yourself or  your
+             opponent.
+
+     -ddddiiiirrrr _d_i_r_e_c_t_o_r_y
+             The directory in which _c_m_a_i_l keeps its  files.  This
+             defaults  to  the environment variable $CMAIL_DIR or
+             failing that, $CHESSDIR, $HOME/Chess or ~/Chess.  It
+             will be created if it does not exist.
+
+     -aaaarrrrccccddddiiiirrrr _d_i_r_e_c_t_o_r_y
+             The directory  in  which  _c_m_a_i_l  archives  completed
+             games.   Defaults   to   the   environment  variable
+             $CMAIL_ARCDIR or, in its absence, the same directory
+             as cmail keeps its working files (above).
+
+     -mmmmaaaaiiiillllpppprrrroooogggg _m_a_i_l _p_r_o_g_r_a_m
+             The program used by cmail to  send  email  messages.
+             This    defaults   to   the   environment   variable
+             $CMAIL_MAILPROG  or  failing  that  "/usr/ucb/Mail",
+             "/usr/ucb/mail" or "Mail". You will need to set this
+             variable if none of the above paths fit your system.
+
+     -ggggaaaammmmeeeessssFFFFiiiilllleeee _f_i_l_e
+             A  file  containing  a  list  of  games  with  email
+             addresses. This defaults to the environment variable
+             $CMAIL_GAMES or failing that .cmailgames.
+
+     -aaaalllliiiiaaaasssseeeessssFFFFiiiilllleeee _f_i_l_e
+             A file containing one or more aliases for a  set  of
+             email  addresses.  This  defaults to the environment
+             variable    $CMAIL_ALIASES    or    failing     that
+             .cmailaliases.
+
+     -llllooooggggFFFFiiiilllleeee _f_i_l_e
+             A file in which to dump verbose  debugging  messages
+             that are invoked with the -vvvv option.
+
+     -eeeevvvveeeennnntttt _e_v_e_n_t
+             The PGN Event  tag  (default  "Email  correspondence
+
+
+
+SunOS 5.8                 Last change:                          2
+
+
+
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+             game").
+
+     -ssssiiiitttteeee _s_i_t_e
+             The PGN Site tag (default "NET").
+
+     -rrrroooouuuunnnndddd _r_o_u_n_d
+             The PGN Round tag (default "-", not applicable).
+
+     -mmmmooooddddeeee _m_o_d_e
+             The PGN Mode tag (default "EM", Electronic Mail).
+
+OOOOTTTTHHHHEEEERRRR OOOOPPPPTTTTIIIIOOOONNNNSSSS
+     Any unrecognised flags will be passed to _x_b_o_a_r_d. Those  most
+     relevant for use with _c_m_a_i_l are:
+
+     -ttttiiiimmmmeeeeDDDDeeeellllaaaayyyy ((((oooorrrr ----ttttdddd)))) _d_e_l_a_y
+             This sets the speed at which the moves are displayed
+             on start-up. It defaults to the environment variable
+             $CMAIL_TIME_DELAY if set, and 0 otherwise.
+
+     -nnnnooooCCCChhhheeeessssssssPPPPrrrrooooggggrrrraaaammmm ((((TTTTrrrruuuueeee |||| FFFFaaaallllsssseeee)))),,,, oooorrrr ----[[[[xxxx]]]]nnnnccccpppp
+             If this option is False, _x_b_o_a_r_d starts a chess  pro-
+             gram  which can be used with _c_m_a_i_l to suggest moves.
+             Default: True.
+
+     -sssseeeeaaaarrrrcccchhhhTTTTiiiimmmmeeee ((((oooorrrr ----sssstttt)))) mmmmiiiinnnnuuuutttteeeessss[[[[::::sssseeeeccccoooonnnnddddssss]]]]
+             Tells GNU Chess to spend at most the given amount of
+             time  searching for each of its moves.  Without this
+             option, GNU Chess chooses its search time  based  on
+             the  number  of  moves  and amount of time remaining
+             until the next time control.
+
+     -sssseeeeaaaarrrrcccchhhhDDDDeeeepppptttthhhh ((((oooorrrr ----ssssdddd)))) nnnnuuuummmmbbbbeeeerrrr
+             Tells GNU Chess to look  ahead  at  most  the  given
+             number  of  moves when searching for a move to make.
+             Without this option, GNU Chess  chooses  its  search
+             depth  based  on  the  number of moves and amount of
+             time remaining until the next time control.
+
+     -ssssaaaavvvveeeeGGGGaaaammmmeeeeFFFFiiiilllleeee ((((oooorrrr ----ssssggggffff)))) ffffiiiilllleeee
+             If this option is set, _x_b_o_a_r_d appends  a  record  of
+             the game played to the specified file on exit.
+
+     ----aaaauuuuttttoooossssaaaavvvveeee oooorrrr ----aaaauuuuttttooooSSSSaaaavvvveeeeGGGGaaaammmmeeeessss
+             If this option is True, at the  end  of  every  game
+             _x_b_o_a_r_d  prompts  you  for  a  filename and appends a
+             record of the game to the file you specify.
+
+     -ssssaaaavvvveeeePPPPoooossssiiiittttiiiioooonnnnFFFFiiiilllleeee ((((oooorrrr ----ssssppppffff)))) ffffiiiilllleeee
+             If this option is  set,  _x_b_o_a_r_d  appends  the  final
+             position reached to the specified file on exit.
+
+
+
+
+SunOS 5.8                 Last change:                          3
+
+
+
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+     -bbbbooooaaaarrrrddddSSSSiiiizzzzeeee ((((oooorrrr ----ssssiiiizzzzeeee)))) ((((LLLLaaaarrrrggggeeee |||| MMMMeeeeddddiiiiuuuummmm |||| SSSSmmmmaaaallllllll))))
+             Determines how large the  board  will  be  and  what
+             built-in  piece  bitmaps  will  be used.  On a large
+             board (the default), pieces are 80x80 pixels,  on  a
+             medium  board  64x64  pixels,  and  on a small board
+             40x40 pixels.
+
+SSSSTTTTAAAARRRRTTTTIIIINNNNGGGG AAAA GGGGAAAAMMMMEEEE
+     Type _c_m_a_i_l from a shell to start a game as white.  After  an
+     opening message, you will be prompted for a game name, which
+     is optional -- if you simply press  return,  the  game  name
+     will  take  the  form  _y_o_u-VS-_o_p_p_o_n_e_n_t.   You  will  next be
+     prompted for the  short  name  of  your  opponent.   If  you
+     haven't played this person before, you will also be prompted
+     for his/her email address.  _c_m_a_i_l will then invoke _x_b_o_a_r_d in
+     the  background.   Make your first move and select _M_a_i_l _M_o_v_e
+     from the _F_i_l_e menu.  If all is well, _c_m_a_i_l will mail a  copy
+     of  the  move  to  your opponent. If you select _E_x_i_t without
+     having selected _M_a_i_l _M_o_v_e then no move will be made.
+
+AAAANNNNSSSSWWWWEEEERRRRIIIINNNNGGGG AAAA MMMMOOOOVVVVEEEE
+     When you receive a message from  an  opponent  containing  a
+     move  in  one of your games, simply pipe the message through
+     _c_m_a_i_l.  In some mailers this  is  as  simple  as  typing  "|
+     cmail"  when  viewing  the  message, while in others you may
+     have to save the message to a file and do "cmail < file"  at
+     the  command  line.   In  either case _c_m_a_i_l will display the
+     game using _x_b_o_a_r_d. If you didn't exit _x_b_o_a_r_d when  you  made
+     your  first  move  then  _c_m_a_i_l  will  do its best to use the
+     existing _x_b_o_a_r_d instead of starting a new  one.  As  before,
+     simply  make a move and select _M_a_i_l _M_o_v_e from the _F_i_l_e menu.
+     _c_m_a_i_l will try to use the _x_b_o_a_r_d that was most recently used
+     to  display the current game. This means that many games can
+     be in progress simultaneously,  each  with  its  own  active
+     _x_b_o_a_r_d.
+
+     If you want to look at the history or explore  a  variation,
+     go ahead, but you must return to the current position before
+     _x_b_o_a_r_d will allow you to mail a move. If you edit the game's
+     history  you must select _R_e_l_o_a_d _S_a_m_e _G_a_m_e from the _F_i_l_e menu
+     to get back to the original position, then make the move you
+     want  and  select  _M_a_i_l  _M_o_v_e.  As before, if you decide you
+     aren't ready to make a move just yet you can  either  select
+     _E_x_i_t  without  sending  a  move or just leave _x_b_o_a_r_d running
+     until you are ready.
+
+CCCCOOOOMMMMPPPPLLLLEEEETTTTIIIINNNNGGGG AAAA GGGGAAAAMMMMEEEE
+     Because _x_b_o_a_r_d can now detect checkmate and stalemate, _c_m_a_i_l
+     now  handles  game termination sensibly. As well as resigna-
+     tion, the _A_c_t_i_o_n menu now allows draws  to  be  offered  and
+     accepted for _c_m_a_i_l games.
+
+
+
+
+SunOS 5.8                 Last change:                          4
+
+
+
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+     For multi-game messages, only unfinished  and  just-finished
+     games will be included in email messages. When all the games
+     are finished, they are archived in the user's archive direc-
+     tory,  and  similarly in the opponent's when he or she pipes
+     the final message  through  _c_m_a_i_l.  The  archive  file  name
+     includes the date the game was started.
+
+MMMMUUUULLLLTTTTIIII----GGGGAAAAMMMMEEEE MMMMEEEESSSSSSSSAAAAGGGGEEEESSSS
+     It's possible to have a _c_m_a_i_l message carry  more  than  one
+     game.  This feature was implemented to handle IECG (Interna-
+     tional Email Chess Group) matches, where a match consists of
+     1  game  as  white  and  1  as black, with moves transmitted
+     simultaneously. In case there are more general  uses,  _c_m_a_i_l
+     itself  places  no  limit on the number of black/white games
+     contained in a message; however, _x_b_o_a_r_d does.
+
+TTTTRRRROOOOUUUUBBBBLLLLEEEE SSSSHHHHOOOOOOOOTTTTIIIINNNNGGGG
+     It's possible that a strange conjunction of  conditions  may
+     occasionally  mean  that  _c_m_a_i_l  has trouble reactivating an
+     existing _x_b_o_a_r_d. If this should  happen,  simply  trying  it
+     again  should  work. If not, remove the file that stores the
+     _x_b_o_a_r_d's PID (<_g_a_m_e>.pid) or use the -_x_r_e_u_s_e option to force
+     _c_m_a_i_l to start a new _x_b_o_a_r_d.
+
+     Versions of _c_m_a_i_l after 2.16 no longer  understand  the  old
+     file format that _x_b_o_a_r_d used to use and so cannot be used to
+     correspond with anyone using an older version.
+
+     Versions of _c_m_a_i_l older than 2.11 do not  handle  multi-game
+     messages,  so multi-game correspondence is not possible with
+     opponents using an older version.
+
+FFFFIIIILLLLEEEESSSS
+     "._c_m_a_i_l_g_a_m_e_s" contains  a  list  of  games  with  the  email
+     addresses of the opponents.
+
+     "._c_m_a_i_l_a_l_i_a_s_e_s" contains one or more aliases for  a  set  of
+     email addresses.
+
+BBBBUUUUGGGGSSSS
+     No known bugs.
+
+BBBBUUUUGGGG RRRREEEEPPPPOOOORRRRTTTTSSSS
+     I make no promises but if you send  bug  reports/suggestions
+     to  Evan.Welsh@msdw.com  I'll  do  my  best to fix/implement
+     them.
+
+AAAAUUUUTTTTHHHHOOOORRRR
+     Copyright (C) 1993  Free Software Foundation, Inc.
+
+     _c_m_a_i_l is free  software;  you  can  redistribute  it  and/or
+     modify  it under the terms of the GNU General Public License
+
+
+
+SunOS 5.8                 Last change:                          5
+
+
+
+
+
+
+Games and Demos                                          CMAIL(6)
+
+
+
+     as published by the Free Software Foundation; either version
+     2 of the License, or (at your option) any later version.
+
+     _c_m_a_i_l is distributed in the hope that it will be useful, but
+     WITHOUT  ANY  WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A  PARTICULAR  PURPOSE.   See
+     the GNU General Public License for more details.
+
+     You should have received a copy of the  GNU  General  Public
+     License along with cmail; if not, write to the Free Software
+     Foundation, Inc., 59 Temple Place,  Suite  330,  Boston,  MA
+     02111 USA.
+
+     Author:   Evan Welsh <Evan.Welsh@msdw.com>
+
+CCCCOOOONNNNTTTTRRRRIIIIBBBBUUUUTTTTOOOORRRRSSSS
+     Patrick Surry helped with design, testing and documentation.
+
+     Tim Mann helped integrate _c_m_a_i_l with _x_b_o_a_r_d.
+
+SSSSEEEEEEEE AAAALLLLSSSSOOOO
+     _M_a_i_l(1), _p_e_r_l(1), _x_b_o_a_r_d(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SunOS 5.8                 Last change:                          6
+
+
+

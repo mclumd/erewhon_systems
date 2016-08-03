@@ -1,0 +1,47 @@
+This file provides some help with cvs for the Alfred project.
+
+#############################################################
+HELP 1.1 To check out a version of Alfred into your working directory
+
+$ cvs -d /fs/disco/group/cvs checkout Alfred
+
+
+Then within your working directory
+change the value of ALFRED_BASE (to reflect the path of your own version of alfred) in the following files
+1. bin/alfred 
+2. bin/ra
+3. bin/rc
+4. bin/rp
+5. bin/rd.DOMAINNAME for each domain DOMAINNAME
+
+#############################################################
+
+HELP 1.2 If you have a checked out version of Alfred, then to display all files which are not up-to-date without actually change anything in your working directory use the command
+$ cvs -n -q update
+It can be used to check what has been going on with the project. 
+
+#############################################################
+
+HELP 1.3 To actually update a working directory with the latest version in the cvs repository
+cvs -d /fs/disco/group/cvs update 
+ 
+#############################################################
+
+HELP 1.4 To commit the changes that one has made in the working directory to the cvs repository
+cvs -d /fs/disco/group/cvs commit -m 'comment'
+
+#############################################################
+
+HELP 1.5 To remove a file from the repository
+cvs -d /fs/disco/group/cvs remove filename
+cvs -d /fs/disco/group/cvs commit -m 'comment'
+
+#############################################################
+
+HELP 1.6 To add a file to the repository
+cvs -d /fs/disco/group/cvs add filename
+cvs -d /fs/disco/group/cvs commit -m 'comment'
+#############################################################
+
+
+

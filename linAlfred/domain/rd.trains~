@@ -1,0 +1,10 @@
+#! /bin/sh
+ALFRED_BASE=/fs/erewhon/anhan/Alfred
+DOMAIN=$ALFRED_BASE/domain/trains
+HOSTFILE=$ALFRED_BASE/etc/domainhost.$LOGNAME
+$DOMAIN/trains $HOSTFILE
+
+
+
+
+

@@ -1,0 +1,32 @@
+import java.io.*;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome!");
+		System.out.println("You may start entering commands...");
+		
+		 //  open up standard input
+	      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	      String cmd = null;
+	      CommandParser parser = new CommandParser();
+	      
+	      try{
+	    	  while(!(cmd = br.readLine()).equals("quit")){
+	    		  parser.parse(cmd);
+	    	  }
+	    	  parser.quit();
+	    	  System.out.println("Goodbye!");
+	    	  System.exit(1);
+	      }
+	      catch(Exception e){
+	    	  System.out.println("Oops, something bad happened!");
+	    	  e.printStackTrace();
+	      }
+	}
+
+}

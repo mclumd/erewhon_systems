@@ -1,0 +1,6 @@
+:- ensure_loaded(library(basics)).
+:- ensure_loaded(library(strings)).
+:- ensure_loaded(library(ctypes)).
+:- ensure_loaded( library(lists)).
+:- ensure_loaded(library(caseconv)).
+:- ensure_loaded( library(listparts)).

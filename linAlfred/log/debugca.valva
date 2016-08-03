@@ -1,0 +1,139 @@
+Args: [sfile,/fs/disco/group/systems/Alfred/etc/hostfile.valva,delay,0,load,/fs/disco/group/systems/Alfred/src/main.pl,debug,/fs/disco/group/systems/Alfred/log/debugca.valva]Received: call(ac_prompt(352),[],352)
+23:51:43:248095
+memory[498308,121724]
+global_stack[24592,38816]
+local_stack[628,64880]
+atoms[2783,71870,43272]
+Sending done(call(ac_prompt(352),[],352),ac_prompt(352))
+Received: call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1)
+23:51:54:190579
+memory[498552,121480]
+global_stack[24240,39168]
+local_stack[628,64880]
+atoms[2787,71944,43240]
+Sending af(main_verb(s1,list))
+23:51:54:191611
+Sending done(call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1),ac_main_verb(s1))
+Received: call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Op),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1)
+23:51:54:194945
+memory[498736,121296]
+global_stack[24376,39032]
+local_stack[628,64880]
+atoms[2792,72038,43200]
+Sending af(link(s1,val0,val1,Wi))
+23:51:54:196095
+Sending af(link(s1,val1,val2,Op))
+23:51:54:196782
+Sending done(call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Op),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1),ac_find_links(s1))
+Received: call(ac_find_command(s1),[value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,list)],s1)
+23:51:54:247898
+memory[499012,121020]
+global_stack[24240,39168]
+local_stack[628,64880]
+atoms[2795,72116,43176]
+Sending af(error(s1,Item_NF,[command,list]))
+23:51:54:249044
+Sending done(call(ac_find_command(s1),[value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,list)],s1),ac_find_command(s1))
+Received: call(ac_find_command(s1),[value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,list)],s1)
+23:51:54:434209
+memory[498876,121156]
+global_stack[24240,39168]
+local_stack[628,64880]
+atoms[2797,72168,43160]
+Sending af(error(s1,Item_NF,[command,list]))
+23:51:54:435339
+Sending done(call(ac_find_command(s1),[value_of(s1,val0,LEFT-WALL),value_of(s1,val1,list),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,list)],s1),ac_find_command(s1))
+Received: call(ac_prompt(811),[],811)
+23:52:40:808923
+memory[498928,121104]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2800,72238,43136]
+Sending done(call(ac_prompt(811),[],811),ac_prompt(811))
+Received: call(ac_prompt(1165),[],1165)
+23:53:27:665232
+memory[498624,121408]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2802,72282,43120]
+Sending done(call(ac_prompt(1165),[],1165),ac_prompt(1165))
+Received: call(ac_prompt(1519),[],1519)
+23:54:14:411779
+memory[498656,121376]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2804,72326,43104]
+Sending done(call(ac_prompt(1519),[],1519),ac_prompt(1519))
+Received: call(ac_prompt(1873),[],1873)
+23:55:1:369714
+memory[498688,121344]
+global_stack[24032,39376]
+local_stack[628,64880]
+atoms[2806,72370,43088]
+Sending done(call(ac_prompt(1873),[],1873),ac_prompt(1873))
+Received: call(ac_prompt(2227),[],2227)
+23:55:48:585141
+memory[498708,121324]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2807,72396,43080]
+Sending done(call(ac_prompt(2227),[],2227),ac_prompt(2227))
+Received: call(ac_prompt(2581),[],2581)
+23:56:35:945179
+memory[498740,121292]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2809,72440,43064]
+Sending done(call(ac_prompt(2581),[],2581),ac_prompt(2581))
+Received: call(ac_prompt(2935),[],2935)
+23:57:23:668859
+memory[498772,121260]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2811,72484,43048]
+Sending done(call(ac_prompt(2935),[],2935),ac_prompt(2935))
+Received: call(ac_prompt(3289),[],3289)
+23:58:11:448475
+memory[498804,121228]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2813,72528,43032]
+Sending done(call(ac_prompt(3289),[],3289),ac_prompt(3289))
+Received: call(ac_prompt(3643),[],3643)
+23:58:59:429985
+memory[498824,121208]
+global_stack[24048,39360]
+local_stack[628,64880]
+atoms[2814,72554,43024]
+Sending done(call(ac_prompt(3643),[],3643),ac_prompt(3643))
+Received: call(ac_find_links(s2),[links(s2,l0,val0,val8,RW),links(s2,l0,val0,val2,Wi),links(s2,l0,val2,val4,TOo),links(s2,l0,val2,val3,Ox),links(s2,l0,val4,val5,I),links(s2,l0,val5,val7,Op),links(s2,l0,val6,val7,Dmc),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,i),value_of(s2,val2,want),value_of(s2,val3,you),value_of(s2,val4,to),value_of(s2,val5,list),value_of(s2,val6,the),value_of(s2,val7,movies),value_of(s2,val8,RIGHT-WALL)],s2)
+23:59:32:179831
+memory[498968,121064]
+global_stack[24800,38608]
+local_stack[628,64880]
+atoms[2831,72816,42888]
+Sending af(link(s2,val0,val2,Wi))
+23:59:32:181826
+Sending af(link(s2,val2,val4,TOo))
+23:59:32:182508
+Sending af(link(s2,val2,val3,Ox))
+23:59:32:183084
+Sending af(link(s2,val4,val5,I))
+23:59:32:183657
+Sending af(link(s2,val5,val7,Op))
+23:59:32:184237
+Sending af(link(s2,val6,val7,Dmc))
+23:59:32:184816
+Sending done(call(ac_find_links(s2),[links(s2,l0,val0,val8,RW),links(s2,l0,val0,val2,Wi),links(s2,l0,val2,val4,TOo),links(s2,l0,val2,val3,Ox),links(s2,l0,val4,val5,I),links(s2,l0,val5,val7,Op),links(s2,l0,val6,val7,Dmc),value_of(s2,val0,LEFT-WALL),value_of(s2,val1,i),value_of(s2,val2,want),value_of(s2,val3,you),value_of(s2,val4,to),value_of(s2,val5,list),value_of(s2,val6,the),value_of(s2,val7,movies),value_of(s2,val8,RIGHT-WALL)],s2),ac_find_links(s2))
+Received: call(ac_fix_linkage(s2,2),[value_of(s2,val0,LEFT-WALL),value_of(s2,val1,i),value_of(s2,val2,want),value_of(s2,val3,you),value_of(s2,val4,to),value_of(s2,val5,list),value_of(s2,val6,the),value_of(s2,val7,movies),value_of(s2,val8,RIGHT-WALL),verb(s2,val2),verb(s2,val5),link(s2,val0,val2,Wi),link(s2,val2,val4,TOo),link(s2,val2,val3,Ox),link(s2,val4,val5,I),link(s2,val5,val7,Op),link(s2,val6,val7,Dmc)],s2)
+23:59:32:483370
+memory[500140,119892]
+global_stack[24768,38640]
+local_stack[628,64880]
+atoms[2838,72998,42832]
+Trying to fix the links when the given verb want is a valid command
+Length of fix_linkage is :2
+23:59:32:485116
+Trying to fix the links when the given verb list is a valid command
+Length of fix_linkage is :2
+23:59:32:485659

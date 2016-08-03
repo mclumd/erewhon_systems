@@ -1,0 +1,1060 @@
+Args: [sfile,/fs/disco/group/systems/Alfred/etc/hostfile.siro,delay,0,load,/fs/disco/group/systems/Alfred/src/main.pl,debug,/fs/disco/group/systems/Alfred/log/debugca.siro]Received: call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1)
+06:00:1:416403
+memory[498344,121688]
+global_stack[24736,38672]
+local_stack[628,64880]
+atoms[2787,71932,43240]
+Sending af(main_verb(s1,show))
+06:00:1:418170
+Sending done(call(ac_main_verb(s1),[verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1),ac_main_verb(s1))
+Received: call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Op),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1)
+06:00:1:421873
+memory[498724,121308]
+global_stack[24328,39080]
+local_stack[628,64880]
+atoms[2792,72026,43200]
+Sending af(link(s1,val0,val1,Wi))
+06:00:1:423181
+Sending af(link(s1,val1,val2,Op))
+06:00:1:423839
+Sending done(call(ac_find_links(s1),[links(s1,l0,val0,val3,RW),links(s1,l0,val0,val1,Wi),links(s1,l0,val1,val2,Op),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL)],s1),ac_find_links(s1))
+Received: call(ac_find_command(s1),[isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,show)],s1)
+06:00:1:502257
+memory[499240,120792]
+global_stack[24896,38512]
+local_stack[628,64880]
+atoms[2817,72496,43000]
+Sending af(error(s1,Item_NF,[command,show]))
+06:00:1:507465
+Sending done(call(ac_find_command(s1),[isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,show)],s1),ac_find_command(s1))
+Received: call(ac_think(s1,[disambiguate,show,command]),[isa(acommand,is),isa(acommand,no),isa(conjunct,and),isa(dcommand,fullscreen),isa(dcommand,list),isa(dcommand,mute),isa(dcommand,play),isa(dcommand,set),isa(dcommand,stop),isa(end,to),isa(lw,LEFT-WALL),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(parameter,height),isa(parameter,volume),isa(parameter,width),isa(qnmark,?),isa(qnword,what),verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),link(s1,val0,val1,Wi),link(s1,val1,val2,Op),structure(fullscreen,[],[[v0,verb]],[v0]),structure(is,[[v0,v1,S],[v1,v2,O]],[[v1,verb]],[equil,v0,v2]),structure(is,[[v0,v1,S],[v1,v3,O],[v2,v3,s^],[v3,v4,s^]],[[v1,verb],[v3,conjunct]],[compose,v0,v2,v4]),structure(is,[[v0,v4,X],[v0,v1,W],[v1,v2,S],[v2,v3,O]],[[v0,lw],[v1,qnword],[v2,verb],[v4,qnmark]],[what,v3]),structure(list,[],[[v0,verb]],[v0]),structure(list,[[v0,v1,O]],[[v0,verb]],[v0]),structure(mute,[],[[v0,verb]],[v0]),structure(no,[],[],[undo]),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),structure(stop,[],[[v0,verb]],[v0])],s1)
+06:00:5:885785
+memory[502312,117720]
+global_stack[27496,35912]
+local_stack[628,64880]
+atoms[2828,72668,42912]
+Sending done(call(ac_think(s1,[disambiguate,show,command]),[isa(acommand,is),isa(acommand,no),isa(conjunct,and),isa(dcommand,fullscreen),isa(dcommand,list),isa(dcommand,mute),isa(dcommand,play),isa(dcommand,set),isa(dcommand,stop),isa(end,to),isa(lw,LEFT-WALL),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(parameter,height),isa(parameter,volume),isa(parameter,width),isa(qnmark,?),isa(qnword,what),verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),link(s1,val0,val1,Wi),link(s1,val1,val2,Op),structure(fullscreen,[],[[v0,verb]],[v0]),structure(is,[[v0,v1,S],[v1,v2,O]],[[v1,verb]],[equil,v0,v2]),structure(is,[[v0,v1,S],[v1,v3,O],[v2,v3,s^],[v3,v4,s^]],[[v1,verb],[v3,conjunct]],[compose,v0,v2,v4]),structure(is,[[v0,v4,X],[v0,v1,W],[v1,v2,S],[v2,v3,O]],[[v0,lw],[v1,qnword],[v2,verb],[v4,qnmark]],[what,v3]),structure(list,[],[[v0,verb]],[v0]),structure(list,[[v0,v1,O]],[[v0,verb]],[v0]),structure(mute,[],[[v0,verb]],[v0]),structure(no,[],[],[undo]),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),structure(stop,[],[[v0,verb]],[v0])],s1),ac_think(s1,[disambiguate,show,command]))
+Received: call(ac_find_command(s1),[isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,show)],s1)
+06:00:5:913146
+memory[503204,116828]
+global_stack[24896,38512]
+local_stack[628,64880]
+atoms[2829,72694,42904]
+Sending af(error(s1,Item_NF,[command,show]))
+06:00:5:918107
+Sending done(call(ac_find_command(s1),[isa(parameter,volume),isa(parameter,height),isa(parameter,width),isa(end,to),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(dcommand,play),isa(dcommand,fullscreen),isa(dcommand,stop),isa(dcommand,set),isa(dcommand,list),isa(dcommand,mute),isa(conjunct,and),isa(lw,LEFT-WALL),isa(qnmark,?),isa(qnword,what),isa(acommand,is),isa(acommand,no),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),main_verb(s1,show)],s1),ac_find_command(s1))
+Received: call(ac_think(s1,[equil,show,command]),[isa(acommand,is),isa(acommand,no),isa(conjunct,and),isa(dcommand,fullscreen),isa(dcommand,list),isa(dcommand,mute),isa(dcommand,play),isa(dcommand,set),isa(dcommand,stop),isa(end,to),isa(lw,LEFT-WALL),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(parameter,height),isa(parameter,volume),isa(parameter,width),isa(qnmark,?),isa(qnword,what),verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),link(s1,val0,val1,Wi),link(s1,val1,val2,Op),structure(fullscreen,[],[[v0,verb]],[v0]),structure(is,[[v0,v1,S],[v1,v2,O]],[[v1,verb]],[equil,v0,v2]),structure(is,[[v0,v1,S],[v1,v3,O],[v2,v3,s^],[v3,v4,s^]],[[v1,verb],[v3,conjunct]],[compose,v0,v2,v4]),structure(is,[[v0,v4,X],[v0,v1,W],[v1,v2,S],[v2,v3,O]],[[v0,lw],[v1,qnword],[v2,verb],[v4,qnmark]],[what,v3]),structure(list,[],[[v0,verb]],[v0]),structure(list,[[v0,v1,O]],[[v0,verb]],[v0]),structure(mute,[],[[v0,verb]],[v0]),structure(no,[],[],[undo]),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),structure(stop,[],[[v0,verb]],[v0])],s1)
+06:00:10:630199
+memory[502372,117660]
+global_stack[27512,35896]
+local_stack[628,64880]
+atoms[2831,72746,42888]
+Sending done(call(ac_think(s1,[equil,show,command]),[isa(acommand,is),isa(acommand,no),isa(conjunct,and),isa(dcommand,fullscreen),isa(dcommand,list),isa(dcommand,mute),isa(dcommand,play),isa(dcommand,set),isa(dcommand,stop),isa(end,to),isa(lw,LEFT-WALL),isa(movie,David.asf),isa(movie,Kenshin.ogm),isa(movie,bad.asx),isa(movie,rome.avi),isa(movie,swat.mov),isa(movie,traider.mov),isa(parameter,height),isa(parameter,volume),isa(parameter,width),isa(qnmark,?),isa(qnword,what),verb(s1,val1),value_of(s1,val0,LEFT-WALL),value_of(s1,val1,show),value_of(s1,val2,movies),value_of(s1,val3,RIGHT-WALL),link(s1,val0,val1,Wi),link(s1,val1,val2,Op),structure(fullscreen,[],[[v0,verb]],[v0]),structure(is,[[v0,v1,S],[v1,v2,O]],[[v1,verb]],[equil,v0,v2]),structure(is,[[v0,v1,S],[v1,v3,O],[v2,v3,s^],[v3,v4,s^]],[[v1,verb],[v3,conjunct]],[compose,v0,v2,v4]),structure(is,[[v0,v4,X],[v0,v1,W],[v1,v2,S],[v2,v3,O]],[[v0,lw],[v1,qnword],[v2,verb],[v4,qnmark]],[what,v3]),structure(list,[],[[v0,verb]],[v0]),structure(list,[[v0,v1,O]],[[v0,verb]],[v0]),structure(mute,[],[[v0,verb]],[v0]),structure(no,[],[],[undo]),structure(play,[[v0,v1,O]],[[v0,verb],[v1,movie]],[v0,v1]),structure(play,[[v0,v1,O],[v0,v3,O]],[[v0,verb],[v1,movie],[v2,conjunct],[v3,movie]],[v0,v1,v3]),structure(set,[[v0,v1,O],[v0,v2,MV],[v2,v3,J]],[[v0,verb],[v1,parameter],[v2,end],[v3,number]],[v0,v1,v3]),structure(stop,[],[[v0,verb]],[v0])],s1),ac_think(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:00:11:202567
+memory[503236,116796]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2832,72772,42880]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:00:23:454342
+memory[501156,118876]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2833,72798,42872]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:00:35:574760
+memory[501176,118856]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2834,72824,42864]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:00:47:715045
+memory[501196,118836]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2835,72850,42856]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:00:59:895551
+memory[501216,118816]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2836,72876,42848]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:01:12:88961
+memory[501248,118784]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2838,72920,42832]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:01:24:276108
+memory[501268,118764]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2839,72946,42824]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:01:36:456399
+memory[501288,118744]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2840,72972,42816]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:01:48:716923
+memory[501308,118724]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2841,72998,42808]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:02:0:987176
+memory[501340,118692]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2843,73042,42792]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:02:13:217911
+memory[501360,118672]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2844,73068,42784]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:02:25:438231
+memory[501380,118652]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2845,73094,42776]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:02:37:718386
+memory[501400,118632]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2846,73120,42768]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:02:50:78601
+memory[501420,118612]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2847,73146,42760]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:03:2:358916
+memory[501452,118580]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2849,73190,42744]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:03:14:719240
+memory[501472,118560]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2850,73216,42736]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:03:27:60404
+memory[501492,118540]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2851,73242,42728]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:03:39:499744
+memory[501512,118520]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2852,73268,42720]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:03:51:940735
+memory[501532,118500]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2853,73294,42712]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:04:4:480634
+memory[501564,118468]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2855,73338,42696]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:04:16:921183
+memory[501584,118448]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2856,73364,42688]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:04:29:341441
+memory[501604,118428]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2857,73390,42680]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:04:41:811404
+memory[501624,118408]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2858,73416,42672]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:04:54:352272
+memory[501644,118388]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2859,73442,42664]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:05:6:832641
+memory[501676,118356]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2861,73486,42648]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:05:19:322930
+memory[501696,118336]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2862,73512,42640]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:05:31:842903
+memory[501716,118316]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2863,73538,42632]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:05:44:393374
+memory[501736,118296]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2864,73564,42624]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:05:56:954066
+memory[501756,118276]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2865,73590,42616]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:06:9:535629
+memory[501788,118244]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2867,73634,42600]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:06:22:180539
+memory[501808,118224]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2868,73660,42592]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:06:34:815176
+memory[501828,118204]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2869,73686,42584]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:06:47:585672
+memory[501848,118184]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2870,73712,42576]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:07:0:245517
+memory[501880,118152]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2872,73756,42560]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:07:12:915566
+memory[501900,118132]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2873,73782,42552]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:07:25:686120
+memory[501920,118112]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2874,73808,42544]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:07:38:386854
+memory[501940,118092]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2875,73834,42536]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:07:51:127925
+memory[501960,118072]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2876,73860,42528]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:08:4:29001
+memory[501988,118044]
+global_stack[24036,39372]
+local_stack[628,64880]
+atoms[2878,73902,42512]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:08:16:838131
+memory[502008,118024]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2879,73928,42504]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:08:29:709069
+memory[502028,118004]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2880,73954,42496]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:08:42:609925
+memory[502048,117984]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2881,73980,42488]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:08:55:409247
+memory[502068,117964]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2882,74006,42480]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:09:8:260567
+memory[502100,117932]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2884,74050,42464]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:09:21:210172
+memory[502120,117912]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2885,74076,42456]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:09:34:140261
+memory[502140,117892]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2886,74102,42448]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:09:47:27535
+memory[502160,117872]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2887,74128,42440]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:09:59:950508
+memory[502180,117852]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2888,74154,42432]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:10:13:20576
+memory[502212,117820]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2890,74198,42416]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:10:25:981172
+memory[502232,117800]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2891,74224,42408]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:10:39:171355
+memory[502252,117780]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2892,74250,42400]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:10:52:201755
+memory[502272,117760]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2893,74276,42392]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:11:5:201990
+memory[502304,117728]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2895,74320,42376]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:11:18:414040
+memory[502324,117708]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2896,74346,42368]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:11:31:433071
+memory[502344,117688]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2897,74372,42360]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:11:44:463739
+memory[502364,117668]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2898,74398,42352]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:11:57:584283
+memory[502384,117648]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2899,74424,42344]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:12:10:634518
+memory[502416,117616]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2901,74468,42328]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:12:23:774524
+memory[502436,117596]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2902,74494,42320]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:12:36:855200
+memory[502456,117576]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2903,74520,42312]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:12:50:14598
+memory[502476,117556]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2904,74546,42304]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:13:3:156154
+memory[502508,117524]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2906,74590,42288]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:13:16:395650
+memory[502528,117504]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2907,74616,42280]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:13:29:616584
+memory[502548,117484]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2908,74642,42272]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:13:42:847167
+memory[502568,117464]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2909,74668,42264]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:13:56:106700
+memory[502588,117444]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2910,74694,42256]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:14:9:450211
+memory[502620,117412]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2912,74738,42240]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:14:22:799944
+memory[502640,117392]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2913,74764,42232]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:14:36:157908
+memory[502660,117372]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2914,74790,42224]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:14:49:449135
+memory[502680,117352]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2915,74816,42216]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:15:2:848179
+memory[502712,117320]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2917,74860,42200]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:15:16:253179
+memory[502732,117300]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2918,74886,42192]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:15:29:628955
+memory[502752,117280]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2919,74912,42184]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:15:43:23848
+memory[502772,117260]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2920,74938,42176]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:15:56:470695
+memory[502792,117240]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2921,74964,42168]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:16:9:944715
+memory[502824,117208]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2923,75008,42152]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:16:23:471691
+memory[502844,117188]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2924,75034,42144]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:16:37:95000
+memory[502864,117168]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2925,75060,42136]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:16:50:791946
+memory[502884,117148]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2926,75086,42128]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:17:4:543060
+memory[502916,117116]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2928,75130,42112]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:17:18:251954
+memory[502936,117096]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2929,75156,42104]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:17:32:17848
+memory[502956,117076]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2930,75182,42096]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:17:45:616361
+memory[502976,117056]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2931,75208,42088]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:17:59:202751
+memory[502996,117036]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2932,75234,42080]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:18:12:854535
+memory[503028,117004]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2934,75278,42064]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:18:26:536366
+memory[503048,116984]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2935,75304,42056]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:18:40:145297
+memory[503068,116964]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2936,75330,42048]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:18:53:895375
+memory[503088,116944]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2937,75356,42040]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:19:7:685412
+memory[503120,116912]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2939,75400,42024]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:19:21:365593
+memory[503140,116892]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2940,75426,42016]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:19:34:967296
+memory[503160,116872]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2941,75452,42008]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:19:48:795825
+memory[503180,116852]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2942,75478,42000]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:20:2:944233
+memory[503212,116820]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2944,75522,41984]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:20:16:686214
+memory[503232,116800]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2945,75548,41976]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:20:30:467829
+memory[503252,116780]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2946,75574,41968]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:20:44:160035
+memory[503272,116760]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2947,75600,41960]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:20:57:947230
+memory[503292,116740]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2948,75626,41952]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:21:11:897997
+memory[503324,116708]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2950,75670,41936]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:21:25:620266
+memory[503344,116688]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2951,75696,41928]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:21:39:471621
+memory[503364,116668]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2952,75722,41920]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:21:53:341298
+memory[503384,116648]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2953,75748,41912]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:22:7:239203
+memory[503416,116616]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2955,75792,41896]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:22:21:249425
+memory[503436,116596]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2956,75818,41888]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:22:35:179207
+memory[503456,116576]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2957,75844,41880]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:22:49:41656
+memory[503476,116556]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2958,75870,41872]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:23:3:334735
+memory[503508,116524]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2960,75914,41856]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:23:17:220853
+memory[503528,116504]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2961,75940,41848]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:23:31:162098
+memory[503548,116484]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2962,75966,41840]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:23:45:91771
+memory[503568,116464]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2963,75992,41832]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:23:59:123601
+memory[503588,116444]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2964,76018,41824]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:24:13:256318
+memory[503620,116412]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2966,76062,41808]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:24:27:322239
+memory[503640,116392]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2967,76088,41800]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:24:41:332406
+memory[503660,116372]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2968,76114,41792]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:24:55:366601
+memory[503680,116352]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2969,76140,41784]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:25:9:614277
+memory[503712,116320]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2971,76184,41768]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:25:23:645070
+memory[503732,116300]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2972,76210,41760]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:25:37:816461
+memory[503752,116280]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2973,76236,41752]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:25:52:75178
+memory[503772,116260]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2974,76262,41744]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:26:6:404601
+memory[503804,116228]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2976,76306,41728]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:26:20:692255
+memory[503824,116208]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2977,76332,41720]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:26:34:927032
+memory[503844,116188]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2978,76358,41712]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:26:49:108124
+memory[503864,116168]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2979,76384,41704]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:27:3:317575
+memory[503896,116136]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2981,76428,41688]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:27:17:560168
+memory[503916,116116]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2982,76454,41680]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:27:32:13666
+memory[503936,116096]
+global_stack[24052,39356]
+local_stack[628,64880]
+atoms[2983,76480,41672]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:27:46:328128
+memory[503956,116076]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2984,76506,41664]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:28:0:589911
+memory[503988,116044]
+global_stack[24044,39364]
+local_stack[628,64880]
+atoms[2986,76550,41648]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:28:14:911802
+memory[504008,116024]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2987,76576,41640]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:28:29:259737
+memory[504028,116004]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2988,76602,41632]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:28:43:662437
+memory[504048,115984]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2989,76628,41624]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:28:58:391160
+memory[504068,115964]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2990,76654,41616]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:29:12:841921
+memory[504100,115932]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2992,76698,41600]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:29:27:171851
+memory[504120,115912]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2993,76724,41592]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:29:41:782520
+memory[504140,115892]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2994,76750,41584]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:29:56:192403
+memory[504160,115872]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2995,76776,41576]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:30:14:642624
+memory[504192,115840]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2997,76820,41560]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:30:29:173736
+memory[504212,115820]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2998,76846,41552]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:30:43:682383
+memory[504232,115800]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[2999,76872,41544]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:30:58:335382
+memory[504252,115780]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3000,76898,41536]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:31:12:855261
+memory[504284,115748]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3002,76942,41520]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:31:27:514174
+memory[504304,115728]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3003,76968,41512]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:31:42:716254
+memory[504324,115708]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3004,76994,41504]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:31:57:536557
+memory[504344,115688]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3005,77020,41496]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))
+Received: call(ac_ask(s1,[equil,show,command]),[],s1)
+06:32:12:718414
+memory[504376,115656]
+global_stack[24060,39348]
+local_stack[628,64880]
+atoms[3007,77064,41480]
+Sending done(call(ac_ask(s1,[equil,show,command]),[],s1),ac_ask(s1,[equil,show,command]))

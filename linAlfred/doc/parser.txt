@@ -1,0 +1,1004 @@
+Quotation Examples
+
+For learning new (domain-related) words:
+Direct associations.
+
+1.	User: Metroliner is also called "Metro".
+       System: Ok.
+
+Metroliner is also called “Metro”
+Found 2 linkages (2 with no P.P. violations)
+  Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=6)
+
+             +-----Pv----+           
+     +---Ss--+    +---E--+----Os----+
+     |       |    |      |          |
+Metroliner is.v also called.v “Metro”[?].n 
+
+Constituent tree:
+
+(S (NP Metroliner)
+   (VP is
+       (VP (ADVP also)
+           called
+           (NP “Metro”))))
+
+(S1 (NP1 Metroliner)
+       (VP1 is
+             (VP2 (ADVP1 also)
+                        called
+                         (NP2 “Metro”))))
+
+
+(S1 (val1  Metroliner)
+       (val2 is
+             (val3 (val4 also)
+                        called
+                         (val5 “Metro”))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[np1,vp1])
+
+composed_of(vp1,[vp2])
+
+composed_of(vp2,[advp1,np2])
+
+composed_of(vp1,[val2])
+
+composed_of(vp2,[val3])
+
+composed_of(np1,[val1])
+
+composed_of(advp1,[val4])
+
+composed_of(np2,[val5])
+
+             +-----Pv----+           
+     +---Ss--+    +---E--+----Os----+
+     |       |    |      |          |
+Metroliner is.v also called.v “Metro”[?].n 
+
+links(s1,[ [val1,val2,Ss],[val2,val4,Pv],[val3,val4,E],[val4,val5,Os] ] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(val5,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(advp1,advp)
+
+type_of(vp1,vp)
+
+type_of(vp2,vp)
+
+type_of(s1,s)
+
+value_of(val1, ‘Metroliner’)
+
+value_of(val2, ‘is’)
+
+value_of(val3, ‘also’)
+
+value_of(val4, ‘called’ )
+
+value_of(val5, ‘Metro’ )
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+
+
+
+
+2.	
+
+User:  Let's use "DC"  to refer to Washignton.
+System: Ok.
+
+Let’s use “DC” to refer to Washington
+
+Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=8)
+
+        +------TOo-----+                  
+  +--Sp-+---Os--+      +--I-+-MVp-+--Js--+
+  |     |       |      |    |     |      |
+Let’s use.v “DC”[?].n to refer.v to Washington 
+
+Constituent tree:
+
+(S (NP Let’s)
+   (VP use
+       (NP “DC”)
+       (S (VP to
+              (VP refer
+                  (PP to
+                      (NP Washington)))))))
+
+
+(S1 (NP1 Let’s)
+   (VP1 use
+       (NP2 “DC”)
+       (S2 (VP2 to
+              (VP3 refer
+                  (PP1 to
+                      (NP3 Washington)))))))
+
+(S1	(val1 Let’s)
+ 	(val2 use
+       		(val3  “DC”)
+       		(S2	(val4 to
+              	  			(val5 refer
+                  				(val6  to
+                      					(val7  Washington)))))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[np1,vp1])
+
+composed_of(vp1,[np2, s2])
+
+composed_of(s2,[vp2])
+
+composed_of(vp2,[vp3])
+
+composed_of(vp3,[pp1])
+
+composed_of(pp1,[np3])
+
+composed_of(vp1,[val2])
+
+composed_of(vp2,[val3])
+
+composed_of(np1,[val1])
+
+composed_of(advp1,[val4])
+
+composed_of(np2,[val5])
+
+        +------TOo-----+                  
+  +--Sp-+---Os--+      +--I-+-MVp-+--Js--+
+  |     |       |      |    |     |      |
+Let’s use.v “DC”[?].n to refer.v to Washington 
+
+links(s1, [ [val1,val2, Sp] [val2,val3,Os], [val2,val4, Too], [val4,val5, I], [val5,val6, MVp], [val6,val7, Js]  ] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(val5,val)
+
+type_of(val6,val)
+
+type_of(val7,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(np3,np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(vp2,vp)
+
+type_of(vp3,vp)
+
+type_of(s2,s)
+
+type_of(s1,s)
+
+value_of(val1, ‘Let’s’)
+
+value_of(val2, ‘use’)
+
+value_of(val3, ‘DC’)
+
+value_of(val4, ‘to’ )
+
+value_of(val5, ‘refer’ )
+
+value_of(val6, ‘to’ )
+
+value_of(val7, ‘Washington’ )
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+New referent to objects: (cities and trains)
+
+3. - 	User: Send Metroliner to Bean Town.
+       System: What does "Bean Town" mean?
+       User: Boston.
+       System: Ok
+       
+Send.v Metroliner to Bean Town 
+
+Found 2 linkages (2 with no P.P. violations)
+  Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=7)
+
+             +------MVp------+---Js---+
+    +---Wi---+---Os---+      |   +--G-+
+    |        |        |      |   |    |
+LEFT-WALL send.v Metroliner to Bean Town 
+
+Constituent tree:
+
+(S (VP Send
+       (NP Metroliner)
+       (PP to
+           (NP Bean Town))))
+
+(S1 (VP1 Send
+       (NP1 Metroliner)
+       (PP1 to
+           (NP2 Bean Town))))
+
+(S1 	(val1 Send
+       		(val2 Metroliner)
+       		(val3 to
+           			(val4 Bean Town))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[vp1])
+
+composed_of(vp1,[np1,pp1])
+
+composed_of(pp1,[np2])
+
+composed_of(vp1,[val1])
+
+composed_of(np1,[val2])
+
+composed_of(pp1,[val3])
+
+composed_of(np2,[val4])
+
+             +------MVp------+---Js---+
+    +---Wi---+---Os---+      |   +--G-+
+    |        |        |      |   |    |
+LEFT-WALL send.v Metroliner to Bean Town 
+
+links(s1, [[lwall, val1, wi], [val1,val2,Os], [val1, val3,MVp ], [val3, val4, Js],[val4,val5,G] ] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(val5,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(s1,s)
+
+value_of(val1, `Send’)
+
+value_of(val2, `Metroliner’)
+
+value_of(val3, `to’)
+
+value_of(val4, `Bean’ )
+
+value_of(val4, `Town’ )
+
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+New referents to actions:
+
+4.- 	User: Shoot Metroliner to Boston.
+       System: What did you mean by "Shoot"?
+       User: Send
+       System: Ok
+
+Shoot Metroliner to Boston
+
+Found 1 linkage (1 with no P.P. violations)
+  Unique linkage. cost vector = (UNUSED=0 DIS=0 AND=0 LEN=5)
+
+             +-------MVp------+     
+    +---Wi---+----Os---+      +-Js-+
+    |        |         |      |    |
+LEFT-WALL shoot.v Metroliner to Boston 
+
+Constituent tree:
+
+(S (VP Shoot
+       (NP Metroliner)
+       (PP to
+           (NP Boston))))
+
+(S1 (VP1 Shoot
+       (NP1 Metroliner)
+       (PP1 to
+           (NP2 Boston))))
+
+(S 	(val1 Shoot
+      	(val2 Metroliner)
+       	(val3 to
+           		(val4 Boston))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[vp1])
+
+composed_of(vp1,[np1,pp1])
+
+composed_of(pp1,[np2])
+
+composed_of(vp1,[val1])
+
+composed_of(np1,[val2])
+
+composed_of(pp1,[val3])
+
+composed_of(np2,[val4])
+
+       +-------MVp------+     
+    +---Wi---+----Os---+      +-Js-+
+    |        |         |      |    |
+LEFT-WALL shoot.v Metroliner to Boston 
+
+             
+links(s1, [[lwall, val1, Wi], [val1,val2,Os], [val1, val3,MVp ], [val3, val4, Js] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(s1,s)
+
+value_of(val1, `Shoot’)
+
+value_of(val2, `Metroliner’)
+
+value_of(val3, `to’)
+
+value_of(val4, `Boston’ )
+
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+New referents to prepositions:
+
+5.- 	User:  Metroliner is the train in Boston.
+       System: What does "in" mean?
+       User: It means "at".
+       System: Ok, Metroliner is the train at Boston.
+
+Metroliner is the train inside Boston
+
+Found 3 linkages (3 with no P.P. violations)
+  Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=9)
+
+             +--------MVp-------+        
+             +---Ost---+        |        
+     +---Ss--+   +--Ds-+        +---Js--+
+     |       |   |     |        |       |
+Metroliner is.v the train.n inside.e Boston 
+
+Constituent tree:
+
+(S (NP Metroliner)
+   (VP is
+       (NP the train)
+       (PP inside
+           (NP Boston))))
+
+(S1 (NP1 Metroliner)
+   (VP1 is
+       (NP2 the train)
+       (PP1 inside
+           (NP3 Boston))))
+
+(S1 	(val Metroliner)
+   	(val2 is
+      	(val3 the val4 train)
+       	(val5 inside
+           		(val6 Boston))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[np1,vp1])
+
+composed_of(vp1,[np2,pp1])
+
+composed_of(pp1,[np3])
+
+composed_of(vp1,[val2])
+
+composed_of(np1,[val1])
+
+composed_of(pp1,[val5])
+
+composed_of(np2,[val3, val4])
+
+composed_of(np3,[val6])
+
+             +--------MVp-------+        
+             +---Ost---+        |        
+     +---Ss--+   +--Ds-+        +---Js--+
+     |       |   |     |        |       |
+Metroliner is.v the train.n inside.e Boston 
+
+Links (s1, [ [val1,val2,Ss], [val2,val4,Ost], [val3,val4,Ds], [val2,val5, MVp] [val5,val6,Js] ] )
+
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(val5,val)
+
+type_of(val6,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(np3, np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(s1,s)
+
+value_of(val1, ‘Metroliner’)
+
+value_of(val2, ‘is’)
+
+value_of(val3, ‘the’)
+
+value_of(val4, ‘train’ )
+
+value_of(val5, ‘inside’ )
+
+value_of(val6, ‘Boston’ )
+
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+It means "at"
+
+Found 1 linkage (1 with no P.P. violations) at null count 4
+  Unique linkage. cost vector = (UNUSED=5 DIS=0 AND=0 LEN=0)
+
+Constituent tree:
+
+(S It means at)
+
+(S1 It means at)
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[])
+
+Links (s1, [] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(s1,s)
+
+value_of(val1, ‘It’)
+
+value_of(val2, ‘means’)
+
+value_of(val3, ‘”at”’)
+
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+6.	User: Which are the engines at Boston?
+       System: What does "engines" mean?
+       User: Trains.
+       System: The engines at Boston are Bullet and Metroliner.	
+
+Which are the engines at Boston?
+
+Found 8 linkages (4 with no P.P. violations)
+  Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=9)
+
+    +--------------------Xp-------------------+
+    |             +--------MVp-------+        |
+    |             +----Opt----+      |        |
+    +---Ws--+-Spxw+    +--Dmc-+      +-Js-+   |
+    |       |     |    |      |      |    |   |
+LEFT-WALL which are.v the engines.n at Boston ? 
+
+Constituent tree:
+
+(S Which
+   (S (VP are
+          (NP the engines)
+          (PP at
+              (NP Boston))))
+   ?)
+
+(S1 Which
+   (S2 (VP1 are
+          (NP1 the engines)
+          (PP1 at
+              (NP2 Boston))))
+   ?)
+
+(S1	val1 Which
+   	(S2 	(val2 are
+          		(val3 the engines)
+          		(val5 at
+              			(val6 Boston))))
+   val7 ?)
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[s2])
+
+composed_of(vp1,[np1,pp1])
+
+composed_of(pp1,[np2])
+
+composed_of(vp1,[val2])
+
+composed_of(np1,[val1])
+
+composed_of(pp1,[val5])
+
+composed_of(np1,[val3, val4])
+
+composed_of(np2,[val6])
+    +--------------------Xp-------------------+
+    |             +--------MVp-------+        |
+    |             +----Opt----+      |        |
+    +---Ws--+-Spxw+    +--Dmc-+      +-Js-+   |
+    |       |     |    |      |      |    |   |
+LEFT-WALL which are.v the engines.n at Boston ? 
+
+Links (s1, [ [lwall,val1, Ws],[val1, val2, Spxw], [val2, val4, Opt] [val2, val5, MVp], [val3, val4, Dmc], [val5,val6, Js], [lwall, val7, Xp )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(val5,val)
+
+type_of(val6,val)
+
+type_of(val7,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(s2,s)
+
+type_of(s1,s)
+
+value_of(val1, ‘Which’)
+
+value_of(val2, ‘are’)
+
+value_of(val3, ‘the’)
+
+value_of(val4, ‘engines’ )
+
+value_of(val5, ‘at’ )
+
+value_of(val6, ‘Boston’ )
+
+value_of(val6, ‘?’ )
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+Trains
+
+Found 1 linkage (1 with no P.P. violations) at null count 2
+  Unique linkage. cost vector = (UNUSED=3 DIS=0 AND=0 LEN=0)
+
+Constituent tree:
+
+(S Trains)
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[])
+
+Links (s1, [] )
+
+type_of(val1,val)
+
+type_of(s1,s)
+
+value_of(val1, ‘Trains’)
+
+
+7.	
+
+User: Which are the engines at Boston?
+System: Does "engines" means "trains"?
+User: Yes.
+System: The engines at Boston are Bullet and Metroliner.
+
+Yes.
+
+Found 1 linkage (1 with no P.P. violations) at null count 2
+  Unique linkage. cost vector = (UNUSED=3 DIS=0 AND=0 LEN=0)
+
+Constituent tree:
+
+(S yes)
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[])
+
+Links (s1, [] )
+
+type_of(val1,val)
+
+type_of(s1,s)
+
+value_of(val1, ‘yes’)
+
+
+
+8.	User: Which are the engines at Boston?
+       System: Let's use "engines" to mean "trains".
+System. The engines at Boston are Bullet and Metroliner.
+
+9.	User: Metro is the train at Boston.
+       System: Does "Metro" and "Bullet" refer to the same object?
+       User. No
+       System: Does "Metro" and "Metroliner" refer to the same object?
+       User. Yes.
+
+Metro is the train at Boston
+Found 2 linkages (2 with no P.P. violations)
+  Linkage 1, cost vector = (UNUSED=0 DIS=0 AND=0 LEN=9)
+
+        +------MVp------+     
+        +---Ost---+     |     
+  +--Ss-+   +--Ds-+     +-Js-+
+  |     |   |     |     |    |
+Metro is.v the train.n at Boston 
+
+Constituent tree:
+
+(S (NP Metro)
+   (VP is
+       (NP the train)
+       (PP at
+           (NP Boston))))
+
+  
+No
+Found 1 linkage (1 with no P.P. violations) at null count 2
+  Unique linkage. cost vector = (UNUSED=3 DIS=0 AND=0 LEN=0)
+
+Constituent tree:
+
+(S No)
+
+  
+
+10.	
+
+User: Send Metroliner to Bostonn.
+System: What was the third word?
+User: Boston.
+System: (sends Metroliner to Boston)
+
+11.	
+
+User: Send Metroliner to Boston.
+System: What does "Bostonn” mean?
+User: Boston.
+System: (sends Metroliner to Boston)
+
+12.	
+
+User: Send Metroliner to Bostonn.
+System: What does "Bostonn" mean?
+User: Boston.
+System: (sends Metroliner to Boston) 
+System: Is "Bostonn" spelled correctly?
+User: Yes
+System: (make referent from Bosttotnnn to Boston)
+Send Metroliner to Bostonn
+
+
+Found 1 linkage (1 with no P.P. violations)
+  Unique linkage. cost vector = (UNUSED=0 DIS=0 AND=0 LEN=5)
+
+             +------MVp------+     
+    +---Wi---+---Os---+      +-Js-+
+    |        |        |      |    |
+LEFT-WALL send.v Metroliner to Bostonn 
+
+Constituent tree:
+
+(S (VP Send
+       (NP Metroliner)
+       (PP to
+           (NP Bostonn))))
+
+(S1 (VP1 Send
+       (NP1 Metroliner)
+       (PP1 to
+           (NP2 Bostonn))))
+
+(S1 	(val1 Send
+       	(val2 Metroliner)
+       	(val3 to
+           		(val4 Bostonn))))
+
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[vp1])
+
+composed_of(vp1,[np1,pp1])
+
+composed_of(pp1,[np2])
+
+composed_of(vp1,[val1])
+
+composed_of(np1,[val2])
+
+composed_of(pp1,[val3])
+
+composed_of(np2,[val4])
+
+             +------MVp------+     
+    +---Wi---+---Os---+      +-Js-+
+    |        |        |      |    |
+LEFT-WALL send.v Metroliner to Bostonn 
+             
+links(s1, [[lwall, val1, Wi], [val1,val2,Os], [val1, val3,MVp ], [val3, val4, Js] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(val4,val)
+
+type_of(np1,np)
+
+type_of(np2,np)
+
+type_of(pp1,pp)
+
+type_of(vp1,vp)
+
+type_of(s1,s)
+
+value_of(val1, `Send’)
+
+value_of(val2, `Metroliner’)
+
+value_of(val3, `to’)
+
+value_of(val4, `Bostonn’ )
+
+
+Note that type_of(s1,s) should be the last assertion for this
+utterance. The remaining can be in any order.
+
+
+Boston
+
+Found 1 linkage (1 with no P.P. violations) at null count 2
+  Unique linkage. cost vector = (UNUSED=3 DIS=0 AND=0 LEN=0)
+
+Constituent tree:
+
+(S Boston)
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[])
+
+Links (s1, [] )
+
+type_of(val1,val)
+
+type_of(s1,s)
+
+value_of(val1, ‘Boston’)
+
+
+Send metroliner to Boston
+
+Unique linkage. cost vector = (UNUSED=0 DIS=0 AND=0 LEN=5)
+
+             +------MVp------+     
+    +---Wi---+---Os---+      +-Js-+
+    |        |        |      |    |
+LEFT-WALL send.v Metroliner to Boston 
+
+Constituent tree:
+
+(S (VP Send
+       (NP Metroliner)
+       (PP to
+           (NP Boston))))
+
+
+13.	
+
+User: Don't move Bullet.
+	.....	
+User: Send Bullet to Boston.
+System: Did you say "Bullet"?
+User. Yes
+System: I'm confused. In step 386 you said "Don't move Bullet".Don’t move Bullet
+
+Found 1 linkage (1 with no P.P. violations)
+  Unique linkage. cost vector = (UNUSED=0 DIS=0 AND=0 LEN=3)
+
+    +---Wi--+--I*d-+--Os--+
+    |       |      |      |
+LEFT-WALL don't move.v Bullet 
+
+Constituent tree:
+
+(S (VP Don't
+       (VP move
+           (NP Bullet))))
+
+(S1 (VP1 Don't
+       (VP2 move
+           (NP1 Bullet))))
+
+(S 	(val1 Don't
+      	(val2 move
+           		(val3 Bullet))))
+
+Parser-Alfred Interface
+
+Assertions required in Active logic:
+
+composed_of(s1,[vp1])
+
+composed_of(vp1,[vp2])
+
+composed_of(vp2,[np1])
+
+composed_of(vp1,[val1])
+
+composed_of(vp2,[val2])
+
+composed_of(np1,[val3])
+
+    +---Wi--+--I*d-+--Os--+
+    |       |      |      |
+LEFT-WALL don't move.v Bullet 
+
+links( s, [ [lwall,val1,Wi], [val1,val2, Id], [val2,val3,Os] ] )
+
+type_of(val1,val)
+
+type_of(val2,val)
+
+type_of(val3,val)
+
+type_of(np1,np)
+
+type_of(vp1,vp)
+
+type_of(vp2,vp)
+
+type_of(s1,s)
+
+value_of(val1, `Don’t’)
+
+value_of(val2, `move’)
+
+value_of(val3, `Bullet’)
+
+
+
+
+Send Bullet to Boston
+
+Found 1 linkage (1 with no P.P. violations)
+  Unique linkage. cost vector = (UNUSED=0 DIS=0 AND=0 LEN=5)
+
+             +----MVp----+     
+    +---Wi---+--Os--+    +-Js-+
+    |        |      |    |    |
+LEFT-WALL send.v Bullet to Boston 
+
+Constituent tree:
+
+(S (VP Send
+       (NP Bullet)
+       (PP to
+           (NP Boston))))
+

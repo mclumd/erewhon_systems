@@ -1,0 +1,4 @@
+17-09-2009
+==========
+Getting an Alfred prompt: try running rui, rac and rc or try running runalma, runcarne, and runparser.
+To get an alma prompt, do: alma run false keyboard true

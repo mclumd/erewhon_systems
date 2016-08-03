@@ -1,0 +1,59 @@
+isa(domain, 'house').
+
+isa(domain, 'chess').
+isa(position, 'a1').
+isa(position, 'a2').
+isa(position, 'a3').
+isa(position, 'a4').
+isa(position, 'a5').
+isa(position, 'a6').
+isa(position, 'a7').
+isa(position, 'a8').
+isa(position, 'b1').
+isa(position, 'b2').
+isa(position, 'b5').
+
+
+isa(end, 'to').
+
+isa(domain, 'draughts').
+
+isa(domain, 'popkorn').
+isa(domain, 'restaurant').
+
+isa(domain, 'trains').
+isa(train, 'Metroliner').
+
+isa(train, 'Bullet').
+
+isa(train, 'NorthStar').
+
+isa(city, 'Baltimore').
+
+isa(city, 'Buffalo').
+
+isa(city, 'Richmond').
+
+isa(city, 'Pittsburgh').
+
+isa(city, 'Washington').
+
+isa(city, 'Newark').
+
+isa(city, 'Atlanta').
+
+isa(start, 'from').
+
+isa(domain, 'movies').
+
+isa(domain, 'universal').
+
+
+
+
+
+
+
+
+
+
