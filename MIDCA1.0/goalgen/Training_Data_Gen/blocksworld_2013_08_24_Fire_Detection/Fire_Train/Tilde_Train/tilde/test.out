@@ -1,0 +1,165 @@
+/** -------------------------------------------------
+ ** Algorithm:   Tilde
+ ** Output type: out
+ ** Date:        8/25/2013 13:34:48
+ ** ACE version: 1.2.20
+ ** Hardware:    Fonar : x86_64 running Linux
+ ** -------------------------------------------------
+ ** Settings:
+ **
+ ** Common ** 
+ *  heuristic : gainratio (default) 
+ *  tilde_mode : classify (default) 
+ *  intra_literal_sharing : yes (default) 
+ *  query_batch_size : default (default) 
+ *  single_query_generation : no (default) 
+ *  inst_generation_prob : 1.0 (default) 
+ *  rmode_inst_generation_prob : 1.0 (default) 
+ *  query_sample_probability : 1.0 (default) 
+ *  query_sample_algo : smart (default) 
+ *  aggregate_refiners : no (default) 
+ *  aggregate_recursion : no (default) 
+ *  aggregate_maxconjuncts : 2 (default) 
+ *  aggregate_lookahead : no (default) 
+ *  aggregate_refinement : no (default) 
+ *  example_cache : 102400 (default) 
+ *  select_root_models : on (default) 
+ *  write_predictions : [] (default) 
+ *  compatibility : ace1.1 (default) 
+ *  max_query_len : inf (default) 
+ *  log_pid : off (default) 
+ *  nsplit_unsorted_fractions : 0 (default) 
+ *  nsplit_sorting : basic (default) 
+ *  nsplit_version : basic (default) 
+ *  nsplit_talking : off (default) 
+ *  discretize : entropy (default) 
+ *  transform_queries : once (default) 
+ *  output_dir : default (default) 
+ *  bg_file : default (default) 
+ *  kb_file : default (default) 
+ *  randomise : none (default) 
+ *  report_timings : off (default) 
+ *  default_prefix : off (default) 
+ *  default_min : 1 (default) 
+ *  default_preprocessing : off (default) 
+ *  mi_distance_maxsample : 100 (default) 
+ *  language_warnings : on (default) 
+ *  expert_implicit_language : off (default) 
+ *  granularity : 10 (default) 
+ *  leave_out : false (default) 
+ *  classes : [scen_001,scen_002] 
+ *  use_packs : ilp (default) 
+ *  outerloop : queries (default) 
+ *  talking : 3 (default) 
+ *  load : examples 
+ ** Tilde ** 
+ *  combining_rules_EMiters : 10 (default) 
+ *  combining_rules_EMruns : 5 (default) 
+ *  combining_rules : off (default) 
+ *  write_ensemble_models : [] (default) 
+ *  tilde_maxdepth : inf (default) 
+ *  exhaustive_lookahead : 0 (default) 
+ *  query_length_bias : short (default) 
+ *  special_min : 0.0 (default) 
+ *  out_of_bag : no (default) 
+ *  roulette_wheel_selection : no (default) 
+ *  tilde_rst_optimization : no (default) 
+ *  repeat_exec_time : 1 (default) 
+ *  combination_rule : sum (default) 
+ *  show_averages : 1 (default) 
+ *  classify_mode : 0 (default) 
+ *  complexity_penalty : 1.0 (default) 
+ *  precompute : [] (default) 
+ *  resume : off (default) 
+ *  m_estimate : none (default) 
+ *  output_options : [c45,prolog] (default) 
+ *  prune_rules : false (default) 
+ *  confidence_level : 0.25 (default) 
+ *  random_test_set : 0 (default) 
+ *  random_validation_set : 0 (default) 
+ *  stopping_criterion : mincases (default) 
+ *  pruning : c45 (default) 
+ *  discretization : none (default) 
+ *  multiscore_2 : off (default) 
+ *  multiscore : off (default) 
+ *  sampling_strategy : fixed(1000) (default) 
+ *  max_querytime : 100 (default) 
+ *  accuracy : 1.0 (default) 
+ *  tilde_test_eval_model : std (default) 
+ *  minimal_cases : 2 (default) 
+ *  ftest : 0.05 (default) 
+ *  tilde_version : 3.0 (default) 
+ ************** 
+ ** Language:
+ **
+ ** WARMODE BIAS ** 
+ ** RMODE BIAS ** 
+ *  rmode(clear(+-A)) 
+ *  rmode(table(+-A)) 
+ *  rmode(triangle(+-A)) 
+ *  rmode(square(+-A)) 
+ *  rmode(on(+-A,+-B)) 
+ *  rmode(onfire(+-A)) 
+ *  max_lookahead(4) 
+ *  lookahead(on(A,B),clear(A)) 
+ *  lookahead(on(A,B),clear(B)) 
+ *  lookahead(on(A,B),table(A)) 
+ *  lookahead(on(A,B),table(B)) 
+ *  lookahead(on(A,B),triangle(A)) 
+ *  lookahead(on(A,B),triangle(B)) 
+ *  lookahead(on(A,B),square(A)) 
+ *  lookahead(on(A,B),square(B)) 
+ *  lookahead(on(A,B),onfire(A)) 
+ *  lookahead(on(A,B),onfire(B)) 
+ *  lookahead(clear(A),on(A,B)) 
+ *  lookahead(triangle(A),on(A,B)) 
+ *  lookahead(square(A),on(A,B)) 
+ *  lookahead(table(A),on(A,B)) 
+ *  lookahead(onfire(A),on(A,B)) 
+ *  lookahead(clear(A),on(B,A)) 
+ *  lookahead(triangle(A),on(B,A)) 
+ *  lookahead(square(A),on(B,A)) 
+ *  lookahead(table(A),on(B,A)) 
+ *  lookahead(onfire(A),on(B,A)) 
+ *  lookahead(on(A,B),on(B,C)) 
+ *  typed_language(no) 
+ ******************** 
+ **/
+
+Average discretization time: 0.0
+Average induction time: 0.46
+
+Model:
+    Complexity: 1.0 nodes, 1.0 literals
+    C4.5 error estimate: 2.0, relative: 0.5
+Training:
+    Number of examples: 4
+
+    REAL\PRED | scen_001  scen_002  
+    ----------------------------------------------
+    scen_001  | 2         0         | 2
+    scen_002  | 0         2         | 2
+    ----------------------------------------------
+              | 2         2         | 4
+
+    Accuracy: 1.0 (stderr: 0.0, default: 0.5)
+    Cramer's coefficient: 1.0
+    Class: scen_001: TP = 1.0, FP = 0.0
+Testing:
+    No examples available.
+
+
+Compact notation of tree:
+
+onfire(-A) ? 
++--yes: [scen_001] 2.0 [[scen_001:2.0,scen_002:0.0]]
++--no:  [scen_002] 2.0 [[scen_001:0.0,scen_002:2.0]]
+
+Equivalent prolog program:
+
+class([scen_001]) :- onfire(A), !.
+% 2.0/2.0=1.0
+class([scen_002]).
+% 2.0/2.0=1.0
+
+

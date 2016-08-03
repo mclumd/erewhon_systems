@@ -1,0 +1,1 @@
+example_predicates([scen_001/0,on/2,clear/1,triangle/1,square/1,table/1,onfire/1,scen_002/0]).

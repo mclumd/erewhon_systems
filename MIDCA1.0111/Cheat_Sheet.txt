@@ -1,0 +1,12 @@
+export LD_LIBRARY_PATH=/fs/metacog/group/mcl/newmcl/mcl_current:/fs/metacog/group/mcl/newmcl/mcl_current/lib
+export MCL_CONFIG_PATH=/fs/metacog/group/mcl/newmcl/mcl_current/config/
+export MCL=/fs/metacog/group/mcl/newmcl/mcl_current
+export MCL_CORE_PATH=/fs/metacog/group/mcl/newmcl/mcl_current
+
+from home directory where the .clinit.cl file is:
+/usr/local/allegrocommonlisp-8.2/alisp
+
+Then from another termnial, from within the MIDCA directory:
+python2.7 midca_inst.py
+
+

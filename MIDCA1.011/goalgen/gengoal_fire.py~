@@ -1,0 +1,15 @@
+import sys
+sys.path.append("../")
+from utils.block import Block
+from Tree_Fire.Tree import Tree as TreeFire
+import goal
+
+class FireGoalGen:
+
+    def give_goal(self, blockset, socket):
+#        tree = TreeFire()
+#        return tree.givegoal(blockset)
+
+        data = socket.recv(size)
+        print "This was given by Meta-AQUA: ", data
+
