@@ -1,0 +1,7 @@
+# Create a tar file named monitors.tar, do follow symbolic links, and exclude the files
+# and directories named in tar.excluded.files. 
+#
+#Change the "c" option to "u" to update the archive instead of creating a new
+# one.
+
+tar chvfX monitors.tar tar.excluded.files .

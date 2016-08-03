@@ -1,0 +1,27 @@
+To run two copies of PRODIGY do the following:
+
+Start lisp in emacs
+Reply with 6 "y"s, 3 "n"s.
+load /usr/local/users/mcox/Research/PRODIGY/Multi-PROD/accepter.lisp
+
+Start another lisp in another emacs
+Reply with 6 "y"s, 3 "n"s.
+load /usr/local/users/mcox/Research/PRODIGY/Multi-PROD/sharer.lisp
+
+Go back to first lisp
+enter "y"
+Go back to second lisp
+enter "y"
+
+---------------------
+
+The demo uses two domains: accepter and sharer. The differences between them
+are in the arm-empty predicate. The former uses a-arm-empty, whereas the latter
+uses s-arm-empty. This was the quickest way for me to resolve the conflict
+between the different versions. Each require a separate robot arm.
+
+---------------------
+
+NOTE that the number of y and n responses is specific to Cox's .clinit.cl.
+
+Generalize these instructions later.

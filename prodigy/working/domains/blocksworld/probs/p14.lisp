@@ -1,0 +1,32 @@
+(setf (current-problem)
+  (create-problem
+    (name p14)
+    (objects (blockA blockB blockC blockD blockE blockF blockG blockH object))
+    (state
+      (and
+          (holding blockA)
+          (clear blockB)
+          (on-table blockB)
+          (clear blockG)
+          (on-table blockG)
+          (clear blockH)
+          (on-table blockH)
+          (clear blockC)
+          (on-table blockC)
+          (clear blockF)
+          (on-table blockF)
+          (clear blockD)
+          (on-table blockD)
+          (clear blockE)
+          (on-table blockE)
+))
+    (goal
+      (and
+          (clear blockF)
+          (on blockF blockG)
+          (on blockG blockH)
+          (on blockH blockE)
+          (on blockE blockB)
+          (on blockB blockA)
+          (on-table blockA)
+))))

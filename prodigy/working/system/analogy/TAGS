@@ -1,0 +1,399 @@
+
+loader.lisp,340
+(defparameter *analogy-pathname* 19,781
+(defparameter *analogy-binary-pathname*25,880
+(defparameter *analogy-modules*36,1276
+(defun load-analogy-source 52,2020
+(defun analogy-compile-all 66,2362
+(defun load-analogy 75,2582
+(defvar *load-analogy-immediately* 95,3154
+(defun set-for-replay 119,3765
+(defun set-for-replay-ui 135,4318
+
+replay-crs.lisp,0
+
+Development/loadtrace.lisp,62
+(defparameter *load-trace* 24,1140
+(defun loadtrace 31,1467
+
+Development/x-analogy-support.lisp,791
+(defun add-handler 35,1357
+(defun auto-use-cases 56,2032
+(defun simple-retrieval 79,2647
+(defun simple-select-replay-cases 108,3629
+(defun has-open-vars-p 135,4380
+(defun get-object-type-from-header 187,5380
+(defun make-open-var-substitutions 200,5612
+(defun get-instance-from-current-context 235,6385
+(defun find-replay-cases 262,7272
+(defun use-cases 338,9230
+(defun my-ret 354,9555
+(defun assemble-name-list 382,10180
+(defun get-case-name 409,10787
+(defun get-goal-name 417,10929
+(defun same-case-matches-p 430,11331
+(defun scm-p 440,11561
+(defun find-largest-cover-set 462,12430
+(defun higher-match-number-p 502,13630
+(defun adjust-bind-list 537,15404
+(defun collect-goal-ptrs 579,16556
+(defun has-no-var-args-p 601,17170
+(defun skip-if-goal-true-or-loop 613,17568
+
+Development/x-analogy.lisp,38
+(defvar *x-analogy-pathname* 30,1490
+
+Development/x-merge-eval.lisp,252
+(defun togl 21,648
+(defun select-merge 32,986
+(defun set-w 63,1600
+(defun guide1 79,1992
+(defun guide2 89,2302
+(defun guide31 99,2671
+(defun guide32 110,3078
+(defun guide33 122,3485
+(defun run-trial-sets 143,4098
+(defun test-battery 165,4787
+
+Development/x-replay.lisp,136
+(defun process-integrative-merge 80,4166
+(defun replay 156,6630
+(defun replay-body 391,14517
+(defun replay-problem-foolish457,16829
+
+Development/x-retrieval.lisp,502
+(defvar *verbose* 48,2258
+(defvar *x-goal-list* 60,2771
+(defvar *x-case-list* 69,3110
+(defvar *x-bind-list* 78,3449
+(defun analyze-matches 95,4244
+(defvar *x-current-goals* 172,7466
+(defvar *x-case-table* 181,7811
+(defvar *x-goal-table* 190,8153
+(defun assemble-replay-cases 208,9073
+(defun simple-select-replay-cases 357,14400
+(defvar *case-retrieval-list* 370,14917
+(defun simple-retrieval 380,15367
+(defun rename-case 407,16427
+(defun pcons 426,17318
+(defun add-2-bind-list 446,17878
+
+Development/x-step.lisp,162
+(defvar *step-mode* 35,1579
+(defvar *step-limit* 43,1913
+(defvar *step-counter* 51,2250
+(defun get-current-node-and-pause 73,3259
+(defun dump-state 205,7304
+
+retrieval/manual-retrieval.lisp,30
+(defun manual-retrieval 3,70
+
+retrieval/retrieve-test.lisp,883
+(defvar *similarity-metric* 31,1706
+(defvar *cover-matches* 32,1746
+(defvar *case-coverage* 33,1775
+(defun evaluate-similarities 35,1805
+(defun process-if-no-argument-goals115,5087
+(defun match-no-argument-goals 173,7475
+(defun unification-matches 201,8810
+(defun unify-one-goal 243,10177
+(defun unify-bind-pairs 252,10468
+(defun all-type-unifyp 272,11100
+(defun type-unifyp 279,11251
+(defun substitute-bindings 293,11567
+(defun merge-substitutions 311,12137
+(defun insert-bindings 333,12837
+(defun has-variables-p 340,13065
+(defun have-variables-p 344,13157
+(defun get-class-of 405,15473
+(defun foot-print-state-match-value 455,17513
+(defun unify-equal-preds 470,18234
+(defun initial-state-matches 484,18724
+(defun reject-inconsistent 511,19749
+(defun unify-initial-states 520,20013
+(defun rsubstitute-bindings 562,21422
+(defun select-replay-cases 593,22700
+
+retrieval/translation.lisp,47
+(defun footprint-by-goal-to-state-goal 14,597
+
+prodigy-extras/binding-ctrl-rules.lisp,881
+(defun generate-bindings 3,17
+(defun gen-candidate-bindings 33,1105
+(defun scr-select-bindings-analogy 49,1573
+(defun match-select-bindings-rule 59,1949
+(defun fire-select-bindings 65,2155
+(defun scr-reject-bindings-no-new-matcher 74,2466
+(defun scr-reject-bindings 78,2603
+(defun match-reject-bindings 85,2826
+(defun same-bindings 99,3374
+(defun rule-analogy-select-bindings-crs 103,3494
+(defun transform-bindings 108,3691
+(defun analogy-select-bindings-ctrl-rule-p 120,3969
+(defun build-select-binding-all-tests 125,4171
+(defun form-bindings-from-goal 143,4938
+(defun find-current-ops 158,5362
+(defun find-current-ops-2 166,5618
+(defun get-all-simple-tests 186,6267
+(defun get-all-unary-tests 198,6615
+(defun get-all-join-tests 209,6967
+(defun get-all-neg-simple-tests 223,7416
+(defun get-all-neg-unary-tests 231,7671
+(defun get-all-neg-join-tests 241,7987
+
+prodigy-extras/my-comforts.lisp,1103
+(defun goal-from-literal 1,0
+(defun get-visible-goal 7,178
+(defun sv-to-list 17,537
+(defun list-args-names 24,788
+(defun list-args-names 32,959
+(defun show-visible-state 36,1061
+(defun get-visible-inst-op 43,1237
+(defun visible-inst-op-applicable-p 47,1391
+(defun get-type-of-object 58,1789
+(defun get-lits-no-and 73,2451
+(defun literal-to-top-level-goals 85,2892
+(defun binding-node-to-top-level-goals 102,3345
+(defun operator-node-to-top-level-goals 106,3480
+(defun goal-node-to-top-level-goals 110,3615
+(defun applied-op-node-to-top-level-goals 127,4153
+(defun inst-op-to-top-level-goals 131,4304
+(defun literal-to-top-level-goals 140,4573
+(defun flatten-literals 147,4746
+(defun nested-literal-to-top-level-goals 163,5157
+(defun get-current-applicable-inst-op 185,5875
+(defun goal-to-vlist 192,6109
+(defun equal-literals-p 202,6450
+(defun equal-literal-goal-p 206,6566
+(defun equal-instantiated-ops-p 209,6658
+(defun same-values-p 216,7032
+(defvar *class-short-names* 228,7493
+(defun set-class-short-names 230,7527
+(defun get-subtypes 240,7911
+(defun all-types 246,8071
+
+prodigy-extras/operator-inf-rule.lisp,0
+
+prodigy-extras/print-current-search-path.lisp,178
+(defvar *print-search-path-p* 18,579
+(defun main-search 27,825
+(defun begin-node-line 110,3932
+(defun print-current-search-path 134,4612
+(defun get-successful-path 144,5027
+
+replay/interrupt-replay.lisp,140
+(defun link-to-case-prodigy-node 1,0
+(define-prod-handler :always 13,464
+(defun my-show-alts 17,593
+(defun new-style-node-print 38,1315
+
+replay/newest-replay.lisp,3290
+(defvar *guiding-case* 25,980
+(defvar *talk-case-p* 27,1034
+(defvar *debug-case-p* 28,1061
+(defvar	*backtracking* 29,1089
+(defvar	*backtracking-flag* 30,1115
+(defvar	*mark-node* 36,1283
+(defvar *merge-mode* 47,1782
+(defvar *set-of-interacting-goals* 60,2415
+(defvar *nodes-followed* 63,2527
+(defun init-guiding 90,3412
+(defun chop-case 130,4804
+(defun restart-all-cases-ui 148,5392
+(defun find-node-in-case 157,5650
+(defun fresh-start-vars 167,5957
+(defun fresh-clean-begin-cases 180,6261
+(defun fresh-clean-begin-case 186,6433
+(defun number-nodes-plist 197,6733
+(defun recursive-number 201,6877
+(defun begin-case 215,7438
+(defun traverse-ptr-case 228,7820
+(defun recursive-traverse 232,7914
+(defun clean-plist-case 243,8351
+(defun recursive-clean 247,8486
+(defun analogy-get-guidance-goal 282,10266
+(defun negated-case-goal-p 332,11925
+(defun analogy-get-guidance-operator 339,12210
+(defun valid-justification-op-p 385,13993
+(defun analogy-get-guidance-bindings 399,14598
+(defun valid-justification-bindings-p 481,17524
+(defun valid-justification-bindings-p 504,18342
+(defun partially-matched-bindings-p 553,20334
+(defun exact-bindings-p 584,21697
+(defun analogy-decide-apply 603,22328
+(defun set-backtracking-alts 630,23191
+(defun analogy-decide-subgoal 660,24215
+(defun check-case-to-follow 692,25307
+(defun user-selected-case-to-follow 752,27746
+(defun enter-new-case-to-follow 787,29001
+(defun enter-unguided-step-to-follow 800,29508
+(defun process-sequential-merge 829,30712
+(defun process-serial-merge 883,33131
+(defun process-eager-apply-merge 908,34225
+(defun process-after-backtrack 918,34686
+(defun get-cases-and-unguided 948,36014
+(defun case-stopped-at-goal 966,36598
+(defun process-random-merge 979,37091
+(defun process-known-interactions 1024,38792
+(defun goal-interaction 1058,40389
+(defun process-saba-merge 1076,41073
+(defun process-saba-cr-merge 1109,42051
+(defun cases-stopped-at-applicable-ops 1143,43096
+(defun cases-stopped-at-goals 1152,43380
+(defun some-case-stopped-at-goal 1159,43542
+(defun saba-applicable-op 1172,44092
+(defun case-stopped-at-inst-op 1200,45039
+(defun advance-cases-stopped-at-same-applied 1211,45475
+(defun skip-if-goal-true-or-loop 1223,45951
+(defun skip-goal-loop-or-true-in-state 1267,47875
+(defun skip 1281,48430
+(defun advance-case 1300,49199
+(defun select-new-case 1336,50855
+(defun set-back-case 1347,51146
+(defun mark-all-dependent-steps-from-goal 1353,51329
+(defun mark-unusable 1391,52917
+(defun smart-advance 1396,53065
+(defun advance-aux-ptr 1405,53326
+(defun advance-ptr 1409,53456
+(defun active-case-by-name-p 1414,53628
+(defun guided-literal-p 1419,53760
+(defun get-case-from-case-name 1426,53983
+(defun goal-step-still-open-p 1431,54137
+(defun case-goal-left-to-do-p 1436,54324
+(defun gather-current-information 1453,55008
+(defun compute-case-goals-in-cases 1530,57862
+(defun link-new-node-to-case 1549,58762
+(defun backtrack-on-all-cases 1571,59625
+(defun backtrack-on-case 1589,60201
+(defun set-case-pointer 1598,60575
+(defmacro cache-analogy 1619,61217
+(defun expand-binding-or-applied-op 1626,61398
+(defun choose-applicable-op 1657,62403
+(defun maintain-state-and-goals 1714,64495
+(defun update-ui-node 1816,68351
+(defun shuffle 1824,68564
+
+loading/load-case-headers.lisp,217
+(defun load-all-case-headers 9,255
+(defun return-file-strings 13,435
+(defun load-case-headers 19,688
+(defun load-case-header 28,1047
+(defun show-case-header 57,1868
+(defun get-case-header-from-case-name 71,2499
+
+loading/load-cases.lisp,318
+(defvar *replay-cases* 10,356
+(defvar p4::*node-counter*)11,384
+(defun load-cases 24,872
+(defun goals-to-guiding-cases 83,2845
+(defun print-gcs 89,3060
+(defun all-guided-goals-cases 102,3438
+(defun compile-all-case-goals 109,3677
+(defun show-all-goals-cases-hash 133,4502
+(defun reinitialize-my-ptrs 138,4638
+
+storage/access-case.lisp,685
+(defun case-goal-p 3,64
+(defun case-operator-p 6,127
+(defun case-bindings-p 9,198
+(defun case-applied-op-p 12,268
+(defun get-case-node-name 17,407
+(defun get-case-visible-goal 20,476
+(defun get-case-new-visible-goal 23,582
+(defun get-case-visible-operator 27,716
+(defun get-case-visible-bindings 34,972
+(defun get-case-new-visible-bindings 48,1475
+(defun get-case-visible-inst-op 52,1624
+(defun get-case-new-visible-inst-op 56,1767
+(defun get-case-parent-node 60,1920
+(defun get-case-children-nodes 63,1993
+(defun get-case-node-names-goal-introducing-operators 71,2278
+(defun get-case-node-name-introducing-binding-node 76,2467
+(defun apply-case-substitutions 89,2952
+
+storage/case-structures.lisp,59
+(defstruct case-header2,2
+(defstruct guiding-case 12,188
+
+storage/footprint.lisp,271
+(defun extract-applied-op-nodes 4,67
+(defun get-instantiated-effects-applied 13,373
+(defun footprint 26,1019
+(defun footprint-goals 37,1432
+(defun add-conditional-preconds 83,3504
+(defun add-neg-signs 107,4569
+(defun listify 110,4637
+(defun nested-union 123,5193
+
+storage/keep.lisp,105
+(defun create-and-keep8,387
+(defun retrieve-all-same-case 37,1624
+(defun reverse-var-to-insts 48,2014
+
+storage/preconds.lisp,191
+(defvar *loaded-preconds* 1,0
+(defun print-states 8,263
+(defun set-valid-preconds 42,1706
+(defun true-literals 89,4184
+(defun process-effects 140,6480
+(defun k-cache-and-match 211,9531
+
+storage/print-rules.lisp,392
+(defvar *loaded-print-rules* 6,109
+(defun create-literal-list 11,353
+(defun format-literals-to-list 24,821
+(defun create-op-list 71,1997
+(defun create-state-p-mirror 92,2775
+(defun create-satisfy-list 132,3905
+(defun process-all-precond-list 184,5442
+(defun fully-instantiated 281,8774
+(defun process-forall-precond 293,9325
+(defun demorgan 359,12201
+(defun special-list 400,13836
+
+storage/save-case.lisp,866
+(defvar *vars-not-to-use* 2,1
+(defvar *store-state-p* 3,32
+(defvar *max-class-elts* 4,61
+(defun store-result 18,649
+(defun store-solution 30,1255
+(defun store-state-goal 39,1558
+(defun assign-store-vars 48,1765
+(defun get-var-number 74,2785
+(defun print-solution 84,3186
+(defun write-to-file 112,4365
+(defun write-case-header-to-file 146,5962
+(defun list-down 186,7600
+(defun store-applied-op-node 207,8506
+(defun store-application 224,9203
+(defun write-effects 246,10120
+(defun store-operator-node 267,10806
+(defun store-binding-node 278,11307
+(defun store-goal-node 291,11942
+(defun store-instantiated-op 317,13171
+(defun write-ins-op-values 339,14190
+(defun print-num-indent-spaces 351,14712
+(defun write-preconds 358,14866
+(defun write-literal 400,16246
+(defun scan-list-write-node 407,16525
+(defun generate-additional-objects 413,16735
+
+storage/store.lisp,177
+(defun store-case 23,922
+(defun get-default-case-name 37,1500
+(defun get-default-case-dir-name 51,1849
+(defun get-non-static-objects 63,2132
+(defun go-through-case 66,2206
+
+tcl/load-cases-tcl.lisp,86
+(defun load-cases-tcl 6,183
+(defun show-case-tcl 19,552
+(defun unmark-case 51,1385
+
+tcl/simul.lisp,122
+(defun simul 1,0
+(defun update 15,343
+(defun test-s 21,483
+(defun text 29,665
+(defun clean 36,826
+(defun end 41,921

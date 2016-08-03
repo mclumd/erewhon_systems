@@ -1,0 +1,75 @@
+Load prodigy as usual.
+The code is in /afs/cs/project/prodigy-1/analogy/
+
+Load the file loader.lisp
+
+(load-analogy-source)  ;;loads all the lisp files (not compiled)
+(analogy-compile-all)
+
+At this point you should have all the files compiled for your machine
+and your Lisp. If there are problems, keep using the source files for 
+now. Otherwise you can load the compiled files by calling
+(load-analogy)
+
+Now the system is ready to run Prodigy in its usual way and cases can
+be stored and retrieved. To do analogical replay, a few other things
+need to be done (see below). 
+
+To store and retrieve cases, you need to create first two directories,
+in the subdirectory probs of the domain. Let arpi be the name of the 
+domain directory. The two directories are arpi/probs/cases/ and
+arpi/probs/cases/headers/
+
+To store a case:
+
+Load a domain, e.g. arpi
+Run a problem, e.g. hawk.lisp
+At the end of the run, call:
+(store-case)
+The case is stored in the file arpi/probs/cases/case-hawk.lisp
+and the case header is stored in arpi/probs/cases/headers/case-hawk.lisp
+
+A library of cases can be accumulated like this.
+
+To retrieve similar cases:
+
+Load the domain, e.g., arpi
+Load the new problem, e.g. new-hawk.lisp
+(problem 'new-hawk)
+
+Load the case headers of all the cases that are candidate analogs.
+(load-case-headers "case-hawk" "case-another-hawk" ....)
+All the case names entered need to be in the headers directory.
+We can write a function that load all the files present in the headers
+directory. I will also extend the implementation to use the goal hash 
+tables, and the initial state discrimination networks.
+
+After the headers are loaded, the similarities between the new prolem
+and the candidate analogs can be evaluated by calling, for example:
+(evaluate-similarities :max-goals 4) 
+
+where we specify that 4 is the maximum number of goals that a case
+will cover (the default is 2, the maximum should be the number of
+goals in the new problem; will still need to work on getting the right
+number of goals here from the maximum number of goal interactions
+seen).
+
+evaluate-similarities sets two global variables, *case-coverage*
+and *cover-matches*. These need to be used to create the variable 
+*replay-cases* with the list of cases and substitutions to be used at
+replay time.
+
+To replay a set of cases: I WILL NEED TO EXPLAIN THIS TO YOU ONLINE.
+
+Load a domain with the analogy replay rules, replay-crs.lisp
+Load the new problem to be solved. 
+Load the similar cases in *replay-cases*
+(set-for-replay)
+(init-guiding)
+(run)
+
+Let's see if you can get the code to load, compile, and let's see if
+you can successfully store cases and evaluate-similarities for new 
+problems. We will proceed from there.
+
+

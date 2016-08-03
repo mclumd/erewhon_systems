@@ -1,0 +1,1 @@
+etags --include=./system/planner/TAGS --include=./system/analogy/TAGS --include=./system/ui/TAGS --include=./system/monitors/TAGS --include=./system/jade/TAGS --include=./system/customizations/TAGS --output=TAGS.system *.lisp

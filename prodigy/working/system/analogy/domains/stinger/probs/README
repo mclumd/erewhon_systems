@@ -1,0 +1,22 @@
+Not all the problems in this directory work. I'll update this
+list as I test them out...
+
+ * base-world.lisp		-  
+ * big-world.lisp		- 
+ * cases			- 
+ * crazy.lisp			- 
+ * domestic-conference.lisp	- 
+ * easy-conference.lisp		- 
+ * foreign-conference.lisp	- 
+ * foreign-vacation.lisp	- 
+ * home-wrecker.lisp		- 
+ * mutant-conference.lisp	- 
+ * nightmare-conference.lisp	- 
+ * nightold.lisp		- 
+ * not-stupid.lisp		- 
+ * p-crazy.lisp			- 
+ * parsimonious.lisp		- 
+ * small-world.lisp		- 
+ * transport-arms.lisp          - works
+ * washington.lisp		- 
+ * washington-conference.lisp   - works

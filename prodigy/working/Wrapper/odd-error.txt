@@ -1,0 +1,949 @@
+USER(5): (Prodigy/P4P t)
+; Loading /usr/local/mcox/Research/ABMIC/Boris/domains/windows/functions.lisp
+; Loading /usr/local/mcox/Research/ABMIC/Boris/domains/windows/domain.lisp
+Properties of 1377 symbols removed.
+Reading Meta predicate: current-operator
+Reading Meta predicate: type-of-object-gen
+Reading Meta predicate: true-in-state
+Reading Meta predicate: candidate-operator
+Reading Meta predicate: current-goal
+Reading Meta predicate: false-in-state-forall-values
+Reading Meta predicate: is-empty
+Running load-domain.
+; Loading /usr/local/mcox/Research/ABMIC/Boris/domains/windows/probs/p4p-init.lisp
+
+Initializing by creating ready2.txt
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON VIEW_WINDOW SCR) (ON USER_INTERFACE_FOR_PRODIGY SCR) (ICON LOAD_WINDOW)
+             (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY) (CLICKED-BUTTON VIEW_DOMAIN) (CLICKED-BUTTON LOAD)
+             (ICONIFIED LOAD_WINDOW) (ON-TOP VIEW_WINDOW) (HAS-FUNCTION EMACS RUNPRODIGY)
+             (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY) (HAS-FUNCTION VIEW_WINDOW INPUT2USER)
+             (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY) (IN VIEW_WINDOW A1)
+             (IN USER_INTERFACE_FOR_PRODIGY A1) (IN LOAD_WINDOW A1) (IS-EMPTY VIEW_WINDOW))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN ALERT A_SIMPLE_FRAME LOAD VIEW_DOMAIN CLOSE) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating object SCR of type SCREEN
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+
+Predicate HAS-FUNCTION is a new static predicate
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (A (ON USER_INTERFACE_FOR_PRODIGY SCR))
+
+Adding new literal (ON USER_INTERFACE_FOR_PRODIGY SCR)
+
+each-change: (A (IN USER_INTERFACE_FOR_PRODIGY A1))
+
+Adding new literal (IN USER_INTERFACE_FOR_PRODIGY A1)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE A (IN USER_INTERFACE_FOR_PRODIGY A1))
+
+New problem: #<PROB: PROD-FORMAT.35>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON USER_INTERFACE_FOR_PRODIGY SCR))
+
+New problem: #<PROB: PROD-FORMAT.36>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+  6   n6 infer-no-clutter ...no choices for bindings (I tried)
+INPUT is t
+
+New problem: #<PROB: PROD-FORMAT.37>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON USER_INTERFACE_FOR_PRODIGY SCR) (ON-TOP LOAD_WINDOW)
+             (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY) (HAS-FUNCTION VIEW_WINDOW INPUT2USER)
+             (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY) (HAS-FUNCTION EMACS RUNPRODIGY)
+             (IN USER_INTERFACE_FOR_PRODIGY A1))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (A (ON PORTDIALOGBOX SCR))
+
+Adding new literal (ON PORTDIALOGBOX SCR)
+
+each-change: (A (IN PORTDIALOGBOX A4))
+
+Adding new literal (IN PORTDIALOGBOX A4)
+
+each-change: (A (ON-TOP PORTDIALOGBOX))
+
+Adding new literal (ON-TOP PORTDIALOGBOX)
+
+each-change: (D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+Deleting new literal (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+
+each-change: (D (ON-TOP PORTDIALOGBOX))
+
+Deleting new literal (ON-TOP PORTDIALOGBOX)
+
+each-change: (D (IN PORTDIALOGBOX A4))
+
+Deleting new literal (IN PORTDIALOGBOX A4)
+
+each-change: (D (ON PORTDIALOGBOX SCR))
+
+Deleting new literal (ON PORTDIALOGBOX SCR)
+
+each-change: (A (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+Adding new literal (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.38>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON PORTDIALOGBOX SCR))
+
+New problem: #<PROB: PROD-FORMAT.39>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (IN PORTDIALOGBOX A4))
+
+New problem: #<PROB: PROD-FORMAT.40>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP PORTDIALOGBOX))
+
+New problem: #<PROB: PROD-FORMAT.41>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.42>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP PORTDIALOGBOX))
+
+New problem: #<PROB: PROD-FORMAT.43>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (IN PORTDIALOGBOX A4))
+
+New problem: #<PROB: PROD-FORMAT.44>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON PORTDIALOGBOX SCR))
+
+New problem: #<PROB: PROD-FORMAT.45>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+  6   n6 infer-no-clutter ...no choices for bindings (I tried)
+INPUT is t
+
+New problem: #<PROB: PROD-FORMAT.46>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON USER_INTERFACE_FOR_PRODIGY SCR) (ON-TOP USER_INTERFACE_FOR_PRODIGY) (ON-TOP LOAD_WINDOW)
+             (HAS-FUNCTION EMACS RUNPRODIGY) (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY)
+             (HAS-FUNCTION VIEW_WINDOW INPUT2USER) (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY)
+             (IN USER_INTERFACE_FOR_PRODIGY A1))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (A (CLICKED-BUTTON LOAD))
+
+Predicate CLICKED-BUTTON is a new static predicate
+Adding new literal (CLICKED-BUTTON LOAD)
+
+each-change: (A (ON LOAD_WINDOW SCR))
+
+Adding new literal (ON LOAD_WINDOW SCR)
+
+each-change: (A (IN LOAD_WINDOW A1))
+
+Adding new literal (IN LOAD_WINDOW A1)
+
+each-change: (A (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+Adding new literal (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY)
+
+each-change: (D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+Deleting new literal (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+
+each-change: (A (ON-TOP LOAD_WINDOW))
+
+Adding new literal (ON-TOP LOAD_WINDOW)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.47>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.48>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.49>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (IN LOAD_WINDOW A1))
+
+New problem: #<PROB: PROD-FORMAT.50>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON LOAD_WINDOW SCR))
+
+New problem: #<PROB: PROD-FORMAT.51>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (CLICKED-BUTTON LOAD))
+
+New problem: #<PROB: PROD-FORMAT.52>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+Predicate IS-EMPTY is a new static predicate
+INPUT is t
+
+  7   n7 <infer-no-clutter scr>
+INPUT is t
+
+  8     n8 not (on load_window scr)
+INPUT is t
+
+INPUT is t
+
+ 10     n10 <minimize load_window a1 view_domain> [35]
+INPUT is t
+
+ 10     n11 <MINIMIZE LOAD_WINDOW A1 VIEW_DOMAIN>
+ 10     n11 <INFER-NO-CLUTTER SCR>
+Achieved the following top-level goals:
+((CLUTTERLESS SCR))
+
+Solution:
+	<minimize load_window a1 view_domain>
+	<infer-no-clutter scr>
+
+
+New problem: #<PROB: PROD-FORMAT.53>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON USER_INTERFACE_FOR_PRODIGY SCR) (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY)
+             (CLICKED-BUTTON LOAD) (ICONIFIED LOAD_WINDOW) (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY)
+             (HAS-FUNCTION VIEW_WINDOW INPUT2USER) (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY)
+             (HAS-FUNCTION EMACS RUNPRODIGY) (IN LOAD_WINDOW A1) (IN USER_INTERFACE_FOR_PRODIGY A1))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (A (CLICKED-BUTTON VIEW_DOMAIN))
+
+Adding new literal (CLICKED-BUTTON VIEW_DOMAIN)
+
+each-change: (A (IS-EMPTY VIEW_WINDOW))
+
+Adding new literal (IS-EMPTY VIEW_WINDOW)
+
+each-change: (A (ON VIEW_WINDOW SCR))
+
+Adding new literal (ON VIEW_WINDOW SCR)
+
+each-change: (A (IN VIEW_WINDOW A1))
+
+Adding new literal (IN VIEW_WINDOW A1)
+
+each-change: (A (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW))
+
+Adding new literal (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW)
+
+each-change: (D (ON-TOP LOAD_WINDOW))
+
+Deleting new literal (ON-TOP LOAD_WINDOW)
+
+each-change: (A (ON-TOP VIEW_WINDOW))
+
+Adding new literal (ON-TOP VIEW_WINDOW)
+
+each-change: (A (ICON LOAD_WINDOW))
+
+Predicate ICON is a new static predicate
+Adding new literal (ICON LOAD_WINDOW)
+
+each-change: (D (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW))
+
+Deleting new literal (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW)
+
+each-change: (D (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+Deleting new literal (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY)
+
+each-change: (A (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+Adding new literal (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY)
+
+each-change: (D (ON LOAD_WINDOW SCR))
+
+Deleting new literal (ON LOAD_WINDOW SCR)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON LOAD_WINDOW SCR))
+
+New problem: #<PROB: PROD-FORMAT.54>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.55>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP-OF LOAD_WINDOW USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.56>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.57>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ICON LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.58>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP VIEW_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.59>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.60>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP-OF VIEW_WINDOW LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.61>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (IN VIEW_WINDOW A1))
+
+New problem: #<PROB: PROD-FORMAT.62>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON VIEW_WINDOW SCR))
+
+New problem: #<PROB: PROD-FORMAT.63>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (IS-EMPTY VIEW_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.64>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (CLICKED-BUTTON VIEW_DOMAIN))
+
+New problem: #<PROB: PROD-FORMAT.65>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+INPUT is t
+
+  7   n7 <infer-no-clutter scr> [1]
+INPUT is t
+
+Achieved the following top-level goals:
+((CLUTTERLESS SCR))
+
+Solution:
+	<infer-no-clutter scr>
+
+
+New problem: #<PROB: PROD-FORMAT.66>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON VIEW_WINDOW SCR) (ON USER_INTERFACE_FOR_PRODIGY SCR) (ICON LOAD_WINDOW)
+             (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY) (CLICKED-BUTTON VIEW_DOMAIN) (CLICKED-BUTTON LOAD)
+             (ICONIFIED LOAD_WINDOW) (ON-TOP VIEW_WINDOW) (HAS-FUNCTION EMACS RUNPRODIGY)
+             (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY) (HAS-FUNCTION VIEW_WINDOW INPUT2USER)
+             (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY) (IN VIEW_WINDOW A1)
+             (IN USER_INTERFACE_FOR_PRODIGY A1) (IN LOAD_WINDOW A1) (IS-EMPTY VIEW_WINDOW))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (D (ON-TOP VIEW_WINDOW))
+
+Deleting new literal (ON-TOP VIEW_WINDOW)
+
+each-change: (A (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+Adding new literal (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.67>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP VIEW_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.68>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+INPUT is t
+
+  7   n7 <infer-no-clutter scr> [1]
+INPUT is t
+
+Achieved the following top-level goals:
+((CLUTTERLESS SCR))
+
+Solution:
+	<infer-no-clutter scr>
+
+
+New problem: #<PROB: PROD-FORMAT.69>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON USER_INTERFACE_FOR_PRODIGY SCR) (ON VIEW_WINDOW SCR) (ICON LOAD_WINDOW)
+             (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY) (CLICKED-BUTTON LOAD) (CLICKED-BUTTON VIEW_DOMAIN)
+             (ICONIFIED LOAD_WINDOW) (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+             (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY) (HAS-FUNCTION VIEW_WINDOW INPUT2USER)
+             (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY) (HAS-FUNCTION EMACS RUNPRODIGY) (IN LOAD_WINDOW A1)
+             (IN USER_INTERFACE_FOR_PRODIGY A1) (IN VIEW_WINDOW A1) (IS-EMPTY VIEW_WINDOW))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+Deleting new literal (ON-TOP USER_INTERFACE_FOR_PRODIGY)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE D (ON-TOP USER_INTERFACE_FOR_PRODIGY))
+
+New problem: #<PROB: PROD-FORMAT.70>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+INPUT is t
+
+  7   n7 <infer-no-clutter scr> [1]
+INPUT is t
+
+Achieved the following top-level goals:
+((CLUTTERLESS SCR))
+
+Solution:
+	<infer-no-clutter scr>
+
+
+New problem: #<PROB: PROD-FORMAT.71>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating DATA file "/tmp/data.txt"
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+
+Object List: ((EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME LOAD
+               VIEW_DOMAIN WINDOW)
+              (A1 A2 A3 A4 AREA) (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY FUNCTION-VAL) (SCR SCREEN))
+
+State List: ((ON VIEW_WINDOW SCR) (ON USER_INTERFACE_FOR_PRODIGY SCR) (ICON LOAD_WINDOW)
+             (ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY) (CLICKED-BUTTON VIEW_DOMAIN) (CLICKED-BUTTON LOAD)
+             (ICONIFIED LOAD_WINDOW) (HAS-FUNCTION EMACS RUNPRODIGY) (HAS-FUNCTION LOAD_WINDOW INPUT2PRODIGY)
+             (HAS-FUNCTION VIEW_WINDOW INPUT2USER) (HAS-FUNCTION USER_INTERFACE_FOR_PRODIGY CONTROL-DISPLAY)
+             (IN VIEW_WINDOW A1) (IN USER_INTERFACE_FOR_PRODIGY A1) (IN LOAD_WINDOW A1) (IS-EMPTY VIEW_WINDOW))
+
+Goal List: (AND (CLUTTERLESS SCR))
+Creating objects (EMACS USER_INTERFACE_FOR_PRODIGY LOAD_WINDOW EMAIL VIEW_WINDOW PORTDIALOGBOX ALERT A_SIMPLE_FRAME
+                  LOAD VIEW_DOMAIN) of type WINDOW
+Creating objects (A1 A2 A3 A4) of type AREA
+Creating objects (RUNPRODIGY INPUT2PRODIGY INPUT2USER CONTROL-DISPLAY) of type FUNCTION-VAL
+Creating object SCR of type SCREEN
+
+  2 n2 (done)
+Perceiving from environment
+
+Deletting READY1 file
+
+Deleting DATA file
+
+each-change: (D (ICON LOAD_WINDOW))
+
+Deleting new literal (ICON LOAD_WINDOW)
+
+each-change: (A (ON-TOP-OF LOAD_WINDOW VIEW_WINDOW))
+
+Adding new literal (ON-TOP-OF LOAD_WINDOW VIEW_WINDOW)
+
+each-change: (A (ON LOAD_WINDOW SCR))
+
+Adding new literal (ON LOAD_WINDOW SCR)
+
+each-change: (A (ON-TOP LOAD_WINDOW))
+
+Adding new literal (ON-TOP LOAD_WINDOW)
+
+  4 n4 <*finish*>
+INPUT is t
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.72>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON LOAD_WINDOW SCR))
+
+New problem: #<PROB: PROD-FORMAT.73>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE A (ON-TOP-OF LOAD_WINDOW VIEW_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.74>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+Interpret-net-state on signal (:STATE-CHANGE D (ICON LOAD_WINDOW))
+
+New problem: #<PROB: PROD-FORMAT.75>
+Top level goals: 
+((CLUTTERLESS SCR))
+
+
+Creating READY file "/tmp/ready2.txt"
+
+
+  5   n5 (clutterless scr)
+INPUT is t
+
+INPUT is t
+
+  7   n7 <infer-no-clutter scr> [1]
+INPUT is t
+
+  8     n8 not (on view_window scr)
+INPUT is t
+
+INPUT is t
+
+ 10     n10 <kill view_window a1 <w1>> [3]
+INPUT is t
+
+ 11       n11 (on-top view_window)
+INPUT is t
+
+INPUT is t
+
+ 13       n13 <moveoffof load_window a2 view_window> [119]
+INPUT is t
+
+ 14         n14 (clear a2)
+INPUT is t
+
+INPUT is t
+
+ 16         n16 <move load_window a3> [2]
+INPUT is t
+
+ 17           n17 (in load_window a2)
+INPUT is t
+
+INPUT is t
+
+ 19           n19 <move load_window a2> [2]
+INPUT is t
+
+ 20           n20 <MOVE LOAD_WINDOW A2>
+INPUT is t
+
+ 21         n21 <MOVE LOAD_WINDOW A3> [2]
+INPUT is t
+
+ 22         n22 (in load_window a1)
+INPUT is t
+
+INPUT is t
+
+ 24         n24 <move load_window a1> [2]
+INPUT is t
+
+ 25         n25 <MOVE LOAD_WINDOW A1>
+INPUT is t
+o
+ 26       n26 <MOVEOFFOF LOAD_WINDOW A2 VIEW_WINDOW>
+Error: Attempt to access the plist field of (AND WINDOW (DIFF <W> <W1>)) which is not a symbol.
+  [condition type: SIMPLE-ERROR]
+
+Restart actions (select using :continue):
+ 0: Return to Top Level (an "abort" restart)
+[1] USER(6): :zo
+Evaluation stack:
+
+   (ERROR SIMPLE-ERROR :FORMAT-CONTROL "Attempt to access the plist field of ~s which is not a symbol."
+          :FORMAT-ARGUMENTS ((AND WINDOW (DIFF <W> <W1>))))
+ ->(SYS::..CONTEXT-SAVING-RUNTIME-OPERATION)
+   (P4::UNIFYP #<P-O: USER_INTERFACE_FOR_PRODIGY window> <W1> ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   (P4::UNIFY #(#<P-O: VIEW_WINDOW window> #<P-O: USER_INTERFACE_FOR_PRODIGY window>) (<W1>)
+              ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   ((:INTERNAL MATCH-TRUE-IN-STATE 0) (#<P-O: VIEW_WINDOW window> #<P-O: USER_INTERFACE_FOR_PRODIGY window>)
+                                      #<ON-TOP-OF VIEW_WINDOW USER_INTERFACE_FOR_PRODIGY>)
+   (MAPHASH #<Closure (:INTERNAL MATCH-TRUE-IN-STATE 0) @ #xefff8542> #<EQUAL hash-table with 11 entries @ #x8556e12>)
+   (MATCH-TRUE-IN-STATE (ON-TOP-OF #<P-O: VIEW_WINDOW window> <W1>) ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   (TRUE-IN-STATE (ON-TOP-OF #<P-O: VIEW_WINDOW window> <W1>) ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   [... KNOWN ]
+   (P4::GEN-VALUES (ON-TOP-OF <W> <W1>) ((<A> . #<P-O: A1 area>) (<W> . #<P-O: VIEW_WINDOW window>))
+                   ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   (P4::DESCEND-MATCH (ON-TOP-OF <W> <W1>) #<APPLIED-OP-NODE 27 #<KILL [<W> VIEW_WINDOW] [<A> A1] [<W1> ()]>>
+                      ((<A> . #<P-O: A1 area>) (<W> . #<P-O: VIEW_WINDOW window>))
+                      ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+   (P4::CACHE-AND-MATCH (ON-TOP-OF <W> <W1>)
+                        (IF (ON-TOP-OF <W> <W1>) ((ADD (ON-TOP <W1>)) (DEL (ON-TOP-OF <W> <W1>))))
+                        #<APPLIED-OP-NODE 27 #<KILL [<W> VIEW_WINDOW] [<A> A1] [<W1> ()]>>
+                        ((<A> . #<P-O: A1 area>) (<W> . #<P-O: VIEW_WINDOW window>))
+                        ((<W1> (AND WINDOW (DIFF <W> <W1>)))))
+
+... more older frames ...
+[1] USER(7): 

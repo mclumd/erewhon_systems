@@ -1,0 +1,49 @@
+;(:data jer-sen (STACK (<OB> BLOCKA) (<UNDEROB> BLOCKB)))
+;(:data jer-sen (PICK-UP (<OB1> BLOCKB)))
+;(:data jer-sen (STACK (<OB> BLOCKB) (<UNDEROB> BLOCKC)))
+;(:data jer-sen (PICK-UP (<OB1> BLOCKA)))
+;(:data jer-sen (STACK (<OB> BLOCKA) (<UNDEROB> BLOCKB)))
+
+;;; See Potala/Research/PRODIGY on cheops file jer-sen.lisp for latest style.
+
+(
+(:style 
+	(jer-sen
+		 (head-print (lambda (head)
+			       (setf *special-sym-asdfgh*
+				 head)
+			       )
+			     )
+		 (role-print (lambda (role)
+			       (format t 
+				       "~s ~s ~s~%"  
+				       *special-sym-asdfgh*
+				       (second role)
+				       (first role))
+			       )
+			     )
+		 (done       (lambda (dummy)
+			       nil
+			       )
+			     ) 
+		 );jer-sen
+	)
+(:data jer-sen (START (BEFORE LOAD-ROCKET1)(BEFORE LOAD-ROCKET2)))
+(:data jer-sen (LOAD-ROCKET1 (<OBJECT> NEWCASTLE-BROWN-ALE)
+			     (<PLACE> LONDON)
+			     (BEFORE MOVE-ROCKET-FAST)))
+(:data jer-sen (LOAD-ROCKET2 (<OBJECT> KIPPERS)
+			     (<PLACE> LONDON)
+			     (before MOVE-ROCKET-FAST)))
+(:data jer-sen (MOVE-ROCKET-FAST (<ATTR1> V1)
+				 (<ATTR2> V2)
+				 (BEFORE UNLOAD-ROCKET1)
+				 (BEFORE UNLOAD-ROCKET2)
+				 ))
+(:data jer-sen (UNLOAD-ROCKET1 (<OBJECT> KIPPERS)
+			       (<PLACE> PITTSBURGH)
+			       (BEFORE END)))
+(:data jer-sen (UNLOAD-ROCKET2 (<OBJECT> NEWCASTLE-BROWN-ALE) 
+			       (<PLACE> PITTSBURGH)
+			       (BEFORE END)))
+)

@@ -1,0 +1,435 @@
+=====================================================================
+
+        Instructions for downloading and installing Prodigy 4.0.
+
+---------------------------------------------------------------------
+
+1. Downloading
+
+ a) click on system distribution to get the compressed archive file
+    prodigy-latest.tar.gz 
+
+
+2. Installing
+
+ a) uncompress the system distribution file, with gnu "gunzip" on a unix
+    machine: 
+    % gunzip prodigy-latest.tar.gz
+ b) make the directory where you want to install prodigy, and move the
+    source code file there. Eg:
+    % mkdir /usr/local/prodigy/
+    % mv prodigy-latest.tar /usr/local/prodigy/
+ c) untar the source code, with the command "tar" on a unix machine:
+    % tar xvof prodigy-latest.tar
+    This will create the subdirectory working and the subdirectories within
+    working of "system" and "domains". It will install many files in
+    addition. If you are short of space you might want to delete the tar file
+    after this step. The manual is in postscript form within the documents
+    directory. You can print it on a postscript printer or view it with
+    ghostscript: "gs" or "gv" on a unix machine.
+ d) edit the file "loader.lisp" (and "system-loader.lisp" if using the full
+    system) to change the value of *prodigy-base-directory* to point to the new
+    home (eg "/usr/local/prodigy/"). The trailing slash "/" is important.
+    If your version of lisp and operating system are not mentioned in
+    the parameters *binary-pathname*, and *binary-extenstions*, then make 
+    an entry for it:
+    eg #+(and MY-LISP MY-OS) ".strange-binaries/"
+    The trailing slash "/" is important.
+    You can check whether your lisp is supported by examining the list
+    *features* in a lisp session.
+ e) You must also create the subdirectories for the binaries you need.
+    Eg on unix:
+    % mkdir system/.pmax-allegro
+    % mkdir system/.sparc-allegro-4.1
+    (You can have any number of these, but the binaries will take
+     about a megabyte each)
+
+3. Compiling prodigy
+
+ a) In a lisp session, set the variable *load-prodigy-immediately* to
+    nil:
+    > (setf *load-prodigy-immediately* nil)
+ b) load "loader.lisp" (or "system-loader.lisp" if using the full
+    system):
+    > (load "/usr/local/prodigy/working/system-loader.lisp")
+    At the interactive prompts, type y for the first question (Load Prodigy?)
+    and n for the second (Load monitors?).
+ c) call the function load-source
+    > (load-source)
+ d) call the function compile-all
+    > (compile-all)
+    This will probably take a while.
+
+ If you load "loader.lisp" without setting the variable
+ *load-prodigy-immediately* to nil, it will attempt to load prodigy
+ from the compiled files straight away, which is normally what you
+ want.
+
+4. Testing
+
+ Try the following commands in lisp:
+ (domain 'blocksworld)
+ (problem 'suss)
+ (run)
+ 
+ You should see prodigy create a search tree and find a plan to solve
+ Sussman's anomaly.
+
+
+If you have any problems or questions, please send mail to
+prodigy@cs.cmu.edu
+
+
+
+===============================================================================
+
+Prodigy/Analogy
+---------------
+The analogy module is in *system-directory*/analogy. Procedures for running
+Prodigy under analogical mode is contained in the following location:
+*prodigy-root-directory*/documents/analogy.txt. This file also explains many
+details concerning storing plan solutions, retrieving, matching, etc.
+
+
+Compiling Prodigy/Analogy
+-------------------------
+Note that you need to create a directory for the binaries of the analogy
+component and do a compile using a procedure just like you do with the rest of
+the Prodigy code. That is, follow these instructions:
+
+2.'
+e') You must also create the subdirectories for the binaries you need.
+    Eg on unix, create a directory such as
+    *prodigy-root-directory*/system/analogy/.sparc-allegro-4.1
+
+3.'Compiling Prodigy/Analogy
+
+a') In a lisp session, set the variable *load-analogy-immediately* to
+    nil:
+    > (setf *load-analogy-immediately* nil)
+b') load "loader.lisp" after loading Prodigy:
+    > (load "/usr/local/prodigy/working/system/analogy/loader.lisp")
+c') DO NOT HAVE TO call the function load-analogy-source. It is called
+    automatically when *load-analogy-immediately* is nil and loader file
+    loaded. 
+d') call the function analogy-compile-all
+    > (analogy-compile-all)
+
+
+Note also that the existing domains that are available for the analgy module 
+exist in a directory structure separate from the standard domains. These
+domains have case libraries already created. To use these domains, set the
+*world-path* global variable as the test example below shows. 
+
+Documentation exists for running Prodigy/Analogy in the file
+*prodigy-root-directory*/documents/analogy.txt
+
+
+Testing the Analogy Module
+--------------------------
+ Try the following commands in lisp:
+ (load (concatenate 'string 
+                    *system-directory* 
+                    "analogy/loader.lisp"))
+ (setf *world-path* (concatenate 'string 
+                    *system-directory* 
+                    "analogy/domains/"))
+ (domain 'logistics)
+ (replay :domain 'logistics :problem 'p131-new)
+
+NOTE that this problem replicates the example problem from page 131 in Veloso, M.M.
+(1994). Planning and learning by analogical reasoning. Berlin: Springer-Verlag.
+
+
+
+===============================================================================
+
+The Prodigy4.0 Graphical User Interface 2.0
+-------------------------------------------
+There exists a number of additional global variables that need adjustment for
+the graphical user-interface. They are as follows:
+
+file: *prodigy-root-directory*/system/ui/ui-start.tcl
+variables: analogy_setup ui_home world_path def1 def2 user_path
+	canvas_directory
+file: *prodigy-root-directory*/system/ui/example-param-custom.tcl
+variable: alternate_path
+file: *prodigy-root-directory*/system/customizations/overload.tcl
+variables: monitor_directory
+
+file: *prodigy-root-directory*/system/ui/loader.lisp
+variables: *tcl-customizations* *post-tcl-customizations* *tcl-home*
+NOTE that putting a symbolic link from the *prodigy-base-directory* to where
+tcl is actually located should guarantee a robust behavior by the system (i.e.,
+given the current directory is the base dir, in unix a call of ln -s tcl-tk
+<real-tcl-path> )
+
+This last variable points to the binaries for Tcl/Tk. The system expects tcl7.6
+and tk4.2. They are available from Sun's Web page at http://sunscript.sun.com/
+if you do not have them already. The application programs gunzip (unarchiving
+utility), netscape, and ghostview (postscript previewer) should also be
+installed on your system.
+
+files: *system-directory*/ui/socket/Makefile and make.config
+Change the appropriate paths and recompile (if necessary) the C code for the
+socket interface between Lisp and the Tcl/Tk UI.
+
+Finally, the UI uses a publically available DAG drawing program. However, the
+program requires the purchase of a site license. It is only used in two small
+support functions in the UI, so you will be able to do almost everything
+without it. The functions it supports are View Partial Order and View Operator
+Graph from the View pull-down menu.
+
+Documentation exists in
+*prodigy-root-directory*/documents and in
+*system-directory*/ui/documents. 
+
+Running the UI
+--------------
+To run the UI, type (prod-ui) from Lisp.
+
+To run the ui from the Solaris operating system, perform the following 2 lines
+from a terminal window that has wish loaded (wish should be loaded from the
+*prodigy-root-directory*/system/ui/ directory). Then call (prod-ui t) from the
+Prodigy Lisp listener. The the subsequent two call from the terminal screen
+running wish.
+
+source ui-start.tcl
+source example-param-custom.tcl
+(prod-ui t)
+source ui-comm.tcl
+source *prodigy-root-directory*/system/customizations/overload.tcl
+
+(NOTE substitute the value of *prodigy-root-directory* in the above line)
+
+
+Compiling the UI
+--------------
+To compile the UI follow these instructions as above for analogy and Prodigy
+itself. 
+
+2.''
+e'') You must also create the subdirectories for the binaries you need.
+    Eg on unix, create a directory such as
+    *prodigy-root-directory*/system/ui/.sparc-allegro-4.1
+
+3.''Compiling The User Interface
+
+a'') In a lisp session, set the variable *load-ui-immediately* to
+    nil:
+    > (setf *load-ui-immediately* nil)
+b'') load "loader" after loading Prodigy:
+    > (load "/usr/local/prodigy/working/system/ui/loader.lisp")
+c'') DO NOT HAVE TO call the function load-ui-source. It is called
+     automatically when *load-ui-immediately* is nil and loader file loaded.
+d'') call the function ui-compile-all
+    > (ui-compile-all)
+
+
+Testing the UI
+--------------
+Invoke the user interface after the core Prodigy planner has been loaded (see
+"Running the UI" above. The default planning-mode is nonlinear generative
+planning. Click on the Load button and select the blocksworld domain and the
+suss problem. Click the Run button. The behavior should be as was the case when
+testing Ptodigy from Lisp. After successfully running this test, change the
+planning mode to Analogy (This changes PRODIGY from Prodigy4.0 to
+Prodigy/Analogy). Select the Load button and then change the directory to the
+analogy/domains subdir by clicking on the appropriate World Path selection at
+the top of the Load Window. Select the Logistics domain and click on the Load
+Domain button. Then select p131-new.lisp as a current problem. Click on the
+Load Problem button. Select OK. 
+
+Returning to the main UI window, examine the row of Analogy-specific buttons
+along the bottom of the window. Click on Auto Case Retrieval. A new window
+(Match Parameters) will appear. Select OK. The system will then retrieve the
+most similar past case (this should be CASE-P131-OLD). Returning to the main UI
+window, select Replay. The system should indicate those steps in the old case
+that are reused by placing double asterisks alongside entries in the P131 Case
+Window. Note that some steps are skipped because they do not apply to the new
+situation.
+
+Finally in the Goal Tree Window (the window displaying a graphical display of
+goals, operators, and subgoals), move the mouse over the unload-airplane node
+marked with a red "7". A left mouse click should bring up "Search Tree Node 7"
+displaying a binding node data structure. A middle (or right) mouse click on
+it should generate a window displaying the unload-airplane operator
+definition. Click OK on each to remove the windows.
+
+Another test wile in Analogy mode is to Load the rocket domain and problem
+prob2objs-2.lisp. Then click on the Merge Demo analogy-specific button at the
+bottom of the main UI window. This demonstration automatically retrieves two
+past cases to solve a current planning problem. After the retrieval, select the
+Replay button to run the merged replay of the past two cases on the new
+problem. NOTE that the steps from the past cases are interleaved in this
+nonlinear planning problem. That is, rather than using the total solution from one
+case followed by the solution from the other, certain steps are used from one
+followed by other steps from the second, and then additional steps from the
+first case are used. 
+
+Finally, choose the "UI Overview" from the Help pull-down menu to familiarize
+oneself further with the Prodigy4.0 User Interface2.0. Many other help feature
+are contained within this pull-down menu.
+
+
+
+
+===============================================================================
+
+Prodigy/CBMIP
+---------------
+Prodigy/CBMIP is a Case-Based Mixed-Initiative Planneing application that
+supports force deployment planning in a military domain. The released system
+here is but one leg in a triad integration of BBN's ForMAT force deployment
+manager, University of Maryland's Parka high performance knowledge base, and
+PRODIGY. The demonstration simulates the interaction between the three
+subsystems as they would interact over the internet in a real situation. The
+input from ForMAT is simulated by a small program called fake-format. It
+contains the ForMAT history file of a technolgy integration experiment that was
+conducted in Washington DC during August 1998 for the government funding
+agencies.
+
+There exists a number of global variables that need adjustment for
+Prodigy/CBMIP. They are as follows:
+
+file: *system-directory*/jade/watchdog/fake-format.lisp
+variables: *system-directory* *default-prodigy-hostname* (change 2nd var to
+current host machine) 
+
+
+Running the JADE Demo
+---------------------
+The following provides basic instructions concerning the running of
+Prodigy/CBMIP. The demo described here requires a separate terminal window with
+Common Lisp running from the *format-directory* (see loader.lisp in
+*system-directory*/jade for the value). Do not load PRODIGY. Instead, from this
+window type
+
+(load "watchdog/fake-format")
+
+Then from the Prodigy User Interface, choose "JADE - CBMIP" in the Planning
+Mode pull-down menu. Then click on the Run button.
+
+Return to the separate Lisp window and type either 
+(start-fake-format "PRODIGY.jade-demo.fast") for a quick demo or
+(start-fake-format "PRODIGY.jade-demo") for the full demo.
+
+Communication with ForMAT (or fake-format) is performed via the Watchdog
+process. Prodigy/CBMIP's Watchdog connection icon will appear after starting
+fake-format. Unless this step has previously been established by an earlier
+JADE demo run, the user places the icon window on the screen where desired. The
+icon will display a ForMAT logo anytime Prodigy is connected to ForMAT. It will
+display a "P!"  otherwise. As the demo executes, a number of xterm windows will
+appear that display the case-modification suggestion messages sent to
+ForMAT. If desired, any of the xterm can be removed by typing Control-C within
+its window.
+
+At the conclusion of the run you will notice that Prodigy receives a STOP
+signal from ForMAT (this is shown in the Lisp window running Prodigy). The
+fake-format window will write "Disconnecting from Parka server. Fake ForMAT
+finished." when the execution terminates successfully. In addition, the JADE
+connection icon will return to P!. At this time, click on the Flush Socket
+button along the bottom of the main window to clear the socket stream of unused
+data.
+
+Along with the actions presented during the execution, Prodigy writes a history
+file of the interaction to *history-directory* (see front-end.lisp for value)
+called PRODIGY.history.<unique-number>
+
+The following file outlines the semantics of the interaction between
+Prodigy/Anaolgy and ForMAT in the demo that is contained in this distribution:
+*system-directory*/jade/latest-script.txt. See also the netscape page launched
+by clicking on JADE-specific button called Jade Info.
+
+
+Compiling Prodigy/CBMIP
+-------------------------
+To compile the Prodigy/JADE follow these instructions as above.
+
+2.'''
+e''') You must also create the subdirectories for the binaries you need.
+    Eg on unix, create a directory such as
+    *prodigy-root-directory*/system/jade/.sparc-allegro-4.1
+
+3.'''Compiling Prodigy/CBMIP
+
+a''') Change the variable *load-prodigy-front-end* to t in the file
+      system-loader.lisp. Change the variable *load-format-immediately* to nil
+      in file *system-directory*/jade/loader.lisp. (Re)boot Lisp to start
+      prodigy anew.
+b''') Step a''' above will load the Prodigy/CBMIP loader file. It is not
+      necessary to load it again.
+c''') call the function load-jade-source
+    > (load-jade-source)
+d''') call the function jade-compile-all
+    > (jade-compile-all)
+e''') Change the variable *load-format-immediately* to t in file
+      *system-directory*/jade/loader.lisp.  
+
+
+
+
+============================================================
+
+The Rationale-Based Monitors Module
+-----------------------------------
+Instructions to run this module (and implementation notes) are found in file
+*system-directory*/monitors/README. See also Veloso, Pollack, & Cox, 1998 for
+further details. The domains associated most with this mode is goal-trans and
+plan-exec. 
+
+
+Compiling the Monitors Module
+-----------------------------
+To compile the Monitors module follow these instructions as with the other
+modules: 
+
+2.''''
+e'''') You must also create the subdirectories for the binaries you need.
+    E.g., on unix, create a directory such as
+    *prodigy-root-directory*/system/monitors/.sparc-allegro-4.1
+
+3.''''Compiling the Monitors Module
+
+a'''') In a lisp session, set the variable *load-monitors-immediately* to
+    nil:
+    > (setf *load-monitors-immediately* nil)
+b'''') load "loader.lisp" after loading Prodigy:
+    > (load "/usr/local/prodigy/working/system/monitors/loader.lisp")
+c'''') call the function load-monitors-source
+    > (load-monitor-source)
+d'''') call the function monitors-compile-all
+    > (monitors-compile-all)
+
+
+Testing the Monitors Module
+---------------------------
+This test is best viewed with a separate goal tree display in the User
+Interface (select this option from the view pull-down menu of the UI). The
+planning mode should be the default (Prodigy4.0 nonlinear mode), and the answer
+to the second initial question when loading the system (load monitors?) should
+be Y. Load the goal-trans domain and load the problem bridges-town-cntr.lisp. 
+
+Run normally and notice the planning solution. Two bridges must be destroyed to
+acheive the goal (outcome impassable yalu). Now rerun the problem with the
+following changes. See also
+*prodigy-root-directory*/documents/bridges-problem.txt for additional
+parameter settings that should hold.
+
+Choose Rationale-based Monitors from the Control Variables pull-down
+menu. A Sensing Monitors window will appear. Choose True, then OK.
+
+From Lisp type 
+(setf *sequence* '(T T T T T T T T T T T T T T T T T T T T T T T T T T T A
+(ENABLES-MOVEMENT-OVER FORD1 YALU)))
+
+This determines that during planning a new crossing will be sensed in the
+environment. Because not enough resources exist to achieve the top-level
+outcome goal, the system transforms the goal into an easier to achieve state. 
+
+Click on the Run button to see the scenario.
+
+---------------------------------------------------------------------
+NOTE that if you use emacs as a programmig environment for Lisp, the
+TAGS.system file is extremely useful because it indexes every Lisp file in the
+entire system source collection. 

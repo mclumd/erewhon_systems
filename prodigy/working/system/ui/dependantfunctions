@@ -1,0 +1,258 @@
+
+#"all" button
+#view header
+#view case
+
+set case_name "None"
+set numCases 0
+set numSelectedCases 0
+set case_oblique_words {p4::|instantiate-consed-literal|object-name-to-object|find-node|nexus-children|instantiated}
+set case_bold_words {make-binding-node|make-instantiated-op|make-goal-node|make-operator-node|a-or-b-node-instantiated-op|goal|operator|precond}
+set header_bold_words {initial-state|goal|footprint|solution}
+set header_oblique_words {time|nodes|exhaustedp|insts-to-vars}
+
+#============================================================================
+proc saveCase {} {
+  global problem_name world_path domain_name
+
+  puts "saveCase: Not Implemented yet"
+  puts "$world_path$domain_name/probs/cases/case-$problem_name.lisp"
+}
+#============================================================================
+proc loadSelectedCases {} {
+  global problem_name world_path domain_name
+  global numSelectedCases
+  global case_names
+  set case_names ""
+  for {set i 0} {$i < $numSelectedCases} {incr i} {
+    set case_names "[.rfb.sb.chosen.box.lb get $i] $case_names"
+  }
+  foreach case $case_names {
+    puts "loading $world_path$domain_name/probs/cases/$case_name"
+  }
+}
+#============================================================================
+proc retrieveCases {} {
+  puts "retrieveCases: Not Implemented yet"
+
+  retrieveFileBox
+}
+#============================================================================
+proc showAbstractionHierarchy {} {
+  puts "showAbstractionHierarchy: Not Implemented yet"
+}
+#============================================================================
+proc makeAbstractionHierarchy {} {
+  puts "makeAbstractionHierarchy: Not Implemented yet"
+}
+
+#============================================================================
+# UTILITIES
+#============================================================================
+proc selectAllCases {} {
+  global case_name numCases numSelectedCases case_buttons case_index
+
+  set moveindex 0
+  for {set i 0} {$i < $numCases} {incr i} {
+    set topchoice [.rfb.sb.tochoose.box.lb get $moveindex]
+    if { [file extension $topchoice] == ".lisp" } {
+        set case_name $topchoice
+        .rfb.sb.tochoose.box.lb delete $moveindex
+        .rfb.sb.chosen.box.lb insert end $case_name
+        incr numSelectedCases
+    }
+  }
+  set numCases 0
+
+  $case_buttons(viewcase) configure -state normal
+  $case_buttons(viewhead) configure -state normal
+  $case_buttons(ok)       configure -state normal
+  $case_buttons(transSelect) configure -state disabled
+  $case_buttons(transSelectAll) configure -state disabled
+}
+#============================================================================
+proc selectCase {} {
+  global case_name numCases numSelectedCases case_buttons case_index
+  .rfb.sb.tochoose.box.lb delete $case_index
+  .rfb.sb.chosen.box.lb insert end $case_name
+  incr numCases -1
+  incr numSelectedCases
+  $case_buttons(viewcase) configure -state normal
+  $case_buttons(viewhead) configure -state normal
+  $case_buttons(ok)       configure -state normal
+  $case_buttons(transSelect) configure -state disabled
+}
+#============================================================================
+proc unselectCase {} {
+  global case_name numCases numSelectedCases case_buttons case_index
+  .rfb.sb.chosen.box.lb delete $case_index
+  .rfb.sb.tochoose.box.lb insert 0 $case_name
+  incr numCases
+  incr numSelectedCases -1
+  if {$numSelectedCases == 0} {
+    $case_buttons(ok)       configure -state disabled
+  }
+  $case_buttons(transUnselect) configure -state disabled
+  $case_buttons(transSelectAll) configure -state normal
+}
+#============================================================================
+proc clearCases {} {
+  puts "clearing all cases"
+}
+#============================================================================
+proc retrieveFileBox {} {
+  global xdialoggeometry ydialoggeometry
+  global world_path domain_name problem_name
+  global basefont boldfont
+  global case_name case_index
+  global numCases numSelectedCases
+  global case_buttons
+
+  if { [string trimright $world_path "/"] == $world_path } {
+    set world_path "$world_path/"
+  }
+
+  catch {destroy .rfb}
+  toplevel .rfb
+  wm geometry .rfb +$xdialoggeometry+$ydialoggeometry
+  wm title .rfb " Retrieve Cases "
+
+  #===== domain name
+  label .rfb.current -text "Domain: $world_path$domain_name" -font $basefont
+  pack  .rfb.current -side top
+
+  #===== selection box
+  frame .rfb.sb
+  pack  .rfb.sb -side top
+  frame .rfb.sb.tochoose
+  pack  .rfb.sb.tochoose -side left -padx 3
+  label .rfb.sb.tochoose.l -text "Case list" -font $boldfont
+  pack  .rfb.sb.tochoose.l -side top
+  frame .rfb.sb.tochoose.box
+  pack  .rfb.sb.tochoose.box -side top
+  mkScrollSelectionBox .rfb.sb.tochoose.box
+#I changed this to read any files just to see what this function does
+#  set numCases [addFiles .rfb.sb.tochoose.box.lb "$world_path$domain_name/probs/cases/" * ]
+
+  set numCases [addFiles .rfb.sb.tochoose.box.lb "$world_path$domain_name/probs/" * ]
+
+
+  bind .rfb.sb.tochoose.box.lb <Double-Button-1> {
+    set case_name [selection get]
+    set case_index [.rfb.sb.tochoose.box.lb curselection]
+    $case_buttons(transSelect) configure -state normal
+    $case_buttons(transUnselect) configure -state disabled
+  }
+
+  frame .rfb.sb.transfer
+  pack  .rfb.sb.transfer -side left -padx 5
+  button .rfb.sb.transfer.sel -text " >> " -font $boldfont -command {
+    selectCase
+  }
+  button .rfb.sb.transfer.unsel -text " << " -font $boldfont -command {
+    unselectCase
+  }
+  button .rfb.sb.transfer.selall -text " all >> " -font $boldfont -command {
+    selectAllCases
+  }
+  pack .rfb.sb.transfer.sel .rfb.sb.transfer.unsel .rfb.sb.transfer.selall -ipady 2 -ipadx 2 -pady 10 -expand 1
+
+  set case_buttons(transSelectAll) .rfb.sb.transfer.selall
+  set case_buttons(transSelect) .rfb.sb.transfer.sel
+  set case_buttons(transUnselect) .rfb.sb.transfer.unsel
+  $case_buttons(transSelect) configure -state disabled
+  $case_buttons(transUnselect) configure -state disabled
+
+  #===== chosen selection box
+  frame .rfb.sb.chosen
+  pack  .rfb.sb.chosen -side right -padx 3
+  label .rfb.sb.chosen.l -text "Selected Cases" -font $boldfont
+  pack  .rfb.sb.chosen.l -side top
+  frame .rfb.sb.chosen.box
+  pack  .rfb.sb.chosen.box -side bottom
+  mkScrollSelectionBox .rfb.sb.chosen.box
+  bind .rfb.sb.chosen.box.lb <Double-Button-1> {
+    set case_name [selection get]
+    set case_index [.rfb.sb.chosen.box.lb curselection]
+    $case_buttons(transSelect) configure -state disabled
+    $case_buttons(transUnselect) configure -state normal
+  }
+
+  #===== selection entry box
+  frame .rfb.eb
+  pack  .rfb.eb -side top -fill x -pady 10
+  label .rfb.eb.l -text "Case: " -font $basefont
+  entry .rfb.eb.e -width 47 -textvariable case_name -font $basefont -relief sunken -bd 2
+  pack  .rfb.eb.l -side left
+  pack  .rfb.eb.e -side left
+  bind  .rfb.eb.e <Return> {selectCase $case_name}
+  bind  .rfb.eb.e <Tab> {}
+
+  #===== buttons
+  frame .rfb.buts
+  pack  .rfb.buts -side bottom -pady 10
+
+  set but_labels {"View Case" "View Header" "OK" "Cancel"}
+  set but_commands { { viewCase }
+                     { viewHeader }
+                     { loadSelectedCases; destroy .rfb}
+                     { clearCases; destroy .rfb} }
+  set but_infotext { "" "" "" "" }
+  addButtons .rfb .rfb.buts $but_labels $but_commands $but_infotext left
+  set case_buttons(viewcase) .rfb.buts.but0
+  set case_buttons(viewhead) .rfb.buts.but1
+  set case_buttons(ok)       .rfb.buts.but2
+  set case_buttons(cancel)   .rfb.buts.but3
+
+  $case_buttons(ok)       configure -state disabled
+  $case_buttons(viewcase) configure -state disabled
+  $case_buttons(viewhead) configure -state disabled
+}
+#============================================================================
+proc viewHeader {} {
+  global case_name world_path domain_name
+  global header_oblique_words header_bold_words
+
+  set filename "$world_path$domain_name/probs/cases/headers/$case_name"
+  set headerViewCoords "-0+0"
+
+  if {$case_name == "None"} {
+    mkErrorDialog .error {"Please select a case."}
+    return
+  }
+  cd "$world_path$domain_name/probs/cases/headers"
+  if {[file isfile $case_name] == 0} {
+    mkErrorDialog .error "\"The header file `$case_name' is not valid in the domain\" \"`$world_path$domain_name'.\" \"Please select another one.\""
+    return
+  }
+  if { [winfo exists .header] == 1 } {
+    set headerViewCoords [wm geometry .header]
+    destroy .header
+  }
+  displayFile .header " Header: $case_name " $filename \
+            $header_oblique_words $header_bold_words $headerViewCoords
+}
+#============================================================================
+proc viewCase {} {
+  global case_name world_path domain_name
+  global case_oblique_words case_bold_words
+
+  set filename "$world_path$domain_name/probs/cases/$case_name"
+  set caseViewCoords "-0-0"
+
+  if {$case_name == "None"} {
+    mkErrorDialog .error {"Please select a case."}
+    return
+  }
+  cd "$world_path$domain_name/probs/cases/"
+  if {[file isfile $case_name] == 0} {
+    mkErrorDialog .error "\"The case file `$case_name' is not valid\" \"in the domain `$world_path$domain_name'.\" \"Please select another one.\""
+    return
+  }
+  if { [winfo exists .case] == 1 } {
+    set caseViewCoords [wm geometry .case]
+    destroy .case
+  }
+  displayFile .case " Case: $case_name " $filename \
+            $case_oblique_words $case_bold_words $caseViewCoords
+}

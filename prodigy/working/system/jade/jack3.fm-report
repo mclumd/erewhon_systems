@@ -1,0 +1,791 @@
+(
+("dummy" :REPORT-P4-BASIC-REPORT ((:FM "K5B" "JACK3"))
+(("********* K5B (JACK3) *********
+TITLE:   25ID(L)  BRIGADE TASK FORCE (DRB)                           
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: NONE
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: INFANTRY
+          CAPABILITY: FIRE-SUPPORT
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: YUGOSLAVIA
+          EMPLOYMENT-DAYS: NONE
+          FORCE: 25TH-ID-DIVISION-READY-BRIGADE
+          FORCE: BRIGADE-TASK-FORCE
+          FORCE-QUANTITY: |2|
+          FUNCTION: ARTILLERY
+          FUNCTION: AVIATION-FLIGHT-UNITS
+          FUNCTION: BIOMEDICAL-SCIENCES
+          FUNCTION: COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: ENGINEERS-AND-TOPOGRAPHIC-SERVICES
+          FUNCTION: INFANTRY
+          FUNCTION: INTELLIGENCE-COUNTERINTELLIGENCE
+          FUNCTION: INTELLIGENCE-SECURITY-PSYOPS
+          FUNCTION: MAINTENANCE
+          FUNCTION: MILITARY-POLICE-AND-LAW-ENFORCEMENT
+          FUNCTION: MULTIFUNCTION-POSTS-BASES-BARRACKS
+          FUNCTION: SUPPLY
+          GEOGRAPHIC-LOCATION: BOSNIA-AND-HERZEGOVINA
+          GOAL: SUPPRESS-TERRORISM
+          ID: K5B
+          LOCATION: NONE
+          MISSION: NONE
+          MISSION-TYPE: NONE
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: 2-18-1998
+          MODIFIER: AMM
+          OBTAINED-BY: TPFDD
+          OPLAN: JACK3
+          ORIG-FM: K5B
+          ORIG-OPLAN: PLAND
+          ORIGIN: NONE
+          PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-SOURCE: AMC
+          PREDECESSOR: NONE
+          PROVORG: ARMY-COMPONENT-OF-SUPPORTED-CINC
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: ARMY
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: SEND-BRIGADE
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: NONE
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-J2A    : A : 099BB : BN  : INF BN TF  (DRF)               
+      U-J2AB   : A : X99BB : PTY : ARRIVAL AIRFIELD CONTROL GROUP 
+      U-J2B    : A : 099BB : DET : BDE HHC(-)MESS/MNT/SURG        
+      U-J2D    : A : Q99BB : SQD : MIL POL SQD                    
+      U-J2E    : A : 499BB : PLT : ENGINEER PLT(+)                
+      U-J2G    : A : 199BB : BTY : 105 ARTY BTRY (+)              
+      U-J2GB   : A : 199BB : DET : FSO/FIST                       
+      U-J2J    : A : P99BB : SQD : MIL INTEL SGD                  
+      U-J2L    : A : 199BB : SEC : AIR DEF MANPAD                 
+      U-J2N    : A : 099BB : DET : BDE TAC CP                     
+      U-J2NB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-J2P    : A : 099BB : DET : DIV TAC CP                     
+      U-J2R    : A : X99BB : PTY : HHC DISCOM(-)                  
+      U-J2RA   : A : X99BB : PTY : MAIN SPT BN                    
+      U-J2RB   : A : J99BB : PTY : HQ & A CO (FSB)                
+      U-J2RD   : A : F99BB : PTY : MEDICAL CO (FWD SPT BN)        
+      U-J2RF   : A : H99BB : PTY : MAINT CO (FWD SPT BN)          
+      U-J5A    : A : 399BB : DET : AVIATION SPT (DRF)             
+      U-K2A    : A : 099BB : BN  : INF BN (DRF-2)                 
+      U-K2A1   : A : 099BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2A2   : A : 199BB : DET : FSO/FIST                       
+      U-K2B    : A : 499BB : CO  : ENG CO (-)                     
+      U-K2C    : A : 199BB : BTY : ADA BTRY (-)                   
+      U-K2D    : A : Q99BB : PLT : MIL POL PLT (-)                
+      U-K2E    : A : X99BB : HHC : HHC DISCOM (-)                 
+      U-K2EB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2ED   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2EG   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+      U-K2F    : A : P99BB : DET : LONG RANGE SURV DET            
+      U-K2G    : A : 199BB : BN  : ARTY BN (-)                    
+      U-K2H    : A : P99BB : CO  : MIL INTEL CO (-)               
+      U-K2J    : A : 699BB : PLT : SIGNAL PLT                     
+      U-K2JB   : A : 099BB : PTY : DIV TACT CMD CTR (DTAC)        
+      U-K2K    : A : 099BB : BN  : INF BN (DRF-3)                 
+      U-K2KA   : A : 199BB : PTY : FSO/FIST                       
+      U-K2KB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2M    : A : 099BB : HHC : BDE CP                         
+      U-K2MA   : A : 099BB : HHC : HHC BDE (-)                    
+      U-K2P    : A : 499BB : CO  : ENG CO (-) ASSLT/BARRIER       
+      U-K2QA   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2QB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2QC   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+")))
+
+("dummy" :REPORT-P4-BASIC-REPORT ((:FM "NTG" "JACK3"))
+(("********* NTG (JACK3) *********
+TITLE:   FORCE MODULE CA1 - COA#1. NAVAL MISSION ONLY.               
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: NONE
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: NONE
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: COA-1
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: SRI-LANKA
+          EMPLOYMENT-DAYS: NONE
+          FORCE: CARRIER-BATTLE-GROUP
+          FORCE: ARG
+          FORCE: MEU-SOC
+          FORCE: INFANTRY-BATTALION
+          FORCE: MAU
+          FORCE-QUANTITY: NONE
+          FUNCTION: AIR-CONTROL-UNITS
+          FUNCTION: ARTILLERY
+          FUNCTION: AVIATION-FLIGHT-UNITS
+          FUNCTION: AVIATION-SUPPORT
+          FUNCTION: AVIATION-TACTICAL
+          FUNCTION: COMMAND-HQ
+          FUNCTION: ENGINEERS-AND-TOPOGRAPHIC-SERVICES
+          FUNCTION: FLEET-AUXILIARIES
+          FUNCTION: GROUND-COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: INFANTRY
+          FUNCTION: INTELLIGENCE-COUNTERINTELLIGENCE
+          FUNCTION: INTELLIGENCE-SECURITY-PSYOPS
+          FUNCTION: MAINTENANCE
+          FUNCTION: MAJOR-TRANSPORTATION
+          FUNCTION: MARINE-TASK-ORGANIZATION
+          FUNCTION: MEDICAL-SURGICAL-DENTAL
+          FUNCTION: MILITARY-POLICE-AND-LAW-ENFORCEMENT
+          FUNCTION: MISCELLANEOUS-COMBAT
+          FUNCTION: MISCELLANEOUS-COMBAT-SERVICE-SUPPORT
+          FUNCTION: MISCELLANEOUS-COMBAT-SUPPORT
+          FUNCTION: NAVAL-TASK-ORGANIZATION
+          FUNCTION: ORDNANCE-SYSTEMS-ACTIVITIES
+          FUNCTION: SUPPLY-SUPPORT-SERVICES
+          FUNCTION: TRACKED-VEHICLES
+          FUNCTION: WARSHIPS-CRAFT-AND-COMMANDS
+          GEOGRAPHIC-LOCATION: SRI-LANKA
+          GOAL: CONDUCT-NEO
+          GOAL: EVACUATE-NON-COMBATANTS
+          GOAL: PROVIDE-MEDICAL-ASSISTANCE
+          ID: NTG
+          LOCATION: NONE
+          MISSION: NEO-TO-SRI-LANKA
+          MISSION-TYPE: NEO
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: 2-18-1998
+          MODIFIER: AMM
+          OBTAINED-BY: NONE
+          OPLAN: JACK3
+          ORIG-FM: NTG
+          ORIG-OPLAN: PLANN
+          ORIGIN: NONE
+          PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: SEA
+          POD-SOURCE: SUPPORTED-CINC
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: USCINCPAC
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: MARINES
+          SERVICE: NAVY
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: EVACUATE-US-CITIZENS
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: TERRORIST-ATTACK
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-WFB    : N : A99BB : TG  :                                
+      U-WFBA   : N : 5CVCA : USS : CV CARRIER                     
+      U-WFBB   : N : 3LVAB : WG  : COM CARRIER AIR WING           
+      U-WFBBA  : N : 3JF02 : SQ  : FITRON (10) F-14               
+      U-WFBBB  : N : 3JF02 : SQ  : FITRON (10) F-14               
+      U-WFBBD  : N : 3JV06 : SQ  : ATKRON(LIGHT)(12)A7E           
+      U-WFBBF  : N : 3JV06 : SQ  : ATKRON(LIGHT)(12)A7E           
+      U-WFBBG  : N : 3JV08 : SQ  : ATKRON (10)A6E/(4)KA-6D        
+      U-WFBBH  : N : 3JE24 : SQ  : CARAEWRON (4) E-2C             
+      U-WFBBJ  : N : 3JSAA : SQ  : AIRANTISUBRON (10) S-3         
+      U-WFBBK  : N : 3GS59 : SQ  : HELANTISUBRON (6)SH-3H         
+      U-WFBBL  : N : 3JQAA : SQ  : TACELRON (4) EA-6B             
+      U-WFBBM  : N : G6GGP : DET : EOD MOBILE UNIT DET            
+      U-WFCF   : N : 5DDD3 : USS : DD-DESTROYER                   
+      U-WGCE   : N : 5GDE2 : USS : FF-FRIGATE (CLASS 1052)        
+      U-WGCG   : N : 5DDDA : USS : DD-DESTROYER                   
+      U-WGCH   : N : MUAE2 : USS : AE-AMMUNITION SHIP (CLASS 26)  
+      U-WGCJ   : N : 5LKAA : USS : LKA-AMPHIBIOUS CARGO SHIP      
+      U-WHC    : N : A99BB : TF  : AMPHIBIOUS READY GROUP         
+      U-WHCA   : N : 528LS : CMD : COM AMPHIBIOUS SQUADRON        
+      U-WHCB   : N : 5LPHA : USS : LPH-AMPH. ASSAULT (CLASS 2)    
+      U-WHCC   : N : 5LPD1 : USS : LPD-AMPH. TRANSPORT DK.(CL.4)  
+      U-WHCD   : N : 5LSDA : USS : LSD-LANDING SHIP DOCK          
+      U-WHCE   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHCF   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHCG   : N : Y26CD : DET : BEACH GROUP DETACHMENT         
+      U-WHCH   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHDK   : N : MUA0A : USS : AO-OILER                       
+      U-0BA    : M : ACTAA : MAU : MARINE AMPHIBIOUS UNIT         
+      U-0BB    : M : CCVAA : HQ  : HQS MAU CMD ELEMENT            
+      U-0BBA   : M : PGLAA : DMU : DETMAU,SCAMP,HQBN              
+      U-0BC    : M : 999BB : BN  : DET (MAU) RADIO BN             
+      U-0BCA   : M : PUBFE : DMU : DET (MAU), HQSVC CO, RADIO BN  
+      U-0BCB   : M : PUBLE : DMU : DET (MAU), CO B, RADIO BN      
+      U-0BCC   : M : PUBSE : DMU : DET (MAU), CO A, RADIO BN      
+      U-0BCD   : M : PTMEE : DMU : DETMAU FORRECONCPLT            
+      U-0BD    : M : 999BB : MAU : GROUND COMBAT ELEMENT          
+      U-0BE    : M : 999BB : BN  : INFANTRY BATTALION             
+      U-0BEA   : M : 0GTAB : BN  : INFANTRY BATTALION             
+      U-0BEB   : M : 9GSLK : DML :  HQCO,INFBN,INF REGT -MAUDET   
+      U-0BF    : M : 999BB : BTY : ARTILLERY BATTERY              
+      U-0BFA   : M : 9HLEE : DMU :  DETMAU,HQBTRY,ARTY REGT       
+      U-0BFB   : M : 1HPAA : BTY : 155 HOW BTRY D/S TOW M114      
+      U-0BFC   : M : 6GJEC : TM  :  RADAR BCON TM,COMMCO,HQBN     
+      U-0BG    : M : 999BB : PLT : RECON PLATOON                  
+      U-0BGA   : M : PHSEE : DMU : DET (MAU), RECON CO, RECON BN, 
+      U-0BGB   : M : 9HQEE : DMU :  DETMAU,H&SCO,RECONBN          
+      U-0BH    : M : 999BB : PLT : TANK PLATOON                   
+      U-0BHA   : M : 2SSAA : PLT : MEDIUM TANK CO 1ST MARDIV      
+      U-0BHB   : M : 9SNEE : DMU : DETMAU,H&SCO,TANKBN            
+      U-0BHC   : M : 2SSSE : DMU : ANTITANK (TOW) SECTION (MAU)   
+      U-0BJ    : M : 999BB : PLT : ASSAULT AMPHIB PLATOON         
+      U-0BJA   : M : 2TYAB : PLT : ASSAULT AMPHIBIAN PLATOON      
+      U-0BJB   : M : 9TWEE : DMU : DETMAU,H&SCO,ASLTPHIB BN       
+      U-0BK    : M : 999BB : PLT : ENGINEER PLATOON               
+      U-0BKA   : M : 9HULE : DMU : DETMAU,H&SCO,CBTENGRBN         
+      U-0BKB   : M : 4HWLE : DMU :  DETMAU,CBTENGRCO,CBTENGRBN    
+      U-0BKC   : M : UJELE : DMU : DETMAU,TRKCO,HQBN              
+      U-0BL    : M : 999BB : MAU : AVIATION COMBAT ELEMENT        
+      U-0BLA   : M : 3PNGA : SQ  : HMM 12 CH46E                   
+      U-0BLB   : M : 3PLEF : DMU : HMH DET 6 CH53D                
+      U-0BLC   : M : 3PQEF : DMU : HML DET 4 UH1N                 
+      U-0BM    : M : 999BB : MAU : DET AH-1J                      
+      U-0BMA   : M : 3PUEC : DMB : HMA DET 4 AH1W                 
+      U-0BMB   : M : 3PUEC : DMB : HMA DET 4 AH1W                 
+      U-0BMC   : M : 8PCEE : DMU : H+MS MAU DET                   
+      U-0BMD   : M : 8PCEE : DMU : H+MS MAU DET                   
+      U-0BME   : M : 7LREE : DMU : DET,MASS (MINI-DASC) (MAU)     
+      U-0BMF   : M : 3LUEE : DMU : DET (MAU) LAAD BTRY STINGER    
+      U-0BN    : M : 999BB : MAU : MAU SERVICE SUPPORT ELEMENT    
+      U-0BP    : M : 999BB : BN  : H&S BN FSSG                    
+      U-0BPA   : M : 9VDLE : DMU : DETMAU,H&SCO,H&SBN             
+      U-0BPB   : M : 6VFLE : DMU :  DETMAU,COMMCO,H&SBN           
+      U-0BPC   : M : 9VELE : DMU : DETMAU,SERVCO,H&SBN            
+      U-0BPD   : M : QVHLE : DMU : DETMAU,MPCO,H&SBN,FSSG         
+      U-0BPE   : M : 9VJZA : DMU : DETMAU,LANSPTCO,LANSPTBN       
+      U-0BQ    : M : 999BB : BN  : ENGINEER SUP BN                
+      U-0BQA   : M : 9WCEE : DMU : DETMAU,H&SCO,ENGRSPTBN         
+      U-0BQB   : M : 4WFLE : DMU : DET,BULK FUEL CO,ENGR SPT BN,FS
+      U-0BQC   : M : 4WGNA : DMU : MAU DET ENGR CO ENGRSPTBNFSSG  
+      U-0BR    : M : 999BB : DET : DET MAINTENANCE BN             
+      U-0BRA   : M : 9VLLE : DMU : DETMAU,H&SCO,MAINTBN           
+      U-0BRB   : M : HVQLE : DMU : DETMAUMTMAINTCO,MAINTBN        
+      U-0BRC   : M : HVMLE : DMU : DETMAU,ELECMAINTCO,MAINTBN     
+      U-0BRD   : M : HVNLE : DMU : DETMAU,ENGRMAINTCO,MAINTBN     
+      U-0BRE   : M : HVPLE : DMU : DETMAU,ORDMAINTCO,MAINTBN      
+      U-0BS    : M : 999BB : DMU : DET SUPPLY BN                  
+      U-0BSA   : M : 9VUEE : DMU : DETMAU,H&SCO,SUPBN             
+      U-0BSB   : M : JVYEE : DMU : DET MEU,SUPPLY CO,SUPPLY BN,FSS
+      U-0BSC   : M : JVYEE : DMU : DET,SUPPLY CO,SUPPLY BN,FSSG   
+      U-0BSD   : M : JVVEE : DMU : DETMAU,AMMOCO,SUPBN            
+      U-0BT    : M : 999BB : DMU : DET MEDICAL BN                 
+      U-0BTA   : M : FWTEE : DMU : DETMAU,MEDCO,MEDBN             
+      U-0BU    : M : 999BB : DMU : DET DENTAL BATTALION           
+      U-0BUA   : M : FWWEE : DMU : DET,DENTAL CO,FSSG             
+      U-0BV    : M : 999BB : DMU : DET MOTOR TRANSPORT BN         
+      U-0BVA   : M : 9WKEE : DMU : DETMAU,H&SCO,MTBN              
+      U-0BVB   : M : UWMEE : DMU : DETMAU,TRKCO,MTBN              
+      U-0BVC   : M : UWLLE : DMU : DETMAU,TRANCO,MTBN             
+")))
+
+("dummy" :REPORT-P4-BASIC-REPORT ((:FM "TFS" "JACK3"))
+(("********* TFS (JACK3) *********
+TITLE:   FORCE MODULE TFS-A10, F117 AND F16 C/D TACTICAL FIGHTER SQUA
+FEATURES:
+          AC-QUANTITY: |9|
+          AIRCRAFT-TYPE: A10A
+          AIRCRAFT-TYPE: ELECTRONICS
+          AIRCRAFT-TYPE: F117
+          AIRCRAFT-TYPE: F16
+          AIRCRAFT-TYPE: TACTICAL-FIGHTER
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: COMBAT-FORCES
+          CAPABILITY: TACTICAL-FIGHTER
+          CHILD: A10
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: KOREA-SOUTH
+          EMPLOYMENT-DAYS: NONE
+          FORCE: A-10A
+          FORCE: F117A
+          FORCE: F-16
+          FORCE: A-10
+          FORCE: TACTICAL-FIGHTER-SQUADRON
+          FORCE-QUANTITY: NONE
+          FUNCTION: MAINTENANCE
+          FUNCTION: MISSION-AIRCRAFT
+          FUNCTION: SUPPLY-SERVICES
+          FUNCTION: TRANSPORTATION
+          FUNCTION: UNIT-HQ
+          GEOGRAPHIC-LOCATION: KOREA-SOUTH
+          GOAL: AIR-DEFENSE
+          GOAL: COMBAT-MISSION-SUPPORT
+          GOAL: DEPLOY-TFS
+          GOAL: ISOLATE-THE-BATTLEFIELD
+          ID: TFS
+          LOCATION: NONE
+          MISSION: SUPPORT-KOREA-FDO
+          MISSION-TYPE: NEO
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: NONE
+          MODIFIER: NONE
+          OBTAINED-BY: NONE
+          OPLAN: JACK3
+          ORIG-FM: TFS
+          ORIG-OPLAN: PLANM
+          ORIGIN: NONE
+          PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-MODE: UNSPECIFIED
+          POD-SOURCE: AMC
+          POD-SOURCE: IN-PLACE
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: COMMANDER-OF-AIR-COMBAT-COMMAND
+          PROVORG: HQ-US-AIR-FORCE
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: AIR-FORCE
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: AIR-BLOCKADE
+          SUBGOAL: DEPLOY-F-16
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: DETER-AGRESSION
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-LAAA   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAB   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAC   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAD   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAE   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAF   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAG   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAH   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAJ   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAK   : F : 3FVAD : SQ  : TFS 24 A010A DEP               
+      U-LAAL   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAAM   : F : HGBAC : ELE : MMS 24 A010A DEP               
+      U-LAAN   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAAP   : F : 9AAGB : HQ  : HQS WING I TFS INDEPENDENT     
+      U-LAAQ   : F : 3DZ99 : NSL : MISC PARENT                    
+      U-LAAR   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAAS   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LAAT   : F : JFAXF : ELE : POL 18 PAA TFS FUELS-LOX PERS  
+      U-LAAU   : F : HGAA2 : ELE : EOD BASIC TEAM 1 W VEHICLE     
+      U-LAAV   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAZ   : F : 3FVAA : SQ  : TFS 24 A010A                   
+      U-LAA0   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAA1   : F : HEABA : ELE : ILM 24 A010A                   
+      U-LAA2   : F : HGBAA : ELE : MMS 24 A010A                   
+      U-LAA3   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAA4   : F : JFAXC : ELE : POL 01 200K BULK STG SYS       
+      U-LAA5   : F : HGAA3 : TM  : EOD PER AUG TEAM 2             
+      U-LAA6   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAA7   : F : HFUE2 : ELE : BDR     A 10 AERO ENGR ELEMENT 
+      U-LAA8   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LDAC   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+      U-LDAD   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+")))
+
+("dummy" :REPORT-P4-BASIC-REPORT ((:FM "A10" "JACK3"))
+(("********* A10 (JACK3) *********
+TITLE:    a10s                                                       
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: A10A
+          AIRCRAFT-TYPE: TACTICAL-FIGHTER
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: NONE
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: KOREA-SOUTH
+          EMPLOYMENT-DAYS: NONE
+          FORCE: NONE
+          FORCE-QUANTITY: NONE
+          FUNCTION: MAINTENANCE
+          FUNCTION: MISSION-AIRCRAFT
+          FUNCTION: TRANSPORTATION
+          GEOGRAPHIC-LOCATION: WORLD
+          GOAL: NONE
+          ID: A10
+          LOCATION: NONE
+          MISSION: NONE
+          MISSION-TYPE: NONE
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: NONE
+          MODIFIER: NONE
+          OBTAINED-BY: NONE
+          OPLAN: JACK3
+          ORIG-FM: NONE
+          ORIG-OPLAN: NONE
+          ORIGIN: NONE
+          PARENT: TFS
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-MODE: UNSPECIFIED
+          POD-SOURCE: AMC
+          POD-SOURCE: IN-PLACE
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: COMMANDER-OF-AIR-COMBAT-COMMAND
+          PROVORG: HQ-US-AIR-FORCE
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: AIR-FORCE
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: NONE
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: NONE
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-LAAA   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAB   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAC   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAD   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAJ   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAK   : F : 3FVAD : SQ  : TFS 24 A010A DEP               
+      U-LAAL   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAAM   : F : HGBAC : ELE : MMS 24 A010A DEP               
+      U-LAAN   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAAR   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAAS   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LAAV   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAZ   : F : 3FVAA : SQ  : TFS 24 A010A                   
+      U-LAA0   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAA1   : F : HEABA : ELE : ILM 24 A010A                   
+      U-LAA2   : F : HGBAA : ELE : MMS 24 A010A                   
+      U-LAA3   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAA6   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAA7   : F : HFUE2 : ELE : BDR     A 10 AERO ENGR ELEMENT 
+      U-LAA8   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+")))
+
+("dummy" :REPORT-P4-BASIC-REPORT ((:FM "T0P" "JACK3"))
+(("********* T0P (JACK3) *********
+TITLE:   top of jack3                                                
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: A10A
+          AIRCRAFT-TYPE: ELECTRONICS
+          AIRCRAFT-TYPE: F117
+          AIRCRAFT-TYPE: F16
+          AIRCRAFT-TYPE: TACTICAL-FIGHTER
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: NONE
+          CHILD: K5B
+          CHILD: NTG
+          CHILD: TFS
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: KOREA-SOUTH
+          DEST-CC: SRI-LANKA
+          DEST-CC: YUGOSLAVIA
+          EMPLOYMENT-DAYS: NONE
+          FORCE: NONE
+          FORCE-QUANTITY: NONE
+          FUNCTION: AIR-CONTROL-UNITS
+          FUNCTION: ARTILLERY
+          FUNCTION: AVIATION-FLIGHT-UNITS
+          FUNCTION: AVIATION-SUPPORT
+          FUNCTION: AVIATION-TACTICAL
+          FUNCTION: BIOMEDICAL-SCIENCES
+          FUNCTION: COMMAND-HQ
+          FUNCTION: COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: ENGINEERS-AND-TOPOGRAPHIC-SERVICES
+          FUNCTION: FLEET-AUXILIARIES
+          FUNCTION: GROUND-COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: INFANTRY
+          FUNCTION: INTELLIGENCE-COUNTERINTELLIGENCE
+          FUNCTION: INTELLIGENCE-SECURITY-PSYOPS
+          FUNCTION: MAINTENANCE
+          FUNCTION: MAJOR-TRANSPORTATION
+          FUNCTION: MARINE-TASK-ORGANIZATION
+          FUNCTION: MEDICAL-SURGICAL-DENTAL
+          FUNCTION: MILITARY-POLICE-AND-LAW-ENFORCEMENT
+          FUNCTION: MISCELLANEOUS-COMBAT
+          FUNCTION: MISCELLANEOUS-COMBAT-SERVICE-SUPPORT
+          FUNCTION: MISCELLANEOUS-COMBAT-SUPPORT
+          FUNCTION: MISSION-AIRCRAFT
+          FUNCTION: MULTIFUNCTION-POSTS-BASES-BARRACKS
+          FUNCTION: NAVAL-TASK-ORGANIZATION
+          FUNCTION: ORDNANCE-SYSTEMS-ACTIVITIES
+          FUNCTION: SUPPLY
+          FUNCTION: SUPPLY-SERVICES
+          FUNCTION: SUPPLY-SUPPORT-SERVICES
+          FUNCTION: TRACKED-VEHICLES
+          FUNCTION: TRANSPORTATION
+          FUNCTION: UNIT-HQ
+          FUNCTION: WARSHIPS-CRAFT-AND-COMMANDS
+          GEOGRAPHIC-LOCATION: WORLD
+          GOAL: NONE
+          ID: T0P
+          LOCATION: NONE
+          MISSION: NONE
+          MISSION-TYPE: NONE
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: NONE
+          MODIFIER: NONE
+          OBTAINED-BY: NONE
+          OPLAN: JACK3
+          ORIG-FM: NONE
+          ORIG-OPLAN: NONE
+          ORIGIN: NONE
+          PARENT: NONE
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-MODE: SEA
+          POD-MODE: UNSPECIFIED
+          POD-SOURCE: AMC
+          POD-SOURCE: IN-PLACE
+          POD-SOURCE: SUPPORTED-CINC
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: ARMY-COMPONENT-OF-SUPPORTED-CINC
+          PROVORG: COMMANDER-OF-AIR-COMBAT-COMMAND
+          PROVORG: HQ-US-AIR-FORCE
+          PROVORG: USCINCPAC
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: AIR-FORCE
+          SERVICE: ARMY
+          SERVICE: MARINES
+          SERVICE: NAVY
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: NONE
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: NONE
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-J2A    : A : 099BB : BN  : INF BN TF  (DRF)               
+      U-J2AB   : A : X99BB : PTY : ARRIVAL AIRFIELD CONTROL GROUP 
+      U-J2B    : A : 099BB : DET : BDE HHC(-)MESS/MNT/SURG        
+      U-J2D    : A : Q99BB : SQD : MIL POL SQD                    
+      U-J2E    : A : 499BB : PLT : ENGINEER PLT(+)                
+      U-J2G    : A : 199BB : BTY : 105 ARTY BTRY (+)              
+      U-J2GB   : A : 199BB : DET : FSO/FIST                       
+      U-J2J    : A : P99BB : SQD : MIL INTEL SGD                  
+      U-J2L    : A : 199BB : SEC : AIR DEF MANPAD                 
+      U-J2N    : A : 099BB : DET : BDE TAC CP                     
+      U-J2NB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-J2P    : A : 099BB : DET : DIV TAC CP                     
+      U-J2R    : A : X99BB : PTY : HHC DISCOM(-)                  
+      U-J2RA   : A : X99BB : PTY : MAIN SPT BN                    
+      U-J2RB   : A : J99BB : PTY : HQ & A CO (FSB)                
+      U-J2RD   : A : F99BB : PTY : MEDICAL CO (FWD SPT BN)        
+      U-J2RF   : A : H99BB : PTY : MAINT CO (FWD SPT BN)          
+      U-J5A    : A : 399BB : DET : AVIATION SPT (DRF)             
+      U-K2A    : A : 099BB : BN  : INF BN (DRF-2)                 
+      U-K2A1   : A : 099BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2A2   : A : 199BB : DET : FSO/FIST                       
+      U-K2B    : A : 499BB : CO  : ENG CO (-)                     
+      U-K2C    : A : 199BB : BTY : ADA BTRY (-)                   
+      U-K2D    : A : Q99BB : PLT : MIL POL PLT (-)                
+      U-K2E    : A : X99BB : HHC : HHC DISCOM (-)                 
+      U-K2EB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2ED   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2EG   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+      U-K2F    : A : P99BB : DET : LONG RANGE SURV DET            
+      U-K2G    : A : 199BB : BN  : ARTY BN (-)                    
+      U-K2H    : A : P99BB : CO  : MIL INTEL CO (-)               
+      U-K2J    : A : 699BB : PLT : SIGNAL PLT                     
+      U-K2JB   : A : 099BB : PTY : DIV TACT CMD CTR (DTAC)        
+      U-K2K    : A : 099BB : BN  : INF BN (DRF-3)                 
+      U-K2KA   : A : 199BB : PTY : FSO/FIST                       
+      U-K2KB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2M    : A : 099BB : HHC : BDE CP                         
+      U-K2MA   : A : 099BB : HHC : HHC BDE (-)                    
+      U-K2P    : A : 499BB : CO  : ENG CO (-) ASSLT/BARRIER       
+      U-K2QA   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2QB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2QC   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+      U-LAAA   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAB   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAC   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAD   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAE   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAF   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAG   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAH   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAJ   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAK   : F : 3FVAD : SQ  : TFS 24 A010A DEP               
+      U-LAAL   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAAM   : F : HGBAC : ELE : MMS 24 A010A DEP               
+      U-LAAN   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAAP   : F : 9AAGB : HQ  : HQS WING I TFS INDEPENDENT     
+      U-LAAQ   : F : 3DZ99 : NSL : MISC PARENT                    
+      U-LAAR   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAAS   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LAAT   : F : JFAXF : ELE : POL 18 PAA TFS FUELS-LOX PERS  
+      U-LAAU   : F : HGAA2 : ELE : EOD BASIC TEAM 1 W VEHICLE     
+      U-LAAV   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAZ   : F : 3FVAA : SQ  : TFS 24 A010A                   
+      U-LAA0   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAA1   : F : HEABA : ELE : ILM 24 A010A                   
+      U-LAA2   : F : HGBAA : ELE : MMS 24 A010A                   
+      U-LAA3   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAA4   : F : JFAXC : ELE : POL 01 200K BULK STG SYS       
+      U-LAA5   : F : HGAA3 : TM  : EOD PER AUG TEAM 2             
+      U-LAA6   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAA7   : F : HFUE2 : ELE : BDR     A 10 AERO ENGR ELEMENT 
+      U-LAA8   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LDAC   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+      U-LDAD   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+      U-WFB    : N : A99BB : TG  :                                
+      U-WFBA   : N : 5CVCA : USS : CV CARRIER                     
+      U-WFBB   : N : 3LVAB : WG  : COM CARRIER AIR WING           
+      U-WFBBA  : N : 3JF02 : SQ  : FITRON (10) F-14               
+      U-WFBBB  : N : 3JF02 : SQ  : FITRON (10) F-14               
+      U-WFBBD  : N : 3JV06 : SQ  : ATKRON(LIGHT)(12)A7E           
+      U-WFBBF  : N : 3JV06 : SQ  : ATKRON(LIGHT)(12)A7E           
+      U-WFBBG  : N : 3JV08 : SQ  : ATKRON (10)A6E/(4)KA-6D        
+      U-WFBBH  : N : 3JE24 : SQ  : CARAEWRON (4) E-2C             
+      U-WFBBJ  : N : 3JSAA : SQ  : AIRANTISUBRON (10) S-3         
+      U-WFBBK  : N : 3GS59 : SQ  : HELANTISUBRON (6)SH-3H         
+      U-WFBBL  : N : 3JQAA : SQ  : TACELRON (4) EA-6B             
+      U-WFBBM  : N : G6GGP : DET : EOD MOBILE UNIT DET            
+      U-WFCF   : N : 5DDD3 : USS : DD-DESTROYER                   
+      U-WGCE   : N : 5GDE2 : USS : FF-FRIGATE (CLASS 1052)        
+      U-WGCG   : N : 5DDDA : USS : DD-DESTROYER                   
+      U-WGCH   : N : MUAE2 : USS : AE-AMMUNITION SHIP (CLASS 26)  
+      U-WGCJ   : N : 5LKAA : USS : LKA-AMPHIBIOUS CARGO SHIP      
+      U-WHC    : N : A99BB : TF  : AMPHIBIOUS READY GROUP         
+      U-WHCA   : N : 528LS : CMD : COM AMPHIBIOUS SQUADRON        
+      U-WHCB   : N : 5LPHA : USS : LPH-AMPH. ASSAULT (CLASS 2)    
+      U-WHCC   : N : 5LPD1 : USS : LPD-AMPH. TRANSPORT DK.(CL.4)  
+      U-WHCD   : N : 5LSDA : USS : LSD-LANDING SHIP DOCK          
+      U-WHCE   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHCF   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHCG   : N : Y26CD : DET : BEACH GROUP DETACHMENT         
+      U-WHCH   : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-WHDK   : N : MUA0A : USS : AO-OILER                       
+      U-0BA    : M : ACTAA : MAU : MARINE AMPHIBIOUS UNIT         
+      U-0BB    : M : CCVAA : HQ  : HQS MAU CMD ELEMENT            
+      U-0BBA   : M : PGLAA : DMU : DETMAU,SCAMP,HQBN              
+      U-0BC    : M : 999BB : BN  : DET (MAU) RADIO BN             
+      U-0BCA   : M : PUBFE : DMU : DET (MAU), HQSVC CO, RADIO BN  
+      U-0BCB   : M : PUBLE : DMU : DET (MAU), CO B, RADIO BN      
+      U-0BCC   : M : PUBSE : DMU : DET (MAU), CO A, RADIO BN      
+      U-0BCD   : M : PTMEE : DMU : DETMAU FORRECONCPLT            
+      U-0BD    : M : 999BB : MAU : GROUND COMBAT ELEMENT          
+      U-0BE    : M : 999BB : BN  : INFANTRY BATTALION             
+      U-0BEA   : M : 0GTAB : BN  : INFANTRY BATTALION             
+      U-0BEB   : M : 9GSLK : DML :  HQCO,INFBN,INF REGT -MAUDET   
+      U-0BF    : M : 999BB : BTY : ARTILLERY BATTERY              
+      U-0BFA   : M : 9HLEE : DMU :  DETMAU,HQBTRY,ARTY REGT       
+      U-0BFB   : M : 1HPAA : BTY : 155 HOW BTRY D/S TOW M114      
+      U-0BFC   : M : 6GJEC : TM  :  RADAR BCON TM,COMMCO,HQBN     
+      U-0BG    : M : 999BB : PLT : RECON PLATOON                  
+      U-0BGA   : M : PHSEE : DMU : DET (MAU), RECON CO, RECON BN, 
+      U-0BGB   : M : 9HQEE : DMU :  DETMAU,H&SCO,RECONBN          
+      U-0BH    : M : 999BB : PLT : TANK PLATOON                   
+      U-0BHA   : M : 2SSAA : PLT : MEDIUM TANK CO 1ST MARDIV      
+      U-0BHB   : M : 9SNEE : DMU : DETMAU,H&SCO,TANKBN            
+      U-0BHC   : M : 2SSSE : DMU : ANTITANK (TOW) SECTION (MAU)   
+      U-0BJ    : M : 999BB : PLT : ASSAULT AMPHIB PLATOON         
+      U-0BJA   : M : 2TYAB : PLT : ASSAULT AMPHIBIAN PLATOON      
+      U-0BJB   : M : 9TWEE : DMU : DETMAU,H&SCO,ASLTPHIB BN       
+      U-0BK    : M : 999BB : PLT : ENGINEER PLATOON               
+      U-0BKA   : M : 9HULE : DMU : DETMAU,H&SCO,CBTENGRBN         
+      U-0BKB   : M : 4HWLE : DMU :  DETMAU,CBTENGRCO,CBTENGRBN    
+      U-0BKC   : M : UJELE : DMU : DETMAU,TRKCO,HQBN              
+      U-0BL    : M : 999BB : MAU : AVIATION COMBAT ELEMENT        
+      U-0BLA   : M : 3PNGA : SQ  : HMM 12 CH46E                   
+      U-0BLB   : M : 3PLEF : DMU : HMH DET 6 CH53D                
+      U-0BLC   : M : 3PQEF : DMU : HML DET 4 UH1N                 
+      U-0BM    : M : 999BB : MAU : DET AH-1J                      
+      U-0BMA   : M : 3PUEC : DMB : HMA DET 4 AH1W                 
+      U-0BMB   : M : 3PUEC : DMB : HMA DET 4 AH1W                 
+      U-0BMC   : M : 8PCEE : DMU : H+MS MAU DET                   
+      U-0BMD   : M : 8PCEE : DMU : H+MS MAU DET                   
+      U-0BME   : M : 7LREE : DMU : DET,MASS (MINI-DASC) (MAU)     
+      U-0BMF   : M : 3LUEE : DMU : DET (MAU) LAAD BTRY STINGER    
+      U-0BN    : M : 999BB : MAU : MAU SERVICE SUPPORT ELEMENT    
+      U-0BP    : M : 999BB : BN  : H&S BN FSSG                    
+      U-0BPA   : M : 9VDLE : DMU : DETMAU,H&SCO,H&SBN             
+      U-0BPB   : M : 6VFLE : DMU :  DETMAU,COMMCO,H&SBN           
+      U-0BPC   : M : 9VELE : DMU : DETMAU,SERVCO,H&SBN            
+      U-0BPD   : M : QVHLE : DMU : DETMAU,MPCO,H&SBN,FSSG         
+      U-0BPE   : M : 9VJZA : DMU : DETMAU,LANSPTCO,LANSPTBN       
+      U-0BQ    : M : 999BB : BN  : ENGINEER SUP BN                
+      U-0BQA   : M : 9WCEE : DMU : DETMAU,H&SCO,ENGRSPTBN         
+      U-0BQB   : M : 4WFLE : DMU : DET,BULK FUEL CO,ENGR SPT BN,FS
+      U-0BQC   : M : 4WGNA : DMU : MAU DET ENGR CO ENGRSPTBNFSSG  
+      U-0BR    : M : 999BB : DET : DET MAINTENANCE BN             
+      U-0BRA   : M : 9VLLE : DMU : DETMAU,H&SCO,MAINTBN           
+      U-0BRB   : M : HVQLE : DMU : DETMAUMTMAINTCO,MAINTBN        
+      U-0BRC   : M : HVMLE : DMU : DETMAU,ELECMAINTCO,MAINTBN     
+      U-0BRD   : M : HVNLE : DMU : DETMAU,ENGRMAINTCO,MAINTBN     
+      U-0BRE   : M : HVPLE : DMU : DETMAU,ORDMAINTCO,MAINTBN      
+      U-0BS    : M : 999BB : DMU : DET SUPPLY BN                  
+      U-0BSA   : M : 9VUEE : DMU : DETMAU,H&SCO,SUPBN             
+      U-0BSB   : M : JVYEE : DMU : DET MEU,SUPPLY CO,SUPPLY BN,FSS
+      U-0BSC   : M : JVYEE : DMU : DET,SUPPLY CO,SUPPLY BN,FSSG   
+      U-0BSD   : M : JVVEE : DMU : DETMAU,AMMOCO,SUPBN            
+      U-0BT    : M : 999BB : DMU : DET MEDICAL BN                 
+      U-0BTA   : M : FWTEE : DMU : DETMAU,MEDCO,MEDBN             
+      U-0BU    : M : 999BB : DMU : DET DENTAL BATTALION           
+      U-0BUA   : M : FWWEE : DMU : DET,DENTAL CO,FSSG             
+      U-0BV    : M : 999BB : DMU : DET MOTOR TRANSPORT BN         
+      U-0BVA   : M : 9WKEE : DMU : DETMAU,H&SCO,MTBN              
+      U-0BVB   : M : UWMEE : DMU : DETMAU,TRKCO,MTBN              
+      U-0BVC   : M : UWLLE : DMU : DETMAU,TRANCO,MTBN             
+")))
+)

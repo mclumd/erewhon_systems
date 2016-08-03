@@ -1,0 +1,10 @@
+THE FILES IN THIS DIRECTORY ARE NOW OBSOLETE. adist6.lisp AND
+atest4.lisp WERE MOVED TO j:/prodigy/working/system/agent/a-distance
+ON metacog.
+
+(compile-file "w:/My Documents/Research/A-distance/adist6.lisp")
+(compile-file "w:/My Documents/Research/A-distance/atest4.lisp")
+
+(load "w:/My Documents/Research/A-distance/adist6")
+(load "w:/My Documents/Research/A-distance/atest4")
+(load "j:/prodigy/working/system/agent/a-distance/data-alt.lisp")

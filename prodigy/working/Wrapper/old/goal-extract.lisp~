@@ -1,0 +1,196 @@
+#| 
+(defparameter *op*
+      '(OPERATOR DEPLOY
+	(params <air-unit> <loc> <airport>)
+	(preconds
+	 ((<air-unit> AIRCRAFT)
+	  (<loc> LOCATION) 
+	  (<airport> AIRPORT))
+	 (and
+	  (loc-at <airport> <loc>)
+	  (airport-secure-at <loc> <airport>)
+	  (is-usable <airport>))
+	 )
+	(effects
+	 ()
+	 ((add  (is-deployed <air-unit> <loc>))))
+	)
+  )
+|#
+
+		 
+
+
+
+
+(defun get-OP-part (op-def part)
+  (cond ((null op-def)
+	 nil)
+	((or (null (first op-def))
+	     (atom (first op-def)))
+	 (get-OP-part (rest op-def) part))
+	((consp (first op-def))
+	 (let ((first-item (first op-def)))
+	 (if (eq part (first first-item))
+	     first-item
+	   (get-OP-part (rest op-def) part))))
+	(t
+	 (format t "ERROR in get-effects")))
+  )
+
+
+
+(defun get-goals (op-def 
+		  &optional 
+		  (add-del-lists
+		   (third (get-OP-part op-def 'effects)))
+		  )
+  (cond ((null add-del-lists)
+	 nil)
+	((eq 'add (first (first add-del-lists)))
+	 (cons (second (first add-del-lists))
+	       (get-goals 
+		op-def
+		(rest add-del-lists))))
+	(t
+	 (get-goals 
+	  op-def
+	  (rest add-del-lists))))
+  )
+
+
+
+;;;
+;;; Returns an association list.
+;;;
+(defun get-vars (op-def
+		 &optional 
+		 (var-list ; both precond vars and effects vars.
+		  (append
+		   (second 
+		    (get-OP-part op-def 'preconds))
+		   (second (get-OP-part op-def 'effects))
+		   )
+		  )
+		 )
+  (cond ((null var-list)
+	 nil)
+	(t
+	  (cons (reduce-spec (first var-list))
+		(get-vars op-def (rest var-list)))
+	  ))
+  
+  
+  )
+
+
+
+;;;
+;;; Returns a dotted pair.
+;;;
+(defun reduce-spec (var)
+  (cond ((atom (second var))
+	 (cons (first var) (second var))
+	 )
+	((and (consp (second var))
+	      (or
+	       (eq 'and (first (second var)))
+	       (eq 'or (first (second var)))))
+	 (cons (first var)
+	       (second (second var)))
+	 )
+	(t
+	 (format t "ERROR with reduce-spec"))
+	)
+  )
+
+
+(defun create-final-goal-list (goal-list var-list)
+  (mapcar #'variablize-goal
+	  goal-list
+	  (make-list (length goal-list)
+		     :initial-element var-list))
+  )
+
+
+(defun variablize-goal (goal var-list)
+  (cons (first goal)
+	(g-substitute 
+	 (rest goal) 
+	 var-list))
+  )
+
+
+;;;
+;;; Takes the goal arguments and returns variablized args.
+;;;
+(defun g-substitute (goal-args var-assoc-list)
+  (cond ((null goal-args)
+	 nil
+	 )
+	(t
+	 (cons (rest (assoc (first goal-args) var-assoc-list))
+	       (g-substitute 
+		(rest goal-args) var-assoc-list))
+	 )
+	)
+  )
+
+
+
+
+(defun generate-all-goals (&optional 
+			   (domain-file-name *domain-file*)
+			   (op-list 
+			    (gen-op-list
+			     domain-file-name))
+			   )
+  (cond ((null op-list)
+	 nil
+	 )
+	(t
+	 (append
+	  (create-final-goal-list 
+	   (get-goals (first op-list))
+	   (get-vars (first op-list)))
+	  (generate-all-goals
+	   domain-file-name
+	   (rest op-list)))
+	 )
+	)
+  )
+
+
+(defvar *end-of-file* (gensym)
+  "Unique end of file character.")
+
+(defun eof-p (x)
+  (eq x *end-of-file*))
+
+
+
+(defun gen-op-list (domain-file-name)
+  (with-open-file
+      (domain-file domain-file-name
+       :direction :input)
+    (do* ((next nil 
+		(read domain-file 
+		      nil 
+		      *end-of-file* 
+		      nil))
+	  (op-list nil (if (and
+			    (consp next)
+			    (eq 'OPERATOR
+				(first next)))
+			   (cons next op-list)
+			 op-list))
+	  )
+	((eof-p next)
+	 op-list)
+      )
+    )
+  )
+
+(defparameter *domain-file*
+    "/nfs/valhalla/users26/cs/mcox/Potala/prodigy/working/domains/goal-trans/domain.lisp"
+  )

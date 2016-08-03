@@ -1,0 +1,2739 @@
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.916
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.183
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.234
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.6
+
+ Solving problem p1-2-3-4
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.566
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.916
+
+ Solving problem p1-2-3-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.917
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+
+ Solving problem p1-2-3-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-2-3-4
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.934
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-4-3
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.517
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.866
+
+ Solving problem p1-2-4-3
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.833
+
+ Solving problem p1-2-4-3
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.917
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+
+ Solving problem p1-2-4-3
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.916
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.516
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.5
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.534
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.6
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.65
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+
+ Solving problem p1-3-2-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.234
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.266
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+
+ Solving problem p1-3-2-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+
+ Solving problem p1-3-2-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+
+ Solving problem p1-3-2-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.5
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.017
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.966
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.984
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-3-4-2
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+
+ Solving problem p1-3-4-2
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+
+ Solving problem p1-3-4-2
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+
+ Solving problem p1-3-4-2
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.316
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.266
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+
+ Solving problem p1-4-2-3
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-4-2-3
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.967
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+
+ Solving problem p1-4-2-3
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-4-2-3
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.584
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.584
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.2
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.333
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p1-4-3-2
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.0
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-4-3-2
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.984
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+
+ Solving problem p1-4-3-2
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+
+ Solving problem p1-4-3-2
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.817
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+
+ Solving problem p2-1-3-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+
+ Solving problem p2-1-3-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p2-1-3-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.966
+
+ Solving problem p2-1-3-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p2-1-3-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+
+ Solving problem p2-1-3-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.317
+
+ Solving problem p2-1-3-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+
+ Solving problem p2-1-3-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.317
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+
+ Solving problem p2-1-3-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.967
+
+ Solving problem p2-1-3-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.934
+
+ Solving problem p2-1-3-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 3.033
+
+ Solving problem p2-1-3-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 3.05
+
+

@@ -1,0 +1,1334 @@
+("3/2/1998: 14:39:36" :SELECT-MENU-ITEM "Set Default FM Features")
+("3/2/1998: 14:39:36" :EDIT-DEFAULT-FEATURES)
+("3/2/1998: 14:39:42" :SELECT-MENU-ITEM "AMM")
+("3/2/1998: 14:39:42" :CHANGE-FEATURE-VALUE (CREATOR AMM) AMM)
+("3/2/1998: 14:39:42" :DELETE-FEATURES ((CREATOR AMM)) :DEFAULT-WINDOW)
+("3/2/1998: 14:39:44" :DELETE-FEATURES ((THEATER NONE)) :DEFAULT-WINDOW)
+("3/2/1998: 14:39:51" :SELECT-MENU-ITEM "THEATER")
+("3/2/1998: 14:39:53" :SELECT-MENU-ITEM "PACOM")
+("3/2/1998: 14:39:53" :ADD-DEFAULT-FM-FEATURE THEATER
+ (:UNRECOGNIZED-OBJECT "#<FEATURE @ #x623cc52>"))
+("3/2/1998: 14:39:57" :SELECT-MENU-ITEM "GEOGRAPHIC-LOCATION")
+("3/2/1998: 14:40:03" :SELECT-MENU-ITEM "    PHILIPPINES")
+("3/2/1998: 14:40:03" :ADD-DEFAULT-FM-FEATURE GEOGRAPHIC-LOCATION
+ (:UNRECOGNIZED-OBJECT "#<FEATURE @ #x62ed202>"))
+("3/2/1998: 14:40:09" :SELECT-MENU-ITEM "AMM")
+("3/2/1998: 14:40:09" :CHANGE-FEATURE-VALUE (CREATOR AMM) AMM)
+("3/2/1998: 14:40:16" :SELECT-MENU-ITEM "MISSION")
+("3/2/1998: 14:40:31" :SELECT-MENU-ITEM "operation-restore-order")
+("3/2/1998: 14:40:31" :ADD-DEFAULT-FM-FEATURE MISSION
+ (:UNRECOGNIZED-OBJECT "#<FEATURE @ #x636feb2>"))
+("3/2/1998: 14:40:34" :SELECT-MENU-ITEM "MISSION-TYPE")
+("3/2/1998: 14:40:36" :SELECT-MENU-ITEM "NEO")
+("3/2/1998: 14:40:36" :ADD-DEFAULT-FM-FEATURE MISSION-TYPE
+ (:UNRECOGNIZED-OBJECT "#<FEATURE @ #x6396522>"))
+("3/2/1998: 14:40:39" :SAVE-DEFAULT-FEATURES
+ ((MISSION-TYPE NEO) (MISSION OPERATION-RESTORE-ORDER)
+  (GEOGRAPHIC-LOCATION PHILIPPINES) (THEATER PACOM) (CREATOR AMM)
+  (CREATING-ORG NONE)))
+("3/2/1998: 14:40:50" :SELECT-MENU-ITEM "planp")
+("3/2/1998: 14:40:50" :SELECT-MENU-ITEM :READ-GUIDANCE "planp")
+("3/2/1998: 14:41:58" :EDIT-GOALS)
+("3/2/1998: 14:42:05" :SELECT-MENU-ITEM "planp")
+("3/2/1998: 14:42:05" :SELECT-MENU-ITEM "Load Goals File"
+ "/disks/4/format-2.0/data/prodigy/planp.plan")
+("3/2/1998: 14:42:32" :EXECUTE-GOAL-QUERY)
+("3/2/1998: 14:42:38" :SAVE-GOALS "execute query, no file"
+ (1 PLANP
+  (:DESCRIPTION
+   "          DAY 21 GUIDANCE (from Commander's Estimate below):
+
+US ASSISTANCE MAY INCLUDE BUT IS NOT LIMITED TO THE FOLLOWING TASKS:
+PROTECT AND DEFEND THE RP STRONG POINTS AND LOCS, CONDUCT NONCOMBATANT
+EVACUATION OPERATIONS OF US AND DESIGNATED THIRD COUNTRY NATIONALS,
+PROVIDE SECURITY OF US MILITARY PERSONNEL OPERATING IN THE RP AND
+ASSIST THE LEGITIMATE GOVERNMENT OF THE RP IN MAINTAINING LAW AND
+ORDER WITHIN THE ISLANDS OF MINDANAO, PALAWAN, AND THE SULU
+ARCHIPELAGO, CONDUCT OTHER MILITARY OPERATIONS AS REQUIRED.
+
+                            COA Direction
+
+1.  (U) COURSES OF ACTION (COA). USCINCPAC HAS DEVELOPED THE FOLLOWING
+COAS:
+
+    A.  (U) COA ONE: NAVAL BLOCKADE OF MINDANAO AND PALAWAN, WITH
+    STRONG AIR COVER.
+
+    B.  (U) COA TWO: FORCED ENTRY AT DAVAO AND ZAMBOANGA TO DESTROY
+    ENEMY CENTERS OF INVASION.
+
+    C.  (U) COA THREE: CONTAINMENT OF ENEMY FORCES BY LANDING AND
+    ATTACK FROM NORTHERN MINDANAO, WITH NAVAL AND AIR BLOCKADE.
+
+2.  (U) DECISION. 
+
+    RECOMMEND COA THREE, WITH COA ONE AS AN ALTERNATE.
+
+
+
+              ORDTYP/ALERTORD/CINCPAC/SCENARIO DAY 22//
+
+
+3.  (U) DEPLOYMENT ORDERS:
+
+    A.  (U) CG 25 ID IS ALERTED TO PREPARE FOR DEPLOYMENT IN SUPPORT
+    OF OPERATION RESTORE ORDER.
+
+    B.  (U) CMDR 354 WG IS ALERTED TO PREPARE FOR DEPLOYMENT IN
+    SUPPORT OF OPERATION RESTORE ORDER.
+
+    C.  (U) COMPHIBRON FIVE AND COMCRUDESGRU 44 ARE AUTHORIZED TO
+    BEGIN DEPLOYMENT IN SUPPORT OF OPERATION RESTORE ORDER.//
+
+
+
+             ORDTYP/EXECUTEORD/CINCPAC/SCENARIO DAY 25//
+
+GENTEXT/MISSION/
+4.  (U) SEE CJCS WARNING ORDER.
+")
+  (:GOALS
+  (87 :DEPLOY-F-16 PLANM
+   ()
+   NIL
+   (85)
+   ((GEOGRAPHIC-LOCATION KOREA-SOUTH) (AC-QUANTITY |9|))
+   )
+  (86 :DEPLOY-TFS PLANM
+   ()
+   NIL
+   (85)
+   ((GEOGRAPHIC-LOCATION KOREA-SOUTH) (AC-QUANTITY |9|)
+    (AIRCRAFT-TYPE A10A))
+   )
+  (85 :DEPLOY-TFS PLANM
+   ()
+   (87 86)
+   NIL
+   ((GEOGRAPHIC-LOCATION KOREA-SOUTH))
+   )
+  (74 :COMBAT-MISSION-SUPPORT PLANM
+   ()
+   NIL
+   NIL
+   ((FORCE 45TH-SUPPORT-GROUP-FORCES) (GEOGRAPHIC-LOCATION ???))
+   )
+  (73 :PROVIDE-MEDICAL-ASSISTANCE PLANM
+   ()
+   NIL
+   NIL
+   ((FORCE 45TH-SUPPORT-GROUP-FORCES) (GEOGRAPHIC-LOCATION ???))
+   )
+  (72 :SUPPORT-NEO PLANM
+   ()
+   NIL
+   NIL
+   ((FORCE 45TH-SUPPORT-GROUP-FORCES) (GEOGRAPHIC-LOCATION ???))
+   )
+  (64 :ISOLATE-THE-BATTLEFIELD PLANM
+   ()
+   (67 66 65)
+   NIL
+   ((GEOGRAPHIC-LOCATION SRI-LANKA))
+   )
+  (65 :AIR-DEFENSE PLANM
+   ()
+   NIL
+   (64)
+   ((FORCE TACTICAL-FIGHTER-SQUADRON) (GEOGRAPHIC-LOCATION SRI-LANKA))
+   )
+  (66 :AIR-BLOCKADE PLANM
+   ()
+   NIL
+   (64)
+   ((FORCE CARRIER-AIR-WING) (GEOGRAPHIC-LOCATION SRI-LANKA))
+   )
+  (67 :NAVAL-BLOCKADE PLANM
+   ()
+   NIL
+   (64)
+   ((GEOGRAPHIC-LOCATION SRI-LANKA) (FORCE CARRIER-BATTLE-GROUP))
+   )
+ )
+  (:GUIDANCE-FILE "planp.guidance")))
+("3/2/1998: 14:45:58" :CREATE-TPFDD "PLXXX" :REVERT)
+("3/2/1998: 14:47:17" :FM-COPY-WINDOW)
+("3/2/1998: 14:47:18" :COPY-FM (:FM "CV2" "PLANM") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((CV2 "CV2")) :NEW-ULN-MAPPING
+ ((17054 "U-NABAA  ") (17053 "U-NABAB  ") (17052 "U-NABAF  ")
+  (17051 "U-NABBA  ") (17050 "U-NABBB  ") (17049 "U-NABBD  ")
+  (17048 "U-NABBF  ") (17047 "U-NABBH  ") (17046 "U-NABBJ  ")
+  (17045 "U-NABBK  ") (17044 "U-NABBM  ") (17043 "U-NABBN  ")
+  (17042 "U-NABBQ  ") (17041 "U-NABCA  ") (17040 "U-NABCB  ")
+  (17039 "U-NABCD  ") (17038 "U-NABCF  ") (17037 "U-NABCG  ")
+  (17036 "U-NABCL  ") (17035 "U-NABCN  ") (17034 "U-NABCS  ")
+  (17033 "U-NABCT  ") (17032 "U-NABEA  ") (17031 "U-NABEB  ")
+  (17030 "U-NABED  ") (17029 "U-NABEF  ") (17028 "U-NABEG  ")
+  (17027 "U-NABEH  ") (17026 "U-NABEJ  ") (17025 "U-NABEK  ")
+  (17024 "U-NABEL  ") (17023 "U-NAMAA  ") (17022 "U-NAMAD  ")
+  (17021 "U-NAMAG  ") (17020 "U-NAMAH  ") (17019 "U-NAMAJ  ")
+  (17018 "U-NAMAK  ") (17017 "U-NAMAM  ") (17016 "U-NAMAN  ")
+  (17015 "U-NAMAQ  ") (17014 "U-NAMAR  ") (17013 "U-NAMAS  ")
+  (17012 "U-NAMAT  ") (17011 "U-NAMAU  ") (17010 "U-NAMAV  ")
+  (17009 "U-NAMAW  ") (17008 "U-NAMGA  ") (17007 "U-NFAA   ")
+  (17006 "U-NFAB   ") (17005 "U-NFAC   ") (17004 "U-NFAD   ")
+  (17003 "U-NFAE   ") (17002 "U-NFBAA01") (17001 "U-NFBAA02")
+  (17000 "U-NFBBA  ") (16999 "U-NFBCE  ") (16998 "U-NFBCG  ")
+  (16997 "U-NFBCL  ") (16996 "U-NFBDA  ") (16995 "U-NFBDB  ")
+  (16994 "U-NFBDD  ") (16993 "U-NFDAB01") (16992 "U-NFDAB02")
+  (16991 "U-NFDAD01") (16990 "U-NFDAD02") (16989 "U-NFDBC  ")
+  (16988 "U-NFDBP  ") (16987 "U-NFDCP  ") (16986 "U-NFDEC  ")
+  (16985 "U-NFDEP  ") (16984 "U-NFDFP  ") (16983 "U-NFEA   ")
+  (16982 "U-NFEB   ") (16981 "U-NFFCP  ") (16980 "U-NFFDA  ")
+  (16979 "U-NFFDB  ") (16978 "U-NFFDD  ") (16977 "U-NFFDE  ")
+  (16976 "U-NFFD1  ") (16975 "U-NFFD2  ") (16974 "U-NFFEA  ")
+  (16973 "U-NFFEE  ") (16972 "U-NFFEP  ") (16971 "U-NFFE2  ")
+  (16970 "U-NFFE3  ") (16969 "U-NFJAP  ") (16968 "U-NFJB   ")
+  (16967 "U-NFJB1  ") (16966 "U-NFJD   ") (16965 "U-NFJE   ")
+  (16964 "U-NFJE1  ") (16963 "U-NFJF   ") (16962 "U-NFJF1  ")
+  (16961 "U-NFJG   ") (16960 "U-NFJGA  ") (16959 "U-NFJG1  ")
+  (16958 "U-NFJH   ") (16957 "U-NFJHA  ") (16956 "U-NFJH1  ")
+  (16955 "U-NFKB   ") (16954 "U-NFKB1  ") (16953 "U-NFKD   ")
+  (16952 "U-NFLA   ") (16951 "U-NFLB   ") (16950 "U-NFLD   ")
+  (16949 "U-NFPA   ") (16948 "U-NFPB   ") (16947 "U-NFPE   ")
+  (16946 "U-NFPF   ") (16945 "U-NFPH   ") (16944 "U-NFPJ   ")
+  (16943 "U-NFPL   ") (16942 "U-NFQAD  ") (16941 "U-NFQAF  ")
+  (16940 "U-NFQAG  ") (16939 "U-NFQBF  ") (16938 "U-NFQCD  ")
+  (16937 "U-NFQDD  ") (16936 "U-NFQFA  ") (16935 "U-NFQFB  ")
+  (16934 "U-NFQFF  ") (16933 "U-NFQFQ  ") (16932 "U-NFQGA  ")
+  (16931 "U-NFQGB  ") (16930 "U-NFRAA  ") (16929 "U-NFRAB  ")
+  (16928 "U-NFRAD  ") (16927 "U-NFRAF  ") (16926 "U-NFRAH  ")
+  (16925 "U-NFRAJ  ") (16924 "U-NFRAK  ") (16923 "U-NFRBD  ")
+  (16922 "U-NFRBF  ") (16921 "U-NFRBG  ") (16920 "U-NFRBH  ")
+  (16919 "U-NFRBJ  ") (16918 "U-NFRBK  ") (16917 "U-NFRBL  ")
+  (16916 "U-NFRBM  ") (16915 "U-NFRBQ  ") (16914 "U-NFRBR  ")
+  (16913 "U-NFRBS  ") (16912 "U-NFRBT  ") (16911 "U-NFRBU  ")
+  (16910 "U-NFRBV  ") (16909 "U-NFRCA  ") (16908 "U-NFRCD  ")
+  (16907 "U-NFRCH  ") (16906 "U-NFRCL  ") (16905 "U-NFRCN  ")
+  (16904 "U-NFRCQ  ") (16903 "U-NFRCR  ") (16902 "U-NFRCS  ")
+  (16901 "U-NFRCT  ") (16900 "U-NFSA   ") (16899 "U-NFSAA  ")
+  (16898 "U-NFSB   ") (16897 "U-NFSC   ") (16896 "U-NFSE   ")
+  (16895 "U-NFSF   ") (16894 "U-NFSG   ") (16893 "U-NFSMA  ")
+  (16892 "U-NFSMD  ") (16891 "U-NFSNA  ") (16890 "U-NFSNB  ")
+  (16889 "U-NFSND  ") (16888 "U-NFSQ   ") (16887 "U-NFSR   ")
+  (16886 "U-NFTA   ") (16885 "U-NFTD   ") (16884 "U-NFTG   ")
+  (16883 "U-NFTH   ") (16882 "U-NFTJ   ") (16881 "U-NFTK   ")
+  (16880 "U-NFTL   ") (16879 "U-NFUAA01") (16878 "U-NFUAD01")
+  (16877 "U-NFUAG01") (16876 "U-NFUAK01") (16875 "U-NFUBA01")
+  (16874 "U-NFUBG01") (16873 "U-NFUBH01") (16872 "U-NFUBK01")
+  (16871 "U-NFUBN01") (16870 "U-NFUBS01") (16869 "U-NFUCA01")
+  (16868 "U-NFUCD01") (16867 "U-NFUCF01") (16866 "U-NFUCK01")
+  (16865 "U-NFUCM01") (16864 "U-NFUDA01") (16863 "U-NFUDD01")
+  (16862 "U-NFUDG01") (16861 "U-NFUDM01") (16860 "U-NFUEA01")
+  (16859 "U-NFUED01") (16858 "U-NFUEG01") (16857 "U-NFUEK01")
+  (16856 "U-NFUEM01") (16855 "U-NFUEQ01") (16854 "U-NFUFA01")
+  (16853 "U-NFUFD01") (16852 "U-NFUFG01") (16851 "U-NFUGA01")
+  (16850 "U-NFUGD01") (16849 "U-NFUGF01") (16848 "U-NFUGH01")
+  (16847 "U-NFUGM01") (16846 "U-NFUGN01") (16845 "U-NFUHA01")
+  (16844 "U-NFUHD01") (16843 "U-NFUHG01") (16842 "U-NFUJA  ")
+  (16841 "U-NFUKA  ") (16840 "U-NWF    ") (16839 "U-NWFA   ")
+  (16838 "U-NWFB   ") (16837 "U-NWFBA  ") (16836 "U-NWFBB  ")
+  (16835 "U-NWFBD  ") (16834 "U-NWFD   ") (16833 "U-NWFDA  ")
+  (16832 "U-NWFDB  ") (16831 "U-NWFDD  ") (16830 "U-NWFDF  ")
+  (16829 "U-NWFE   ") (16828 "U-NWFEA  ") (16827 "U-NWFEB  ")
+  (16826 "U-NWFED  ") (16825 "U-NWFEF  "))
+ :COPY-QUERY NIL)
+("3/2/1998: 14:47:28" :DEFINE-FEATURE LATITUDE NOM NIL)
+("3/2/1998: 14:47:30" :REPORT-P4-RATIOS-REPORT ((:FM "CV2" "PLANM"))
+ (("**************************************************************************
+CV2 (PLANM): FORCE MODULE CV2- IIIMEF AND CVBG W/ARG FORCES.             
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+  230    230  100.0%   Aircraft-Type = None
+  230    230  100.0%   Dest-Cc = Korea-South
+   36    230   15.7%   Function = Miscellaneous-Combat-Support
+   36    230   15.7%   Function = Miscellaneous-Combat-Service-Support
+   36    230   15.7%   Function = Miscellaneous-Combat
+   32    230   13.9%   Function = Aviation-Tactical
+   24    230   10.4%   Function = Aviation-Support
+   21    230    9.1%   Function = Artillery
+   17    230    7.4%   Function = Warships-Craft-And-Commands
+   16    230    7.0%   Function = Aviation-Flight-Units
+   13    230    5.7%   Function = Engineers-And-Topographic-Services
+    9    230    3.9%   Function = Intelligence-Counterintelligence
+    9    230    3.9%   Function = Intelligence-Security-Psyops
+    8    230    3.5%   Function = Medical-Surgical-Dental
+    7    230    3.0%   Function = Miscellaneous
+    5    230    2.2%   Function = Air-Control-Units
+    5    230    2.2%   Function = Command-Hq
+    5    230    2.2%   Function = Ground-Communications-Electronics-Signal
+    5    230    2.2%   Function = Function
+    5    230    2.2%   Function = Fleet-Auxiliaries
+    5    230    2.2%   Function = Maintenance
+    4    230    1.7%   Function = Ordnance-Systems-Activities
+    3    230    1.3%   Function = Major-Transportation
+    3    230    1.3%   Function = Tracked-Vehicles
+    3    230    1.3%   Function = Supply-Support-Services
+    3    230    1.3%   Function = Infantry
+    1    230    0.4%   Function = Military-Police-And-Law-Enforcement
+  230    230  100.0%   Phasing = Early
+  167    230   72.6%   Pod-Mode = Air
+   63    230   27.4%   Pod-Mode = Sea
+  108    230   47.0%   Pod-Source = Amc
+   63    230   27.4%   Pod-Source = Supported-Cinc
+   59    230   25.7%   Pod-Source = Units-Organic-Aircraft
+  170    230   73.9%   Provorg = Navy-Component-Of-Supported-Cinc
+   58    230   25.2%   Provorg = Uscincpac
+    1    230    0.4%   Provorg = Hq-Us-Marines
+    1    230    0.4%   Provorg = Hq-Us-Navy
+  183    230   79.6%   Service = Marines
+   47    230   20.4%   Service = Navy
+
+")))
+("3/2/1998: 14:47:31" :REPORT-P4-BASIC-REPORT ((:FM "CV2" "PLANM"))
+ (("********* CV2 (PLANM) *********
+TITLE:   FORCE MODULE CV2- IIIMEF AND CVBG W/ARG FORCES.             
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: NONE
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: COMBAT-FORCES
+          CAPABILITY: COMBAT-SUPPORT
+          CAPABILITY: COMBAT-SERVICE-SUPPORT
+          CAPABILITY: RECONNASSANCE
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-5-1998
+          CREATOR: AMM
+          DEST-CC: KOREA-SOUTH
+          EMPLOYMENT-DAYS: NONE
+          FORCE: III-MEF
+          FORCE: CARRIER-BATTLE-GROUP
+          FORCE: ARG
+          FORCE: MAGTF-MEF-SIZE
+          FORCE-QUANTITY: NONE
+          FUNCTION: AIR-CONTROL-UNITS
+          FUNCTION: ARTILLERY
+          FUNCTION: AVIATION-FLIGHT-UNITS
+          FUNCTION: AVIATION-SUPPORT
+          FUNCTION: AVIATION-TACTICAL
+          FUNCTION: COMMAND-HQ
+          FUNCTION: ENGINEERS-AND-TOPOGRAPHIC-SERVICES
+          FUNCTION: FLEET-AUXILIARIES
+          FUNCTION: GROUND-COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: INFANTRY
+          FUNCTION: INTELLIGENCE-COUNTERINTELLIGENCE
+          FUNCTION: INTELLIGENCE-SECURITY-PSYOPS
+          FUNCTION: MAINTENANCE
+          FUNCTION: MAJOR-TRANSPORTATION
+          FUNCTION: MEDICAL-SURGICAL-DENTAL
+          FUNCTION: MILITARY-POLICE-AND-LAW-ENFORCEMENT
+          FUNCTION: MISCELLANEOUS
+          FUNCTION: MISCELLANEOUS-COMBAT
+          FUNCTION: MISCELLANEOUS-COMBAT-SERVICE-SUPPORT
+          FUNCTION: MISCELLANEOUS-COMBAT-SUPPORT
+          FUNCTION: ORDNANCE-SYSTEMS-ACTIVITIES
+          FUNCTION: SUPPLY-SUPPORT-SERVICES
+          FUNCTION: TRACKED-VEHICLES
+          FUNCTION: WARSHIPS-CRAFT-AND-COMMANDS
+          GEOGRAPHIC-LOCATION: KOREA-SOUTH
+          GOAL: CONDUCT-NEO
+          GOAL: ISOLATE-THE-BATTLEFIELD
+          ID: CV2
+          LATITUDE: NONE
+          LOCATION: WESTERN-PACIFIC
+          LONGITUDE: NONE
+          MISSION: SUPPORT-KOREA-FDO
+          MISSION-TYPE: NONE
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: 2-18-1998
+          MODIFIER: AMM
+          OBTAINED-BY: NONE
+          OPLAN: PLANM
+          ORIG-FM: CV2
+          ORIG-OPLAN: |52173|
+          ORIGIN: WESTERN-PACIFIC
+          COMMON-BASE:PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-MODE: SEA
+          POD-SOURCE: AMC
+          POD-SOURCE: SUPPORTED-CINC
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: HQ-US-MARINES
+          PROVORG: HQ-US-NAVY
+          PROVORG: NAVY-COMPONENT-OF-SUPPORTED-CINC
+          PROVORG: USCINCPAC
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: MARINES
+          SERVICE: NAVY
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: NAVAL-BLOCKADE
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: DETER-AGRESSION
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-NABAA  : N : 5CVC1 : USS : CV CARRIER (CLASS 59)          
+      U-NABAB  : N : G6GGD : DET : EOD MU SHIP DET                
+      U-NABAF  : N : 524BA : CMD : COM CARRIER STRIKE FORCE       
+      U-NABBA  : N : 3LVAB : WG  : COM CARRIER AIR WING           
+      U-NABBB  : N : 3FA18 : SQ  : STRKFITRON (10) F/A-18         
+      U-NABBD  : N : 3FA18 : SQ  : STRKFITRON (10) F/A-18         
+      U-NABBF  : N : 3F141 : SQ  : FITRON (10)F14                 
+      U-NABBH  : N : 3F141 : SQ  : FIGHTER SQDN (10) F-14         
+      U-NABBJ  : N : 3A604 : SQ  : ATKRON (10)A6E/(4)KA6D         
+      U-NABBK  : N : 3EA61 : SQ  : TACELRON (5)EA6B               
+      U-NABBM  : N : 3GS59 : SQ  : HELO ASW SQ (6) SH-3H          
+      U-NABBN  : N : 3E2C2 : SQ  : CARAEWRON (4) E2C              
+      U-NABBQ  : N : 3S301 : SQ  : AIRANTISUBRON (6)S-3           
+      U-NABCA  : N : 5JCGD : USS : CG-CRUISER                     
+      U-NABCB  : N : 5JCGD : USS : CG-CRUISER                     
+      U-NABCD  : N : 5DDD3 : USS : DD-DESTROYER (CLASS 963)       
+      U-NABCF  : N : 5DDD3 : USS : DD-DESTROYER (CLASS 963)       
+      U-NABCG  : N : 5JCGD : USS : CG-CRUISER                     
+      U-NABCL  : N : 3GSLA : DET : HELO ASW LAMPS DET (1) SH-2F   
+      U-NABCN  : N : 3GSLA : DET : HELO ASW LAMPS DET (1) SH-2F   
+      U-NABCS  : N : 3GSLA : DET : HELO ASW LAMPS DET (1) SH-2F   
+      U-NABCT  : N : 5GEGA : USS : FFG-GUIDED MISSILE FRIGATE     
+      U-NABEA  : N : MUAE2 : USS : (AE) AMMUNITION SHIP (CLASS 26)
+      U-NABEB  : N : G6GGD : DET : EOD MU SHIP DET                
+      U-NABED  : N : 3JY65 : DET : HELICOPTER COMBAT SUPPORT DETAC
+      U-NABEF  : N : MUFSA : USS : AFS-COMBAT STORE SHIP (CL.1)   
+      U-NABEG  : N : 3JY65 : DET : HELICOPTER COMBAT SUPPORT DETAC
+      U-NABEH  : N : MSA0A : MSC : TAO-TANKER (MSC)               
+      U-NABEJ  : N : MSAEA : MSC : TAE-AMMUNITION SHIP(MSC)       
+      U-NABEK  : N : MU0RA : USS : AOR-REPLENISHMENT (CLASS 1)    
+      U-NABEL  : N : G6GGD : DET : EOD MU SHIP DET                
+      U-NAMAA  : N : 5LKAA : USS : LKA-AMPHIBIOUS CARGO SHIP      
+      U-NAMAD  : N : 5LPDA : USS : LPD-AMPH. TRANSPORT DOCK       
+      U-NAMAG  : N : 5LSDA : USS : LSD-LANDING SHIP DOCK          
+      U-NAMAH  : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-NAMAJ  : N : 5LSTA : USS : LST-TANK LANDING SHIP(CL1179)  
+      U-NAMAK  : N : 5LHAA : USS : LHA-AMPH. ASSAULT (CLASS 1)    
+      U-NAMAM  : N : 3JATA : SQ  : TACTICAL AIR CONTROL SQ        
+      U-NAMAN  : N : U7ACB : DET : ASSAULT CRAFT UNIT BOAT GROUP T
+      U-NAMAQ  : N : U7ACB : DET : ASSAULT CRAFT UNIT BOAT GROUP T
+      U-NAMAR  : N : U7ACB : DET : ASSAULT CRAFT UNIT BOAT GROUP T
+      U-NAMAS  : N : Y39EN : DET : AMPHIBIOUS CONSTRUCTION BN DET 
+      U-NAMAT  : N : Y26FA : U   : BEACHMASTER UNIT               
+      U-NAMAU  : N : 5LHAA : USS : LHA-AMPH. ASSAULT (CLASS 1)    
+      U-NAMAV  : N : G6GGD : DET : EOD MU SHIP DET                
+      U-NAMAW  : N : 5LPDA : USS : LPD-AMPH. TRANSPORT DOCK       
+      U-NAMGA  : N : 5LCCA : USS : LCC-AMPH. COMMAND (CLASS 19)   
+      U-NFAA   : M : C99BB : DET : MEF LIAISON TEAM CPTANGO       
+      U-NFAB   : M : C99BB : DET : HQ III MEF ADV PARTY           
+      U-NFAC   : M : CBSAA : HQ  : HQS, MARINE EXPED FORCE        
+      U-NFAD   : M : 9BUAA : HQS : H&S CO, MEF HQ, MEF            
+      U-NFAE   : M : Z99BB : HQ  : HQSVCBN FMF                    
+      U-NFBAA01: M : PGBAD : HQ  : HQS, SRI GROUP                 
+      U-NFBAA02: M : PGBAB : HQS : H&S CO, 3D SRI GROUP           
+      U-NFBBA  : M : PTLAA : CO  : FORCE RECON CO, FMF            
+      U-NFBCE  : M : 3LDAA : U   : FORCE IMAGERY INTER UNIT, SRI  
+      U-NFBCG  : M : PYDLK : DML : COUNTER INTEL TEAM, FMF        
+      U-NFBCL  : M : PRPAA : CO  : RPV CO, SRI                    
+      U-NFBDA  : M : 9UJAA : HQC : HQ CO, COMM BN, SRI            
+      U-NFBDB  : M : 6UKAA : CO  : COMM CO, COMM BN, SRI GRP      
+      U-NFBDD  : M : 6UNAA : CO  : COMM SPT CO, COMM BN, SRI GRP  
+      U-NFDAB01: M : 9GCAA : HQ  : DIV HQ, HQ CO, HQ BN, DIV      
+      U-NFDAB02: M : 9GCAA : HQ  : DIV HQ, HQ CO, HQ BN, DIV      
+      U-NFDAD01: M : 9GCAA : HQ  : DIV HQ, HQ CO, HQ BN, DIV      
+      U-NFDAD02: M : 9GCAA : HQ  : DIV HQ, HQ CO, HQ BN, DIV      
+      U-NFDBC  : M : 9GEAA : HQC : HQ CO, HQ BN, DIV              
+      U-NFDBP  : M : 9GEAA : HQC : HQ CO, HQ BN, DIV              
+      U-NFDCP  : M : 9GGAA : SCO : SERVICE CO, HQ BN, DIV         
+      U-NFDEC  : M : 6GJAA : CO  : COMM CO, HQ BN, DIV            
+      U-NFDEP  : M : 6GJAA : CO  : COMM CO, HQ BN, DIV            
+      U-NFDFP  : M : UJEGA : CO  : TRUCK CO, HQ BN, DIV           
+      U-NFEA   : M : 9GSAA : HQC : HQ CO, INF REGT                
+      U-NFEB   : M : 0GTAA : BN  : INF BN, FMF                    
+      U-NFFCP  : M : 9HEAA : BTY : HQ BTY, ARTY REGT, DIV         
+      U-NFFDA  : M : 9HLAA : BTY : HQ BTY, DS BN (T) M198         
+      U-NFFDB  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NFFDD  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NFFDE  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN, DIV     
+      U-NFFD1  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN, 2D DIV  
+      U-NFFD2  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN, 2D DIV  
+      U-NFFEA  : M : 9HLAA : BTY : HQ BTY, DS BN (T) M198         
+      U-NFFEE  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NFFEP  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NFFE2  : M : 9HLAA : BTY : HQ BTY, DS BN (T) M198 2D DIV  
+      U-NFFE3  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN, 2D DIV  
+      U-NFJAP  : M : 9TRAA : HQS : H&S CO, CSG                    
+      U-NFJB   : M : 2VLA3 : CO  : LIGHT ARMORED RECON CO, (-)    
+      U-NFJB1  : M : 2VLA3 : CO  : LAI CO, LAI BN                 
+      U-NFJD   : M : 2TXAB : CO  : AA CO                          
+      U-NFJE   : M : 9HUGA : HQS : H&S CO, CBT ENGR BN, DIV       
+      U-NFJE1  : M : 9HUGA : HQS : H&S CO, CBT ENGR BN, DIV       
+      U-NFJF   : M : 4HVJA : DMR : CBT ENGR SPT CO                
+      U-NFJF1  : M : 4HVJA : DMR : CBT ENGR SPT CO, -MEBMEUDET    
+      U-NFJG   : M : 4HWGA : CO  : CBT ENGR CO, CBT ENGR BN, DIV  
+      U-NFJGA  : M : 4HWLE : PLT : CBT ENGR PLT, CBT ENGR BN, DIV 
+      U-NFJG1  : M : 4HWGA : CO  : CBT ENGR CO, CBT ENGR BN, DIV  
+      U-NFJH   : M : 4HWGA : CO  : CBT ENGR CO, CBT ENGR BN, DIV  
+      U-NFJHA  : M : 4HWLE : PLT :   CBT ENGR PLT, CBT ENGR BN    
+      U-NFJH1  : M : 4HWGA : CO  : CBT ENGR CO, CBT ENGR BN, DIV  
+      U-NFKB   : M : PHRAA : CO  : RECON CO                       
+      U-NFKB1  : M : PHRAA : CO  : RECON CO, RECON BN, DIV        
+      U-NFKD   : M : PHRAA : CO  : RECON CO, 4TH MAR,DIV          
+      U-NFLA   : M : 9GSAA : HQC : HQ CO, INF  REGT, DIV          
+      U-NFLB   : M : 0GTAA : BN  : INF BN, FMF                    
+      U-NFLD   : M : 0GTAA : BN  : INF BN, FMF                    
+      U-NFPA   : M : C99BB : TM  : 1ST MAW LIAISON TM             
+      U-NFPB   : M : C99BB : HQ  : HQ 1ST MAW (FWD)/III MEF (FWD) 
+      U-NFPE   : M : 999BB : DET : 3D FSSG ACF                    
+      U-NFPF   : M : 999BB : DET : 3D FSSG ACF                    
+      U-NFPH   : M : 8LKAA : HQ  : MARINE WING HQ SQDN, MAW       
+      U-NFPJ   : M : 8LKAA : HQ  : MARINE WING HQ SQDN, MAW       
+      U-NFPL   : M : PUEAA : TM  : SPEC SECURITY COMM TEAM, FMF   
+      U-NFQAD  : M : 7LQEC : DMB : DET, MATCS, MACG               
+      U-NFQAF  : M : 7LQEC : DMB : DET, MATCS, MACG-18            
+      U-NFQAG  : M : 7LQEC : DMB : DET, MATCS, MACG               
+      U-NFQBF  : M : 8LPC2 : DMB : DET, H&HS, MACG-18             
+      U-NFQCD  : M : 7LRAB : DET : DET, MASS, MACG                
+      U-NFQDD  : M : 7LSAA : SQ  : MACS-4, MACG-18                
+      U-NFQFA  : M : 3LUEE : DMU : DET (MEU) STINGER PLT, LAAD BN 
+      U-NFQFB  : M : 3LUEE : DMU : 1ST LAAD BN, DET 2             
+      U-NFQFF  : M : 3LUEE : DMU : DET (MEU) STINGER PLT, LAAD BN 
+      U-NFQFQ  : M : 3LUEE : DMU : DET, LAAD BN                   
+      U-NFQGA  : M : 8LZAC : DET : DET, MWCS                      
+      U-NFQGB  : M : 8LZAC : DET : DET, MWCS                      
+      U-NFRAA  : M : 8NHAA : HQ  : MAG-12                         
+      U-NFRAB  : M : 8NHAA : HQ  : MAG-12                         
+      U-NFRAD  : M : 8NHAA : HQ  : MAG-12                         
+      U-NFRAF  : M : 8NHAA : HQ  : MAG-12 (FOL-ON)                
+      U-NFRAH  : M : Z99BB : NSL : DET, MAG-12                    
+      U-NFRAJ  : M : Z99BB : NSL : DET, MAG-12                    
+      U-NFRAK  : M : Z99BB : NSL : DET, MAG-12                    
+      U-NFRBD  : M : 3NNNA : SQ  : VMFA (P) (12 F/A-18 A/C)       
+      U-NFRBF  : M : 3NNNA : SQ  : VMFA (P)                       
+      U-NFRBG  : M : 3NNNA : SQ  : VMFA (P)                       
+      U-NFRBH  : M : 3NNNC : SQ  : VMFA (L) (12 F/A-18)           
+      U-NFRBJ  : M : 3NNNC : SQ  : VMFA (L)                       
+      U-NFRBK  : M : 3NNNC : SQ  : VMFA (L)                       
+      U-NFRBL  : M : 3NSAA : SQ  : VMA (14 AV-8B A/C)             
+      U-NFRBM  : M : 3NSAA : SQ  : VMA, DET                       
+      U-NFRBQ  : M : 3NNNC : SQ  : VMFA (AW) (12 F/A-18D)         
+      U-NFRBR  : M : 3NNNC : SQ  : VMFA (AW)                      
+      U-NFRBS  : M : 3NNNC : SQ  : VMFA (AW)                      
+      U-NFRBT  : M : 3QJNA : SQ  : VMAQ (6 EA-6B A/C)             
+      U-NFRBU  : M : 3QJNA : SQ  : VMAQ                           
+      U-NFRBV  : M : 3QJNA : SQ  : VMAQ                           
+      U-NFRCA  : M : 8NJAA : SQ  : MALS-12 F/A-18 FISP            
+      U-NFRCD  : M : 8NJAA : SQ  : MALS-12 F/A-18D FISP           
+      U-NFRCH  : M : 8NJAA : SQ  : MALS-12 EA-6B FISP             
+      U-NFRCL  : M : 399BB : DET : MALS-12 AV-8B FISP             
+      U-NFRCN  : M : 8NJAA : SQ  : MALS-12 AV-8B FISP             
+      U-NFRCQ  : M : 8NJAA : SQ  : MALS-12 PCSP                   
+      U-NFRCR  : M : 8NJAA : SQ  : MALS-12, F/A-18D PCSP          
+      U-NFRCS  : M : 8NJAA : SQ  : MALS-12, EA-6B PCSP            
+      U-NFRCT  : M : 8NJAA : SQ  : MALS-12, AV-8B PCSP            
+      U-NFSA   : M : 8PCNA : SQ  : MALS-36 ADV PTY/MAIN BODY      
+      U-NFSAA  : M : 8PCNA : SQ  : MALS (ROTARY WING)             
+      U-NFSB   : M : 3PLFE : DET : HMH (4 CH-53E A/C)             
+      U-NFSC   : M : 3PLFE : DET : HMH (4CH-53E A/C)              
+      U-NFSE   : M : 3PLFE : DET : HMH (CARGO/MAIN BODY)          
+      U-NFSF   : M : 3MQEC : SQ  : VMGR (6 KC-130 A/C)            
+      U-NFSG   : M : 3MQEC : SQ  : VMGR (6 KC-130 A/C)            
+      U-NFSMA  : M : 3PQAA : SQ  : HML/A 8 AH-1W/8 UH-1N COMPO    
+      U-NFSMD  : M : 3PQAA : SQ  : HML/A (MAIN BODY)              
+      U-NFSNA  : M : 3PNGA : SQ  : HMM (12 CH-46E)                
+      U-NFSNB  : M : 399BB : DMU : HMM (MAIN BODY)                
+      U-NFSND  : M : 399BB : DMU : HMM (CARGO)                    
+      U-NFSQ   : M : 399BB : DMB : MAG-36 ADV PTY                 
+      U-NFSR   : M : 399BB : SQ  : MAG-36                         
+      U-NFTA   : M : 8MLGA : SQ  : MWSS                           
+      U-NFTD   : M : 8MLUA : SQ  : MWSS (F/W) MWSG, MAW           
+      U-NFTG   : M : 8MMU3 : DML : MWSS (ROTARY) MWSG,            
+      U-NFTH   : M : 8MLUA : SQ  : H&HS-17 (PAX)                  
+      U-NFTJ   : M : 8MMU3 : DML : MWSS (ROTARY) MWSG             
+      U-NFTK   : M : Z99BB : NSL : DET, MWSS-171, MWSG-17         
+      U-NFTL   : M : Z99BB : NSL : DET, MWSS-172, MWSG-17         
+      U-NFUAA01: M : 9VDG1 : DMM : HQS CO, H&S BN                 
+      U-NFUAD01: M : 9VEG1 : DMM : SERVICE CO, H&S BN             
+      U-NFUAG01: M : QVHJ2 : DMM : MP CO, H&S BN                  
+      U-NFUAK01: M : 6VFG1 : DMM : COMM CO, H&S BN                
+      U-NFUBA01: M : 9WCC2 : DMM : H&S CO, ENGR SPT BN            
+      U-NFUBG01: M : 4WGGA : CO  : BRDG CO, ENGR SPT BN           
+      U-NFUBH01: M : 4WGGA : CO  : ENGR CO, ENGR SPT BN           
+      U-NFUBK01: M : 4WGGA : CO  : ENGR CO, ENGR SPT BN           
+      U-NFUBN01: M : 4WDA1 : DMM : ENGR SPT CO                    
+      U-NFUBS01: M : 4WFGA : CO  : BULK FUEL CO, ENGRSPTBN        
+      U-NFUCA01: M : 9VJGA : HQS : H&S CO, LDG SPT BN             
+      U-NFUCD01: M : 9VJUA : CO  : LDG SPT CO, LDG SPT BN         
+      U-NFUCF01: M : 9VJUA : CO  : LDG SPT CO, LDG SPT BN         
+      U-NFUCK01: M : 9VJQ2 : DMM : B&T OPS CO, LDG SPT BN         
+      U-NFUCM01: M : 9VJUR : CO  : LDG SPT EQPT CO, LSB           
+      U-NFUDA01: M : 9VUC2 : DMM : H&S CO, SUPPLY BN              
+      U-NFUDD01: M : JVVC2 : DMM : AMMO CO, SUP BN                
+      U-NFUDG01: M : JVZCA : DMM : MED LOG CO, SUP BN             
+      U-NFUDM01: M : JVYC2 : DMM : SUPPLY CO, SUP BN              
+      U-NFUEA01: M : 9VLJ2 : DMM : H&S CO, MAINT BN               
+      U-NFUED01: M : HVNL3 : DMM : ENGR MAINT CO                  
+      U-NFUEG01: M : HVQL4 : DMM : MT MAINT CO                    
+      U-NFUEK01: M : HVPJ2 : DMM : ORD MAINT CO                   
+      U-NFUEM01: M : HVMJ2 : DMM : C/E MAINT CO, MAINT BN         
+      U-NFUEQ01: M : HVSJ2 : DMM : GS MAINT CO                    
+      U-NFUFA01: M : 9WKC2 : DMM : H&S CO, MT BN                  
+      U-NFUFD01: M : UWLJ2 : DMM : GS TRK CO, MT BN               
+      U-NFUFG01: M : UWMC2 : DMM : DS TRK CO, MT BN               
+      U-NFUGA01: M : 9WRC2 : DMM : H&S CO, MED BN                 
+      U-NFUGD01: M : FWTAA : CO  : COLLECT & CLEAR CO, MED BN     
+      U-NFUGF01: M : FWTAA : CO  : COLLECT & CLEAR CO, MED BN     
+      U-NFUGH01: M : FWTAA : CO  : COLLECT & CLEAR CO, MED BN     
+      U-NFUGM01: M : FWUAA : DMM : SURGICAL SPT CO, MED BN        
+      U-NFUGN01: M : FWUAA : DMM : SURGICAL SPT CO, MED BN        
+      U-NFUHA01: M : FWVGA : HQS : H&S CO, DENTAL BN              
+      U-NFUHD01: M : FWWAA : CO  : DENTAL CO, DENTAL BN           
+      U-NFUHG01: M : FWWAA : CO  : DENTAL CO, DENTAL BN           
+      U-NFUJA  : M : 999BB : DET : 3D FSSG DET YECHON             
+      U-NFUKA  : M : 999BB : DET : 3D FSSG DET POHANG             
+      U-NWF    : M : 1HKAA : BN  : GCE, DET 11TH MAR AMPHIB       
+      U-NWFA   : M : 199BB : NSL : HQ BTRY (-), ARTY REGT         
+      U-NWFB   : M : 1HKAA : BN  : ARTILLERY BN (1/11) AMPHIB     
+      U-NWFBA  : M : 9HLHA : BTY : HQ BTY, DS BN, ARTY REGT       
+      U-NWFBB  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFBD  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFD   : M : 199BB : NSL : ARTY BN (2/11) AMPHIB          
+      U-NWFDA  : M : 9HLHA : BTY : HQ BTY, DS BN, ARTY REGT       
+      U-NWFDB  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFDD  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFDF  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFE   : M : 1HKAA : BN  : ARTILLERY BN (5/11) AMPHIB     
+      U-NWFEA  : M : Z99BB : NSL : HQ BTRY, ARTY BN               
+      U-NWFEB  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFED  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+      U-NWFEF  : M : 1HJAA : BTY : 155 HOW BTY (T) DS BN          
+")))
+("3/2/1998: 14:47:32" :DEFINE-FEATURE LONGITUDE NOM NIL)
+("3/2/1998: 14:47:32" :AUGMENT-FM (:FM "CV2" "PLXXX"))
+("3/2/1998: 14:48:53" :FM-COPY-WINDOW)
+("3/2/1998: 14:48:53" :COPY-FM (:FM "TFS" "PLANM") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((TFS "TFS")) :NEW-ULN-MAPPING
+ ((17086 "U-LAAA   ") (17085 "U-LAAB   ") (17084 "U-LAAC   ")
+  (17083 "U-LAAD   ") (17082 "U-LAAE   ") (17081 "U-LAAF   ")
+  (17080 "U-LAAG   ") (17079 "U-LAAH   ") (17078 "U-LAAJ   ")
+  (17077 "U-LAAK   ") (17076 "U-LAAL   ") (17075 "U-LAAM   ")
+  (17074 "U-LAAN   ") (17073 "U-LAAP   ") (17072 "U-LAAQ   ")
+  (17071 "U-LAAR   ") (17070 "U-LAAS   ") (17069 "U-LAAT   ")
+  (17068 "U-LAAU   ") (17067 "U-LAAV   ") (17066 "U-LAAZ   ")
+  (17065 "U-LAA0   ") (17064 "U-LAA1   ") (17063 "U-LAA2   ")
+  (17062 "U-LAA3   ") (17061 "U-LAA4   ") (17060 "U-LAA5   ")
+  (17059 "U-LAA6   ") (17058 "U-LAA7   ") (17057 "U-LAA8   ")
+  (17056 "U-LDAC   ") (17055 "U-LDAD   "))
+ :COPY-QUERY NIL)
+("3/2/1998: 14:48:54" :AUGMENT-FM (:FM "TFS" "PLXXX"))
+("3/2/1998: 14:48:59" :REPORT-P4-RATIOS-REPORT ((:FM "TFS" "PLANM"))
+ (("**************************************************************************
+TFS (PLANM): FORCE MODULE TFS-A10, F117 AND F16 C/D TACTICAL FIGHTER SQUA
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+   16     32   50.0%   Aircraft-Type = Tactical-Fighter
+   15     32   46.9%   Aircraft-Type = None
+    6     32   18.7%   Aircraft-Type = A10a
+    4     32   12.5%   Aircraft-Type = F117
+    2     32    6.2%   Aircraft-Type = F16
+    1     32    3.1%   Aircraft-Type = Electronics
+   32     32  100.0%   Dest-Cc = Korea-South
+   17     32   53.1%   Function = Mission-Aircraft
+   10     32   31.2%   Function = Maintenance
+    2     32    6.2%   Function = Supply-Services
+    2     32    6.2%   Function = Transportation
+    1     32    3.1%   Function = Unit-Hq
+   32     32  100.0%   Phasing = Early
+   29     32   90.6%   Pod-Mode = Air
+    3     32    9.4%   Pod-Mode = Unspecified
+   25     32   78.1%   Pod-Source = Amc
+    4     32   12.5%   Pod-Source = Units-Organic-Aircraft
+    3     32    9.4%   Pod-Source = In-Place
+   20     32   62.5%   Provorg = Commander-Of-Air-Combat-Command
+   12     32   37.5%   Provorg = Hq-Us-Air-Force
+   32     32  100.0%   Service = Air-Force
+
+")))
+("3/2/1998: 14:48:59" :REPORT-P4-BASIC-REPORT ((:FM "TFS" "PLANM"))
+ (("********* TFS (PLANM) *********
+TITLE:   FORCE MODULE TFS-A10, F117 AND F16 C/D TACTICAL FIGHTER SQUA
+FEATURES:
+          AC-QUANTITY: |9|
+          AIRCRAFT-TYPE: A10A
+          AIRCRAFT-TYPE: ELECTRONICS
+          AIRCRAFT-TYPE: F117
+          AIRCRAFT-TYPE: F16
+          AIRCRAFT-TYPE: TACTICAL-FIGHTER
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: COMBAT-FORCES
+          CAPABILITY: TACTICAL-FIGHTER
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-5-1998
+          CREATOR: AMM
+          DEST-CC: KOREA-SOUTH
+          EMPLOYMENT-DAYS: NONE
+          FORCE: A-10A
+          FORCE: F117A
+          FORCE: F-16
+          FORCE: A-10
+          FORCE: TACTICAL-FIGHTER-SQUADRON
+          FORCE-QUANTITY: NONE
+          FUNCTION: MAINTENANCE
+          FUNCTION: MISSION-AIRCRAFT
+          FUNCTION: SUPPLY-SERVICES
+          FUNCTION: TRANSPORTATION
+          FUNCTION: UNIT-HQ
+          GEOGRAPHIC-LOCATION: KOREA-SOUTH
+          GOAL: AIR-DEFENSE
+          GOAL: COMBAT-MISSION-SUPPORT
+          GOAL: DEPLOY-TFS
+          GOAL: ISOLATE-THE-BATTLEFIELD
+          ID: TFS
+          LATITUDE: NONE
+          LOCATION: NONE
+          LONGITUDE: NONE
+          MISSION: SUPPORT-KOREA-FDO
+          MISSION-TYPE: NEO
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: 2-18-1998
+          MODIFIER: AMM
+          OBTAINED-BY: NONE
+          OPLAN: PLANM
+          ORIG-FM: TFS
+          ORIG-OPLAN: |52173|
+          ORIGIN: NONE
+          COMMON-BASE:PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-MODE: UNSPECIFIED
+          POD-SOURCE: AMC
+          POD-SOURCE: IN-PLACE
+          POD-SOURCE: UNITS-ORGANIC-AIRCRAFT
+          PREDECESSOR: NONE
+          PROVORG: COMMANDER-OF-AIR-COMBAT-COMMAND
+          PROVORG: HQ-US-AIR-FORCE
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: AIR-FORCE
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: AIR-BLOCKADE
+          SUBGOAL: DEPLOY-F-16
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: DETER-AGRESSION
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-LAAA   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAB   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAC   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAD   : F : 3FVAA : SQ  : TFS 24  A 10A                  
+      U-LAAE   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAF   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAG   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAH   : F : 3FATA : SQ  : TFS 18  F117A                  
+      U-LAAJ   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAK   : F : 3FVAD : SQ  : TFS 24 A010A DEP               
+      U-LAAL   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAAM   : F : HGBAC : ELE : MMS 24 A010A DEP               
+      U-LAAN   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAAP   : F : 9AAGB : HQ  : HQS WING I TFS INDEPENDENT     
+      U-LAAQ   : F : 3DZ99 : NSL : MISC PARENT                    
+      U-LAAR   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAAS   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LAAT   : F : JFAXF : ELE : POL 18 PAA TFS FUELS-LOX PERS  
+      U-LAAU   : F : HGAA2 : ELE : EOD BASIC TEAM 1 W VEHICLE     
+      U-LAAV   : F : UFZ99 : NSL : A-10 PARENT                    
+      U-LAAZ   : F : 3FVAA : SQ  : TFS 24 A010A                   
+      U-LAA0   : F : 3FZ99 : SQ  : 24 A-10 WITH PILOTS            
+      U-LAA1   : F : HEABA : ELE : ILM 24 A010A                   
+      U-LAA2   : F : HGBAA : ELE : MMS 24 A010A                   
+      U-LAA3   : F : 3FZ99 : ELE : 12 A-010A FILLER               
+      U-LAA4   : F : JFAXC : ELE : POL 01 200K BULK STG SYS       
+      U-LAA5   : F : HGAA3 : TM  : EOD PER AUG TEAM 2             
+      U-LAA6   : F : HFUA2 : ELE : BDR 18 A010 BATTLE DMG RPR  R25
+      U-LAA7   : F : HFUE2 : ELE : BDR     A 10 AERO ENGR ELEMENT 
+      U-LAA8   : F : HFUF2 : ELE : BDR    A010 ENGINE REPAIR   R25
+      U-LDAC   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+      U-LDAD   : F : 3FKM1 : SQ  : TFS 24  F 16C/D LANTIRN        
+")))
+("3/2/1998: 14:49:47" :CHECK-GOAL-CONSISTENCY)
+("3/2/1998: 14:50:01" :DISPLAY-FM (:FM "TFS" "PLXXX"))
+("3/2/1998: 14:50:36" :CUT-ULNS
+ ((:UNRECOGNIZED-OBJECT "#<ULN 17720-PLXXX>")
+  (:UNRECOGNIZED-OBJECT "#<ULN 17717-PLXXX>")
+  (:UNRECOGNIZED-OBJECT "#<ULN 17719-PLXXX>")
+  (:UNRECOGNIZED-OBJECT "#<ULN 17718-PLXXX>"))
+ (:FM "TFS" "PLXXX"))
+("3/2/1998: 14:50:38" :AUGMENT-FM (:FM "TFS" "PLXXX"))
+("3/2/1998: 14:51:01" :CHECK-GOAL-CONSISTENCY)
+("3/2/1998: 14:51:22" :DISPLAY-FM (:FM "TFS" "PLXXX"))
+("3/2/1998: 14:52:28" :DISPLAY-FM (:FM "CV2" "PLXXX"))
+("3/2/1998: 14:53:10" :SELECT-MENU-ITEM "CV2")
+("3/2/1998: 14:53:10" :COPY-GOALS-TO-FEATURES :GOAL :CONDUCT-NEO :FM
+ CV2)
+("3/2/1998: 14:53:19" :DISPLAY-FM (:FM "CV2" "PLXXX"))
+("3/2/1998: 14:58:14" :CHECK-GOAL-CONSISTENCY)
+("3/2/1998: 15:01:41" :SELECT-MENU-ITEM "FORCE")
+("3/2/1998: 15:01:45" :SELECT-MENU-ITEM
+ "25TH-ID-DIVISION-READY-BRIGADE")
+("3/2/1998: 15:01:45" :FM-QUERY-INSERT FORCE
+ "25TH-ID-DIVISION-READY-BRIGADE")
+("3/2/1998: 15:01:46" :FM-QUERY-SET-COLOR-NONE)
+("3/2/1998: 15:01:46" :FM-QUERY-SET-COLOR-RED)
+("3/2/1998: 15:01:49" :EXECUTE-FM-QUERY
+ ((FORCE 25TH-ID-DIVISION-READY-BRIGADE))
+ (:UNRECOGNIZED-OBJECT "#<Q-NODE :QUERY>") T :RED NIL :EXECUTE)
+("3/2/1998: 15:01:50" :RETRIEVED-CASES
+ ((:FM "K5B" "5009C") (:FM "K5B" "BEL97") (:FM "K5B" "JACK3")
+  (:FM "K5B" "PLAND")))
+("3/2/1998: 15:02:09" :FM-COPY-WINDOW)
+("3/2/1998: 15:02:10" :COPY-FM (:FM "K5B" "JACK3") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((K5B "K5B")) :NEW-ULN-MAPPING
+ ((17232 "U-J2A    ") (17231 "U-J2AB   ") (17230 "U-J2B    ")
+  (17229 "U-J2D    ") (17228 "U-J2E    ") (17227 "U-J2G    ")
+  (17226 "U-J2GB   ") (17225 "U-J2J    ") (17224 "U-J2L    ")
+  (17223 "U-J2N    ") (17222 "U-J2NB   ") (17221 "U-J2P    ")
+  (17220 "U-J2R    ") (17219 "U-J2RA   ") (17218 "U-J2RB   ")
+  (17217 "U-J2RD   ") (17216 "U-J2RF   ") (17215 "U-J5A    ")
+  (17214 "U-K2A    ") (17213 "U-K2A1   ") (17212 "U-K2A2   ")
+  (17211 "U-K2B    ") (17210 "U-K2C    ") (17209 "U-K2D    ")
+  (17208 "U-K2E    ") (17207 "U-K2EB   ") (17206 "U-K2ED   ")
+  (17205 "U-K2EG   ") (17204 "U-K2F    ") (17203 "U-K2G    ")
+  (17202 "U-K2H    ") (17201 "U-K2J    ") (17200 "U-K2JB   ")
+  (17199 "U-K2K    ") (17198 "U-K2KA   ") (17197 "U-K2KB   ")
+  (17196 "U-K2M    ") (17195 "U-K2MA   ") (17194 "U-K2P    ")
+  (17193 "U-K2QA   ") (17192 "U-K2QB   ") (17191 "U-K2QC   "))
+ :COPY-QUERY NIL)
+("3/2/1998: 15:02:12" :AUGMENT-FM (:FM "K5B" "PLXXX"))
+("3/2/1998: 15:02:18" :REPORT-P4-RATIOS-REPORT ((:FM "K5B" "JACK3"))
+ (("**************************************************************************
+K5B (JACK3): 25ID(L)  BRIGADE TASK FORCE (DRB)                           
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+   42     42  100.0%   Aircraft-Type = None
+   42     42  100.0%   Dest-Cc = Yugoslavia
+   10     42   23.8%   Function = Infantry
+    9     42   21.4%   Function = Artillery
+    4     42    9.5%   Function = Multifunction-Posts-Bases-Barracks
+    3     42    7.1%   Function = Supply
+    3     42    7.1%   Function = Intelligence-Counterintelligence
+    3     42    7.1%   Function = Biomedical-Sciences
+    3     42    7.1%   Function = Intelligence-Security-Psyops
+    3     42    7.1%   Function = Engineers-And-Topographic-Services
+    3     42    7.1%   Function = Maintenance
+    2     42    4.8%   Function = Military-Police-And-Law-Enforcement
+    1     42    2.4%   Function = Aviation-Flight-Units
+    1     42    2.4%   Function = Communications-Electronics-Signal
+   42     42  100.0%   Phasing = Early
+   42     42  100.0%   Pod-Mode = Air
+   42     42  100.0%   Pod-Source = Amc
+   42     42  100.0%   Provorg = Army-Component-Of-Supported-Cinc
+   42     42  100.0%   Service = Army
+
+")))
+("3/2/1998: 15:02:18" :REPORT-P4-BASIC-REPORT ((:FM "K5B" "JACK3"))
+ (("********* K5B (JACK3) *********
+TITLE:   25ID(L)  BRIGADE TASK FORCE (DRB)                           
+FEATURES:
+          AC-QUANTITY: NONE
+          AIRCRAFT-TYPE: NONE
+          ALTERNATE-FM: NONE
+          ALTERNATE-ULN: NONE
+          AUGMENTATION-REQUIRED: NONE
+          CAPABILITY: INFANTRY
+          CAPABILITY: FIRE-SUPPORT
+          CHILD: NONE
+          CLIMATE: NONE
+          COA: NONE
+          CREATING-ORG: NONE
+          CREATION-DATE: 2-18-1998
+          CREATOR: AMM
+          DEST-CC: YUGOSLAVIA
+          EMPLOYMENT-DAYS: NONE
+          FORCE: 25TH-ID-DIVISION-READY-BRIGADE
+          FORCE: BRIGADE-TASK-FORCE
+          FORCE-QUANTITY: |2|
+          FUNCTION: ARTILLERY
+          FUNCTION: AVIATION-FLIGHT-UNITS
+          FUNCTION: BIOMEDICAL-SCIENCES
+          FUNCTION: COMMUNICATIONS-ELECTRONICS-SIGNAL
+          FUNCTION: ENGINEERS-AND-TOPOGRAPHIC-SERVICES
+          FUNCTION: INFANTRY
+          FUNCTION: INTELLIGENCE-COUNTERINTELLIGENCE
+          FUNCTION: INTELLIGENCE-SECURITY-PSYOPS
+          FUNCTION: MAINTENANCE
+          FUNCTION: MILITARY-POLICE-AND-LAW-ENFORCEMENT
+          FUNCTION: MULTIFUNCTION-POSTS-BASES-BARRACKS
+          FUNCTION: SUPPLY
+          GEOGRAPHIC-LOCATION: BOSNIA-AND-HERZEGOVINA
+          GOAL: SUPPRESS-TERRORISM
+          ID: K5B
+          LATITUDE: NONE
+          LOCATION: NONE
+          LONGITUDE: NONE
+          MISSION: NONE
+          MISSION-TYPE: NONE
+          MNEMONIC-ID: NONE
+          MODE: NONE
+          MODIFICATION-DATE: 2-18-1998
+          MODIFIER: AMM
+          OBTAINED-BY: TPFDD
+          OPLAN: JACK3
+          ORIG-FM: K5B
+          ORIG-OPLAN: PLAND
+          ORIGIN: NONE
+          COMMON-BASE:PARENT: T0P
+          PHASING: EARLY
+          POD-MODE: AIR
+          POD-SOURCE: AMC
+          PREDECESSOR: NONE
+          PROVORG: ARMY-COMPONENT-OF-SUPPORTED-CINC
+          RELATED-FM: NONE
+          REQUIRING-ORG: NONE
+          ROLE: NONE
+          SERVICE: ARMY
+          SOF-FEATURE: NONE
+          STATUS: NONE
+          SUBGOAL: SEND-BRIGADE
+          SUCCESSOR: NONE
+          TERRAIN: NONE
+          THEATER: PACOM
+          THREAT-COUNTERED: NONE
+          TYPE: NONE
+          UNIT-NAME: NONE
+          UNIT-ROLE: NONE
+
+ULNS:
+      U-J2A    : A : 099BB : BN  : INF BN TF  (DRF)               
+      U-J2AB   : A : X99BB : PTY : ARRIVAL AIRFIELD CONTROL GROUP 
+      U-J2B    : A : 099BB : DET : BDE HHC(-)MESS/MNT/SURG        
+      U-J2D    : A : Q99BB : SQD : MIL POL SQD                    
+      U-J2E    : A : 499BB : PLT : ENGINEER PLT(+)                
+      U-J2G    : A : 199BB : BTY : 105 ARTY BTRY (+)              
+      U-J2GB   : A : 199BB : DET : FSO/FIST                       
+      U-J2J    : A : P99BB : SQD : MIL INTEL SGD                  
+      U-J2L    : A : 199BB : SEC : AIR DEF MANPAD                 
+      U-J2N    : A : 099BB : DET : BDE TAC CP                     
+      U-J2NB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-J2P    : A : 099BB : DET : DIV TAC CP                     
+      U-J2R    : A : X99BB : PTY : HHC DISCOM(-)                  
+      U-J2RA   : A : X99BB : PTY : MAIN SPT BN                    
+      U-J2RB   : A : J99BB : PTY : HQ & A CO (FSB)                
+      U-J2RD   : A : F99BB : PTY : MEDICAL CO (FWD SPT BN)        
+      U-J2RF   : A : H99BB : PTY : MAINT CO (FWD SPT BN)          
+      U-J5A    : A : 399BB : DET : AVIATION SPT (DRF)             
+      U-K2A    : A : 099BB : BN  : INF BN (DRF-2)                 
+      U-K2A1   : A : 099BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2A2   : A : 199BB : DET : FSO/FIST                       
+      U-K2B    : A : 499BB : CO  : ENG CO (-)                     
+      U-K2C    : A : 199BB : BTY : ADA BTRY (-)                   
+      U-K2D    : A : Q99BB : PLT : MIL POL PLT (-)                
+      U-K2E    : A : X99BB : HHC : HHC DISCOM (-)                 
+      U-K2EB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2ED   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2EG   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+      U-K2F    : A : P99BB : DET : LONG RANGE SURV DET            
+      U-K2G    : A : 199BB : BN  : ARTY BN (-)                    
+      U-K2H    : A : P99BB : CO  : MIL INTEL CO (-)               
+      U-K2J    : A : 699BB : PLT : SIGNAL PLT                     
+      U-K2JB   : A : 099BB : PTY : DIV TACT CMD CTR (DTAC)        
+      U-K2K    : A : 099BB : BN  : INF BN (DRF-3)                 
+      U-K2KA   : A : 199BB : PTY : FSO/FIST                       
+      U-K2KB   : A : 199BB : PTY : TAC AIR CONT PTY (TACP)        
+      U-K2M    : A : 099BB : HHC : BDE CP                         
+      U-K2MA   : A : 099BB : HHC : HHC BDE (-)                    
+      U-K2P    : A : 499BB : CO  : ENG CO (-) ASSLT/BARRIER       
+      U-K2QA   : A : F99BB : BN  : MEDICAL CO (FWD SPT BN)        
+      U-K2QB   : A : J99BB : BN  : SUPPLY CO (FWD SPT BN)         
+      U-K2QC   : A : H99BB : BN  : MAINT CO (FWD SPT BN)          
+")))
+("3/2/1998: 15:02:24" :DISPLAY-FM (:FM "K5B" "PLXXX"))
+("3/2/1998: 15:05:39" :SELECT-ALL-ULNS (:FM "K5B" "PLXXX"))
+("3/2/1998: 15:05:50" :EDIT-FM-RECORDS
+ (17987 17988 17989 17990 17991 17992 17993 17994 17995 17996 17997
+  17998 17999 18000 18001 18002 18003 18004 18005 18006 18007 18008
+  18009 18010 18011 18012 18013 18014 18015 18016 18017 18018 18019
+  18020 18021 18022 18023 18024 18025 18026 18027 18028)
+ ((:FM "K5B" "PLXXX") PLXXX))
+("3/2/1998: 15:07:28" :CHANGE-FEATURE-VALUE ("POD  FBBX" "fbbw") |fbbw|)
+("3/2/1998: 15:07:32" :SET-EDIT-ULN-FIELDS
+ (((:ULN "U-K2QC   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2QB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2QA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2P    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2MA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2M    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2KB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2KA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2K    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2JB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2J    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2H    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2G    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2F    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2EG   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2ED   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2EB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2E    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2D    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2C    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2B    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A2   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A1   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J5A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RF   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RD   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2R    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2P    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2NB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2N    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2L    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2J    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2GB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2G    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2E    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2D    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2B    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2AB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (POD "FBBX" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))))
+("3/2/1998: 15:08:04" :SELECT-MENU-ITEM "K5B")
+("3/2/1998: 15:08:04" :COPY-GOALS-TO-FEATURES :GOAL
+ :PROVIDE-SECURITY-FOR-US-MILITARY-PERSONNEL :FM K5B)
+("3/2/1998: 15:08:32" :SELECT-MENU-ITEM "(GOAL SUPPRESS-TERRORISM)")
+("3/2/1998: 15:08:44" :AUGMENT-FM (:FM "K5B" "PLXXX"))
+("3/2/1998: 15:08:59" :SELECT-MENU-ITEM
+ "(GOAL PROVIDE-SECURITY-FOR-US-MILITARY-PERSONNEL)")
+("3/2/1998: 15:09:07" :SELECT-MENU-ITEM "(GOAL SUPPRESS-TERRORISM)")
+("3/2/1998: 15:09:13" :AUGMENT-FM (:FM "K5B" "PLXXX"))
+("3/2/1998: 15:09:49" :EDIT-FM-RECORDS
+ (17987 17988 17989 17990 17991 17992 17993 17994 17995 17996 17997
+  17998 17999 18000 18001 18002 18003 18004 18005 18006 18007 18008
+  18009 18010 18011 18012 18013 18014 18015 18016 18017 18018 18019
+  18020 18021 18022 18023 18024 18025 18026 18027 18028)
+ ((:FM "K5B" "PLXXX") PLXXX))
+("3/2/1998: 15:09:51" :SELECT-MENU "Select Field")
+("3/2/1998: 15:09:58" :SELECT-MENU-ITEM "EAD")
+("3/2/1998: 15:10:07" :SELECT-MENU "Select Field")
+("3/2/1998: 15:10:17" :SELECT-MENU-ITEM "LAD")
+("3/2/1998: 15:10:18" :SELECT-MENU "Select Field")
+("3/2/1998: 15:10:22" :SELECT-MENU-ITEM "RDD")
+("3/2/1998: 15:10:36" :CHANGE-FEATURE-VALUE ("EAD  C003" "C028") C028)
+("3/2/1998: 15:10:42" :CHANGE-FEATURE-VALUE ("EAD  C002" "C028") C028)
+("3/2/1998: 15:10:49" :CHANGE-FEATURE-VALUE ("EAD  C001" "C028") C028)
+("3/2/1998: 15:10:53" :CHANGE-FEATURE-VALUE ("EAD  C000" "C028") C028)
+("3/2/1998: 15:11:00" :CHANGE-FEATURE-VALUE ("EAD  C010" "C028") C028)
+("3/2/1998: 15:11:17" :CHANGE-FEATURE-VALUE ("RDD  C010" "C030") C030)
+("3/2/1998: 15:11:29" :CHANGE-FEATURE-VALUE ("RDD  C003" "C030") C030)
+("3/2/1998: 15:11:34" :CHANGE-FEATURE-VALUE ("RDD  C002" "C030") C030)
+("3/2/1998: 15:11:40" :CHANGE-FEATURE-VALUE ("RDD  C001" "C030") C030)
+("3/2/1998: 15:11:45" :CHANGE-FEATURE-VALUE ("LAD  C010" "C030") C030)
+("3/2/1998: 15:11:50" :CHANGE-FEATURE-VALUE ("LAD  C003" "C030") C030)
+("3/2/1998: 15:11:55" :CHANGE-FEATURE-VALUE ("LAD  C002" "C030") C030)
+("3/2/1998: 15:12:00" :CHANGE-FEATURE-VALUE ("LAD  C001" "C030") C030)
+("3/2/1998: 15:12:05" :CHANGE-FEATURE-VALUE ("EAD  C010" "C030") C030)
+("3/2/1998: 15:12:10" :CHANGE-FEATURE-VALUE ("EAD  C003" "C030") C030)
+("3/2/1998: 15:12:16" :CHANGE-FEATURE-VALUE ("EAD  C002" "C030") C030)
+("3/2/1998: 15:12:21" :CHANGE-FEATURE-VALUE ("EAD  C001" "C030") C030)
+("3/2/1998: 15:12:25" :CHANGE-FEATURE-VALUE ("EAD  C000" "C030") C030)
+("3/2/1998: 15:12:34" :CHANGE-FEATURE-VALUE ("EAD  C010" "C028") C028)
+("3/2/1998: 15:12:38" :CHANGE-FEATURE-VALUE ("EAD  C003" "C028") C028)
+("3/2/1998: 15:12:43" :CHANGE-FEATURE-VALUE ("EAD  C002" "C028") C028)
+("3/2/1998: 15:12:48" :CHANGE-FEATURE-VALUE ("EAD  C001" "C028") C028)
+("3/2/1998: 15:12:53" :CHANGE-FEATURE-VALUE ("EAD  C000" "C028") C028)
+("3/2/1998: 15:12:56" :SET-EDIT-ULN-FIELDS
+ (((:ULN "U-K2QC   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2QB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2QA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2P    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2MA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2M    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2KB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2KA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2K    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C003" "C028") (LAD "C003" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C003" "C030")))
+  ((:ULN "U-K2JB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2J    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2H    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2G    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2F    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2EG   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2ED   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2EB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2E    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2D    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2C    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2B    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2A2   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2A1   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-K2A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C002" "C028") (LAD "C002" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C002" "C030")))
+  ((:ULN "U-J5A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C010" "C028") (LAD "C010" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C010" "C030")))
+  ((:ULN "U-J2RF   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2RD   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2RB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2RA   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C001" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2R    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2P    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2NB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2N    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2L    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2J    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2GB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2G    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2E    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2D    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2B    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2AB   " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))
+  ((:ULN "U-J2A    " PLXXX)
+   ((DEST "FBBX" "FBBX") (DEST-CC "RP" "RP") (DEST-MODE "X" "X")
+    (EAD "C000" "C028") (LAD "C001" "C030") (POD "FBBW" "FBBW")
+    (POD-CC "RP" "RP") (POD-MODE "A" "A") (RDD "C001" "C030")))))
+("3/2/1998: 15:13:29" :QUIT-GOAL-EDITOR)
+("3/2/1998: 15:14:43" :CREATE-FM (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:14:53" :DISPLAY-FM (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:14:59" :FM-RELS-MENU (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:15:02" :ADD-CHILD (:FM "CV2" "PLXXX")
+ (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:15:09" :FM-RELS-MENU (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:15:12" :ADD-CHILD (:FM "K5B" "PLXXX")
+ (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:15:18" :FM-RELS-MENU (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:15:20" :ADD-CHILD (:FM "TFS" "PLXXX")
+ (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:16:48" :AUGMENT-FM (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:17:28" :DISPLAY-FM (:FM "WWW" "PLXXX"))
+("3/2/1998: 15:18:27" :REPORT-ULN-RATIOS "/tmp/tmp.ForMAT.46"
+ ((:FM "WWW" "PLXXX")))
+("3/2/1998: 15:18:46" :REPORT-FMS "/tmp/tmp.ForMAT.47"
+ ((:FM "WWW" "PLXXX")))
+("3/2/1998: 15:19:42" :DISPLAY-FM (:FM "TFS" "PLXXX"))
+("3/2/1998: 15:19:54" :SELECT-MENU-ITEM "(FORCE F117A)")
+("3/2/1998: 15:20:00" :AUGMENT-FM (:FM "TFS" "PLXXX"))

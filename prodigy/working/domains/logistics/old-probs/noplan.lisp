@@ -1,0 +1,28 @@
+(setf (current-problem)
+      (create-problem
+       (name pgh1)
+       (objects
+	(object-is package1  OBJECT)
+	(objects-are pgh-truck bos-truck  TRUCK)
+	(objects-are airplane1 airplane2 AIRPLANE)
+	(objects-are bos-po pgh-po POST-OFFICE)
+	(objects-are pgh-airport bos-airport  AIRPORT)
+	(objects-are pittsburgh boston CITY))
+       (state
+	(and (at-obj package1 pgh-po)
+	     (at-airplane airplane1 pgh-airport)
+	     (at-airplane airplane2 pgh-airport)
+	     (at-truck pgh-truck pgh-po)
+	     (at-truck bos-truck bos-po)
+	     (part-of bos-truck boston)
+	     (part-of pgh-truck pittsburgh)
+	     (loc-at pgh-po pittsburgh)
+	     (loc-at pgh-airport pittsburgh)
+	     (loc-at bos-po boston)
+	     (loc-at bos-airport boston)
+	     (same-city bos-po bos-airport)
+	     (same-city pgh-po pgh-airport)
+	     (same-city pgh-airport pgh-po)
+	     (same-city bos-airport bos-po)))
+       (igoal
+	(and (at-nothing)))))

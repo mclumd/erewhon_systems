@@ -1,0 +1,44 @@
+;;; Example trace - this was added to the regular blocksworld
+
+;;; Location of b is also not known.
+(setf (current-problem)
+      (create-problem
+       (name p1)
+       (objects
+	(A B object))
+       (state
+	(holding a))
+       (igoal (arm-empty))))
+
+USER(247):(problem 'p1)
+; Loading /usr/mmv/prodigy4.0/domains/test-sense/probs/p1.lisp.
+T
+USER(248): (run)
+Creating objects (A B) of type OBJECT
+
+  2 n2 (done)
+
+This is the current state (#<HOLDING A>)
+Enter add (a), del (d), quit-sensing (q), otherwise terminate now: a
+Enter sensed state literal: (on-table b)
+This is the new state (#<HOLDING A> #<ON-TABLE B>)
+
+This is the current state (#<HOLDING A> #<ON-TABLE B>)
+Enter add (a), del (d), quit-sensing (q), otherwise terminate now: d
+Enter sensed state literal: (holding a)
+This is the new state (#<ON-TABLE B>)
+
+This is the current state (#<ON-TABLE B>)
+Enter add (a), del (d), quit-sensing (q), otherwise terminate now: q
+
+  4 n4 <*finish*>
+  5   n5 (arm-empty)
+  7   n7 <infer-armempty>
+Achieved top-level goals.
+
+Solution:
+	<infer-armempty>
+
+#<PRODIGY result: T, 0.05 secs, 7 nodes, 1 sol>
+USER(249): 
+

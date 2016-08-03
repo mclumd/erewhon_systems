@@ -1,0 +1,11 @@
+;;; 1994-07-29 Rujith de Silva
+;;; Goal clobberings in the sim-robot domain
+
+(pset :goal-clobberings-strong nil)
+(pset :goal-clobberings-weak nil)
+
+(goal-clobbering
+ (by (t next-to <a> <b>))
+ (of (t next-to robot <door>))
+ (if (and (~ (carriable <a>)) (~ (carriable <b>))))
+ (types (<a> box) (<b> box) (<door> door)))

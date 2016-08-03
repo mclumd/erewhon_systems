@@ -1,0 +1,14 @@
+Most of these are actually domains from CS609 during 1999.
+
+  /usr/local/mcox/Research/ABMIC/Boris/domains:
+  total 3
+  drwx------   2 mcox          512 Oct 18 10:52 blocksworld (commented out control-rules)
+  drwx------   2 mcox          512 Oct 18 11:17 elevator    (Yarger's group)
+  drwx------   3 mcox          512 Oct 18 11:25 pasta       (Lee's group)
+  drwx------   2 mcox          512 Oct 18 11:26 cars        (Willis' group)
+  drwx------   2 mcox          512 Oct 18 11:29 animals     (Bryce's group)
+  drwx------   2 mcox          512 Oct 18 11:31 shifter     (Lucas' group)
+  drwx------   3 mcox          512 Jul  4 08:24 .
+  drwx------   3 mcox          512 Jul 14 03:06 ..
+  drwx------   3 mcox          512 Aug 11 15:40 windows     (my implementation for MIIpaper)
+

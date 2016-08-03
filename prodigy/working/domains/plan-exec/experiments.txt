@@ -1,0 +1,94 @@
+This file contains instructions for replicating the results of the experiments
+shown in Veloso, Pollock & Cox, 1997. I ran them during the first half of
+December on Pushkin. I had removed Pushkin from the net and AFS while the
+program ran. I ran without an X environment.
+
+To run an experiment after setting the proper parameters (see below), I simply
+typed run-data at the console.  ~mcox/Bin/run-data is an executable script that
+contains a serlies of lines, each with the command cl (the common lisp
+interpreter) in it. Each invocation of common lisp will run five trials,
+writing the current trial number to the file
+~/mcox/prodigy/domains/plan-exec/counter.lisp (see comments on
+*count-file-name* in file ~mcox/prodigy/Interleave/test-battery.lisp).
+Subsequent trials will read this file to return to the proper location in the
+experimental run.
+
+NOTE: After running the first experiment, rename the output files (i.e.,
+results-monit.txt or results-no-monit.txt) before running the second
+experiment.
+
+
+-------------------------------------------------------------------------------
+For all experiments:
+
+File                             Action
+------------       ------------------------------------------------------------
+.clinit.cl         *run-experiment* t (make sure the value is also t in
+                   parameters.lisp) 
+                   *run-with-no-terminal-io* nil (I think)
+my-loader.lisp     *load-prodigy-front-end* nil
+parameters.lisp    *use-compiled-code* nil
+                   *max-ops* 30
+                   *max-delay* 25
+                   *o-level* 0 
+sensing.lisp       *sensing-cycle-length* 4
+monitor.lisp       one-shot function different
+test-battery.lisp  test-battery calls run function with depth-bound of 1000.
+
+run-data           150 lines (i.e., 150 * 5 trials = 750 data points = 25 * 30
+                   = *max-delay* * *max-ops*)
+
+
+
+-------------------------------------------------------------------------------
+Experiment #1: Alternative-based subgoal monitors
+
+File                             Action
+------------       ------------------------------------------------------------
+parameters.lisp    *load-sensing-only*   nil for monitors t without monitors
+
+                   *test-condition*      'alternative-based-subgoal
+
+                   *use-monitors-p*      t for monitors nil without monitors
+
+-------------------------------------------------------------------------------
+Experiment #2: Alternative-based usability monitors
+
+File                             Action
+------------       ------------------------------------------------------------
+parameters.lisp    *load-sensing-only*   nil
+
+                   *test-condition*      'alternative-based-usability
+
+                   *use-monitors-p*      t for monitors nil without monitors
+
+
+
+-------------------------------------------------------------------------------
+To create the graphs:
+
+
+Changed data files (e.g., results-monit.txt) into list of lists and rearranged
+the order from 5 4 3 2 1 10 9 8 7 6 ... to 1 2 3 4 5 6 7 8 9 10 ... etc. Then
+setf global (e.g., *monit-data*) to the list. Then something like the following
+to create the 2d data.
+
+(create-2d-data-file
+  (filter-on-delay *monit-data* 20)
+  t
+  "/afs/cs/user/mcox/prodigy/domains/plan-exec/2d-monit-static-20.txt")
+
+
+Then the following to create the plot
+
+gnuplot> plot
+"/afs/cs/user/mcox/prodigy/domains/plan-exec/2d-monit-static-20.txt" title
+"Monitor, Delay 20",
+"/afs/cs/user/mcox/prodigy/domains/plan-exec/2d-monit-static-10.txt" title
+"Monitor, Delay 10",
+"/afs/cs/user/mcox/prodigy/domains/plan-exec/2d-monit-static-1.txt" title
+"Monitor, Delay 00",
+"/afs/cs/user/mcox/prodigy/domains/plan-exec/2d-no-monit-static-1.txt"  title
+"No Monitor       "
+
+See also file gnuplot.script

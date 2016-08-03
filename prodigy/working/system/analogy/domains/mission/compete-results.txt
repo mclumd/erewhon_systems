@@ -1,0 +1,24 @@
+Results for the Mission Domain:
+
+Compete-Original:
+	From Scratch:		#<PRODIGY result: t, 0.4 secs, 26 nodes, 1 sol>
+	Self-Replay:		#<PRODIGY result: t, 0.283 secs, 24 nodes, 1 sol>
+Compete-Challenger: 
+	From Scratch:		#<PRODIGY result: t, 0.384 secs, 26 nodes, 1 sol>
+	Self-Replay:		#<PRODIGY result: t, 0.483 secs, 26 nodes, 1 sol>
+
+Compete-Problem:
+	From Scratch:		Not solved in 4000 nodes.
+	Replay Original:R	#<PRODIGY result: T, 0.467 secs, 32 nodes, 1 sol>
+	Replay Challenger:	?
+	
+Compete-Original-Delta:
+	From Scratch:		Unsolvable
+	Self-Replay:		None
+
+Compete-Challenger-Delta:
+	From Scratch:		#<PRODIGY result: t, 0.117 secs, 12 nodes, 1 sol>
+	Self-Replay:		#<PRODIGY result: t, 0.133 secs, 12 nodes, 1 sol>
+
+
+c2-original #<PRODIGY result: t, 3.35 secs, 82 nodes, 1 sol>

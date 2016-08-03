@@ -1,0 +1,73 @@
+
+
+
+Error output from /afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/gen-hiers.lisp 5-Dec-93 23:05:33.
+Compiled on 15-Mar-94 12:27:41 by CLC version M1.8 (15-Aug-90).
+
+MAKE-ABS-NODE compiled.
+ABS-NODE-P compiled.
+PRINT-ABS-NODE compiled.
+PRINT-SHORT-ABS-NODE compiled.
+CREATE-HIERARCHY compiled.
+FIND-CONSTRAINTS compiled.
+FIND-INDEPENDENT-CONSTRAINTS compiled.
+EXPLODE-OPERATORS compiled.
+FIND-SPECIFIC-SCHEMA-CONSTRAINTS compiled.
+Warning in ALPINE-FIND-CONSTRAINTS:
+  CONTEXT bound but not referenced.
+ALPINE-FIND-CONSTRAINTS compiled.
+FIND-SPECIFIC-LITERAL-CONSTRAINTS compiled.
+ADD-STATIC-LINKS compiled.
+Warning in SUBGOALABLE-PRECONDS:
+  OP bound but not referenced.
+Warning in SUBGOALABLE-PRECONDS:
+  GOAL bound but not referenced.
+Warning in SUBGOALABLE-PRECONDS:
+  CONTEXT bound but not referenced.
+SUBGOALABLE-PRECONDS compiled.
+PRIMARY-EFFECT-P compiled.
+MATCH-ABSNODE-PRIMARY compiled.
+EXPLODE-EFFECTS compiled.
+EXPLODE-PRECONDITIONS compiled.
+Warning in EXPLODE-GOALS:
+  AUGMENTED-GOAL-EXPR bound but not referenced.
+EXPLODE-GOALS compiled.
+WALK-THROUGH-EXPR compiled.
+MAYBE-ADD-LIT compiled.
+LIT-TO-SCHEMA-AND-SUBS compiled.
+LOWER-TYPES compiled.
+ABS-CARTESIAN-PRODUCT compiled.
+LIT-TO-SCHEMA compiled.
+LIT-TO-SCHEMA-2 compiled.
+PLAIN-ABS compiled.
+MATCH-ABS-PRIMARY compiled.
+MATCH-ABS-TEMPLATE compiled.
+VAR-TYPE compiled.
+ARG-TO-TYPE compiled.
+CREATE-EMPTY-GRAPH compiled.
+ADD-DIRECTED-EDGE compiled.
+FIND-STRONGLY-CONNECTED-COMPONENTS compiled.
+DFS1 compiled.
+DFS2 compiled.
+FIND-MAX-ROOT compiled.
+FIND-MAX-CHILD compiled.
+DF-SEARCH compiled.
+CONSTRUCT-REDUCED-GRAPH compiled.
+TOPOLOGICAL-SORT compiled.
+PRINT-PO compiled.
+FIND-BEST-UNVISITED compiled.
+BINDING-CLUSTER compiled.
+DFS-SORT compiled.
+CONSTRUCT-ABS-HIERARCHY compiled.
+COMBINE-ADJACENT-PLAINS compiled.
+PLAIN-CLUSTER compiled.
+GET-UNIFICATIONS compiled.
+GET-EFFECTS-UNIFICATIONS compiled.
+ABS-UNIFY compiled.
+PROPAGATE-EFFECT-UNIFICATIONS compiled.
+PROPAGATE-PRECOND-UNIFICATIONS compiled.
+
+Finished compilation of file "/afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/gen-hiers.lisp".
+0 Errors, 5 Warnings.
+Elapsed time 0:00:30, run time 0:00:26.
+

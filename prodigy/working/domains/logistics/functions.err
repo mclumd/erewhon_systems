@@ -1,0 +1,22 @@
+
+
+
+Error output from /afs/cs.cmu.edu/project/prodigy/version4.0/domains/logistics/functions.lisp 10-Feb-92 14:00:06.
+Compiled on 10-Feb-92 14:17:36 by CLC version M1.8 (15-Aug-90).
+
+DIFF compiled.
+IN-TRUCK-CITY-P compiled.
+GET-CITY-OF-TRUCK compiled.
+GET-CITY-OF-AIRPLANE compiled.
+GET-CITY-OF-LOC compiled.
+IN-OBJ-CITY-P compiled.
+GET-CITY-OF-OBJ compiled.
+AT-PO-OR-AIRPORT compiled.
+IN-TRUCK compiled.
+IN-AIRPLANE compiled.
+GET-RELEVANT-LITERAL-IN-HASH-TABLE compiled.
+
+Finished compilation of file "/afs/cs.cmu.edu/project/prodigy/version4.0/domains/logistics/functions.lisp".
+0 Errors, 0 Warnings.
+Elapsed time 0:00:04, run time 0:00:02.
+

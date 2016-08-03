@@ -1,0 +1,110 @@
+Domain:		The Stinger Missile Domain.
+Author:		Anthony G. Francis, Jr.
+Location:	/afs/cs/project/prodigy-1/analogy/domains/stinger
+Status:		Currently, a mess. I'm in the process of extending
+		and updating this to deal with additional effects
+		to get the plans I want.
+
+Description (from an e-mail message):
+
+This domain, which is variously called the "Travel Domain," the
+"Foreign Conference" domain, or in its new incarnation, "The Stinger
+Missile Domain", was based on a small expository example I used in my
+thesis proposal. Basically, the idea is that if you're a researcher
+who travels a lot, you may have traveled to a conference within your
+own country (which involves getting your presentation together,
+driving to the airport, and flying; call this "The Domestic
+Conference") and you might even have gone on a vacation to a different
+country (which involves getting a passport from the post office, 
+driving to the airport, and flying; call this "The Foreign Vacation"). 
+
+But if you've never been to a conference in a foreign country, if you
+are a case-based reasoner you'll have to combine parts of those two past
+experiences; moreover, if you don't immediately realize that you're
+going to a foreign country, you may not pull up "The Foreign Vacation"
+example until you've already begun planning --- which makes "The
+Foreign Conference" problem an interesting one for my system, which
+has an asynchronous memory.
+
+When I arrived here at CMU for my internship, I implemented a quickie
+version of "The Travel Domain" in Prodigy to get my feet wet; then, to
+stretch my knowledge, I decided to play around with universally
+quantified effects. Inspired by the subway domain (which includes
+bombs which blow up everything in sight) I decided to add a Stinger
+missile launcher, which my now-crazed researcher could use to blow up
+conferences, in addition to attending them.
+
+I'm not finished with the domain --- I still want to add a few
+refinements, like making our would-be terrorists carry the Stinger
+inside their luggage if flying within the US [now completed. -Anthony],
+and perhaps adding nuclear missiles that blow up whole cities, but 
+cannot be moved and must be launched from their home base. But the
+basics of this macabre little domain are:
+-------------------------------------------------------------------------------
+Objects:	Predicates:	Operators:	Inference Rules:
+--------	-----------	----------	----------------
+PERSON		at-loc-p	go
+		in-city-p	fly		Can-Fly-Domestic
+		holding		fly		Can-Fly-International
+		nationality	fly		Can-Fly-International
+
+OBJECT		at-loc-o	pick-up
+		destroyed	put-down
+   Container	contains	put-in
+				take-out
+   Passport	-		fly		Can-Fly-International
+   Presentation	-		-
+   Missile	immobile	launch		Can-Fly-Domestic
+
+LOCATION	in-city-l	go
+   Airport	-		-		Can-Fly-Domestic
+						Can-Fly-International
+   City		in-country	fly
+   Country	-		fly
+
+Deleted Operators:			Deleted Inference Rules:
+------------------			------------------------
+fly-domestic				Can-Fly-Domestic-Secure
+fly-international			Explode-Conventional
+-------------------------------------------------------------------------------
+
+where things in ALL CAPS are at the top of the type hierarchy,
+Uppercase items beneath them are subtypes, lowercase items are
+predicates and operators relevant to the object, dashes indicate that
+there are no new predicates relevant to the subtype, and things in
+<angle-brackets> have not yet been fully implemented. Note that
+a number of older operators and inference rules have been commented
+out, for various reasons.
+
+While the domain is simple, the problem statements are not
+neccessarily --- think of how many places, cities, and countries you
+know, and how many trips you might make. To deal with the state-space
+explosion, I've implemented a primitive set of control rules for this
+domain that curb things a bit and make it useful.
+
+This is a toy domain, but you can specify a number of interesting
+problems in this and wreak quite a bit of havoc with a naive retrieval
+algorithm (I hope) because which operators to apply to achieve a goal
+may not necessarily be immediately apparent until some of the control
+rules or inference rules have fired. Once this domain is refined up, I
+hope to be able to specify some interesting and complex plans which
+provide competitive solutions to similar goals, and then see if I can
+use Nicole with Prodigy to try some interesting multi-plan adaptation
+with asynchronous retrievals.
+
+Bug Notes: because this domain includes inference rules with
+quantified preconditions (checking to make sure that no Person carries
+a Missile onto a plane) potential problems exist with (store-case) in
+PRODIGY/ANALOGY.
+
+Until this bug is fixed, to get (store-case) to work properly on any
+problem which fires one of these operators or inference rules with
+quantified preconditions, you may need to include a dummy object of
+the referenced type (usually, Missile):
+
+	(BugBomb Missile)
+
+This has worked in a few tests, so it may work for you if you
+encounter this problem.
+
+-Anthony

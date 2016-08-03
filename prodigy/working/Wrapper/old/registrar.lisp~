@@ -1,0 +1,91 @@
+;;; Used to set environment variable.
+(defvar *registrar-shell* nil)
+
+;;; First available port to be released.
+;;;
+(defparameter *first-port* 5700)
+
+(defvar *highest-port-released* nil)
+
+(defvar *ports-available* (list *first-port*))
+
+(defvar *port-released-p* nil "Set to t when the first release is made.")
+
+
+;;; Function release-port returns an available port number for another process
+;;; to use in socket communication. 
+(defun release-port (&optional
+		    (p-a-list-name '*ports-available*)
+		    (ports (symbol-value p-a-list-name))
+		    )
+  (if (null ports)
+      (setf ports
+	(list
+	 (setf *highest-port-released*
+	   (+ 1 *highest-port-released*)))))
+  (set p-a-list-name (rest ports))
+  (when (not *port-released-p*)
+    (setf *port-assigned-p* t)
+    (setf *highest-port-released*
+      (first ports)))
+  (first ports)
+  )
+
+(defun return-port (port)
+  (setf 
+      *ports-available* 
+    (cons port *ports-available*))
+  
+  )
+
+
+;;; For now the registrar will be an independent process. It will not spawn
+;;; subprocesses.
+;;;
+(defun registrar ()
+  (connect-with-DND (release-port))
+  (let ((request *last-line-from-socket*)
+	(port-num (release-port))
+	)
+    (send-to-tcl port-num)
+    (cond ((eq 'obj-request
+	       request)
+	   (send-obj-strings port-num)
+	   )
+	  ((eq 'goal-request
+	       request)
+	   (generate-all-goals port-num)
+	   )
+	  ((eq 'prob-request
+	       request)
+	   (set-problem)
+	   )
+	  ((eq 'plan-request
+	       request)
+	   (input-wrapper port-num)
+	   )
+	  )
+    )
+  )
+
+;;; 
+;;; Function connect-with-DND first sets an environment variable (DNDPORT) to
+;;; the given port number. This will be read at initialize time for the Drag
+;;; and Drop (DND) program so that a socket can be established between the
+;;; registrar and the DND application. The function then starts a socket server
+;;; and waits for the connection.
+;;;
+(defun connect-with-DND (port)
+  (init-shell *registrar-shell* '*registrar-shell*)
+  (send-shell (format nil "setenv DNDPORT ~S" port) 
+	      *registrar-shell*)
+  (quit-shell)
+  (start-socket-server t port)
+  ;; Wait until input received from socket
+  (do ()
+      (*last-line-from-socket*
+       (format t "READY!~%")))
+  )
+
+
+(load (concatenate 'string *prod-ui-home* "lisp-source/shell.lisp"))

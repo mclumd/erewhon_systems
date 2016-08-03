@@ -1,0 +1,95 @@
+#!/bin/csh -f
+
+# This is a C-shell script that makes a zip file from the current
+# source version of prodigy with the appropriate names for Dos. If you
+# want to run Prodigy on a PC, run this shell to create an up-to-date
+# zip file for the code. It does not currently add any of the domains
+# in, you'll have to do that yourself.
+# Any questions, ask Jim (blythe@cs.cmu.edu)
+
+# To run:
+# make-dos zipfilename [zip-binary]
+# zipfilename should be the ABSOLUTE path of the file you want to
+# create, eg ~/prod-dos. zip-binary is optional, and defaults to
+# /usr/misc/bin/zip.
+
+
+set curdir = $cwd
+
+if ($#argv < 1) then
+  echo Usage: makedos <name-for-zip-file>
+  exit 0
+endif
+
+if ($#argv < 2) then
+  set zip=/usr/misc/bin/zip
+else
+  set zip=$2
+endif
+
+if (! -e $zip) then
+  echo Sorry, I can\'t find zip for this architecture.
+  echo Please pass the path for zip in as the second argument.
+  exit 0
+endif
+
+set prodhome=/afs/cs/project/prodigy/version4.0/working
+set tmp=/tmp
+
+# Make a copy of the source, with the correct file names for zip,
+# because I don't know how to get zip to change them.
+
+echo creating the temporary file structure
+if (-e $tmp/system) then
+  echo
+  echo $tmp/system already exists. I will remove them if I continue.
+  echo -n "Are you sure you want to continue? [n] "
+  set answer=$<
+  if ($answer != "y" && $answer != "yes") exit 0
+  rm -rf $tmp/system
+endif
+
+
+mkdir $tmp/system
+foreach dir (planner abstraction contrib)
+  mkdir $tmp/system/$dir
+  cp -r $prodhome/system/$dir/*.lisp $tmp/system/$dir
+  foreach f ($tmp/system/$dir/*.lisp)
+    mv $f $f:r.lsp
+  end
+end
+
+echo 'changing the names to protect the innocent (and DOS)...'
+cp $prodhome/loader.lisp $tmp/loader.lsp
+cd $tmp/system/planner
+mv load-domain.lsp ld-dom.lsp
+mv assertions.lsp assert.lsp
+mv load-problem.lsp ld-prob.lsp
+mv goal-loop.lsp gl-loop.lsp
+mv extract-functions.lsp ex-fun.lsp
+mv extract-static.lsp ex-stat.lsp
+mv extract-cr.lsp ex-cr.lsp
+mv my-extract-cr.lsp my-ex-cr.lsp
+mv generator.lsp genrator.lsp
+mv instantiate-op.lsp inst-op.lsp
+mv matcher-interface.lsp mtch-int.lsp
+mv treeprint.lsp treeprin.lsp
+mv rete-match.lsp retemtch.lsp
+mv meta-predicates.lsp meta-prd.lsp
+mv interrupt.lsp interrup.lsp
+
+cd $tmp/system
+mv abstraction abstract
+cd abstract
+mv gen-hiers.lsp gen-hier.lsp
+
+# Make the zip file
+cd $tmp
+echo $1
+$zip -rkl $1 loader.lsp system
+
+# Clean up
+
+echo cleaning up..
+cd $tmp
+rm -rf loader.lsp system

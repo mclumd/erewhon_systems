@@ -1,0 +1,86 @@
+Domain:		The Artificial Mission Impossible (ART-MI) Domain.
+Author:		Anthony G. Francis, Jr.
+Location:	/afs/cs/project/prodigy-1/analogy/domains/mission
+Status:		INCOMPLETE
+
+This domain simulates a "Mission Impossible" scenario in which a
+secret agent A is trying to steal secrets S. The secret agent can
+break into any insecure location L and steal any secrets there while
+he is robbing it, but once he escapes the secure location, it's now
+locked down and he can't break into it again. He can also travel
+between any two locations by using a passport from one to the other,
+but since all of his passports are fakes, he can use them only once to
+get to his destination.
+
+I wanted to do this domain using all static literals with no objects
+(e.g., predicates like (AT-i), (AT-j) and (PASS-i-j) which would be
+used and/or consumed by a set of operators like (GO-i-j)) but I didn't
+for two reasons: first, cases could only apply to directly matching
+problems, because I don't know how to variablize a predicate (and I
+don't think it can be done) and second, it makes writing the domain
+harder.
+
+The point of the domain is to allow reasonably complex plans which
+involve one-way series of actions, where the retrieval and execution
+of a plan based on its goals might be bad, and subgoals might be
+good. Example:
+
+	Original Case:
+		Init:	(AT L1)		Goal:	(DROPPED S1 L2)
+			(STORED S1 L1) 
+			(PASS L1 L2)
+
+
+	New Problem:
+		Init:	(AT L1)		Goal:	(DROPPED S1 L2)
+			(STORED S1 L1)		(DROPPED S2 L2)
+			(STORED S2 L2)
+
+	Better Case:
+		Init:	(AT L3)		Goal:	(AT L4)
+			(STORED S3 S4)		(HOLDING S3)
+			(STORED S4 L4)		(HOLDING S4)
+
+Note that the better case won't be directly retrieved to match the
+goals, but will be very quickly when planning for (DROPPED S2 L2)
+begins. 
+
+-------------------------------------------------------------------------------
+Operator:	Parameters:	Precondition:	Postcondition
+---------       -----------     -------------   -------------	
+GO i j		(Location i)	(AT i)		(AT j)
+		(Location J)	(PASS i j)	(~ (AT i))
+						(~ (PASS i j))
+
+BREAK i		(Location L)	(AT L)		(ROBBING L)
+				(SECURE L)	(~ (SECURE L))
+
+ESCAPE i	(Location L)	(ROBBING L)	(~ (ROBBING L))
+
+STEAL		(Secret S)	(STORED S L)	(HOLDING S)
+		(Location L)	(ROBBING L)	(~ (STORED S L))
+
+*DROP-OFF	(Secret S)	(HOLDING S)	(DROPPED S L)
+		(Location L)			(~ (HOLDING S L))
+
+*PICK-UP	(Secret S)	(DROPPED S L)	(~ (DROPPED S L))
+		(Location L)			(HOLDING S L)
+-------------------------------------------------------------------------------
+
+Alternative formulation (incomplete for now):
+-------------------------------------------------------------------------------
+Objects:	Predicates:	Operators:	Inference Rules:
+--------	-----------	----------	----------------
+		AT-i		
+		PASS-i-j	GO-i-j
+		SECURE-i	BREAK-i
+		ROBBING-i	ESCAPE-i
+		
+
+SECRET		STORED-i	
+		HOLDING
+		HIDDEN
+-------------------------------------------------------------------------------
+
+
+-Anthony

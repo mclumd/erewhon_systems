@@ -1,0 +1,25 @@
+See the README on Hyatia for more up to date info.
+
+To use Prodigy/Agent for outputting plans in Kerkez's format with intermediate
+states, do the following. Set *interactive-loading* to t in
+prodigy/working/system-loader.lisp. Load both the monitor and Prodigy/Agent
+modules. Then perform the following load operation.
+
+(load 
+ "w:/My Documents/prodigy/working/system/agent/changed/plan2frames-and-state.lisp")
+
+The call of (gen-file) after successful planning will output the extended plan
+representation.  
+
+To use this process along with the code that copnverts the intermediate states
+into abstract vectors, perform the following.
+
+(load "w:/My Documents/prodigy/working/system/agent/plans2vectors.lisp")
+
+The subsequent call of (plan2vectors (gen-file)) after successful planning will
+output the abstract vector plan representation and can be used with Oates'
+A-distance metric.
+
+OBSOLETE
+To modify announce-plan (the plan pretty printer) to do the plan2vectors call
+(load "w:/My Documents/prodigy/working/system/agent/patches.lisp")

@@ -1,0 +1,46 @@
+NOTE that this file pertains to the old watchdog procedure that was used during
+the Prodigy/ForMAT TIE using domain tfs. It is obsolete at this time except for
+anyone wishing to replicate the previous behavior of the system.
+
+
+In Lisp:
+
+    load loader.lisp
+
+make 2 xterms:
+
+    cd $fmat
+    xterm -title ForMAT -n ForMAT &
+
+    cd Watch.dog
+    xterm -title "Watch Dog" -n  "Watch Dog" -r &
+
+In the directory where the watchdog code is, do the following in two
+different xterms:
+
+1. In second xterm, do
+  
+    ./watchdog.sh /tmp/PRODIGY
+
+2. In Lisp, call 
+
+    (start-prodigy-front-end)
+
+3. In the other xterm, do 
+
+    Watch.dog/fake-format.sh /tmp/PRODIGY PRODIGY*
+
+(Can also be called with a specific filename instead of PRODIGY*,
+e.g. PRODIGY.04-01-96.1630)
+
+After terminating everything, do from first xterm
+
+    ./reset-watchdog.sh /tmp/PRODIGY
+
+----------------------------------------------------------------------------
+
+One can also run the system without having an X-environment. Just do not use
+the xterm commands above and use the call "./watchdog.sh /tmp/PRODIGY NO &" in
+place of the corresponding one above. The optional NO argument blocks the
+script from using the xterm and xbiff programs. All interaction is through the
+file system and text standard-output.

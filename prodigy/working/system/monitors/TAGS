@@ -1,0 +1,219 @@
+
+loader.lisp,273
+(defparameter *monitor-directory* 16,687
+(defparameter *monitors-binary-pathname*22,881
+(defvar *monitor-modules*33,1300
+(defun load-monitor-source 45,1651
+(defun monitors-compile-all 69,2163
+(defun load-monitors 79,2387
+(defvar *load-monitors-immediately* 117,3332
+
+source/execute.lisp,1469
+(defvar *loaded-execute* 41,1628
+(defparameter *mike-trace* 47,1738
+(defvar *use-deployment-heuristic* 50,1781
+(defvar *prodigy-running* 53,1882
+(defvar *ask* 55,1914
+(defvar *ask-each-time* 56,1980
+(defvar *automatic* 57,2007
+(defvar *ex* 59,2119
+(defvar *last-to-be-executed* 60,2162
+(defvar *already-asked* 61,2217
+(defvar *execution-queue* 64,2311
+(defun same-operator? 66,2381
+(defun prior-to-last-execution? 72,2699
+(defun last-execution? 75,2787
+(defun has-been-executed? 78,2865
+(defun reset-applicable-ops-and-goals 81,2939
+(defun do-execute-op 86,3132
+(defun do-execute-op-at-end 127,4800
+(defun choose-apply-subgoal-or-execute 160,6115
+(defun get-executable 176,6525
+(defun expand-binding 184,6913
+(defun expand-operator 216,8269
+(defun expand-binding-or-applied-op 255,9774
+(defun do-apply-op 315,11819
+(defun apply-op 409,15282
+(defun brief-print-inst-op 451,17099
+(defun pp-result 476,17954
+(defun print-executed-ops 495,18497
+(defun generate-nodes 505,18927
+(defun check-aborted-loops 560,20706
+(defun find-aborted-loop 600,22381
+(defun state-loop-p 621,23065
+(defun unzip-states-loop-p 643,23736
+(defun run671,24723
+(defun execute-rest 880,33006
+(defun preconds-true-in-state 962,35771
+(defun change-state-on-apply 969,35960
+(defun change-state-on-execute 975,36129
+(defparameter *do-execute* 983,36436
+(defun automatically-decide-to-execute 986,36504
+(defun deployment-op-p 1019,37635
+(defun q-push 1042,38056
+
+source/meta-preds.lisp,763
+(defvar *debug-top-priority-goals* 3,19
+(defun applied-op-is-for-top-priority-goal 11,315
+(defun literal-name-diff-from 31,907
+(defun node-name-diff-from 35,1017
+(defun inst-op-name-eq 39,1112
+(defun under-same-top-level-goal 47,1414
+(defun real-candidate-goal 66,2035
+(defun all-candidate-goals 70,2197
+(defun ancestor-is-top-priority-goal 84,2641
+(defun top-priority-goal 109,3570
+(defun flatten-literals 124,4199
+(defun literal-to-top-level-goals 139,4551
+(defun nested-literal-to-top-level-goals 147,4786
+(defun binding-node-to-top-level-goals 163,5235
+(defun operator-node-to-top-level-goals 167,5370
+(defun goal-node-to-top-level-goals 176,5723
+(defun applied-op-node-to-top-level-goals 197,6384
+(defun inst-op-to-top-level-goals 201,6535
+
+source/monitor.lisp,1140
+(defun create-precond-handlers 40,1587
+(defun create-usability-monitor 94,3249
+(defun create-monitor 152,5176
+(defun do-add-to-pending-goals 204,6743
+(defun jump-2-node 236,7852
+(defun open-precond-now-satisfied-p 295,10034
+(defun satisfied-precond-now-open-p 322,10852
+(defun literal-match-p 343,11326
+(defun undo-planning-attempt 356,11662
+(defun is-protected-p 386,12644
+(defun make-protected 390,12731
+(defun reset-protection 396,12837
+(defun find-ready-op 412,13365
+(defun ret-dynamic-preconds 439,14078
+(defun ret-non-true-literals 524,16631
+(defun handle-conspiracy-change 538,17081
+(defun in-tail-plan-p 597,19186
+(defun in-head-plan-p 606,19411
+(defun try-2-create-forall-handler 646,20463
+(defun create-forall-monitor 664,21079
+(defun detect-forall-precond 692,21626
+(defun extract-predicate 718,22288
+(defun get-forall-precond 732,22648
+(defun check-forall-preconditions 751,23261
+(defun new-get-forall-goals 812,25167
+(defun spawn-handler 875,27364
+(defun ok-stream 907,28204
+(defun return-sentinel 917,28457
+(defvar *done-already* 923,28554
+(defun one-shot 937,29150
+(defun open-node-p 951,29571
+
+source/parameters.lisp,362
+(defvar *run-experiment* 15,549
+(defparameter *test-condition* 19,635
+(defparameter *max-ops* 27,909
+(defparameter *max-delay* 30,959
+(defparameter *o-level* 41,1184
+(defparameter *use-compiled-code* 48,1306
+(defparameter *load-sensing-only* 62,1645
+(defparameter *monitor-trace* 67,1825
+(defvar *monitors-loaded* 72,1900
+(defun set-parameters 83,2268
+
+source/patches.lisp,405
+(defun candidate-node 33,1075
+(defun candidate-goals 50,1811
+(defun maintain-state-and-goals 61,2120
+(defun do-state 191,7209
+(defun prepare-plan 217,8148
+(defun really-expand-operator 246,9150
+(defun close-node 337,12698
+(defun do-book-keeping-to-reopen-node 394,14640
+(defun find-node 421,15669
+(defconstant *Pushkin* 456,16840
+(defun running-on-pushkin-p 465,17265
+(defun prod-ui 509,18624
+
+source/print-rules.lisp,392
+(defvar *loaded-print-rules* 8,128
+(defun create-literal-list 13,372
+(defun format-literals-to-list 26,840
+(defun create-op-list 73,2016
+(defun create-state-p-mirror 94,2794
+(defun create-satisfy-list 134,3924
+(defun process-all-precond-list 186,5460
+(defun fully-instantiated 283,8792
+(defun process-forall-precond 295,9343
+(defun demorgan 361,12219
+(defun special-list 402,13854
+
+source/sensing.lisp,532
+(defvar *sensing* 3,19
+(defvar *interactive* 6,136
+(defvar *sequence-list* 13,334
+(defparameter *sequence* 58,2987
+(defvar *senses* 62,3105
+(defun load-senses 66,3137
+(defun perceive 75,3339
+(defun more-input-p 81,3473
+(defparameter *sensing-cycle-length* 89,3619
+(defvar *sensor-count* 92,3720
+(defun sense-world 106,4219
+(defun add-handler 188,6761
+(defun remove-handler 198,7044
+(defvar *pause* 208,7261
+(defvar *interactive-pause* 209,7282
+(defun pause 212,7348
+(defun reset 237,7977
+(defun set-pause 257,8507
+
+source/state-manipulate.lisp,112
+(defun state-nil 19,674
+(defun initial-state 28,958
+(defun follow-path 59,2334
+(defun state-at-node 72,2841
+
+source/test-battery.lisp,921
+(defvar *results-directory* 12,245
+(defparameter *count-file-name* 28,725
+(defvar *battery-results* 43,1360
+(defun run-experiment 51,1513
+(defun set-seq 87,2898
+(defun create-sequence 103,3325
+(defun do-test 122,3611
+(defun do-test 154,4331
+(defun do-test 184,5048
+(defun do-1-trial 222,5913
+(defun trial 246,6539
+(defun gen-single-seq 262,6855
+(defun test-battery 276,7134
+(defun test-battery 306,7859
+(defun read-current-n-ops 342,8854
+(defun read-current-delay 350,9042
+(defun write-current-n-ops 358,9225
+(defun write-current-status 369,9435
+(defun create-res-file 382,9676
+(defun create-raw-res-file 407,10214
+(defun write-results 424,10631
+(defun find-highest 436,10782
+(defun filter-on-n-ops 449,11007
+(defun filter-on-delay 460,11238
+(defun create-2d-data-file 480,11775
+(defun gen-plot 507,12419
+(defun gen-dual-plots 555,13317
+(defun odd-items 576,13765
+(defun even-items 589,13989
+
+source/test-gtrans.lisp,479
+(defparameter *gresults-directory* 17,703
+(defvar *max-g-num* 24,883
+(defconstant *crossing-num* 27,966
+(defvar *max-r-num* 30,1043
+(defun init-lists 34,1189
+(defun setup-experiment 135,4882
+(defun gen-lte 223,6878
+(defun make-sym 228,6979
+(defun do-gtest 236,7203
+(defun do-1-gtrial 274,8199
+(defun testg-battery 292,8614
+(defun calc-bridges-destroyed 346,10136
+(defun calc-capacity-reduction 364,10553
+(defun create-gres-file 375,10736
+(defun pop-file 404,11458

@@ -1,0 +1,5407 @@
+(replay-all 4)
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-2-3-4.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.916
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.183
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.234
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.6
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.566
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.916
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-3-4
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-2-4-3.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.934
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.517
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.866
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.833
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-2-4-3
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-3-2-4.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.916
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.516
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.5
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.534
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.6
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.65
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.234
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.266
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-2-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-3-4-2.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.5
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.017
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.966
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.984
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.283
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.834
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-3-4-2
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-4-2-3.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.316
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.266
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.233
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.533
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-2-3
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.9
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p1-4-3-2.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.617
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.583
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.567
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.584
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.584
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.2
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.333
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.284
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.0
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.984
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p1-4-3-2
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.817
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p2-1-3-4.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.983
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.9
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.966
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.317
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.35
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.317
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.883
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.934
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 3.033
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 3.05
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p2-1-3-4
+ Following case "case-p4-3-2"
+Error: Received signal number 2 (Keyboard interrupt)
+  [condition type: interrupt-signal]
+
+Restart actions (select using :continue):
+ 0: continue computation
+
+
+(replay-single-comb '(4 3 2 1))
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/p4-3-2-1.lisp.
+
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-2.lisp.
+
+ Creating case header for "case-p4-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-2.lisp.
+
+ Creating case "case-p4-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.85
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-3.lisp.
+
+ Creating case header for "case-p4-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-3.lisp.
+
+ Creating case "case-p4-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.917
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-2.lisp.
+
+ Creating case header for "case-p3-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-2.lisp.
+
+ Creating case "case-p3-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.816
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-4.lisp.
+
+ Creating case header for "case-p3-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-4.lisp.
+
+ Creating case "case-p3-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-3.lisp.
+
+ Creating case header for "case-p2-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-3.lisp.
+
+ Creating case "case-p2-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.933
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-4.lisp.
+
+ Creating case header for "case-p2-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-4.lisp.
+
+ Creating case "case-p2-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 85
+ Running Time 2.867
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-3-1.lisp.
+
+ Creating case header for "case-p4-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-3-1.lisp.
+
+ Creating case "case-p4-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-3-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.534
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-3.lisp.
+
+ Creating case header for "case-p4-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-3.lisp.
+
+ Creating case "case-p4-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-4-1.lisp.
+
+ Creating case header for "case-p3-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-4-1.lisp.
+
+ Creating case "case-p3-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-4-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.666
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-4.lisp.
+
+ Creating case header for "case-p3-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-4.lisp.
+
+ Creating case "case-p3-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.55
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-3.lisp.
+
+ Creating case header for "case-p1-4-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-3.lisp.
+
+ Creating case "case-p1-4-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-4-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.566
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-4.lisp.
+
+ Creating case header for "case-p1-3-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-4.lisp.
+
+ Creating case "case-p1-3-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-3-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 75
+ Running Time 2.584
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-2-1.lisp.
+
+ Creating case header for "case-p4-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-2-1.lisp.
+
+ Creating case "case-p4-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p4-2-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.267
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p4-1-2.lisp.
+
+ Creating case header for "case-p4-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p4-1-2.lisp.
+
+ Creating case "case-p4-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p4-1-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p4-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.3
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-4-1.lisp.
+
+ Creating case header for "case-p2-4-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-4-1.lisp.
+
+ Creating case "case-p2-4-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-4-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-4-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.234
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-4.lisp.
+
+ Creating case header for "case-p2-1-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-4.lisp.
+
+ Creating case "case-p2-1-4"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-1-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.217
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-4-2.lisp.
+
+ Creating case header for "case-p1-4-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-4-2.lisp.
+
+ Creating case "case-p1-4-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-4-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-4-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.25
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-4.lisp.
+
+ Creating case header for "case-p1-2-4"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-4.lisp.
+
+ Creating case "case-p1-2-4"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-4"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-2-4"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 65
+ Running Time 2.334
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-2-1.lisp.
+
+ Creating case header for "case-p3-2-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-2-1.lisp.
+
+ Creating case "case-p3-2-1"
+"Done !" 
+List of available cases :
+ 0: "case-p3-2-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-2-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.967
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p3-1-2.lisp.
+
+ Creating case header for "case-p3-1-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p3-1-2.lisp.
+
+ Creating case "case-p3-1-2"
+"Done !" 
+List of available cases :
+ 0: "case-p3-1-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p3-1-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.0
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-3-1.lisp.
+
+ Creating case header for "case-p2-3-1"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-3-1.lisp.
+
+ Creating case "case-p2-3-1"
+"Done !" 
+List of available cases :
+ 0: "case-p2-3-1"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-3-1"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p2-1-3.lisp.
+
+ Creating case header for "case-p2-1-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p2-1-3.lisp.
+
+ Creating case "case-p2-1-3"
+"Done !" 
+List of available cases :
+ 0: "case-p2-1-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p2-1-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-3-2.lisp.
+
+ Creating case header for "case-p1-3-2"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-3-2.lisp.
+
+ Creating case "case-p1-3-2"
+"Done !" 
+List of available cases :
+ 0: "case-p1-3-2"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-3-2"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 2.0
+ Resetting (setting to nil) *case-cache* and *case-headers*
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/headers/case-p1-2-3.lisp.
+
+ Creating case header for "case-p1-2-3"
+ Done loading case header!
+ It was pushed into the list *case-headers*.
+; Loading /usr/mmv/prodigy4.0/domains/art-md-ns/probs/cases/case-p1-2-3.lisp.
+
+ Creating case "case-p1-2-3"
+"Done !" 
+List of available cases :
+ 0: "case-p1-2-3"
+ Current *merge-mode* is serial
+ Solving problem p4-3-2-1
+ Following case "case-p1-2-3"
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a1-4>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+	<a2-4>
+
+
+ Number of nodes 58
+ Running Time 1.95
+nil
+USER(59): USER(59): 

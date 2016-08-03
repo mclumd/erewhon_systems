@@ -1,0 +1,38 @@
+
+domain.lisp,107
+(defun negation-p 1181,29708
+(defun is-disjunct-types-p 1185,29777
+(defun linear-remove-alts 1698,41104
+
+domain.old.lisp,38
+(defun linear-remove-alts 1548,37230
+
+domain.with-dogs.lisp,38
+(defun linear-remove-alts 1608,38639
+
+functions.lisp,715
+(defun diff 3,21
+(defun break-p 5,56
+(defun goal-match-p 22,459
+(defun is-ancestor-op-of-p 59,1451
+(defun match-constraining-goals 77,2056
+(defun find-constraining-goal 114,3478
+(defun build-list 140,4511
+(defun identify-worse-bindings 159,5224
+(defun identify-better-bindings 215,6803
+(defun return-order 266,8062
+(defun generate-new-bindings 296,9239
+(defun is-ancestor-of-p 326,10048
+(defun get-ops-achieving 344,10572
+(defun is-precondition-of 362,11058
+(defun solves-precondition-of 377,11548
+(defun translate-to-list-form 413,12458
+(defun solves-precondition-of-p 426,12802
+(defun get-matching-pending-goal 442,13175
+(defun less-by 468,13782
+(defun gen-2 471,13826
+(defun gen-3 472,13852
+
+linear-alts.lisp,70
+(defun linear-remove-alts 7,107
+(define-prod-handler :always 20,538

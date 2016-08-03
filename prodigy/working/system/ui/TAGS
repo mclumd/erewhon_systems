@@ -1,0 +1,155 @@
+
+loader.lisp,399
+(defparameter *prod-ui-home* 22,475
+(defparameter *tcl-home* 28,574
+(defvar *tcl-customizations* 35,674
+(defvar *post-tcl-customizations* 45,1036
+(defvar *load-ui-immediately* 49,1154
+(defparameter *ui-modules*53,1242
+(defparameter *ui-binary-pathname*63,1503
+(defun load-ui-source 72,1606
+(defun load-ui-binaries 78,1774
+(defun ui-compile-all 86,1937
+(defun enable-user-control 154,4333
+
+lisp-source/ask-rules.lisp,420
+(defvar *mark-node* 5,119
+(defun enable-user-control 11,272
+(defun user-prefers-goal 35,894
+(defun get-user-choice 52,1438
+(defun user-prefers-operator 80,2502
+(defun user-prefers-bindings 98,3213
+(defun get-name-from-bindings 135,4641
+(defun get-name-from-bindings 148,4897
+(defun form-bindings-from-goal 163,5387
+(defun goal-from-literal 174,5740
+(defun list-args-names 179,5879
+(defun sv-to-list 187,6048
+
+lisp-source/op-graph.lisp,433
+(defun dagfile-op-graph 14,469
+(defun ui-make-op-graph 23,815
+(defun make-op-graph 32,1112
+(defun dag-op-graph 43,1604
+(defun kp-op-graph 60,2269
+(defun child-subgraph 83,3121
+(defun add-links-from-op 109,3878
+(defun add-links-from-preconds 114,4049
+(defun add-links-to-effects 125,4506
+(defun make-link 135,4858
+(defun make-pred 137,4902
+(defun el-rep 141,4980
+(defun get-all-rules 148,5187
+(defun list-nodes 156,5363
+
+lisp-source/prod-specific.lisp,1661
+(defvar *node-width* 34,1232
+(defvar *node-height* 35,1292
+(defvar *xmargin* 37,1355
+(defvar *ymargin* 38,1420
+(defvar *width* 40,1474
+(defvar *height* 41,1544
+(defvar *inter-x-margin* 43,1627
+(defvar *inter-y-margin* 46,1699
+(defvar *used-slots* 49,1775
+(defvar *pre-empted* 53,1925
+(defparameter *seen* 62,2339
+(defmacro return-val 71,2676
+(defmacro gt-level 78,2746
+(defmacro gt-xnum 79,2815
+(defun send-node-and-wait 82,2884
+(defun main-send-node 113,4058
+(defun goal-tree-parent 172,6333
+(defun send-delete-children 186,6832
+(defun delete-from-goal-tree 192,7023
+(defun opt-send-final 215,7943
+(defun add-drawing-handler 239,8984
+(defun remove-drawing-handler 247,9321
+(defun call-dot 259,9698
+(defun call-dag 293,10983
+(defun dfs-write-dag 312,11578
+(defun dfs-write-dot 335,12390
+(defun dag-search-tree 350,12908
+(defun type-children 360,13236
+(defun ellipse 366,13438
+(defun make-type-id-name 372,13581
+(defun make-type-label 377,13732
+(defun type-dag 380,13813
+(defun type-dot 387,13990
+(defun make-po 398,14405
+(defun dag-po 412,14950
+(defun prod-node-shape 442,15784
+(defun prod-node-print 452,16021
+(defun prod-node-print 492,17285
+(defun conv 519,18209
+(defun instop-print 534,18644
+(defun instop-print 559,19383
+(defun clicked-node 585,20297
+(defun prodigy-restart606,21196
+(defun sub-server 629,22145
+(defvar *tcl-char-width* 654,23066
+(defvar *tcl-char-height* 655,23095
+(defun compute-coordinates 657,23126
+(defun first-free-slot 731,25712
+(defun free-slot 763,26969
+(defun goal-string 783,27744
+(defun goal-list 795,28089
+(defun in-search-tree 822,29108
+(defun collect-node-names 836,29473
+
+lisp-source/scrollbutton.lisp,556
+(defvar *Tcl-display-forms* 31,1322
+(defun ret-function 132,5393
+(defun ret-symbol-val 139,5508
+(defun numbered-arg 220,7891
+(defun get-facts-about-object 271,9885
+(defun format-4-tcl 307,11233
+(defun node-property 329,12104
+(defun binding-node-name-4-tcl 335,12339
+(defun compute-expression-4-tcl 350,12796
+(defun assemble-adds-and-dels 364,13430
+(defun app-op-app-add 387,14250
+(defun app-op-app-del 391,14379
+(defun format-value-4-tcl 399,14689
+(defun node-names 410,14892
+(defun print-s-tree 423,15135
+(defun search-tree-root 436,15416
+
+lisp-source/shell.lisp,177
+(defvar *shell-stream* 14,352
+(defvar *alt-stream* 22,651
+(defvar *send-shell-verbose* 24,706
+(defun init-shell 31,945
+(defun send-shell 43,1190
+(defun quit-shell 55,1449
+
+lisp-source/tcl.lisp,701
+(defvar *sean-trace* 21,549
+(defvar *jim-trace* 22,575
+(defvar *last-line-from-tcl* 24,662
+(defvar *tcl-messages* 28,820
+(defvar *tcl-send*)31,892
+(defvar *tcl-query*)32,912
+(defvar *tcl-lisp-command-server* 34,934
+(defvar *tcl-event-notifyer* 35,973
+(defvar *send-socket* 37,1008
+(defvar *use-old-socket* 38,1035
+(defun start-tcl-server 40,1064
+(defun kill-tcl-server(57,1740
+(defun tcl-server 71,2250
+(defun tcl-server 103,3510
+(defun tcl-inet-server 151,5012
+(defun eval-for-tcl 175,6008
+(defun query-server(190,6649
+(defun send-to-tcl 235,8581
+(defun ping 248,8933
+(defun reload-tcl(250,8969
+(defun lisp-tcl 256,9168
+(defun code-item 272,9677
+(defun lisp-list-tcl 292,10389
+
+lisp-source/ui.lisp,117
+(defconstant *Pushkin* 26,733
+(defun running-on-pushkin-p 35,1158
+(defun prod-ui 51,1685
+(defun prod-ui 121,3643

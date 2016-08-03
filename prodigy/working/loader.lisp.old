@@ -1,0 +1,235 @@
+;;;
+;;; All this file does is load in the other files for Prodigy. If you
+;;; want to have dependencies and stuff so you can maintain the
+;;; system, use "prodigy.system" in this directory. But this one will
+;;; load Prodigy slightly faster if that's all you're looking for.
+;;; However, note that this file assumes you have previously compiled
+;;; all the files, using prodigy.system and defsystem.
+
+;;; I have an assumption through this code that the "user" package exists.
+#+CCL (rename-package "COMMON-LISP-USER" "COMMON-LISP-USER"
+		      :nicknames '("CL-USER" "USER"))
+#+CCL (rename-package "COMMON-LISP" "COMMON-LISP"
+		      :nicknames '("CL" "LISP"))
+
+#+CMU (if (and (find-package "COMMON-LISP-USER")
+	       (not (member "USER"
+			    (package-nicknames (find-package
+						"COMMON-LISP-USER"))
+			    :test #'string=)))
+	  (rename-package (find-package "COMMON-LISP-USER")
+			  '("CL-USER" "USER")))
+
+#+CMU (if (and (find-package "COMMON-LISP")
+	       (not (member "LISP"
+			    (package-nicknames (find-package
+						"COMMON-LISP"))
+			    :test #'string=)))
+	  (rename-package (find-package "COMMON-LISP")
+			  '("CL" "LISP")))
+
+(in-package "USER")
+
+(defvar *prodigy-loaded* nil)
+
+(unless (find-package "PRODIGY4")
+  (make-package "PRODIGY4" :nicknames '("P4")))
+
+(use-package "PRODIGY4")
+
+;;; This line fixes a load-time importing error
+(import 'p4::goal)
+
+;;; If you run on another operating system, or apple with unix, you
+;;; will need to change this.
+(defvar *directory-separator*
+  #+APPLE #\:
+  #+(OR UNIX MACH (AND DOS CLISP))  #\/
+  "Character that separates directories (this should really use the
+Common Lisp file system interface)")
+
+;;; *** LOOK HERE WHEN YOU INSTALL OR COPY PRODIGY ***
+;;; Change the value of this variable appropriately if copying this file,
+;;; or installing 4.0
+(defvar *prodigy-base-directory*
+  "/afs/cs/project/prodigy/version4.0/"
+  "Base pathname for the prodigy 4.0 system.")
+
+(defparameter *prodigy-root-directory* 
+  (concatenate 'string *prodigy-base-directory* 
+	       "working/")
+  "Pathname for the working system.")
+
+(defparameter *system-directory*
+  (concatenate 'string *prodigy-root-directory*
+	       "system/")
+  "Directory holding all source file directories.")
+
+(defvar *world-path*
+  (concatenate 'string *prodigy-root-directory*
+	       "domains/" )
+;(string *directory-separator*)
+  "Default directory to search for domain definitions and problems")
+
+;;; *** LOOK HERE WHEN YOU INSTALL OR COPY PRODIGY ***
+;;; You must create the directory specified here, as a subdirectory of
+;;; the prodigy "system" directory, below the root directory. If your
+;;; lisp version is not mentioned here, you must create an entry for
+;;; it and also modify the *binary-extension* variable below.
+;;; First, work out what system this is and whether we have the right
+;;; compiled files. 
+(defparameter *binary-pathname*
+  (concatenate 'string *system-directory*
+	       #+APPLE "fasl:"
+	       #+(and CMU IBM-RT-PC) ".ibm-rt/"
+	       #+(and ALLEGRO SUN3 ALLEGRO-V3.1)  ".sun3-allegro-3.1/"
+	       #+(and ALLEGRO DEC3100 ALLEGRO-V3.1) ".pmax-allegro/"
+	       #+(and ALLEGRO DEC3100 ALLEGRO-V4.1) ".pmax-allegro-4.1/"
+	       #+(and ALLEGRO SPARC ALLEGRO-V4.2) ".sparc-allegro-4.2/"	       
+	       #+(and ALLEGRO SPARC ALLEGRO-V4.1) ".sparc-allegro-4.1/"	       
+	       #+(and ALLEGRO SPARC ALLEGRO-V4.0) ".sparc-allegro-4.0/"
+	       #+(and ALLEGRO SPARC ALLEGRO-V3.1) ".sparc-allegro-3.1/"
+	       #+(and CMU PMAX) ".pmax-cmu/"
+	       #+(and CMU SPARC) ".sparc-cmu/"
+	       #+(and DOS CLISP) "dosbin/"
+	       #+PA ".hp-9000/"
+	       #+(and PRISM ALLEGRO-V4.2) ".hp-allegro-4.2/"
+	       #+(and LUCID LCL4.0 MIPS) ".pmax-lucid-4.0/"
+	       #+(and LUCID LCL4.0 SPARC) ".sparc-lucid-4.0/"
+	       #+(and GCL SPARC) ".gnu/"
+	       #+(AND GCL UNIX BSD386) ".gnu-linux/"
+	       #+CLISP ".clisp/"
+	       ))
+
+;;; See above about unhelpful error messages.
+(defparameter *binary-extension*
+  #+APPLE "fasl"
+  #+IBM-RT-PC "fasl"
+  #+(and ALLEGRO SUN3) "fasl"
+  #+(and ALLEGRO DEC3100) "decf"
+  #+(and ALLEGRO PRISM) "fasl"
+  #+(and CMU PMAX) "pmaxf"
+  #+(and (not LUCID) SPARC (NOT GCL)) "fasl"
+  #+(or CLISP DOS) "fas"
+  #+(and LUCID SPARC) "sbin"
+  #+(and LUCID MIPS) "mbin"
+  #+GCL "o")
+
+#-(and DOS (and CMU (not IBM-RT-PC)))
+(defparameter *prodigy-modules*
+  '(("planner/" "load-domain" "types" "assertions" "misc" "load-problem"
+     "goal-loop" "extract-functions" "extract-static" "extract-cr"
+     "my-extract-cr" "generator" "node" "instantiate-op"
+     "circular" "macros" "matcher-interface" "result" "search" "protect"
+     "apply" "treeprint" "matching" "rete-match" "meta-predicates"
+     "interrupt" "comforts")
+    ("abstraction/" "gen-hiers" "utils" "augment"))
+  "A list of directory - file list pairs, whose files should be loaded
+in order.")
+
+;;; The file funcall-patch.lisp is only necessary for versions of CMU
+;;; above some version. I don't know the threshold exactly, but it is
+;;; less than or equal to 16, and higher than the version we have for
+;;; the RT's. Hence this #+ construct.
+#+(and CMU (not IBM-RT-PC))
+(defparameter *prodigy-modules*
+  '(("planner/" "funcall-patch"
+     "load-domain" "types" "assertions" "misc" "load-problem"
+     "goal-loop" "extract-functions" "extract-static" "extract-cr"
+     "my-extract-cr" "generator" "node" "instantiate-op"
+     "circular" "macros" "matcher-interface" "result" "search" "protect"
+     "apply" "treeprint" "matching" "rete-match" "meta-predicates"
+     "interrupt" "comforts")
+    ("abstraction/" "gen-hiers" "utils" "augment"))
+  "A list of directory - file list pairs, whose files should be loaded
+in order.")
+
+#+DOS
+;;; Dos, of course, has different ideas about valid file names. If
+;;; you're copying this to run under dos, see the unix script in this
+;;; directory, "make-dos", which makes a zip file of the latest
+;;; version with the approptiate names.
+(defparameter *prodigy-modules*
+  '(("planner/" "ld-dom" "types" "assert" "misc" "ld-prob"
+     "gl-loop" "ex-fun" "ex-stat" "ex-cr"
+     "my-ex-cr" "genrator" "node" "inst-op"
+     "circular" "macros" "mtch-int" "result" "search" "protect"
+     "apply" "treeprin" "matching" "retemtch" "meta-prd"
+     "interrup" "comforts")
+    ("abstract/" "gen-hier" "utils" "augment"))
+  "A list of directory - file list pairs, whose files should be loaded
+in order.")
+
+;;; Bootstrap to load prod-ui
+;;;
+;;; Looks recursive, but is not. prod-ui fn is redefined in ui.lisp [cox]
+;;; which is now loaded by loader.lisp.
+;;; 
+;;; Added manual-ui switch to allow loading of tcl code from a separate
+;;; tcl window if desired (just pass non-nil arg). If so then prod-ui as
+;;; redefined by ui.lisp will not source the tcl code. [cox 5may97]
+;;;
+(defun prod-ui (&optional manual-ui)
+  (load (concatenate 'string 
+		     *system-directory* 
+		     "ui/loader.lisp")) ; was "ui.lisp"
+  (prod-ui manual-ui))
+
+
+;;; Here are some functions you can use to quickly load up the source
+;;; and compile all functions (you must have the source loaded to do this).
+
+(defun p-compile (module-dir
+		  file-name
+		  &optional 
+		  (system-path
+		   *system-directory*)
+		  (binary-path
+		   *binary-pathname*)
+		  )
+  (compile-file
+   (concatenate 'string 
+		system-path 
+		module-dir
+		file-name
+		#+(OR GCL CLISP) ".lisp"
+		)
+   :output-file
+   (concatenate 'string 
+		binary-path file-name
+		"." 
+		user::*binary-extension*))
+  )
+
+(defun p-load (module-name file)
+  (load (concatenate 'string *system-directory* module-name file ".lisp")))
+
+(defun load-source ()
+  (dolist (module *prodigy-modules*)
+    (dolist (file (cdr module))
+      (p-load (car module) file)))
+  (setf *prodigy-loaded* t))
+
+(defun compile-all ()
+  (dolist (module *prodigy-modules*)
+    (dolist (file (cdr module))
+      (p-compile (car module) file))))
+
+(defun load-compiled ()
+  (dolist (module *prodigy-modules*)
+    ;; Note that in fact the module directory is ignored - the compiled
+    ;; files all have a flat structure here although that need not be
+    ;; the case.
+    (let ((ender (concatenate 'string "." *binary-extension*))
+	  (*load-verbose* t))
+      (dolist (file (cdr module))
+	(load (concatenate 'string *binary-pathname* file ender)))))
+  (setf *prodigy-loaded* t))
+;;; Here is where the assumption that it is previously compiled comes
+;;; into play.
+(defvar *load-prodigy-immediately* t)
+
+(when *load-prodigy-immediately*
+  (load-compiled)
+  (format t "~%;;; Prodigy is loaded.~%"))
+

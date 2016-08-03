@@ -1,0 +1,5 @@
+(registrar)
+(load "w:/My Documents/prodigy/working/Wrapper/loader.lisp")
+(wrapper-compile-all)
+(compile-file "w:/My Documents/prodigy/working/Wrapper/java-lisp.sockets/socket.lisp")
+(kill-socket-server *registrar-command-server*)

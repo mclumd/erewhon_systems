@@ -1,0 +1,125 @@
+The New Watchdog Code:
+
+Below are five sections, one for the main watchdog code library, and
+one for each of the programs that use the watchdog (ForMAT, Prodigy,
+and the fakes).  Each section begins with the list of files that
+create a watchdog patch.  For each file is a list things that need to
+be set before it can be run.  Then there is a brief description how
+the code works and any additional instructions to run the code.
+
+
+Watchdog:
+
+watchdog/watchdog.lisp -- Watchdog interface (:watchdog package)
+  *watchdog-dir* -- Pathname of the watchdog directory
+  *default-server-hostname* -- Server machine name
+  *default-server-port* -- Server port number
+  
+watchdog/sockets/*     -- Socket interface (:sockfig package)
+
+Loading watchdog.lisp will create the :watchdog package and then load
+the socket code (which creates the :sockfig package and loads the C
+socket code if sockfig::*load-sock-file-p* is T).
+
+The watchdog library contains functions to run a server and a client.
+Descriptions of these functions can be found in watchdog.lisp
+
+This code is used by all four programs below (ForMAT, Prodigy, fake
+ForMAT and fake Prodigy).  The default server and hostnames are over
+shadowed by values in each file below.
+
+
+
+ForMAT Watchdog:
+
+prodigy-socket.lisp -- Patches ForMAT to use the new Watchdog
+  Depends on Watchdog code 
+  *default-prodigy-hostname* -- hostname of the prodigy server
+  *default-prodigy-port* -- port of the prodigy server
+
+Prodigy-socket requires that the watchdog code has already been
+loaded.  This file contains patches to prodigy-io and prodigy-toplevel
+to allow ForMAT to use the new Watchdog.
+
+To load the file into ForMAT create a new patch directory in the
+format-XXX/patches directory called PATCH-Y (where Y is the next patch
+number).  Create a file called load-patch.Y.lisp with the following
+code (which loads the new watchdog code):
+
+(defpackage :watchdog)
+(let ((patchnum Y))  ;; <== REPLACE Y with patch number
+   (defvar watchdog::*watchdog-dir* (patch-filename "" patchnum))
+   (load (patch-filename "watchdog" patchnum))
+   (load (patch-filename "prodigy-socket" patchnum))
+  )
+
+Place the sockets directory and the prodigy-socket and watchdog files
+(or links to them) in this PATCH-Y directory.
+
+
+
+Prodigy:
+
+prodigy-patch.lisp 
+  Depends on Watchdog code.
+  Set correct path to load watchdog code.
+  *default-prodigy-port* -- Port for the server.
+
+Add this file to the list of files in front-end/loader.lisp then
+create a binary as usual (you'll have to create binary files for the
+watchdog code separately if you have not done so already).  Loading
+prodigy-patch will load the watchdog and socket code.  This code
+patches functions found in front-end.lisp and ratio-rep.lisp so
+prodigy uses the new watchdog.  The watchdog is started when prodigy
+is initialized (Run command).  The Watchdog starts a server that
+waits for the ForMAT client to connect.
+
+Since the user interface loads the socket C code (sock.o), I skip
+loading that file.  To force the load of sock.o when the watchdog is
+loaded, set sockfig::*load-sock-file-p* to T at the top of
+prodigy-patch.lisp. 
+
+
+
+Fake Prodigy:
+
+fake-prodigy2.lisp
+  Depends on Watchdog code
+  Set correct path to load watchdog code.
+  *default-prodigy-port* -- Port to run the server on. (overrides watchdog)
+
+To run the fake Prodigy program, start a lisp process and load
+fake-prodigy2.lisp.  This will load the watchdog and socket code.
+There are three commands for fake Prodigy:
+
+(start-fake-prodigy) - Start the program
+(continue-fake-prodigy) - only needed if something breaks and you need
+  to resume the main processing loop. 
+(stop-fake-prodigy) - only needed if program does not stop normally.
+  Shuts down the watchdog server cleanly.
+
+
+
+Fake ForMAT:
+
+fake-format.lisp
+  Depends on Watchdog code.
+  Set correct pathname for watchdog.
+  *default-prodigy-hostname* -- Hostname of the prodigy server
+  *default-prodigy-port* -- Port of the prodigy server
+  *sleep* -- Wait time between sent messages
+  *prodigy-events-to-trace* -- A list of the event types that are sent
+    to prodigy.
+
+(start-fake-format FILENAME) -- Starts fake ForMAT.  The Prodigy
+server must already be running.  FILENAME must be the name of a
+prodigy-trace file (NOTE: this is different than the individual
+message files that were sent with the old watchdog.  Fake prodigy uses
+a single history file like the examples provided in the history
+directory.  The old files can be cat'ed together to make a compatable
+history file.)
+
+To run fake format start a list process and load fake-format.lisp.
+Start the program with (start-fake-format FILENAME).
+
+

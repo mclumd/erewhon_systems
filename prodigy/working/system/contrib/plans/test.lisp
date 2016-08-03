@@ -1,0 +1,33 @@
+
+(setf *v-prob2objs*
+  (make-problem-plan 
+    :name 'prob2objs
+    :state '((at apollo loca) (at hammer loca) (at robot loca))
+    :goal '((at hammer locb) (at robot locb))
+    :plan (list
+      (make-plan-step :name '(load-rocket robot loca apollo)
+                      :preconds '((at apollo loca) (at robot loca))
+                      :adds '((inside robot apollo))
+                      :dels '((at robot loca))
+      )
+      (make-plan-step :name '(load-rocket hammer loca apollo)
+                      :preconds '((at apollo loca) (at hammer loca))
+                      :adds '((inside hammer apollo))
+                      :dels '((at hammer loca))
+      )
+      (make-plan-step :name '(move-rocket apollo)
+                      :preconds '((at apollo loca))
+                      :adds '((at apollo locb))
+                      :dels '((at apollo loca))
+      )
+      (make-plan-step :name '(unload-rocket robot locb apollo)
+                      :preconds '((inside robot apollo) (at apollo locb))
+                      :adds '((at robot locb))
+                      :dels '((inside robot apollo))
+      )
+      (make-plan-step :name '(unload-rocket hammer locb apollo)
+                      :preconds '((inside hammer apollo) (at apollo locb))
+                      :adds '((at hammer locb))
+                      :dels '((inside hammer apollo))
+      )
+)))

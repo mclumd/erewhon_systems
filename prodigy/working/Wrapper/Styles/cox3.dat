@@ -1,0 +1,39 @@
+(
+(:style 
+	(default
+		 (head-print (lambda (head)
+			       (terpri)
+			       (princ "(")
+			       (princ  head)
+			       (princ " "))
+		 )
+		 (role-print (lambda (role)
+			       (format t "~s "  role))
+                 )
+		 (done (lambda (dummy)
+		         (princ ")"))
+		) 
+		 );default
+ )
+(:style 
+	(will
+		 (head-print (lambda (head)
+			       (terpri)
+;			       (princ "(")
+			       (princ  head)
+			       (princ " "))
+		 )
+		 (role-print (lambda (role)
+			       (format t "~s "  (second role)))
+                 )
+		 (done (lambda (dummy)
+		         nil)
+		) 
+		 );default
+ )
+(:data will (UNSTACK (<OB> BLOCKC) (<UNDEROB> BLOCKA)))
+(:data default  (PUT-DOWN (<OB> BLOCKC) (<UNDEROB> BLOCKA)))
+(:data will  (PICK-UP (<OB> BLOCKC) (<UNDEROB> BLOCKA)))
+(:data default  (STACK (<OB> BLOCKC) (<UNDEROB> BLOCKA)))
+(:data will  (PICK-UP (<OB> BLOCKC) (<UNDEROB> BLOCKA)))
+)

@@ -1,0 +1,51 @@
+
+loader.lisp,697
+(defvar *prodigy-loaded* 33,1165
+(defvar *directory-separator*45,1471
+(defvar *prodigy-base-directory*54,1812
+(defparameter *prodigy-root-directory* 58,1933
+(defparameter *system-directory*63,2081
+(defvar *world-path* 68,2234
+(defun set-binary-path 82,2854
+(defparameter *binary-pathname*110,3986
+(defparameter *binary-extension*116,4088
+(defvar *prodigy-modules*130,4459
+(defparameter *prodigy-modules*146,5264
+(defparameter *prodigy-modules*163,6066
+(defvar *UI* 175,6525
+(defun prod-ui 187,6972
+(defun p-compile 202,7499
+(defun p-load 224,7864
+(defun load-source 236,8052
+(defun compile-all 242,8208
+(defun load-compiled 247,8339
+(defvar *load-prodigy-immediately* 260,8856
+
+system-loader.lisp,637
+(defvar *use-monitors-p* 15,275
+(defparameter *load-monitors-p* 19,355
+(defparameter *interactive-loading* 23,454
+(defparameter *disable-loading* 27,591
+(defvar *prodigy-base-directory* 30,669
+(defparameter *customizations-path* 41,1180
+(defvar *personal-customizations-path* 55,1692
+(defvar *post-tcl-customizations-filename* 62,1825
+(defparameter *run-with-no-terminal-io* 66,1958
+(defparameter *load-patches* 79,2470
+(defparameter *load-partial-goal-satisfac* 86,2630
+(defparameter *load-prodigy-front-end* 98,3083
+(defun load-prodigy 111,3354
+(defun matches-initial-substr 192,5573
+(defun disable-terminal-io 213,5951
+
+./system/planner/TAGS,include
+
+./system/analogy/TAGS,include
+
+./system/ui/TAGS,include
+
+./system/monitors/TAGS,include
+
+./system/jade/TAGS,include
+
+./system/customizations/TAGS,include

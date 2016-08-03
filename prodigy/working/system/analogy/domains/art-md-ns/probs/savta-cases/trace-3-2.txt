@@ -1,0 +1,68 @@
+(run)
+Creating objects nil of type nil
+
+  2 n2 (done)
+  4 n4 <*finish*>
+Following case "case-p2-2" 5 -- goal (g2)
+  5   n5 (g2)
+Following case "case-p2-2" 6 -- operator a2-2
+Null bindings -- ok case
+  7   n7 <a2-2>
+Following case "case-p2-2" 35 -- goal (g1)
+  8   n8 (g1)
+Following case "case-p2-2" 36 -- operator a2-1
+Null bindings -- ok case
+ 10   n10 <a2-1>
+Following case "case-p2-2" 38 -- goal (p1)
+ 11     n11 (p1)
+Following case "case-p2-2" 39 -- operator a1-1
+Null bindings -- ok case
+ 13     n13 <a1-1>
+Following unguided goal #<g3>
+ Decided to subgoal.
+ 14   n14 (g3)
+ 16   n16 <a2-3>
+Following unguided goal #<p3>
+ Decided to subgoal.
+ 17     n17 (p3)
+ 19     n19 <a1-3>
+ Decided to apply.
+ #<a1-1>
+Following case "case-p2-2" 41 -- apply
+ 20     n20 <A1-1>
+Following case "case-p2-2" 46 -- goal (p2)
+ Decided to subgoal.
+ 21     n21 (p2)
+Following case "case-p2-2" 47 -- operator a1-2
+Null bindings -- ok case
+ 23     n23 <a1-2>
+ Decided to apply.
+ #<a1-2>
+Following case "case-p2-2" 49 -- apply
+ 24     n24 <A1-2>
+ Decided to apply.
+ 25     n25 <A1-3>
+ Decided to apply.
+ #<a2-1>
+Following case "case-p2-2" 50 -- apply
+ 26   n26 <A2-1>
+ Decided to apply.
+ #<a2-2>
+Following case "case-p2-2" 51 -- apply
+ End of current guiding case.
+ 27   n27 <A2-2>
+ Decided to apply.
+ 27   n28 <A2-3>
+Achieved top-level goals.
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+
+#<PRODIGY result: t, 3.4 secs, 28 nodes, 1 sol>
+USER(48): USER(48): 
+

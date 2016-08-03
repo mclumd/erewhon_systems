@@ -1,0 +1,29 @@
+
+
+
+Error output from /afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/augment.lisp 5-Dec-93 23:05:52.
+Compiled on 15-Mar-94 12:28:28 by CLC version M1.8 (15-Aug-90).
+
+AUGMENT-GOAL-EXPR compiled.
+AUGMENT-OR-EXPR compiled.
+AUGMENT-AND-EXPR compiled.
+AUGMENT-GOAL compiled.
+AUGMENT-EXP-LIST compiled.
+REMOVE-VAR-LITS compiled.
+HAS-VARS compiled.
+ABS-MATCH compiled.
+ABS-MATCHER compiled.
+ABS-MATCH-EACH compiled.
+ABS-MATCH-EACH-BLST compiled.
+ALSO-UNIFY compiled.
+DEREF compiled.
+ISA-VAR compiled.
+EXTRACT-VARS compiled.
+ARG-TYPE compiled.
+ARGUMENT-TYPE compiled.
+CHECK-ARG-TYPE compiled.
+
+Finished compilation of file "/afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/augment.lisp".
+0 Errors, 0 Warnings.
+Elapsed time 0:00:07, run time 0:00:06.
+

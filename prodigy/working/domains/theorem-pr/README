@@ -1,0 +1,214 @@
+July 28, 1994
+This is the README file including the attempts for the theorem-proving domain. 
+
+REPRESENTATION
+;;;;;;;;;;;;;;;;
+in /afs/cs.cmu.edu/user/melis/Prodigy/domains/theorem-pr/functions.lisp
+
+We use the infinite types TERMs, FORMULAs, ASS_SETs, SUBSs. They are identified in
+Prodigy by functions such as:   term-symbol-p 
+which lookup assoc-tables *term-table*, *formula-table*, *set-table*, *subst-table*
+for (symbol . structure). (emtyset . nil) is a special ass-set you always need.
+
+Terms, formulas, subst are represented by structures, see functions.lisp.
+ASS-SETs are represented as lists of formula-SYMBOLS.
+
+In order to create a problem you have to create the structures, tables and symbols.
+Up to now a new GIVEN NAME of a structure replaces an old name in the formula- and
+term-table. Therefore first create the formulas and then the sets because the old
+formula-names are not replaced in the set-table. But this can easily be changed.
+The functions for creating formulas etc. are create-formula, create-ass-set.
+
+ 	An example of a problem is prob6.lisp
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setf *set-table* nil)
+(setf *formula-table* nil)
+(setf *term-table* nil)
+
+;special assertion set 
+(add-to-set-table 'emptyset nil)
+(setf emptyset 'emptyset)
+
+;;First create the formulas and then the sets because the old
+;;formula-names are not replaced in the set-table
+
+(create-formula '(F1) 'f1)
+(create-formula '(andf (F1) (F2)) 'f1uf2)
+(create-formula '(implf (F1)(F2)) 'f1ff2)
+(create-ass-set '((symm (S))) 'ass)
+(create-ass-set '((symm (S)) (F1)) 'assUf1)
+
+
+(setf (current-problem)
+      (create-problem
+       (name prob6)
+       (objects
+        ())
+       (state
+	(and
+	(nothing)
+	(follows assuf1 f1uf2)))
+       (goal
+        (follows ass f1ff2))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Pay ATTENTION to the input conventions for terms, formulas etc:
+Convention for input of terms, examples:
+Each term is input in brackets, e.g. (f (a)); (f(a b ));
+(f ( (f(a b)) c)) (a) (x) a x
+
+Convention of input of formulas:
+(= (t1 t2)); (R(a b)); (R(a)); (R ((f(a b)) x)); (andf (R(a)) (F2)); etc. for orf,
+notf, implf, equivf; ((forallf x) ((forallf z) (implf (R(x)) (Q(z)))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+DOMAIN theorem-pr
+;;;;;;;;;;;;;;;;;;;;;;
+in /afs/cs.cmu.edu/user/melis/Prodigy/domains/theorem-pr/domain.lisp 
+
+The set of operators and rules is incomplete, but we didn't aim at constructing
+another complete theorem proving system. Up to now I didn't integrate operators or
+rules for equality-handling.
+
+The current version of the domain has the following operators, inference-rules , and
+control-rules which usually use a whole bunch of functions from functions.lisp
+(presumably some functions in functions.lisp can be deleted because they are not
+needed anymore):
+
+operators:
+
+DED
+HYP-INTRO
+SPLIT-CONJ-ASSUMPTION
+OPERATOR APPLY-DEFINITION-LEFT
+OPERATOR AND-INTRO-OP
+OPERATOR FORALL-INTRO-OP
+OPERATOR REDUCED-ASSUMPTION
+MODUS-PONENS-OP-left
+GENERALIZED-MODUS-PONENS-OP-left
+OPERATOR MATCH-OP
+EXISTS-INTRO (that introduces a marked constant)
+(MODUS-PONENS-OP-RIGHT is outcommented)
+(APPLY-EQUIVALENCE-LEFT is outcommented)
+(APPLY-EQUIVALENCE-RIGHT is outcommented)
+
+inference-rules:
+
+RULE-FORALL-DELETION
+RULE-AND-DELETION
+RULE-MODUS-PONENS
+RULE-GENERALIZED-MODUS-PONENS
+RULE-APPL-DEF-LEFT
+RULE-INTRODUCE-DEFINITION (static rule)
+
+Note that the version of inference-rules in which the rules only fire when the result
+is not in the state already DOESN'T work. Therefore the corresponding commented lines
+in rule-forall-deletion and rule-and-deletion (maybe also needed to outcomment in
+other rules - I don't know). I didn't fix this bug.
+
+control-rules
+
+REJECT-HYP-INTRO (HYP-INTRO should only fire when the goal is (hypothesized bla))
+REJECT-DED (rejects to apply DED-op to results of (generalized)MODUS-PONENS-OP-RIGHT)
+
+To run this domain such that the inference-rules only fire forward
+LOAD (load "/afs/cs.cmu.edu/user/melis/Prodigy/changes") (i.e., the compiled version)
+In this file are also Mei's changes for bindings of inference-rules such that the
+bindings are computed in every cycle and not only at the beginning.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+PROBLEMS
+;;;;;;;;;;;;
+in 
+/afs/cs.cmu.edu/user/melis/Prodigy/domains/theorem-pr/probs
+
+Simple problems to run are (currently running)
+traces often just with partial domains because these were just tsts of operators
+
+prob2		trace in and-intro-run
+prob3		trace in modus-ponens-rule-run
+prob5
+prob6		trace in and-deletion-run
+prob7		trace in general-modus-ponens-run
+prob8		trace in apply-def-run
+prob9
+prob11		trace in modus-ponens-left-op-run
+prob12
+prob13		trace in hyp-ded-run
+prob17		trace in forall-deletion-rule-run
+
+
+currently NOT running anymore:
+prob1	original trace in 
+prob4
+prob10	trace was appl-def-rule-run
+prob16	trace in match-op-run
+----------------------------------------------------------------------------
+More complicated problems currently running
+to run with :permute-application-order t :depth-bound 70
+
+prob-symm  TRACE IN /afs/cs.cmu.edu/user/melis/Prodigy/domains/theorem-pr/full-symm-run
+	(ran recently only with outcommented (split-conj-assumption operator), 
+	which is not essential, in reasonable time)
+prob-ana-symm.lisp (is the corresponding analogous problem) which I didn't run so far
+
+
+
+prob17-6-a TRACE /afs/cs.cmu.edu/user/melis/Prodigy/domains/theorem-pr/full-17.6.3.-run
+
+prob17-6-b is the analogous problem which will require to find an additional assumption.
+  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+ANALOGY WHICH NOT YET RUNNING
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+The old tables have to be stored after the old run. This is done, e.g. by 
+(store table *term-table* 'term) (code in my-save-tables).
+This stores the intermediate code, for instance,..../probs/cases/<problem>-term-save.lisp
+
+The tables are concatenated to the tables of a new problem by reading it back from the
+intermediate code  by (create-tables "<problem>").
+
+current !!! INSTRUCTIONS HOW TO PREPARE ANALOGY
+with  *default-pathname-defaults* /afs/cs.cmu.edu/user/melis/Prodigy/Analogy
+
+(load "setup") ;;maybe load "my-save-case" extra (excludes footprint)
+
+(domain 'theorem-pr :function t)
+(problem '<your source problem>)
+(run :permute-application-order t :depth-bound 70)
+
+(load "my-save-tables")
+
+(store-case)
+
+(load "test") (load-domain) ;always in this order
+
+(problem '<your new problem>)
+
+(create-tables "<your old problem>"); is working fine
+
+(load-cases "case-<your old problem>")
+
+(setf *guiding-cases* *case-cache*)
+(setf *guiding-case* (check-case-to-follow))
+(setf *talk-case-p* t)
+(setf *case-replay* t)
+(setf *debug-case-p* t); for instance
+
+(begin-case *guiding-case*)
+(run :depth-bound 70 :permute-application-order t)
+------------------------------------------------------------------
+TRACE WAS with old =prob6 and new = prob6  FOR INSTANCE
+<cl> (begin-case *guiding-case*)
+ #<OPERATOR-NODE 3 #<OP: *finish*>>
+ #<BINDING-NODE 4 #<*finish*>>
+#<GOAL-NODE 5 #<follows ass f1ff2>> 
+<cl> (run)
+Creating objects NIL of type NIL
+
+  2 n2 (done)
+  4 n4 <*finish*>Error: Attempt to do an array operation on ass which is not an array.
+---------------------------------------------------------------------------------

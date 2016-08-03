@@ -1,0 +1,26 @@
+
+find-branches.lisp,92
+(defun find-branches 6,123
+(defun find-branches2 22,615
+(defun print-search-nodes 35,990
+
+overload.lisp,660
+(defvar *my-crl-name* 25,536
+(defun refine-node 45,1090
+(defun do-subgoal 90,2670
+(defun expand-goal 192,6479
+(defun really-expand-operator 261,8670
+(defun do-apply-op 339,11450
+(defun match-select-node 412,13950
+(defun match-reject-nodes 429,14489
+(defun match-select-op 454,15227
+(defun match-reject-op 479,16083
+(defun match-reject-bindings 516,17375
+(defun rete-gen-bindings 535,18013
+(defun fire-prefer 596,20184
+(defun match-select-goal 613,20770
+(defun match-reject-goal 639,21583
+(defun match-a-or-s-rule 660,22190
+(defun match-r-or-e-rule 677,22761
+(defun match-select-applied-ops 693,23378
+(defun match-reject-applied-op 741,24930

@@ -1,0 +1,38 @@
+(setf (current-problem)
+  (create-problem
+    (name p1238)
+    (objects 
+        (rmA rmB rmC rmD ROOM)
+        (boxA BOX)
+        (drA drB DOOR)
+        (keyA keyB KEY)
+)
+    (state
+      (and
+          (dr-to-rm drA rmA)
+          (dr-to-rm drA rmC)
+          (connects drA rmA rmC)
+          (connects drA rmC rmA)
+          (unlocked drA)
+          (dr-open drA)
+          (is-key keyB drA)
+          (carriable keyB)
+          (inroom keyB rmB)
+          (dr-to-rm drB rmA)
+          (dr-to-rm drB rmB)
+          (connects drB rmA rmB)
+          (connects drB rmB rmA)
+          (unlocked drB)
+          (dr-open drB)
+          (is-key keyA drB)
+          (carriable keyA)
+          (inroom keyA rmA)
+          (inroom robot rmA)
+          (arm-empty)
+          (carriable boxA)
+          (inroom boxA rmD)
+))
+    (goal
+      (and
+          (inroom boxA rmA)
+))))

@@ -1,0 +1,4 @@
+This directory contains the code to "partially remove" an
+operator. That is instead of removing unload-airplane, we can modify
+the OP so that it will not unload airplanes at particular
+airports. See function my-diff in functions.lisp.

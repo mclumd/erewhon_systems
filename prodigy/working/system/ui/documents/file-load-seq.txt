@@ -1,0 +1,125 @@
+The FILE LOADING SEQUENCE for the the PRODIGY User Interface (UI) is as
+follows:
+
+NOTE that the Lisp variable *prod-ui-home* is defined in the ui loader file
+(loader.lisp); whereas, the Tcl variable ui_home is defined in ui-start.tcl.
+
+
+NOTE that the prod-ui function (defined in file *system-directory*/loader.lisp)
+loads file *prod-ui-home*/loader.lisp, which in turn, loads the files below
+including *prod-ui-home*/ui.lisp. The latter file redefines the prod-ui
+function and then calls the (redefined) prod-ui function again. This second
+call loads the tcl files. 
+
+loader.lisp file loads the following (either (load-ui-binaries) or
+(load-ui-source) will be called to perform these loads):
+	Defines lisp functions to communicate with tcl
+	*prod-ui-home*/lisp-source/tcl.lisp
+
+	Specific high-level lisp for the prodigy-tcl interaction
+	*prod-ui-home*/lisp-source/prod-specific.lisp
+
+		prod-specific.lisp loads the following files if user
+		chooses to perform partial-order computation
+
+		*prod-ui-home*/order/access-fns-pro4 
+		*prod-ui-home*/order/my-release-partial
+		*prod-ui-home*/order/process-preconds
+		*prod-ui-home*/order/footprint
+			Footprint loads the following
+			*prod-ui-home*/order/preconds.lisp
+			*prod-ui-home*/order/print-rules.lisp
+		*prod-ui-home*/order/print-partial
+
+	for that implements user control of planning decisions
+	*prod-ui-home*/lisp-source/ask-rules.lisp
+
+	implements shell stream from which wish is invoked by Prodigy
+	*prod-ui-home*/lisp-source/shell.lisp
+
+	Lisp code called by tcl functions in scrollbutton.tcl.
+	Together, the tcl and Lisp implements the mouse sensitive access of
+	the search tree from the goal tree canvas.
+	*prod-ui-home*/lisp-source/scrollbutton.lisp
+
+	Lisp code that implements the operator graph display function
+	*prod-ui-home*/lisp-source/op-graph.lisp
+
+	Redefines the prod-ui function
+	*prod-ui-home*/lisp-source/ui.lisp
+
+	Interface for the foreign functions written in C.
+	*prod-ui-home*/sockets/c-interface
+
+	General socket interface for both clients and  servers.
+	*prod-ui-home*/sockets/socket-interface
+
+loader.lisp file also defines the following two variables:
+	*tcl-customizations*
+	*post-tcl-customizations*
+
+The second call of prod-ui (as redefined in ui.lisp) loads the following tcl
+files:
+
+File ui-start.tcl sets up default values for the ui. This file is loaded before
+the user's file in the lisp variable *tcl-customizations*, so the user can
+overwrite these default values by putting code in that file.
+
+load *prod-ui-home*/ui-start.tcl
+
+if *tcl-customizations* (defined in ui.lisp)
+  load file specified by that variable value
+
+ui-comm contains tcl code to hook up the Prodigy Ui to lisp. It has the main
+procedures to load domains, run the planner, etc. that are executed when the
+user selects UI "Command" buttons.
+
+load *prod-ui-home*/ui-comm.tcl
+	Within ui-comm the following is loaded
+
+	Must come before ui.tcl. This is Weaver specific code.
+	$ui_home/bayes.tcl
+
+	Alpine specific code.
+	$ui_home/abstraction.tcl
+
+	UI window procedures. This file itself loads other files
+	$ui_home/ui.tcl
+		$ui_home/dependantfunctions
+		$ui_home/ui-domain.tcl
+		if exists $world_path$domain_name/draw.tcl
+		   $world_path$domain_name/draw.tcl
+
+	Tcl code for performing manual and automatic case retrieval
+	$ui_home/case-retrieve.tcl
+
+	Load the code to do the communications
+	$ui_home/tolisp.tcl
+
+	The code to call dag and dot and display graphs drawn with them
+	$ui_home/dot.tcl
+	$ui_home/gv.tcl
+	$ui_home/temporal.tcl
+
+	Code for a menu function
+	$ui_home/menu.tcl
+
+	Code for debug window routine. Is called by quick button on UI main.
+	$ui_home/debug.tcl
+
+	The code for handling button functions in the goal tree display canvas.
+	Overrides the definition in file ui.tcl
+	$ui_home/scrollbutton.tcl
+		Scrollbutton loads the following
+		$ui_home/my-search-dialog.tcl
+
+	Utilities
+	$ui_home/utils.tcl
+
+	The rest of the code that invokes Prodigy/Analogy functions
+	$ui_home/analogy-ui.tcl
+
+Now back to what is loaded by function prod-ui
+if *post-tcl-customizations*	
+  load file specified by that variable value
+

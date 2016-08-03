@@ -1,0 +1,220 @@
+(AT-TRUCK AT-AIRPLANE PART-OF AT-OBJ INSIDE-AIRPLANE INSIDE-TRUCK LOC-AT SAME-CITY)
+    1          2         3      4          5              6          7       8
+
+;;; Vector number (i.e., step) at which the anomaly occurs.
+CL-USER(38): (plan2step (append *normal-pool* *anomaly-pool*) (+ 1 (length *normal-pool*)))
+5286
+
+;;; The check to concur
+CL-USER(39): (step2plan (append *normal-pool* *anomaly-pool*) 5286)
+684
+CL-USER(40): (+ 1 (length *normal-pool*))
+684
+
+
+;;; Plan numbers that A-distance finds anomaly
+
+;;; epsilon: 0.518545 and 0.5196153
+CL-USER(41): (step2plan (append *normal-pool* *anomaly-pool*) 5587)
+772
+
+;;; epsilon: 0.45
+CL-USER(42): (step2plan (append *normal-pool* *anomaly-pool*) 5384)
+712
+
+;;; epsilon: .5
+CL-USER(43): (step2plan (append *normal-pool* *anomaly-pool*) 5585)
+772
+
+;;; epsilon: .4
+CL-USER(47): (step2plan (append *normal-pool* *anomaly-pool*) 5374)
+710
+
+;;; epsilon: .35
+CL-USER(48): (step2plan (append *normal-pool* *anomaly-pool*) 5371)
+708
+
+
+;;; Normal detection with automatic epsilon derivation
+CL-USER(4): (detect-anomalies (Append *normal-pool* *anomaly-pool*))
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.5333333
+"no change detected" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.4937288
+"no change detected" 
+
+epsilon: 0.5196153
+"change detected. Location: 5587" 
+
+epsilon: 0.5345225
+"no change detected" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+(723 -1 723 -1 5587 -1 723 723)
+1892765
+
+
+;;; With p and o values switched in the wps
+CL-USER(6): (detect-anomalies (Append *normal-pool* *anomaly-pool*))
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.50990194
+"no change detected" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.5112077
+"no change detected" 
+
+epsilon: 0.518545
+"change detected. Location: 5587" 
+
+epsilon: 0.501996
+"no change detected" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+epsilon: 0.34641016
+"change detected. Location: 723" 
+
+(723 -1 723 -1 5587 -1 723 723)
+320984
+
+
+
+;;; This should be about right
+CL-USER(34): (detect-anomalies (Append *normal-pool* *anomaly-pool*) .45)
+
+
+epsilon: 0.45
+"no change detected" 
+
+epsilon: 0.45
+"change detected. Location: 5514" 
+
+epsilon: 0.45
+"no change detected" 
+
+epsilon: 0.45
+"no change detected" 
+
+epsilon: 0.45
+"change detected. Location: 5384" 
+
+epsilon: 0.45
+"no change detected" 
+
+epsilon: 0.45
+"no change detected" 
+
+epsilon: 0.45
+"no change detected" 
+(-1 5514 -1 -1 5384 -1 -1 -1)
+16625
+
+
+;;; Finds anomaly too late
+CL-USER(35): (detect-anomalies (Append *normal-pool* *anomaly-pool*) .5)
+
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"change detected. Location: 5585" 
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"no change detected" 
+
+epsilon: 0.5
+"no change detected" 
+(-1 -1 -1 -1 5585 -1 -1 -1)
+16860
+
+;;; Although this may be the corect one. Not sure :-(
+CL-USER(36): (detect-anomalies (Append *normal-pool* *anomaly-pool*) .4)
+
+
+epsilon: 0.4
+"no change detected" 
+
+epsilon: 0.4
+"change detected. Location: 5400" 
+
+epsilon: 0.4
+"no change detected" 
+
+epsilon: 0.4
+"no change detected" 
+
+epsilon: 0.4
+"change detected. Location: 5374" 
+
+epsilon: 0.4
+"no change detected" 
+
+epsilon: 0.4
+"no change detected" 
+
+epsilon: 0.4
+"no change detected" 
+(-1 5400 -1 -1 5374 -1 -1 -1)
+16562
+
+;;; Definitely false positives here.
+CL-USER(37): (detect-anomalies (Append *normal-pool* *anomaly-pool*) .35)
+
+
+epsilon: 0.35
+"change detected. Location: 723" 
+
+epsilon: 0.35
+"change detected. Location: 4751" 
+
+epsilon: 0.35
+"change detected. Location: 723" 
+
+epsilon: 0.35
+"no change detected" 
+
+epsilon: 0.35
+"change detected. Location: 5371" 
+
+epsilon: 0.35
+"change detected. Location: 5463" 
+
+epsilon: 0.35
+"change detected. Location: 723" 
+
+epsilon: 0.35
+"change detected. Location: 723" 
+(723 4751 723 -1 5371 5463 723 723)
+8688

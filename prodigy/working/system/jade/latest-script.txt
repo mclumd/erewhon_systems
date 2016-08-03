@@ -1,0 +1,235 @@
+;;;This DEMO Script is subject to changes;;;;
+3/4/98
+March-98-demo-script = file name
+;;;;;
+
+DETAILED JADE DEMO SCRIPT
+
+March 1998
+
+Systems
+	Prodigy Ops
+		Enable Prodigy
+			Add Machine Name -- type machine name
+			add port # (note default probably okay)
+Systems
+	Prodigy Ops
+		Connect to Prodigy
+result --> you are connected
+
+ForMAT
+	Load Domain -- PTIE
+	Casebase
+		Load Casebase -- prodigy
+
+
+
+DAY 19
+
+{demo situation}
+Pre Day 19 situations are discussed with the use of Netscape
+	-  show situation represented as prodigy state variables
+
+Day 19 Warning order from CJCS is presented 
+		-- highlight MISSION statement
+
+Day 19 Warning order for Uscincpac is presented 
+		-- highlight force list and highlight planning guidance
+
+	- show Prodigy readiness and availability of forces.
+
+Bring up JAO
+
+
+Reports
+	read guidance
+		planP
+(don't show goals)
+LEAVE the Guidance visible while creating defaults
+
+ForMAT
+	Defaults
+		Set FM Default Features
+			Creator = your name
+			Theater = pacom
+			mission = operation-restore-order
+			mission-type = combat
+			geographical-location = phillipines
+
+	Done
+
+TRIGGERS -- Prodigy sends POD, POD-CC, DEST, and DEST-CC to be in or near Phillipines
+
+TRIGGERS -- ForMAT to set up the map to correspond to the geographical-location
+
+
+ForMAT
+	Defaults
+		Set Default FM Fields
+			ULN UTC DESC POD POD-CC DEST DEST-CC
+		Do It
+
+
+FMS
+	Create/Edit Goals
+		Load Plan
+			PlanP
+		Execute Query
+
+Behind the scenes ForMAT executes a :save-goals
+
+
+TRIGGERS -- Prodigy sends message
+
+		-  CMDR 18 wing and CMDR 354 wing alerted (F-15, F-16, A-10a)
+		  for deployment
+
+		-  USS Nimitz Carrier-Battle-Group proceed to Mindanao
+
+
+-  BUILD TPFDD
+
+ForMAT
+	TPFDD
+		Create-tpfdd -- planP
+
+Move the following FMs onto some space on the Phillipines using the map
+
+	-  TFS (PLANM)	-- move to Francesco IAP  -- this sets the CCs
+	-  NTG (JACK3)	-- move to South China Sea  -- NEED to set the CC
+
+Note:  the locations are recommended by USTRANSCOM
+
+--> all :fm-copy invoke a :check-consistency behind the scenes
+TRIGGERS Prodigy -- Make CC suggestions per FM copied
+		 -- Make changes to add/delete/replace
+
+Select/edit NTG (planP)
+	Select all ULNs
+		Change the following	fields	from	to
+				    	POD	?	00XN
+					POD-CC	?	3U
+					DEST-CC	?	3U
+					DEST	?	00XN
+					DEST-mode	x
+					DEST-source	x
+
+**Note: may need to do a geoloc query for Installation type = SEA
+					Country-Code = RP
+		Hit DONE
+
+Still editing NTG (PlanP)
+	UPDATE
+
+	ADD GOAL
+		conduct-NEO
+	ADD SUBGOAL
+		evacuate-non-combatants
+	ADD SUBGOAL
+		evacuate-us-citizens
+	ADD SUBGOAL
+		evacuate-designate-foreign-nationals
+
+Check Goal Consistency
+
+Prodigy TRIGGERS :Check-Consistency
+
+	-- There is (or was)  a suggestion from Prodigy to remove the F-117s
+
+
+Edit TFS (planP)
+	-  Mark ULNs with F-117s
+	-  Cut ULNs with F-117s
+	-  UPDATE
+	(NOTE:  Aircraft-type = F-117 is removed)
+
+ADD SUBGOAL
+
+	AIR DEFENSE   (to TFS)
+
+
+TRIGGER --> Prodigy sends message
+		- 25ID ready brigade is alerted to begin deployment
+
+
+
+DAY 22 --
+	In NETSCAPE Show Alert Order of USCincpac --
+		-  show force list
+		-  show suggestions for 25ID to begin to deploy
+
+
+Move the following FMs onto some space on the Phillipines using the map
+
+
+	-  K5B(jack3)	-- move to Francesco IAP  --  this sets the CCs
+
+
+--> all :fm-copy invoke a :check-consistency behind the scenes
+
+TRIGGERS Prodigy -- Make CC suggestions per FM copied
+		 -- Make changes to add/delete/replace
+
+Select/edit K5B(planP)
+	Select all ULNs
+		Change the following	fields	from	to
+				    	POD	?	Francesco IAP
+					POD-CC	?	RP
+					DEST-CC	?	RP
+				
+
+Use Map to find the GEOLOC for Francesco IAP (FBBW)
+
+In FM K5B(PlanP), do a
+
+	UPDATE
+
+	ADD GOAL
+		provide-security-for-us-military-personnel
+	ADD SUBGOAL
+		send-infantry
+	ADD GOAL
+		maintain-law-and-order
+	ADD GOAL
+		Protect-and-defend-strongpoints-and-locs
+
+Quit out of K5B (planP)
+
+
+
+
+
+DAY 25
+By phone/fax/email:
+	 -- JTF commander decides to send the 25th to
+	 Davao to support NEO collection points by C030.
+
+	
+ForMAT user is to do the following
+	- EDIT K5B(planP)
+	Change DEST of K5B(planP) to ????  (Davao Geoloc == FBBX)
+	Change EAD of K5B(planP) to C028
+	Change LAD of K5B(planP) to C030
+	Change RDD of K5B(planP) to C032
+
+UPDATE
+
+Show timeline of one ULN
+
+
+Create FM
+	T0P (Top of PlanP)
+
+	Add Relations
+		Add Child
+			NTG
+			K5B
+			TFS
+
+UNMark all FMs
+
+Reports
+	Mark T0P (PlanP)
+	Show Basic FM Report
+	
+	

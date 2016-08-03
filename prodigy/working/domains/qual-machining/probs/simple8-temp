@@ -1,0 +1,56 @@
+  2 n2 (done)
+  4 n4 <*finish* part5>
+  5   n5 (size-of part5 height 2) [1]
+  7   n7 <face-mill mm2 part5 plain-mill1 vise1 side1 side3-side6 height 2> [15]
+  8     n8 (shape-of part5 rectangular) [1]
+ 10     n10 <is-rectangular part5>
+ 11   n11 (has-hole part5 hole1 side1 0.3 9/64 1.375 0.25)
+Op #<OP: DRILL-WITH-TWIST-DRILL>
+was not in the solution proposed by the expert.
+Backtracking to make new operator decision at node 12.
+
+ 12   n14 drill-with-high-helix-drill ...no choices for bindings (I tried)
+ 13   n16 <drill-with-twist-drill-in-milling-machine mm2 twist-drill6 vise1 part5 hole1 side1 side3-side6 0.3 9/64> [3]
+ 14     n17 (has-spot part5 hole1 side1 1.375 0.25)
+Op #<OP: DRILL-WITH-SPOT-DRILL>
+was not in the solution proposed by the expert.
+Backtracking to make new operator decision at node 18.
+
+ 16     n21 <drill-with-spot-drill-in-milling-machine mm2 spot-drill1 vise1 part5 hole1 side1 side3-side6> [3]
+ 17     n22 <DRILL-WITH-SPOT-DRILL-IN-MILLING-MACHINE MM2 SPOT-DRILL1 VISE1 PART5 HOLE1 SIDE1 SIDE3-SIDE6>
+ 18     n23 (holding-tool mm2 twist-drill6) [1]
+ 20     n25 <put-tool-on-milling-machine mm2 twist-drill6>
+ 21       n26 (is-available-tool-holder mm2) [2]
+ 23       n28 <tool-holder-available mm2>
+ 24         n29 not (holding-tool mm2 spot-drill1) [2]
+ 26         n31 <remove-tool-from-machine mm2 spot-drill1>
+ 27         n32 <REMOVE-TOOL-FROM-MACHINE MM2 SPOT-DRILL1>
+ 27         n32 <TOOL-HOLDER-AVAILABLE MM2>
+ 28       n33 (is-available-tool twist-drill6) [1]
+ 30       n35 <tool-available twist-drill6>
+ 31     n36 <PUT-TOOL-ON-MILLING-MACHINE MM2 TWIST-DRILL6>
+ 32   n37 <DRILL-WITH-TWIST-DRILL-IN-MILLING-MACHINE MM2 TWIST-DRILL6 VISE1 PART5 HOLE1 SIDE1 SIDE3-SIDE6 0.3 9/64>
+ 33     n38 (holding-tool mm2 plain-mill1)
+ 35     n40 <put-tool-on-milling-machine mm2 plain-mill1>
+ 36       n41 (is-available-tool-holder mm2) [1]
+ 38       n43 <tool-holder-available mm2>
+ 39         n44 not (holding-tool mm2 twist-drill6) [1]
+ 41         n46 <remove-tool-from-machine mm2 twist-drill6>
+ 42         n47 <REMOVE-TOOL-FROM-MACHINE MM2 TWIST-DRILL6>
+ 42         n47 <TOOL-HOLDER-AVAILABLE MM2>
+ 43       n48 (is-available-tool plain-mill1)
+ 45       n50 <tool-available plain-mill1>
+ 46     n51 <PUT-TOOL-ON-MILLING-MACHINE MM2 PLAIN-MILL1>
+ 46   n52 <FACE-MILL MM2 PART5 PLAIN-MILL1 VISE1 SIDE1 SIDE3-SIDE6 HEIGHT 2>
+Achieved top-level goals.
+
+Solution:
+  1. <drill-with-spot-drill-in-milling-machine mm2 spot-drill1 vise1 part5 hole1 side1 side3-side6>
+  2. <remove-tool-from-machine mm2 spot-drill1>
+  3. <put-tool-on-milling-machine mm2 twist-drill6>
+  4. <drill-with-twist-drill-in-milling-machine mm2 twist-drill6 vise1 part5 hole1 side1 side3-side6 0.3 9/64>
+  5. <remove-tool-from-machine mm2 twist-drill6>
+  6. <put-tool-on-milling-machine mm2 plain-mill1>
+  7. <face-mill mm2 part5 plain-mill1 vise1 side1 side3-side6 height 2>
+
+compute-cost = 10

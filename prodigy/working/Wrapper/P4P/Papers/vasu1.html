@@ -1,0 +1,219 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Lynda R. Louis, MasterCNE, (GUI) IMPLEMENTATION </TITLE>
+
+<META NAME="GENERATOR" CONTENT="Internet Assistant for Microsoft Word 2.0z">
+</HEAD>
+
+<BODY>
+
+<P>
+<H2><CENTER>GRAPHICAL USER INTERFACE (GUI) IMPLEMENTATION <BR>
+
+<img src="line_rain.gif">
+</CENTER>
+</H2>
+
+<P>
+In developing a client/server application, an important phase
+of the development is the planning for the User Interface (UI).
+Whitten, Bentley &amp; Barlow (1994) states that the UI design
+is the specification of a conversation between the computer user
+and the computer. The result of this conversation is either input
+to or output from the system. Graphical User Interfaces (GUIs) have 
+become the user interface of choice (Hobart, 1995). A GUI uses icons 
+(pictures to represent the application or a file), pop-up windows, scroll bars and pull-down menus to communicate
+with users. GUIs are intuitive, easy to use and learn (Tomaiuolo, 1996), 
+reduce input errors, and reduces time to key in information. <BR>
+
+<P>
+Both the keyboard and function keys are used for input. Pointing
+devices are used to select options on the GUI screens. Pointing
+device options available are mice, trackballs, pens, and trackpoints.
+Again, the use of pointers reduce key inputs and errors from the
+users.<BR>
+
+<P>
+Hobart (1995) states that the systems designer should follow these basic 
+rules to designing a successful GUI: 
+<OL>
+<LI>Understand people - be sure the application reflects the perspectives 
+and behaviors of the users.
+<LI>Be careful of perspectives - use reserved icons to help eliminate 
+problems with users not understanding the meaning of a creative icon.
+<LI>Design for clarity - develop and use a list of reserved words that 
+the user can understand. Apply these words consistently across the 
+application.
+<LI>Design for consistency - apply consistent behavior throughout the 
+application and build upon a user's prior knowledge of other applications.
+<LI>Provide visual feedback - use progress boxes to display messages on 
+how much longer an operation will continue, or how long it has been 
+performing.
+<LI>Provide audible feedback - use when needed to warn users of an 
+impending serious problem.
+<LI>Keep text clear - use concise wording of text labels, user error 
+messages, and on-line help messages.
+<LI>Provide a traceable path - by having intuitive menu structures, a 
+user can trace/retrace the path to get out of an application. Flatten the 
+menu structure and avoid use of more than two levels of cascading menus.
+<LI>Provide keyboard support - use keyboard accelerators to provide an 
+efficient way for users to access specific menu items within the window. 
+Don't assume all input and accesses will be mouse driven.
+<LI>Watch the presentation model - the interface's look and feel is the 
+critical aspect that ties all the above facets together. The model should 
+involve careful decisions. The model will validate how users perform their 
+tasks within the application.
+</OL>
+
+
+<P> Per Whitten, Bentley and Barlow (1994) there are 
+three steps in the design phase for the user interface. They are:
+<OL>
+<LI>Chart the dialogue
+<LI>Prototype or simulate the dialogue and user interface
+<LI>If necessary, produce programmer-oriented layout charts.
+</OL>
+All this should be done following the guidelines associated with
+human factors associated with such implementations. <BR>
+
+<P>
+The implementation of the GUI to the Remote Distributed LAN Support
+Server Trouble Log System will utilize the following guidelines
+suggested by Whitten, Bentley and Barlow.
+<OL>
+<LI>Users should know what to do next by defining what the system
+expects at the current step, validation of data, completed tasks.
+
+<LI>Screens will be structured so that various types of information,
+instructions, messages, etc. appear in the same general display
+area.
+<LI>Dialog in the body zone will be limited to one idea per frame.
+<LI>Information will remain in the zones long enough for users
+to read it.
+<LI>Display attributes will be use sparingly. Blinking, reverse
+video, etc. will be avoided. Colors will be limited to two per
+page if possible.
+<LI>Complex functions will be assigned to function keys if possible.
+Use of standard Microsoft Access and Windows function calls, icons,
+key strokes, etc. will be used. Movement from screen to screen
+will be via mouse selections.
+<LI>Default values will be specified where applicable.
+<LI>Attempts will be made to anticipate user errors in input.
+<BR>
+
+</OL>
+
+<P>
+<B>CHART of DIALOGUE</B>
+<BR>
+Document dialogue is usually done with a state transition diagram.
+This diagram is used to design and document the user interface
+screens. Arrows indicate the sequence in which one moves from
+one screen to another. The sequence of screens should follow a
+natural order, one after another. The path to the next screen
+should be based on input from the client. The mouse or default
+Microsoft escape (ESC) key will be used to exit from menus. The
+Server Trouble Tracking System will use a minimum of 6 screens.
+The following is the flow of dialogue for the prototype Server
+Trouble Tracking System: <BR>
+<BR>
+
+<P>
+<CENTER>
+<IMG SRC="state.gif" alt="State Transition Diagram"><BR></CENTER>
+<BR>
+<BR>
+<B>PROTOTYPE GUI SCREENS</B>
+<BR>
+The prototype screen forms use the integrated Visual Basic scripting 
+langage included with the Microsoft Office Suite. The final 
+implementation will convert the system to use Visual Basic run time front 
+ends for data input, manipulation and reporting. This will allow the 
+database to run across platforms and not need the actual Microsoft Access 
+package residing on the server.
+<BR>
+<P> The initial opening menu screen will use 
+the 'switchboard' 
+feature of Microsoft Access, version 7.0. The switchboard is a front-end
+menu screen that allows the user to select choices to perform
+on the database. 
+<P>
+The following are the screens used in the Server Trouble Tracking
+System:<BR>
+
+<P>
+Opening Menu System:<BR>
+
+<P>
+<CENTER>
+<IMG SRC="mainmenu.gif" ALT="Main Menu Screen"><BR>
+</CENTER>
+<BR>From this screen, the user will select with a mouse click the button 
+for the application they wish to enter. From that selection, one of 4 
+additional input screens, or a report screen will appear.
+<P>
+The first four menu options will lead to the following four screens:
+<P>
+Option 1 - to enter and or update records into the Problem table:
+<P>
+<CENTER>
+<IMG SRC="trouble.gif" ALT="Trouble Input Screen"><BR>
+</CENTER>
+<P>
+This screen uses drop-down bars for input, and selection buttons at the 
+bottom of the screen. All this is designed to ease user input and 
+provide guide steps in the input process.
+<P>
+Option 2 - to enter new items to or update the solutions table:
+<p>
+<CENTER>
+<IMG SRC="fix.gif" ALT="Solutions Input Screen"><P>
+</CENTER>
+<BR>
+This screen will also use drop-down bars to select the appropriate 
+trouble to post a solution for. The drop-down will also be used on the 
+device field to assure the problem number is assigned to the correct 
+device.
+<BR>
+<P>
+Option 3 and 4 - update the Server and the ITOP Personnel tables.
+<P>
+<CENTER>
+<IMG SRC="server1.gif" ALT="Server Update Screen"><BR>
+</CENTER>
+<P>
+<CENTER>
+<IMG SRC="support.gif" ALT=Personnel Update Screen"><BR>
+</CENTER>
+<P>
+Option 5 - to preview reports is not implemented for this project.
+It will be added later in the developments.<BR>
+
+<P>
+Option 6 - closes and exits the database.
+<HR>
+
+<P>
+
+References:<BR>
+
+<PRE>
+Hobart, J. (September, 1995). Principles of good GUI design. UNIX Review,
+   13(10), pp. 37-46.
+
+Tomaiuolo, N. G. (January, 1996). End-user perceptions of a graphical 
+   user interface for bibliographic searching: an exploratory study.
+   Computers in Libraries, 16(1), pp. 33-38.
+
+Whitten, L. D., Bentley, V. M., &amp; Barlow, V. M. (1994). Systems analysis
+   and design methods, third edition. Irwin: Burr Ridge, IL.
+
+</PRE>
+</BODY>
+
+</HTML>
+
+
+<P><FONT SIZE=2><I>Last Modified: July 01, 1996 </I></FONT>

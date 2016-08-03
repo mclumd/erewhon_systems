@@ -1,0 +1,2 @@
+(setf s-b (make-socket :remote-host "potala" :remote-port 5511))
+

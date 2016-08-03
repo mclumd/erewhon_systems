@@ -1,0 +1,129 @@
+USER(187): USER(187): (run :depth-bound 1000 :output-level 2)
+Creating objects nil of type nil
+
+  2 n2 (done)
+  4 n4 <*finish*>
+Following case "case-p1" 5 -- goal (g1)
+  5   n5 (g1)
+Following case "case-p1" 6 -- operator a2-1
+Null bindings -- ok case
+  7   n7 <a2-1>
+Following case "case-p1" 8 -- goal (p1)
+  8     n8 (p1)
+Following case "case-p1" 9 -- operator a1-1
+Null bindings -- ok case
+ 10     n10 <a1-1>
+ Decided to apply.
+ #<a1-1>
+Following case "case-p1" 11 -- apply
+ 11     n11 <A1-1> [g:2]
+ Decided to apply.
+ #<a2-1>
+Following case "case-p1" 12 -- apply
+ End of current guiding case.
+ 12   n12 <A2-1> [g:2]
+Following unguided goal #<g3>
+ 13   n13 (g3)
+ 15   n15 <a2-3>
+Following unguided goal #<g2>
+ 16   n16 (g2)
+ 18   n18 <a2-2>
+Following unguided goal #<p3>
+ 19     n19 (p3)
+ 21     n21 <a1-3>
+Following unguided goal #<p2>
+ 22     n22 (p2)
+ 24     n24 <a1-2>
+Following unguided goal #<i3>
+ 25       n25 (i3) ...no relevant operators.
+
+ 11     n11 <A1-1> [g:2]
+Following unguided goal #<g3>
+ Decided to subgoal.
+ 12   n26 (g3)
+ 14   n28 <a2-3>
+Following unguided goal #<g2>
+ Decided to subgoal.
+ 15   n29 (g2)
+ 17   n31 <a2-2>
+Following unguided goal #<p3>
+ Decided to subgoal.
+ 18     n32 (p3)
+ 20     n34 <a1-3>
+ Decided to apply.
+ 21     n35 <A1-3> [g:1] [a:1]
+ Decided to apply.
+ #<a2-1>
+Following case "case-p1" 12 -- apply
+ End of current guiding case.
+ 22   n36 <A2-1> [g:1] [a:1]
+ Decided to apply.
+ 23   n37 <A2-3> [g:1]
+Following unguided goal #<p2>
+ 24     n38 (p2)
+ 26     n40 <a1-2>
+Following unguided goal #<i2>
+ 27       n41 (i2) ...no relevant operators.
+
+ 22   n36 <A2-1> [g:1] [a:1]
+Following unguided goal #<p2>
+ Decided to subgoal.
+ 23     n42 (p2)
+ 25     n44 <a1-2> ...requires an unsolvable precondition.
+
+ 21     n35 <A1-3> [g:1] [a:1]
+ Decided to apply.
+ 22   n45 <A2-3> [g:1]
+Following unguided goal #<p1>
+ 23     n46 (p1)
+ 25     n48 <a1-1>
+Following unguided goal #<p2>
+ 26     n49 (p2)
+ 28     n51 <a1-2> ...requires an unsolvable precondition.
+
+ 21     n35 <A1-3> [g:1] [a:1]
+Following unguided goal #<p2>
+ Decided to subgoal.
+ 22     n52 (p2)
+ 24     n54 <a1-2> ...requires an unsolvable precondition.
+
+ 20     n34 <a1-3>
+ Decided to apply.
+ #<a2-1>
+Following case "case-p1" 12 -- apply
+ End of current guiding case.
+ 21   n55 <A2-1> [g:1]
+Following unguided goal #<p2>
+ 22     n56 (p2)
+ 24     n58 <a1-2> ...requires an unsolvable precondition.
+
+ 20     n34 <a1-3>
+Following unguided goal #<p2>
+ Decided to subgoal.
+ 21     n59 (p2)
+ 23     n61 <a1-2>
+ Decided to apply.
+ 24     n62 <A1-2> [a:2]
+ Decided to apply.
+ 25     n63 <A1-3> [a:2]
+ Decided to apply.
+ #<a2-1>
+Following case "case-p1" 12 -- apply
+ End of current guiding case.
+ 26   n64 <A2-1> [a:2]
+ Decided to apply.
+ 27   n65 <A2-2> [a:1]
+ Decided to apply.
+ 27   n66 <A2-3>
+Achieved top-level goals.
+
+Solution:
+	<a1-1>
+	<a1-2>
+	<a1-3>
+	<a2-1>
+	<a2-2>
+	<a2-3>
+
+#<PRODIGY result: t, 9.184 secs, 66 nodes, 1 sol>
+USER(188): USER(188):

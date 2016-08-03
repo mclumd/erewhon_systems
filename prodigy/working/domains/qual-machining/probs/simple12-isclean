@@ -1,0 +1,245 @@
+(setf (current-problem)
+      (create-problem
+       (name simple12)
+       (objects
+	(object-is drill1 DRILL)
+        (object-is milling-machine1 MILLING-MACHINE)
+
+        (object-is vise1 VISE)
+
+	(object-is spot-drill1 SPOT-DRILL)
+	(objects-are twist-drill13 twist-drill5 TWIST-DRILL)
+	(object-is tap6 TAP)
+	(object-is counterbore4 COUNTERBORE)	
+	(object-is plain-mill1 PLAIN-MILL)
+	(object-is end-mill1 END-MILL)
+	
+	(object-is brush1 BRUSH)
+	(object-is soluble-oil SOLUBLE-OIL)
+	(object-is mineral-oil MINERAL-OIL)
+
+        (object-is part51 PART)
+	(objects-are hole1 hole2 hole3 hole4 HOLE))
+       (state
+	(and
+	 (always-true)
+	 (diameter-of-drill-bit twist-drill13 1/4)
+	 (diameter-of-drill-bit twist-drill5 1/8)
+	 (diameter-of-drill-bit tap6 1/8)
+	 (size-of-drill-bit counterbore4 3/8)
+
+	 (material-of part51 BRASS)
+	 (size-of part51 LENGTH 5)
+	 (size-of part51 WIDTH 2)
+	 (size-of part51 HEIGHT 3)
+
+	 (holding-tool drill1 twist-drill5)
+	 (has-device drill1 vise1)
+	 (on-table drill1 part51)
+	 (holding drill1 vise1 part51 side4 side2-side5)
+	 (has-spot part51 hole1 side1 .5 .25)
+	 (has-spot part51 hole3 side4 .25 1.12)
+
+	 ;;nov 17 for paper
+	 (is-clean part51)
+	 ))
+       (goal
+	((<part> PART))
+	(and 
+	 (has-hole <part> hole3 side4 3 1/4 .25 1.12)
+	 (has-hole <part> hole1 side1 1 1/8 .5 .25)
+	 ))))
+
+(setf (getf (p4::problem-space-plist *current-problem-space*)
+	    :depth-bound) 1000)
+
+USER(201): (problem 'simple12)
+; Loading /afs/cs/project/prodigy-aperez/domains4.0/hd-machining/probs/simple12.lisp.
+T
+
+
+(progn (p4::run-with-same-objects :output-level 3 :permute-application-order t)nil)
+Applying static rule #<SIDE-FOR-END-MILL>
+Applying static rule #<SIDE-UP>
+Applying static rule #<SIDES-FOR-HD>
+
+  2 n2 (done)
+  4 n4 <*finish* part51>
+  5   n5 (has-hole part51 hole3 side4 3 1/4 0.25 1.12) [1]
+Pref rule PREFER-BNDS-DRILL-WITH-TWIST-DRILL137 matches with no effective pref.
+  7   n7 <drill-with-twist-drill drill1 twist-drill13 vise1 part51 hole3 side4 side2-side5 3 1/4 1/4 0.25 1.12> [1]
+Firing delete goals EXPAND-MAIN-GOALS-FIRST
+  8   n8 (has-hole part51 hole1 side1 1 1/8 0.5 0.25)
+ 10   n10 <drill-with-twist-drill drill1 twist-drill5 vise1 part51 hole1 side1 side3-side6 1 1/8 1/8 0.5 0.25> [1]
+ 11     n11 (holding drill1 vise1 part51 side1 side3-side6) [1]
+ 13     n13 <hold-with-vise drill1 vise1 part51 side1 side3-side6>
+Firing delete goals EXPAND-MAIN-GOALS-FIRST
+ 14       n14 (shape-of part51 rectangular)
+ 16       n16 <is-rectangular part51>
+ 17       n17 (is-empty-holding-device vise1 drill1) [2]
+ 19       n19 <holding-device-empty drill1 vise1>
+ 20         n20 not (holding drill1 vise1 part51 side4 side2-side5) [2]
+ 22         n22 <release-from-holding-device drill1 vise1 part51 side4 side2-side5>
+ 23         n23 <RELEASE-FROM-HOLDING-DEVICE DRILL1 VISE1 PART51 SIDE4 SIDE2-SIDE5>
+ 23         n23 <HOLDING-DEVICE-EMPTY DRILL1 VISE1>
+ 24       n24 (is-available-part part51) [2]
+ 26       n26 <part-available part51>
+ 27     n27 <HOLD-WITH-VISE DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>
+ 28   n28 <DRILL-WITH-TWIST-DRILL DRILL1 TWIST-DRILL5 VISE1 PART51 HOLE1 SIDE1 SIDE3-SIDE6 1 1/8 1/8 0.5 0.25>
+ 29     n29 (holding-tool drill1 twist-drill13) [1]
+ 30     n30 put-tool-on-milling-machine ...no choices for bindings
+ 31     n32 <put-in-drill-spindle drill1 twist-drill13>
+ 32       n33 (is-available-tool-holder drill1) [2]
+ 34       n35 <tool-holder-available drill1>
+ 35         n36 not (holding-tool drill1 twist-drill5) [2]
+ 37         n38 <remove-tool-from-machine drill1 twist-drill5>
+ 38         n39 <REMOVE-TOOL-FROM-MACHINE DRILL1 TWIST-DRILL5>
+ 38         n39 <TOOL-HOLDER-AVAILABLE DRILL1>
+ 39       n40 (is-available-tool twist-drill13) [1]
+ 41       n42 <tool-available twist-drill13>
+ 42     n43 <PUT-IN-DRILL-SPINDLE DRILL1 TWIST-DRILL13>
+ 43     n44 (holding drill1 vise1 part51 side4 side2-side5)
+ 45     n46 <hold-with-vise drill1 vise1 part51 side4 side2-side5>
+ 46       n47 not (has-burrs part51) [4]
+ 48       n49 <remove-burrs part51 brush1>
+ 49         n50 (is-available-part part51) [3]
+ 51         n52 <part-available part51>
+ 52           n53 not (holding drill1 vise1 part51 side1 side3-side6) [3]
+ 54           n55 <release-from-holding-device drill1 vise1 part51 side1 side3-side6>
+ 55           n56 <RELEASE-FROM-HOLDING-DEVICE DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>
+ 55           n56 <PART-AVAILABLE PART51>
+ 56       n57 <REMOVE-BURRS PART51 BRUSH1>
+ 57       n58 (is-clean part51)
+ 59       n60 <clean part51>
+ 60       n61 <CLEAN PART51>
+ 61     n62 <HOLD-WITH-VISE DRILL1 VISE1 PART51 SIDE4 SIDE2-SIDE5>
+ 61   n63 <DRILL-WITH-TWIST-DRILL DRILL1 TWIST-DRILL13 VISE1 PART51 HOLE3 SIDE4 SIDE2-SIDE5 3 1/4 1/4 0.25 1.12>
+Achieved top-level goals.
+
+Solution:
+  1. <release-from-holding-device drill1 vise1 part51 side4 side2-side5>
+  2. <hold-with-vise drill1 vise1 part51 side1 side3-side6>
+  3. <drill-with-twist-drill drill1 twist-drill5 vise1 part51 hole1 side1 side3-side6 1 1/8 1/8 0.5 0.25>
+  4. <remove-tool-from-machine drill1 twist-drill5>
+  5. <put-in-drill-spindle drill1 twist-drill13>
+  6. <release-from-holding-device drill1 vise1 part51 side1 side3-side6>
+  7. <remove-burrs part51 brush1>
+  8. <clean part51>
+  9. <hold-with-vise drill1 vise1 part51 side4 side2-side5>
+  10. <drill-with-twist-drill drill1 twist-drill13 vise1 part51 hole3 side4 side2-side5 3 1/4 1/4 0.25 1.12>
+
+compute-cost = 18
+NIL
+;;adding this rule
+
+(CONTROL-RULE PREFER-GOAL-168
+              (IF (AND (CANDIDATE-GOAL (HOLDING <MACHINE-1> <HOLDING-DEVICE-2> <PART> <SIDE15>
+                                        <SIDE3-SIDE66>))
+                       (KNOWN (HOLDING <MACHINE-1> <HOLDING-DEVICE-2> <PART> <SIDE-3>
+                               <SIDE-PAIR-4>))
+                       (IS-SUBGOAL-OF-OPS (HOLDING <MACHINE-1> <HOLDING-DEVICE-2> <PART> <SIDE-3>
+                                           <SIDE-PAIR-4>)
+                                          <OPS>)
+                       (FIRST-PENDING-SUBGOAL-IN-SUBTREE <PREF-GOAL> <OPS>)
+                       (DIFF <PREF-GOAL> <OTHER-GOAL>)
+                       (~ (IS-PENDING-SUBGOAL-IN-SUBTREE <OTHER-GOAL> <OPS>))))
+              (THEN PREFER GOAL <PREF-GOAL> <OTHER-GOAL>))
+
+
+USER(202): (progn (run :output-level 3 :permute-application-order t)nil)
+Creating object DRILL1 of type DRILL
+Creating object MILLING-MACHINE1 of type MILLING-MACHINE
+Creating object VISE1 of type VISE
+Creating object SPOT-DRILL1 of type SPOT-DRILL
+Creating objects (TWIST-DRILL13 TWIST-DRILL5) of type TWIST-DRILL
+Creating object TAP6 of type TAP
+Creating object COUNTERBORE4 of type COUNTERBORE
+Creating object PLAIN-MILL1 of type PLAIN-MILL
+Creating object END-MILL1 of type END-MILL
+Creating object BRUSH1 of type BRUSH
+Creating object SOLUBLE-OIL of type SOLUBLE-OIL
+Creating object MINERAL-OIL of type MINERAL-OIL
+Creating object PART51 of type PART
+Creating objects (HOLE1 HOLE2 HOLE3 HOLE4) of type HOLE
+Applying static rule #<SIDE-FOR-END-MILL>
+Applying static rule #<SIDE-UP>
+Applying static rule #<SIDES-FOR-HD>
+
+  2 n2 (done)
+  4 n4 <*finish* part51>
+  5   n5 (has-hole part51 hole3 side4 3 1/4 0.25 1.12) [1]
+Pref rule PREFER-BNDS-DRILL-WITH-TWIST-DRILL137 matches with no effective pref.
+  7   n7 <drill-with-twist-drill drill1 twist-drill13 vise1 part51 hole3 side4 side2-side5 3 1/4 1/4 0.25 1.12> [1]
+Firing delete goals EXPAND-MAIN-GOALS-FIRST
+  8   n8 (has-hole part51 hole1 side1 1 1/8 0.5 0.25)
+ 10   n10 <drill-with-twist-drill drill1 twist-drill5 vise1 part51 hole1 side1 side3-side6 1 1/8 1/8 0.5 0.25> [1]
+Firing pref rule PREFER-GOAL-168 for (#<HOLDING-TOOL DRILL1 TWIST-DRILL13>) over #<HOLDING DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>
+ 11     n11 (holding-tool drill1 twist-drill13) [1]
+ 12     n12 put-tool-on-milling-machine ...no choices for bindings
+ 13     n14 <put-in-drill-spindle drill1 twist-drill13>
+ 14       n15 (is-available-tool-holder drill1) [2]
+ 16       n17 <tool-holder-available drill1>
+Firing pref rule PREFER-GOAL-164 for (#<HOLDING DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>) over #<HOLDING-TOOL DRILL1 TWIST-DRILL5>
+Firing pref rule PREFER-GOAL-168 for (#<HOLDING-TOOL DRILL1 TWIST-DRILL5>) over #<HOLDING DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>
+Warning: cycle found in the preference control rules for type :GOAL
+Resolving preference cycle...
+Candidate #<HOLDING-TOOL DRILL1 TWIST-DRILL5> has value 0.
+Candidate #<HOLDING DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6> has value 2.
+
+ 17         n18 not (holding-tool drill1 twist-drill5) [2]
+ 19         n20 <remove-tool-from-machine drill1 twist-drill5>
+ 20         n21 <REMOVE-TOOL-FROM-MACHINE DRILL1 TWIST-DRILL5>
+ 20         n21 <TOOL-HOLDER-AVAILABLE DRILL1>
+ 21       n22 (is-available-tool twist-drill13) [2]
+ 23       n24 <tool-available twist-drill13>
+ 24     n25 <PUT-IN-DRILL-SPINDLE DRILL1 TWIST-DRILL13>
+ 25   n26 <DRILL-WITH-TWIST-DRILL DRILL1 TWIST-DRILL13 VISE1 PART51 HOLE3 SIDE4 SIDE2-SIDE5 3 1/4 1/4 0.25 1.12>
+ 26     n27 (holding-tool drill1 twist-drill5) [1]
+ 27     n28 put-tool-on-milling-machine ...no choices for bindings
+ 28     n30 <put-in-drill-spindle drill1 twist-drill5>
+ 29       n31 (is-available-tool-holder drill1) [2]
+ 31       n33 <tool-holder-available drill1>
+ 32         n34 not (holding-tool drill1 twist-drill13) [2]
+ 34         n36 <remove-tool-from-machine drill1 twist-drill13>
+ 35         n37 <REMOVE-TOOL-FROM-MACHINE DRILL1 TWIST-DRILL13>
+ 35         n37 <TOOL-HOLDER-AVAILABLE DRILL1>
+ 36       n38 (is-available-tool twist-drill5) [1]
+ 38       n40 <tool-available twist-drill5>
+ 39     n41 <PUT-IN-DRILL-SPINDLE DRILL1 TWIST-DRILL5>
+ 40     n42 (holding drill1 vise1 part51 side1 side3-side6)
+ 42     n44 <hold-with-vise drill1 vise1 part51 side1 side3-side6>
+Firing delete goals EXPAND-MAIN-GOALS-FIRST
+ 43       n45 (shape-of part51 rectangular)
+ 45       n47 <is-rectangular part51>
+ 46       n48 not (has-burrs part51) [3]
+ 48       n50 <remove-burrs part51 brush1>
+ 49         n51 (is-available-part part51) [2]
+ 51         n53 <part-available part51>
+ 52           n54 not (holding drill1 vise1 part51 side4 side2-side5) [2]
+ 54           n56 <release-from-holding-device drill1 vise1 part51 side4 side2-side5>
+ 55           n57 <RELEASE-FROM-HOLDING-DEVICE DRILL1 VISE1 PART51 SIDE4 SIDE2-SIDE5>
+ 55           n57 <PART-AVAILABLE PART51>
+ 56       n58 <REMOVE-BURRS PART51 BRUSH1>
+ 57       n59 (is-clean part51) [1]
+ 59       n61 <clean part51>
+ 60       n62 <CLEAN PART51>
+ 61       n63 (is-empty-holding-device vise1 drill1)
+ 63       n65 <holding-device-empty drill1 vise1>
+ 64     n66 <HOLD-WITH-VISE DRILL1 VISE1 PART51 SIDE1 SIDE3-SIDE6>
+ 64   n67 <DRILL-WITH-TWIST-DRILL DRILL1 TWIST-DRILL5 VISE1 PART51 HOLE1 SIDE1 SIDE3-SIDE6 1 1/8 1/8 0.5 0.25>
+Achieved top-level goals.
+
+Solution:
+  1. <remove-tool-from-machine drill1 twist-drill5>
+  2. <put-in-drill-spindle drill1 twist-drill13>
+  3. <drill-with-twist-drill drill1 twist-drill13 vise1 part51 hole3 side4 side2-side5 3 1/4 1/4 0.25 1.12>
+  4. <remove-tool-from-machine drill1 twist-drill13>
+  5. <put-in-drill-spindle drill1 twist-drill5>
+  6. <release-from-holding-device drill1 vise1 part51 side4 side2-side5>
+  7. <remove-burrs part51 brush1>
+  8. <clean part51>
+  9. <hold-with-vise drill1 vise1 part51 side1 side3-side6>
+  10. <drill-with-twist-drill drill1 twist-drill5 vise1 part51 hole1 side1 side3-side6 1 1/8 1/8 0.5 0.25>
+
+compute-cost = 16
+NIL

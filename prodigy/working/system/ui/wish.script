@@ -1,0 +1,3 @@
+
+source /prodigy/working/system/ui/ui-start.tcl
+source /prodigy/working/system/ui/ui-comm.tcl

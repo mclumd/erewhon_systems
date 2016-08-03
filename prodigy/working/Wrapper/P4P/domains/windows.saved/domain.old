@@ -1,0 +1,196 @@
+;;; Intelligent GUI  domain
+;;; 
+
+(create-problem-space 'GUIworld :current t)
+
+(ptype-of WINDOW :top-type)
+(ptype-of SCREEN :top-type)
+(ptype-of QUADRANT :top-type)
+(ptype-of AREA :top-type)
+
+(infinite-type NUM #'numberp)
+
+
+(OPERATOR RESTORE
+	  (params <w>)
+	  (preconds
+	   ((<w> WINDOW) (<w1> (and WINDOW (diff <w> <w1>))) (<a> AREA))
+	   (and
+	    (in <w> <a>)
+	    (~(active <w>))
+	    (clear <a>)))
+	  (effects
+	   () 
+	   (
+	    (add (active <w>))
+	    (del (clear <a>))
+	    (if (icon <w>)
+		((del (icon <w>))))
+	    (if (and (on-top <w1>) (in <w1> <a>)) ;; (diff <w1> <w>))
+		((del (on-top <w1>))
+		 (add (on-top-of <w> <w1>))
+		 (del (active <w1>))))
+	    (add (on-top <w>)))))
+
+(OPERATOR MINIMIZE
+	  (params <w>)
+	  (preconds
+	   ((<w> WINDOW) (<a> AREA))
+	   (and
+	    (active <w>)
+	    (in <w> <a>)))
+	  (effects 
+	   ((<w1> WINDOW))
+	   ((add (icon <w>))
+	    (del (active <w>))
+	    (add (clear <a>))
+	    (del (on-top <w>))
+	    (if (on-top-of <w> <w1>)
+		((del (on-top-of <w> <w1>))
+		 (add (on-top <w1>)))))))
+
+
+
+
+(OPERATOR MOVE
+	  (params <w> <a>)
+	  (preconds
+	   ((<w> WINDOW) (<a> AREA) (<a1> (and AREA (diff <a> <a1>))))
+	   (and
+	    (clear <a>)
+	    (~(in <w> <a>))
+	    (in <w> <a1>)))
+					;    (~(icon <w>))))
+	  (effects
+	   ((<w1> WINDOW))
+	   (
+
+	    (if (and (in <w1> <a1>) 
+		     (on-top-of <w> <w1>))
+		((del (on-top-of <w> <w1>))
+		 (add (on-top <w1>))))
+	       (if (and (in <w1> <a>) 
+			(on-top <w1>))
+		   ((del (on-top <w1>))
+		    (add (on-top-of <w> <w1>))))
+	       (del (in <w> <a1>))
+	     (add (in <w> <a>))
+	     (if (active <w>)
+		 ((del (clear <a>))
+		  (add (clear <a1>))))
+	     )))
+
+
+
+					;(INFERENCE-RULE INFER-AREA-CLEAR
+					;(params <a>)
+					;(preconds
+					; ((<a> AREA) (<w> WINDOW))
+					;  (~(and (active <w>)
+					; (in <w> <a>))))
+					;  (~(exists ((<w> WINDOW))
+					;    (and
+					;     (active <w>)
+					;     (in <w> <a>))))))
+					;  (~(exists ((<w> (and WINDOW (gen-from-pred (active <w>)))))
+
+
+					;(effects
+					; ()
+					;                ((add (clear <a>)))))
+
+
+(INFERENCE-RULE INFER-WINDOW-ON-TOP
+		(params <w1>)
+		(preconds
+		 ((<w1> WINDOW) (<w2> WINDOW))
+		 (and
+		  (~(on-top-of <w2> <w1>))))
+		(effects
+		 ()
+		 ((add (on-top <w1>)))))
+
+(INFERENCE-RULE INFER-NO-CLOGGING
+		(params)
+		(preconds
+		 ((<w1> WINDOW) 
+		  (<w2> (and WINDOW (diff <w1> <w2>))))
+		 (and
+		  (~(and (active <w1>) 
+			 (active <w2>) 
+			 (overlaps <w1> <w2>)))))
+		(effects
+		 ()
+		 ((add (no-clogging)))))
+
+(INFERENCE-RULE INFER-OVERLAP
+		(params <w1> <w2>)
+		(preconds
+		 ((<w1> WINDOW) 
+		  (<w2> WINDOW)
+		  (<a1> (and AREA (in <w1> <a1>)))
+		  (<a2> (and AREA (in <w2> <a2>))))
+		 (and
+		  (diff <w1> <w2>)
+		  (~(diff <a1> <a2>))))
+		(effects
+		 ()
+		 ((add (overlaps <w1> <w2>)))))
+
+
+
+					;(CONTROL-RULE BDS
+					;      (IF (oldest-candidate-node <node>))
+					;      (THEN select node <node>))
+
+
+
+
+					;(INFERENCE-RULE INFER-WINDOW-OCCUPIES-AREA
+					;(params <w> <a>)
+					;(preconds
+					; ((<w> WINDOW)
+					;  (<a> AREA)
+					;  (<a1> (and AREA (in <w> <a1>))))
+					; (and
+					;  (intersects <a> <a1>)))
+					;(effects
+					; ()
+					; ((add (occupies <w> <a>)))))
+
+
+					;(INFERENCE-RULE INFER-AREAS-INTERSECT
+					;(params <a1> <a2>)
+					;(preconds
+					; ((<a1> AREA) 
+					;  (<a2> AREA)
+					;  (<x1> (and NUM (xCo <a1> <x1>))) (<x2> (and NUM (xCo <a2> <x2>))) 
+					;  (<y1> (and NUM (yCo <a1> <y1>))) (<y2> (and NUM (yCo <a1> <y2>)))
+					;  (<x1Size> (and NUM (xSize <a1> <x1Size>)))
+					;  (<x2Size> (and NUM (xSize <a2> <x2Size>)))
+					;  (<y1Size> (and NUM (ySize <a1> <y1Size>))) 
+					;  (<y2Size> (and NUM (ySize <a2> <y2Size>))))
+					; (and 
+					;   (or (intersect <x1> <x1Size> <x2> <x2Size>)
+					;       (intersect <y1> <y1Size> <y2> <y2Size>))))
+					;(effects
+					; ()
+					;                ((add (intersect <a1> <a2>)))))
+
+
+
+
+					;(OPERATOR RESIZE
+					;  (params <w> <a>)
+					;  (preconds
+					;   ((<w> WINDOW) (<a> AREA)
+					; (<a1> AREA))
+					;   (and 
+					;    (in <w> <a1>)
+					;    (clear <a>)))
+					;  (effects
+					;   ()
+					;   ((add (in <w> <a>))
+					;    (add (active <w>))
+					;    (del (in <w> <a1>))
+					;    (add (visible <w>)))))

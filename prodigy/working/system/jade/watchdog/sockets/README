@@ -1,0 +1,56 @@
+To load the C socket and interface code:
+- compile the sock.c (sock2.c) file into object code.
+- load c-interface
+- load socket-interface2  (this loads the C code unless *load-sock-file-p* is false.)
+
+------------------------------------------------------------
+
+Notes on Socket code
+David Rager, 11/19/97
+
+
+C based functions:
+
+(kill pid signal) -> fixnum
+(sock-server-init port) -> fixnum
+(sock-client-init host port) -> fixnum
+(sock-accept-conn init-socket) -> fixnum
+(sock-close init-socket) -> nil
+
+
+IPC Interface functions:
+
+(ipc-server-init &optional port) -> socket configuration or nil
+   Claims port for connections.
+
+(ipc-server-connect &optional sockfig) -> socket-configuration or nil
+   Waits and makes a connection for the server
+
+(ipc-server-connect-no-block sockfig) -> socket-configuration, nil, or 
+   The server tries to make a connection, if there is no client waiting 
+   :EOWOULDBLOCK is returned.  (DER)
+
+(ipc-close-stream &optional sockfig) -> sockfig
+   Closes the stream for the server
+
+(ipc-server-shutdown &optional sockfig) -> 
+   Shuts down the server altogether.
+
+(ipc-client-connect &optional host port) -> sockfig or nil
+   Connects the client to the server. (DER)
+   Returns nil if the server has not been initialized.  Connects and 
+   returns sockfig if server is up (even if server has not accepted
+   the connection yet). 
+
+(ipc-client-disconnect &optional sockfig) -> nil
+   Disconnects the client from the server. (DER)
+
+(ipc-listen &optional sockfig) -> boolean
+   Does a listen on the socket. (DER)
+
+(ipc-length-print &key string status sf) -> nil
+   Prints a string to the stream.
+
+(ipc-length-read &key sf read-braces) -> [string | :eof | :err] and status
+   Reads a string from the stream.  Now accepts any integer for status 
+   without causing a failire (DER)

@@ -1,0 +1,241 @@
+;;;
+;;; NOTE: I will provide further output examples for the styles herein that do
+;;; not have them.
+;;;
+;;; PRODIGY takes as input a formatting style to use for outputting the
+;;; generated plan (I am not sure exactly how Will's Wrapper inputs the style).
+;;; To perform this, the Wrapper uses data-driven programming techniques (see
+;;; Charniak, Riesbeck, McDermott, & Meehan. (1987). Artificial Intelligence
+;;; Programming; Chapter 6). Data-driven programming is a technique used in AI
+;;; that includes with the input to be processed the code that will perform the
+;;; processing. Therefore, to change the processing, one need only change the
+;;; input. The program itself is usually a simple shell.
+;;;
+;;;
+;;; NOTE: An attribute-value pair is called a role. Therefore a frame consists 
+;;; of a list whose head names the frame and whose tail is a series of roles.
+;;;
+;;; Normalized frame form
+;;;
+;;;(frame
+;;; (attribute1 val1)
+;;; (attribute2 val2)
+;;; (attribute3 val3)
+;;; ... )
+;;;
+;;; Example
+;;;
+;;;(STACK
+;;; (<OB> BLOCKA)
+;;; (<UNDEROB> BLOCKB)
+;;;     )
+;;;
+;;;
+;;; The input protocol is as follows:
+;;;
+;;; (:style
+;;;   (STYLE-NAME
+;;;     (start      LAMBDA-FN) ;arg = stream
+;;;     (head-print LAMBDA-FN) ;args = head, stream
+;;;     (role-print LAMBDA-FN) ;args = role, stream
+;;;     (done       LAMBDA-FN) ;arg = stream
+;;;    ) )
+;;;
+;;; The START field defines any initialization to be done.  The HEAD-PRINT
+;;; field defines how to format the frame head (i.e., STACK).  The ROLE-PRINT
+;;; field defines how to format and what part of the role to use The DONE field
+;;; defines any cleanup to be done.
+;;;
+;;;
+;;; An example that represents an identity function (i.e., converts the frame
+;;; to an identical frame) is as follows:
+;;;
+;;;  (:style
+;;;        (identity
+;;;              (start      (lambda (stream)
+;;;                            (terpri)
+;;;                            (format stream "(")
+;;;                           )
+;;;              )
+;;;              (head-print (lambda (head stream)
+;;;                            (format stream "~s " head)
+;;;                           )
+;;;              )
+;;;              (role-print (lambda (role stream)
+;;;                            (format stream "~s "  role)
+;;;                           )
+;;;              )
+;;;              (done (lambda (stream)
+;;;                      (format stream ")")
+;;;                     )
+;;;              )
+;;;        )
+;;;   )
+;;;
+;;;
+;;; A more useful style is as follows:
+;;;
+;;; (:style
+;;;   (boris
+;;;       (start      (lambda (stream)
+;;;                     (format stream "~%< ")
+;;;                     )
+;;;        )
+;;;       (head-print (lambda (head stream)
+;;;                     (format stream "~s "  head)
+;;;                     )
+;;;        )
+;;;     (role-print (lambda (role stream)
+;;;                   (if (second role)
+;;;                       (format stream "~s "  (second role)))
+;;;                   )
+;;;      )
+;;;     (done (lambda (stream)
+;;;             (format stream ">"))
+;;;      )
+;;;     )                               ;for boris
+;;;  )
+;;;
+;;; The style above formats the plan similar to the screen output of
+;;; PRODIGY. This style produces plan output like that below.
+;;;
+;;; < move W3 A4 >
+;;; < restore W3 >
+;;; < move W1 A3 >
+;;; < restore W1 >
+;;; < move W2 A2 >
+;;; < restore W2 >
+;;;
+;;;
+;;; Here is the style I wrote for Will:
+;;;
+;;; (:style
+;;;    (will
+;;;        (start       (lambda (stream)
+;;;		         )
+;;;	      )
+;;;	   (head-print  (lambda (head stream)
+;;;		         (format stream "~%~s " head)
+;;;		         )
+;;;	      )
+;;;	    (role-print (lambda (role stream)
+;;;		          (format stream "~s " (second role))
+;;;                      )
+;;;	      )
+;;;	    (done       (lambda (stream)
+;;;		         )
+;;;	      )
+;;;	)				;for Will
+;;;    )
+;;;
+;;;
+;;; The Sussman's Anomaly is a problem consisting of initial state
+;;; 
+;;; (on-table blockA)
+;;; (on-table blockB)
+;;; (on blockC blockA)
+;;; (clear blockB)
+;;; (clear blockC)
+;;; (arm-empty)
+;;; 
+;;;  _____
+;;; |     |
+;;; |  C  |
+;;; |_____|
+;;;  _____   _____
+;;; |     | |     |
+;;; |  A  | |  B  |
+;;; |_____| |_____|
+;;; 
+;;; and two goals
+;;;
+;;; (on blockA blockB)
+;;; (on blockB blockC)
+;;; 
+;;;  _____
+;;; |     |
+;;; |  A  |
+;;; |_____|
+;;;  _____
+;;; |     |
+;;; |  B  |
+;;; |_____|
+;;;  _____
+;;; |     |
+;;; |  C  |
+;;; |_____|
+;;; 
+;;; 
+;;; The plan output looks like the following:
+;;;
+;;; UNSTACK BLOCKC BLOCKA
+;;; PUT-DOWN BLOCKC
+;;; PICK-UP BLOCKB
+;;; STACK BLOCKB BLOCKC
+;;; PICK-UP BLOCKA
+;;; STACK BLOCKA BLOCKB
+;;;
+;;;
+;;;
+;;;
+;;; Jer-Sen Chen used the following style in conjenction with the Tom Sawyer 
+;;; software. 
+;;;
+;;; Finally, a more complicated example that makes each instance of an operator
+;;; in any given plan differentiable (i.e., STACK --> STACK.13 then a
+;;; subsequent use of the stack operator in a plan formats the head as STACK
+;;; --> STACK.14) is as follows:
+;;;
+;;; (:style
+;;;    (jer-sen
+;;;        (start      (lambda (stream)
+;;;                     )
+;;;        )
+;;;        (head-print (lambda (head stream)
+;;;                  (setf *current-head*
+;;;                    (apply
+;;;                     #'(lambda (symbol)
+;;;                         (gentemp
+;;;                          (string
+;;;                           (intern
+;;;                            (coerce
+;;;                             (append
+;;;                              (coerce
+;;;                               (string symbol)
+;;;                               'list)
+;;;                              (list #\.))
+;;;                             'string)))))
+;;;                     (list head)))
+;;;                  )
+;;;     )
+;;;        (role-print (lambda (role stream)
+;;;                  (format stream
+;;;                          "~s ~s ~s~%"
+;;;                          *current-head*
+;;;                          (second role)
+;;;                          (first role))
+;;;                  )
+;;;     )
+;;;        (done       (lambda (stream)
+;;;                  nil
+;;;                  )
+;;;     )
+;;;    )                                ;jer-sen
+;;;  )
+;;;
+;;;
+;;; Output for the Sussman's Anomaly in this style looks like the following:
+;;; (compare to output immediately above):
+;;;
+;;;
+;;; UNSTACK.3 BLOCKC <OB>
+;;; UNSTACK.3 BLOCKA <UNDEROB>
+;;; PUT-DOWN.4 BLOCKC <OB>
+;;; PICK-UP.5 BLOCKB <OB1>
+;;; STACK.6 BLOCKB <OB>
+;;; STACK.6 BLOCKC <UNDEROB>
+;;; PICK-UP.7 BLOCKA <OB1>
+;;; STACK.8 BLOCKA <OB>
+;;; STACK.8 BLOCKB <UNDEROB
+;;;
+;;;

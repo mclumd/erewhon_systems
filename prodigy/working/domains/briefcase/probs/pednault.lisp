@@ -1,0 +1,10 @@
+(setf (current-problem)
+      (create-problem
+       (name pednault)
+       (state (and (at dictionary home)
+		   (at paycheck home)
+		   (at briefcase home)
+		   (in paycheck briefcase)))
+       (goal (and (at briefcase office)
+		  (at dictionary office)
+		  (at paycheck home)))))

@@ -1,0 +1,2 @@
+a2ps -np -w -f case-washington-conference.lisp | lpr -Pberyl
+

@@ -1,0 +1,156 @@
+This is the README file for the Prodigy2.0 version of the domain. 
+Some of these problems have not been translated yet to the Prodigy4.0 
+version. 
+
+Welding operations are not working yet.
+---------------------------------------------------------------------
+
+	This file contains a description of all the problems for the 
+machining domain that are in this directory.
+
+	Some of them have their solution in the file with the same name
+and the extension ".sol".
+
+DRILLS:
+*******
+
+p101	tests drilling with a spot drill
+p102	tests drilling with a straight-fluted drill bit
+p103	tests drilling with a high-helix drill bit
+p104	tests drilling with a high-helix drill bit, 
+         two drill bits in the state, a hard material.
+p105	tests drilling with an oil-hole drill bit, 
+	 several drill bits in the state.
+p106	tests drilling with a gun-drill bit.
+p107	tests drilling with a twist-drill bit.
+p108	tests drilling two holes on the part
+p109	tests making center holes.
+
+FINISHING HOLES:
+****************
+
+p110	tapped
+p111	countersinked
+p112	counterbored
+p113	reamed
+
+MILLING MACHINE:
+****************
+
+p120	tests side mill
+p121	tests face mill
+p122	tests drilling with milling machine
+
+LATHE:
+******
+
+p130	tests rough turn a rectangular part
+p130a	tests the rough turn operator when goal is that side0 is ROUGH-TURN
+p130b	tests rough turn a cylindrical part
+p131	tests the finish turn operator	
+p131a	tests the finish turn operator when goal is that side0 is FINISH-TURN
+p132	tests the operator to make a thread with lathe
+p133	tests the operator to knurl the surface
+p134	tests the operator to file with the lathe
+p134a	tests the operator to file with the lathe when goal
+    		is that side0 is ROUGH-GRIND
+p135	tests the operator to polish with the lathe
+
+SHAPER:
+*******
+
+p140	tests ROUGH-SHAPE changing length of part
+p141	tests ROUGH-SHAPE for surface-finish ROUGH-SHAPED
+p142    tests FINISH-SHAPE changing width of part
+p143	tests FINISH-SHAPE for surface-finish FINISH-SHAPED
+
+PLANER:
+*******
+
+p145	tests ROUGH-SHAPE-WITH-PLANER changing length of part
+p146 	tests FINISH-SHAPE-WITH-PLANER changing width of part
+
+GRINDER:
+********
+
+p150	rough grind with a hard wheel
+p151	rough grind with a hard wheel to make surface ROUGH-GRIND
+p152	rough grind with a soft wheel
+p153	rough grind with a soft wheel to make surface ROUGH-GRIND
+p154    finish grind with a hard wheel 
+p154b   finish grind with a soft wheel
+
+BAND SAW:
+*********
+
+p155	cut with band saw
+p156 	polish with band saw
+
+CIRCULAR SAW:
+************* 
+
+p160	cut with circular cold saw 
+p161	cut with circular cold saw to make surface FINISH-MILL
+p162	cut with circular friction saw
+p163	cut with circular friction saw to make surface ROUGH-MILL
+
+
+WELDER:
+*******
+
+p170	metal arc welding
+p171	gas welding
+
+
+METAL-SPRAYING:
+***************
+
+p190	tests making a rectangular part corrosion resistant
+p190b	tests making a cylindrical part corrosion resistant
+p191	tests making a part heat resistant
+p192	tests making a part wear resistant
+
+
+HOLDING DEVICES:
+****************
+
+p180	tests holding and releasing with v-block & toe clamp
+p181	tests holding and releasing with toe clamp
+p181b   tests holding and releasing with toe clamp a cylindrical part
+p182	tests holding and releasing with magnetic chuck
+p183	tests holding and releasing with vise
+p183b   tests holding and releasing with vise & toe clamp
+p184	tests holding and releasing with 4-jaw-chuck
+p185	tests holding and releasing with centers a cylindrical part
+p186	tests holding and releasing with collet-chuck
+
+p189	tests releasing everything (making everything available).
+
+
+COMBINATIONS:
+*************
+
+cut1			cuts in the three dimensions. 
+			Steps in the plan: 37
+
+make-cylinder-and-cut	makes a cylinder and then cuts the length.
+			Steps in the plan: 40
+
+smaller-cylinder-and-cut
+			Steps in the plan: 107
+
+cut-and-drill 		Steps in the plan: 78
+
+drill2			drill two parts. 
+			Steps in the plan: 55
+
+TESTPARTS:
+**********
+
+The following problems are from real engineers specifications. 
+(Taken from C. Hayes' thesis)
+
+testpart3	number of steps in the plan 148
+testpart5	number of steps in the plan  95
+testpart6	number of steps in the plan 141
+testpart7	number of steps in the plan  69

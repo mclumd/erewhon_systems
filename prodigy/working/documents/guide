@@ -1,0 +1,681 @@
+                  Preliminary User's Guide to 4.0
+                  ==============================
+
+This file tells you most of what you need to know to run prodigy 4.0.
+If you have other questions, problems or bug reports, please send mail
+either to jblythe@cs or wxm@cs.
+
+Contents
+========
+
+1) Loading and running 4.0
+
+2) Guide to the syntax of 4.0
+
+3) Description of available meta-predicates.
+
+Loading version 4.0
+===================
+
+The simplest way to load 4.0 is to load a file called "loader.lisp"
+into common lisp. You can find this file in the system directory, a
+subdirectory of this one.
+
+Maintainers might be interested in the system definition of prodigy,
+which keeps a logical definition of Prodigy 4.0 in terms of its files
+and the dependencies between them, and can be used for compiling the
+necessary files after changes.
+
+The system is defined in a file called prodigy.system, which uses
+system building code from
+/afs/cs/user/mkant/Public/Lisp-Utilities/defsystem, which we've copied
+into the system directory in case you wish to copy all the files and
+run them on a remote site. If you copy the code, you'll want to change
+the global variable *system-directory* in this file to reflect where
+you're installing 4.0. You'll find the file prodigy.system in the
+system/ subdirectory of this directory.
+
+Load up a version of prodigy.system into lisp and then type
+(load-prodigy). If you need to compile or re-compile, type (make :test
+t) to see what the system would compile if you let it, or just type
+(make) and get a coffee, to return to a fully compiled system. The
+first time you do that, you should load in the source files beforehand
+using (load-prodigy).
+
+Running version 4.0 - user functions
+====================================
+
+Currently there is no wizzy interface like 2.0, but we're working on
+that. In the meantime, here are the most useful functions:
+
+(domain '<DOMAIN_NAME>)
+
+This function is the easiest way to load a domain into 4.0 before
+running problems. It looks for a directory with the name you specified
+as a subdirectory of the global variable *world-path*. It loads the
+file "domain.lisp" found in that directory and then calls
+(load-domain) to compile the necessary functions for the matcher and
+generally set things up. 
+
+You specify the domain name as a symbol, which is converted to lower
+case before looking at the domain. For example, the call (domain
+'blocksworld) will by default load the domain.lisp file from
+/usr/prodigy/version4.0/domains/blocksworld (or the afs directory if
+you loaded 4.0 from there). If you find that too restrictive, these
+files can be loaded just as normal lisp files, but you must then
+remember to call (load-domain) before running a problem. See below for
+a definition of that function.
+
+domain takes two keywords:
+:load-domain (default t)    if this is nil, load-domain won't be
+                            called.
+:compile (default t)        if this is nil, the functions used in the
+                            matcher net won't be compiled. load-domain
+is faster, but problems run slower. Not good for large problems, but
+maybe for lots of small ones from different domains.
+
+The domains that come with this release are as follows. The ones
+marked with an asterisk are not complete.
+
+* alicia       - one or two operator version of the machining domain
+blocksworld   - hooray!
+* hanoi        - hanoi towers
+logistics     - you know
+* machining    - see above. This is not as up-to-date as the 2.0
+multirobot    - same as 2.0
+rocket        - example of a problem that needs a non-linear planner
+schedworld    - as ever
+shopping      - get that sweater in Oakland
+stripsworld   - yep
+subway        - includes the entire Pittsburgh subway!!
+
+These can all be found in the "domains/" directory of the 4.0 top
+directory. 
+
+
+(load-domain)
+
+This function sets up a domain for problems to be run. It installs
+operators in the problem space, builds functions for the matcher net,
+that sort of thing. You don't need to call this if you loaded the
+domain with (domain), but otherwise you do.
+
+load-domain takes two keyword arguments:
+
+:problem-space (defaults to the value of *current-problem-space*)
+  this can be used to switch between two or more problem spaces in
+  memory, but we haven't done that yet. When you load any of the
+  standard domains, they alter the value of *current-problem-space*
+
+:compile (defaults to t)   same as for "domain" above.
+
+
+(problem '<PROBLEM_NAME>)
+
+This function loads a specific problem in the same way (domain '<X>)
+loads a domain. It looks for the file
+<*world-path*>/<domain_name>/probs/<PROBLEM_NAME>.lisp, after
+converting the name to lower case. If found, it just loads it as a
+lisp file, so all this function saves you over "load" is the
+characters for the path. 
+
+Note that problem files must be loaded *after* the domain has been set
+up, either by calling "domain" or "load-domain".
+
+
+And now, at last...
+
+(run)
+
+This function runs a problem, once it and the problem space have been
+loaded. It takes a whole bunch of keyword arguments as follows:
+
+:current-problem  (defaults to the result of (current-problem))
+  specifies the problem to be run. Normally, (current-problem) will
+  return the last problem file you loaded, but you can change it with
+  setf to switch between two or more problems in memory.
+
+:search-default  (default nil)
+  This can be used to switch between depth-first and breadth-first
+search.
+
+:depth-bound (defaults to 30, which is often too low)
+  This controls the maximum depth of the search performed. If you
+  don't specify it, it is read from the problem space, which is
+  initialised at 30. Some problems in the standard set need a depth of
+  roughly 50 to be solved.
+
+:max-nodes (defaults to nil)
+  If this is a number, then it controls the maximum number of nodes in
+  the search tree that will be generated before stopping.
+
+:time-bound (defaults to nil)
+  If this is a number, then it controls the maximum run time in
+  seconds that will be allowed.
+
+:output-level (defaults to nil)
+  This controls how much information is printed out during a run. If
+  not specified as a keyword, a value is read from the problem space.
+  This value can be set by calling the function (output-level <VALUE>).
+  The values are interpreted as follows:
+      0 - print nothing during problem solving.
+      1 - Only print the resulting plan.
+      2 - print information about the nodes as they are expanded.
+      3 - also print which control rules are fired.
+
+:permute-application-order (defaults to nil)
+  Does messy things with the search. Don't use this.
+
+(output-level <value>)
+
+This function sets the amount of information that will be printed out
+during problem solving. See the description of the :output-level flag
+to (run) above for more details.
+
+
+Running 4.0 - User Flags:
+=========================
+
+In addition to the above functions and the options that you can set when you
+call them, there are some "global variables" within a problem space that you
+can set to alter the way 4.0 works. We have tried to provide a reasonable
+default for these so that you won't need to bother with them at first, but here
+they are for when you do. 
+
+They are not really global variables in the Common Lisp sense, but are
+actually stored as properties of the problem space. This is so that if
+later you switch between a number of problem spaces, you can still
+have individual settings for each one. For this reason, you can't use
+"setf" to alter their values. Instead, the function "pspace-prop" is
+provided as an accessor/modifier. So to find out if a depth-bound is
+explicitly set for search in the current problem space, type
+(pspace-prop :depth-bound). To set a depth bound of 50, you would type
+(setf (pspace-prop :depth-bound) 50). The unsymmetrical function
+"pset" is sometimes easier: (pset :depth-bound 50) works just as well.
+
+Anyway, here are the flags that are currently available in 4.0:
+
+A. Flags controlling the 
+
+:linear (values t or nil, default is nil)
+
+If this flag is not nil, then 4.0 will behave as a linear problem
+solver. This might make it faster in some cases, and might make it
+fail in others, depending largely on the domain.
+
+:depth-bound (values nil or an integer, default is nil)
+
+If this flag is a number, then the search tree will always be
+terminated if it exceeds that depth. If it is nil, then the depth
+bound will be read from a hard-wired value (currently 30).
+
+:*search-default* (values :depth-first or :breadth-first,
+                   default is :depth-first)
+
+Default search type for the problem space if not specified in a call
+to (run).
+
+
+:excise-loops (values t or nil, default is t)
+
+If this is not nil, dependency-directed backtracking will be used to
+try to cut down the search space.
+
+
+:min-conspiracy-number (values t or nil, default is t)
+
+If this is not nil, when there is more than one alternative set of
+bindings to use for an operator, one will be chosen that leads to the
+smallest amount of unsolved preconditions. This is a weakened version
+of "conspiracy search". A stronger one, which might appear soon, would
+be specified as a search type, replacing :depth-first.
+
+
+:use-abs-level (values t or nil, default is t)
+
+If this is not nil, the abstraction hierarchy will be used as a
+preference ordering on goals even when separate abstraction levels are
+not being used. The hierarchies are always generated when you load the
+domain - this takes negligible time compared with compiling the
+matcher functions.
+
+
+:random-behaviour (values t or nil, default is nil)
+
+If this is not nil, then when no more ordering control rules are left
+to choose between candidates at a decision point, one will be chosen
+randomly. Otherwise they will be chosen in left-right order.
+
+
+:print-alts (values t or nil, default is nil)
+
+If this is not nil, then instead of printing out a number in square
+brackets to indicate how many alternatives there are in the trace, the
+alternatives themselves will be listed.
+
+
+:print-old-way (values t or nil, default is nil)
+
+If this is not nil, then instead of printing an indented tree (see the
+sample run below for an example) as the trace, each node is simply
+printed on a separate line as it is created. This provides fuller
+information, but is harder to take in at a glance. May be useful for
+debugging - that depends on personal taste.
+
+
+Sample Run
+==========
+
+Ok, here's a sample run of loading and running prodigy 4.0. In this
+case, I logged in on my machine (gs13) and ran 4.0 from the version on
+afs.
+
+jblythe% lisp
+CMU Common Lisp M2.9 (15-Aug-90)
+Hemlock M3.4 (15-Aug-90), Compiler M1.8 (15-Aug-90)
+Send bug reports and questions to Gripe.
+* (load "/afs/cs/project/prodigy/version4.0/system/prodigy.system")
+T
+* (load-prodigy)
+
+;  - Loading defsystem "prodigy" 
+  [... takes about 3 minutes on an ibm-rt ...]
+;  - Providing system prodigy
+
+* (domain 'blocksworld)
+Reading Meta predicate: current-goal
+Reading Meta predicate: current-ops
+Reading Meta predicate: true-in-state
+Reading Meta predicate: known
+Reading Meta predicate: candidate-goal
+Reading Meta predicate: on-goal-stack
+Reading Meta predicate: applicable-operator
+Running load-domain.
+6.979996
+* (problem 'suss)
+
+T
+* (run)
+Creating objects (BLOCKA BLOCKB BLOCKC) of type OBJECT
+
+  2 n2 (done)
+  4 n4 <*finish*>
+  5   n5 (on blocka blockb) [1]
+  7   n7 <stack blocka blockb>
+  8     n8 (holding blocka) [1]
+ 10     n10 <pick-up blocka>
+ 11       n11 (clear blocka) [1]
+ 12       n12 put-down ...goal loop with node 8
+ 12       n13 stack ...goal loop with node 8
+ 13       n15 <unstack blockc blocka> [2]
+ 14       n16 <UNSTACK BLOCKC BLOCKA> [1]
+ 15       n17 (arm-empty) [1]
+ 17       n19 <infer-armempty>
+ 18         n20 not (holding blockc) [1]
+ 20         n22 <put-down blockc>
+ 21         n23 <PUT-DOWN BLOCKC>
+ 21         n23 <INFER-ARMEMPTY> [1]
+ 22   n24 (on blockb blockc)
+ 24   n26 <stack blockb blockc>
+ 25     n27 (holding blockb)
+ 27     n29 <pick-up blockb>
+ 28     n30 <PICK-UP BLOCKB>
+ 29   n31 <STACK BLOCKB BLOCKC> [2]
+ 30     n32 <PICK-UP BLOCKA>
+ 30   n33 <STACK BLOCKA BLOCKB>
+Achieved top-level goals.
+
+Solution:
+	<unstack blockc blocka>
+	<put-down blockc>
+	<infer-armempty>
+	<pick-up blockb>
+	<stack blockb blockc>
+	<pick-up blocka>
+	<stack blocka blockb>
+
+(((:STOP . :ACHIEVE)
+  . #<APPLIED-OP-NODE 33 #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>>)
+ #<UNSTACK [<OB> BLOCKC] [<UNDEROB> BLOCKA]>
+ #<PUT-DOWN [<OB> BLOCKC]> #<INFER-ARMEMPTY>
+ #<PICK-UP [<OB1> BLOCKB]> #<STACK [<OB> BLOCKB] [<UNDEROB> BLOCKC]>
+ #<PICK-UP [<OB1> BLOCKA]> #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>)
+* (output-level 0)
+0
+* (run)
+(((:STOP . :ACHIEVE)
+  . #<APPLIED-OP-NODE 33 #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>>)
+ #<UNSTACK [<OB> BLOCKC] [<UNDEROB> BLOCKA]>
+ #<PUT-DOWN [<OB> BLOCKC]> #<INFER-ARMEMPTY>
+ #<PICK-UP [<OB1> BLOCKB]> #<STACK [<OB> BLOCKB] [<UNDEROB> BLOCKC]>
+ #<PICK-UP [<OB1> BLOCKA]> #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>)
+* (output-level 3)
+3
+* (run)
+Creating objects (BLOCKA BLOCKB BLOCKC) of type OBJECT
+
+  2 n2 (done)
+  4 n4 <*finish*>
+  5   n5 (on blocka blockb) [1]
+  7   n7 <stack blocka blockb>
+  8     n8 (holding blocka) [1]
+ 10     n10 <pick-up blocka>
+ 11       n11 (clear blocka) [1]
+ 12       n12 put-down ...goal loop with node 8
+ 12       n13 stack ...goal loop with node 8
+ 13       n15 <unstack blockc blocka> [2]
+ 14       n16 <UNSTACK BLOCKC BLOCKA> [1]
+ 15       n17 (arm-empty) [1]
+ 17       n19 <infer-armempty>
+ 18         n20 not (holding blockc) [1]
+ 20         n22 <put-down blockc>
+ 21         n23 <PUT-DOWN BLOCKC>
+ 21         n23 <INFER-ARMEMPTY> [1]
+Firing apply/subgoal AVOID-APPLY-FOR-WRONG-GOAL deciding SUB-GOAL
+ 22   n24 (on blockb blockc)
+ 24   n26 <stack blockb blockc>
+ 25     n27 (holding blockb)
+ 27     n29 <pick-up blockb>
+ 28     n30 <PICK-UP BLOCKB>
+ 29   n31 <STACK BLOCKB BLOCKC> [2]
+ 30     n32 <PICK-UP BLOCKA>
+ 30   n33 <STACK BLOCKA BLOCKB>
+Achieved top-level goals.
+
+Solution:
+	<unstack blockc blocka>
+	<put-down blockc>
+	<infer-armempty>
+	<pick-up blockb>
+	<stack blockb blockc>
+	<pick-up blocka>
+	<stack blocka blockb>
+
+(((:STOP . :ACHIEVE)
+  . #<APPLIED-OP-NODE 33 #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>>)
+ #<UNSTACK [<OB> BLOCKC] [<UNDEROB> BLOCKA]>
+ #<PUT-DOWN [<OB> BLOCKC]> #<INFER-ARMEMPTY>
+ #<PICK-UP [<OB1> BLOCKB]> #<STACK [<OB> BLOCKB] [<UNDEROB> BLOCKC]>
+ #<PICK-UP [<OB1> BLOCKA]> #<STACK [<OB> BLOCKA] [<UNDEROB> BLOCKB]>)
+* (quit)
+
+
+
+Syntax for operators, inference rules and control rules.
+========================================================
+
+rule = operator/inference-rule/control-rule
+
+
+Operators and Inference Rules
+=============================
+
+operator = (OPERATOR rule-name
+    	      (PARAMS params-list)
+    	      (PRECONDS preconds-list)
+   	      (EFFECTS effects-list))
+
+/* the syntax for inference rule is the as operators except that it
+has an optional field "mode" to specify whether it's lazy or eager
+inference rule.  The mode is defaulted to lazy. */
+
+inference-rule = (INFERENCE-RULE rule-name
+    	    	    mode
+    	    	    (PARAMS params-list)
+    	    	    (PRECONDS preconds-list)
+    	            (EFFECTS effects-list))
+
+params-list = ((var-name)*) 
+
+preconds-list = (var-generator preconds)
+
+var-generator = ((var-name generator|inf-type-generator)*) 
+
+generator = type-name | (AND generator+ constraint*) 
+    	    | (OR generator+ constraint*)  
+    	    | (NOT generator+ constraint*)
+    	    /* if type-name is of finite type */
+
+inf-type-generator = type-name lisp-function+
+    	    	     | type-name (GEN-FROM-PRED assertion) lisp-function*
+    	    /* GEN-FROM-PRED is used when we are generating a value
+    	       for an infinite type variable from the state. */
+
+constraint = generator | lisp-function
+
+preconds = assertion | (AND preconds+) |(OR preconds+) | (~ preconds)
+    	   | (FORALL preconds-list) |(EXISTS preconds-list)
+
+mode = (MODE EAGER) | (MODE LAZY) |nil   /* default to lazy */
+
+effects-list = (var-generator effects)
+
+effects = regular-effects | conditional-effects
+
+regular-effects = (ADD assertion) | (DEL assertion)
+
+conditinal-effect = (IF preconds regular-effects)
+
+assertion = literal | (~ literal)
+
+
+Examples for operators and inference rules
+==========================================
+
+operator:  (from schedule domain)
+
+(OPERATOR
+ Roll
+ (params <obj-r> <time-r> <prev-time-r>)
+ (preconds
+  ((<obj-r> Object)
+   (<prev-time-r> (and Time (gen-from-pred
+			     (last-scheduled <obj-r> <prev-time-r>))))
+   (<time-r> (and Time (later <time-r> <prev-time-r>))))
+  (and 
+       (idle ROLLER <time-r>)))
+ (effects
+  ((<old-shape-r> Shape)
+   (<old-temp-r> Temperature)
+   (<*1-r> Surface-Condition)
+   (<*2-r> Paint)
+   (<*4-r> Orientation)
+   (<*3-r> (and Width (gen-from-pred (has-hole <obj-r> <*3-r> <*4-r>)))))
+  ((if (shape <obj-r> <old-shape-r>)
+       ((del (shape <obj-r> <old-shape-r>))))
+   (if (temperature <obj-r> <old-temp-r>)
+       ((del (temperature <obj-r> <old-temp-r>))))
+   (if (surface-condition <obj-r> <*1-r>)
+       ((del (surface-condition <obj-r> <*1-r>))))
+   (if (painted <obj-r> <*2-r>)
+       ((del (painted <obj-r> <*2-r>))))
+   (if (has-hole <obj-r> <*3-r> <*4-r>)
+       ((del (has-hole <obj-r> <*3-r> <*4-r>))))
+
+
+Inference rule:  (from logistics domain)
+
+(Inference-Rule  IN-SAME-CITY  
+   (mode eager)
+   (params <loc1> <loc2> <city>)
+   (preconds
+    ((<loc1> LOCATION)
+     (<loc2> (and LOCATION (diff <loc1> <loc2>)))
+     (<city> CITY))
+    (and (loc-at <loc1> <city>)
+	 (loc-at <loc2> <city>)))
+   (effects
+    ()
+    ((add (same-city <loc1> <loc2>)))))
+
+
+Syntax for Control Rules
+========================
+
+
+control-rule = (CONTROL-RULE rule-name
+    	    	    (IF cr-preconds-list)
+    	    	    (THEN cr-effects-list))
+
+cr-preconds-list = (AND cr-preconds-list) | (OR cr-preconds-list)
+    	    	   | (~ cr-preconds-list) | assertion
+
+cr-effects-list =   SELECT NODE nodes  
+    	    	  | REJECT NODES nodes
+    	    	  | PREFER NODE nodes nodes
+    	    	  | SELECT GOALS goals 
+    	    	  | REJECT GOALS goals
+    	    	  | PREFER GOALS goals goals
+    	    	  | SELECT OPERATORS ops
+    	    	  | REJECT OPERATORS ops
+    	          | PREFER OPERATORS ops ops  
+    	    	  | SELECT BINDINGS  bindings
+    	          | REJECT BINDINGS bindings
+    	    	  | PREFER BINDINGS bindings bindings 
+    	    	  | SUBGOAL  
+    	    	  | APPLY
+
+nodes = var-name | node-name
+
+goals = var-name | assertion
+
+ops = var-name | rule-name
+
+bindings = var-name | (bind-pair*)
+
+bind-pair = (op-var-name . var-value)
+
+
+
+Examples for Control Rules
+===========================
+
+(Control-Rule DEPTH-FIRST-SEARCH
+	      (IF (newest-candidate-node <node>))
+	      (THEN select node <node>))
+
+
+(Control-Rule REJECT-WRONG-GOAL
+	      (IF (and (candidate-goal (on <x> <y>))
+		       (candidate-goal (on <y> <z>))
+		       (true-in-state (clear <x>))))
+	      (THEN reject goal (on <x> <y>)))
+
+
+(Control-Rule SELECT-PICKUP-FOR-HOLDING-IF-ON-TABLE
+	      (IF (and (current-goal (holding <ob>))
+		       (true-in-state (on-table <ob>))))
+	      (THEN select operator PICK-UP))
+
+
+(Control-Rule SELECT-BINDINGS-UNSTACK-CLEAR
+	      (IF (and (current-goal (clear <y>))
+		       (current-ops (UNSTACK))
+		       (true-in-state (on <x> <y>))))
+	      (THEN select bindings ((<ob> . <x>) (<underob> . <y>))))
+
+
+(Control-Rule PICK-IT-UP-WHERE-IT-IS
+	      (IF (and (current-goal (carrying <someone> <something>))
+		       (current-operator pick-up)
+		       (known (at <something> <someplace>))))
+	      (THEN prefer bindings
+		    ((<person> . <someone>)
+		     (<object> . <something>)
+		     (<place> . <someplace>))
+		    <anyother>))
+
+
+(Control-Rule avoid-apply-for-wrong-goal
+	      (IF (and (candidate-goal (on <x> <y>))
+		       (candidate-goal (on <y> <z>))
+		       (applicable-operator (pick-up <x>))))
+	      (THEN sub-goal))
+
+
+
+
+Meta-predicates provided by PRODIGY4.0
+======================================
+
+(candidate-goal <goal>)
+  "Test whether <goal> is a candidate goal for this node. Used when
+deciding on the current goal, can be used as a generator for <goal>,
+which can be partially instantiated, e.g. (CANDIDATE-GOAL (clear <x>))
+is legal and will generate values for <x>."
+
+(expanded-goal <goal>)
+  "Tests whether <goal> is already expanded along the current path."
+
+(on-goal-stack <goal>)
+  "Tests whether the goal is on the goal stack - either expanded or a candidate."
+
+(current-goal <goal>)
+  "Tests whether <goal> is the current goal. Can be used as a generator."
+
+(true-in-state <expr>)
+  "Tests whether <expr> is true in the state. Cannot be used as a
+generator for nodes or expressions, but can be used to generate values
+for the variables in <expr>. "
+
+(known <expr>)
+  -- synonymous with true-in-state.
+
+(current-ops ops)
+    "Used in select/reject bindings control rules only to tell the
+rete-net what operators this control rule is used for, so you must use
+this meta-predicates in all the select/reject bindings control rules.
+Ops is a list of operator names."
+
+(current-operator op)
+  "Tests whether <op> is the current <op> for the current goal  at the
+current node.  Can be used as a generator."
+
+(candidate-operator op)
+  "Tests whether <op> is a member of the relevant ops being considered
+at the current node.  Can be used as a generator."
+
+(candidate-bindings binding)
+  "Tests whether <bindings> is a candidate binding for the current
+node, goal and op.  The argument can be a variable, or an association
+list  of variable-object/variable pairs, where the first variable is a 
+parameter of the current operator. Note that partial bindings are not
+allowed. Can be used as a generator"
+
+(candidate-node node)
+  "Tests whether <node> is among the candidate set of nodes in the
+tree. Can be used as a generator."
+
+(newest-candidate-node node)
+  "Tests whether <node> is the most recently created candidate node.
+Can be used as a generator. Has been used to implement depth-first search."
+
+(oldest-candidate-node node)
+  "Tests whether <node> is the oldest candidate node.  Can be used as
+a generator. Is used to implement breadth-first search."
+
+(applicable-operator expr)
+  "Tests whether <expr> is an applicable operator. Can be used as
+generator if passed a variable or a list of the form
+(Op <arg1> <arg2> ..)" 
+
+(type-of-object obj type)
+  "Tests whether <obj> is of type <type>."
+
+
+Defining your own meta-predicate:
+=================================
+
+A user-defined meta-predicate is created by defining a function in the
+USER package, and it's usually put in file functions.lisp in the
+directory of the domain.  Make sure you load functions.lisp before you
+do load-domain.
+
+Here is an example of how you defin a meta-predicate.
+
+(defun same-loc (x1 y1 x2 y2)
+  (and (= x1 x2) (= y1 y2)))
+
+There are many functions defined in system/meta-predicates.lisp.  You
+can use any of them when you are defining your own meta-predicates.
+

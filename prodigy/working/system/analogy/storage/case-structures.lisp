@@ -1,0 +1,26 @@
+ 
+(defstruct case-header
+	   (name "noname")
+	   (problem "noname")
+	   (goal nil)
+	   (initial-state nil)
+	   (objects nil)
+	   (footprint nil)
+	   (insts-to-vars nil)
+	   (result nil))
+
+(defstruct guiding-case 
+	   (name "noname")
+	   (real-name "noname")
+	   (case-root nil)
+	   (ptr nil)
+	   (aux-ptr nil)
+	   (exhausted nil)
+	   (initial-state nil)
+	   (goal nil)
+	   (covered-goals nil)
+	   (last-firing-goal-rule-at-node nil)	
+	   (base-substitution nil)
+       	   (additional-bindings nil)
+	   (aux-bindings nil)
+	   (objs nil))

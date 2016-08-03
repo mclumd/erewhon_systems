@@ -1,0 +1,590 @@
+INTRODUCTION
+
+This file explains some of the uses of the rationale-based sensing monitors
+extension to Prodigy4.0. The plan-exec domain is used to generate the results
+shown in Veloso, Pollack, & Cox (in press). These include
+alternative-based-subgoal monitors and alternative-based-usability
+monitors. See experiments.txt in the plan-exec directory for instructions for
+replicating the results. At theq bottom of this file is a planning trace of
+setup and execution of one of the trials in the experiment. Usage of the system
+is illustrated in this trace.
+
+The goals2 domain is used to generate the results shown in Veloso, & Cox
+(1998).  These include the universally-quantified precondition monitors. See
+the brief README file in the goals2 directory and the file experiments.txt (in
+same dir) for instructions for replicating the results.
+
+The following section of this README file gives some basic instructions on how
+to use the monitor module with Prodigy. The subsequent section provides some
+technical comments on implementation. The last section is a trace of Prodigy
+planning with monitors active and the world changing during planning.
+
+
+----------------------------------------------------------------------------
+USAGE
+
+To run Prodigy with Monitors, setf *use-monitors-p* to non-nil (in file
+parameters.lisp).  Set *sequence* in file sensing.lisp to desired state change
+sets (unless using in interactive mode, see below), and then call function
+reset before each run.
+
+To run with interactive sensing, set both *interactive* and *sensing* from file
+sensing.lisp to t.
+
+To run Prodigy with Monitors from the User Interface on a SunOS machine, set
+*sequence* in file sensing.lisp to desired state change sets, load prodigy and
+the monitor module, select Rationale-based monitors from the Control Variables
+pull-down menu, then load and run as normal.
+
+To run Prodigy with Monitors from the User Interface on a Solaris machine
+(i.e., Pushkin), first set *sequence* in file sensing.lisp to desired state
+change sets and then load prodigy and the monitor module. To start the UI, cd
+in a X-window to /usr0/mcox/prodigy/system/ui and then invoke
+/usr0/misc/bin/wish4.2. Then source ui-start.tcl and source
+example-param-custom.tcl. Go to the lisp prompt and call (prod-ui t). Wait
+until it finishes with the following 
+
+Restarting tcl server..
+NIL
+USER(2): sockfig-ready-p T
+
+and then source ui-comm.tcl and source /usr/home/mcox/prodigy/overload.tcl from
+the X-window.
+
+
+----------------------------------------------------------------------------
+IMPLEMENTATION
+
+We have implemented planning with rationale-based monitors within the
+Prodigy4.0 planner~\cite{jetai-journal}. Table~\ref{search-algo}
+sketches the overall algorithm.
+
+Prodigy4.0 is a state-space nonlinear planner. On its primary cycle it
+may do one of two things.  It may select a pending goal, i.e., one
+that is not satisfied in the current state, and update the plan by
+adding a step that achieves that goal by adding it to its {\it tail
+plan} (Step 3 in the algorithm), or it may select an applicable step,
+i.e., one for which all of the preconditions are currently satisfied,
+and add it to the end of a totally ordered {\em head plan} (Step 4 in
+the algorithm).  In the latter case, the state changes that result
+from the applied action are performed and produce the new planning
+state.  
+
+To incorporate rationale-based monitoring, two primary changes to the
+algorithm are needed, as shown in boldface in Table~\ref{search-algo}.
+First, rationale-based monitors are generated whenever the plan has
+been updated.  Second, sensing is performed to check the status of the
+world conditions being monitored, and plan transformations are
+performed in response.
+
+\begin{table}[htb]
+\hrule
+{\small
+\begin{s_enumerate}
+\item Terminate if the goal statement is satisfied in the current state.
+\item Compute the set of {\it pending goals} $\cal G$, 
+        and the set of {\it applicable} {\it operators} $\cal A$.
+	A goal is pending if it is a precondition, not satisfied in the 
+	current state, of an operator currently in the plan.
+	An operator is applicable when all its preconditions are 
+	satisfied in the state.
+\item Either
+	\begin{small_ind_itemize}
+	\item Choose a goal $G$ from $\cal G$ 
+	\item {\it Expand} $G$, i.e., get the set $\cal O$ of
+              {\it relevant instantiated operators} that could
+              achieve the goal $G$,
+        \item Perform action selection.
+        \item Perform step instantiation. 
+	\item Add new step to tail plan.
+	\item {\bf Generate new monitors}.
+	\end{small_ind_itemize}
+\item or
+        \begin{small_ind_itemize}
+        \item Choose an operator $A$ from $\cal A$. 
+	\item {\it Apply} $A$: Add $A$ to the head plan and get 
+	new current state.
+        \end{small_ind_itemize}
+\item {\bf Sense for fired monitors, and perform planning
+transformations.}
+\item Go to step~1.
+\end{s_enumerate}
+}
+\hrule
+\caption{A skeleton of Prodigy4.0's planning algorithm with
+rationale-based monitoring.}
+\label{search-algo}
+\end{table}
+
+
+Signal-Handling Interrupts for Sensing
+
+The Prodigy planning architecture includes a powerful interrupt mechanism that
+enables unobtrusive user extensions. After each planning choice (i.e., goal
+selection, operator choice, bindinging selection, or subgoal/apply choice), the
+system will attend to any interrupts that have occurred since the last
+decision. For example, the graphical user-interface to Prodigy is implemented
+as an interrupt handler that communicates user commands and displays results
+after each planning cycle (Cox & Veloso, 1997).
+
+On every cycle of problem solving, Prodigy matches a list of signals with a
+list of signal handlers. The signals (for example :always) are small tagged
+pieces of data that may have been generated during the last cycle. The signal
+handlers (such as time-check) are functions that take a signal as an
+argument. A signal handler is associated with a signal, and whenever that
+signal is generated, Prodigy will call the signal handler function with the
+signal as its argument.
+
+The sensing mechanism is implemented as an interrupt handler that after each
+cycle, looks for new information in the environment [Cite Karen's tech
+report]. This information can come either interactively from the user or
+statically from a file. New information is in the form of literals (rather than
+arbitrarily complex logical expressions) that are either added (asserted) or
+deleted (retracted) from the current problem-solving state. Multiple changes
+can occur during a single sensing operation. Although new literals can be
+added, we assume that no new domain objects are detected by sensing. 
+
+
+Prodigy's sensing module (see sensing.lisp) installs the signal handler in
+Figure X to provide the interface between the planner and the planning
+environment. Although the handler is called every planning cycle, it is
+executed only once every *sensing-cycle-length* number of cycles and is active
+only if *sensing* is non-nil. If *interactive* is non-nil, the user types in
+any change; otherwise the perceive function reads the change from a list called
+*senses* (obtained earlier from the global *sequence* variable). If a change in
+the state occurs, a :state-change signal is raised. The monitors handle this
+class of signals by determining whether the new information is relevant,
+deliberating whether the plan change is useful, and instituting the change if
+so.
+
+(defun sense-world (signal)
+  (cond  ((and *sensing*
+	       (= *sensor-count* 0))
+	  (setf *sensor-count* *sensing-cycle-length*)
+	  (when 
+	   *interactive*
+	   (format t "~%~%This is the current state ~S" (show-state))
+	   (format 
+	    t 
+	    "~%Enter add (a), del (d), quit-sensing (q), otherwise terminate: "))
+	  (let ((ans (if *interactive* (read)
+		       (perceive)))
+		(action nil))
+	    (case ans
+		  ((a) (setf action t))
+		  ((d) (setf action nil))
+		  ;;If user responds with quit or *senses* empty.
+		  ((q nil) (setf *sensing* nil ans nil))
+		  (t (setf ans nil)))
+	    (when ans
+		  (if *interactive*
+		      (format t "Enter sensed state literal: "))
+		  (let ((new-visible (if *interactive* (read)
+				       (perceive))))
+		    (when new-visible
+			  (setf (p4::literal-state-p
+				 (p4::instantiate-consed-literal 
+				  new-visible))
+				action)
+			  (if *interactive*
+			      (format t "This is the new state ~S" (show-state))
+			    (format t 
+			     "~%~a new literal ~S~%" 
+			     (if (eq ans 'a) "Adding" "Deleting")
+			     new-visible))
+			  ;; Raise interrupt signal on new input to invoke monitors.
+			  (prod-signal :state-change 
+				       (cons ans (list new-visible)))
+			  ))
+		  (sense-world signal)
+		  )))
+	 (*sensing*
+	  (setf *sensor-count* (1- *sensor-count*))))
+  )
+
+Figure X. Signal handler to sense the environment
+
+
+The Generation of Monitors
+
+New monitors may be generated whenever Prodigy updates the tail plan.
+A pending goal is selected, and an operator is added to the plan to
+achieve it. The goal unification with the effects of the operator
+provides some initial bindings for the preconditions.  The remaining
+variables of the preconditions are then bound, and new
+subgoals are added.  Monitors are then created to track the world
+state features that led to each of these decisions.
+
+When Prodigy considers an action to achieve some effect during planning, a
+decision must be made as to the bindings of the variables in the schema that
+represents the action.  A binding node in the search tree is created to record
+the reasons for such a decision, and monitors are spawned to react to changes in
+the reasons for this decision. 
+
+Monitors are implemented as Prodigy signal-handling functions that react to
+:state-change interrupts. The functions are dynamic lambda closures that retain
+the binding node in the search tree at which they were generated, the condition
+that constitutes the rationale for their creation, and whether or not the
+condition was true at the time the monitor was generated.  Thus, if a monitor
+is established for some condition $P$, then the introduction of the literal $P$
+into the world state will cause that monitor to fire at the end of the cycle
+following its introduction.  Table~\ref{generation} provides the pseudo-code
+for our implemented monitor generation algorithm.
+
+
+\begin{table}[htb]
+\hrule
+{\small
+\begin{s_itemize}
+\item Let $O$ be a selected or alternative instantiated step and let $B$ be the
+corresponding binding search node.
+
+\item Let pre($O$) denote the regular preconditions of $O$.
+
+\item Let q-expr($O$) denote the quantified preconditions of $O$ and 
+let each precondition in q-expr($O$) be of the form $p(x), \forall x,
+s.t. f(x).$
+
+\item Let $\cal U, \cal Q$, and $\cal S$ respectively denote the sets of
+Usability, Quantified-condition, and Subgoal monitors. 
+
+\item Let usability-condition-p be true for the usability 
+conditions. 
+\end{s_itemize}
+\begin{tabbing}
+aa\=aaaa\=aaa\= \kill
+for each precond $p$ in pre($O$) \\
+\>if usability-condition-p(p) \\
+\> \> then $\cal U = \cal U \cup$ usability-monitor($B,p$) \\
+\> \> else $\cal S = \cal S \cup$ subgoal-monitor($B,p$) \\
+for each precond $p(x), \forall x, s.t. f(x)$ in q-expr($O$)\\
+\> $\cal Q = \cal Q \cup$ quantified-condition-monitor($B,f$) \\
+\> for each expansion $p(x_i)$ s.t. $f(x_i)$ is true \\
+\> \> $\cal S = \cal S \cup$ subgoal-monitor($B,p(x_i)$) 
+\end{tabbing}
+}
+\hrule
+\caption{Algorithm to generate monitors in Prodigy4.0.}
+\label{generation}
+\end{table}
+
+%When a monitor fires, our implementation takes care of following
+%the rationale and the implications of the corresponding state change.
+%The functions usability-monitor, subgoal-monitor, and
+%quantified-condition-monitor are interrupt handlers and maintain the
+%monitor information according to the general algorithm in
+%Table~\ref{cplanning-algo}.
+
+
+Table~\ref{subgoal-monitor} shows the implementation of the monitor that reacts
+to changes in subgoal preconditions (those for which operators exist that have
+the condition as an effect. Separate monitors exist for usability preconditions
+(applicability conditions) and for universally quantified expressions.
+
+The new-info structure is a list of two elements. The first item is either
+the symbol 'a or 'd corresponding to whether the new information is an add or a
+delete. The seconds list element is the new literal. The argument
+true-literal-p is true if the precondition state represented as literal was
+true in the state at monitor generation time, false otherwise.
+
+\begin{table}[htb]
+{\small
+\begin{verbatim}
+Subgoal-Monitor (new-info bnode literal true-literal-p)
+  if open-precond-now-satisfied-p (new-info literal)
+       undo-planning-attempt (bnode new-info literal true-literal-p)
+  else if satisfied-precond-now-open-p (new-info literal)
+       do-add-to-pending-goals (literal bnode new-info true-literal-p)
+\end{verbatim}
+}
+\caption{Signal handler for plan-based monitoring of subgoal preconditions.}
+\label{subgoal-monitor}
+\end{table}
+
+
+Plan Transformations
+
+Whenever a :state-change interrupt is generated by the sense-world handler,
+each monitor checks to see if the new information matches the condition it is
+tracking. That is, it checks to see if the new information is relevant to the
+plan and its alternatives.
+
+Open conditions are those goals and subgoals that Prodigy plans to achieve. An
+open condition occurs if a desired state is for a literal to be false when the
+current state is true, or the desired state is for a literal to be true when
+the current state is false (see Table~\ref{satisfied}). Therefore in Table~\ref{subgoal-monitor}, if
+predicate open-precond-now-satisfied-p returns true, it is the case that a
+state (either positive or negative) for which Prodigy was planning to achieve
+is now satisfied. Conversely, if satisfied-precond-now-open-p returns true,
+then a precondition (either positive or negative) that the planner considered
+satisfied is no longer satisfied.
+
+\begin{table}[htb]
+{\small
+\begin{verbatim}
+open-precond-now-satisfied-p (new-info literal)
+if matches (literal new-info)
+   AND
+      originally-false-in-state (literal) AND
+      is-positive-goal(literal) AND
+      is-adding (new-info)
+     OR
+      originally-true-in-state (literal) AND
+      is-negative-goal (literal) AND
+      is-deleting (new-info)
+return true
+else return false
+\end{verbatim}
+}
+\caption{Algorithm for determining that an open precondition has become true.}
+\label{satisfied}
+\end{table}
+
+For subgoal preconditions, both of these checks are made. In the first case, if
+an open precondition is now satisfied by the changed state, any planning for
+that precondition is undone by returning to the binding node and
+replanning. Replanning will cut from the plan any steps previously added to
+achieve the now satisfied state. Alternatively, in the second case, if a
+previously satisfied precondition is now open, then a subgoal is added to the
+queue of pending states for which Prodigy plans. Continued planning at this
+point will add steps to the plan in service of the subgoal.
+
+The third transformation for subgoal monitors is alternative-based. It
+represents a heuristic that prefers alternative operators and instantiated
+operator bindings that contain fewer open preconditions over previous planning
+decisions resulting in more. The transformation is to replace a current step
+and its subplan (the subplan to achieve the open preconditions), with an
+alternative step that needs no subplan because no open preconditions
+exist. This case can occur either when an alternative operator exists with
+different preconditions that are all true, or an alternative variable binding
+exists for the same operator such that the preconditions are met in the newly
+changed state. Prodigy checks all these possibilities, and if met, jumps to the
+operator node that is the parent of the original binding node at which the
+monitor was created.
+
+For usability monitors, a previously satisfied precondition has suddenly become
+open. Moreover, by the definition of a usability precondition, no operator
+exists in the domain that can achieve the condition. Therefore, like the
+previous alternative-based transformation above, the monitor performs a jump to
+the operator node that is the parent of the binding node at which the monitor
+was spawned. This causes the operator and all choices below in the subgoaling
+structure of the plan to be cut. At this point, Prodigy reevaluates the
+planning decision to choose an alternative operator or, if one does not exist,
+to backtrack.
+
+For universally quantified preconditions, the monitor watches for new
+information that implies another precondition be asserted (added) or current
+one to be retracted (cut). In general a universally quantified precondition of
+some operator is an expression of the following form.
+
+\begin{verbatim}
+Forall x such that f(x) is true, achieve p(x).       (1)
+\end{verbatim}
+
+The number of preconditions that correspond to such an expression vary with the
+number of objects x that meet the test f. The universal monitors watch for new
+literals that match the expression in f. As implemented Prodigy assumes that f
+is a single predicate and no new objects come into being (or are destroyed) as
+a result of sensing. 
+
+For example, an operator to paint an object may require that all the parts of
+the object be sanded. If not already sanded, the planner must create steps to
+sand each part. Then if sensing more parts than were previously known, the
+system must generate additional subgoals to sand the extra parts. 
+
+The various plan transformations discussed so far are implemented without
+changing the Prodigy architecture significantly. Instead of rewriting the
+decision code to replan given new information from the environment, the
+monitors simply jump to the decision point that needs to be made or undone.
+
+Prodigy allows control of the planning search to be manipulated through
+declarative structures called control rules. Control rules enables heuristic
+redirection of the search for operators to achieve goals, for bindings to
+instantiate operators, and also for the next node itself to expand during
+search. The default is to perform depth-first search through planning
+decisions. But given a control rule that selects a specific search node, this
+default can easily be overturned. Replanning is therefore implemented as
+movement in the planning search tree to the exact spot that replanning needs to
+be performed.
+
+For example, when Prodigy senses that an open precondition for which it has
+already started planning suddenly becomes satisfied, it needs to remove the
+steps of the plan that has been selected to achieve the previously open
+state. If a control rule is generated by the monitor that forces Prodigy to
+reconsider the decision to subgoal upon the open precondition, it will
+automatically retract the steps and continue planning from the correct planning
+point. This point is the binding node from where the monitor was originally
+created. As can be seen in Table~\ref{subgoal-monitor}, the closure that
+represents the monitor has a record of this binding node.
+
+Table~\ref{control-rule} shows the subsequent control rule that function
+undo-planning-attempt creates when open preconditions become satisfied. This
+control rule will attempt to fire only once because of the one-shot
+function. One-shot returns t the upon the first invocation and nil upon all
+subsequent calls. If the binding node bnode is still expandable, it will select
+that node for the next planning decision. 
+
+\begin{table}[htb]
+{\small
+\begin{verbatim}
+(eval `(control-rule 
+           ,(gentemp "CR-ONE-SHOT-JUMP-2-READY-STEP-")
+        (if (and (one-shot ,done-var)
+                 (candidate-node ,bnode)))
+        (then select node ,bnode))))
+\end{verbatim}
+}
+\caption{Dynamically created control rule to select the next search tree node.}
+\label{control-rule}
+\end{table}
+
+
+----------------------------------------------------------------------------
+EXAMPLE TRACE OF MONITOR USAGE
+
+(see /afs/cs/user/mcox/prodigy/Interleave/monitor-example-with-ui.gif for
+graphical illustration of state of prodigy data structures (e.g., search tree,
+control-rules, goal tree, etc.) after the completion of the example below).
+
+In this example, the alternative-based usability monitor does not check for the
+existence of alternative operators. Instead it checks for alternative bindings
+using the same operator. The example has two static (relative to the planner)
+states, (static b1) and (static b2), both of which are true in the initial
+state. The planner instantiates the op A0 with the binding (<b>. b1), but
+during planning, the literal (static b1) becomes false. It therefore cuts the
+current plan fragment and jumps to the decision point that determines the
+bindings (i.e., the operator node represented by search node #6; from here it
+can create a new binding node). Therefore, it instantiates A0 with (<b>. b2).
+
+USER(1)(set-parameters) ;This function (from file parameters.lisp) can be
+                        ;called to see the current setting of crucial
+                        ;parameters and to change them interactively.
+
+CURRENT PARAMETERS: 
+
+*RUN-EXPERIMENT* = NIL
+  (If t, do not prompt user. Run experiment instead.)
+*LOAD-SENSING-ONLY* = NIL
+  (If nil, load the sensing-execution-monitor code. 
+If t, will load part of the code in Interleave, but not the execution-specific code.)
+*TEST-CONDITION* = WITH-GOAL-TRANSFORMATIONS
+  (Either alternative-based-subgoal, alternative-based-usability,
+with-goal-transformations or without-goal-transformations.)
+*MAX-OPS* = 30
+  (Really *n-ops*.)
+*MAX-DELAY* = 25
+  (Maximum sensing delay in experiment.)
+*USE-MONITORS-P* = T
+  (If t, monitors are spawned.)
+*O-LEVEL* = 3
+  (Prodigy output level.)
+
+To use defaults, type 'd in place of value
+
+*run-experiment* (default NIL): t 
+
+*load-sensing-only* (default T): nil
+
+*test-condition* (default ALTERNATIVE-BASED-SUBGOAL): alternative-based-usability
+
+*max-ops* (default 30): d
+
+*max-delay* (default 25): d
+
+*use-monitors-p* (default T): d
+
+*o-level* (default 0): 3
+NIL
+USER(2): (setf *sensing-cycle-length* 4)
+4
+USER(3): (if *run-experiment* ; This piece of code is from sensing.lisp
+    (setf *sequence-list*  
+	  (if (eq  *test-condition* 'alternative-based-subgoal)
+	      '(
+		(a (alt b2) a (g1))
+		"Test for alternative-based subgoal monitors in the artificial domain.")
+	    (if (eq  *test-condition* 'alternative-based-usability)
+		'(
+		  (d (static b1))
+		  "Test for alternative-based usability monitors in the artificial domain.")))))
+((D (STATIC B1)) "Test for alternative-based usability monitors in the artificial domain.")
+USER(4): (do-1-trial 2 1 t 3) ;See file test-battery.lisp for the
+                              ;semantics of these function arguments
+; Loading /afs/cs/user/mcox/prodigy/domains/plan-exec/domain.lisp.
+Warning: gen-lte, :operator was defined in /afs/cs/user/mcox/prodigy/Interleave/test-gtrans.lisp and is now being
+         defined in /afs/cs/user/mcox/prodigy/domains/plan-exec/domain.lisp
+Warning: make-sym, :operator was defined in /afs/cs/user/mcox/prodigy/Interleave/test-gtrans.lisp and is now being
+         defined in /afs/cs/user/mcox/prodigy/domains/plan-exec/domain.lisp
+Running load-domain.
+; Loading /afs/cs/user/mcox/prodigy/domains/plan-exec/probs/p2.lisp.
+
+  2 n2 (done)
+Spawning monitor MONITOR4.1 at node 4 for literal #<G0>
+STATIC PRECONDS: NIL
+
+  4 n4 <*finish*>
+  5   n5 (g0)
+Spawning monitor MONITOR7.2 at node 7 for literal #<G1>
+
+Spawning monitor MONITOR7.3 at node 7 for literal #<ALT B1>
+STATIC PRECONDS: (#<STATIC B1>)
+
+Spawning monitor USABILITY-MONITOR7.4 at node 7 for literal #<STATIC B1>
+
+  7   n7 <a0 b1> [1]
+Deleting new literal (STATIC B1)
+
+  8     n8 (g1)
+Execute of function reject-bnode with bnode #<BINDING-NODE 7 #<A0 [<B> B1]>>
+Reading Meta predicate: ONE-SHOT
+Reading Meta predicate: CANDIDATE-NODE
+
+Firing select node rule CR-ONE-SHOT-JUMP-2-CHANGE-OP-6 to get (#<OPERATOR-NODE 6 #<OP: A0>>)
+
+  6   n6 a0
+Spawning monitor MONITOR10.7 at node 10 for literal #<ALT B2>
+
+Spawning monitor MONITOR10.8 at node 10 for literal #<G1>
+STATIC PRECONDS: (#<STATIC B2>)
+
+Spawning monitor USABILITY-MONITOR10.9 at node 10 for literal #<STATIC B2>
+
+  7   n10 <a0 b2>
+  8     n11 (alt b2) [1]STATIC PRECONDS: (AND)
+
+ 10     n13 <dummy b2>
+ 11     n14 <DUMMY B2> [1]
+ 12     n15 (g1)STATIC PRECONDS: (#<STATIC B2>)
+
+Spawning monitor USABILITY-MONITOR17.10 at node 17 for literal #<STATIC B2>
+
+ 14     n17 <a1 b2>
+ 15     n18 <A1 B2>
+ 15   n19 <A0 B2>
+Achieved the following top-level goals:
+((G0))
+
+Solution:
+	<dummy b2>
+	<a1 b2>
+	<a0 b2>
+
+NIL
+USER(5):
+
+----------------------------------------------------------------------------
+REFERENCES
+
+Cox, M. T., & Veloso, M. M. (in press).  Goal Transformations in Continuous
+Planning. In M. desJardins (Ed.), Proceedings of the 1998 AAAI Fall Symposium
+on Distributed Continual Planning. Menlo Park, CA: AAAI Press / The MIT Press.
+
+http://www.cs.cmu.edu/afs/cs.cmu.edu/project/prodigy/Web/Mixed-init/Papers/goal-trans.ps.gz
+
+
+Veloso, M. M., Pollack, M. E., & Cox, M. T. (1998). Rationale-based
+monitoring for continuous planning in dynamic environments</A>. The Fourth
+International Conference on Artificial Intelligence Planning Systems 1998
+(AIPS-98). 
+
+ftp://ftp.cs.cmu.edu/afs/cs.cmu.edu/user/mcox/Public/Ftp/final-submitted-aaai.ps.gz

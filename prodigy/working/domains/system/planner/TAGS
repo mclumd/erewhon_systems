@@ -1,0 +1,925 @@
+
+apply.lisp,2554
+(defmacro literal-justification 70,2754
+(defmacro literal-expl 78,3099
+(defmacro literal-deps 82,3235
+(defun inherit-justification 86,3368
+(defun apply-and-check 105,4202
+(defun get-next-applicable-irule 135,5307
+(defun get-next-irule-r 138,5379
+(defun apply-op 169,6659
+(defun precond-bindings 205,8287
+(defun process-list 211,8405
+(defun compute-effects 278,10986
+(defun cache-and-match 290,11433
+(defun process-list-for-one 299,11760
+(defun type-cross-product 388,15455
+(defun get-depending-vars 414,16434
+(defun find-depending-vars-for-var 428,16938
+(defun my-sort 432,17069
+(defun check-and-instantiate 439,17245
+(defun check-and-instantiate 446,17573
+(defun form-all-bindings 456,17922
+(defun get-some-bindings 468,18230
+(defun get-some-bindings 500,19403
+(defun form-new-bindings 514,19772
+(defun form-real-bindings 525,20182
+(defun form-cross-product-and-check-functions528,20269
+(defun permanent-object-to-prodigy-object 546,20824
+(defun get-functions-for-var 554,21070
+(defun generate-values-for-var 568,21525
+(defun form-all-vars 573,21692
+(defun form-final-binding-inf 584,22013
+(defun gen-binding-for-inf-var 594,22366
+(defun infinite-type-var 600,22571
+(defun all-apply-bindings 608,22856
+(defun apply-for-one-literal 635,23579
+(defun preconds-to-list 672,24953
+(defun p-t-l-r 692,25616
+(defun p-t-l-forall 711,26419
+(defun p-t-l-forall 729,27049
+(defun maintain-and-set-state-p 752,27884
+(defun update-justification 782,28829
+(defun do-state 800,29542
+(defun state-loop-p 817,30290
+(defun unzip-states-loop-p 831,30765
+(defun do-book-keeping 857,31536
+(defun set-node-name 878,32389
+(defun close-node 895,33111
+(defun close-node-and-children 946,35091
+(defun close-subtree 957,35471
+(defun check-term-intro-nodes 975,36100
+(defun backtrack-past-undoable-goal 1021,37828
+(defun nexus-ancestor 1053,39028
+(defun check-term-operator-node 1058,39179
+(defun check-term-goal-node 1078,40023
+(defun fire-static-eager-inference-rules 1108,41153
+(defun fire-one-static-eager-inference-rule 1119,41572
+(defun simple-apply-op 1131,42119
+(defun fire-eager-inference-rules 1152,42862
+(defun get-possible-bindings 1172,43682
+(defun gather-together 1197,44691
+(defun gather-rec 1200,44779
+(defun find-cooker 1210,45109
+(defun same-to-length 1214,45228
+(defun heat-up 1219,45364
+(defun new-cooker 1223,45496
+(defun check-binding 1229,45625
+(defun check-binding-r 1239,45982
+(defun check-forall-binding 1275,47434
+(defun check-exists-binding 1299,48440
+(defun make-up-literal 1319,49139
+
+assertions.lisp,568
+(defvar *debug-assertion-print* 19,446
+(defun literal-print 47,1537
+(defmacro do-daemon 75,2277
+(defun create-literal 80,2506
+(defun instantiate-consed-literal 106,3501
+(defun instantiate-literal 119,4028
+(defun create-done-assertion 129,4394
+(defun add-to-state 132,4469
+(defun instantiated-literal 145,5049
+(defun instantiated-literal 197,6947
+(defun set-state-p 228,7867
+(defun push-goal 235,8053
+(defun delete-goal 240,8214
+(defun push-neg-goal 246,8416
+(defun delete-neg-goal 251,8589
+(defun literal-lessp 258,8806
+(defun argument-lessp 271,9113
+
+build-graphics.lisp,800
+(defun display-tree 26,754
+(defun nexus-data-string 67,2487
+(defun graph-control-panel 106,3847
+(kr:define-method :destroy 120,4195
+(defun pop-up-data 125,4412
+(defun add-nexus-data 167,5839
+(defun name-and-\#-string 198,6883
+(defun adjust-window 201,6975
+(defun name-or-nil 217,7551
+(defun add-goal-node 224,7716
+(defun add-operator-node 227,7780
+(defun add-a-or-b-node 230,7848
+(defun extra-nexus-data 233,7914
+(defun destroy-tree 237,7998
+(defun turn-off-trace 263,8846
+(defun turn-on-trace-all 287,9753
+(defun add-lit 315,10914
+(defun make-synchronous 335,11711
+(defun delete-goal-daemon 342,11941
+(defun delete-neg-goal-daemon 347,12070
+(defun push-goal-daemon 352,12203
+(defun push-neg-goal-daemon 357,12328
+(defun state-daemon 362,12459
+(defun touch-lit-text 367,12582
+
+circular.lisp,39
+(defun find-circular-structure 19,439
+
+comforts.lisp,617
+(defvar *analogical-replay* 49,1720
+(defvar *problem-path* 53,1810
+(defun path 56,1888
+(defun large-wobbly-control-rule 62,2008
+(defun domain 65,2082
+(defun problem 128,4295
+(defun file-names 153,5108
+(defun pshow 172,5859
+(defun showop 190,6608
+(defun printop 195,6785
+(defun boundary 198,6882
+(defun bound-r 203,7009
+(defun cleanup-string 214,7323
+(defun pset 227,7752
+(defun print-state-daemon 236,8075
+(defun trace-state 248,8564
+(defun untrace-state 253,8750
+(defun show-state 293,10723
+(defun p4::give-me-nice-state 301,11005
+(defun contrib-load 322,11630
+(defun set-running-mode 335,12076
+
+extract-cr.lisp,697
+(defun bind-print 55,1863
+(defun new-binding 65,2104
+(defun format1 68,2167
+(defun extract-independent-data 83,2790
+(defun extract-from-exp 109,3862
+(defun build-complex-exp 118,4239
+(defun build-not-exp 126,4725
+(defun build-and-exp 145,5488
+(defun build-or-exp 175,6485
+(defun build-exists-exp 186,6954
+(defun build-exists-lambda 210,7784
+(defun build-forall-exp 226,8501
+(defun build-forall-lambda 264,9777
+(defun build-meta-predicate-call 336,12371
+(defun function-call 401,14235
+(defun get-var-if-bound 410,14481
+(defun build-new-tuple 429,15202
+(defun print-bindings 448,15674
+(defun new-tuples 477,16540
+(defun get-prebound-vars 483,16745
+(defun independentp 492,17044
+
+extract-functions.lisp,330
+(defun EXTRACT-BINDING-SPEC-FUNCTIONS 38,1336
+(defun merge-precond-and-cond-bind-spec 52,1847
+(defun extract-functions 56,1972
+(defun build-function-call 63,2224
+(defun build-argument-list 67,2387
+(defun do-arg-replacement 74,2554
+(defun get-functions 79,2746
+(defun good-functions 94,3254
+(defun good-functions 103,3547
+
+extract-static.lisp,1358
+(defparameter *rule-precond* 54,2056
+(defun extract-static-preconds 73,2549
+(defun merge-precond-and-conditional-effects 89,3032
+(defun rule-cond-effects 94,3216
+(defun get-cond-effect 98,3370
+(defun extract-static 102,3459
+(defun extract-and-static 115,3961
+(defun extract-or-static 121,4156
+(defun extract-forall-static 133,4542
+(defun extract-exists-static 136,4675
+(defun extract-neg-static 139,4808
+(defun constrains-vars-p 151,5201
+(defun extract-mixed-statics 158,5431
+(defun extract-conditional-statics 167,5777
+(defun extract-conditional-static 177,6058
+(defun intersection-p 184,6286
+(defun build-test 198,6712
+(defun build-binding-test1 265,9001
+(defun build-binding-test2 269,9149
+(defun build-static-generator 284,9675
+(defun find-static-predicate 291,9946
+(defun find-static-predicate-in-complex 306,10294
+(defun find-static-in-and 315,10663
+(defun find-static-in-or 318,10776
+(defun find-static-in-exists 324,10993
+(defun find-static-in-forall 327,11111
+(defun find-static-in-neg 330,11229
+(defun find-merged-static 337,11476
+(defun find-conditional-static 341,11628
+(defun constrains-var-p 345,11731
+(defun prune-from-static 358,12228
+(defun build-generator-lambda 369,12592
+(defun value-matches-test 378,12926
+(defun get-nth-value 390,13472
+(defun get-literals 395,13588
+(defun new-get-literals 407,14014
+
+funcall-patch.lisp,76
+(defun funcall 22,516
+(defun make-funcall-compatible-with-CMU-lisp 27,654
+
+generator.lisp,435
+(defun build-generator-for-rule 36,1319
+(defun build-generator-for-var 45,1589
+(defun type-check 73,2705
+(defun candidate-types 97,3545
+(defun build-type-union 107,3944
+(defun find-comps 114,4225
+(defun good-children 132,4899
+(defun delete-redundant-types 143,5146
+(defun check-sub-types 151,5453
+(defun build-gen 159,5726
+(defun get-values-from-types 176,6371
+(defun make-type-list 181,6535
+(defun name-and-list 188,6876
+
+goal-loop.lisp,27
+(defun goal-loop-p 18,444
+
+instantiate-op.lisp,1735
+(defun instantiated-op-print 69,2597
+(defun generate-applicable-ops 101,3628
+(defun old-gen-apps-r 118,4179
+(defun gen-apps-r 147,5231
+(defun something-should-be-applied-here-p 172,6089
+(defun applicable-op-p 186,6517
+(defun good-instantiation-p 202,7194
+(defun true-extended-assertion-p 206,7348
+(defun applicable-op-p 219,7865
+(defun check-applicable-r 240,8611
+(defun check-applicable-exists 265,9551
+(defun check-applicable-forall 268,9681
+(defun check-applicable-forall 288,10507
+(defun old-check-applicable-forall 302,11070
+(defun increment-choice 333,12303
+(defun satisfy-quant 345,12664
+(defun choice-bindings 352,12936
+(defun dans-substitute-bindings 360,13191
+(defun do-substitution 374,13735
+(defun delete-instantiated-op-from-literals 402,14924
+(defun remove-op-from-inst-preconds 408,15221
+(defun delete-instantiated-op-from-literals 420,15605
+(defun remove-op-from-goals 431,16031
+(defun remove-forall-from-goals 457,17075
+(defun remove-forall-from-goals 469,17542
+(defun old-remove-forall-from-goals 481,18085
+(defun build-instantiated-precond 531,20431
+(defun build-instantiated-rec 561,21597
+(defun build-instantiated-rec 581,22272
+(defun true-decs 627,24303
+(defun try-to-instantiate 647,24986
+(defvar *global-op-list* 679,26167
+(defun decide-which-one-to-apply 681,26198
+(defun find-most-promising-less-constrained 712,27311
+(defun still-applicable-p 742,28398
+(defun get-previously-most-promising 754,28865
+(defun find-least-constrained 784,30050
+(defun find-most-free 792,30373
+(defun less-constrained-p 806,30835
+(defun free-to-go-p 814,31114
+(defun preconds-adds-dels-list 846,32444
+(defun simulate-effect-list-for-one 876,33422
+(defun gen-all-applicable-ops 926,35068
+
+interrupt.lisp,279
+(defparameter *prodigy-handlers* 30,782
+(defun prod-signal 35,904
+(defun attend-to-signals 41,1120
+(defun define-prod-handler 59,1873
+(defun mask-prod-handler 69,2214
+(defun remove-prod-handler 73,2375
+(defun clear-prod-signals 86,2893
+(defun clear-prod-handlers 92,3075
+
+load-domain.lisp,5233
+(defvar *current-problem-space*)100,4332
+(defvar *subgoal-on-conditional-effects* 102,4366
+(defvar *always-remove-p* 105,4481
+(defvar *behaviour-on-arity-change* 110,4682
+(defvar *arity-hash*)118,5062
+(defvar *defined-vars*)119,5084
+(defvar *all-preds*)120,5108
+(defvar *non-static-preds*)121,5129
+(defvar *effect-preds*)122,5157
+(defstruct effect-cond171,6326
+(defun rule-print 176,6392
+(defun control-rule-print 195,6842
+(defmacro rule-effects-preds 206,7093
+(defmacro rule-select-crules 209,7175
+(defun rule-name-to-rule 218,7509
+(defun problem-space-print 291,10670
+(defmacro problem-space-property 300,10944
+(defmacro problem-space-type 307,11235
+(defmacro problem-space-object 311,11394
+(defun reset-problem-space 315,11546
+(defun reset-prodigy-types 327,12070
+(defun remove-object 338,12440
+(defun CREATE-PROBLEM-SPACE 343,12618
+(defun add-non-static-pred-new 424,16100
+(defun add-static-pred-new 434,16586
+(defun hash-entry-p 445,17059
+(defun static-pred-p 451,17203
+(defun clear-assertion-hash 457,17371
+(defmacro state-keep-lits 467,17727
+(defun load-domain 494,18572
+(defun maybe-compile 551,20823
+(defun find-non-static-pred 557,20949
+(defun non-static-rule-p 595,22390
+(defun static-inference-rule-p 602,22586
+(defun add-effect-pred-as-non-static 609,22821
+(defun conditional-effect-p 619,23094
+(defun universal-effect-p 622,23159
+(defun all-precond-preds 626,23279
+(defun all-effects-preds 642,23843
+(defun get-preds-effect 654,24198
+(defun all-preds-exp 659,24319
+(defun all-preds-exp 674,24755
+(defun create-tests-for-operators 694,25475
+(defun create-tests-for-operator 703,25800
+(defun create-generator-for-operators 717,26232
+(defun create-generator-for-operator 725,26572
+(defun add-quantifier-generators 734,26951
+(defun build-generator-for-quantifier 747,27505
+(defun build-select-binding-all-tests 759,27831
+(defun build-select-binding-all-tests 777,28460
+(defun extract-all-tests-for-all-ops 789,28969
+(defun get-last-test 801,29321
+(defun get-last-test 816,29766
+(defun build-reject-binding-all-tests 833,30254
+(defun build-reject-binding-all-tests 858,31237
+(defun get-last-test-for-all-ops 875,31917
+(defun add-select-bindings-crs 892,32553
+(defun add-reject-bindings-crs 908,33145
+(defun internal-consistancy-checks 931,33982
+(defun warn-for-unused-predicates 935,34069
+(defun check-infer-op-interference 952,34721
+(defmacro OPERATOR 962,34960
+(defun foperator 970,35266
+(defun foperator-new 984,35768
+(defmacro INFERENCE-RULE 996,36202
+(defmacro inference-rule-p 1010,36909
+(defmacro inference-rule-a-or-b-node-p 1013,36990
+(defmacro event 1018,37173
+(defun event-p 1026,37425
+(defun rule-duration 1028,37481
+(defun add-operator 1030,37552
+(defmacro PRIMARY-EFFECTS 1037,37774
+(defmacro AXIOMS 1040,37880
+(defun build-relevance-table-for-p-space 1070,39106
+(defun reset-relevance-table 1086,39724
+(defun add-rules-to-relevance-table 1092,39902
+(defun add-to-relevance-table 1098,40111
+(defun var-to-type 1117,40933
+(defun relevance-match-type 1136,41544
+(defun add-rule-for-pred 1146,41926
+(defun add-to-event-relevance-table 1172,43091
+(defun add-event-for-pred 1185,43656
+(defun relevant-operators 1193,43914
+(defun remove-operator-for-relevance 1232,45273
+(defun build-static-predicate-list 1262,46334
+(defun pprint-rule 1273,46644
+(defun create-operator 1299,47203
+(defun make-effect-list 1336,48575
+(defun match-effects-with-vars 1369,49661
+(defmacro rule-name* 1392,50487
+(defmacro rule-params* 1394,50532
+(defmacro rule-preconds* 1396,50599
+(defmacro rule-effects* 1398,50670
+(defmacro rule-mode* 1400,50739
+(defun is-variable-p 1402,50802
+(defun check-syntax 1406,50894
+(defun check-name 1432,51882
+(defun check-params 1438,52042
+(defun check-preconds 1449,52344
+(defun check-mode 1460,52873
+(defun check-variable-generators 1497,54310
+(defun check-effect-variable-generators 1506,54704
+(defun check-var-gen-pair 1518,55248
+(defun check-effect-var-gen-pair 1529,55644
+(defun check-generator 1541,56056
+(defun check-effect-generator 1564,57094
+(defun check-complex-generator 1592,58361
+(defun check-and-generator 1598,58624
+(defun check-or-generator 1609,59070
+(defun check-not-generator 1625,59707
+(defun check-generator-vars 1628,59814
+(defun check-expression 1638,60220
+(defun check-quantified-exp 1654,60714
+(defun check-predicate-expression 1675,61636
+(defun check-neg-exp 1709,63077
+(defun check-effects 1730,63686
+(defun check-action 1746,64324
+(defun check-add-or-del 1756,64644
+(defun check-effect-expression 1763,64876
+(defun var-eq 1796,66311
+(defun check-if 1803,66504
+(defun check-forall-effect 1812,66799
+(defmacro CONTROL-RULE 1829,67338
+(defun FCONTROL-RULE 1888,69281
+(defmacro add-rule-new 1946,71306
+(defun create-control-rule 1956,71643
+(defun add-control-rule-to-rules 1963,71845
+(defun extract-type 1971,72133
+(defconstant internal-generator-functions-alist2030,74427
+(defun diff 2038,74789
+(defun is-internal-func-p 2042,74955
+(defun substitute-internal 2047,75185
+(defun check-control-rule 2054,75353
+(defun check-lhs-syntax 2068,75803
+(defun check-lhs-exp 2074,75953
+(defun check-lhs-list 2106,77120
+(defun check-rhs-syntax 2121,77485
+
+load-graphics.lisp,61
+(defun load-graphics 20,518
+(defun my-load-graphics 29,936
+
+load-problem.lisp,686
+(defun instantiate-consed-exp 45,1657
+(defmacro state 56,2115
+(defmacro goal 81,3225
+(defmacro vgoal 91,3493
+(defmacro Igoal 107,4247
+(defun print-problem 123,4742
+(defmacro current-problem 133,4957
+(defmacro create-problem 139,5196
+(defun assure-goal 154,5718
+(defun create-finish-generators 161,5935
+(defun set-abstraction-heirarchy 171,6297
+(defun load-problem 181,6842
+(defun load-problem-same-objects 219,8021
+(defun delete-literals-from-state 250,9358
+(defun clean-literal-goal-p-slots 271,10223
+(defun compute-control-abstraction-levels 290,10822
+(defun add-in-c-rules 311,11502
+(defun c-rule-abstraction-level 319,11755
+(defun c-rule-pred-abs-level 341,12716
+
+macros.lisp,0
+
+matcher-interface.lisp,4070
+(defvar *pending-goals-cache* 82,3250
+(defvar *pending-goals* 85,3310
+(defvar *no-danglers* 90,3457
+(defvar *debug-apply-op-ctrl* 94,3529
+(defun generate-all-nodes 98,3623
+(defun generate-nodes 109,4060
+(defun scr-select-nodes 144,5265
+(defun match-select-node 153,5544
+(defun scr-reject-nodes 167,5990
+(defun match-reject-nodes 175,6278
+(defun choose-node 192,6969
+(defun least-conspiracy-binder 228,8446
+(defun generate-operators 248,9204
+(defun scr-select-ops 263,9863
+(defun scr-reject-ops 272,10253
+(defun match-select-op 281,10613
+(defun match-reject-op 303,11382
+(defun get-all-ops 334,12555
+(defun match-primary 362,13745
+(defun choose-operator 382,14372
+(defun generate-bindings 409,15374
+(defun generate-bindings 443,16582
+(defun compute-conspiracy-number 476,17786
+(defun new-gather-together 488,18355
+(defun new-remove-singletons 493,18510
+(defun new-gather-rec 503,18803
+(defun find-similar-binding 515,19264
+(defun new-same-rel-binding 520,19463
+(defun add-binding 538,20137
+(defun make-gathered-binding 549,20529
+(defun my-gather-together 569,21150
+(defun remove-singletons 576,21400
+(defun my-gather-rec 587,21731
+(defun my-find-cooker 603,22366
+(defun same-relevant-binding 607,22483
+(defun my-heat-up 626,23207
+(defun my-new-cooker 639,23668
+(defun convert-to-instantiated-ops 658,24203
+(defun scr-reject-bindings 669,24541
+(defun match-reject-bindings 676,24764
+(defun negated-goal-p 692,25344
+(defun get-all-bindings 698,25572
+(defun find-rhs-bindings 728,26650
+(defun scr-select-bindings 758,27834
+(defun rete-gen-bindings 764,28006
+(defun form-final-bindings 819,29914
+(defun check-functions 856,31229
+(defun check-functions-for-var 864,31497
+(defun subg-cond-effect 877,31935
+(defun find-effect-vars 882,32101
+(defun bind-effect-vars 886,32186
+(defun change-to-real-pb 911,33029
+(defun unifyp 927,33720
+(defun substitute-binding 942,34239
+(defun unify 953,34773
+(defun choose-binding 972,35699
+(defun find-a-best-one 996,36612
+(defun find-a-best-recur 1028,37850
+(defun find-better-things 1048,38564
+(defun match-pref-rule 1055,38872
+(defun fire-prefer 1072,39593
+(defun desired-binding 1082,39944
+(defun translate-rule-symbols 1125,41560
+(defun find-binding 1167,42988
+(defun match-this-binding 1176,43355
+(defun min-conspiracy 1190,43835
+(defun conspiracy-num 1207,44495
+(defun generate-goals 1229,45260
+(defun scr-select-goals 1258,46464
+(defun match-select-goal 1268,46861
+(defun give-me-all-pending-goals 1296,48012
+(defun pending-goals-on-branch 1323,48796
+(defun pending-goals-from-op 1346,49650
+(defun penders-rec 1370,50585
+(defun get-forall-goals 1445,53555
+(defun get-forall-goals 1461,54118
+(defun old-get-forall-goals 1475,54703
+(defun get-all-functions-forall 1504,55761
+(defun dangling-literal? 1513,56046
+(defun dangling-goal-node? 1527,56536
+(defun active-binding-node 1540,56948
+(defun get-delta-pending-goals 1564,57843
+(defun update-pending-goals-for-application 1597,59243
+(defun reverse-pending-goals 1621,60220
+(defun redo-delta-pending-goals 1630,60661
+(defun delete-from-pending-goals 1638,61052
+(defun add-to-pending-goals 1652,61675
+(defun insert-pending-after 1661,62110
+(defun add-list-to-pending-goals 1673,62609
+(defun scr-reject-goals 1696,63325
+(defun match-reject-goal 1708,63741
+(defun choose-goal 1728,64341
+(defun choose-goal 1740,64674
+(defun choose-applicable-op 1754,65031
+(defun choose-apply-or-subgoal 1778,65844
+(defun choose-apply-or-subgoal 1792,66317
+(defun scr-choose-apply-or-subgoal 1803,66774
+(defun match-a-or-s-rule 1809,66965
+(defun depth 1822,67447
+(defun terminatep 1830,67633
+(defun find-node 1846,68055
+(defun find-node-at-level 1875,69030
+(defun choose-refine-or-expand 1884,69342
+(defun scr-choose-refine-or-expand 1890,69547
+(defun match-r-or-e-rule 1898,69784
+(defun scr-select-applied-ops 1913,70311
+(defun scr-reject-applied-ops 1925,70797
+(defun find-applied-op-given-bindings 1940,71401
+(defun match-select-applied-ops 1956,71930
+(defun match-reject-applied-op 1998,73296
+
+matching.lisp,441
+(defun match-lhs 33,1050
+(defun descend-match 42,1360
+(defun gen-values 65,2249
+(defun and-match 83,2890
+(defun negation-match 99,3400
+(defun negated-exists-match 112,3847
+(defun shadowed-by-vars 129,4296
+(defun negated-pred-match 135,4521
+(defun or-match 147,4872
+(defun predicate-value 164,5461
+(defun list-of-binding-lists-p 168,5526
+(defun binding-list-p 173,5672
+(defun binding-p 177,5753
+(defun has-unbound-vars 182,5843
+
+meta-predicates.lisp,2024
+(defmacro bind-up 62,2112
+(defun candidate-goal 75,2647
+(defun candidate-goals 86,3104
+(defun expanded-goal 106,3650
+(defun on-goal-stack 113,3906
+(defun test-match-goals 118,4071
+(defun test-match-goals 138,4796
+(defun current-goal 177,6275
+(defun true-in-state 197,7076
+(defun false-in-state-forall-values 228,8464
+(defun false-in-state 250,9358
+(defun false-in-state-generator 262,9787
+(defun not-in-state 280,10525
+(defun type-of-object-gen 300,11319
+(defun all-the-instances 313,11748
+(defun my-instances 317,11876
+(defun current-ops 328,12314
+(defun current-operator 344,13003
+(defun candidate-operator 362,13652
+(defun is-op-for-goal-p 381,14359
+(defun find-inst-op-node 412,15457
+(defun next-goal 446,16473
+(defun find-inst-op-node-rec 456,16705
+(defun expanded-operator 478,17468
+(defun compute-expanded-operators 488,17887
+(defun test-match-ops 511,18610
+(defun match-expanded-op 533,19308
+(defun candidate-bindings 562,20386
+(defun grab-candidate-bindings 580,21250
+(defun match-bindings 595,21784
+(defun test-match-binding 619,22777
+(defun match-one-binding 636,23482
+(defun match-candidate-goal 677,25198
+(defun instance-of 696,25700
+(defun instance-of 713,26332
+(defun match-true-in-state 758,28326
+(defun match-true-in-state 787,29239
+(defun unify-if-state-true 823,30363
+(defun unify-if-state-false 831,30676
+(defun candidate-node 849,31250
+(defun newest-candidate-node 863,31821
+(defun oldest-candidate-node 876,32362
+(defun give-me-op-node 889,32928
+(defun give-me-a-or-b-node 893,33070
+(defun give-me-goal-node 897,33212
+(defun give-me-applied-op-node 901,33356
+(defun give-me-node-of-type 904,33447
+(defun applicable-operator 914,33807
+(defun match-instantiated-op 936,34514
+(defun gen-from-pred 950,35102
+(defun goal-introduced-only-by-op 964,35582
+(defun only-one-candidate-goal 977,36126
+(defun is-top-level-goal 982,36322
+(defun candidate-applicable-op 988,36488
+(defun test-match-applied-ops 992,36680
+(defun instance-of-applied-op 1009,37203
+
+misc.lisp,177
+(defun all-vars 25,692
+(defun strong-is-var-p 36,984
+(deftype prodigy-variable 41,1159
+(defun format? 46,1310
+(defmacro ptrace 54,1577
+(defun remove-problem-space 59,1759
+
+my-extract-cr.lisp,825
+(defun extract-final 29,778
+(defun re-organize-tests 32,849
+(defun do-one-join-test-group 40,1072
+(defun find-not-used-vars 51,1346
+(defun extract-all-tests 72,2177
+(defun map-op-vars-to-cr 91,2866
+(defun process-meta-preds 112,3563
+(defun process-and-meta-preds 134,4292
+(defun process-or-meta-preds 146,4736
+(defun process-neg-meta-pred 176,5734
+(defun process-one-meta-pred 225,7408
+(defun number-of-common-vars 264,8786
+(defun max-position 271,9032
+(defun add-to-bucket-simple 285,9376
+(defun add-to-bucket-unary 290,9511
+(defun add-to-bucket-join 295,9672
+(defun my-build-test-from-cr 304,9847
+(defun my-build-test-from-cr 346,11190
+(defun give-me-bindings 398,12945
+(defun ops-relevent-to-cr 411,13237
+(defun find-current-ops 416,13403
+(defun same-set-p 429,13824
+(defun map-vars-in-cr 434,13910
+
+node.lisp,730
+(defmacro nexus-conspiracy-number 43,1190
+(defmacro nexus-winner 46,1274
+(defun nexus-print 49,1351
+(defun print-goal-node 73,2014
+(defun print-operator-node 88,2438
+(defun print-application 119,3604
+(defun print-a-or-b-node 140,4410
+(defun print-protection-node 169,5508
+(defun begin-node 178,5875
+(defun node-link-print 192,6252
+(defun node-name-or-thing 202,6571
+(defmacro head 227,7514
+(defmacro tail 228,7548
+(defun push-previous 231,7584
+(defun pop-previous 257,8555
+(defun return-previous 280,9345
+(defun pop-next 287,9603
+(defun return-next 308,10288
+(defun initialize-expandable-nodes 313,10411
+(defun delete-node-link 326,11025
+(defun print-node-list 352,11942
+(defun print-previous-list 357,12128
+
+protect.lisp,646
+(defun generate-protection-nodes 14,710
+(defun goals-to-protect-from 36,1740
+(defun already-protected 66,2724
+(defun changed-by-unnecessary-conditional-effect 92,3967
+(defun find-var-conditional 124,5449
+(defun goal-node-sibling 134,5743
+(defun descend-find-protectable 138,5894
+(defun do-protect 158,7044
+(defun choose-protection 232,10444
+(defun delete-protect-point 237,10659
+(defun preconds-to-protect 256,11599
+(defun all-instantiations-to-negate 301,13256
+(defun effect-unify 340,14541
+(defun create-precond-expr 364,15554
+(defun push-in-nots 384,16366
+(defun next-protect-disjunct 414,17462
+(defun extract-goals 437,18303
+
+psstuff.lisp,153
+(defun number-and-name 24,688
+(defun princ-literal-to-string 69,2147
+(defun princ-list-of-bindings-to-string 76,2337
+(defun process-bindings 81,2472
+
+result.lisp,193
+(defvar *prodigy-result* 58,2105
+(defun pp-result 141,4424
+(defun pp-prodigy-result 152,4743
+(defun pp-solution 187,6100
+(defun init-prodigy-result 196,6408
+(defun get-solutions 218,7181
+
+rete-match.lisp,1213
+(defun get-vars-for-op 30,821
+(defun get-static-1-tests 34,992
+(defun get-all-simple-tests 46,1309
+(defun get-simple-tests-for-cr 59,1662
+(defun get-static-simple-tests 63,1750
+(defun combine-simple 73,1953
+(defun get-all-unary-tests 93,2621
+(defun get-all-join-tests 106,2998
+(defun get-unary-tests-for-cr 122,3543
+(defun get-join-tests-for-cr 132,3881
+(defun get-static-n-tests 144,4330
+(defun get-all-neg-simple-tests 159,4834
+(defun get-all-neg-unary-tests 166,5036
+(defun get-all-neg-join-tests 175,5292
+(defun match 194,5841
+(defun unary-test 218,6710
+(defun unary-neg-match 232,7192
+(defun unary-neg-match-one 243,7496
+(defun unary-neg-match-one 261,8061
+(defun neg-one-simple-match 280,8550
+(defun neg-simple-match 285,8664
+(defun neg-rev-match 312,9461
+(defun neg-rev-match 334,10129
+(defun rev-cartesian 356,10763
+(defun cartesian-product-filter 372,11294
+(defun gen-var 392,11875
+(defun bind-me 403,12260
+(defun inf-type-var 406,12336
+(defun rev-cross-product 409,12404
+(defun cross-product 415,12541
+(defun combine-prec-and-spec 421,12689
+(defun combine-tests 425,12761
+(defun call-test 436,13033
+(defun combine-static-and-cr 439,13091
+(defun simple-match 455,13468
+
+search.lisp,3200
+(defvar *incremental-pending-goals* 85,3028
+(defvar *running-mode* 89,3149
+(defvar *apply-order-p* 90,3180
+(defvar *use-protection* 94,3296
+(defvar *node-counter*)100,3540
+(defvar *always-ignore-bad-goals* 104,3620
+(defvar *all-solutions* 113,3978
+(defvar *dont-ask-and-find-all* 117,4100
+(defvar *last-result-obtained* 121,4265
+(defvar *incrementally-create-objects* 126,4473
+(defun store-solution 128,4518
+(defun repeated-solution-p 130,4575
+(defun run142,4919
+(defun run 343,13009
+(defun run-shortest 471,18131
+(defun run-shortest-multiple 500,19434
+(defun ask-for-more-solutions-shortest 543,21054
+(defun run-multiple-sols 566,21985
+(defun call-main-search 613,23960
+(defun prepare-plan 648,25332
+(defun compute-depth 667,26020
+(defun same-sol-p 673,26162
+(defun same-op-p 676,26242
+(defun ask-for-more-solutions 698,27118
+(defun max-check 729,28103
+(defun depth-check 730,28150
+(defun time-check 731,28199
+(defun add-handlers 733,28248
+(defun top-nodes 786,30249
+(defun max-abs 835,32013
+(defun main-search 862,33089
+(defun too-deep-p 940,36116
+(defun refine-or-expand 951,36364
+(defun refine-node 964,36791
+(defun handle-solution 1001,38138
+(defun mark-up-solution 1036,39707
+(defun print-true-literals 1045,39970
+(defun print-impossible-goals 1049,40070
+(defun print-literals-satisfying 1059,40464
+(defun compute-expanded-goals 1078,41017
+(defun close-goals 1100,41946
+(defun maintain-state-and-goals 1108,42221
+(defun set-goals 1219,46387
+(defun set-goals-inst 1241,47221
+(defun set-goals-forall 1277,48602
+(defun set-goals-forall 1292,49180
+(defun runtime-check-type-and-function-forall 1340,51200
+(defun set-goals-exp 1370,52374
+(defun set-goals-literal 1384,52928
+(defun first-valid-choice 1402,53770
+(defun next-valid-choice 1407,53988
+(defun reset-choice 1480,56733
+(defun calc-choices 1494,57355
+(defun path-from-root 1535,58699
+(defun expand-goal 1551,59241
+(defun operator-causes-goal-loop 1608,61061
+(defun expr-causes-goal-loop 1616,61286
+(defun operator-goal-will-loop-p 1628,61712
+(defun regress-preconds 1644,62345
+(defun runtime-type-check 1685,63901
+(defun deep-replace-literals 1706,64739
+(defun expand-operator 1727,65467
+(defun really-expand-operator 1759,66767
+(defun last-disjunct-p 1824,69150
+(defun last-choice-r 1828,69265
+(defun next-disjunct 1847,70057
+(defun first-path 1862,70713
+(defun next-disjunct-r 1875,71177
+(defun binding-node-goal-loop-p 1929,73311
+(defun binding-node-goal-loop-r 1938,73751
+(defun goal-will-loop-p 1957,74547
+(defun needs-unsolvable-goal-p 1973,75162
+(defun expand-binding 1994,76098
+(defun expand-binding-or-applied-op 2021,77243
+(defun compute-next-thing 2065,78755
+(defun deepest-point 2086,79570
+(defun ancestor 2093,79803
+(defun next-goal-or-application-child 2100,79982
+(defun next-a-or-b-parent 2108,80264
+(defun abs-generate-applicable-ops 2125,81067
+(defun abs-generate-goals 2147,81814
+(defun gather-future-goals 2166,82483
+(defun do-apply-op 2182,83113
+(defun do-subgoal 2241,85175
+(defun maintain-goals 2331,88649
+(defun set-abs-parent 2348,89208
+(defun update-conspiracies-up-to-root 2371,90088
+(defun update-conspiracy-number 2377,90256
+
+treeprint.lisp,1081
+(defvar *last-node-printed* 42,1549
+(defvar *last-goal-node-printed* 45,1653
+(defvar *print-search-depth-p* 48,1761
+(defun announce-node 55,2042
+(defun new-style-node-print 71,2682
+(defun treeprint-goal 137,5242
+(defun begin-node-line 147,5576
+(defun indent 163,6027
+(defun depth-by-intro-ops 169,6191
+(defun brief-print-inst-op 180,6549
+(defun print-literal-arg 207,7499
+(defun print-all-subgoaled-applications 211,7595
+(defun print-alts 225,8216
+(defun treeprint-alt 236,8475
+(defun announce-plan 243,8724
+(defun announce-failure 265,9490
+(defun announce-failure-old 277,9927
+(defun announce-failure-new 285,10278
+(defun announce-operator-node 313,11356
+(defun announce-solution 319,11596
+(defun oldtreeprint341,12352
+(defun treepr-r 352,12601
+(defun output-level 368,13064
+(defun output 388,13730
+(defun read-atoms 401,14155
+(defun double-quote-count 411,14425
+(defun paren-count 418,14619
+(defun string-intern 432,15067
+(defun null-string 440,15361
+(defun car-string 447,15535
+(defun cdr-string 457,15876
+(defun check-if-achieved-goal 471,16282
+
+types.lisp,959
+(defun type-all-types 115,4032
+(defun print-type 120,4186
+(defun prodigy-object-print 140,4780
+(defmacro type-name-to-type 157,5225
+(defmacro all-subtypes 163,5480
+(defmacro super-type 166,5587
+(defun remove-types 169,5694
+(defun remove-type 173,5871
+(defun is-type-p 181,6159
+(defun some-child-type-p 188,6390
+(defun child-type-p 194,6586
+(defmacro ptype-of 207,7050
+(defun create-type 227,8048
+(defmacro INFINITE-TYPE 238,8448
+(defun create-inf-type 245,8779
+(defun clear-types 255,9144
+(defmacro object-is 261,9367
+(defun fobject-is 274,9937
+(defmacro object-name-to-object 287,10496
+(defmacro OBJECTS-ARE 290,10606
+(defmacro pinstance-of 299,10937
+(defun permanent-object-p 315,11612
+(defun create-object 322,11850
+(defun type-of-object 349,12960
+(defun object-type-p 361,13434
+(defun make-real-object 371,13742
+(defun infinite-type-object-p 404,15068
+(defun is-infinite-type-p 409,15205
+(defun has-infinite-types-p 414,15366

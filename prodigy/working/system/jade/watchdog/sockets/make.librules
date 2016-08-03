@@ -1,0 +1,229 @@
+#
+#    Copyright (c)  1994 by BBN Systems and Technologies,
+#       A Division of Bolt Beranek and Newman Inc.
+#
+#
+# In accordance with DFAR 52-227-7013, permission to use, copy, modify,
+# and distribute this software and its documentation within the Government
+# for Government use and to Government contractors for use only on
+# Government contracts is hereby granted without fee, provided that the
+# above copyright notice and this permission appear in all copies of the
+# software and in supporting documentation.  Title to the software and its
+# documentation and all applicable copyrights, trade secrets, patents and
+# other intellectual rights in it are and remain with Bolt Beranek and
+# Newman Inc. and shall not be used, revealed, disclosed in the
+# development, marketing, or advertisement of Government contractor's own
+# products or any other activity not explicitly permitted above.  BBN
+# makes no representation about the suitability of this software for any
+# purposes.  It is provided "AS IS" without express or implied warranties
+# including (but not limited to) all implied warranties of merchantability
+# and fitness.  In no event shall BBN be liable for any special, indirect
+# or consequential damages whatsoever resulting from loss of use, data, or
+# profits, whether in an action of contract, negligence or other tortuous
+# action, arising out of or in connection with the use or performance of
+# this software or documentation.
+#
+# $Header: /tmp_mnt/net/panda/u14/plum/rcs/clibsrc/make.librules,v 1.25 1996/08/26 15:11:38 dbikel Exp $
+#
+
+LIBDIR = $(DEPTH)/clib
+C++LIBDIR = $(DEPTH)/c++lib
+DESTDIR = $(LIBDIR)/$(LANGUAGE).${MTYPE}
+C++DESTDIR = $(C++LIBDIR)/$(LANGUAGE).${MTYPE}
+ALLDIR = $(LIBDIR)/all.${MTYPE}
+C++ALLDIR = $(C++LIBDIR)/all.${MTYPE}
+INCDEST = $(DEPTH)/cinclude
+RDRDEST = $(DEPTH)/data
+
+odir:
+	@if [ ! -d $(ODIR) ]; then\
+		echo "Creating directory:" $(ODIR);\
+		mkdir $(ODIR);\
+	fi;\
+	local_odir=`basename $(ODIR)`;\
+	if [ ! -h $$local_odir -a $(ODIR) != $$local_odir ]; then\
+		echo "Creating link:" $$local_odir "->" $(ODIR);\
+		ln -s $(ODIR) $$local_odir;\
+	fi
+
+.SUFFIXES:
+.SUFFIXES : .o .c .c,v .S .ln .u .l .y
+
+TARGET = lib$(LIBNAME).a
+
+LINTS = $(OBJECTS:.o=.ln)
+
+LINTLIBRARY = llib-l$(LIBNAME).ln
+
+#########################################################################
+# Normal installation
+#########################################################################
+$(ODIR)/$(TARGET) : $(HEADERS) $(OBJECTS) $(UNINSTALLED_HEADERS)
+	@ar vru $@ $(OBJECTS); \
+	if [ -f /bin/ranlib ]; then \
+	    /bin/ranlib $@; \
+	fi
+
+libdirs:
+	@if [ ! -d $(LIBDIR) ]; then \
+		echo "Creating directory:" $(LIBDIR);\
+		mkdir $(LIBDIR);\
+	fi
+	@if [ ! -d $(DESTDIR) ]; then \
+		echo "Creating directory:" $(DESTDIR);\
+		mkdir $(DESTDIR);\
+	fi
+
+$(DESTDIR)/$(TARGET): $(ODIR)/$(TARGET) libdirs
+	@echo "Copying $(TARGET) from $(ODIR) to $(DESTDIR)."
+	@cp $(ODIR)/$(TARGET) $(DESTDIR)/$(TARGET); \
+	if [ -f /bin/ranlib ]; then \
+	    /bin/ranlib $(DESTDIR)/$(TARGET); \
+	fi
+
+install : $(DESTDIR)/$(TARGET) headers readers
+
+headers:
+	@echo Copying changed headers to $(INCDEST).
+	@newheaders=; \
+	for i in $(HEADERS) NULL; do \
+		if [ ! $$i = NULL ]; then \
+			newheaders="$$newheaders $(INCDEST)/$$i"; \
+		fi; \
+	done ; \
+	gmake $$newheaders
+
+$(INCDEST)/% : %
+	@if [ ! -d $(INCDEST) ]; then \
+		echo "Creating directory:" $(INCDEST);\
+		mkdir $(INCDEST);\
+	fi
+	@echo "	$*";
+	@/bin/rm -f $(INCDEST)/$*
+	@/bin/cp $* $(INCDEST)/$*
+
+readers: $(READERS)
+	@echo Copying data files.
+	@for i in $(READERS) NULL; do \
+	    if [ ! $$i = NULL ]; then \
+		/bin/rm -f $(RDRDEST)/$$i; \
+		/bin/cp $$i $(RDRDEST)/$$i; \
+		echo "	$$i"; \
+	    fi; \
+	done
+
+checkout:; mco \*
+
+
+#########################################################################
+# Default language targets
+#########################################################################
+%.spanish:
+	gmake $* LANGUAGE=spanish
+
+%.chinese:
+	gmake $* LANGUAGE=chinese
+
+%.german:
+	gmake $* LANGUAGE=german
+
+#########################################################################
+# Optimzized installation (when used, EXTRA_CFLAGS is usually -O2 or -O3)
+#########################################################################
+# To build an optimized target, type gmake <target>.opt
+%.opt:
+	@gmake $* "CFLAGS = $(CFLAGS) -O"
+
+# To build the most highly-optimized target, type gmake <target>.opt3
+%.opt3:
+	@gmake $* "CFLAGS = $(CFLAGS) -O3"
+
+
+TARGET_O3 = lib$(LIBNAME).b
+
+OPT_OBJECTS = $(OBJECTS:.o=.u)
+
+$(TARGET_O3) : $(OPT_OBJECTS)
+	ar vru $@ $(OPT_OBJECTS)
+	ranlib $@
+
+$(DESTDIR)/$(TARGET_O3) : $(TARGET_O3)
+	cp $(TARGET_O3) $(DESTDIR)/$(TARGET_O3)
+	ranlib $(DESTDIR)/$(TARGET_O3)
+
+install_O3: $(DESTDIR)/$(TARGET_O3) headers readers
+
+clean:
+	rm -rf $(ODIR)
+	rm -rf `basename $(ODIR)`
+
+allclean:
+	rm -rf $(OROOT).*
+
+lint:	$(LINTS)
+	lint -h -x -u -o $(LIBNAME) -systype bsd43 $(LINTS) 2>&1 | egrep -v '$(LINTSKIP)' | tee Lint.log
+	rm -f $(LINTDESTDIR)/$(LINTLIBRARY)
+	mv $(LINTLIBRARY) $(LINTDESTDIR)
+ 
+# For purists who want to see every lint error
+purelint: $(LINTS)
+	lint -h -x -u -o $(LIBNAME) -systype bsd43 $(LINTS) 2>&1 | tee Lint.log
+	rm -f $(LINTDESTDIR)/$(LINTLIBRARY)
+	mv $(LINTLIBRARY) $(LINTDESTDIR)
+
+
+lib$(LIBNAME).info: lib$(LIBNAME).texinfo
+	emacs -batch lib$(LIBNAME).texinfo -f texinfo-format-buffer -f save-buffer
+
+info: lib$(LIBNAME).info
+	rm -f $(INFODIR)/lib$(LIBNAME)*
+	cp lib$(LIBNAME).info $(INFODIR)/lib$(LIBNAME)
+	if [ -f lib$(LIBNAME).info-1 ] ; then \
+		cp lib$(LIBNAME).info-? $(INFODIR)/; \
+	fi
+
+lib$(LIBNAME).dvi: lib$(LIBNAME).texinfo
+	rm -rf tex
+	mkdir tex
+	cd tex ; tex ../lib$(LIBNAME).texinfo
+	cd tex ; texindex *.??
+	cd tex ; tex ../lib$(LIBNAME).texinfo
+	mv tex/lib$(LIBNAME).dvi .
+	mv tex/lib$(LIBNAME).log tex.log
+	rm -rf tex
+
+.PRECIOUS : Makefile
+ 
+newMakefile :
+	remake -p $(CFLAGS) $(SOURCES)
+
+depend:
+	@echo
+	@echo "Building make.depend file.  Please be patient."
+	@echo                                                  
+	mv make.depend make.depend~
+	sed_odir=`echo $(ODIR) | sed -e 's/\\//\\\\\\//g'`;\
+	$(CC) -M $(CFLAGS) $(SOURCES) | \
+		sed -e "s/\(.*\)\.o/$$sed_odir\/\1\.o/" >> make.depend
+	@if (diff -h make.depend make.depend~);\
+	  then\
+	    echo;\
+	fi
+
+.c.o :
+	$(CC) -o $(ODIR)/$*.o -c $(CFLAGS)  $*.c 
+
+.c.s :
+	$(CC) -S $(CFLAGS) $*.c
+
+.c.ln :
+	lint -c -h $(IFLAGS) -systype bsd43 $*.c
+ 
+.S.o:
+	$(CC) -c $(SFLAGS)  $< -o $*.o
+
+.o:
+	$(CC) $(CFLAGS)  $*.o
+
+.c.u :
+	$(CC) -j $(CFLAGS) $*.c

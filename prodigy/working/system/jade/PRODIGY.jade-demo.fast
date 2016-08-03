@@ -1,0 +1,653 @@
+("3/17/1998: 7:25:02" :SELECT-MENU-ITEM "Set Default FM Features")
+("3/17/1998: 7:25:02" :EDIT-DEFAULT-FEATURES)
+("3/17/1998: 7:25:04" :SAVE-DEFAULT-FEATURES
+ ((GEOGRAPHIC-LOCATION JOHNSTON-ATOLL) (MISSION-TYPE COMBAT)
+  (MISSION OPERATION-RESTORE-ORDER) (CREATOR AMM) (THEATER PACOM)))
+
+(:MESSAGE 1
+ "Change POD, POD-CC, DEST, and DEST-CC to places in or near PHILIPPINES") ("3/17/1998: 7:27:39"
+                                                                            :SELECT-MENU-ITEM
+                                                                            "planp")
+("3/17/1998: 7:27:39" :SELECT-MENU-ITEM :READ-GUIDANCE "planp")
+("3/17/1998: 7:28:25" :EDIT-GOALS)
+("3/17/1998: 7:28:32" :SELECT-MENU-ITEM "planp")
+("3/17/1998: 7:28:32" :SELECT-MENU-ITEM "Load Goals File"
+ "/disks/4/format-2.0/data/prodigy/planp.plan")
+("3/17/1998: 7:29:54" :EXECUTE-GOAL-QUERY)
+("3/17/1998: 7:29:59" :SAVE-GOALS "execute query, no file"
+ (1 PLANP
+  (:DESCRIPTION
+   "          DAY 21 GUIDANCE (from Commander's Estimate below):
+
+US ASSISTANCE MAY INCLUDE BUT IS NOT LIMITED TO THE FOLLOWING TASKS:
+PROTECT AND DEFEND THE RP STRONG POINTS AND LOCS, CONDUCT NONCOMBATANT
+EVACUATION OPERATIONS OF US AND DESIGNATED THIRD COUNTRY NATIONALS,
+PROVIDE SECURITY OF US MILITARY PERSONNEL OPERATING IN THE RP AND
+ASSIST THE LEGITIMATE GOVERNMENT OF THE RP IN MAINTAINING LAW AND
+ORDER WITHIN THE ISLANDS OF MINDANAO, PALAWAN, AND THE SULU
+ARCHIPELAGO, CONDUCT OTHER MILITARY OPERATIONS AS REQUIRED.
+
+                            COA Direction
+
+1.  (U) COURSES OF ACTION (COA). USCINCPAC HAS DEVELOPED THE FOLLOWING
+COAS:
+
+    A.  (U) COA ONE: NAVAL BLOCKADE OF MINDANAO AND PALAWAN, WITH
+    STRONG AIR COVER.
+
+    B.  (U) COA TWO: FORCED ENTRY AT DAVAO AND ZAMBOANGA TO DESTROY
+    ENEMY CENTERS OF INVASION.
+
+    C.  (U) COA THREE: CONTAINMENT OF ENEMY FORCES BY LANDING AND
+    ATTACK FROM NORTHERN MINDANAO, WITH NAVAL AND AIR BLOCKADE.
+
+2.  (U) DECISION. 
+
+    RECOMMEND COA THREE, WITH COA ONE AS AN ALTERNATE.
+
+
+
+              ORDTYP/ALERTORD/CINCPAC/SCENARIO DAY 22//
+
+
+3.  (U) DEPLOYMENT ORDERS:
+
+    A.  (U) CG 25 ID IS ALERTED TO PREPARE FOR DEPLOYMENT IN SUPPORT
+    OF OPERATION RESTORE ORDER.
+
+    B.  (U) CMDR 354 WG IS ALERTED TO PREPARE FOR DEPLOYMENT IN
+    SUPPORT OF OPERATION RESTORE ORDER.
+
+    C.  (U) COMPHIBRON FIVE AND COMCRUDESGRU 44 ARE AUTHORIZED TO
+    BEGIN DEPLOYMENT IN SUPPORT OF OPERATION RESTORE ORDER.//
+
+
+
+             ORDTYP/EXECUTEORD/CINCPAC/SCENARIO DAY 25//
+
+GENTEXT/MISSION/
+4.  (U) SEE CJCS WARNING ORDER.
+")
+  (:GOALS
+   (68 :SECURE-AIRPORT PLANP NIL (69) NIL
+    ((AC-QUANTITY ???) (AIRCRAFT-TYPE ???) (GEOGRAPHIC-LOCATION JOHNSTON-ATOLL)
+     (FORCE-QUANTITY ???) (FORCE 25TH-INFANTRY-DIVISION-LIGHT)))
+	)
+  (:GUIDANCE-FILE "planp.guidance")))
+
+(:MESSAGE 2
+ "CMDR 18TH-WING alerted (F-15, F-16, A-10a) for deployment.") 
+(:MESSAGE 3 "CMDR 354-WING alerted (F-15, F-16, A-10a) for deployment.") 
+(:MESSAGE 4 "USS Nimitz Carrier-Battle-Group proceed to Mindanao.") 
+(:MESSAGE 5 "The goals of JACK3 are most similar to this plan.") 
+(:MESSAGE 6 "The following plans are also relevant: (PLANM).") ("3/17/1998: 7:34:27"
+                                                                :CREATE-TPFDD
+                                                                "PLANP"
+                                                                :REVERT)
+("3/17/1998: 7:34:49" :FM-COPY-WINDOW)
+("3/17/1998: 7:34:50" :COPY-FM (:FM "NTG" "JACK3") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((NTG "NTG")) :NEW-ULN-MAPPING
+ ((17331 "U-WFB    ") (17330 "U-WFBA   ") (17329 "U-WFBB   ")
+  (17328 "U-WFBBA  ") (17327 "U-WFBBB  ") (17326 "U-WFBBD  ")
+  (17325 "U-WFBBF  ") (17324 "U-WFBBG  ") (17323 "U-WFBBH  ")
+  (17322 "U-WFBBJ  ") (17321 "U-WFBBK  ") (17320 "U-WFBBL  ")
+  (17319 "U-WFBBM  ") (17318 "U-WFCF   ") (17317 "U-WGCE   ")
+  (17316 "U-WGCG   ") (17315 "U-WGCH   ") (17314 "U-WGCJ   ")
+  (17313 "U-WHC    ") (17312 "U-WHCA   ") (17311 "U-WHCB   ")
+  (17310 "U-WHCC   ") (17309 "U-WHCD   ") (17308 "U-WHCE   ")
+  (17307 "U-WHCF   ") (17306 "U-WHCG   ") (17305 "U-WHCH   ")
+  (17304 "U-WHDK   ") (17303 "U-0BA    ") (17302 "U-0BB    ")
+  (17301 "U-0BBA   ") (17300 "U-0BC    ") (17299 "U-0BCA   ")
+  (17298 "U-0BCB   ") (17297 "U-0BCC   ") (17296 "U-0BCD   ")
+  (17295 "U-0BD    ") (17294 "U-0BE    ") (17293 "U-0BEA   ")
+  (17292 "U-0BEB   ") (17291 "U-0BF    ") (17290 "U-0BFA   ")
+  (17289 "U-0BFB   ") (17288 "U-0BFC   ") (17287 "U-0BG    ")
+  (17286 "U-0BGA   ") (17285 "U-0BGB   ") (17284 "U-0BH    ")
+  (17283 "U-0BHA   ") (17282 "U-0BHB   ") (17281 "U-0BHC   ")
+  (17280 "U-0BJ    ") (17279 "U-0BJA   ") (17278 "U-0BJB   ")
+  (17277 "U-0BK    ") (17276 "U-0BKA   ") (17275 "U-0BKB   ")
+  (17274 "U-0BKC   ") (17273 "U-0BL    ") (17272 "U-0BLA   ")
+  (17271 "U-0BLB   ") (17270 "U-0BLC   ") (17269 "U-0BM    ")
+  (17268 "U-0BMA   ") (17267 "U-0BMB   ") (17266 "U-0BMC   ")
+  (17265 "U-0BMD   ") (17264 "U-0BME   ") (17263 "U-0BMF   ")
+  (17262 "U-0BN    ") (17261 "U-0BP    ") (17260 "U-0BPA   ")
+  (17259 "U-0BPB   ") (17258 "U-0BPC   ") (17257 "U-0BPD   ")
+  (17256 "U-0BPE   ") (17255 "U-0BQ    ") (17254 "U-0BQA   ")
+  (17253 "U-0BQB   ") (17252 "U-0BQC   ") (17251 "U-0BR    ")
+  (17250 "U-0BRA   ") (17249 "U-0BRB   ") (17248 "U-0BRC   ")
+  (17247 "U-0BRD   ") (17246 "U-0BRE   ") (17245 "U-0BS    ")
+  (17244 "U-0BSA   ") (17243 "U-0BSB   ") (17242 "U-0BSC   ")
+  (17241 "U-0BSD   ") (17240 "U-0BT    ") (17239 "U-0BTA   ")
+  (17238 "U-0BU    ") (17237 "U-0BUA   ") (17236 "U-0BV    ")
+  (17235 "U-0BVA   ") (17234 "U-0BVB   ") (17233 "U-0BVC   "))
+ :COPY-QUERY NIL)
+("3/17/1998: 7:34:55" :DEFINE-FEATURE LATITUDE NOM NIL)
+("3/17/1998: 7:34:56" :DEFINE-FEATURE LONGITUDE NOM NIL)
+("3/17/1998: 7:34:56" :AUGMENT-FM (:FM "NTG" "PLANP"))
+("3/17/1998: 7:34:57" :CHECK-GOAL-CONSISTENCY)
+("3/17/1998: 7:34:57" :REPORT-P4-RATIOS-REPORT ((:FM "NTG" "PLANP"))
+ (("**************************************************************************
+NTG (PLANP): FORCE MODULE CA1 - COA#1. NAVAL MISSION ONLY.               
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+   99     99  100.0%   Aircraft-Type = None
+   99     99  100.0%   Dest-Cc = South-China-Sea
+   31     99   31.3%   Function = Miscellaneous-Combat-Support
+   31     99   31.3%   Function = Miscellaneous-Combat-Service-Support
+   31     99   31.3%   Function = Miscellaneous-Combat
+   12     99   12.1%   Function = Warships-Craft-And-Commands
+   10     99   10.1%   Function = Aviation-Flight-Units
+    6     99    6.1%   Function = Aviation-Tactical
+    6     99    6.1%   Function = Intelligence-Counterintelligence
+    6     99    6.1%   Function = Intelligence-Security-Psyops
+    4     99    4.0%   Function = Maintenance
+    3     99    3.0%   Function = Major-Transportation
+    3     99    3.0%   Function = Tracked-Vehicles
+    3     99    3.0%   Function = Supply-Support-Services
+    3     99    3.0%   Function = Engineers-And-Topographic-Services
+    2     99    2.0%   Function = Medical-Surgical-Dental
+    2     99    2.0%   Function = Aviation-Support
+    2     99    2.0%   Function = Ground-Communications-Electronics-Signal
+    2     99    2.0%   Function = Naval-Task-Organization
+    2     99    2.0%   Function = Fleet-Auxiliaries
+    1     99    1.0%   Function = Air-Control-Units
+    1     99    1.0%   Function = Military-Police-And-Law-Enforcement
+    1     99    1.0%   Function = Command-Hq
+    1     99    1.0%   Function = Ordnance-Systems-Activities
+    1     99    1.0%   Function = Artillery
+    1     99    1.0%   Function = Marine-Task-Organization
+    1     99    1.0%   Function = Function
+    1     99    1.0%   Function = Infantry
+   99     99  100.0%   Phasing = Early
+   99     99  100.0%   Pod-Mode = Sea
+   97     99   98.0%   Pod-Source = Supported-Cinc
+    2     99    2.0%   Pod-Source = Units-Organic-Aircraft
+   99     99  100.0%   Provorg = Uscincpac
+   71     99   71.7%   Service = Marines
+   28     99   28.3%   Service = Navy
+
+")))
+
+(:ON-REQUEST :RATIO-REPORT ((:FM "NTG" "PLANP"))) 
+(:MESSAGE 7 "Remove F117 Force Module from Plan.") 
+(:MESSAGE 8
+ "Add or create a Force Module to address goal (:PROVIDE-SECURITY-FOR-US-MILITARY-PERSONNEL
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 10
+ "Add or create a Force Module to address goal (:PROTECT-AND-DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 11
+ "Add or create a Force Module to address goal (:DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 12
+ "Add or create a Force Module to address goal (:PROTECT-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 13
+ "Add or create a Force Module to address goal (:MAINTAIN-LAW-AND-ORDER
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 14
+ "Add or create a Force Module to address goal (:ASSIST-LEGITIMATE-GOVERNMENT
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)).") 
+(:MESSAGE 15
+ "Add or create a Force Module to address goal (:SEND-SECURITY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE SECURITY-POLICE)).") 
+(:MESSAGE 16
+ "Add or create a Force Module to address goal (:SEND-MILITARY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MILITARY-POLICE)).") 
+(:MESSAGE 17
+ "Change POD, POD-CC, DEST, and DEST-CC to places in or near PHILIPPINES in FM NTG") ("3/17/1998: 7:35:53"
+                                                                                      :SELECT-MENU-ITEM
+                                                                                      "FORCE")
+("3/17/1998: 7:35:57" :SELECT-MENU-ITEM "TACTICAL-FIGHTER-SQUADRON")
+("3/17/1998: 7:35:57" :FM-QUERY-INSERT FORCE
+ "TACTICAL-FIGHTER-SQUADRON")
+("3/17/1998: 7:36:01" :EXECUTE-FM-QUERY
+ ((FORCE TACTICAL-FIGHTER-SQUADRON)) NIL T NIL NIL :EXECUTE)
+("3/17/1998: 7:36:01" :RETRIEVED-CASES
+ ((:FM "AIR" "|46180|") (:FM "TFS" "JACK3") (:FM "TFS" "PLANM")
+  (:FM "9C2" "9004T") (:FM "9C2" "FMTEM") (:FM "9C2" "PLANB")
+  (:FM "9C2" "PLANE")))
+("3/17/1998: 7:36:26" :DISPLAY-FM (:FM "TFS" "PLANM"))
+("3/17/1998: 7:36:50" :FM-COPY-WINDOW)
+("3/17/1998: 7:36:51" :COPY-FM (:FM "TFS" "PLANM") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((TFS "TFS")) :NEW-ULN-MAPPING
+ ((17086 "U-LAAA   ") (17085 "U-LAAB   ") (17084 "U-LAAC   ")
+  (17083 "U-LAAD   ") (17082 "U-LAAE   ") (17081 "U-LAAF   ")
+  (17080 "U-LAAG   ") (17079 "U-LAAH   ") (17078 "U-LAAJ   ")
+  (17077 "U-LAAK   ") (17076 "U-LAAL   ") (17075 "U-LAAM   ")
+  (17074 "U-LAAN   ") (17073 "U-LAAP   ") (17072 "U-LAAQ   ")
+  (17071 "U-LAAR   ") (17070 "U-LAAS   ") (17069 "U-LAAT   ")
+  (17068 "U-LAAU   ") (17067 "U-LAAV   ") (17066 "U-LAAZ   ")
+  (17065 "U-LAA0   ") (17064 "U-LAA1   ") (17063 "U-LAA2   ")
+  (17062 "U-LAA3   ") (17061 "U-LAA4   ") (17060 "U-LAA5   ")
+  (17059 "U-LAA6   ") (17058 "U-LAA7   ") (17057 "U-LAA8   ")
+  (17056 "U-LDAC   ") (17055 "U-LDAD   "))
+ :COPY-QUERY NIL)
+("3/17/1998: 7:36:53" :AUGMENT-FM (:FM "TFS" "PLANP"))
+("3/17/1998: 7:36:53" :CHECK-GOAL-CONSISTENCY)
+("3/17/1998: 7:36:54" :REPORT-P4-RATIOS-REPORT ((:FM "TFS" "PLANP"))
+ (("**************************************************************************
+TFS (PLANP): FORCE MODULE TFS-A10, F117 AND F16 C/D TACTICAL FIGHTER SQUA
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+   16     32   50.0%   Aircraft-Type = Tactical-Fighter
+   15     32   46.9%   Aircraft-Type = None
+    6     32   18.7%   Aircraft-Type = A10a
+    4     32   12.5%   Aircraft-Type = F117
+    2     32    6.2%   Aircraft-Type = F16
+    1     32    3.1%   Aircraft-Type = Electronics
+   32     32  100.0%   Dest-Cc = Philippines
+   17     32   53.1%   Function = Mission-Aircraft
+   10     32   31.2%   Function = Maintenance
+    2     32    6.2%   Function = Supply-Services
+    2     32    6.2%   Function = Transportation
+    1     32    3.1%   Function = Unit-Hq
+   32     32  100.0%   Phasing = Early
+   29     32   90.6%   Pod-Mode = Air
+    3     32    9.4%   Pod-Mode = Unspecified
+   25     32   78.1%   Pod-Source = Amc
+    4     32   12.5%   Pod-Source = Units-Organic-Aircraft
+    3     32    9.4%   Pod-Source = In-Place
+   20     32   62.5%   Provorg = Commander-Of-Air-Combat-Command
+   12     32   37.5%   Provorg = Hq-Us-Air-Force
+   32     32  100.0%   Service = Air-Force
+
+")))
+
+(:ON-REQUEST :RATIO-REPORT ((:FM "TFS" "PLANP"))) 
+(:MESSAGE 7 "Remove F117 Force Module from Plan.") 
+(:MESSAGE 8
+ "Add or create a Force Module to address goal (:PROVIDE-SECURITY-FOR-US-MILITARY-PERSONNEL
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 10
+ "Add or create a Force Module to address goal (:PROTECT-AND-DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 11
+ "Add or create a Force Module to address goal (:DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 12
+ "Add or create a Force Module to address goal (:PROTECT-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 13
+ "Add or create a Force Module to address goal (:MAINTAIN-LAW-AND-ORDER
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 14
+ "Add or create a Force Module to address goal (:ASSIST-LEGITIMATE-GOVERNMENT
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)).") 
+(:MESSAGE 15
+ "Add or create a Force Module to address goal (:SEND-SECURITY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE SECURITY-POLICE)).") 
+(:MESSAGE 16
+ "Add or create a Force Module to address goal (:SEND-MILITARY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MILITARY-POLICE)).") ("3/17/1998: 7:37:03"
+                                                                           :DISPLAY-FM
+                                                                           (:FM
+                                                                            "TFS"
+                                                                            "PLANP"))
+("3/17/1998: 7:38:01" :CUT-ULNS (17618 17619 17620 17621)
+ (:FM "TFS" "PLANP"))
+("3/17/1998: 7:38:04" :AUGMENT-FM (:FM "TFS" "PLANP"))
+("3/17/1998: 7:38:19" :SELECT-MENU-ITEM "(FORCE F117A)")
+("3/17/1998: 7:40:56" :SELECT-MENU-ITEM
+ "25TH-ID-DIVISION-READY-BRIGADE")
+("3/17/1998: 7:40:58" :EXECUTE-FM-QUERY
+ ((FORCE 25TH-ID-DIVISION-READY-BRIGADE)) NIL T NIL NIL :EXECUTE)
+("3/17/1998: 7:40:58" :RETRIEVED-CASES
+ ((:FM "K5B" "5009C") (:FM "K5B" "BEL97") (:FM "K5B" "JACK3")
+  (:FM "K5B" "PLAND")))
+("3/17/1998: 7:41:56" :FM-COPY-WINDOW)
+("3/17/1998: 7:41:56" :COPY-FM (:FM "K5B" "JACK3") :COPY-CHILDREN
+ :DESCENDANTS :COPY-ULNS T :FMID-MAPPING ((K5B "K5B")) :NEW-ULN-MAPPING
+ ((17232 "U-J2A    ") (17231 "U-J2AB   ") (17230 "U-J2B    ")
+  (17229 "U-J2D    ") (17228 "U-J2E    ") (17227 "U-J2G    ")
+  (17226 "U-J2GB   ") (17225 "U-J2J    ") (17224 "U-J2L    ")
+  (17223 "U-J2N    ") (17222 "U-J2NB   ") (17221 "U-J2P    ")
+  (17220 "U-J2R    ") (17219 "U-J2RA   ") (17218 "U-J2RB   ")
+  (17217 "U-J2RD   ") (17216 "U-J2RF   ") (17215 "U-J5A    ")
+  (17214 "U-K2A    ") (17213 "U-K2A1   ") (17212 "U-K2A2   ")
+  (17211 "U-K2B    ") (17210 "U-K2C    ") (17209 "U-K2D    ")
+  (17208 "U-K2E    ") (17207 "U-K2EB   ") (17206 "U-K2ED   ")
+  (17205 "U-K2EG   ") (17204 "U-K2F    ") (17203 "U-K2G    ")
+  (17202 "U-K2H    ") (17201 "U-K2J    ") (17200 "U-K2JB   ")
+  (17199 "U-K2K    ") (17198 "U-K2KA   ") (17197 "U-K2KB   ")
+  (17196 "U-K2M    ") (17195 "U-K2MA   ") (17194 "U-K2P    ")
+  (17193 "U-K2QA   ") (17192 "U-K2QB   ") (17191 "U-K2QC   "))
+ :COPY-QUERY NIL)
+("3/17/1998: 7:41:57" :AUGMENT-FM (:FM "K5B" "PLANP"))
+("3/17/1998: 7:41:57" :CHECK-GOAL-CONSISTENCY)
+("3/17/1998: 7:41:58" :REPORT-P4-RATIOS-REPORT ((:FM "K5B" "PLANP"))
+ (("**************************************************************************
+K5B (PLANP): 25ID(L)  BRIGADE TASK FORCE (DRB)                           
+**************************************************************************
+#Recs  Total   Perc.   Feature
+------------------------------------------------------
+   42     42  100.0%   Aircraft-Type = None
+   42     42  100.0%   Dest-Cc = Philippines
+   10     42   23.8%   Function = Infantry
+    9     42   21.4%   Function = Artillery
+    4     42    9.5%   Function = Multifunction-Posts-Bases-Barracks
+    3     42    7.1%   Function = Supply
+    3     42    7.1%   Function = Intelligence-Counterintelligence
+    3     42    7.1%   Function = Biomedical-Sciences
+    3     42    7.1%   Function = Intelligence-Security-Psyops
+    3     42    7.1%   Function = Engineers-And-Topographic-Services
+    3     42    7.1%   Function = Maintenance
+    2     42    4.8%   Function = Military-Police-And-Law-Enforcement
+    1     42    2.4%   Function = Aviation-Flight-Units
+    1     42    2.4%   Function = Communications-Electronics-Signal
+   42     42  100.0%   Phasing = Early
+   42     42  100.0%   Pod-Mode = Air
+   42     42  100.0%   Pod-Source = Amc
+   42     42  100.0%   Provorg = Army-Component-Of-Supported-Cinc
+   42     42  100.0%   Service = Army
+
+")))
+
+(:ON-REQUEST :RATIO-REPORT ((:FM "K5B" "PLANP"))) 
+(:MESSAGE 7 "Remove F117 Force Module from Plan.") 
+(:MESSAGE 8
+ "Add or create a Force Module to address goal (:PROVIDE-SECURITY-FOR-US-MILITARY-PERSONNEL
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 9
+ "Add or create a Force Module to address goal (:EVACUATE-US-CITIZENS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MEU-SOC)).") 
+(:MESSAGE 10
+ "Add or create a Force Module to address goal (:PROTECT-AND-DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 11
+ "Add or create a Force Module to address goal (:DEFEND-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 12
+ "Add or create a Force Module to address goal (:PROTECT-STRONGPOINTS-AND-LOCS
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-INFANTRY-DIVISION-LIGHT)).") 
+(:MESSAGE 13
+ "Add or create a Force Module to address goal (:MAINTAIN-LAW-AND-ORDER
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE
+                                               25TH-ID-DIVISION-READY-BRIGADE)).") 
+(:MESSAGE 14
+ "Add or create a Force Module to address goal (:ASSIST-LEGITIMATE-GOVERNMENT
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)).") 
+(:MESSAGE 15
+ "Add or create a Force Module to address goal (:SEND-SECURITY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE SECURITY-POLICE)).") 
+(:MESSAGE 16
+ "Add or create a Force Module to address goal (:SEND-MILITARY-POLICE
+                                              (GEOGRAPHIC-LOCATION
+                                               PHILIPPINES)
+                                              (FORCE MILITARY-POLICE)).") ("3/17/1998: 7:43:02"
+                                                                           :DISPLAY-FM
+                                                                           (:FM
+                                                                            "K5B"
+                                                                            "PLANP"))
+("3/17/1998: 7:43:45" :SELECT-ALL-ULNS (:FM "K5B" "PLANP"))
+("3/17/1998: 7:43:50" :EDIT-FM-RECORDS
+ (17658 17659 17660 17661 17662 17663 17664 17665 17666 17667 17668
+  17669 17670 17671 17672 17673 17674 17675 17676 17677 17678 17679
+  17680 17681 17682 17683 17684 17685 17686 17687 17688 17689 17690
+  17691 17692 17693 17694 17695 17696 17697 17698 17699)
+ ((:FM "K5B" "PLANP") PLANP))
+("3/17/1998: 7:44:01" :CHANGE-ULN-FIELD-VALUE DEST-MODE L)
+("3/17/1998: 7:45:01" :SELECT-MENU-ITEM "CWGP CTY CAGAYAN DE ORO")
+("3/17/1998: 7:45:02" :CHANGE-FEATURE-VALUE ("DEST  FBBW" "CWGP") CWGP)
+("3/17/1998: 7:45:05" :SET-EDIT-ULN-FIELDS
+ (((:ULN "U-K2QC   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2QB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2QA   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2P    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2MA   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2M    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2KB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2KA   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2K    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2JB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2J    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2H    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2G    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2F    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2EG   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2ED   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2EB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2E    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2D    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2C    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2B    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A2   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A1   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-K2A    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J5A    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RF   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RD   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2RA   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2R    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2P    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2NB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2N    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2L    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2J    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2GB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2G    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2E    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2D    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2B    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2AB   " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))
+  ((:ULN "U-J2A    " PLANP)
+   ((DEST "FBBW" "CWGP") (DEST-CC "RP" "RP") (DEST-MODE "X" "L")
+    (POD "FBBW" "FBBW") (POD-CC "RP" "RP") (POD-MODE "A" "A")))))
+("3/17/1998: 7:46:33" :SET-EDIT-ULN-FIELDS ((EAD "C000" "C028")))
+("3/17/1998: 7:46:37" :SET-EDIT-ULN-FIELDS ((LAD "C001" "C030")))
+("3/17/1998: 7:46:42" :SET-EDIT-ULN-FIELDS ((RDD "C001" "C032")))
+("3/17/1998: 7:47:55" :CREATE-FM (:FM "T0P" "PLANP"))
+("3/17/1998: 7:48:02" :DISPLAY-FM (:FM "T0P" "PLANP"))
+("3/17/1998: 7:48:16" :FM-RELS-MENU (:FM "T0P" "PLANP"))
+("3/17/1998: 7:48:20" :ADD-CHILD (:FM "K5B" "PLANP")
+ (:FM "T0P" "PLANP"))
+
+(:MESSAGE 18
+ "Change POD, POD-CC, DEST, and DEST-CC to places in or near PHILIPPINES in FM K5B") ("3/17/1998: 7:48:26"
+                                                                                      :FM-RELS-MENU
+                                                                                      (:FM
+                                                                                       "T0P"
+                                                                                       "PLANP"))
+("3/17/1998: 7:48:28" :ADD-CHILD (:FM "NTG" "PLANP")
+ (:FM "T0P" "PLANP"))
+
+(:MESSAGE 17
+ "Change POD, POD-CC, DEST, and DEST-CC to places in or near PHILIPPINES in FM NTG") ("3/17/1998: 7:48:37"
+                                                                                      :FM-RELS-MENU
+                                                                                      (:FM
+                                                                                       "T0P"
+                                                                                       "PLANP"))
+("3/17/1998: 7:48:39" :ADD-CHILD (:FM "TFS" "PLANP")
+ (:FM "T0P" "PLANP"))
+
+(:MESSAGE 19
+ "Change POD, POD-CC, DEST, and DEST-CC to places in or near PHILIPPINES in FM TFS") ("3/17/1998: 8:03:26"
+                                                                                      :DISPLAY-FM
+                                                                                      (:FM
+                                                                                       "K5B"
+                                                                                       "PLANP"))
+("3/17/1998: 8:30:10" :QUIT-PRODIGY-TASK-WINDOW)

@@ -1,0 +1,4 @@
+(setf s-a (socket:make-socket :connect :passive :local-port 5511))
+(setf str-a (socket:accept-connection s-a))
+
+

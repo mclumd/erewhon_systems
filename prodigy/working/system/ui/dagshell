@@ -1,0 +1,9 @@
+#!/bin/csh -f
+if (-f /usr/misc/.others/bin/dag) then
+  /usr/misc/.others/bin/dag $1 >! $2
+else if (-f /afs/cs/misc/others/@sys/omega/bin/dag) then
+  /afs/cs/misc/others/@sys/omega/bin/dag $1 >! $2
+else          # Sunos (is this the only such case?)
+  /afs/cs/misc/others/sun4_mach/omega/bin/dag $1 >! $2
+endif
+

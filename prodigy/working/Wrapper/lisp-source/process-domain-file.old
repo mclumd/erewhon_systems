@@ -1,0 +1,160 @@
+(in-package :user)
+
+;;; 
+;;; Here is the file to give to Rasul's program
+;;; /usr/local/users/mcox/prodigy/working/domains/goal-trans/domain.lisp
+;;;
+
+      
+(defvar *obj-command-server* nil)
+
+(defvar *socket-code-loaded-p* nil
+  "When nil, load files for socket code.")
+
+(defparameter *path* 
+    (concatenate 
+	'string 
+      *prodigy-base-directory*
+      "working/domains/goal-trans/domain.lisp")
+  )
+
+
+
+
+;;; 
+;;; Top-level functions & predicates
+;;;
+
+
+(defun send-obj-strings (&optional 
+			 (port *default-port*)
+			 (silent-p t)
+					;(fname (string (get-socket-message)))
+			 )
+  (spawn-socket-server '*obj-command-server* port)
+  (format t "Spawned obj-socker server.")
+  (mp::process-sleep 3)
+;  (wait-for-socket-connection *send-socket*)
+  (let* ((msg (get-socket-message 
+	       silent-p))
+	 (extracted-list 
+	  (extract-types msg))
+	 )
+    (format t "File path = ~s~%" msg)
+    (dolist (each-obj-type extracted-list)
+      (send-to-socket 
+       (concatenate 
+	   'string 
+	 (string each-obj-type) 
+	 " "))
+      )
+    (send-to-socket "end ")
+;    (send-to-socket "end** ")
+    )
+  (setf *last-line-from-socket* nil)
+  (mp::process-sleep 3)
+;  (kill-socket-server *obj-command-server*)
+  )
+
+;;; This version creates the object list so that create-data-file can store
+;;; it. This routine takes the place of send-obj-strings which uses sockets.
+;;;
+;;; This routine is no longer used. It was creating a list of strings, which is
+;;; no longe4r needed. Use extract-types instead.
+(defun generate-obj-list (&optional
+			  (msg *domain-file*))
+  (format t "File path = ~s~%" msg)
+  (let ((alist nil))
+    (dolist (each-obj-type (extract-types msg))
+      (setf alist
+	(cons
+	 (concatenate 
+	     'string 
+	   (string each-obj-type) 
+	   " ")
+	 alist))
+      )
+    )
+  )
+
+
+
+;;;
+;;; Example of relevant "next" variable: 
+;;; (ptype-of OBJECT :top-type)
+;;;
+;;; This should be implemented as an agent.
+;;;
+;;; Assumes that types introduced before used.
+;;;
+;;; Assumes that no object is an intermediate type
+;;; For example, given
+;;;
+;;;  (ptype-of a :top-type)
+;;;  (ptype-of b a)
+;;;
+;;; an instantiated object can be of type b, but not of type a. 
+;;; NOTE that I actually did this in a few of the domains (the goal-trans
+;;; domain?  Which other?)
+;;;
+(defun extract-types (&optional (domain-file-name *domain-file*))
+  (with-open-file
+      (domain-file domain-file-name
+       :direction :input)
+    (do* ((next nil 
+		(read domain-file 
+		      nil 
+		      *end-of-file* 
+		      nil)) 
+	  (types nil 
+		 (if (ptype-list-p next) ;this predicate also assures that next
+					 ;is not the eof char
+		     (cond  ((eq (third next) 
+				 :top-type)
+			     (cons (second next) types))
+			    ((intermediate-type-p (third next) types)
+			     (substitute (second next) (third next) types))
+			    (t		;Could exist siblings that are both isa
+					;X and not :top-type. On encountering 
+					;the first sibling, the sibling will be
+					;intermediate-type-p, whereas, 
+					;subsequent siblings will be neither 
+					;intermediate nor :top-type (and thus 
+					;will be here).
+			     (cons (second next) types)))
+		   types))
+	  )
+	((eof-p next)
+	 (remove-duplicates 
+	  types))
+      )
+    )
+  )
+
+;;;
+;;; Example PRODIGY statement in domain.lisp
+;;; (ptype-of new-type old-type)
+;;; 
+;;; Predicate intermediate-type-p returns true only if the parent (old-type) of
+;;; the new type is already in the type-list
+;;;
+
+(defun intermediate-type-p (old-type type-list)
+  (if (member old-type type-list :test #'eql)
+      t)
+  )
+
+
+;;;
+;;; Returns t when the LISP object just read from domain.lisp is of the form 
+;;; (ptype-of identifier1 identifier2)
+;;;
+(defun ptype-list-p (alist)
+    (if (and 
+	 (consp alist)			;This clause also assures not eof
+	 (eql (length alist) 3)
+	 (eq (first alist) 
+	     'ptype-of))
+	t)
+    )
+

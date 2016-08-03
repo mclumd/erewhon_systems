@@ -1,0 +1,2 @@
+(setf s-b (socket:make-socket :remote-host "callanish" :remote-port 5511))
+

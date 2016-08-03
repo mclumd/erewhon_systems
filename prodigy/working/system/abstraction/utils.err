@@ -1,0 +1,27 @@
+
+
+
+Error output from /afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/utils.lisp 5-Dec-93 23:05:41.
+Compiled on 15-Mar-94 12:28:13 by CLC version M1.8 (15-Aug-90).
+
+ADD-ABSTRACTION-LEVELS-TO-OPERATORS compiled.
+ANNOTATE-PRECONDS-REC compiled.
+TEMPLATE-ABSTRACTION-LEVEL compiled.
+TEMPLATE-SCHEMA-P compiled.
+MATCH-TYPE compiled.
+CHILD-OR-SAME-TYPE-P compiled.
+COMPUTE-ABSTRACTION-LEVEL compiled.
+LIT-SCHEMA-P compiled.
+CHECK-PRIMARY-EFFECTS-AND-AXIOMS compiled.
+LOAD-HIERARCHY compiled.
+EXP-TO-ABSNODE compiled.
+ABS-HIERARCHY compiled.
+ABS-LEVEL compiled.
+PRINT-HIERARCHY compiled.
+PRINT-NUMERIC-HIERARCHY compiled.
+HIERARCHY compiled.
+
+Finished compilation of file "/afs/cs.cmu.edu/project/prodigy/version4.0/working/system/abstraction/utils.lisp".
+0 Errors, 0 Warnings.
+Elapsed time 0:00:13, run time 0:00:12.
+

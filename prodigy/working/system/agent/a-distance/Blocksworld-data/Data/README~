@@ -1,0 +1,25 @@
+First copy /fs/metacog/group/systems/prodigy/.clinit.cl to your home directory (~).
+Then load Lisp.
+At the prompts, type the following responses:
+y
+n
+y
+y
+y
+n
+n
+n
+n
+
+Now perform the following command to initialize.
+
+(load-a--dist 'blocksworld)
+
+To create a data set in directory Data5 for example, copy the files /fs/metacog/group/systems/prodigy/working/system/agent/a-distance/Blocksworld-data/Data/data-anomalous.txt and /fs/metacog/group/systems/prodigy/working/system/agent/a-distance/Blocksworld-data/Data/data.txt to Data5. Then set the variable *Data-Directory* to Data5.
+
+(setf *Data-Directory* "/fs/metacog/group/systems/prodigy/working/system/agent/a-distance/Blocksworld-data/Data5/")
+
+Now run the program with the following function call.
+
+(process-solns)
+

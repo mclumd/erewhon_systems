@@ -1,0 +1,43 @@
+(
+(:style 
+	(default
+		 (head-print (lambda (head)
+			       (terpri)
+			       (princ "(")
+			       (princ  head)
+			       (princ " "))
+		 )
+		 (role-print (lambda (role)
+			       (format t "~s "  role))
+                 )
+		 (done (lambda (dummy)
+		         (princ ")"))
+		) 
+		 );default
+ )
+(:style 
+	(will
+		 (head-print (lambda (head)
+			       (terpri)
+			       (princ  head)
+			       (princ " "))
+		 )
+		 (role-print (lambda (role)
+			       (format t "~s "  (second role)))
+                 )
+		 (done (lambda (dummy)
+		         nil)
+		) 
+		 );will
+ )
+(:data will (STACK (<OB> BLOCKA) (<UNDEROB> BLOCKB)))
+(:data will (PICK-UP (<OB1> BLOCKB)))
+(:data will (STACK (<OB> BLOCKB) (<UNDEROB> BLOCKC)))
+(:data will (PICK-UP (<OB1> BLOCKA)))
+(:data will (STACK (<OB> BLOCKA) (<UNDEROB> BLOCKB)))
+(:data default (LOAD-ROCKET (<OBJECT> NEWCASTLE-BROWN-ALE) (<PLACE> LONDON)))
+(:data default (LOAD-ROCKET (<OBJECT> KIPPERS) (<PLACE> LONDON)))
+(:data default (MOVE-ROCKET-FAST))
+(:data default (UNLOAD-ROCKET (<OBJECT> KIPPERS) (<PLACE> PITTSBURGH)))
+(:data default (UNLOAD-ROCKET (<OBJECT> NEWCASTLE-BROWN-ALE) (<PLACE> PITTSBURGH)))
+)

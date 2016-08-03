@@ -1,0 +1,5 @@
+(registrar)
+(load "/usr/local/mcox/Research/PRODIGY/Wrapper/loader.lisp")
+(wrapper-compile-all)
+(compile-file "/nfs/valhalla/users26/cs/mcox/Potala/Research/PRODIGY/Wrapper/java-lisp.sockets/socket.lisp")
+(kill-socket-server *registrar-command-server*)

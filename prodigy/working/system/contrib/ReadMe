@@ -1,0 +1,22 @@
+
+This directory is intended to contain files contributed by users of Prodigy 4.0
+that add various features to the system. These should be small additions that
+fit comfortably in one file - larger additions such as explanation-based
+learning belong in a separate subdirectory of the system.
+
+Please identify the following in a section at the top of each file:
+
+ - the purpose of the file
+ - the author, or someone to contact with bugs or suggestions
+ - a change log if appropriate.
+
+Please also add a short description of the file to this list:
+
+File:                      Description:
+
+partial-satisfaction   Allows partial satisfaction of goals given bounded
+                       resources.
+new-applyop.lisp       Stores preconditions information into node's plist
+                       on the fly. Save recalculating them later.
+                       See footprint for detailed description of how to
+                       use.

@@ -1,0 +1,266 @@
+
+source/case-list.lisp,28
+(defvar *case-list* 15,653
+
+source/front-end.lisp,966
+(defparameter *history-directory*81,3261
+(defparameter *connect-file* 91,3468
+(defvar *default-prodigy-port* 98,3677
+(defvar *xbiff-already-loaded* 103,3793
+(defvar *prodigy-file-count* 109,3939
+(defvar *input-counter* 110,3971
+(defvar *prodigy-temp-filename* 111,3998
+(defvar *client-data-file* 112,4035
+(defvar *client-stop-file* 113,4067
+(defvar *basename* 114,4099
+(defvar *prodigy-output-count* 115,4123
+(defvar *responses* 118,4255
+(defvar *actions* 119,4280
+(defun init-front-end-globals 137,4843
+(defun initialize-prodigy 162,5552
+(defun initialize-prodigy 183,6299
+(defun mark-tasks-completed 272,9030
+(defun format-action-taken? 277,9178
+(defun actions-after 281,9323
+(defun process-input 365,12464
+(defun process-input 437,14982
+(defun resume-prodigy-server 522,17755
+(defun read-format-input 538,18309
+(defun start-prodigy-front-end 582,19379
+(defun start-prodigy-front-end 610,20516
+(defun continue-prodigy-front-end 641,21534
+
+source/goal-reorder.lisp,613
+(defvar *has-cycle* 65,2132
+(defun remove-list-structure 80,2441
+(defun extract-points 112,3497
+(defun remove-sink-edges 129,4036
+(defun compute-nodes 147,4500
+(defun find-cycle 167,5209
+(defun has-goal-dependency-cycles-p 195,5859
+(defun move-source-edge-2-front 209,6205
+(defun find-edge-given-source 229,6709
+(defun a-source-node 240,6962
+(defun convert-2-edges 257,7405
+(defun expand 284,8167
+(defun expanded-children 307,8645
+(defun find-adjacent-nodes 321,8887
+(defun collect-dependencies 366,10031
+(defun order-goals 392,10705
+(defun reorder-goals 417,11190
+(defun change-goals 439,11773
+
+source/jade.lisp,933
+(defparameter *test-data* 19,572
+(defun init-aircraft-tree 34,1190
+(defun build-aircraft-tree 72,2565
+(defun insert-ac-record 102,3222
+(defun my-delete 132,3944
+(defun return-leaves 146,4128
+(defun ret-leaves 155,4257
+(defun isa-leaf-p 173,4540
+(defun force-available 184,4729
+(defun make-literal 237,6402
+(defun ret-available-instance-of 254,6785
+(defun gen-active-naval-units 358,9139
+(defvar *current-population* 396,9953
+(defun init-current-pop 398,9988
+(defun next-avail-pop 437,10977
+(defun deployment-op-p 462,11807
+(defun extract-deployment-plan 481,12195
+(defun deployment-plan 499,12527
+(defun extract-forces 512,12786
+(defun get-force 531,13231
+(defvar *Force-2-FM-map*550,13563
+(defun assign-mapping 555,13694
+(defun extract-relevant-recs 578,14208
+(defun init-maps 593,14530
+(defun odd-elements 627,15266
+(defun return-fm-home 650,16041
+(defun ret-fm-home 663,16257
+(defun ret-type 710,17062
+
+source/messages.lisp,367
+(defvar *messages* 19,377
+(defvar *message-counter* 20,401
+(defclass message 24,443
+(defclass message 34,765
+(defclass prodigy-message 48,1349
+(defun find-message 53,1396
+(defun find-message-by-text 58,1489
+(defun make-message 64,1616
+(defun make-message 76,1873
+(defun coerce-to-message 89,2193
+(defun coerce-to-message 97,2330
+(defun dummy-msg 111,2883
+
+source/problem-file.lisp,0
+
+source/prodigy-patch.lisp,33
+(defun announce-solution 22,550
+
+source/prodigy-suggestions.lisp,1962
+(defconstant *unknown-destination* 47,1663
+(defvar *current-oplan* 52,1783
+(defvar *current-destination* 60,2050
+(defvar *latest-ForMAT-goals* 64,2186
+(defvar *dependency-list* 68,2271
+(defun collapse-tree 85,2737
+(defun collapse 96,3046
+(defun access-goal-name 109,3247
+(defun access-last-arg 115,3366
+(defun extract-destination 122,3499
+(defun destination-suggestions 149,4050
+(defun dog-suggestions 182,5011
+(defvar *best-matches* 192,5257
+(defun case-and-query-suggestions 202,5586
+(defun load-analogy-if-needed 357,9135
+(defun tree-diff 387,10000
+(defun not-geo-locs-p 394,10138
+(defun siblings-p 400,10271
+(defun sibling-types-p 405,10379
+(defun sibling-instances-p 413,10597
+(defun allign-with-first 421,10761
+(defun allign-with-itself 443,11349
+(defun create-consistency-messages 483,12374
+(defun create-prune-messages 531,13885
+(defun PRODIGY-2-ForMAT-goal 559,14662
+(defun PRODIGY-2-ForMAT-goal1 569,14875
+(defun create-add-messages 588,15250
+(defun find-goal-similar-to 613,15879
+(defun consistency-suggestions 626,16247
+(defun not-same-dest-as-old-case-p 632,16406
+(defun more-destination-suggestions 647,16737
+(defun m-d-s 665,17227
+(defvar *old-args* 703,18553
+(defvar *old-action* 704,18577
+(defvar *alt-available* 705,18603
+(defvar *bad-FM-children* 708,18647
+(defparameter *early-wings* 714,18814
+(defparameter *JADE-demo-p* 732,19845
+(defun multiple-destination-suggestions 743,20304
+(defun bad-fm-messages 784,21548
+(defun has-goal-2-send-anyhow-p853,23095
+(defun yet-another-destination-suggestion 881,23756
+(defun final-destination-suggestion 902,24324
+(defun trigger-deployment-alert 916,24666
+(defun note-new-oplan 933,25112
+(defun handle-ratio-rep 970,26230
+(defun handle-fm-rep 1036,27823
+(defun strip-dummy-args 1053,28142
+(defun accepted-past-cases 1116,30438
+(defvar *case-candidates* 1134,30782
+(defun process-ForMAT-user-feedback 1144,31243
+(defun get-prodigy-response 1176,32163
+
+source/ratio-rep.lisp,809
+(defparameter *sample-input*42,1129
+(defvar *ratio-reports* 72,2406
+(defun parse-ratio-reports 92,3243
+(defun process-report 106,3705
+(defun parse-ratio-string 148,5311
+(defun parse-ratio-string 179,6701
+(defparameter198,7276
+(defun parse-basic-fm-string 532,25972
+(defun parse-fm-reports 553,26308
+(defun massage-string 566,26603
+(defun parse-guidance-4-alert-units 600,27484
+(defun change-2-records 618,27868
+(defun get-feature 634,28224
+(defun get-val 640,28315
+(defun get-records 647,28400
+(defun ok-to-suggest-change1-p 671,29335
+(defun ok-to-suggest-change2-p 689,29837
+(defun dest-cc-not-already-changed-p 707,30277
+(defun find-target 726,30777
+(defun ok-to-suggest-add-p 744,31172
+(defun request-reports 768,31810
+(defun request-reports 801,32751
+(defun assemble-args 829,33419
+
+source/replay-patches.lisp,168
+(defun has-open-vars-p 7,197
+(defun get-object-type-from-header 54,1019
+(defun make-open-var-substitutions 67,1251
+(defun get-instance-from-current-context 99,1916
+
+source/retrieve.lisp,523
+(defun similar-arg-p 24,421
+(defun similar-args-p 31,536
+(defun is-similar-p 44,722
+(defun goal-set-difference 60,1147
+(defun goal-intersection 68,1279
+(defun get-goals 92,1751
+(defun get-case-id 106,2075
+(defun compute-intersection-lengths 119,2224
+(defun return-all-of-x-length 138,2731
+(defvar *max-cover-set* 158,3131
+(defvar *coverage-length-list* 159,3160
+(defun find-max-coverage 162,3198
+(defvar *extraneous-goals-list* 176,3500
+(defun retrieve-best-matches 183,3720
+(defun create-case-list 225,4874
+
+source/set-problem.lisp,235
+(defvar *object-list*63,2573
+(defvar *state-list*77,2970
+(defvar *goal-list*96,3420
+(defun is-ForMAT-goal-action-p 109,3694
+(defun build-problem-statement 130,4296
+(defun set-problem 168,5507
+(defun create-problem-file 203,6400
+
+source/transformations.lisp,951
+(defvar *front-end-initialized* 112,4053
+(defun get-plan-name 132,4468
+(defun is-token-p 152,4807
+(defun common-ancestor 160,4917
+(defun find-intersecting-type 172,5129
+(defun isa-p 192,5765
+(defun is-parent-of-p 247,7663
+(defun get-preconditions 327,10541
+(defun substitute-types-4-vars 348,11277
+(defun get-token 369,11771
+(defun get-prodigy-ops 388,12287
+(defun parent-of-instance 407,12561
+(defun return-goal 416,12735
+(defun return-goal 479,14813
+(defun return-corresponding-op 543,16369
+(defun generate-goal 630,20107
+(defun supplement-arg-list 649,20974
+(defun extract-arguments 667,21444
+(defun try-extract-from-goal-name 708,22810
+(defun ForMAT-2-PRODIGY-goal 735,23626
+(defun specialize-bindings 758,24474
+(defun substitute-from 778,25089
+(defun make-existential-goal 811,26039
+(defparameter *Use-Case-Replay* 845,26931
+(defun translate-goals 885,28343
+(defun reset-domain 930,29976
+(defun print-full-op 952,30645
+
+source/utils.lisp,366
+(defun f-compile 18,327
+(defun f-compile-all 38,672
+(defun get-current-goals 50,939
+(defun print-messages 69,1408
+(defun return-file-strings 87,1948
+(defun symbol-2-integer 102,2584
+(defun make-var 113,2858
+(defun compute-index 133,3417
+(defun grab-segment 163,4191
+(defun delete-segment 186,4844
+(defun grab-last-segment 209,5443
+(defun filter 225,5924
+
+loader.lisp,371
+(defparameter *format-directory* 24,622
+(defparameter *format-binary-pathname*31,768
+(defparameter *front-end-files*42,1001
+(defparameter *front-end-modules* 59,1325
+(defvar *ForMat-Loaded* 73,1797
+(defpackage :sockfig)95,2264
+(defun load-jade-source 97,2287
+(defun load-jade 110,2636
+(defun jade-compile-all 126,2957
+(defvar *load-format-immediately* 141,3305

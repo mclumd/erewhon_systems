@@ -1,0 +1,555 @@
+-------------------------------------------------------------------------------
+	     OVERVIEW OF THE PRODIGY USER INTERFACE (VERSION 2.0)
+-------------------------------------------------------------------------------
+
+      NOTE  for those users who  have prior experience with using PRODIGY
+      4.0 from  a  Lisp command  line interface:  the domain and  problem
+      commands  can be invoked from  the Load command button or pull-down
+      menu  item, and the run command can be invoked with the Run command
+      button.
+
+
+-------------------------------------------------------------------------------
+
+TABLE OF CONTENTS
+-----------------
+
+INTRODUCTION
+DESCRIPTION OF THE UI MAIN WINDOW LAYOUT
+FILE OPERATIONS
+PLANNING MODES
+	Generative Planning - Prodigy 4.0
+	Analogical Planning - Prodigy/Analogy
+	Conditional Planning - B Prodigy
+	Hierarchical Planning - Alpine
+VIEWING PLAN AND DOMAIN OBJECTS
+	View Menu items
+	Control of Viewing through Parameters
+	The Goal Tree Display and the Mouse Functions
+DEFINING DOMAINS
+PROGRAM PARAMETERS
+DEBUGGING 
+UI CUSTOMIZATION
+
+-------------------------------------------------------------------------------
+
+
+INTRODUCTION
+------------
+
+The PRODIGY User Interface (UI) Version 2.0 is designed for two purposes and
+for two classes of users. First, the interface makes it easier for the PRODIGY
+researcher to access internal data structures (i.e., the values of search tree
+nodes) and to view the head plan and tail plan graphically. Secondly, the
+interface makes its easier for the PRODIGY user to control and execute the
+underlying planning system and to define domains (i.e., the abstraction
+hierarchy, the planning operators, and the planning problems). For both users,
+the UI supports the visualization of the planning process.
+
+The PRODIGY planning system can behave in a number of planning modes:
+generative planning, analogical (case-based) planning, conditional planning,
+and hierarchical planning. To use the UI, the user simply chooses a planning 
+mode (the default is generative planning), loads a domain and a problem, and
+then runs the planner (note that if in analogical planning mode, the user must
+retrieve a past case before execution). The following document will explain
+these processes and how the UI supports them in general detail.
+
+-------------------------------------------------------------------------------
+
+
+DESCRIPTION OF THE UI MAIN WINDOW LAYOUT
+----------------------------------------
+
+The main window of the interface is divided into a number of major components.
+Along the top of the main window is the menu bar from which the user controls
+the functioning of the system. Pull-down menus are accessed from each menu bar
+entry by clicking on the desired location with the left mouse button. The menu
+bar items include File operations, Planning Mode selections, Control Variable
+changes, Display Variable changes, and View selections. Each category is
+further described in some detail below.
+
+Along the left side of the main window is a series of "command buttons." These
+buttons represent the most commonly used commands and are placed for quick
+access. Some of the functions that they activate can also be selected from
+pull-down menus as well. The Run button executes the planner using the current
+planning mode. The Step button executes the planner incrementally, running one
+or more steps and then pausing. The Break button interrupts execution after it
+has begun. At either a step pause or at a break, the Continue button
+non-incrementally resumes the planner's execution at the current point;
+whereas, the Abort button clears the planner and places it in a reinitialized
+state.
+
+Along the very bottom of the main window is a information row. Two sunken boxes
+display the names of the domain and problem that is currently loaded into the
+system. The remainder of the row will display descriptions of various window
+entries as the mouse passes across them.
+
+Mode-specific buttons can also appear along the bottom of the main menu
+(immediately above the information row) depending on the planning mode PRODIGY
+is placed. Note, however, that the default planning mode has no such row of
+buttons. Instead, the row will appear and the main window will adjust its size
+as the user changes modes using the Planning Mode pull-down menu.
+
+Two sub-windows with scroll bars exist in the center of the main window. The
+left most window is the Goal Tree Display. The right-most window is the Plan
+Display window. The first window displays the tree of goal/sub-goal relations
+rooted in the top-level planning goals provided as input to PRODIGY.
+Blue-colored nodes in the tree are goal states and the black-colored nodes are
+operator nodes.  Therefore, an operator is connected above to its primary
+effect; whereas, it is connected below to its preconditions. Red numbers next
+to operator nodes refer to the order of the corresponding plan step in the Plan
+display. Each node in the Goal Tree Display and each step in the Plan Display
+is mouse sensitive. Clicking with the mouse provides access to further
+information and internal data structures. This access is explained below in the
+section below entitled "Viewing Plan and Domain Objects."
+
+TECHNICAL NOTE: The Plan Display and the Goal Tree Display provides
+visualization of the head plan and tail plan (Fink & Veloso, 1996)
+respectively. 
+
+-------------------------------------------------------------------------------
+
+
+FILE OPERATIONS
+---------------
+
+The files operations are simple commands for retrieving problems from and
+saving solutions to disk and for saving either Display window to a postscript
+file. As convention will have it, the user can also quit from this pull-down
+menu.
+
+-------------------------------------------------------------------------------
+
+
+PLANNING MODES
+--------------
+
+The UI supports a number of planning modes. They are selected from the Planning
+Mode pull-down menu.
+
+Generative Planning - Prodigy 4.0
+
+Prodigy 4.0 is a generative planner that creates plans "from scratch" by
+traversing the search space. The user loads a domain and then a problem by
+selecting the "Load" button from either the "File" menu or from the "Load"
+command button on the left panel of the main UI window. Once loaded, the
+planner can be executed by selecting the "Run" command button. Alternatively,
+the user can "Step" through the planning process by choosing the "Step" command
+button and specifying a step number. Once a plan is created, the user can save
+it for later replay in analogical mode. A save is performed from the File
+pull-down menu.
+
+Generative planning can be either linear or nonlinear. Nonlinear planning can
+be performed with either delayed or eager state changes. During planning when
+all of the preconditions for a given operator are true in the initial state,
+PRODIGY has the choice of either applying the operator immediately to change
+the current state or continuing to plan with the current state by selecting
+another pending goal to achieve. The first policy is called SAVTA (Subgoal
+After eVery Try to Apply) and represents an eager approach. The second policy
+is called SABA (Subgoal Always Before Application) and represents a delayed or
+lazy approach.
+
+The default generative running mode is nonlinear with eager state changes
+(SAVTA).
+
+
+Analogical Planning - Prodigy/Analogy
+
+Under an analogical or case-based planning mode, Prodigy/Analogy plans by
+replaying past planning experiences (i.e., ones saved after planning under
+generative mode). First, the user loads a domain and then a problem. This
+action is required even if a problem and domain was previous loaded in another
+planning mode. Secondly, the user retrieves a past case or set of cases with
+which to guide subsequent planning. Retrieval can be performed either
+automatically or manually using analogy-specific buttons along the bottom of
+the main window. Finally once a case is retrieved, the user selects "Replay" or
+"Step" to execute the planning. 
+
+Sometimes no single case is sufficient for solving a new problem and multiple
+cases may be retrieved. In a simple example, a new problem may have two goals
+for which plans have only been generated independently (i.e., two cases exist
+in the case base, each solving one of the goals). If more than one case is
+retrieved, then the manner in which the cases are merged can be selected via
+the Merge Strategy button at the bottom of the main window (this button is an
+analogy-specific operation). 
+
+The strategies available to the user are as follows:
+saba:    (default) sub-goal always before applying, and apply in right order 
+saba-cr: saba and lets other control rules apply to goal choices
+user:    by asking the user                                        
+serial:  in a pre-defined serial order                           
+random:  randomly                                                
+smart:   by using a *set-of-interacting-goals*                   
+
+The Help pull-down menu offers comprehensive technical details on PRODIGY under
+analogical mode. Select "Prodigy/Analogy Guide."
+
+
+Conditional Planning - B(ranching) Prodigy
+
+Under a conditional planning mode, PRODIGY creates plans containing
+branches. Thus when executed, the plan can be flexible in a changing
+environment, taking choices depending on current states in the environment at
+execution time. Soon to be completed.
+
+
+Hierarchical Planning - Alpine
+
+Ideally, the planner should concentrate on the harder problems first, ignoring
+the details, and then add the needed detail to a general plan.  This could save
+a lot of time, as well as probably lead to more intuitive plans from a user's
+point of view. PRODIGY/Alpine can use an abstraction hierarchy over the
+literals in a domain, and it can generate one automatically given a particular
+domain and problem. It is relatively simple to get PRODIGY to work with its own
+abstraction hierarchies.  If, in your domain, you know which are the right
+things to focus on first, you might want to try providing PRODIGY with a
+hierarchy, but you should also compare this with the ones generated
+automatically. For details, see Section 9 of the PRODIGY Manual and Tutorial.
+
+The following is an extension to the Alpine system:
+
+The use of abstraction depends on the :use-abs-type key of the "run"
+function. This key may take one of the following values:
+
+  nil -- do not use abstraction
+  'in, 'indep, or 'independent -- use problem-independent abstraction
+  'sp, 'spec, 'specific, 'dep, or 'dependent -- use problem-specific one
+  anything else -- give warning about incorrect argument and
+                   do not use abstraction
+
+The function generates and caches an abstraction as necessary. It
+automatically notices the change in the current problem and in the domain.
+If there is not abstraction, it generates and stores a new one.  If the
+user defines a new operator or inference rule, or loads a new domain, the
+system discards the old abstraction. If the user loads a new problem, the
+system discards the old abstraction only if the abstraction is
+problem-specific.
+
+Due to the organization of data storage, the problem space may contain only one
+abstraction at a time. This limitation means, unfortunately, that the
+generation of a problem-specific abstraction requires to delete the old
+problem-independent abstraction, and vice versa.  Thus, if we use a
+problem-independent abstraction, then problem-specific, and then
+problem-independent again, we need to re-build the problem-independent
+abstraction.
+
+We provide four functions for building and discarding abstractions, though
+normally the user does not have to call them, since the "run" function
+performs these actions automatically, as necessary. These four functions
+do not have any arguments:
+
+gen-problem-independent  generate a problem-independent abstraction;
+  return nil if there is no current problem space or if abstraction
+  has collapsed to a single level; return T otherwise
+
+gen-problem-specific or gen-problem-dependent
+  these are two different names for the same function, which
+  generates a problem-specific abstraction, for the current problem;
+  it returns nil if there is no current domain, no current problem,
+  or if abstraction have collapsed to a single level; it returns T otherwise
+
+clear-problem-independent
+  discard abstraction (whether problem-specific or problem-independent);
+  do nothing if there is no current problem space or no abstraction
+
+clear-problem-specific or clear-problem-dependent
+  discard abstraction if it is problem-specific; if abstraction is
+  problem-independent, there is no abstraction, or there is no current
+  problem space, do nothing
+
+Finally, there is a function for displaying the current abstraction,
+in the ASCII text from:
+
+show-abstraction
+  :pspace   problem space (by default, current)
+  :new      nil for showing the cached abstraction,
+            nonnil for generating a new abstraction and showing it
+  :goal-exp   used only when :new is nonnil;
+              nil for generating problem-independent abstraction,
+              nonnil for generating problem-specific abstraction
+
+
+-------------------------------------------------------------------------------
+
+
+VIEWING PLAN AND DOMAIN OBJECTS
+-------------------------------
+
+View Menu Items
+
+The View pull-down menu offers the user a number of functions to visualize or
+inspect aspects of the plan and domain objects or files associated with
+such. Once a problem domain is loaded, the user can view the domain or the type
+(abstraction) hierarchy by selecting "View Domain" or "View Type Hierarchy"
+from the pull-down menu. The system displays the first item in a browsing
+window as the domain file itself. The second is shown as a directed graph and
+can be saved to file as a postscript image. Once the user loads a problem, the
+"View Problem" selection will also become active. The user can then choose to
+view the problem file. Finally after a plan has been created, the remaining
+selections from the View pull-down menu will become active. These allow the
+user to view the plan's partial order as a directed graph (PRODIGY creates a
+fully ordered plan that represents perhaps only one of many from the partial
+order). The user can also view the state of the world as it would be after the
+execution of the plan. This is performed by choosing "View Current State."
+
+The View Operator Graph displays the operator-assertion dependency graph for
+the currently loaded domain. A graphical representation that can be saved to
+postscript form indicates operators in boxes, states in ovals, and dependencies
+with arrows. An arrow exists from a state to an operator if that state depends
+on the operator; that is, if the operator adds or deletes the state. An arrow
+links an operator to a state when the operator requires the state as a
+precondition. Negative states are shown for those in the delete list of an
+operator, or when negative states constitute a precondition. 
+
+Search nodes can be viewed directly with the View Search Node choice, rather
+than having to search for them using the mouse in the display windows. The
+Clear Windows selection allows the user to clear the two displays of any
+information within them. Finally, the Goal Tree Display can be separated from
+the main menu as an independent graphical window by selecting Separate Goal
+Display. If this is performed then the Plan Display expands to fill the entire
+space within the main window area.
+
+
+Control of Viewing through Parameters
+
+The Display Variable pull-down menu organizes a number of operations that
+affect the display of information in the UI. The "Applied Ops Display"
+selection allows the user to change the manner in which the plan is displayed
+in the Plan Display window. The plan can be displayed as either a partial or
+total order. The "Type Hierarchy Display" selection allows the user to view
+instances as well as types in the "View Type Hierarchy" selection of the "View"
+menu. The "Goal Tree Display" selection contains the option of printing
+polygons around nodes in the Goal Tree graph; whereas, the "Goal Tree Sizing"
+selection presents the parameters that affect the spacing of nodes in the Goal
+Tree. Finally, the "Print Alternatives" affects the display of the planning
+trace in the Lisp listener. Alternatives are printed when it is set to true.
+
+The "Goal Tree Sizing" selection has a number of parameters that can be altered
+with the following interpretation. The *node-width* and *node-height*
+parameters correspond to the width and height of a node in the tree. The
+*inter-x-margin* is the distance between siblings in the tree; whereas, the
+*inter-y-margin* is the distance between generations in the tree. The *xmargin*
+is the number of pixels the image is shifted right from the left edge of the
+window.
+
+
+The Mouse Access from the Plan Displays
+
+Both the Goal Tree Display and the Plan Display are mouse sensitive. All of the
+objects displayed within these two Tk canvases can be inspected with the left
+button. The middle button can be used to drag the viewing area within the
+window in lieu of the scroll-bar mechanism.
+
+Each node of the Goal Tree represents either a (sub)goal or an operator bound
+to particular objects and states in the world, while the steps listed in the
+Plan Display represent an instantiated operator. For each of these objects, the
+left mouse button activates a display for the search tree node that contains
+information regarding the planning decision made by PRODIGY when constructing
+that object. That is, the left mouse button displays the goal node, the
+operator binding node, or the instantiated operator node of the internal search
+tree. 
+
+For each search-tree node displayed, a button is presented that connects with
+the parent of the node, and a button is presented for each child of the
+node. Clicking one of these buttons creates a display of the corresponding
+search tree node and the previously displayed node is removed. Multiple nodes
+can be displayed, however, by clicking on multiple objects in the Goal Tree
+Display and the Plan Display. (Alternative, if the user knows a node number, he
+can access it directly through the "View Search Node" entry of the View
+pull-down menu.) Finally, a button is presented for the node's plist. Clicking
+on this button generates a subwindow to display all properties on the plist.
+
+Within the display of the search-tree node, the system displays critical
+elements that affect the respective planning decision. Each object in this
+display is also mouse sensitive so that the user can recursively explore all of
+the data structures that bear on a given planning decision. For example, an
+applied-operator node includes the instantiated-op structure, a list of
+application structures (a given instantiated operator may have been applied a
+number of times with backup before a successful sequence is generated), and for
+each application structure, a list of state deletions and additions (operator
+add list and delete list).
+
+A final feature to mention is that for operator binding nodes in the Goal Tree
+Display, the middle mouse button will display the operator definition from the
+domain file that corresponds to that node.
+
+-------------------------------------------------------------------------------
+
+
+DEFINING DOMAINS
+----------------
+
+The system assists the user to define or edit a domain definition when clicking
+on the "Define Domain" command button along the left hand side of the main UI
+window. This subsystem helps to automate the construction of the type
+hierarchy, the operator set, the specification of objects in the domain,
+predicates, and the definition of the various domain problems. Unfortunately,
+some of these functions are yet to be implemented.
+
+-------------------------------------------------------------------------------
+
+
+PROGRAM PARAMETERS
+------------------
+
+The user can use the Control Variables pull-down menu to change various program
+parameters of the PRODIGY system. These correspond to "run" command keyword
+parameters and the planner flags in the manual version of PRODIGY (see section
+6.4 in the Prodigy 4.0 Manual and Tutorial available from the Help pull-down
+menu).The "All Variables" selection presents a menu from which the user can
+change all of the parameters below.
+
+Output Level (value: 0, 1, 2 or 3, defaults to 2) 
+This controls how much trace information (in the Lisp listener) is printed out
+during a run. The values are interpreted as follows: 
+    0 -	Print nothing during problem solving.
+    1 -	Only print the resulting plan.
+    2 -	Print information about the nodes as they are expanded, and the
+	resulting plan. 
+    3 -	Print everything in 2 along with which control rules are fired.
+
+Search Default 
+This can be used to switch between depth-first and breadth-first search
+strategies for problem solving.
+
+Excise Loops (values: true or false, default is true)
+If this is not false, dependency-directed backtracking will be used to try to
+cut down the search space. See Section 8 of the PRODIGY Manual and Tutorial for
+more detail about dependency-directed backtracking.
+
+Minimum Conspiracy Number (values: true or false, default is true) 
+If this is not false, when there is more than one alternative set of bindings
+to use for an operator, one will be chosen that leads to the smallest number of
+unsolved preconditions.
+
+Random Behaviour (values: true or false, default is false)
+If this is not false, then when no more ordering control rules are left to
+choose between candidates at a decision point, one will be chosen
+randomly. Otherwise they will be chosen in left-right order.
+
+Use Abstraction Type (values: independent, dependent, default is nil) 
+Available only under Hier archical Planning mode. If this is either dependent
+or independent, Prodigy/Alpine will use the specified type of abstraction
+hierarchy (i.e., either a problem-specific or problem-independent hier archy
+respectively).
+
+Use Abstraction Level (values: true or false, default is true) 
+If this is not false, the abstraction hierarchy will be used as a preference
+ordering on goals even when separate abstraction levels are not being used. The
+hierarchies are always generated when you load the domain - this takes
+negligible time compared with compiling the matcher functions.
+
+Depth Bound (values: nil or an integer, default is 50) 
+If this flag is a number, the search will be terminated if the search tree
+exceeds that depth. If it is nil, then the depth bound will be read from the
+problem space or lastly set to 30.
+
+Time Bound (values: a number or nil, defaults to nil) 
+If this is a number, then it limits the maximum run time in seconds that will
+be allowed before the problem solving is stopped. Nil means that there is no
+time bound.
+
+Maximum Nodes (values: a number or nil, defaults to nil)
+If this is a number, then it bounds the maximum number of nodes in the search
+tree that will be generated before stopping. Nil means that there is no bound.
+
+User Control (values: true or false, defaults to false) 
+This allows the user to make the planning decisions that would normally be made
+by PRODIGY. Alternatives are presented to the user in a dialog box and the user
+can select the one that is most appropriate. For example, if two different
+goals are available on which to subgoal, then the user can pick the one that is
+most relevant to the current context. The user can also defer to the system any
+given decision by clicking on the "Don't Know" selection or can discontinue
+user control by clicking on the "Resume" choice. Finally from the dialog box,
+the user can have the UI present the current state by clicking the "Show State"
+box.
+
+The User Control selection does not correspond to an actual planning parameter
+of the run function.
+
+
+-------------------------------------------------------------------------------
+
+
+DEBUGGING 
+----------
+
+From the command buttons on the left of the main UI window, the user can select
+the Debug Window. This action allows a secondary window to be displayed that
+has a number of features. At the top of the window, the system displays the
+value of an internal variable called debug_msg (which is initially set to an
+informative message). The next window panel contains an entry point for reading
+and writing to the underlying Lisp steam. The following panel allows the user
+to input Tcl/Tk commands. The final panel allows the user to specify global
+variables for the system to monitor. 
+
+If reprogramming the User Interface, the user can write to the debug_msg
+variable in order to display intermediate results of Tcl/Tk code. These results
+are automatically printed at the top of the Debug Window. Note, however, that
+results of the "Read LISP stream" and "Issue Tcl Command" buttons are also
+displayed in this location. So as an alternative, the user can declare a
+separate global variable, enter the variable identifier in the "Monitor
+Variable" selection, and the results of changes to the variable will be
+automatically printed at the top of the window (just below the value of
+debug_msg). 
+
+One of the useful attributes of the "Lisp Command" feature is the ability to
+mix Tcl/Tk instructions with the Lisp instructions. The system will interpret
+the results appropriately. Beware however, that Lisp and Tcl interpret types
+such as strings in different manners. For example, if the user first issues the
+Tcl command "set x John", and then at Lisp Command entry box, the user types
+(print '([expr 1 + 3] "Hello $x" [set x])), a write to the Lisp stream will
+print the list (4 HELLO JOHN JOHN). Reading from the Lisp stream in the Debug
+Window will produce 4 HELLO JOHN JOHN at the top of the window. However, if the
+the user enters (print (list ([expr 1 + 3] "Hello $x" [set x]))) instead, then
+Lisp generates an error "Attempt to take the value of the unbound variable
+`HELLO'." Quoting both the string and the set command generates no Lisp error.
+Yet the output is distinctly different. Lisp prints (4 "Hello John" JOHN). Tcl
+prints 4 {"Hello John"} JOHN
+
+
+The facilities of the debug window are extremely useful, but the programmer
+should be acutely aware of the semantics of both languages. As one final hint,
+if the UI freezes, it may actually be waiting for input. For instance, in the
+example above, the user may have clicked on the "Read Lisp Stream" button once
+too many times. In such cases, issue a call to the Lisp function ping to send
+to Tcl something to input. 
+
+
+UI CUSTOMIZATION
+----------------
+
+A number of way exist to customize the User Interface to PRODIGY. The ambitious
+programmer can of course reprogram the interface since the source code is
+publically available. As explained above, the Debug Window can assist with this
+kind of change. This section explains two less severe ways to change the UI.
+The user can include custom Tcl/Tk code in two customization files that will
+overwrite existing variable assignments and procedure definitions. We will call
+this "overload customization." The user can also modify the values of program
+parameters and global variables. We will call this "parameter customization."
+
+In the file ui.lisp, two special Lisp variables exist that should be changed by
+the user to incorporate changes to the UI. The variable *tcl-customizations*
+contains a string specifying a file with tcl code meant to alter program
+variables such as uiColor (i.e., institutes parameter customization). It is
+loaded after the file ui-start.tcl is loaded. Ui-start contains most of the
+program parameters that are used by the remaining system files. By providing
+*tcl-customizations* a string to a file that alters the program parameters, you
+can affect the behavior of the program in significant ways. An example of
+parameter customization is presented the file example-param-custom.tcl.
+
+As an aside, note that a variable called stackedCanvases can be set in
+example-param-custom.tcl by uncommenting (remove the # symbol) the line that
+references it. If this is done, the system will arrange the goal-tree and plan
+displays on top of each other, rather than side-by-side.
+
+A more significant change to the interface occurs when a programmer alters the
+code itself. A safe way to do this without affecting other users that may use
+the interface in your environment, is to create a file with code that overrides
+the functions in the UI files or adds new functions. Then by providing a string
+that specifies the filename for the value of the global variable
+*post-tcl-customizations* (also found within file ui.lisp) this code will be
+interpreted after the rest of the system code is loaded. 
+
+NOTE that the full file loading sequence is enumerated in the Help pull-down
+menu.

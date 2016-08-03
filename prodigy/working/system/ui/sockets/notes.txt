@@ -1,0 +1,33 @@
+From chyde@bbn.com Fri Oct  3 15:39:48 1997
+Return-Path: <chyde@bbn.com>
+Date: Fri, 3 Oct 1997 15:06:58 -0400
+From: Clinton Hyde <chyde@bbn.com>
+To: mcox@ux1.sp.cs.cmu.edu
+Subject: notes
+
+
+so you can find the changes I made by grep'ing for CRH.
+
+ -- clint
+
+From chyde@bbn.com Fri Oct  3 15:35:31 1997
+Return-Path: <chyde@bbn.com>
+Date: Fri, 3 Oct 1997 14:57:21 -0400 (EDT)
+From: Clinton Hyde <chyde@bbn.com>
+To: mcox@ux1.sp.cs.cmu.edu
+In-reply-to: <199709162121.RAA25897@po2.bbn.com> (mcox@ux1.sp.cs.cmu.edu)
+Subject: Re: Which Prodigy version do you have???
+Reply-to: chyde@bbn.com
+
+
+here's a tarred/compressed/uuencoded bunch of source files for the
+actual sockets themselves. you'll have to twiddle the directories
+quite a bit, this is wired tightly into my dept's directory structure.
+
+you can create two/three files for each architecture...libsock.a and
+sock.o and sock.so (which is N/A for sunos)
+
+more code to follow, the prodigy-specific stuff
+
+ -- clint
+

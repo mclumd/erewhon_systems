@@ -1,0 +1,254 @@
+;;; This file is no longer used. It has been superseded by the more generic
+;;; socket code within the sockets subdirectory. [14oct97 cox]
+
+
+;; Some routines to make enable LISP to be the master of it's own sockets.
+
+(eval-when (compile eval load)
+  (if (find-symbol (symbol-name :rcsnote) (find-package :si))
+      (push :has-rcsnote *features*))
+  
+  #-(or little-endian big-endian)
+  (pushnew
+   (let ((x '#(1)))
+     (if (not (= 0 (sys::memref x #.(comp::mdparam 'comp::md-svector-data0-adj)
+				0 :unsigned-byte)))
+	 :little-endian
+       :big-endian))
+   *features*)
+  )
+
+(eval-when (compile eval load)
+  (excl::require :process)
+  (excl::require :foreign)
+  (excl::provide :ipc))
+
+#+(version>= 4 0)
+(defpackage :ipc (:use :lisp :excl :ff :mp)
+	    (:export #:create-server-socket
+		     #:accept-connection
+		     #:close-socket
+		     ))
+
+#+(version>= 4 0)
+(in-package :ipc)
+
+#-(version>= 4 0)
+(in-package :ipc :use '(:lisp :excl :ff :mp))
+
+#+(or allegro-v3.2 (version>= 4 0))
+(eval-when (compile eval load)
+  (excl::require :defctype))
+
+(defconstant *af-unix* 1
+  ;; The AF_UNIX constant from /usr/include/sys/socket.h.
+  )
+
+(defconstant *af-inet* 2
+  ;; The AF_INET constant from /usr/include/sys/socket.h.
+  )
+
+(defconstant *sock-stream* 1
+  ;; The SOCK_STREAM constant from /usr/include/sys/socket.h.
+  )
+
+(defconstant *sock-dgram* 2
+  ;; The SOCK_DGRAM constant from /usr/include/sys/socket.h.
+  )
+
+;; from <netinet/in.h>
+(defcstruct sockaddr-in
+  (family :unsigned-short)		; short sin_family
+  (port :unsigned-short)		; u_short sin_port
+  (addr :unsigned-long)			; struct in_addr sin_addr
+  (zero 8 :char)			; char sin_zero[8]
+  )
+
+;; from <??>
+(defcstruct sockaddr-un
+  (family :unsigned-short)
+  (path 109 :char))
+
+;; from <netdb.h>
+(defcstruct (hostent :malloc)
+  (name * :char)			; char *h_name
+  (aliases * * :char)			; char **h_aliases
+  (addrtype :long)			; int h_addrtype
+  (length :long)			; int h_length
+  (addr * :char)			; char *h_addr   --or--
+					; char **h_addr_list (for SunOS 4.0)
+  )
+
+(defcstruct (servent :malloc)		; Returned by getservent
+  (name * :char)
+  (aliases * * :char)
+  (port :signed-long)
+  (proto * :char))
+
+(defcstruct timeval
+  (sec :long)
+  (usec :long))
+
+(defcstruct unsigned-long
+  (unsigned-long :unsigned-long))
+
+(defparameter .needed-funcs.
+    (mapcar #'convert-to-lang
+	    ;; this list appears in makefile.cl, too
+	    '("socket" "bind" "listen" "accept" "getsockname"
+	      "gethostbyname" "getservbyname"
+	      "connect" "bcopy" "bcmp" "bzero")))
+
+(defvar .junk-name. (make-array 1))
+(defvar .junk-address. (make-array 1 :element-type '(unsigned-byte 32)))
+
+(defun entry-point-exists-p (string)
+  (setf (aref .junk-name. 0) string)
+  (setf (aref .junk-address. 0) 0)
+  (= 0 (get-entry-points .junk-name. .junk-address.)))
+
+(eval-when (load eval)
+  (unless (dolist (name .needed-funcs. t)
+	    (if (not (entry-point-exists-p name))
+		(return nil)))
+    (princ ";  Loading TCP routines from C library...")
+    (force-output)
+    (unless (load ""
+		  :verbose nil
+		  :unreferenced-lib-names .needed-funcs.
+		  #+(target sgi4d) :system-libraries
+		  #+(target sgi4d) '("bsd")
+		  )
+      (error "foreign load failed"))
+    (princ "done")
+    (terpri)
+    (force-output)))
+
+(defforeign-list '((getuid :entry-point #,(convert-to-lang "getuid"))
+		   (socket :entry-point #,(convert-to-lang "socket"))
+		   (bind :entry-point #,(convert-to-lang "bind"))
+		   (accept :entry-point #,(convert-to-lang "accept"))
+		   (getsockname :entry-point #,(convert-to-lang
+						"getsockname"))
+		   (gethostbyname :entry-point #,(convert-to-lang
+						  "gethostbyname"))
+		   (getservbyname :entry-point #,(convert-to-lang
+						  "getservbyname"))
+		   (select :entry-point #,(convert-to-lang "select"))
+		   (connect :entry-point #,(convert-to-lang "connect"))
+		   (bcopy :entry-point #,(convert-to-lang "bcopy"))
+		   (bzero :entry-point #,(convert-to-lang "bzero"))
+		   (bcmp :entry-point #,(convert-to-lang "bcmp"))
+		   (perror :entry-point #,(convert-to-lang "perror"))
+		   (unix-listen :entry-point #,(convert-to-lang "listen"))
+		   (unix-close :entry-point #,(convert-to-lang "close")))
+  :print nil)
+
+(if* (entry-point-exists-p (convert-to-lang "lisp_htons"))
+   then ;; Allegro CL 3.1 or later...
+	(defforeign-list '((lisp_htons :entry-point #,(convert-to-lang
+						       "lisp_htons"))
+			   (lisp_htonl :entry-point #,(convert-to-lang
+						       "lisp_htonl"))
+			   (lisp_ntohs :entry-point #,(convert-to-lang
+						       "lisp_ntohs"))
+			   (lisp_ntohl :entry-point #,(convert-to-lang
+						       "lisp_ntohl")))
+			 :print nil))
+
+;; Function to create a server socket and return it's ID.
+(defun create-server-socket ( &key (inet-domain nil)
+				   (pathname 
+				    (format nil 
+					    "/tmp/clisp-socket~d" 
+					    (getuid)))
+				   (type *sock-stream*)
+				   (port 5678))
+  (let ((listen-socket-fd nil)
+	;; The socket to create so we can listen for connections.
+	(listen-sockaddr (if (not inet-domain)
+			     (make-cstruct 'sockaddr-un)
+			   (let ((sin (make-cstruct 'sockaddr-in)))
+			     (bzero sin (ff::cstruct-length 'sockaddr-in))
+			     sin)))
+	(int (make-cstruct 'unsigned-long))
+	(mask nil)
+	(stream nil)
+	(fd nil))
+    ;; Make sure the socket file is deleted before we try to create
+    ;; a new one.
+    (if (not inet-domain)
+	(errorset (delete-file pathname)))
+    ;; Create the socket
+    (setq listen-socket-fd (socket 
+			    (if (not inet-domain) *af-unix* *af-inet*)
+			    type 0))
+    (if (< listen-socket-fd 0)
+	(progn
+	  (perror "socket")
+	  (error "Exiting...")))
+    (if (not inet-domain)
+	;; Prepare for the binding....
+	(progn
+	  ;; Indicate the addressing family
+	  (setf (sockaddr-un-family listen-sockaddr) *af-unix*)
+	  ;; Insert the pathname - note this has to be copied in.
+	  (dotimes (i (length pathname)
+		      ;; Put a null at the end of the pathname.
+		      (setf (sockaddr-un-path listen-sockaddr i) 0))
+	      (setf (sockaddr-un-path listen-sockaddr i)
+		    (char-int (elt pathname i))))
+	  ;; Now bind that socket.
+	  (unless (zerop (bind listen-socket-fd
+			       listen-sockaddr
+			       (+ (length pathname) 2)))
+	    ;; Bind usually fails because the file already exists.
+	    (perror "bind")
+	    (error "Exiting...")))
+      ;; Otherwise we are dealing with an Internet socket and need to 
+	;; assign a port to it.
+      (progn
+	;; Indicate the addressing family
+	(setf (sockaddr-in-family listen-sockaddr) *af-inet*
+	      (sockaddr-in-port   listen-sockaddr) port)
+	(unless (zerop (bind listen-socket-fd
+			     listen-sockaddr
+			     (ff::cstruct-length 'sockaddr-in)))
+	  (perror "bind")
+	  (error "Exiting..."))))
+    (list listen-socket-fd listen-sockaddr)))
+
+;;(mp::start-scheduler)
+
+;; If starting this from the initial listener, then do (mp:start-scheduler)
+;; first.
+(defun accept-connection (socket sockaddr &key (inet-domain nil))
+  (unless (zerop (unix-listen socket 5))
+    (perror "listen")
+    (error "Exiting..."))
+  (let ((mask (ash 1 socket))
+	(timeval (make-cstruct 'timeval))
+	(int (make-cstruct 'unsigned-long))
+	(mask-obj (make-cstruct 'unsigned-long)))
+    (setf (timeval-sec timeval) 0
+	  (timeval-usec timeval) 0)
+    (finish-output)
+
+    (mp::mpwatchfor socket)
+    (process-wait "waiting for a connection"
+		  #'(lambda (mask mask-obj timeout)
+		      (setf (unsigned-long-unsigned-long mask-obj) mask)
+		      (not (zerop (select 32 mask-obj 0 0 timeout))))
+		  mask mask-obj timeval)
+    (setf (unsigned-long-unsigned-long int) 
+	  (if (not inet-domain)
+	      (ff::cstruct-length 'sockaddr-un)
+	    (ff::cstruct-length 'sockaddr-in)))
+    (setq fd (accept socket sockaddr int))
+    (when (< fd 0)
+      (perror "accept")
+      (error "Exiting..."))
+    fd))
+  
+(defun close-socket (fd)
+  (unix-close fd))

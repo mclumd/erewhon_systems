@@ -1,0 +1,422 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; MUST HAVE WRITE PERMISSION FOR EVERYONE ON THIS FILE.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(in-package :user)
+
+
+(defparameter *CS790-style*
+    '(:style 
+      (*cs790-style*
+	  (start      (lambda (stream)
+			(format stream "~%( ")
+			)
+	   )
+	  (head-print (lambda (head stream)
+			(format stream "~s "  head)
+			)
+	   )
+	(role-print (lambda (role stream)
+		      (if (second role)
+			  (format stream "~s "  (second role)))
+		      )
+	 )
+	(done (lambda (stream)
+		(format stream ")"))
+	 ) 
+	)				;default
+      )
+  "default for CS790 Term Proj"
+  )
+
+
+(setf  *current-style*
+    '*CS790-style*
+  )
+
+
+
+
+;;;
+;;; Because these are macros, they should not be compiled?
+;;; See *wrapper-home* loader.lisp. 
+;;;
+
+
+;;;(setf x '(achieve :sender joe :content (((on-top Window1)))))
+
+
+
+
+
+;;;
+;;; THIS CAN BE REMOVED LATER.
+;;;
+;;; This holds the reply-with field of the acheive message, so that the returns
+;;; messages can pass it back."
+;;;
+(defvar 
+    *achieve-id*
+    nil
+  "This holds the reply-with field of the acheive message."
+  )
+
+
+(defparameter 
+    *interactive-wrapper*
+    nil
+  "When t prompts user for PRODIGY run."
+  )
+
+
+(defvar *has-state-info*)
+
+;;; Test
+
+#|
+
+(achieve 
+ :sender AgentA
+ :content 
+ (
+  (
+   (at-obj package1 bos-po)
+   )
+  (
+   (object-is package1  OBJECT)
+   (objects-are pgh-truck bos-truck  TRUCK)
+   (objects-are airplane1 airplane2 AIRPLANE)
+   (objects-are bos-po pgh-po POST-OFFICE)
+   (objects-are pgh-airport bos-airport  AIRPORT)
+   (objects-are pittsburgh boston CITY)
+   )
+  ( 
+   (at-obj package1 pgh-po)
+   (at-airplane airplane1 pgh-airport)
+   (at-airplane airplane2 pgh-airport)
+   (at-truck pgh-truck pgh-po)
+   (at-truck bos-truck bos-po)
+   (part-of bos-truck boston)
+   (part-of pgh-truck pittsburgh)
+   (loc-at pgh-po pittsburgh)
+   (loc-at pgh-airport pittsburgh)
+   (loc-at bos-po boston)
+   (loc-at bos-airport boston)
+   (same-city bos-po bos-airport)
+   (same-city pgh-po pgh-airport)
+   (same-city pgh-airport pgh-po)
+   (same-city bos-airport bos-po)
+   )
+  )
+ :receiver PRODIGY-Wrapper
+ :reply-with My-Reply
+ :language PDL
+ :ontology
+ "/usr/local/mcox/prodigy/working/domains/logistics/domain.lisp"
+ )
+
+|#
+
+
+
+
+(defun is-acheive-performative-p (content-field)
+  (equal 'achieve
+	 (first content-field))
+  )
+
+
+    
+    
+(defmacro standby (&key sender 
+			content 
+			(receiver "PRODIGY-Wrapper") 
+			reply-with 
+			(language 'PDL)
+			(ontology
+			 (concatenate
+			     'string
+			   *prodigy-base-directory*
+			   "/working/domains/logistics/domain.lisp")))
+  (if (is-acheive-performative-p 
+       content)
+      (progn
+	 (achieve
+	  :run-now nil
+	  ,@(rest content))
+	 ;; Should send ask-one
+	 (ask-if
+	  :sender ,receiver
+	  :content "HAVE-PARAMS?"
+	  :receiver (quote ,sender)
+	  :reply-with "prodigy-ask-if"
+	  ))
+	 )
+  )
+
+
+
+
+
+(defmacro next (&key sender 
+		     content 
+		     (receiver "PRODIGY-Wrapper") 
+		     reply-with 
+		     (language 'PDL)
+		     (ontology
+		      (concatenate
+		       'string
+		       *prodigy-base-directory*
+		       "/working/domains/logistics/domain.lisp")))
+  (if (is-first-run-p)
+      (let ((result (apply #'run-with-params
+			   content)))
+	(if (null (prodigy-result-solutions result))
+	    (sorry :sender receiver
+		   :content
+		   "NO PLAN GENERATED"
+		   :receiver sender
+		   :reply-with reply-with
+		   :language language
+		   :ontology ontology)
+	  (tell :sender receiver
+		:content
+		(format 
+		 nil
+		 "~s"
+		 (gen-file)
+		 )
+		:receiver sender
+		:reply-with reply-with
+		:language language
+		:ontology ontology)))
+    ;; Here we assume that PRODIGY is in the middle of a multiple-sols loop
+    (extract-m-sols-arg content)
+    )
+  )
+
+
+(defun extract-m-sols-arg (content-field)
+  (cond ((equal :multiple-sols
+		(first content-field))
+	 (second content-field))
+	(t
+	 (extract-m-sols-arg
+	  (rest 
+	   (rest content-field))))
+	)  
+  )
+
+
+
+
+;;; MUST BE IN AN INIT FN.
+;  (set-4-multiple-sols
+;   multiple-sols)
+
+(defun run-with-params (&key (search-default 'depth-first)
+			     (depth-bound 50)
+			     max-nodes
+			     time-bound
+			     (output-level 2)
+			     multiple-sols)
+  (cond ((is-first-run-p)
+	 (setf *first-run* nil)
+	 (run :search-default search-default
+	      :depth-bound depth-bound
+	      :max-nodes max-nodes
+	      :time-bound time-bound
+	      :output-level output-level
+	      :multiple-sols (if multiple-sols
+				 t)
+	      ))
+	(t
+	 
+	 )
+	)
+  )
+
+
+(defvar *first-run* nil 
+  "If t PRODIGY has not run through 2 multiple solutions.")
+
+(defun is-first-run-p
+  *first-run*)
+
+(defun set-4-multiple-sols (params)
+  (setf *first-run* t)
+  )
+
+
+ 
+
+
+
+
+(defvar *done* nil)
+
+(defmacro cancel (&key sender 
+		       content 
+		       (receiver "PRODIGY-Wrapper") 
+		       reply-with 
+		       (language 'PDL)
+		       (ontology
+			(concatenate
+			 'string
+			 *prodigy-base-directory*
+			 "/working/domains/logistics/domain.lisp")))
+  (setf *done* t)
+  )
+
+
+
+
+(defun ask-if (&key sender 
+		    content 
+		    receiver 
+		    reply-with 
+		    (language 'PDL)
+		    (ontology
+		     (concatenate
+			 'string
+		       *prodigy-base-directory*
+		       "/working/domains/logistics/domain.lisp")))
+  (cond ((equal sender "PRODIGY-Wrapper")
+	 (send-to-socket 
+	  (format nil "~S"
+		  `(ask-if
+		    :sender ,sender 
+		    :content ,content
+		    :receiver ,receiver
+		    :reply-with ,reply-with
+		    :language ,language
+		    :ontology ,ontology
+		    ))
+	  *tcl-send*)
+	 )
+	(t
+	 "Here write the code to receive an ask-if."))
+  
+  )
+
+
+
+
+(defun sorry (&key sender 
+		   content 
+		   receiver 
+		   reply-with 
+		   (language 'PDL)
+		   (ontology
+		    (concatenate
+			'string
+		      *prodigy-base-directory*
+		      "/working/domains/logistics/domain.lisp")))
+  (cond ((equal sender "PRODIGY-Wrapper")
+	 (send-to-socket 
+	  (format nil "~S"
+		  `(sorry
+		    :sender ,sender 
+		    :content ,content
+		    :receiver ,receiver
+		    :reply-with ,reply-with
+		    :language ,language
+		    :ontology ,ontology
+		    ))
+	  *tcl-send*)
+	 )
+	(t
+	 "Here write the code to receive a sorry."))
+  
+  )
+
+
+;;; The macro achieve takes from the context field a list of three
+;;; elements. These elements themselves are lists. The first element is the
+;;; *goal-list*, the second is the *object-list*, and the third is the
+;;; *state-list*. See file set-problem.lisp in the jade directory off system
+;;; dir in prodigy.
+;;;
+(defmacro achieve (&key (run-now t)
+		        sender 
+			content 
+			(receiver "PRODIGY-Wrapper") 
+			reply-with 
+			(language 'PDL)
+			(ontology
+			 (concatenate
+			     'string
+			   *prodigy-base-directory*
+			   "/working/domains/logistics/domain.lisp")))
+  (when content
+    (setf *achieve-id* reply-with) ;REMOVE LATER
+;    (setf *sender-name* sender)
+    (domain 'logistics)
+    (setf *goal-list* 
+      (append '(and) (first content)))
+    (setf *object-list* (second content))
+    (setf *state-list*  (third content))
+    (set-problem *goal-list*)
+    (if *interactive-wrapper*
+	(format t "Run?~%"))
+    (when (and run-now
+	       (or
+		(not 
+		 *interactive-wrapper*)
+		(y-or-n-p)))
+      (let ((result (run)))
+	(if (null (prodigy-result-solutions result))
+	    (sorry :sender receiver
+		   :content
+		   "NO PLAN GENERATED"
+		   :receiver sender
+		   :reply-with reply-with
+		   :language language
+		   :ontology ontology)
+	  (tell :sender receiver
+		:content
+		(format 
+		 nil
+		 "~s"
+		 (gen-file)
+		 )
+		:receiver sender
+		:reply-with reply-with
+		:language language
+		:ontology ontology)))
+      ))
+  )
+
+;;; Eventually need to call this something else so that we can have a real tell
+;;; macro to handle tell input.
+(defun tell (&key sender 
+		  content 
+		  receiver 
+		  reply-with 
+		  (language 'PDL)
+		  (ontology
+		   (concatenate
+		       'string
+		     *prodigy-base-directory*
+		     "/working/domains/logistics/domain.lisp"))
+		  )
+  (cond ((equal sender "PRODIGY-Wrapper")
+	 (send-to-socket 
+	  (format nil "~S"
+		  `(tell
+		    :sender ,sender 
+
+		    :content ,content
+		    :receiver ,receiver
+		    :reply-with ,reply-with
+		    :language ,language
+		    :ontology ,ontology
+		    ))
+	  *tcl-send*)
+	 )
+	(t
+	 "Here write the code to receive a tell message."))
+  )
+
+
+

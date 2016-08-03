@@ -1,0 +1,487 @@
+This code uses Prodigy/Agent to translate plans into Kerkez's format
+having intermediate state representations. The files that compose this
+module are as follows (the module is defined in the file
+prodigy/working/system/agent/loader.lisp).
+
+plans2vectors.lisp
+a-dist-eval.lisp
+data.lisp
+data-alt.lisp 
+plan2frames-and-state.lisp
+
+To enable Prodigy/Agent set the global variable *interactive-loading*
+to t in the file prodigy/working/system-loader.lisp. During the
+interactive start-up, load both the monitor and Prodigy/Agent modules
+(see Lisp session output at bottom of this file).  Then perform one of
+the following load operations.
+
+(load-a-dist) ;Default is 'logistics.
+(load-a-dist 'extended-strips) 
+(load-a-dist 'blocksworld)
+
+The call of (gen-file) after successful planning will output the
+extended plan representation. The subsequent call of (plan2vectors
+(gen-file)) after successful planning will output the abstract vector
+plan representation and can be used with Oates' A-distance metric.
+
+Create a set of new problems in the logistics domain (note that if you
+are using another domain, the value of *predicates* will be different)
+using Kerkez's code.  Find this code at
+E:\CopiesJunJul08\PlanRec_CODE\RUN_PLAN_REC_SYSTEM.bat
+
+
+;;; For parameter 100, substitute your number of problems
+(solve-problems 100)
+;;; or to write to data.txt in the *data-directory*
+(solve-problems 100 t)
+
+The vector form of the solutions will be in reverse order as the value
+of *vector-results*
+
+;;; HERE IS A SEQUENCE OF CALLS THAT SOLVES 10 LOGISTICS PROBLEMS WITH
+;;; A NORMAL DOMAIN AND THEN WITH AN ANOMALOUS DOMAIN. THIS ASSUMES
+;;; THAT THE ANOMALOUS DOMAIN IS IN A FILE CALLED domain.anomalous.
+;;; (SEE LOAD SEQUENCE AND RUN AT BOTTOM OF FILE FOR EXAMPLE)
+(load-a-dist)
+(solve-problems 10 t)
+(init-anomalous-run)
+(solve-problems 10 t 300 
+		(format  nil 
+		"~adata-anomalous.txt"
+		*data-directory*))
+(restore-file-names)
+
+------------------------------------------------------------------------------
+;;; Do we need to call initialize to set *target-width* and *increment-width*?
+(prep-pools)
+(assemble-data)
+(output-answers 110 0.45 
+  (eval-and-write 110 0.45))
+;;; or to calculate at varying epsilons
+(dotimes (epsilon 8)
+  (output-answers 110 (/ (+ 1 epsilon) 10) 
+     (eval-and-write 110 (/ (+ 1 epsilon) 10))))
+
+------------------------------------------------------------------------------
+;;; THE FOLLOWING IS THE LOAD SEQUENCE AND INTERACTIVE RESPONSES TO
+;;; CHOOSE (on Hypatia)
+
+
+International Allegro CL Enterprise Edition
+6.2 [Windows] (May 12, 2004 13:23)
+Copyright (C) 1985-2002, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+
+This development copy of Allegro CL is licensed to:
+   [TC7899] University of Maryland
+
+Load Prodigy 4.0? y
+Load JADE? n
+;   Loading w:\My Documents\prodigy\working\system-loader.lisp
+Load Prodigy? y
+Load Monitor Code? y
+;     Loading w:\My Documents\prodigy\working\loader.lisp
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\load-domain.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\types.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\assertions.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\misc.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\load-problem.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\goal-loop.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\extract-functions.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\extract-static.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\extract-cr.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\my-extract-cr.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\generator.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\node.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\instantiate-op.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\circular.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\macros.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\matcher-interface.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\result.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\search.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\protect.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\apply.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\treeprint.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\matching.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\rete-match.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\meta-predicates.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\interrupt.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\comforts.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\gen-hiers.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\utils.fasl
+;       Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\augment.fasl
+
+;;; Prodigy is loaded.
+;     Fast loading w:\My Documents\prodigy\working\system\.mswin-allegro-6.2\overload.fasl
+Warning: REFINE-NODE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: DO-SUBGOAL, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: EXPAND-GOAL, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-SELECT-NODE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-REJECT-NODES, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-SELECT-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-REJECT-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: RETE-GEN-BINDINGS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: FIRE-PREFER, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-SELECT-GOAL, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-REJECT-GOAL, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-A-OR-S-RULE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-R-OR-E-RULE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-SELECT-APPLIED-OPS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined
+         in w:\My Documents\prodigy\working\system\customization\overload.lisp
+Warning: MATCH-REJECT-APPLIED-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined
+         in w:\My Documents\prodigy\working\system\customization\overload.lisp
+;     Loading w:\My Documents\prodigy\working\system\jade\loader.lisp
+;     Loading w:\My Documents\prodigy\working\system\monitors\loader.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\parameters.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\parameters.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\print-rules.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: EXPAND-BINDING, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: EXPAND-OPERATOR, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: EXPAND-BINDING-OR-APPLIED-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: DO-APPLY-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: APPLY-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\apply.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: BRIEF-PRINT-INST-OP, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\treeprint.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: PP-RESULT, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\result.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: GENERATE-NODES, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: STATE-LOOP-P, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\apply.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: UNZIP-STATES-LOOP-P, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\apply.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+Warning: RUN, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\execute.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\monitor.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: CANDIDATE-NODE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\meta-predicates.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: CANDIDATE-GOALS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\meta-predicates.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: MAINTAIN-STATE-AND-GOALS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: DO-STATE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\apply.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: PREPARE-PLAN, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: REALLY-EXPAND-OPERATOR, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: CLOSE-NODE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\apply.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+Warning: FIND-NODE, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\matcher-interface.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\monitors\source\patches.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\meta-preds.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\state-manipulate.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\sensing.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\test-battery.lisp
+;       Loading w:\My Documents\prodigy\working\system\monitors\source\test-gtrans.lisp
+;       Loading w:\My Documents\prodigy\working\system\customizations\find-branches.lisp
+
+;;; Monitors are loaded.
+Load PRODIGY/Agent? y
+;   Loading w:\My Documents\prodigy\working\system\agent\loader.lisp
+Warning: P-COMPILE, :OPERATOR was defined in w:\My Documents\prodigy\working\loader.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\agent\loader.lisp
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\registrar.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\goal-extract.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\in-wrap.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\process-domain-file.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\file-fns.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\plan2frames.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\frame2alternate.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\patches3.fasl
+Warning: ASK-FOR-MORE-SOLUTIONS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\agent\latest-source\patches3.lisp
+Warning: ASK-FOR-MORE-SOLUTIONS-SHORTEST, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\agent\latest-source\patches3.lisp
+Warning: RUN-MULTIPLE-SOLS, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\search.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\agent\latest-source\patches3.lisp
+Warning: ANNOUNCE-PLAN, :OPERATOR was defined in w:\My Documents\prodigy\working\system\planner\treeprint.lisp and is now being defined in
+         w:\My Documents\prodigy\working\system\agent\latest-source\patches3.lisp
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\kqml.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\application-agent.fasl
+;     Fast loading w:\My Documents\prodigy\working\system\agent\.mswin-allegro-6.2\shell.fasl
+;     Loading w:\My Documents\prodigy\working\system\agent\lisp-source\performatives.lisp
+Load AIMA code? n
+Load PAIP code? n
+Load Meta-AQUA? n
+Load Introspective Agent demo? n
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+CL-USER(1): 
+
+
+
+---------------------------------------------------------------------------------------------------------------
+;;; THE FOLLOWING IS THE LOAD SEQUENCE AND INTERACTIVE RESPONSES TO
+;;; CHOOSE (on metacog) ALONG WITH A SESSION OF 1000 PROBLEMS IN BOTH NORMAL AND ANOMALOUS LOGISTICS DOMAINS
+
+Starting image `/usr/local/allegrocommonlisp-8.2/alisp'
+  with no arguments
+  in directory `/usr/local/allegrocommonlisp-8.2'
+  on machine `localhost'.
+
+International Allegro CL Enterprise Edition
+8.2 [64-bit Linux (x86-64)] (Jan 25, 2010 14:48)
+Copyright (C) 1985-2010, Franz Inc., Oakland, CA, USA.  All Rights Reserved.
+
+This development copy of Allegro CL is licensed to:
+   [5305] University of Maryland
+
+Load Prodigy 4.0? Type "y" for yes or "n" for no. 
+Load Prodigy 4.0? y
+Load JADE? n
+;   Loading /fs/junkfood/mcox/prodigy/working/system-loader.lisp
+Load Prodigy? y
+Load Monitor Code? y
+;     Loading /fs/junkfood/mcox/prodigy/working/loader.lisp
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/load-domain.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/types.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/assertions.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/misc.fasl
+y
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/load-problem.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/goal-loop.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/extract-functions.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/extract-static.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/extract-cr.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/my-extract-cr.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/generator.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/node.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/instantiate-op.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/circular.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/macros.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/matcher-interface.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/result.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/search.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/protect.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/apply.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/treeprint.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/matching.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/rete-match.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/meta-predicates.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/interrupt.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/comforts.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/gen-hiers.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/utils.fasl
+;       Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/augment.fasl
+
+;;; Prodigy is loaded.
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/.linux-allegro-8.2/overload.fasl
+Warning: REFINE-NODE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: DO-SUBGOAL, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: EXPAND-GOAL, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-SELECT-NODE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-REJECT-NODES, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-SELECT-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-REJECT-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: RETE-GEN-BINDINGS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: FIRE-PREFER, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-SELECT-GOAL, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-REJECT-GOAL, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-A-OR-S-RULE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-R-OR-E-RULE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-SELECT-APPLIED-OPS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+Warning: MATCH-REJECT-APPLIED-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/customization/overload.lisp
+;     Loading /fs/junkfood/mcox/prodigy/working/system/jade/loader.lisp
+;     Loading /fs/junkfood/mcox/prodigy/working/system/monitors/loader.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/parameters.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/parameters.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/print-rules.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: EXPAND-BINDING, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: EXPAND-OPERATOR, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: EXPAND-BINDING-OR-APPLIED-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: DO-APPLY-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: APPLY-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/apply.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: BRIEF-PRINT-INST-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/treeprint.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: PP-RESULT, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/result.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: GENERATE-NODES, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: STATE-LOOP-P, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/apply.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: UNZIP-STATES-LOOP-P, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/apply.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+Warning: RUN, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/monitor.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: CANDIDATE-NODE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: CANDIDATE-GOALS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: MAINTAIN-STATE-AND-GOALS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: DO-STATE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/apply.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: PREPARE-PLAN, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: REALLY-EXPAND-OPERATOR, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: CLOSE-NODE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/apply.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+Warning: FIND-NODE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/matcher-interface.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/meta-preds.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/state-manipulate.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/sensing.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/test-battery.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/monitors/source/test-gtrans.lisp
+;       Loading /fs/junkfood/mcox/prodigy/working/system/customizations/find-branches.lisp
+
+;;; Monitors are loaded.
+Load PRODIGY/Agent? ;   Loading /fs/junkfood/mcox/prodigy/working/system/agent/loader.lisp
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/registrar.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/goal-extract.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/in-wrap.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/process-domain-file.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/file-fns.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/plan2frames.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/frame2alternate.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/patches3.fasl
+Warning: ASK-FOR-MORE-SOLUTIONS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/patches3.lisp
+Warning: ASK-FOR-MORE-SOLUTIONS-SHORTEST, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/patches3.lisp
+Warning: RUN-MULTIPLE-SOLS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/patches3.lisp
+Warning: ANNOUNCE-PLAN, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/treeprint.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/patches3.lisp
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/kqml.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/application-agent.fasl
+;     Fast loading /fs/junkfood/mcox/prodigy/working/system/agent/.linux-allegro-8.2/shell.fasl
+;     Loading /fs/junkfood/mcox/prodigy/working/system/agent/lisp-source/performatives.lisp
+Load AIMA code? n
+Load PAIP code? n
+Load Meta-AQUA? n
+Load Introspective Agent demo? n
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+CL-USER(1): (load-a-dist)
+; Loading /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: PREPARE-PLAN, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: DO-APPLY-OP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/monitors/source/execute.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: LITERAL-PRINT, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/assertions.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: NORMALIZE-AND-WRITE-STEP, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/plan2frames.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: SAVE-NORMALIZED-PLAN, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/plan2frames.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: PROCESS-INPUT, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/frame2alternate.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: PROCESS-FRAME, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/frame2alternate.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+Warning: GEN-FILE, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/frame2alternate.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/changed/plan2frames-and-state.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/system/agent/plans2vectors.lisp
+Warning: RESET, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/monitors/source/sensing.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/plans2vectors.lisp
+Warning: GET-PRECONDS, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/agent/latest-source/goal-extract.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/plans2vectors.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/system/agent/data-alt.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/system/agent/a-dist-eval.lisp
+Warning: *DATA-DIRECTORY*, :VARIABLE was defined in /fs/junkfood/mcox/prodigy/working/system/monitors/source/test-battery.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/system/agent/a-dist-eval.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/functions.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Reading Meta predicate: candidate-goal
+Reading Meta predicate: known
+Reading Meta predicate: expanded-operator
+Reading Prodigy-supplied predicate: diff
+Reading Meta predicate: expanded-goal
+Reading Meta predicate: type-of-object
+Reading Meta predicate: current-goal
+Reading Meta predicate: current-operator
+Reading Meta predicate: equal
+Reading Meta predicate: is-op-for-goal-p
+Warning: candidate-goal, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Warning: candidate-goals, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/monitors/source/patches.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Warning: is-op-for-goal-p, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Warning: find-inst-op-node, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Warning: next-goal, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Warning: find-inst-op-node-rec, :operator was defined in /fs/junkfood/mcox/prodigy/working/system/planner/meta-predicates.lisp and is now being defined in
+         /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Running load-domain.
+NIL
+CL-USER(2): (solve-problems 1000 t)
+
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/probs/p1.lisp
+Warning: P4::TIME-CHECK, :OPERATOR was defined in /fs/junkfood/mcox/prodigy/working/system/planner/search.lisp and is now being defined at the top level
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/probs/p2.lisp
+...
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/probs/p1000.lisp
+NIL
+CL-USER(3): (init-anomalous-run)
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/functions.lisp
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp
+Properties of 2278 symbols removed.
+Reading Meta predicate: candidate-goal
+Reading Meta predicate: known
+Reading Meta predicate: expanded-operator
+Reading Prodigy-supplied predicate: diff
+Reading Meta predicate: expanded-goal
+Reading Meta predicate: type-of-object
+Reading Meta predicate: current-goal
+Reading Meta predicate: current-operator
+Running load-domain.
+NIL
+CL-USER(4): (solve-problems 1000 t 300 
+		(format  nil 
+		"~adata-anomalous.txt"
+		*data-directory*))
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/probs/p1.lisp
+...
+; Loading /fs/junkfood/mcox/prodigy/working/domains/logistics/probs/p1000.lisp
+NIL
+CL-USER(5): (restore-file-names)
+#P"/fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp"
+#P"/fs/junkfood/mcox/prodigy/working/domains/logistics/domain.tmp"
+#P"/fs/junkfood/mcox/prodigy/working/domains/logistics/domain.lisp"
+CL-USER(6): 

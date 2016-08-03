@@ -1,0 +1,38 @@
+This file briefly explains how to run the bridges problem demo from the
+Prodigy4.0 User Interface 2.0. NOTE that this demo is best viewed with a
+separate goal tree display (select this option frm the view pull-down menu of
+the UI.
+
+Set the global parameters in the files shown in the table below. Load cl,
+answering y to the question "Load Prodigy?" and y to the subsequent question
+concerning monitors. At the lisp prompt do the folowing (unless running under
+Solaris, and then see installing.txt from the Distribution page off the Prodigy
+Home Web page):
+
+(prod-ui)
+
+(setf *sequence* '(T T T T T T T T T T T T T T T T T T T T T T T T T T T A  (ENABLES-MOVEMENT-OVER FORD1 YALU)))
+
+From the UI, choose Rationale-based Monitors from the Control Variables
+pull-down menu. A Sensing Monitors window will appear. Choose True, then OK.
+
+Then load domain goal-trans and problem bridges or bridges-town-cntr from the Load
+button of the UI. Choose "run" or "step" to execute the planner and view the
+demomstration.
+
+
+(dir) File                        Settings
+------------       ------------------------------------------------------------
+(*prodigy-root-directory*)
+system-loader.lisp *run-experiment* nil
+                   *use-monitors-p* t
+                   *load-monitors-p* t
+                   *load-prodigy-front-end* t
+                   *load-partial-goal-satisfac* nil
+                   *load-patches* t
+
+(*system-directory*/monitors/source)
+parameters.lisp    *o-level* 3
+                   *use-compiled-code* t
+
+                   

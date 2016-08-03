@@ -1,0 +1,346 @@
+1994-11-03 Rujith de Silva.  Output on problem 'test1
+
+Initial state:
+    (door-to-room door room) (pushable a) (pushable b)
+    (in-room b room) (in-room a room) (in-room robot room)
+    (arm-empty)
+Goal:
+    (next-to robot door) (next-to a b)
+
+===========================================================================
+First, run in vanilla Prodigy:
+
+USER(11): (run)
+Creating objects (a b) of type box
+Creating object room of type room
+Creating object door of type door
+
+  2 n2 (done)
+  4 n4 <*finish*>
+  5   n5 (next-to robot door)
+        ((next-to a b))
+  6   n6 goto-object ...no choices for bindings
+  6   n7 push-box ...no choices for bindings
+  6   n8 put-down ...no choices for bindings
+  6   n9 put-down-next-to ...no choices for bindings
+  7   n11 <goto-door door room>
+  8   n12 <GOTO-DOOR DOOR ROOM>
+        ((next-to a b))
+  9   n13 (next-to a b)
+ 10   n14 goto-object ...no choices for bindings
+ 11   n16 <push-box b a room>
+        (<push-box a b room>)
+ 12     n17 (next-to robot b)
+ 14     n19 <goto-object b room>
+Applying #<goto-object [<o> b] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 14     n22 <push-box a b room>
+ 15       n23 (next-to robot a)
+ 17       n25 <goto-object a room>
+Applying #<goto-object [<o> a] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 17       n28 <push-box b a room> ...goal loop with node 17
+ 17       n30 <put-down a>
+ 18         n31 (holding a)
+ 19         n32 pick-up ...goal loop with node 23
+
+ 15       n23 (next-to robot a)
+ 17       n34 <put-down-next-to a b room> ...goal loop with node 17
+ 16       n35 goto-door ...no choices for bindings
+ 16       n36 push-to-door ...no choices for bindings
+
+ 12     n17 (next-to robot b)
+ 14     n38 <put-down b>
+ 15       n39 (holding b)
+ 16       n40 pick-up ...goal loop with node 17
+
+ 12     n17 (next-to robot b)
+ 14     n42 <put-down-next-to b a room>
+ 15       n43 (holding b)
+            ((next-to robot a))
+ 16       n44 pick-up ...goal loop with node 17
+
+ 12     n17 (next-to robot b)
+ 13     n45 goto-door ...no choices for bindings
+ 13     n46 push-to-door ...no choices for bindings
+
+ 10   n15 push-box
+ 11   n47 <push-box a b room>
+ 12     n48 (next-to robot a)
+ 14     n50 <goto-object a room>
+Applying #<goto-object [<o> a] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 14     n53 <push-box b a room>
+ 15       n54 (next-to robot b)
+ 17       n56 <goto-object b room>
+Applying #<goto-object [<o> b] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 17       n59 <push-box a b room> ...goal loop with node 48
+ 17       n61 <put-down b>
+ 18         n62 (holding b)
+ 19         n63 pick-up ...goal loop with node 54
+
+ 15       n54 (next-to robot b)
+ 17       n65 <put-down-next-to b a room> ...goal loop with node 48
+ 16       n66 goto-door ...no choices for bindings
+ 16       n67 push-to-door ...no choices for bindings
+
+ 12     n48 (next-to robot a)
+ 14     n69 <put-down a>
+ 15       n70 (holding a)
+ 16       n71 pick-up ...goal loop with node 48
+
+ 12     n48 (next-to robot a)
+ 14     n73 <put-down-next-to a b room>
+ 15       n74 (holding a)
+            ((next-to robot b))
+ 16       n75 pick-up ...goal loop with node 48
+
+ 12     n48 (next-to robot a)
+ 13     n76 goto-door ...no choices for bindings
+ 13     n77 push-to-door ...no choices for bindings
+
+  9   n13 (next-to a b)
+ 10   n78 put-down ...no choices for bindings
+ 11   n80 <put-down-next-to b a room>
+        (<put-down-next-to a b room>)
+ 12     n81 (holding b)
+          ((next-to robot a))
+ 13     n82 pick-up ...no choices for bindings (I tried)
+
+ 11   n80 <put-down-next-to b a room>
+        (<put-down-next-to a b room>)
+ 12     n83 (next-to robot a)
+ 14     n85 <goto-object a room>
+Applying #<goto-object [<o> a] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 15     n85 <goto-object a room>
+ 16     n87 (holding b)
+ 17     n88 pick-up ...no choices for bindings (I tried)
+
+ 12     n83 (next-to robot a)
+ 14     n90 <push-box b a room>
+ 15       n91 (next-to robot b)
+            ((holding b))
+ 17       n93 <goto-object b room>
+Applying #<goto-object [<o> b] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 18       n93 <goto-object b room>
+ 19     n95 (holding b)
+ 20     n96 pick-up ...no choices for bindings (I tried)
+
+ 15       n91 (next-to robot b)
+            ((holding b))
+ 17       n98 <push-box a b room> ...goal loop with node 83
+ 17       n100 <put-down b>
+ 18         n101 (holding b)
+ 19         n102 pick-up ...no choices for bindings (I tried)
+
+ 15       n91 (next-to robot b)
+            ((holding b))
+ 17       n104 <put-down-next-to b a room> ...goal loop with node 83
+ 16       n105 goto-door ...no choices for bindings
+ 16       n106 push-to-door ...no choices for bindings
+
+ 14     n90 <push-box b a room>
+ 15     n107 (holding b)
+ 16     n108 pick-up ...no choices for bindings (I tried)
+
+ 12     n83 (next-to robot a)
+ 14     n110 <put-down a>
+ 15       n111 (holding a)
+            ((holding b))
+ 16       n112 pick-up ...goal loop with node 83
+
+ 12     n83 (next-to robot a)
+ 14     n114 <put-down-next-to a b room>
+ 15       n115 (holding a)
+            ((next-to robot b) (holding b))
+ 16       n116 pick-up ...goal loop with node 83
+
+ 12     n83 (next-to robot a)
+ 13     n117 goto-door ...no choices for bindings
+ 13     n118 push-to-door ...no choices for bindings
+
+ 10   n79 put-down-next-to
+ 11   n119 <put-down-next-to a b room>
+ 12     n120 (holding a)
+          ((next-to robot b))
+ 13     n121 pick-up ...no choices for bindings (I tried)
+
+ 11   n119 <put-down-next-to a b room>
+ 12     n122 (next-to robot b)
+ 14     n124 <goto-object b room>
+Applying #<goto-object [<o> b] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 15     n124 <goto-object b room>
+ 16     n126 (holding a)
+ 17     n127 pick-up ...no choices for bindings (I tried)
+
+ 12     n122 (next-to robot b)
+ 14     n129 <push-box a b room>
+ 15       n130 (next-to robot a)
+            ((holding a))
+ 17       n132 <goto-object a room>
+Applying #<goto-object [<o> a] [<room> room] [<other> ()]> violates goal-protection.
+ ...applying leads to state loop.
+ 18       n132 <goto-object a room>
+ 19     n134 (holding a)
+ 20     n135 pick-up ...no choices for bindings (I tried)
+
+ 15       n130 (next-to robot a)
+            ((holding a))
+ 17       n137 <push-box b a room> ...goal loop with node 122
+ 17       n139 <put-down a>
+ 18         n140 (holding a)
+ 19         n141 pick-up ...no choices for bindings (I tried)
+
+ 15       n130 (next-to robot a)
+            ((holding a))
+ 17       n143 <put-down-next-to a b room> ...goal loop with node 122
+ 16       n144 goto-door ...no choices for bindings
+ 16       n145 push-to-door ...no choices for bindings
+
+ 14     n129 <push-box a b room>
+ 15     n146 (holding a)
+ 16     n147 pick-up ...no choices for bindings (I tried)
+
+ 12     n122 (next-to robot b)
+ 14     n149 <put-down b>
+ 15       n150 (holding b)
+            ((holding a))
+ 16       n151 pick-up ...goal loop with node 122
+
+ 12     n122 (next-to robot b)
+ 14     n153 <put-down-next-to b a room>
+ 15       n154 (holding b)
+            ((next-to robot a) (holding a))
+ 16       n155 pick-up ...goal loop with node 122
+
+ 12     n122 (next-to robot b)
+ 13     n156 goto-door ...no choices for bindings
+ 13     n157 push-to-door ...no choices for bindings
+
+  9   n13 (next-to a b)
+ 10   n158 goto-door ...no choices for bindings
+ 10   n159 push-to-door ...no choices for bindings
+
+  7   n11 <goto-door door room>
+  8   n160 (next-to a b)
+  9   n161 goto-object ...no choices for bindings
+ 10   n163 <push-box b a room>
+        (<push-box a b room>)
+ 11     n164 (next-to robot b)
+ 13     n166 <goto-object b room>
+ 14     n167 <GOTO-OBJECT B ROOM>
+ 15   n168 <PUSH-BOX B A ROOM>
+ 15   n169 <GOTO-DOOR DOOR ROOM>
+Achieved top-level goals.
+
+Solution:
+	<goto-object b room>
+	<push-box b a room>
+	<goto-door door room>
+
+#<PRODIGY result: t, 28.967 secs, 169 nodes, 1 sol>
+
+
+===========================================================================
+Next, learn from the trace:
+
+USER(12): (learn-clobberings)
+PROOF that achieving (next-to *a *b)
+    clobbers the victim (next-to robot *door)
+    if (arm-empty)
+    if statics (~ carriable *b) (~ carriable *a):
+(next-to *a *b) may be achieved
+  by <put-down-next-to *b *a *room4>,
+    whose precondition incompatible with (arm-empty)
+    (holding *b) may be achieved
+      by <pick-up *b>,
+        whose static precondition (carriable *b) is unmet.
+  by <put-down-next-to *a *b *room3>,
+    whose precondition incompatible with (arm-empty)
+    (holding *a) may be achieved
+      by <pick-up *a>,
+        whose static precondition (carriable *a) is unmet.
+  by <push-box *b *a *room2>,
+    which deletes the victim.
+  by <push-box *a *b *room1>,
+    which deletes the victim.
+
+PROOF that achieving (next-to *robot *a)
+    clobbers the victim (next-to *robot *door)
+    if (arm-empty):
+(next-to *robot *a) may be achieved
+  by <put-down-next-to *a *other-ob4 *room5>,
+    whose precondition (holding *a) fails as for <put-down *a>.
+  by <put-down *a>,
+    whose precondition incompatible with (arm-empty)
+    (holding *a) may be achieved
+      by <pick-up *a>,
+        whose precondition (next-to robot *a) causes a goal-loop.
+  by <push-box *box2 *a *room3>,
+    which deletes the victim.
+  by <goto-object *a *room1>,
+    which deletes the victim.
+
+(#<GOAL-PROOF (t next-to *a *b)> #<GOAL-PROOF (t next-to *robot *a)>)
+
+
+===========================================================================
+Then, re-run and see how performance has improved:
+
+USER(13): (run)
+Creating objects (a b) of type box
+Creating object room of type room
+Creating object door of type door
+
+  2 n2 (done)
+  4 n4 <*finish*>
+  5   n5 (next-to robot door)
+        ((next-to a b))
+  6   n6 goto-object ...no choices for bindings
+  6   n7 push-box ...no choices for bindings
+  6   n8 put-down ...no choices for bindings
+  6   n9 put-down-next-to ...no choices for bindings
+  7   n11 <goto-door door room>
+Applying #<goto-door [<door> door] [<room> room] [<other> ()]> leads to goal-clobbering.
+ ...applying leads to state loop.
+  8   n11 <goto-door door room>
+  9   n13 (next-to a b)
+ 10   n14 goto-object ...no choices for bindings
+ 10   n16 <push-box b a room>
+        (<push-box a b room>)
+ 11     n17 (next-to robot b)
+ 13     n19 <goto-object b room>
+ 14     n20 <GOTO-OBJECT B ROOM>
+ 15   n21 <PUSH-BOX B A ROOM>
+ 15   n22 <GOTO-DOOR DOOR ROOM>
+Achieved top-level goals.
+
+Solution:
+	<goto-object b room>
+	<push-box b a room>
+	<goto-door door room>
+
+#<PRODIGY result: t, 2.05 secs, 22 nodes, 1 sol>
+USER(14):
+
+
+===========================================================================
+Show usage of learned rules in another, similar, problem (test2) in same
+domain:
+Initial state:
+    (door-to-room door room1) (door-to-room door room2)
+    (connects door room1 room2) (door-open door) (pushable a)
+    (pushable b) (in-room b room1) (in-room a room1)
+    (in-room robot room1) (arm-empty)
+Goal:
+    (next-to robot door) (next-to a b)
+
+Without learned rules, no solution found in 5000 nodes:
+    #<PRODIGY result: nil, 993.583 secs, 5000 nodes, 0 sol>
+
+With learned rules:
+    #<PRODIGY result: t, 2.8 secs, 22 nodes, 1 sol>

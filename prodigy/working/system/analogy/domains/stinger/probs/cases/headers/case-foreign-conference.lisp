@@ -1,0 +1,50 @@
+
+(setf result '(
+   (time 36.433)
+   (nodes 319)
+   (exhaustedp nil)
+   (solutionp t)
+   (solution-length 7)
+   (solution ((go researcher georgiatech postoffice atlanta) (pick-up researcher passport1 postoffice) (go researcher postoffice hartsfield atlanta)
+              (go researcher hartsfield kinkos atlanta) (pick-up researcher akr kinkos) (go researcher kinkos hartsfield atlanta)
+              (fly-international researcher passport1 usa hartsfield atlanta usa athensport iraklion greece)))))
+
+(setf problem-solved 
+   "/afs/cs.cmu.edu/user/centaur/Research/Prodigy/domains/stinger/probs/foreign-conference")
+(setf goal '((in-city-p researcher iraklion) (holding researcher akr)))
+
+(setf case-objects '((usa country) (uk country) (greece country) (atlanta city) (boston city) (washington city) (inverness city) (iraklion city)
+                     (hartsfield airport) (athensport airport) (gatwick airport) (bostonport airport) (dulles airport) (georgiatech location)
+                     (kinkos location) (postoffice location) (kingstavern location) (researcher person) (passport1 passport) (akr presentation)
+                     (luggage1 luggage)))
+
+(setf insts-to-vars '(
+   (usa . <country18>) 
+   (uk . <country4>) 
+   (greece . <country90>) 
+   (atlanta . <city79>) 
+   (boston . <city66>) 
+   (washington . <city26>) 
+   (inverness . <city8>) 
+   (iraklion . <city13>) 
+   (hartsfield . <airport24>) 
+   (athensport . <airport59>) 
+   (gatwick . <airport70>) 
+   (bostonport . <airport20>) 
+   (dulles . <airport71>) 
+   (georgiatech . <location98>) 
+   (kinkos . <location25>) 
+   (postoffice . <location1>) 
+   (kingstavern . <location31>) 
+   (researcher . <person42>) 
+   (passport1 . <passport59>) 
+   (akr . <presentation1>) 
+   (luggage1 . <luggage63>) 
+))
+
+(setf footprint-by-goal '(
+   ((holding researcher akr) (in-city-l kinkos atlanta) (~ (immobile akr)) (at-loc-o akr kinkos) (in-city-l hartsfield atlanta)
+    (at-loc-p researcher georgiatech) (in-city-p researcher atlanta) (in-city-l georgiatech atlanta) (in-city-l postoffice atlanta))
+   ((in-city-p researcher iraklion) (in-city-l hartsfield atlanta) (in-country atlanta usa) (in-city-l athensport iraklion) (in-country iraklion greece)
+    (nationality researcher usa) (in-city-l kinkos atlanta) (~ (immobile passport1)) (at-loc-o passport1 postoffice) (at-loc-p researcher georgiatech)
+    (in-city-p researcher atlanta) (in-city-l georgiatech atlanta) (in-city-l postoffice atlanta))))

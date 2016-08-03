@@ -1,0 +1,84 @@
+
+This file contains descriptions of flags and functions useful to
+PRODIGY users.
+
+Please include the following information:
+    - flags
+    - how to set those flags
+    - how to use the code (including syntax)
+    - limitations of the new code
+    - when it might be useful
+
+============================================================================
+April 20, 1995 (Karen & Alicia)
+
+(run) can now run without recreating all the objects. (This allows
+the user to compare objects between runs)
+
+This feature is *meant* to be used between different runs of the
+same problem, but can also be used between runs of different
+problems in the same domain -- but BEWARE of extraneous objects
+that don't get deleted.
+
+Things get cleared out between domains.
+
+(run :same-objects nil) 
+  - same as (run)
+  - will delete all objects and create them anew
+(run :same-objects t)
+  - uses same objects as previous (run)
+  - If current run has _more_ objects than
+    previous, then will print a warning:
+      Warning: 5TH_AVE is not an object in problem space MAP.
+  - If current run has _fewer_ objects than
+    previous, then BEWARE: the matcher will still
+    use the old objects!
+(run :same-objects :warn)
+  - same as (run :same-objects t)
+(run :same-objects :silent)
+  - same as (run :same-objects t) but will
+    not print the warning.
+
+
+============================================================================
+March 16, 1995 (Karen & Peter)
+
+SABA/SAVTA Is now in prodigy.
+
+SABA's default behaviour is to postpone applying until there is nothing
+left to subgoal on. Then it will use a simple heuristic to select which
+op is in fact the best one to apply.
+
+To check what the current running mode is:
+    p4::*running-mode*
+
+To set the running modes:
+    (set-running-mode 'saba)
+    (set-running-mode 'savta)
+
+============================================================================
+March 16, 1995 (Karen)
+
+Apply Op Control Rules are now available for SABA.
+
+They help SABA decide between a set of applicable ops.
+
+rule syntax:
+    (control-rule REJECT-MORE-DISTANT-LOCS
+       (if (and (candidate-applicable-op
+                            (GOTO-DELIVER-LOC <who1> <item1> <loc1> <cl1>))
+                (candidate-applicable-op
+                            (GOTO-DELIVER-LOC <who> <item> <newloc> <curloc>))
+                (true-in-state (robot-in-room <roboroom>))
+                (closer <roboroom> <loc1> <newloc>)))
+       (then reject applied-op
+                    (GOTO-DELIVER-LOC <who> <item> <newloc> <curloc>)))
+    
+    (control-rule ANALOGY-APPLICABLE-OP
+              (if (and (analogy-get-guidance-applicable-op <a>)))
+              (then select applied-op <a>))
+    
+available meta-predicates:
+    (candidate-applicable-op <a>)
+    (candidate-applicable-op (op-name <a> <b>))
+
