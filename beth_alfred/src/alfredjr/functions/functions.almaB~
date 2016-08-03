@@ -1,0 +1,45 @@
+/*
+Name: 		alfred_functions.alma
+Title: 		Alfred Functions
+Author: 	Scott Fults
+
+Created: 	7/01/08
+Modified:
+		7/01/08 by Scott Fults, added ID generator
+
+Description:	This file defines the functions used by Alfred.
+
+
+To-Do:		
+
+Calls:
+
+*/
+
+
+/*
+get_id
+
+Form:		isa(next_id, M)
+
+Summary:	When isa(get_id, X) is true, a new, unique ID number 
+		is created for X (a concept) by asserting has(X, id_num, N)
+		where N is the number created by adding 1 to the most 
+		recently used ID number.
+
+Parameters:	X, the item to receive the ID number; N, the ID number
+
+*/ 
+
+	// Set initial value of the most recent number used as 0.
+	+isa(most_recent_ID_number, 0).
+
+	// If X isa 'get_id' and the most recent ID number used is M,
+	// then N = M + 1, and X has ID_num N, the new most recent
+	// ID number is N, and X is no longer 'get_id'.
+	+isa(get_id, X) & is(most_recent_ID_number, M) & eval("alma.callfile.AlmaInterger.add", M, [1], N)
+		-> has(X, id_num, N) & isa(most_recent_ID_number, N) & -isa(get_id, X).
+
+
+
+
