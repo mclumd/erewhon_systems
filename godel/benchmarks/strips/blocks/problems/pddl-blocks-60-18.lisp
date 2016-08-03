@@ -1,0 +1,38 @@
+;;---------------------------------------------
+
+(define (problem p60_18)
+(:domain blocks)
+(:objects  b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 b16 b17 b18 b19 b20 b21 b22 b23 b24 b25 b26 b27 b28 b29 b30 b31 b32 b33 b34 b35 b36 b37 b38 b39 b40 b41 b42 b43 b44 b45 b46 b47 b48 b49 b50 b51 b52 b53 b54 b55 b56 b57 b58 b59 b60)
+(:init
+	(arm-empty)
+	(on-table b1) (on b2 b1) (on b3 b2) (on b6 b3) (on b15 b6) (on b21 b15) (on b22 b21) (on b24 b22) (on b35 b24) (on b37 b35) (on b44 b37) (on b51 b44) (on b52 b51) (clear b52)
+	(on-table b4) (on b9 b4) (on b12 b9) (on b19 b12) (on b30 b19) (on b47 b30) (on b50 b47) (clear b50)
+	(on-table b5) (on b38 b5) (on b46 b38) (on b48 b46) (on b57 b48) (clear b57)
+	(on-table b7) (on b10 b7) (on b14 b10) (on b17 b14) (on b33 b17) (on b41 b33) (on b42 b41) (on b45 b42) (on b49 b45) (on b54 b49) (on b55 b54) (on b56 b55) (clear b56)
+	(on-table b8) (on b13 b8) (on b25 b13) (clear b25)
+	(on-table b11) (on b16 b11) (on b27 b16) (on b39 b27) (on b40 b39) (clear b40)
+	(on-table b18) (on b20 b18) (on b26 b20) (on b60 b26) (clear b60)
+	(on-table b23) (on b28 b23) (on b34 b28) (on b43 b34) (clear b43)
+	(on-table b29) (on b32 b29) (on b36 b32) (clear b36)
+	(on-table b31) (clear b31)
+	(on-table b53) (clear b53)
+	(on-table b58) (on b59 b58) (clear b59)
+)
+(:goal
+	(and (arm-empty)
+	(on-table b1) (on b5 b1) (on b8 b5) (on b10 b8) (on b13 b10) (on b25 b13) (on b26 b25) (on b28 b26) (on b32 b28) (on b33 b32) (on b39 b33) (on b55 b39) (on b56 b55) (clear b56)
+	(on-table b2) (on b3 b2) (on b9 b3) (on b18 b9) (on b20 b18) (on b31 b20) (on b40 b31) (on b42 b40) (on b49 b42) (on b50 b49) (on b52 b50) (on b54 b52) (on b57 b54) (clear b57)
+	(on-table b4) (on b11 b4) (on b35 b11) (clear b35)
+	(on-table b6) (on b16 b6) (on b19 b16) (on b27 b19) (on b36 b27) (on b38 b36) (clear b38)
+	(on-table b7) (on b14 b7) (on b34 b14) (on b53 b34) (clear b53)
+	(on-table b12) (on b17 b12) (on b23 b17) (on b43 b23) (clear b43)
+	(on-table b15) (on b44 b15) (on b48 b44) (clear b48)
+	(on-table b21) (on b22 b21) (on b24 b22) (on b29 b24) (clear b29)
+	(on-table b30) (on b46 b30) (on b47 b46) (on b58 b47) (clear b58)
+	(on-table b37) (on b41 b37) (on b45 b41) (on b60 b45) (clear b60)
+	(on-table b51) (clear b51)
+	(on-table b59) (clear b59)
+))
+)
+
+

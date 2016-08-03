@@ -1,0 +1,2221 @@
+cla : 4
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/gdp.asd into #<The ASDF0 package>
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/shop-asd.asd into
+; #<The ASDF1 package>
+; Registering #<SYSTEM :SHOP-ASD> as SHOP-ASD
+; Registering #<SYSTEM :GDP> as GDP
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/shop2.asd into
+; #<The ASDF0 package>
+; Registering #<SYSTEM :SHOP2> as SHOP2
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/shop2-theorem-prover.asd into
+; #<The ASDF0 package>
+; Registering #<SYSTEM :SHOP2-THEOREM-PROVER> as SHOP2-THEOREM-PROVER
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/shop2-unifier.asd into
+; #<The ASDF0 package>
+; Registering #<SYSTEM :SHOP2-UNIFIER> as SHOP2-UNIFIER
+; Loading system definition from
+; /home/svikas/research/code/GDP/trunk/shop2-common.asd into
+; #<The ASDF0 package>
+; Registering #<SYSTEM :SHOP2-COMMON> as SHOP2-COMMON
+
+
+SHOP2 version 2.7.0
+Copyright (C) 2002  University of Maryland.
+Modifications by SIFT, LLC personnel Copyright (C) 2004-2008 SIFT, LLC.
+This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
+KIND, either express or implied.  This software is distributed under an
+MPL/GPL/LGPL triple license.  For details, see the software source file.
+; While compiling BINDINGS-OF-OPERATOR-ACHIEVING-GOAL in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable DEL-OP is never used.
+; While compiling BINDINGS-OF-GDR-ACHIEVING-GOAL in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable SUBGOALS is never used.
+Warning: Variable TASK-CONDITION is never used.
+; While compiling ORDER-OPTIONS in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable MAIN-GOAL is never used.
+; While compiling OPTION-LIST-FOR-TASK in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable NOT-USE-HEURISTIC is never used.
+Warning: Variable OUTPUT2 is never used.
+; While compiling (:INTERNAL OPTION-LIST-FOR-TASK 1) in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable KEY is never used.
+; While compiling (:INTERNAL OPTION-LIST-FOR-TASK 0) in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable KEY is never used.
+Warning: COPY-TASK-NODE, :OPERATOR was defined in
+         /home/svikas/research/code/GDP/trunk/gdp-decls.lisp and is now
+         being defined in
+         /home/svikas/research/code/GDP/trunk/gdp-utils.lisp
+; While compiling ACTION? in
+;   /home/svikas/research/code/GDP/trunk/gdp-utils.lisp:
+Warning: Variable METHODS is never used.
+Warning: COMPILE-FILE warned while performing
+         #<COMPILE-OP NIL @ #x20497d0a> on
+         #<CL-FILE-WITH-DEFCONSTANTS "gdp" "gdp-utils">.
+Warning: COMPILE-FILE failed while performing
+         #<COMPILE-OP NIL @ #x20497d0a> on
+         #<CL-FILE-WITH-DEFCONSTANTS "gdp" "gdp-utils">.
+Warning: COPY-TASK-NODE, :OPERATOR was defined in
+         /home/svikas/research/code/GDP/trunk/gdp-decls.lisp and is now
+         being defined in
+         /home/svikas/research/code/GDP/trunk/gdp-utils.lisp
+; While compiling PLANNING-GRAPH-MODIFY in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable PG-STATE is never used.
+; While compiling (:INTERNAL PLANNING-GRAPH-MODIFY 1) in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable KEY is never used.
+; While compiling (:INTERNAL PLANNING-GRAPH-MODIFY 0) in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable KEY is never used.
+; While compiling PLANNING-GRAPH-RP-HEURISTIC-SIMPLE in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Free reference to undeclared variable OUTPUT assumed special.
+Warning: Free reference to undeclared variable OUTPUT assumed special.
+Warning: Free reference to undeclared variable OUTPUT assumed special.
+Warning: Free reference to undeclared variable OUTPUT assumed special.
+; While compiling APPLICABLE-ACTIONS-OPTIMIZED in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable PG-ATOMS is never used.
+; While compiling (:INTERNAL APPLICABLE-ACTIONS-OPTIMIZED 0) in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable OP-NAME is never used.
+; While compiling PLANNING-GRAPH-EXPAND in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable AA-TIME is never used.
+; While compiling (:INTERNAL APPLICABLE-ACTIONS 0) in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable OP-NAME is never used.
+; While compiling PLANNING-GRAPH-LEVEL-FF in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: INVOKE-CLASSICAL-PLANNER should be given exactly 3 arguments.
+         It was given 4 arguments.
+Problem detected when processing
+       (INVOKE-CLASSICAL-PLANNER "route-finding" CURRENT-STATE ...)
+inside (LET ((RELAXED-PLAN #))
+         (IF (EQ RELAXED-PLAN 'FAIL) 'INFINITY ...)) ..
+inside (BLOCK PLANNING-GRAPH-LEVEL-FF (LET (#) (IF # 'INFINITY ...))) ..
+Warning: Free reference to undeclared variable GOAL-LIST assumed
+         special.
+Warning: Free reference to undeclared variable *PROBLEM-OBJECTS*
+         assumed special.
+Warning: Variable SUBGOALS is never used.
+; While compiling PLANNING-GRAPH-LEVEL in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable GRAPH-ACTIONS is never used.
+Warning: Variable GRAPH-ATOMS is never used.
+; While compiling PLANNING-GRAPH-RP-HEURISTIC in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Variable GRAPH-ACTIONS is never used.
+Warning: Variable GRAPH-ATOMS is never used.
+; While compiling DEF-OPERATOR-TYPE in
+;   /home/svikas/research/code/GDP/trunk/ff-heuristic.lisp:
+Warning: Free reference to undeclared variable *OP-TYPES* assumed
+         special.
+Warning: Free reference to undeclared variable *OP-TYPES* assumed
+         special.
+Warning: COMPILE-FILE warned while performing
+         #<COMPILE-OP NIL @ #x20497d0a> on
+         #<CL-FILE-WITH-DEFCONSTANTS "gdp" "ff-heuristic">.
+Warning: COMPILE-FILE failed while performing
+         #<COMPILE-OP NIL @ #x20497d0a> on
+         #<CL-FILE-WITH-DEFCONSTANTS "gdp" "ff-heuristic">.
+
+Defining domain LOGISTICS...
+
+Defining problem LOG-RAN-15-1 ...
+current package is #<The GDP package>
+my-problem is #<PROBLEM LOG-RAN-15-1> 
+tasks outputs : (ORDERED (TASK OBJ-AT PACKAGE1 LOC8-1)
+                 (TASK OBJ-AT PACKAGE2 LOC2-1)
+                 (TASK OBJ-AT PACKAGE3 LOC2-3)
+                 (TASK OBJ-AT PACKAGE4 LOC6-2)
+                 (TASK OBJ-AT PACKAGE5 LOC1-1)
+                 (TASK OBJ-AT PACKAGE6 LOC6-2)
+                 (TASK OBJ-AT PACKAGE7 LOC6-3)
+                 (TASK OBJ-AT PACKAGE8 LOC1-1)
+                 (TASK OBJ-AT PACKAGE9 LOC4-2)
+                 (TASK OBJ-AT PACKAGE10 LOC8-3)
+                 (TASK OBJ-AT PACKAGE11 LOC3-2)
+                 (TASK OBJ-AT PACKAGE12 LOC3-3)
+                 (TASK OBJ-AT PACKAGE13 LOC3-2)
+                 (TASK OBJ-AT PACKAGE14 LOC6-3)
+                 (TASK OBJ-AT PACKAGE15 LOC5-1))
+goal list : ((OBJ-AT PACKAGE1 LOC8-1) (OBJ-AT PACKAGE2 LOC2-1)
+             (OBJ-AT PACKAGE3 LOC2-3) (OBJ-AT PACKAGE4 LOC6-2)
+             (OBJ-AT PACKAGE5 LOC1-1) (OBJ-AT PACKAGE6 LOC6-2)
+             (OBJ-AT PACKAGE7 LOC6-3) (OBJ-AT PACKAGE8 LOC1-1)
+             (OBJ-AT PACKAGE9 LOC4-2) (OBJ-AT PACKAGE10 LOC8-3)
+             (OBJ-AT PACKAGE11 LOC3-2) (OBJ-AT PACKAGE12 LOC3-3)
+             (OBJ-AT PACKAGE13 LOC3-2) (OBJ-AT PACKAGE14 LOC6-3)
+             (OBJ-AT PACKAGE15 LOC5-1)) 
+Solving problem LOG-RAN-15-1 ... 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE5 LOC5-1 LOC1-1
+                         LOC5-1 LOC1-1 CITY5 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE5 LOC5-1
+                         LOC1-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE5 LOC5-1
+                         LOC1-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE5 LOC5-1
+                         LOC1-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE4 LOC6-3 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE1 LOC8-3 LOC8-1
+                         CITY8 TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE5 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE5 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE5 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE1 LOC8-1)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE5 LOC1-1)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE4 LOC6-3 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE1 LOC8-3 LOC8-1
+                         CITY8 TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE4 LOC6-3 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE1 LOC8-3 LOC8-1
+                         CITY8 TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE1 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE1 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE1 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)
+                                       (OBJ-AT PACKAGE1 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE4 LOC6-3 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE4 LOC6-3 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE4 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE4 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE4 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE4 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE3 LOC2-2 LOC2-3
+                         CITY2 TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE3 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE3 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE3 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE3 LOC2-3)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE2 LOC1-1 LOC2-1
+                         LOC1-1 LOC2-1 CITY1 CITY2)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE2 LOC1-1
+                         LOC2-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE2 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE2 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE2 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)
+                                       (OBJ-AT PACKAGE2 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-3 LOC7-1 LOC8-1 CITY7 CITY8)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE10 LOC7-1
+                         LOC8-1 LOC7-1 LOC8-1 CITY7 CITY8)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE10 LOC7-1
+                         LOC8-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE10 LOC7-1
+                         LOC8-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE10 LOC7-1
+                         LOC8-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE10 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE10 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE10 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE10 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-3 LOC7-1 LOC6-1 CITY7 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE10 LOC8-1 LOC8-3
+                         CITY8 TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE14 LOC7-1
+                         LOC6-1 LOC7-1 LOC6-1 CITY7 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE14 LOC7-1
+                         LOC6-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE14 LOC7-1
+                         LOC6-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE14 LOC7-1
+                         LOC6-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE14 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE14 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE14 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE14 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE14 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE10 LOC8-1 LOC8-3
+                         CITY8 TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE10 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE10 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE10 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE10 LOC8-3)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE14 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE14 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE14 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE14 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE14 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE14 LOC6-3)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-2
+                         LOC3-2 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC7-2 LOC7-1
+                         CITY7 TRUCK7-1 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK7-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK7-1 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC7-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE13 LOC7-1
+                         LOC3-1 LOC7-1 LOC3-1 CITY7 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE13 LOC7-1
+                         LOC3-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE13 LOC7-1
+                         LOC3-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE13 LOC7-1
+                         LOC3-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC7-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE13 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE13 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE13 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-3 LOC6-2
+                         LOC2-1 LOC6-1 CITY2 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC2-3 LOC2-1
+                         CITY2 TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE6 LOC2-1 LOC6-1
+                         LOC2-1 LOC6-1 CITY2 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE6 LOC2-1
+                         LOC6-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE6 LOC2-1
+                         LOC6-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE6 LOC2-1
+                         LOC6-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE6 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE6 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE6 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE6 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-2 LOC6-3
+                         LOC1-1 LOC6-1 CITY1 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-3)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC1-2 LOC1-1
+                         CITY1 TRUCK1-1 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK1-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK1-1 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE7 LOC1-1 LOC6-1
+                         LOC1-1 LOC6-1 CITY1 CITY6)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE7 LOC1-1
+                         LOC6-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE7 LOC1-1
+                         LOC6-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE7 LOC1-1
+                         LOC6-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE7 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE7 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE7 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE7 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-3 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE8 LOC1-1)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-3)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-3)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE8 LOC6-3 LOC6-1
+                         CITY6 TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE8 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE8 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE8 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC6-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE8 LOC6-1 LOC1-1
+                         LOC6-1 LOC1-1 CITY6 CITY1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE8 LOC6-1
+                         LOC1-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE8 LOC6-1
+                         LOC1-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE8 LOC6-1
+                         LOC1-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE8 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE8 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE8 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC1-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE8 LOC1-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-2 LOC4-2
+                         LOC5-1 LOC4-1 CITY5 CITY4)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC5-2 LOC5-1
+                         CITY5 TRUCK5-1 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK5-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK5-1 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE9 LOC5-1 LOC4-1
+                         LOC5-1 LOC4-1 CITY5 CITY4)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE9 LOC5-1
+                         LOC4-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE9 LOC5-1
+                         LOC4-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE9 LOC5-1
+                         LOC4-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE9 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE9 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE9 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC4-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE9 LOC4-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-2
+                         LOC3-3 LOC2-1 LOC3-1 CITY2 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC2-2 LOC2-1
+                         CITY2 TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE12 LOC2-1
+                         LOC3-1 LOC2-1 LOC3-1 CITY2 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE12 LOC2-1
+                         LOC3-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE12 LOC2-1
+                         LOC3-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE12 LOC2-1
+                         LOC3-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE12 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE12 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE12 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)
+                        (MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-2
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)
+                                       (OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE15 LOC8-2 LOC8-1
+                         CITY8 TRUCK8-1 LOC8-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE15 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE15 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE15 TRUCK8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK8-1 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC8-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE15 LOC8-1
+                         LOC5-1 LOC8-1 LOC5-1 CITY8 CITY5)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE15 LOC8-1
+                         LOC5-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE15 LOC8-1
+                         LOC5-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE15 LOC8-1
+                         LOC5-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC8-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE15 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE15 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE15 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC5-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE15 LOC5-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-3
+                         LOC3-2 LOC2-1 LOC3-1 CITY2 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC2-3 LOC2-1
+                         CITY2 TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK2-1 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC2-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-CITIES PACKAGE11 LOC2-1
+                         LOC3-1 LOC2-1 LOC3-1 CITY2 CITY3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are ((MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE11 LOC2-1
+                         LOC3-1 PLANE1)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE11 LOC2-1
+                         LOC3-1 PLANE2)
+                        (MOVE-OBJ-BETWEEN-AIRPORTS PACKAGE11 LOC2-1
+                         LOC3-1 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC2-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE11 PLANE3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-AIRPLANE PACKAGE11 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-AIRPLANE PACKAGE11 PLANE3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((AIRPLANE-AT PLANE3 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-1)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE13 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE13 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE13 LOC3-2)
+                                       (OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE6 LOC6-1 LOC6-2
+                         CITY6 TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE6 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)
+                                       (OBJ-AT PACKAGE6 LOC6-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE7 LOC6-1 LOC6-3
+                         CITY6 TRUCK6-1 LOC6-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE7 TRUCK6-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK6-1 LOC6-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)
+                                       (OBJ-AT PACKAGE7 LOC6-3)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE9 LOC4-1 LOC4-2
+                         CITY4 TRUCK4-1 LOC4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK4-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE9 TRUCK4-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK4-1 LOC4-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK4-1 LOC4-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK4-1 LOC4-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)
+                                       (OBJ-AT PACKAGE9 LOC4-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-2)
+                        (MOVE-OBJ-WITHIN-CITY PACKAGE12 LOC3-1 LOC3-3
+                         CITY3 TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE12 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-3)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE12 LOC3-3)
+                                       (OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are ((MOVE-OBJ-WITHIN-CITY PACKAGE11 LOC3-1 LOC3-2
+                         CITY3 TRUCK3-1 LOC3-3)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((IN-TRUCK PACKAGE11 TRUCK3-1)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((TRUCK-AT TRUCK3-1 LOC3-2)) 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?A2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 
+goal : ((OBJ-AT ?O ?L2)), task-goal : ((OBJ-AT PACKAGE11 LOC3-2)) 
+in bogag, bindings are NIL 

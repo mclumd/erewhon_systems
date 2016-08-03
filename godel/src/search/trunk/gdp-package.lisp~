@@ -1,0 +1,16 @@
+;; This file describes the GDP package, in which all of GDP's pre-process and search functionality and other auxiliary scripts and utilities are defined. 
+
+(defpackage :gdp
+  (:use :common-lisp :shop2)
+  (:export #:write-problem-as-pddl
+	   #:invoke-classical-planner
+	   #:domain-name-string
+	   #:process-ff-output
+
+	   #:task-node
+	   #:method-value
+	   #:option-value
+
+	   #:goal-decomposition-planner
+	   
+	   

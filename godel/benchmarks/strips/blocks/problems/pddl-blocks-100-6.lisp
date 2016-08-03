@@ -1,0 +1,37 @@
+;;---------------------------------------------
+
+(define (problem p100_6)
+(:domain blocks)
+(:objects  b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 b16 b17 b18 b19 b20 b21 b22 b23 b24 b25 b26 b27 b28 b29 b30 b31 b32 b33 b34 b35 b36 b37 b38 b39 b40 b41 b42 b43 b44 b45 b46 b47 b48 b49 b50 b51 b52 b53 b54 b55 b56 b57 b58 b59 b60 b61 b62 b63 b64 b65 b66 b67 b68 b69 b70 b71 b72 b73 b74 b75 b76 b77 b78 b79 b80 b81 b82 b83 b84 b85 b86 b87 b88 b89 b90 b91 b92 b93 b94 b95 b96 b97 b98 b99 b100)
+(:init
+	(arm-empty)
+	(on-table b1) (on b2 b1) (on b4 b2) (on b6 b4) (on b7 b6) (on b27 b7) (on b28 b27) (on b29 b28) (on b38 b29) (on b42 b38) (on b43 b42) (on b44 b43) (on b45 b44) (on b48 b45) (on b53 b48) (on b57 b53) (on b60 b57) (on b73 b60) (on b96 b73) (clear b96)
+	(on-table b3) (on b5 b3) (on b22 b5) (on b23 b22) (on b31 b23) (on b50 b31) (on b61 b50) (on b75 b61) (on b76 b75) (on b88 b76) (on b89 b88) (clear b89)
+	(on-table b8) (on b9 b8) (on b10 b9) (on b13 b10) (on b14 b13) (on b19 b14) (on b20 b19) (on b36 b20) (on b40 b36) (on b67 b40) (on b99 b67) (clear b99)
+	(on-table b11) (on b12 b11) (on b16 b12) (on b17 b16) (on b18 b17) (on b26 b18) (on b34 b26) (on b35 b34) (on b54 b35) (on b58 b54) (on b62 b58) (on b63 b62) (on b90 b63) (clear b90)
+	(on-table b15) (on b21 b15) (on b24 b21) (on b25 b24) (on b37 b25) (on b39 b37) (on b47 b39) (on b49 b47) (on b64 b49) (on b66 b64) (clear b66)
+	(on-table b30) (on b32 b30) (on b33 b32) (on b41 b33) (on b46 b41) (on b51 b46) (on b55 b51) (on b59 b55) (on b80 b59) (on b84 b80) (on b85 b84) (on b91 b85) (on b92 b91) (on b97 b92) (clear b97)
+	(on-table b52) (on b78 b52) (clear b78)
+	(on-table b56) (on b70 b56) (on b72 b70) (clear b72)
+	(on-table b65) (on b77 b65) (on b81 b77) (on b82 b81) (on b86 b82) (on b95 b86) (clear b95)
+	(on-table b68) (on b69 b68) (on b71 b69) (on b74 b71) (on b79 b74) (on b87 b79) (on b94 b87) (on b98 b94) (clear b98)
+	(on-table b83) (clear b83)
+	(on-table b93) (clear b93)
+	(on-table b100) (clear b100)
+)
+(:goal
+	(and (arm-empty)
+	(on-table b1) (on b2 b1) (on b4 b2) (on b5 b4) (on b9 b5) (on b10 b9) (on b11 b10) (on b17 b11) (on b18 b17) (on b20 b18) (on b23 b20) (on b27 b23) (on b63 b27) (on b69 b63) (on b75 b69) (on b76 b75) (on b80 b76) (on b91 b80) (clear b91)
+	(on-table b3) (on b12 b3) (on b16 b12) (on b31 b16) (on b32 b31) (on b39 b32) (on b40 b39) (on b48 b40) (on b52 b48) (on b53 b52) (on b66 b53) (on b73 b66) (on b82 b73) (on b84 b82) (on b87 b84) (clear b87)
+	(on-table b6) (on b7 b6) (on b8 b7) (on b13 b8) (on b15 b13) (on b24 b15) (on b26 b24) (on b30 b26) (on b42 b30) (on b45 b42) (on b49 b45) (on b55 b49) (on b56 b55) (on b60 b56) (on b70 b60) (on b72 b70) (on b85 b72) (clear b85)
+	(on-table b14) (on b22 b14) (on b35 b22) (on b41 b35) (on b43 b41) (clear b43)
+	(on-table b19) (on b21 b19) (on b37 b21) (on b46 b37) (on b50 b46) (on b62 b50) (on b79 b62) (on b93 b79) (clear b93)
+	(on-table b25) (on b28 b25) (on b29 b28) (on b34 b29) (on b51 b34) (on b54 b51) (on b57 b54) (on b59 b57) (on b61 b59) (on b74 b61) (on b81 b74) (on b86 b81) (on b94 b86) (on b96 b94) (on b97 b96) (on b100 b97) (clear b100)
+	(on-table b33) (on b36 b33) (on b38 b36) (on b47 b38) (on b65 b47) (on b68 b65) (on b95 b68) (on b98 b95) (on b99 b98) (clear b99)
+	(on-table b44) (on b58 b44) (on b77 b58) (on b89 b77) (clear b89)
+	(on-table b64) (on b67 b64) (on b71 b67) (on b78 b71) (on b83 b78) (on b92 b83) (clear b92)
+	(on-table b88) (on b90 b88) (clear b90)
+))
+)
+
+

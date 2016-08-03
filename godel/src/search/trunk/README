@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+
+For GNP
+-------
+
+Simply call GNP using : alisp -#! gnp-load.lisp <domain-file> <problem-file>
+
+----------------------------------------------------------------
+
+For SHOP2
+----------
+
+Currently there's also an option to scramble the methods in SHOP2 for experimental purposes. This can be supplied as an optional third argument, t if scrambled and nil if not.
+
+Once this is setup, simply call GNP using : alisp -#! shop2-load.lisp <domain-file> <problem-file> <to-be-scrambled?>.
+

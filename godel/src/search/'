@@ -1,0 +1,23 @@
+#include "state.h"
+#include "goal_list.h"
+
+#include <functional>
+
+class GDP_Search_Node {
+    private:
+    State *s;
+    GoalList *gl;
+
+    public:
+    GDP_Search_Node (State s, GoalList gl);
+    GDP_Search_Node (GDP_Search_Node &other);
+    bool operator== (GDP_Search_Node &other) const;
+    State *get_stateptr () {return s;}
+    GoalList *get_glptr () {return gl;} 
+};
+
+namespace std {
+    struct std::hash<GDP_Search_Node>;
+}
+
+

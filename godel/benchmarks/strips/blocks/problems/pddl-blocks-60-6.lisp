@@ -1,0 +1,35 @@
+;;---------------------------------------------
+
+(define (problem p60_6)
+(:domain blocks)
+(:objects  b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 b16 b17 b18 b19 b20 b21 b22 b23 b24 b25 b26 b27 b28 b29 b30 b31 b32 b33 b34 b35 b36 b37 b38 b39 b40 b41 b42 b43 b44 b45 b46 b47 b48 b49 b50 b51 b52 b53 b54 b55 b56 b57 b58 b59 b60)
+(:init
+	(arm-empty)
+	(on-table b1) (on b5 b1) (on b8 b5) (on b9 b8) (on b23 b9) (on b24 b23) (on b28 b24) (on b33 b28) (on b38 b33) (on b42 b38) (clear b42)
+	(on-table b2) (on b3 b2) (on b15 b3) (on b30 b15) (on b48 b30) (on b54 b48) (on b57 b54) (on b59 b57) (clear b59)
+	(on-table b4) (on b6 b4) (on b7 b6) (on b12 b7) (on b17 b12) (on b20 b17) (on b25 b20) (on b50 b25) (clear b50)
+	(on-table b10) (on b22 b10) (on b27 b22) (on b36 b27) (on b49 b36) (on b58 b49) (clear b58)
+	(on-table b11) (on b26 b11) (on b37 b26) (on b51 b37) (on b52 b51) (clear b52)
+	(on-table b13) (on b14 b13) (on b18 b14) (on b19 b18) (on b29 b19) (on b43 b29) (on b45 b43) (clear b45)
+	(on-table b16) (on b21 b16) (on b31 b21) (on b34 b31) (on b41 b34) (on b46 b41) (clear b46)
+	(on-table b32) (on b35 b32) (on b60 b35) (clear b60)
+	(on-table b39) (on b40 b39) (on b44 b40) (on b47 b44) (on b53 b47) (clear b53)
+	(on-table b55) (clear b55)
+	(on-table b56) (clear b56)
+)
+(:goal
+	(and (arm-empty)
+	(on-table b1) (on b2 b1) (on b11 b2) (on b18 b11) (on b32 b18) (on b36 b32) (on b37 b36) (on b41 b37) (on b54 b41) (clear b54)
+	(on-table b3) (on b4 b3) (on b5 b4) (on b13 b5) (on b14 b13) (on b21 b14) (on b25 b21) (clear b25)
+	(on-table b6) (on b10 b6) (on b12 b10) (on b15 b12) (on b24 b15) (on b29 b24) (on b33 b29) (on b45 b33) (on b59 b45) (clear b59)
+	(on-table b7) (on b8 b7) (on b9 b8) (on b17 b9) (on b28 b17) (on b31 b28) (on b34 b31) (on b42 b34) (on b47 b42) (clear b47)
+	(on-table b16) (on b30 b16) (on b55 b30) (on b56 b55) (on b58 b56) (clear b58)
+	(on-table b19) (on b22 b19) (on b43 b22) (on b48 b43) (on b52 b48) (clear b52)
+	(on-table b20) (on b23 b20) (on b26 b23) (on b27 b26) (on b35 b27) (on b38 b35) (on b44 b38) (on b60 b44) (clear b60)
+	(on-table b39) (on b40 b39) (on b51 b40) (clear b51)
+	(on-table b46) (on b57 b46) (clear b57)
+	(on-table b49) (on b50 b49) (on b53 b50) (clear b53)
+))
+)
+
+
