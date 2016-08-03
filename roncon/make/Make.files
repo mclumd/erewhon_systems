@@ -1,0 +1,4 @@
+RONCON_FILES     = $(wildcard src/*.cc)
+
+RONCON_OBJ_FILES = $(patsubst src/%.cc,%.o,$(RONCON_FILES))
+

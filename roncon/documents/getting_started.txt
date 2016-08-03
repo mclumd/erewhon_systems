@@ -1,0 +1,180 @@
+Requirements:
+-------------
+Player C++ libraries
+UMBC utility library
+g++ (or equivalent)
+pthread library (or equivalient)
+
+if you go the "equivalent" route, you will likely have to update the
+relevant code and/or makefiles to get the system to build and run.
+
+
+Building the System:
+--------------------
+
+* first, build and install UMBC utils using "make install" in the
+  umbc_utils directory. this will attempt to install the library in
+  /usr/local/lib and the headers in /usr/local/include. if you do not
+  have permissions to do this, you will need to make adjustments to
+  Raccoon makefiles to instruct the system where these things will
+  actually live.
+
+* next, run "make" in the roncon directory. note that the main
+  Makefile will include three additional Makefiles that can be
+  modified to allow you to tailor builds to the machine and
+  architecture you are working with:
+
+  - make/Make.$(SYS) where SYS is the OS. if you are on a Linux
+    variant, this will be the result of "uname". if you are on another
+    OS, you will need to make sure SYS is set appropriately in
+    Makefile. here, variables that are particular to all setups using
+    a particular OS should be set.
+
+  - make/Make.$(MACHINE) where MACHINE is the machine name. if you are
+    on a Linux variant, this will be the result of "uname -n". if you
+    are on another OS, you will need to make sure SYS is set
+    appropriately in Makefile. here, variables that are particular to
+    a certain machine (like the directories where includes or
+    libraries are located) should be set.
+
+  - make/Make.files is where the project files are collected into the
+    variables RONCON_FILES and RONCON_OBJ_FILES. no modifications
+    should be necessary.
+
+Note that "make clean" will delete all binaries and allow one to start
+the build from scratch. It is often wise to start clean after
+extensive modifications to the source have been made, in particular
+header files.
+
+The result of a build will be an exectuable called Roncon-$(SYS),
+where SYS is the OS variable. On a linux machine, the executable will
+be called Roncon-Linux.
+
+
+What Does Raccoon Do?
+---------------------
+
+It is instructive to look at the source file main.cc in the root
+Roncon directory. It does the following:
+
+  - parse command line arguments
+  - creates an "agent_dispatcher"
+  - initializes it
+  - enters a busy loop
+
+The agent_dispatcher creates a virtual Raccoon agent that, upon
+initializing, creates a TCP/IP server in its own thread. The server
+will accept a connection, receive commands in ASCII format, and either
+handle them itself, or attempt to dispatch commands to other agents
+that it is aware of.
+
+If you execute Roncon, you will be able to connect to it using
+telnet. The default port is 7777. Once you are connected, you can send
+the command "grammar" for a grammar of commands that the dispatcher
+can handle. Notice the "find" command. Suppose there is a Stage
+simulation running on localhost. You can connect to that robot using
+the command:
+
+    find myrobot localhost 6665
+
+Where 6665 is whatever port the Stage robot is listening on. This will
+cause the dispatch agent to attempt a connection to myrobot using the
+Player c++ library commands. If one exists there, it will instantiate
+an object of type agent_player, filling in the information it receives
+about myrobot and supplementing it using known configuration
+information built in to player_configurer.cc
+
+When the agent is initialized (which is done automatically by the
+dispatcher), a thread will be started which calls the agent's
+monitor() function at 10Hz. The agent's own command language will be
+added to the dispatcher's grammar command, provided the
+publish_grammar() method for the agent class is properly implemented.
+
+The primary mode of getting the robot agents to do stuff is using the
+"send" and "ask" commands:
+
+    send myrobot start obsAvoid()
+
+When the dispatcher sees "send" it looks up the next token in its
+agent base and sends the remaining text to it using the command()
+function. So, in the above case, the dispatcher will lookup myrobot
+and call myrobot->command("start obsAvoid()")
+
+The existing code will allow the agent_basic (a supertype of
+agent_player) to parse the above command, look for a controller called
+obsAvoid, and call its start() method if one is found. There is a
+corresponding stop() method, or, in some cases, controllers will
+automatically stop themselves.
+
+
+What Do You Do?
+---------------
+
+If you have a robot you are looking to operate using Raccoon, the
+following guide will be useful. This is what you [may] have to do:
+
+  * add a clause to player_configurer::configure(a) to automatically
+    configure your robot based on its name. I hope that one day
+    Raccoon will be able to automatically configure robots based on
+    the results of GetDeviceList(). But, not yet!
+
+  * you may need to extend the agent_player class if there are things
+    peculiar to your configuration that need to be added to the
+    class. you can either add a subclass with the new stuff, or, if it
+    is potentially general to all player agents, it may be added to
+    the agent_player definition.
+
+    In particular, you may need to add a vector of some new kind of
+    sensor type. This will allow the agent to create a proxy in the
+    configurer and use it later in its controllers.
+
+  * finally, and this is where the bulk of development should take
+    place, you will want to create controllers that make the
+    robots/agents do stuff. 
+
+
+Creating a Controller:
+----------------------
+
+To create a controller, you simply make a class that extends the class
+"controller". See controller_turnTarg for an example.
+
+Essentially, you need to implement all of the virtual functions in
+controller.h in your new controller. They are:
+
+  - initialize() : called immediately after the controller is created
+  - start() : called when the controller is started without arguments
+  - start(arguments&) : a way of setting args at controller startup
+  - monitor() : called at 10Hz after a controller has been started
+  - stop() : called when the controller is stopped (e.g. by a dispatcher)
+  - abort() : an alternative to stop(), may use the same code
+  - shutdown() : called when the controller is destroyed (e.g. on closed 
+    connection)
+  - is_running() : returns true after start() and before stop() or abort()
+  - self_deactivate() : this function can be used inside monitor() to stop
+    the controller. DO NOT USE STOP() OR ABORT() INSIDE MONITOR()!!!
+  - self_deactivated() : returns true after a self_deactivate call but before
+    the agent has processed the self_deactivation (the agent will issue the
+    stop() command)
+
+Now, there is a player_controller class that implements several of
+these functions: most importantly, the self_deactivate
+functionality. You should extend this class unless you need radically
+different behavior out of the functions player_controller implements:
+
+  - start() should be extended, but your class should call 
+    player_controller::start()
+  - start(arguments&) should be extended, but your class should call 
+    player_controller::start(arguments&)
+  - self_deactivate() should probably not be overriden
+  - self_deactivated() should probably not be overriden
+  - is_running() should probably not be overriden
+
+Once you have created a new controller class in which start() handles
+setup and monitor() handles the monitor & control, you are ready to
+rebuild. The Makefile drags anything in src into the build. Once
+there, make sure you give your agent access to the new controller
+class by adding a new controller_MyNewController() to the
+player_configurer and then it should be accessible from the dispatch
+agent.
+

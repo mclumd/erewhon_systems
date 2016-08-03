@@ -1,0 +1,20 @@
+## defs for system tools
+
+CC = g++
+LD = g++
+CP = cp
+RM = rm
+LS = ls
+CAT = cat
+
+PLAYERFLAGS = $(shell pkg-config --cflags playerc++)
+PLAYERLIBS  = $(shell pkg-config --libs-only-l   playerc++)
+
+CFLAGS = -g -DSAFE $(PLAYERFLAGS)
+LINKFLAGS = -Wl,-E
+
+LIBEXT        = so
+STATIC_LIBEXT = a
+
+OS_LINKFLAGS = -L/usr/local/lib -L/usr/lib
+OS_INCFLAGS = -I/usr/local/include

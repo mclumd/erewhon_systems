@@ -1,0 +1,11 @@
+
+ifeq ($(MACHINE),ai.cs.umbc.edu)
+MACHINE_LINKFLAGS = -L$(HOME)/local/lib -L$(HOME)/local/lib64 \
+                    -L/data/share/mcl/lib 
+MACHINE_INCFLAGS = -I$(HOME)/local/include -I/data/share/mcl/include 
+PLAYERFLAGS =  -I$(HOME)/local/include/player-3.0
+PLAYERLIBS = -lplayerc++ -lplayerc -lm 
+else
+endif
+
+

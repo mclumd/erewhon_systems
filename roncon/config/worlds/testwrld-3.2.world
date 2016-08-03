@@ -1,0 +1,25 @@
+# Updated from testwrld.world for Stage version 3.2.2.
+#
+# create a position model - it can drive around like a robot
+position
+(
+  name "marvin"
+  color "red"
+
+  pose [ 1 1 0 0 ]
+
+  # add a laser scanner on top of the robot
+  laser() 
+)
+
+# create a position model with a gripper attached to each side
+position
+(
+  name "gort"
+  color "silver"
+  pose [ 6 1 0 0 ]
+  size [ 1 2 1 ]
+
+  gripper( pose [0  1  0  90] )
+  gripper( pose [0 -1  0 -90] )
+)

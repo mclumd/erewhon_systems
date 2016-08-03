@@ -1,0 +1,4 @@
+## system-specific definition overrides
+
+MACHINE_LINKFLAGS = 
+MACHINE_INCFLAGS = 

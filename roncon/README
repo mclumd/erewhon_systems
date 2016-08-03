@@ -1,0 +1,47 @@
+1) Download and build Player.
+   As of this writing, Player is version 3.0.2.
+   
+   note: get libtool/ltdl (LTDL, Ubuntu package name is "libltdl-dev")
+
+   follow the directions in INSTALL.txt
+
+2) Download and build Stage 3.2.2 (note: *this is not the latest version*)
+   follow the directions in INSTALL.txt
+   note: GET DEV VERSIONS of all required packages.
+
+3) check out umbc_utils
+   update/create makefiles
+   make install
+
+4) check out roncon
+   update/create makefiles -- make sure to point to player/stage lib & include
+   make
+
+5) add player lib directories to LD_LIBRARY_PATH 
+   (/usr/local/lib or /usr/local/lib64)
+
+6) run player config/testwrld-3.2.cfg
+   (this should bring up a Stage window)
+
+7) run the Raccoon executable, it will look something like:
+   > Raccoon-Linux-x86_64
+
+8) telnet (or connect with Alfred) to Raccoon, something like:
+   > telnet localhost 7777
+
+9) you should get a connection message. next, connect to a robot:
+   telnet> find marvin localhost 6665
+
+10) you can get marvin's controllers using 
+   telnet> ask marvin controllers
+
+11) start a controller, obsAvoid, by typing:
+   telnet> send marvin start obsAvoid
+   (you should see a robot move forward and turn to avoid the other)
+
+12) stop the controller using:
+   telnet> send marvin stop obsAvoid
+   (the robot should stop moving)
+
+13) you can play with starting and stopping the other available
+   controllers as you wish.

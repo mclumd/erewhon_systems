@@ -1,0 +1,4 @@
+MACHINE_LINKFLAGS = -L$(HOME)/lib
+MACHINE_INCFLAGS = -I$(HOME)/include
+PLAYERFLAGS =  -I$(HOME)/include/player-2.1
+PLAYERLIBS = -lplayerc++ -lplayerc -lm -lplayerxdr -lplayererror  
