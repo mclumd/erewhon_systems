@@ -1,0 +1,6 @@
+base referer
+rect $_portability_8h.html 360,88 504,117
+rect $_exception_8h.html 164,35 311,64
+rect $_protector_8h.html 167,88 308,117
+rect $_test_case_8h.html 167,141 308,171
+rect $_test_result_8h.html 164,195 311,224

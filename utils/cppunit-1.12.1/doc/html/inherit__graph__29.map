@@ -1,0 +1,15 @@
+base referer
+rect $class_test.html 7,59 52,88
+rect $class_test_composite.html 103,5 217,35
+rect $class_test_decorator.html 105,59 215,88
+rect $class_test_leaf.html 123,112 197,141
+rect $class_test_suite.html 281,5 359,35
+rect $class_test_runner_1_1_wrapping_suite.html 429,5 621,35
+rect $class_repeated_test.html 267,59 373,88
+rect $class_test_set_up.html 279,112 361,141
+rect $class_test_case.html 280,165 360,195
+rect $class_orthodox.html 421,112 629,141
+rect $class_test_caller.html 449,165 601,195
+rect $class_test_case_decorator.html 453,219 597,248
+rect $class_exception_test_case_decorator.html 677,219 1035,248
+rect $class_test_fixture.html 116,165 204,195

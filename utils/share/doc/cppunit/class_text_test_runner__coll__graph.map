@@ -1,0 +1,10 @@
+base referer
+rect $class_test_result_collector.html 60,277 201,307
+rect $class_test_success_listener.html 48,197 197,227
+rect $class_test_listener.html 5,101 101,131
+rect $class_synchronized_object.html 125,101 277,131
+rect $class_test_result.html 221,197 307,227
+rect $class_synchronized_object_1_1_synchronization_object.html 19,5 325,35
+rect $class_protector_chain.html 316,101 431,131
+rect $class_protector.html 349,5 427,35
+rect $class_outputter.html 396,277 479,307

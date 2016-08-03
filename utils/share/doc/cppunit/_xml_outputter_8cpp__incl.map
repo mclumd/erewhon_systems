@@ -1,0 +1,9 @@
+base referer
+rect $_exception_8h.html 221,5 368,35
+rect $_test_8h.html 240,59 349,88
+rect $_test_failure_8h.html 220,112 369,141
+rect $_test_result_collector_8h.html 192,165 397,195
+rect $_xml_outputter_8h.html 211,219 379,248
+rect $_xml_outputter_hook_8h.html 193,272 396,301
+rect $_xml_document_8h.html 189,325 400,355
+rect $_xml_element_8h.html 197,379 392,408

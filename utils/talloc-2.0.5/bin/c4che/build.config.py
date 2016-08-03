@@ -1,0 +1,2 @@
+version = 0x105019
+tools = [{'tool': 'gnu_dirs', 'tooldir': None, 'funs': None}, {'tool': 'wafsamba', 'tooldir': None, 'funs': None}, {'tool': 'ar', 'tooldir': None, 'funs': None}, {'tool': 'cc', 'tooldir': None, 'funs': None}, {'tool': 'gcc', 'tooldir': None, 'funs': None}, {'tool': 'compiler_cc', 'tooldir': None, 'funs': None}, {'tool': 'gccdeps', 'tooldir': ['/fs/metacog/group/systems/utils/talloc-2.0.5/buildtools/wafsamba'], 'funs': None}, {'tool': 'python', 'tooldir': None, 'funs': None}]

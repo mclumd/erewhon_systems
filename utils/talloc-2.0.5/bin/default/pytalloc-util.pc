@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: pytalloc-util
+Description: Utility functions for using talloc objects with Python
+Version: 2.0.5
+Libs: -L${libdir} -lpytalloc-util
+Cflags: -Wl,-rpath,/usr/local/lib -I${includedir}
+URL: http://talloc.samba.org/

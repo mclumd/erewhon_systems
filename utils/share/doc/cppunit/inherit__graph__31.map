@@ -1,0 +1,9 @@
+base referer
+rect $class_synchronized_object.html 5,32 157,61
+rect $class_test_result.html 464,5 549,35
+rect $class_test_success_listener.html 221,57 371,87
+rect $class_text_test_result.html 628,32 737,61
+rect $class_test_result_collector.html 436,59 577,88
+rect $class_test_listener.html 33,111 129,140
+rect $class_brief_test_progress_listener.html 207,111 385,140
+rect $class_text_test_progress_listener.html 208,164 384,193

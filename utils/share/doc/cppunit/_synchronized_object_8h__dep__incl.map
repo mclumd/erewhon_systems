@@ -1,0 +1,15 @@
+base referer
+rect $_test_result_8h.html 489,243 585,272
+rect $_test_success_listener_8h.html 228,349 391,379
+rect $_synchronized_object_8cpp.html 220,403 399,432
+rect $_text_test_result_8h.html 685,429 808,459
+rect $_text_test_runner_8cpp.html 868,244 1012,273
+rect $_protector_8cpp.html 693,109 800,139
+rect $_repeated_test_8cpp.html 680,163 813,192
+rect $_test_case_8cpp.html 693,216 800,245
+rect $_test_composite_8cpp.html 675,269 819,299
+rect $_test_result_8cpp.html 691,323 803,352
+rect $_test_runner_8cpp.html 687,376 807,405
+rect $_test_suite_8cpp.html 695,5 799,35
+rect $_test_result_collector_8h.html 460,349 615,379
+rect $_test_success_listener_8cpp.html 448,403 627,432

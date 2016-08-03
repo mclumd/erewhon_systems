@@ -1,0 +1,4 @@
+PYTALLOC_UTIL_2.0.5 {
+	global:
+		*;
+};

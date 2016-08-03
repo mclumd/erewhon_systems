@@ -1,0 +1,6 @@
+base referer
+rect $class_test_result.html 241,197 327,227
+rect $class_synchronized_object.html 97,101 249,131
+rect $class_synchronized_object_1_1_synchronization_object.html 5,5 312,35
+rect $class_protector_chain.html 303,101 417,131
+rect $class_protector.html 336,5 413,35

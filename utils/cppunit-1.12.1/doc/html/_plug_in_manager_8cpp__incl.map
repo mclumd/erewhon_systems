@@ -1,0 +1,12 @@
+base referer
+rect $_source_prefix_8h.html 232,133 440,163
+rect $_xml_outputter_hook_8h.html 235,263 437,292
+rect $_test_factory_registry_8h.html 196,367 476,396
+rect $_plug_in_manager_8h.html 227,209 445,239
+rect $_test_plug_in_8h.html 241,57 431,87
+rect $_dynamic_library_manager_8h.html 525,523 808,552
+rect $_portability_8h.html 856,237 1000,267
+rect $_cpp_unit_set_8h.html 556,419 777,448
+rect $_test_factory_8h.html 553,315 780,344
+rect $_plug_in_parameters_8h.html 548,160 785,189
+rect $_test_plug_in_default_impl_8h.html 536,5 797,35

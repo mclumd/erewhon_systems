@@ -1,0 +1,105 @@
+============ pngtest pngtest.png ==============
+
+ Testing libpng version 1.5.1
+   with zlib   version 1.2.3
+
+libpng version 1.5.1 - February 3, 2011
+Copyright (c) 1998-2011 Glenn Randers-Pehrson
+Copyright (c) 1996-1997 Andreas Dilger
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+ library (10501): libpng version 1.5.1 - February 3, 2011
+
+ pngtest (10501): libpng version 1.5.1 - February 3, 2011
+
+ Testing ./pngtest.png:
+ Pass 0: rwrwrwrwrwrwrwrwrw
+ Pass 1: rwrwrwrwrwrwrwrwrw
+ Pass 2: rwrwrwrwrwrwrwrw
+ Pass 3: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+ Pass 4: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+ Pass 5: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+         rwrwrwrw
+ Pass 6: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+         rwrwrwrwrw
+ PASS (9782 zero samples)
+ Filter 0 was used 21 times
+ Filter 1 was used 15 times
+ Filter 2 was used 52 times
+ Filter 3 was used 10 times
+ Filter 4 was used 33 times
+ tIME = 7 Jun 1996 17:58:08 +0000
+ libpng passes test
+
+============ pngvalid-simple.sh ==============
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 51778 peak, 51778 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 51778 peak, 51778 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+
+============ pngvalid-full.sh ==============
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 53570 peak, 53570 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Gamma correction error summary
+
+The printed value is the maximum error in the pixel values
+calculated by the libpng gamma correction code.  The error
+is calculated as the difference between the output pixel
+value (always an integer) and the ideal value from the
+libpng specification (typically not an integer).
+
+Expect this value to be less than .5 for 8 bit formats,
+less than 1 for formats with fewer than 8 bits and a small
+number (typically less than 5) for the 16 bit formats.
+For performance reasons the value for 16 bit formats
+increases when the image file includes an sBIT chunk.
+
+  2 bit gray:  0.50495
+  4 bit gray:  0.81888
+  8 bit gray:  0.49933
+  8 bit color: 0.49933
+ 16 bit gray:  0.74080
+ 16 bit color: 0.74080
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 185666 peak, 185666 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Gamma correction with sBIT:
+ 16 bit gray:  0.74058
+ 16 bit color: 0.74058
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 119104 peak, 119104 total
+	write 65536 maximum single, 283294 peak, 283294 total
+Gamma correction with 16 to 8 bit reduction:
+ 16 bit gray:  1.97052
+ 16 bit color: 1.97052
+Results using floating point arithmetic (no errors or warnings)
+Allocated memory statistics (in bytes):
+	read  32768 maximum single, 57698 peak, 57698 total
+	write 65536 maximum single, 283294 peak, 283294 total

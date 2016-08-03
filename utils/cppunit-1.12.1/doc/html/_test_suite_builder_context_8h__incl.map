@@ -1,0 +1,5 @@
+base referer
+rect $_portability_8h.html 512,59 656,88
+rect $_cpp_unit_map_8h.html 237,112 464,141
+rect $_cpp_unit_api_8h.html 720,59 917,88
+rect $_select_dll_loader_8h.html 705,112 932,141
